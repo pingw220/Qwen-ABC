@@ -1,0 +1,17 @@
+# Experiment B, stage 1: ABC-only continued pretraining (causal LM on every token)
+mode: cpt
+model_name_or_path: Qwen/Qwen3.5-0.8B-Base
+data_dir: data/generated/CHANGE_ME
+output_dir: experiments/CHANGE_ME
+max_seq_len: 8192
+tokens_per_micro_batch: 16384
+tokens_per_update: 131072
+epochs: 1
+learning_rate: 5.0e-5
+min_lr_ratio: 0.1
+warmup_ratio: 0.03
+weight_decay: 0.0
+grad_clip: 1.0
+eval_every: 50
+eval_limit: 256
+seed: 1234

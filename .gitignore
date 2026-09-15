@@ -1,0 +1,13 @@
+.venv/
+.hf_cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/generated/
+experiments/*/checkpoints/
+experiments/*/checkpoint-*/
+experiments/*/final_model/
+experiments/*/**/*.safetensors
+experiments/*/**/*.bin
+experiments/*/**/*.pt
+logs/
