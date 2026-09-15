@@ -4,16 +4,17 @@
 
 * **Direct SFT is already sufficient** for syntax, lyric following and conditional control at this scale.
   * Qwen3.5-0.8B-Base fine-tuned on about 10k Mandarin pop songs writes whole-song ABC lead sheets that always parse (225/225 held-out songs).
-  * 67% are strictly valid, and 99.5% of bars have the right length.
-  * The model sings 95.6% of the requested lyrics in order, with 98.3% precision.
+  * 60–67% are strictly valid across two training seeds, and 99.5% of bars have the right length.
+  * The model sings 93–96% of the requested lyrics in order, with ≥98% precision.
   * It follows key and tempo 100% of the time, and changes melody when the lyrics change.
   * No MIDI-specific vocabulary was needed.
-* **CPT did not help; in this setup it hurt adherence to the prompt.** The CPT used ABC-only continued pretraining on the same training songs.
-  * It lowered teacher-forced loss slightly: test 0.4809 vs 0.4837 nats/token.
-  * But it made generations stop early (45 vs 9 songs ended before the requested structure).
-  * It cut lyric recall from 0.956 to 0.885 and exact section plans from 0.55 to 0.32 (paired 95% CIs exclude 0).
+* **CPT did not help; in this setup it hurt adherence to the prompt.** The CPT used ABC-only continued pretraining on the same training songs. The result replicates across two SFT training seeds.
+  * It lowered teacher-forced loss slightly in both seeds: test 0.4809 / 0.4802 vs 0.4837 / 0.4833 nats/token.
+  * But it made generations stop early (45 / 62 vs 9 / 13 songs ended before the requested structure).
+  * It cut lyric recall from 0.956 / 0.931 to 0.885 / 0.832.
+  * It cut exact section plans from 0.55 / 0.63 to 0.32 / 0.34. Every paired 95% CI excludes 0, and the gap exceeds seed-to-seed variation.
   * A token-matched direct-SFT control shows the difference is not about seeing the data more often.
-  * A second training seed was run for both arms to check the result; see §17.
+  * Strict ABC validity does **not** differ reliably: 0.67 / 0.60 vs 0.60 / 0.60.
 * **The ABC representation works, but structure control is its weak point.** Only 55% of songs reproduce every section's bar count. Adding bar or section counters to the target is the cheapest next fix.
 * **Data quality is the main bottleneck for musical quality, not the model.**
   * The corpus is pseudo-labelled.
@@ -156,6 +157,7 @@ Eight songs with input, reference and three Qwen models are in `experiments/samp
 * **Hardware:** every training and generation job ran on 1× **NVIDIA L40S** (46 GB) in the `ckpt-all` checkpoint partition, account `ckpt-ark`, `--requeue`. The trainer writes atomic resume snapshots every 50 steps; none was needed.
 * **Why L40S on ckpt, not the ark `gpu-l40s` allocation:** at submission the ark L40S pool had 1 GPU free while a lab member had pending jobs there, and ark `gpu-l40` had 2 free. Taking the lab's last L40S would have competed with them. `ckpt-all` had 5 idle L40S nodes and does not consume the ark allocation.
 * **No interference:** the user's running job 40168248 (`midillm-onestage-prod`, gpu-l40) and interactive job were never touched.
+* **Hardware faults:** node g3121 threw `CUDA error: uncorrectable ECC error` three times, killing one probe job, one generation shard and one loss job. All three were resubmitted with `--exclude=g3121`. Results are unaffected (failed jobs wrote nothing), but the node should be reported to Hyak.
 * **Dataset build:** 316 s on 30 CPU cores (ckpt-all).
 * **Throughput:** about 5.2–6.3k training tokens/s per L40S at 16k tokens per micro-batch; generation about 50 tokens/s at batch 1.
 
@@ -169,7 +171,7 @@ Eight songs with input, reference and three Qwen models are in `experiments/samp
 | CPT | 159 | 0.90 h |
 | B: CPT → SFT | 382 | 2.05 h (2.95 h including CPT) |
 | C: token-matched control | 545 | 2.93 h |
-| A / B second seed | 382 each | see §17 |
+| A / B second seed (2345) | 382 each | 2.05 h / 2.06 h |
 
 Evaluation cost about 4 GPU-hours per model: 4 shards × about 45 min, plus probes.
 
@@ -209,7 +211,7 @@ By category (test loss, nats/token):
 | B | 0.969 | 0.870 | 0.014 | 0.462 | 0.074 | 0.594 | 0.090 | 0.623 | 0.808 | 0.005 |
 | C | 0.983 | 0.859 | 0.014 | 0.465 | 0.076 | 0.603 | 0.091 | 0.616 | 0.821 | 0.003 |
 
-After SFT, what is left is almost entirely musical content: pitch, duration, rhythm and chord choice. Structure and lyric text cost almost nothing under teacher forcing. B's 0.003-nat advantage is spread thinly and is not visible in any category.
+After SFT, what is left is almost entirely musical content: pitch, duration, rhythm and chord choice. Structure and lyric text cost almost nothing under teacher forcing. B's 0.003-nat advantage is spread thinly, at most 0.025 nats in any category (lyric markers, rests, pitch), and ties are slightly worse.
 
 ## 13. Generation examples
 
@@ -236,7 +238,7 @@ Compared with the reference, its melodies are flatter: narrower range, more repe
   * `orphan_melisma` is a `_` where the previous note had no syllable.
   * `lyric_overflow` is more tokens than notes in a bar. It is concentrated in a few degenerate songs; A has one song with over 1,400 errors.
   * Bar-duration errors are rare: 137 bars over 225 songs for A.
-* **B alone** writes several `w:` lines under one music line (`lyrics_without_music_line`: 327 vs 1 for A). That pattern does not exist in the training data.
+* **B (seed 1234)** often writes several `w:` lines under one music line (`lyrics_without_music_line`: 327, against 1 for A, 8 for C and 26 for B seed 2345). The training data never does this.
 
 ## 15. Lyric alignment quality
 
@@ -336,14 +338,35 @@ Paired bootstrap over the 225 test songs; `*` means the 95% interval excludes 0.
 
 * 45/225 of B's songs end with fewer sections than requested, against 9 for A and 7 for C.
 * For 10% of B's songs the generated song is ≤ 72% of the requested length; the median is exactly the requested length for all three.
-* B's greedy lyric-swap recall is also lower (0.65 vs 0.85).
+* B's greedy lyric-swap recall is also lower (0.65 vs 0.85; seed 1234).
 * Under teacher forcing B is marginally better; free-running, it relies less on the prompt.
 
 A plausible explanation, not proven: 1 epoch of *unconditional* whole-song modelling on the same songs teaches a strong length and ending prior ("songs end after a typical number of choruses"), and 2 SFT epochs do not fully override it. The same pattern — teacher-forced loss improving while free-running adherence gets worse — appeared earlier in the SheetSage2 lyric-alignment work. **Teacher-forced loss is not a reliable model-selection criterion for this task.**
 
 **What the control rules out.** C sees as many tokens as B but without a separate unconditional stage. C matches A on every structure and lyric metric. Its validation loss plateaus at 0.503, so extra epochs neither help nor hurt adherence, and C writes slightly less repetitive music. The B deficit is therefore specific to the CPT stage, not to extra data exposure.
 
-**Replicate: second SFT seed.** (Pending runs `direct_sft_seed2345_*` and `cpt_then_sft_seed2345_*`; this section is updated below when they finish.)
+**Replicate: second SFT seed.** Both SFT arms were re-run with seed 2345. The seed changes the batch order; B reuses the same CPT checkpoint.
+
+* Runs: `experiments/direct_sft_seed2345_20260915_023500` and `experiments/cpt_then_sft_seed2345_20260915_023500`, jobs 40173062 / 40173063.
+* Full table: `reports/results_seed_replicate_225.md`.
+
+| metric | A seed 1234 | A seed 2345 | B seed 1234 | B seed 2345 |
+|---|---|---|---|---|
+| test loss | 0.4837 | 0.4833 | 0.4809 | 0.4802 |
+| strict valid | 0.671 | 0.596 | 0.596 | 0.604 |
+| lyric recall | 0.956 | 0.931 | 0.885 | 0.832 |
+| recall inside requested section | 0.953 | 0.909 | 0.870 | 0.786 |
+| section labels + bars as requested | 0.551 | 0.627 | 0.324 | 0.342 |
+| section label sequence as requested | 0.951 | 0.889 | 0.751 | 0.618 |
+| bar lengths as requested (per bar) | 0.959 | 0.950 | 0.906 | 0.866 |
+| songs ending with fewer sections than requested | 9 | 13 | 45 | 62 |
+| chord-tone agreement | 0.754 | 0.723 | 0.732 | 0.715 |
+
+The CPT deficit on lyric recall and structure appears in both seeds and is larger than the difference between two direct-SFT seeds.
+
+The strict-validity gap does not replicate: A's seed 2345 run matches B. Seed variance on that metric alone (±0.07) is as large as the first-seed difference.
+
+Two seeds is still a small sample for training variance. The early-termination mechanism, though, is consistent: 45 and 62 early endings for B against 9 and 13 for A.
 
 ## 18. Failure cases
 

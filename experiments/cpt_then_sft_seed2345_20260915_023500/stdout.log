@@ -72,3 +72,29 @@ Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/cs
 {"step": 180, "epoch": 0.942, "loss": 0.5069157644050342, "lr": 3.0822047690055834e-05, "grad_norm": 1.121684193611145, "tokens_seen": 21763292, "max_mem_gb": 16.02, "time": 3466.1}
 {"step": 190, "epoch": 0.995, "loss": 0.4632166235259991, "lr": 2.892799851552359e-05, "grad_norm": 1.0705486536026, "tokens_seen": 22980707, "max_mem_gb": 16.02, "time": 3652.7}
 Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:03<00:00,  3.39s/it]Writing model shards: 100%|██████████| 1/1 [00:03<00:00,  3.39s/it]
+{"step": 200, "epoch": 1.047, "loss": 0.477590591859626, "lr": 2.702371593613599e-05, "grad_norm": 0.9476045370101929, "tokens_seen": 24185902, "max_mem_gb": 16.02, "time": 3857.1}
+{"step": 200, "eval_loss": 0.5119459481707272, "eval_ppl": 1.6685349203375772, "eval_tokens": 519192, "time": 3879.4}
+{"step": 210, "epoch": 1.099, "loss": 0.4681317296788947, "lr": 2.5122846530920975e-05, "grad_norm": 0.8379144072532654, "tokens_seen": 25402854, "max_mem_gb": 16.02, "time": 4075.3}
+{"step": 220, "epoch": 1.152, "loss": 0.4774913594098398, "lr": 2.3239012419222005e-05, "grad_norm": 0.9587194919586182, "tokens_seen": 26610276, "max_mem_gb": 16.02, "time": 4261.5}
+{"step": 230, "epoch": 1.204, "loss": 0.44622470032958284, "lr": 2.1385713641085204e-05, "grad_norm": 0.804524838924408, "tokens_seen": 27828875, "max_mem_gb": 16.02, "time": 4448.0}
+{"step": 240, "epoch": 1.257, "loss": 0.45767025099197317, "lr": 1.9576231412498163e-05, "grad_norm": 0.8096770644187927, "tokens_seen": 29036461, "max_mem_gb": 16.02, "time": 4634.3}
+{"step": 250, "epoch": 1.309, "loss": 0.44793501822065845, "lr": 1.7823532948778298e-05, "grad_norm": 0.7083720564842224, "tokens_seen": 30245168, "max_mem_gb": 16.02, "time": 4819.0}
+{"step": 250, "eval_loss": 0.5050628981396814, "eval_ppl": 1.6570897450452986, "eval_tokens": 519192, "time": 4841.3}
+{"step": 260, "epoch": 1.361, "loss": 0.44260618228076637, "lr": 1.614017853817073e-05, "grad_norm": 0.6296491622924805, "tokens_seen": 31457398, "max_mem_gb": 16.02, "time": 5034.3}
+{"step": 270, "epoch": 1.414, "loss": 0.459571704690341, "lr": 1.4538231531590448e-05, "grad_norm": 0.8523138165473938, "tokens_seen": 32660165, "max_mem_gb": 16.02, "time": 5219.6}
+{"step": 280, "epoch": 1.466, "loss": 0.44293218561579517, "lr": 1.3029171893545103e-05, "grad_norm": 0.6993991732597351, "tokens_seen": 33874638, "max_mem_gb": 16.02, "time": 5406.2}
+{"step": 290, "epoch": 1.518, "loss": 0.41660336471007325, "lr": 1.1623813933754992e-05, "grad_norm": 0.7857032418251038, "tokens_seen": 35086763, "max_mem_gb": 16.02, "time": 5592.4}
+{"step": 300, "epoch": 1.571, "loss": 0.42419208262636654, "lr": 1.0332228809026581e-05, "grad_norm": 0.7314069867134094, "tokens_seen": 36296851, "max_mem_gb": 16.02, "time": 5777.8}
+{"step": 300, "eval_loss": 0.5018585792397731, "eval_ppl": 1.651788399193793, "eval_tokens": 519192, "time": 5800.1}
+{"step": 310, "epoch": 1.623, "loss": 0.4456181019521093, "lr": 9.163672350751045e-06, "grad_norm": 0.66276615858078, "tokens_seen": 37504606, "max_mem_gb": 16.02, "time": 5994.9}
+{"step": 320, "epoch": 1.675, "loss": 0.4322980999649314, "lr": 8.1265187352345e-06, "grad_norm": 0.6097041368484497, "tokens_seen": 38718503, "max_mem_gb": 16.02, "time": 6181.7}
+{"step": 330, "epoch": 1.728, "loss": 0.44468195228310664, "lr": 7.228200472195573e-06, "grad_norm": 0.5933316946029663, "tokens_seen": 39934953, "max_mem_gb": 16.02, "time": 6367.4}
+{"step": 340, "epoch": 1.78, "loss": 0.4615759963641511, "lr": 6.47515514148795e-06, "grad_norm": 0.7204226851463318, "tokens_seen": 41135572, "max_mem_gb": 16.02, "time": 6551.1}
+{"step": 350, "epoch": 1.832, "loss": 0.4402998323220669, "lr": 5.872779259746491e-06, "grad_norm": 0.6349295377731323, "tokens_seen": 42337652, "max_mem_gb": 16.02, "time": 6735.6}
+{"step": 350, "eval_loss": 0.49857131049754955, "eval_ppl": 1.646367441773928, "eval_tokens": 519192, "time": 6758.0}
+{"step": 360, "epoch": 1.885, "loss": 0.4421879728952313, "lr": 5.425389607560223e-06, "grad_norm": 0.6161961555480957, "tokens_seen": 43540317, "max_mem_gb": 16.02, "time": 6952.6}
+{"step": 370, "epoch": 1.937, "loss": 0.4032659988565752, "lr": 5.136192294311724e-06, "grad_norm": 0.63468998670578, "tokens_seen": 44756522, "max_mem_gb": 16.02, "time": 7140.0}
+{"step": 380, "epoch": 1.99, "loss": 0.44062771311570686, "lr": 5.007259782372195e-06, "grad_norm": 0.626956582069397, "tokens_seen": 45963227, "max_mem_gb": 16.02, "time": 7325.9}
+{"step": 382, "final": true, "eval_loss": 0.4978232769244687, "eval_ppl": 1.6451363641549535, "eval_tokens": 519192, "time": 7385.6}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]
+{"step": 382, "done": true, "elapsed_hours_this_job": 2.052, "time": 7387.1}

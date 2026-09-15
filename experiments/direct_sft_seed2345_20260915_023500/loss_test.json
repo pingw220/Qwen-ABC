@@ -1,0 +1,1202 @@
+{
+ "checkpoint": "experiments/direct_sft_seed2345_20260915_023500/final_model",
+ "split": "test",
+ "songs": 225,
+ "loss": 0.483301008023264,
+ "ppl": 1.6214178913588497,
+ "tokens": 458373,
+ "by_category": {
+  "pitch": {
+   "loss": 0.9849197932883273,
+   "tokens": 88988,
+   "share_of_nll": 0.39563579963664797
+  },
+  "duration": {
+   "loss": 0.8661823960125788,
+   "tokens": 65658,
+   "share_of_nll": 0.2567203366839052
+  },
+  "chord": {
+   "loss": 0.5971013185415636,
+   "tokens": 72040,
+   "share_of_nll": 0.19417128528851865
+  },
+  "lyric_marker": {
+   "loss": 0.48041583243367325,
+   "tokens": 22868,
+   "share_of_nll": 0.04959167372139512
+  },
+  "rest": {
+   "loss": 0.5856834189835844,
+   "tokens": 17433,
+   "share_of_nll": 0.04608911089848729
+  },
+  "space": {
+   "loss": 0.09174002204245525,
+   "tokens": 66879,
+   "share_of_nll": 0.027695670386310108
+  },
+  "tie": {
+   "loss": 0.7717530876578009,
+   "tokens": 3811,
+   "share_of_nll": 0.013276408157543006
+  },
+  "bar": {
+   "loss": 0.09561135139401271,
+   "tokens": 21367,
+   "share_of_nll": 0.009221812285312977
+  },
+  "lyric_bar": {
+   "loss": 0.07527788337151614,
+   "tokens": 11428,
+   "share_of_nll": 0.003883299635639479
+  },
+  "lyric_text": {
+   "loss": 0.012798385014659932,
+   "tokens": 58711,
+   "share_of_nll": 0.003391860009595519
+  },
+  "structure": {
+   "loss": 0.0031075924951518806,
+   "tokens": 22391,
+   "share_of_nll": 0.00031409485672422564
+  },
+  "eos": {
+   "loss": 0.008038481965254031,
+   "tokens": 225,
+   "share_of_nll": 8.164316472252293e-06
+  },
+  "header": {
+   "loss": 1.631410101675454e-05,
+   "tokens": 6574,
+   "share_of_nll": 4.841234481682935e-07
+  }
+ },
+ "per_song": [
+  {
+   "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+   "loss": 0.45373870676954203,
+   "tokens": 2490
+  },
+  {
+   "song_id": "05Yqjul6jLsld0Vh8K36KH",
+   "loss": 0.49498812534826897,
+   "tokens": 2495
+  },
+  {
+   "song_id": "09RY5jQZ5kNoMSU5toQlfU",
+   "loss": 0.45300439118495284,
+   "tokens": 2764
+  },
+  {
+   "song_id": "09d4jeFypKBWzZVfHKBeVY",
+   "loss": 0.43505511234948663,
+   "tokens": 2120
+  },
+  {
+   "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+   "loss": 0.532571722227415,
+   "tokens": 1963
+  },
+  {
+   "song_id": "0B1k0zh8Rsa1aE7LgF6eHi",
+   "loss": 0.48023276269342796,
+   "tokens": 2324
+  },
+  {
+   "song_id": "0BetT2tdyEMm4FTs2y464B",
+   "loss": 0.5682287798922401,
+   "tokens": 2419
+  },
+  {
+   "song_id": "0CxfpbQfmX4bR6mA6aarL3",
+   "loss": 0.5143583017607616,
+   "tokens": 1996
+  },
+  {
+   "song_id": "0FadVuelB7Srb98yUbTbwI",
+   "loss": 0.7119116309968195,
+   "tokens": 2031
+  },
+  {
+   "song_id": "0FdW541km7r4Zh7hq02jBZ",
+   "loss": 0.46078760062343177,
+   "tokens": 2897
+  },
+  {
+   "song_id": "0GX8F6CUMYSh0WLvTIR0vF",
+   "loss": 0.6590691273800671,
+   "tokens": 1528
+  },
+  {
+   "song_id": "0ITY3kOaEoiDxaCI88jET6",
+   "loss": 0.5404105685410413,
+   "tokens": 1797
+  },
+  {
+   "song_id": "0TdPZ2mnbhww9mVUiZZhX5",
+   "loss": 0.6922142412114618,
+   "tokens": 1765
+  },
+  {
+   "song_id": "0XV81gUVudUkxWP4x6rJhW",
+   "loss": 0.5573609113085249,
+   "tokens": 2767
+  },
+  {
+   "song_id": "0YZZPAvQgazIok3JIr8mEy",
+   "loss": 0.533570233150315,
+   "tokens": 1021
+  },
+  {
+   "song_id": "0ZMWpv0aFBioxywoXsmaId",
+   "loss": 0.39329851907284125,
+   "tokens": 1942
+  },
+  {
+   "song_id": "0ccEIUOa32bbAoGaPHGQuX",
+   "loss": 0.4144129521888669,
+   "tokens": 2292
+  },
+  {
+   "song_id": "0exfMqddpIIZQbZZny68Rc",
+   "loss": 0.7734186582148319,
+   "tokens": 2190
+  },
+  {
+   "song_id": "0hzBWWiSp4x1dzcorjP9FN",
+   "loss": 0.49357521612798094,
+   "tokens": 2581
+  },
+  {
+   "song_id": "0j9LdgpOzc5zMjq4hBlUcn",
+   "loss": 0.43236533856465964,
+   "tokens": 2304
+  },
+  {
+   "song_id": "0jcOCNg3QQCYcwM4s8JyZI",
+   "loss": 0.43907390346026043,
+   "tokens": 1888
+  },
+  {
+   "song_id": "0mGuXhYffcFglH8T4rEA2a",
+   "loss": 0.41034417072375773,
+   "tokens": 1830
+  },
+  {
+   "song_id": "0zcMdzPJ7ANImvROghMVsY",
+   "loss": 0.3691652880729022,
+   "tokens": 1608
+  },
+  {
+   "song_id": "18wGt2QzrQO73VY4akreyx",
+   "loss": 0.42128530111026335,
+   "tokens": 1636
+  },
+  {
+   "song_id": "18wo5vJV7bRnjt3wlkSDCJ",
+   "loss": 0.42438715372190183,
+   "tokens": 1772
+  },
+  {
+   "song_id": "19eK3bar5P6Xcw6LzdXCHb",
+   "loss": 0.6755119128440555,
+   "tokens": 2189
+  },
+  {
+   "song_id": "1C6yky5bXstgnFRiWmfze3",
+   "loss": 0.5940931492284087,
+   "tokens": 2614
+  },
+  {
+   "song_id": "1EbYNhVhmnZpriRnaFygWN",
+   "loss": 0.28440808958911246,
+   "tokens": 2070
+  },
+  {
+   "song_id": "1F3t9l7U8CnKmzVyFbR1aG",
+   "loss": 0.5844815156113099,
+   "tokens": 1356
+  },
+  {
+   "song_id": "1FBJbPIt388FFDgZbHVRyV",
+   "loss": 0.5496604491669115,
+   "tokens": 2396
+  },
+  {
+   "song_id": "1Fo23uW11ZN4JCFCeB0ngS",
+   "loss": 0.39501217273199235,
+   "tokens": 2467
+  },
+  {
+   "song_id": "1QK8j48LA0pLCJly3Yqd82",
+   "loss": 0.3424950127558542,
+   "tokens": 1520
+  },
+  {
+   "song_id": "1UytAxYwD5crlQcPiL3ZaE",
+   "loss": 0.4590456814728322,
+   "tokens": 1764
+  },
+  {
+   "song_id": "1WVlzSesyFUorHX8iso9dG",
+   "loss": 0.4948045792253937,
+   "tokens": 2140
+  },
+  {
+   "song_id": "1YNdE3GjlS8a3OvGm9tQ0F",
+   "loss": 0.3840399331220197,
+   "tokens": 2011
+  },
+  {
+   "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+   "loss": 0.4028979402278399,
+   "tokens": 547
+  },
+  {
+   "song_id": "1eFSgOay51iMZIdmXU3ISl",
+   "loss": 0.4246345896042023,
+   "tokens": 2739
+  },
+  {
+   "song_id": "1hWIEh1MKbcB4ouWgWL5Og",
+   "loss": 0.5441605583070244,
+   "tokens": 2315
+  },
+  {
+   "song_id": "1heBg3CKPc4qVUXzVO49I2",
+   "loss": 0.5170828691433845,
+   "tokens": 2292
+  },
+  {
+   "song_id": "1mcMqHzkg79tfjUqeLAzpI",
+   "loss": 0.405092361918035,
+   "tokens": 1751
+  },
+  {
+   "song_id": "1oDW3JIhobplQhuTVBjtcB",
+   "loss": 0.42367470486214054,
+   "tokens": 2761
+  },
+  {
+   "song_id": "1oWX2EGO7Z8YCZ5jJuGrpM",
+   "loss": 0.5501266413447304,
+   "tokens": 1910
+  },
+  {
+   "song_id": "1ong56tLkuTP0YuTxYAr9F",
+   "loss": 0.5556462263297258,
+   "tokens": 2410
+  },
+  {
+   "song_id": "1qcgbHATg4tVyVqudr2pxK",
+   "loss": 0.5227737647031542,
+   "tokens": 1989
+  },
+  {
+   "song_id": "1sVsi9Q7g5zYcw3Aj90bcc",
+   "loss": 0.5928701468077893,
+   "tokens": 1797
+  },
+  {
+   "song_id": "1tKSEmbS7vmv7cFc24sjlI",
+   "loss": 0.35735573307806157,
+   "tokens": 1623
+  },
+  {
+   "song_id": "1tlU1rCRQ7gzHWk0frnlVj",
+   "loss": 0.5198995156177141,
+   "tokens": 2166
+  },
+  {
+   "song_id": "1z51mKj5nHYxrGCEq6c3Eq",
+   "loss": 0.2834591227330699,
+   "tokens": 2320
+  },
+  {
+   "song_id": "1zsXjmo39vHJkLW8FJVB0t",
+   "loss": 0.5376437810230591,
+   "tokens": 1561
+  },
+  {
+   "song_id": "20WNhehqO6xfLVktkDefs2",
+   "loss": 0.649029849310336,
+   "tokens": 2556
+  },
+  {
+   "song_id": "255drLOJ94rmt1SDRj6H3N",
+   "loss": 0.4947599928283954,
+   "tokens": 1836
+  },
+  {
+   "song_id": "27o7ErWiozSj47o3dnPvVf",
+   "loss": 0.704230571380069,
+   "tokens": 3144
+  },
+  {
+   "song_id": "28I269iDvkDyb2Fqo2p1TI",
+   "loss": 0.43036889371418574,
+   "tokens": 3018
+  },
+  {
+   "song_id": "28IzuspwIj6C8XAOoIJ1Wp",
+   "loss": 0.4115890983102608,
+   "tokens": 2787
+  },
+  {
+   "song_id": "2Ao4GCbjB6dejFu7OWyDuc",
+   "loss": 0.5171783378368028,
+   "tokens": 2684
+  },
+  {
+   "song_id": "2BOyzQctN9FQpLfNM9GHQW",
+   "loss": 0.4960646872679291,
+   "tokens": 1405
+  },
+  {
+   "song_id": "2CBn4vqG1420rIiELQRmZW",
+   "loss": 0.32659979965197494,
+   "tokens": 2124
+  },
+  {
+   "song_id": "2CowpOAsDHkhMHQRknInwx",
+   "loss": 0.4965908197544638,
+   "tokens": 1151
+  },
+  {
+   "song_id": "2HVhqSDfh4XVdrRJuwpG6x",
+   "loss": 0.40526934394982445,
+   "tokens": 2864
+  },
+  {
+   "song_id": "2MAwZYWDPVFHl7OFJ2vtS8",
+   "loss": 0.4071079642927551,
+   "tokens": 2286
+  },
+  {
+   "song_id": "2Pg6rODAW3EZCCBgE8iPZq",
+   "loss": 0.38404593964496564,
+   "tokens": 1617
+  },
+  {
+   "song_id": "2TSoqk7lI5AomIgffxCw4g",
+   "loss": 0.6489438369733518,
+   "tokens": 2102
+  },
+  {
+   "song_id": "2Wcz0tFIoJn6xEzVQkOlDR",
+   "loss": 0.5629502457542502,
+   "tokens": 1702
+  },
+  {
+   "song_id": "2YSqK9S0SZjulBJdc9BYuu",
+   "loss": 0.6420443001067513,
+   "tokens": 2203
+  },
+  {
+   "song_id": "2alKIQAr2MPs28ZI5AHvJB",
+   "loss": 0.41136113064849067,
+   "tokens": 2628
+  },
+  {
+   "song_id": "2dNIwWWsu0zmvKgHlE43dG",
+   "loss": 0.4164856937074616,
+   "tokens": 1813
+  },
+  {
+   "song_id": "2doqLn2sfIhgoUB2DaLRiv",
+   "loss": 0.42909783052764655,
+   "tokens": 1189
+  },
+  {
+   "song_id": "2fqUJToyhc6bzIXootn4nv",
+   "loss": 0.4320231842827726,
+   "tokens": 1752
+  },
+  {
+   "song_id": "2fx7D86fwFlVfBJSGhuZFg",
+   "loss": 0.4416896430234944,
+   "tokens": 1774
+  },
+  {
+   "song_id": "2gDzOOf3ElxOa1v6g0Xk7M",
+   "loss": 0.6037282729774596,
+   "tokens": 2523
+  },
+  {
+   "song_id": "2gmcPtNdcxvNqs0CJRGgel",
+   "loss": 0.5480130693688703,
+   "tokens": 1150
+  },
+  {
+   "song_id": "2jnjsOk91pDjhn7AI9C7eC",
+   "loss": 0.6790706132536142,
+   "tokens": 1961
+  },
+  {
+   "song_id": "2kNj4xVed7CbulRhF3C4nT",
+   "loss": 0.45432090653158447,
+   "tokens": 2386
+  },
+  {
+   "song_id": "2mwrlsAA6AzX0AgheZBF41",
+   "loss": 0.27087200014591156,
+   "tokens": 2597
+  },
+  {
+   "song_id": "2nGGovqWeOxXH2WbnoS3RX",
+   "loss": 0.6033611148408511,
+   "tokens": 1966
+  },
+  {
+   "song_id": "2r6PR48twaBEyqvTggRzZa",
+   "loss": 0.6124939056724398,
+   "tokens": 1943
+  },
+  {
+   "song_id": "2rwYS769lcaMmFpqzR2bBZ",
+   "loss": 0.5141233258522359,
+   "tokens": 2436
+  },
+  {
+   "song_id": "2vnn9onO7sQBevG0O2iPHi",
+   "loss": 0.4025614300866848,
+   "tokens": 1527
+  },
+  {
+   "song_id": "2xtwnA7wTLBrUYKe3p58oe",
+   "loss": 0.292609777946396,
+   "tokens": 2703
+  },
+  {
+   "song_id": "2y0wImEpj5p6SxBmY0opQN",
+   "loss": 0.3762336157929155,
+   "tokens": 1859
+  },
+  {
+   "song_id": "32Wt3NCmKIU2u5RmSN53TJ",
+   "loss": 0.3952620336877897,
+   "tokens": 2710
+  },
+  {
+   "song_id": "32fzm1b8Ivyyj9qKXjiMZw",
+   "loss": 0.7408843389482622,
+   "tokens": 1378
+  },
+  {
+   "song_id": "3ACFBxapkdupp48I4hSHeX",
+   "loss": 0.4416340493291805,
+   "tokens": 1722
+  },
+  {
+   "song_id": "3DtjJWwGp2qAVFkqeZ2Fgn",
+   "loss": 0.3165007657794348,
+   "tokens": 2004
+  },
+  {
+   "song_id": "3FT4dcOfYXmlNbLecPiMrm",
+   "loss": 0.4374583676988914,
+   "tokens": 1974
+  },
+  {
+   "song_id": "3IIAyAsxuQR9jsikumTVHo",
+   "loss": 0.5242195315176915,
+   "tokens": 1893
+  },
+  {
+   "song_id": "3JjXD9DVfxh001wI5IACZ1",
+   "loss": 0.42654658415985797,
+   "tokens": 1461
+  },
+  {
+   "song_id": "3KEgUftkAZzQeugm2kVwbT",
+   "loss": 0.6177504819672717,
+   "tokens": 1974
+  },
+  {
+   "song_id": "3Oljg1NEoLgRgcJnWJpiAT",
+   "loss": 0.5154424100463009,
+   "tokens": 1978
+  },
+  {
+   "song_id": "3QdCMpU6fQ1dsJ3GTzG5HW",
+   "loss": 0.6204073210723345,
+   "tokens": 1438
+  },
+  {
+   "song_id": "3SYxHNDH5nXWkzcQHw4YnX",
+   "loss": 0.5978597871061585,
+   "tokens": 1829
+  },
+  {
+   "song_id": "3SZ3hiasAHYoajQX3XH4FU",
+   "loss": 0.5290756831545474,
+   "tokens": 2268
+  },
+  {
+   "song_id": "3SlCzm1GRT5idmfyQ8LjYP",
+   "loss": 0.5846798611238687,
+   "tokens": 1462
+  },
+  {
+   "song_id": "3UD90WH9z5Ftofm8XRf3Ld",
+   "loss": 0.5174442514193021,
+   "tokens": 2131
+  },
+  {
+   "song_id": "3Wlox2t540dXpZpm20Zjyb",
+   "loss": 0.5098466261829276,
+   "tokens": 1671
+  },
+  {
+   "song_id": "3X3BdYpVpN78IFIpmhhEmU",
+   "loss": 0.5279927731109747,
+   "tokens": 1787
+  },
+  {
+   "song_id": "3Yg7Z2rVweAHOwUiPkqTvE",
+   "loss": 0.40550045080678826,
+   "tokens": 1574
+  },
+  {
+   "song_id": "3fqOOwQx6M8XpJMf8Bsp9K",
+   "loss": 0.4974196490571304,
+   "tokens": 2799
+  },
+  {
+   "song_id": "3fuDrXgVS9Be7HQqDuX5qV",
+   "loss": 0.49566233880003574,
+   "tokens": 2368
+  },
+  {
+   "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+   "loss": 0.634928871884898,
+   "tokens": 2826
+  },
+  {
+   "song_id": "3mGw54mWnUpV2wNONvBTJy",
+   "loss": 0.3842853365712708,
+   "tokens": 2797
+  },
+  {
+   "song_id": "3q9kTZg82Fxa7KptbOLqav",
+   "loss": 0.4395952922298258,
+   "tokens": 2149
+  },
+  {
+   "song_id": "3t677uctclLy3tETsBtGF9",
+   "loss": 0.52138315212924,
+   "tokens": 1814
+  },
+  {
+   "song_id": "3tOVrJlfy9g1dPBI8czFIy",
+   "loss": 0.41059648158426004,
+   "tokens": 2402
+  },
+  {
+   "song_id": "3tmLIBcbVxYe6tTKvUyMIk",
+   "loss": 0.549560472157563,
+   "tokens": 1911
+  },
+  {
+   "song_id": "3xqFOwya52XoVYyO2HphmG",
+   "loss": 0.48443583426568976,
+   "tokens": 2147
+  },
+  {
+   "song_id": "40RF2zemUhNk0aPkIJNWxM",
+   "loss": 0.5424924498051898,
+   "tokens": 3222
+  },
+  {
+   "song_id": "4218Xav4mopAXlguvSJ9Uv",
+   "loss": 0.41524907853131954,
+   "tokens": 2249
+  },
+  {
+   "song_id": "479FYDDkEokgYf3BG9x6fp",
+   "loss": 0.6804769598900275,
+   "tokens": 2173
+  },
+  {
+   "song_id": "47ZxPbe5sBnGaQanA7sQDq",
+   "loss": 0.4797661485351428,
+   "tokens": 2500
+  },
+  {
+   "song_id": "499ghNme62G8hsotXXlAIE",
+   "loss": 0.4660986302952662,
+   "tokens": 1769
+  },
+  {
+   "song_id": "49pMRkESXndNlp0jD1Vxnj",
+   "loss": 0.3889105064072225,
+   "tokens": 1597
+  },
+  {
+   "song_id": "4Aguf5QHJzRN4PcXwFX7X0",
+   "loss": 0.3369820912286506,
+   "tokens": 2307
+  },
+  {
+   "song_id": "4BDdKKIImyCOH0UFXGSoMu",
+   "loss": 0.5169962878026086,
+   "tokens": 1672
+  },
+  {
+   "song_id": "4Bsy0tFLV7FdP4t1gUY5XI",
+   "loss": 0.5367891383613858,
+   "tokens": 2165
+  },
+  {
+   "song_id": "4C8V4YVVhGQdsoyD1uuhyJ",
+   "loss": 0.3861970024945352,
+   "tokens": 2091
+  },
+  {
+   "song_id": "4Cvd1vwstGUZTdnL6X35md",
+   "loss": 0.5398733116327555,
+   "tokens": 1855
+  },
+  {
+   "song_id": "4DJ0DsOmFv6fR5LeyUsslY",
+   "loss": 0.38476223839847057,
+   "tokens": 1881
+  },
+  {
+   "song_id": "4KnaiD9UY8fAhM1GrM9M8m",
+   "loss": 0.6138309323491599,
+   "tokens": 1538
+  },
+  {
+   "song_id": "4M901X90BfY3H74MqcXZNi",
+   "loss": 0.3992950183123814,
+   "tokens": 1425
+  },
+  {
+   "song_id": "4QvcPLQoWZK9qiX8uU6zft",
+   "loss": 0.5137211240977823,
+   "tokens": 2307
+  },
+  {
+   "song_id": "4REzuXet7gr8UCA3T5tK2s",
+   "loss": 0.5080105006578459,
+   "tokens": 2148
+  },
+  {
+   "song_id": "4T4TeoIBft7oIW5WOte5Au",
+   "loss": 0.6039645726981064,
+   "tokens": 2692
+  },
+  {
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "loss": 0.5801522316510813,
+   "tokens": 2200
+  },
+  {
+   "song_id": "4VfHbfbzNPZmX5KI4iAOyT",
+   "loss": 0.3892626713819695,
+   "tokens": 2395
+  },
+  {
+   "song_id": "4eMDRwO2dreLU0IvNoARUP",
+   "loss": 0.5008782694315428,
+   "tokens": 1848
+  },
+  {
+   "song_id": "4eNxB89LADQeQnUvvIIuRG",
+   "loss": 0.4355217311758124,
+   "tokens": 1278
+  },
+  {
+   "song_id": "4gXVhPeuxE9ojFL0Ose0vA",
+   "loss": 0.4254649195149215,
+   "tokens": 1882
+  },
+  {
+   "song_id": "4h1AwwM52VG8iwNmDf1FIK",
+   "loss": 0.5739952916172871,
+   "tokens": 2383
+  },
+  {
+   "song_id": "4i0tFVka77iJFMvsLWUALb",
+   "loss": 0.5987381456587423,
+   "tokens": 1672
+  },
+  {
+   "song_id": "4iexiXer21ge7jm3GPQkT2",
+   "loss": 0.6052404546747234,
+   "tokens": 1715
+  },
+  {
+   "song_id": "4trtyNhvxt6BDPMt2Rpw48",
+   "loss": 0.4292531343550486,
+   "tokens": 2696
+  },
+  {
+   "song_id": "4uJ6Twc8EbeVIaqBj5CJs7",
+   "loss": 0.29873983870647786,
+   "tokens": 1421
+  },
+  {
+   "song_id": "4yZY7e169iMB1o29Pk41cz",
+   "loss": 0.4743229185561324,
+   "tokens": 2274
+  },
+  {
+   "song_id": "50OR02Pg9seVMqYyJ7Nmrb",
+   "loss": 0.3518069875006938,
+   "tokens": 2358
+  },
+  {
+   "song_id": "51G9MuAKc5GOKrfoP4M4uO",
+   "loss": 0.550938866676085,
+   "tokens": 1327
+  },
+  {
+   "song_id": "53a8hVCKsw8NhGxmRH1YeZ",
+   "loss": 0.4178826274296054,
+   "tokens": 1465
+  },
+  {
+   "song_id": "56EoTwd4LGjmEO7UzQrDoX",
+   "loss": 0.31454919227050143,
+   "tokens": 2136
+  },
+  {
+   "song_id": "58ajbBxQUMMFpqHA62QNO0",
+   "loss": 0.5622548092465154,
+   "tokens": 1094
+  },
+  {
+   "song_id": "59E7BFFni2GTDisijRqKU7",
+   "loss": 0.44176582053923164,
+   "tokens": 2390
+  },
+  {
+   "song_id": "5AC7fEOMQqxqzqCq5z7nc9",
+   "loss": 0.5699120903688093,
+   "tokens": 1733
+  },
+  {
+   "song_id": "5AEMs1wDhUJeZnTl5xyfys",
+   "loss": 0.2877124575887218,
+   "tokens": 1863
+  },
+  {
+   "song_id": "5AxCJOjIDdu4mVxvCWECuV",
+   "loss": 0.5240927431097637,
+   "tokens": 1451
+  },
+  {
+   "song_id": "5BldrYOHmqUwouMmcBNEtK",
+   "loss": 0.42456664859182247,
+   "tokens": 1501
+  },
+  {
+   "song_id": "5CbNIRIgmrh1W9xNnhtSz1",
+   "loss": 0.4243379100754737,
+   "tokens": 2191
+  },
+  {
+   "song_id": "5CqrGysexXG1yOlouhkm6p",
+   "loss": 0.5887474552551778,
+   "tokens": 1878
+  },
+  {
+   "song_id": "5DOdnY5NIJVe0tln5eFm7f",
+   "loss": 0.6459342944912583,
+   "tokens": 2258
+  },
+  {
+   "song_id": "5EbU9BSwgacaX0mW7zU4jN",
+   "loss": 0.5846224103466462,
+   "tokens": 2897
+  },
+  {
+   "song_id": "5Fpa2uQd90iYGAEsbKSSZR",
+   "loss": 0.48908155325411895,
+   "tokens": 1947
+  },
+  {
+   "song_id": "5IhH7idp4sHJ4o0pnxH59X",
+   "loss": 0.7315266748809627,
+   "tokens": 2992
+  },
+  {
+   "song_id": "5K8AQ2dBiXolebEfawTrzv",
+   "loss": 0.48663948106869476,
+   "tokens": 1208
+  },
+  {
+   "song_id": "5LPdNDuOWYSDT5P20iCRYO",
+   "loss": 0.585801128910692,
+   "tokens": 1918
+  },
+  {
+   "song_id": "5LlXalu5DZuQl7Q9CmNKp0",
+   "loss": 0.4518534238149178,
+   "tokens": 1243
+  },
+  {
+   "song_id": "5OqvADUGavUqQnYH0Ukt7T",
+   "loss": 0.463336270912211,
+   "tokens": 2903
+  },
+  {
+   "song_id": "5SifuCu1raOyB2mljEPWoM",
+   "loss": 0.38872439207533344,
+   "tokens": 2374
+  },
+  {
+   "song_id": "5a7cNKUhxWPg9jWE0fUukb",
+   "loss": 0.46395928090073285,
+   "tokens": 2189
+  },
+  {
+   "song_id": "5bVKIpODZbjn82L68A80hv",
+   "loss": 0.4186495269616627,
+   "tokens": 2660
+  },
+  {
+   "song_id": "5bf4zyUkbC7Df7icueGtcR",
+   "loss": 0.5041131361295887,
+   "tokens": 2460
+  },
+  {
+   "song_id": "5dxFx2Ez14xXuqyOK3Pgxd",
+   "loss": 0.5865947363300631,
+   "tokens": 1023
+  },
+  {
+   "song_id": "5eZwk6UYsVAbqSomPjNSDE",
+   "loss": 0.5264034770266199,
+   "tokens": 1442
+  },
+  {
+   "song_id": "5fTRjBPvXscWyOOukAGtW5",
+   "loss": 0.5580469431170878,
+   "tokens": 2739
+  },
+  {
+   "song_id": "5gIW9IMReT6xicyfHKtcug",
+   "loss": 0.6097250574260863,
+   "tokens": 1726
+  },
+  {
+   "song_id": "5i64hhiLZt1NWnRZiVubSL",
+   "loss": 0.39841411284677114,
+   "tokens": 1611
+  },
+  {
+   "song_id": "5icriKgD89JhLxeSnd9o74",
+   "loss": 0.2770611036691711,
+   "tokens": 2183
+  },
+  {
+   "song_id": "5igSw7TE7vW1iKMCU9ACMJ",
+   "loss": 0.36542365576481245,
+   "tokens": 1916
+  },
+  {
+   "song_id": "5jRB7otWSFz3kMR3fAOQ2n",
+   "loss": 0.4511971195551669,
+   "tokens": 2286
+  },
+  {
+   "song_id": "5jwyaHQbtmpEPVmHwq19Fy",
+   "loss": 0.40185734441118004,
+   "tokens": 2024
+  },
+  {
+   "song_id": "5kehUJhVBQAMgzY9IQXIOV",
+   "loss": 0.4850816323634105,
+   "tokens": 1675
+  },
+  {
+   "song_id": "5mh8LL52KOZXeb80QpcUVG",
+   "loss": 0.557898364064807,
+   "tokens": 1803
+  },
+  {
+   "song_id": "5ojQLq8MsewWoGbVQEBd8f",
+   "loss": 0.41153471969758254,
+   "tokens": 1797
+  },
+  {
+   "song_id": "5pewA4rsox31wXDX26VMlr",
+   "loss": 0.3858837661298747,
+   "tokens": 1835
+  },
+  {
+   "song_id": "5rVNJGnGulbxFwEgUeqAPg",
+   "loss": 0.4811984977091357,
+   "tokens": 1784
+  },
+  {
+   "song_id": "5rc5x4FKWvrJb8qxFNp1bO",
+   "loss": 0.6410483576275378,
+   "tokens": 1329
+  },
+  {
+   "song_id": "5zpJSe86hLBaTpd6ZW3TFB",
+   "loss": 0.7213292105154995,
+   "tokens": 1779
+  },
+  {
+   "song_id": "61g5RPLFCdbnVwAQ363gyP",
+   "loss": 0.5984407992513977,
+   "tokens": 2612
+  },
+  {
+   "song_id": "64ksmDDLWaiY21WDVXBoYC",
+   "loss": 0.6518518322484229,
+   "tokens": 2608
+  },
+  {
+   "song_id": "65qUlixRrzCOI7RIHMZ8b0",
+   "loss": 0.4136557561185223,
+   "tokens": 2884
+  },
+  {
+   "song_id": "66x69ddxo6rH3KZoa5yNfO",
+   "loss": 0.5811214513353633,
+   "tokens": 2104
+  },
+  {
+   "song_id": "6A4DbuFY7yg40irHQW5VL3",
+   "loss": 0.32532761851335146,
+   "tokens": 2934
+  },
+  {
+   "song_id": "6FmfdFUbG8q6U2KbsNFo3y",
+   "loss": 0.5268764086427028,
+   "tokens": 2619
+  },
+  {
+   "song_id": "6H1qeLID2gslZMgxpwfACS",
+   "loss": 0.7135430319551869,
+   "tokens": 1283
+  },
+  {
+   "song_id": "6I3A7q18EJgbdZf2Zx1wxm",
+   "loss": 0.354603375215982,
+   "tokens": 2347
+  },
+  {
+   "song_id": "6M8dGV2alakIhqDFNFIEfg",
+   "loss": 0.3605282282620571,
+   "tokens": 1493
+  },
+  {
+   "song_id": "6N1sew50IOyienxE3u6WEM",
+   "loss": 0.24189442308981796,
+   "tokens": 1649
+  },
+  {
+   "song_id": "6NgFmG5lumvnyBEpjye3Rd",
+   "loss": 0.37305947604785417,
+   "tokens": 2579
+  },
+  {
+   "song_id": "6NqPOID1RsXpj7IAEsgd2v",
+   "loss": 0.30112279151919835,
+   "tokens": 1978
+  },
+  {
+   "song_id": "6TCciGLZyMSTZDJDmrdVSI",
+   "loss": 0.5078003829468215,
+   "tokens": 1982
+  },
+  {
+   "song_id": "6URmER9CypxglzgwthpWTU",
+   "loss": 0.48831729747352925,
+   "tokens": 2545
+  },
+  {
+   "song_id": "6W6bjaq3SpD6OMuxWgPM9X",
+   "loss": 0.5010327903093051,
+   "tokens": 1805
+  },
+  {
+   "song_id": "6WGLxfoN1BIjmIJYcb2Wwn",
+   "loss": 0.5344457690520221,
+   "tokens": 1635
+  },
+  {
+   "song_id": "6XwWuAFFTqL2IoPdeA4iis",
+   "loss": 0.6159870227912563,
+   "tokens": 1870
+  },
+  {
+   "song_id": "6alSXplRoBcYCNHKqJDWPz",
+   "loss": 0.5219313494292164,
+   "tokens": 1438
+  },
+  {
+   "song_id": "6ast0Gzj3H6MgDfkRHZxx1",
+   "loss": 0.4593169304543184,
+   "tokens": 1704
+  },
+  {
+   "song_id": "6bPSr7yKukRjAGk9cIkJ4J",
+   "loss": 0.5107456057413209,
+   "tokens": 1318
+  },
+  {
+   "song_id": "6ceBOPyGnJnumkJ2wOTt7D",
+   "loss": 0.418412498238407,
+   "tokens": 2106
+  },
+  {
+   "song_id": "6coZcwGP3Cmhyqzvp6sEJS",
+   "loss": 0.5103203486667806,
+   "tokens": 1501
+  },
+  {
+   "song_id": "6gkCBQjjSFX0UctwaFFdL2",
+   "loss": 0.3168124062142405,
+   "tokens": 2690
+  },
+  {
+   "song_id": "6i6Lrq6Lkfsjw4WCLOr6zp",
+   "loss": 0.521226276894495,
+   "tokens": 2497
+  },
+  {
+   "song_id": "6jK3PQWd5QOPHLAJw6nvCD",
+   "loss": 0.4091676659791465,
+   "tokens": 1807
+  },
+  {
+   "song_id": "6lyPKJbCwZEiOtxwXxTDLD",
+   "loss": 0.39539985705732694,
+   "tokens": 2725
+  },
+  {
+   "song_id": "6n5cdQsg6li2aDYUGUiL5l",
+   "loss": 0.41270996428419443,
+   "tokens": 2147
+  },
+  {
+   "song_id": "6oFUns8NczIrmLbQOLYJhD",
+   "loss": 0.4474019821517157,
+   "tokens": 1475
+  },
+  {
+   "song_id": "6ousLSFH3faAPCokCk2gCm",
+   "loss": 0.34250260807832456,
+   "tokens": 1597
+  },
+  {
+   "song_id": "6pQe06VbPHfAD9MVV7y7ed",
+   "loss": 0.5491980762528802,
+   "tokens": 2082
+  },
+  {
+   "song_id": "6tnnVnCMhhIbXsnReXa0KX",
+   "loss": 0.38274564167217845,
+   "tokens": 2108
+  },
+  {
+   "song_id": "72HBFpZW26bT1E0POMsQUW",
+   "loss": 0.42766508012807886,
+   "tokens": 1772
+  },
+  {
+   "song_id": "72yPhoXJHKpAeCt99RLdK4",
+   "loss": 0.4067121668535612,
+   "tokens": 1787
+  },
+  {
+   "song_id": "75eCpTAhv6j4enqG1OMBOg",
+   "loss": 0.48293155074395044,
+   "tokens": 1002
+  },
+  {
+   "song_id": "7DWvcbGGWWtk0edvck09X3",
+   "loss": 0.5196695871240716,
+   "tokens": 1914
+  },
+  {
+   "song_id": "7DeY1fKszqaJKtXUk1NiiH",
+   "loss": 0.2602949105598181,
+   "tokens": 2349
+  },
+  {
+   "song_id": "7G1ifUUwRSuQCc8wnDgi6T",
+   "loss": 0.5935166415615789,
+   "tokens": 1583
+  },
+  {
+   "song_id": "7Ga5M55lfOVkuHxzUgk4ZX",
+   "loss": 0.4090466680964872,
+   "tokens": 2308
+  },
+  {
+   "song_id": "7IE2jtO8pkWtcSdj71OnlT",
+   "loss": 0.22742688447482992,
+   "tokens": 2780
+  },
+  {
+   "song_id": "7fnhHkS67SrSqsWpwkD6CM",
+   "loss": 0.5279279921894384,
+   "tokens": 1692
+  },
+  {
+   "song_id": "7iUYsnszotTdqXyh8tzQlZ",
+   "loss": 0.5005799273536296,
+   "tokens": 1801
+  },
+  {
+   "song_id": "7jDM04sebBiBcWysWcvSFx",
+   "loss": 0.5915185164338966,
+   "tokens": 2197
+  },
+  {
+   "song_id": "7ntQ7iPTYMS4LLAumzJQ7R",
+   "loss": 0.3660716578365317,
+   "tokens": 1533
+  },
+  {
+   "song_id": "7omMiE6h9Js24Cr22A0Fbv",
+   "loss": 0.4008608347948365,
+   "tokens": 1931
+  },
+  {
+   "song_id": "7ozbJ4EX6Ps7AqVpZ2sDnT",
+   "loss": 0.7756497382519171,
+   "tokens": 1802
+  },
+  {
+   "song_id": "7q5MNn6t2YpWawZvWDpAhv",
+   "loss": 0.5561413588513615,
+   "tokens": 3057
+  },
+  {
+   "song_id": "7qDiugtLVz4njwHDGCfdB5",
+   "loss": 0.386633595452763,
+   "tokens": 2518
+  },
+  {
+   "song_id": "7urNxXDmuL6xVKEOoEY41E",
+   "loss": 0.40211819945032806,
+   "tokens": 1810
+  },
+  {
+   "song_id": "7v46DZBqB4xmaTHRygC8gy",
+   "loss": 0.6527433344747676,
+   "tokens": 2112
+  },
+  {
+   "song_id": "7ya27A8QscYolruZhE2dAy",
+   "loss": 0.4468203180901455,
+   "tokens": 2248
+  },
+  {
+   "song_id": "7zvq0c9K75w1mijevp7GPQ",
+   "loss": 0.446427363685024,
+   "tokens": 2031
+  }
+ ]
+}

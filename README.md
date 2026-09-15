@@ -68,3 +68,26 @@ python scripts/generate_eval.py --checkpoint experiments/<run>/final_model \
 ```
 
 The exact commands, job ids and dataset path used for the reported results are listed in `reports/REPORT.md`.
+
+To reproduce the full evaluation of one checkpoint (4 generation shards + probes + aggregation, with dependencies):
+
+```bash
+CKPT=experiments/<run>/final_model OUT=experiments/<run>/eval_test SHARDS=4 NUM_SONGS=0 bash scripts/slurm/submit_eval.sh
+python scripts/eval_loss.py --checkpoint experiments/<run>/final_model --data-dir data/generated/abc_v1_20260915_012459 \
+  --split test --output experiments/<run>/loss_test.json
+python scripts/compare_results.py --run A=experiments/direct_sft_<ts> --run B=experiments/cpt_then_sft_<ts> > table.md
+```
+
+## Results so far (225 de-duplicated held-out songs; details in `reports/REPORT.md`)
+
+Two training seeds per arm (seed 1234 / seed 2345):
+
+| | direct SFT | CPT → SFT |
+|---|---|---|
+| test loss (nats/token) | 0.4837 / 0.4833 | 0.4809 / 0.4802 |
+| parse / strict-valid ABC | 100% / 67%, 60% | 100% / 60%, 60% |
+| lyric recall (in order) | 0.956 / 0.931 | 0.885 / 0.832 |
+| section plan exactly as requested | 0.55 / 0.63 | 0.32 / 0.34 |
+| songs ending before the requested structure | 9 / 13 | 45 / 62 |
+
+Direct SFT is sufficient; same-data CPT lowers loss but hurts prompt adherence.

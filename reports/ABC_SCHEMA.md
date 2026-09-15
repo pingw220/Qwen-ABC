@@ -125,11 +125,11 @@ Q:1/4=125
 K:B
 P:intro
 "B"z8 | z8 | z8 | z8 |
-z8 | z8 | "Abm"z4 "F#"z4 | "B"z8 |
+z8 | z8 | "G#m"z4 "F#"z4 | "B"z8 |
 P:verse
 z2 B, B,3/ B,2 B,3/ | B,2 C B,3/ C3/ D z | z F, F, G F2 G2 | F8- |
 w: 月 台 火 车 | 在 _ _ 开 动 | 祝 你 一 路 顺 | 风
-F3/ z2 D F2 F D/ | "Ebm"F3 F D C B, z | "E"z2 C D3/ B,5/ G, | "F#"F,15/ z/ |
+F3/ z2 D F2 F D/ | "D#m"F3 F D C B, z | "E"z2 C D3/ B,5/ G, | "F#"F,15/ z/ |
 w: 甜 酸 苦 _ | 辣 在 无 言 中 | 尽 在 无 言 | 中
 ```
 
