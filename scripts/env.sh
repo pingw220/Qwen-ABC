@@ -10,3 +10,4 @@ export PYTHONUNBUFFERED=1
 # compute nodes lack python3.12-devel; Triton (flash-linear-attention kernels) needs Python.h
 export CPATH="$QWEN_ABC_ROOT/.venv/py312-include/python3.12${CPATH:+:$CPATH}"
 export TRITON_CACHE_DIR="$QWEN_ABC_ROOT/.venv/triton-cache"
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True

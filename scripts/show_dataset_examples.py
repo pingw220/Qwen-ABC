@@ -24,9 +24,15 @@ def main() -> None:
     args = ap.parse_args()
 
     rows = [json.loads(l) for l in open(args.data_dir / f"sft_{args.split}.jsonl", encoding="utf-8")]
-    songs = {json.loads(l)["song_id"]: json.loads(l) for l in open(args.data_dir / f"songs_{args.split}.jsonl", encoding="utf-8")}
     step = max(len(rows) // args.n, 1)
     picked = rows[::step][: args.n]
+    wanted = {r["song_id"] for r in picked}
+    songs = {}
+    with open(args.data_dir / f"songs_{args.split}.jsonl", encoding="utf-8") as fh:  # stream: the file is large
+        for line in fh:
+            sid = line[len('{"song_id": "'):].split('"', 1)[0]
+            if sid in wanted:
+                songs[sid] = json.loads(line)
     out = []
     for r in picked:
         s = songs[r["song_id"]]

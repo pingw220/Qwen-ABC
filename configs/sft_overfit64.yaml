@@ -1,0 +1,18 @@
+# Sanity check: can the model memorize 64 lead sheets? (train == eval set)
+mode: sft
+model_name_or_path: Qwen/Qwen3.5-0.8B-Base
+data_dir: data/generated/abc_v1_20260915_012459
+train_file: data/generated/abc_v1_20260915_012459/sft_overfit64.jsonl
+eval_file: data/generated/abc_v1_20260915_012459/sft_overfit64.jsonl
+output_dir: experiments/CHANGE_ME
+max_seq_len: 8192
+tokens_per_micro_batch: 16384
+tokens_per_update: 32768
+epochs: 30
+learning_rate: 1.0e-4
+warmup_ratio: 0.05
+eval_every: 20
+eval_limit: 64
+resume_every: 0
+save_every_epoch: false
+seed: 1234

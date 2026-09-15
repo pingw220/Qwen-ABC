@@ -126,3 +126,19 @@ def test_bar_regularization_keeps_anchors_and_beats():
     assert st["irregular_runs_regularized"] == 2 and st["irregular_runs_packed_with_remainder"] == 1
     # a single odd-length bar is left alone
     assert _regularize_bars([0, 4, 9, 13], {0}, 4, Counter()) == [0, 4, 9, 13]
+
+
+def test_leakage_resolution_is_order_independent():
+    import random
+
+    songs = [song_with(LYR_A, PITCH_A, "t1"), song_with(LYR_B, PITCH_B, "t2"),
+             song_with(LYR_A[::-1], PITCH_B[::-1], "t3")]
+    held = [song_with(LYR_A, PITCH_B, "h1"), song_with(LYR_B[::-1], PITCH_A[::-1], "h2")]
+    rows = rows_for({"train": songs, "test": held[:1], "validation": held[1:]})
+    items = list(rows.items())
+    results = set()
+    for seed in range(5):
+        random.Random(seed).shuffle(items)
+        final, ex = resolve_leakage(dict(items), 0.3, 0.3)
+        results.add((tuple(sorted(final.items())), tuple(sorted((e["song_id"], e["reason"]) for e in ex))))
+    assert len(results) == 1

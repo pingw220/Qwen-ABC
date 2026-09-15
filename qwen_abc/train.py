@@ -52,6 +52,7 @@ class TrainConfig:
     adam_beta2: float = 0.95
     grad_clip: float = 1.0
     eval_every: int = 100
+    resume_every: int = 100  # steps between resumable snapshots (overwritten); 0 disables
     save_every_epoch: bool = True
     save_final: bool = True
     seed: int = 1234
@@ -126,7 +127,7 @@ def _ce_chunk(hidden: torch.Tensor, target: torch.Tensor, weight: torch.Tensor) 
     return torch.nn.functional.cross_entropy(logits, target, reduction="sum")
 
 
-def token_nll_sum(model, batch: Dict[str, torch.Tensor], chunk: int = 2048) -> (torch.Tensor, int):
+def token_nll_sum(model, batch: Dict[str, torch.Tensor], chunk: int = 512) -> (torch.Tensor, int):
     """Summed NLL over supervised positions without materializing full logits.
 
     A 248k-row vocabulary makes (tokens x vocab) logits the dominant memory
@@ -255,14 +256,24 @@ def train(cfg: TrainConfig) -> None:
         print(json.dumps(row), flush=True)
 
     t0 = time.time()
-    emit({"step": 0, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
+    step, epoch, tokens_seen, resume_group = 0, 0, 0, 0
+    state_path = out / "resume_state" / "state.pt"
+    if state_path.exists():
+        state = torch.load(state_path, map_location="cpu", weights_only=False)
+        model.load_state_dict(state["model"])
+        opt.load_state_dict(state["optimizer"])
+        step, epoch, tokens_seen, resume_group = state["step"], state["epoch"], state["tokens_seen"], state["next_group"]
+        torch.set_rng_state(state["torch_rng"])
+        emit({"step": step, "resumed": True, "epoch": epoch, "next_group": resume_group,
+              "slurm_job_id": os.environ.get("SLURM_JOB_ID")})
+        del state
+    else:
+        emit({"step": 0, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
     model.train()
-    step, epoch = 0, 0
-    tokens_seen = 0
-    done = False
+    done = step >= total_steps
     while not done:
         batches = make_batches(train_ex, cfg.tokens_per_micro_batch, random.Random(cfg.seed + epoch))
-        for start in range(0, len(batches), accum):
+        for start in range(resume_group, len(batches), accum):
             group = batches[start: start + accum]
             n_sup = sum(sum(1 for x in train_ex[i]["labels"][1:] if x != -100) for b in group for i in b)
             lr = lr_at(step, total_steps, cfg)
@@ -289,13 +300,28 @@ def train(cfg: TrainConfig) -> None:
             if step >= total_steps:
                 done = True
                 break
+            if cfg.resume_every and step % cfg.resume_every == 0:
+                snapshot(state_path, model, opt, step, epoch, tokens_seen, start + accum)
+        resume_group = 0
         epoch += 1
         if cfg.save_every_epoch and not done:
             save(model, tok, out / f"epoch-{epoch}", resolved)
     emit({"step": step, "final": True, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
     if cfg.save_final:
         save(model, tok, out / "final_model", resolved)
-    emit({"step": step, "done": True, "elapsed_hours": round((time.time() - t0) / 3600, 3)})
+    emit({"step": step, "done": True, "elapsed_hours_this_job": round((time.time() - t0) / 3600, 3)})
+    if state_path.exists():  # a finished run needs no resume snapshot (9 GB)
+        state_path.unlink()
+        state_path.parent.rmdir()
+
+
+def snapshot(path: Path, model, opt, step: int, epoch: int, tokens_seen: int, next_group: int) -> None:
+    """Atomically write everything needed to continue after preemption."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    torch.save({"model": model.state_dict(), "optimizer": opt.state_dict(), "step": step, "epoch": epoch,
+                "tokens_seen": tokens_seen, "next_group": next_group, "torch_rng": torch.get_rng_state()}, tmp)
+    os.replace(tmp, path)
 
 
 def save(model, tok, path: Path, resolved: dict) -> None:

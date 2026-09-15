@@ -11,3 +11,7 @@ experiments/*/**/*.safetensors
 experiments/*/**/*.bin
 experiments/*/**/*.pt
 logs/
+experiments/**/generations/
+experiments/**/probes/
+experiments/**/resume_state/
+experiments/**/epoch-*/

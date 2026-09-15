@@ -1,0 +1,14 @@
+{
+ "checkpoint": "experiments/sanity_overfit64_20260915_015134/final_model",
+ "data_dir": "data/generated/abc_v1_20260915_012459",
+ "output_dir": "experiments/sanity_overfit64_20260915_015134/gen_memorized8",
+ "split": "train",
+ "num_songs": "8",
+ "seeds": "1",
+ "temperature": "0.0",
+ "top_p": "0.95",
+ "max_new_tokens": "7680",
+ "song_ids_from": "data/generated/abc_v1_20260915_012459/sft_overfit8.jsonl",
+ "probes": "False",
+ "num_probe_songs": "20"
+}
