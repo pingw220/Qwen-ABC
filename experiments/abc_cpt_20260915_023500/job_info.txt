@@ -1,0 +1,4 @@
+job=40171256 host=g3106 partition=ckpt-all
+NVIDIA L40S, 46068 MiB
+commit=7d792b1d2bd0ff45479133f4cd0f500b73bf9038 dirty_files=12
+overrides=

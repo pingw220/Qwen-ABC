@@ -74,7 +74,7 @@ For comparison, MIDI-LLM one-stage v3 needs a median of 3,969 tokens per song (c
 | Syllables listed in the prompt == syllables sung in the ABC, in order | 10,741 / 10,741 |
 | Chord symbols that fail the chord grammar | 0 of 876,828 |
 | Malformed examples | 0 |
-| Deterministic rebuild (independent second build, sha256 of all 11 output files) | see §7 |
+| Deterministic rebuild (independent second build, sha256 of all 11 output files) | **identical** (§7) |
 
 ## 4. Content coverage (all kept songs)
 
@@ -138,4 +138,4 @@ None of these is fixable inside the ABC conversion without new upstream analysis
 
 ## 7. Determinism
 
-The same command was run again into a separate directory (Slurm job 40171068). The two builds' `files_sha256` were compared; the result is in the job log `logs/slurm/qwenabc-determinism-40171068.out` and recorded in REPORT.md.
+The same build command was run again on a different node into a separate directory (Slurm job 40171068). The sha256 of all 11 output files (`songs_*`, `sft_*`, `cpt_*`, `split_manifest.json`, `exclusions.jsonl`) is **identical** to the original build. The duplicate directory was then removed.

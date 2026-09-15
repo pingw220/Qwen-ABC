@@ -9,6 +9,6 @@ cp "$CONFIG" "$RUN_DIR/config.yaml"
 { echo "job=${SLURM_JOB_ID:-none} host=$(hostname) partition=${SLURM_JOB_PARTITION:-none}"
   nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
   echo "commit=$(git rev-parse HEAD 2>/dev/null || echo none) dirty_files=$(git status --porcelain 2>/dev/null | wc -l)"
-  echo "overrides=${OVERRIDES:-}"; } | tee "$RUN_DIR/job_info.txt"
+  echo "overrides=${OVERRIDES:-}"; } | tee -a "$RUN_DIR/job_info.txt"
 python scripts/train.py "$CONFIG" output_dir="$RUN_DIR" ${OVERRIDES:-} 2>&1 | tee -a "$RUN_DIR/stdout.log"
 echo TRAIN_OK

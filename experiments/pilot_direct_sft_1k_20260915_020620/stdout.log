@@ -50,3 +50,11 @@ Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/cs
   loss_sum += float(nll)
 {"step": 1, "epoch": 0.053, "loss": 1.2864411986530961, "lr": 5e-05, "grad_norm": 9.730594635009766, "tokens_seen": 121903, "max_mem_gb": 11.23, "time": 58.7}
 {"step": 10, "epoch": 0.53, "loss": 1.220564363211415, "lr": 4.500580447216489e-05, "grad_norm": 9.849971771240234, "tokens_seen": 1211487, "max_mem_gb": 16.01, "time": 236.9}
+{"step": 10, "eval_loss": 1.0902785846956666, "eval_ppl": 2.9751027752269796, "eval_tokens": 519192, "time": 259.1}
+{"step": 20, "epoch": 1.053, "loss": 0.8578632596689326, "lr": 2.845492707191334e-05, "grad_norm": 4.056532859802246, "tokens_seen": 2390225, "max_mem_gb": 16.01, "time": 453.2}
+{"step": 20, "eval_loss": 0.8365878212714419, "eval_ppl": 2.3084765880193556, "eval_tokens": 519192, "time": 475.4}
+{"step": 30, "epoch": 1.583, "loss": 0.7603075961317166, "lr": 1.1255987886023202e-05, "grad_norm": 1.596359133720398, "tokens_seen": 3592439, "max_mem_gb": 16.01, "time": 661.6}
+{"step": 30, "eval_loss": 0.7505982374490675, "eval_ppl": 2.1182668642023414, "eval_tokens": 519192, "time": 683.8}
+{"step": 38, "final": true, "eval_loss": 0.7230389999328283, "eval_ppl": 2.0606861295306604, "eval_tokens": 519192, "time": 853.1}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]
+{"step": 38, "done": true, "elapsed_hours_this_job": 0.237, "time": 854.2}

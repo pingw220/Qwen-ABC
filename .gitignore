@@ -15,3 +15,5 @@ experiments/**/generations/
 experiments/**/probes/
 experiments/**/resume_state/
 experiments/**/epoch-*/
+experiments/samples_*/
+*.wav

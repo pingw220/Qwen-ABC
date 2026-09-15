@@ -1,0 +1,52 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:01<10:19,  1.94s/it]Loading weights:  12%|█▏        | 37/320 [00:02<00:11, 23.96it/s]Loading weights:  16%|█▌        | 50/320 [00:02<00:10, 25.08it/s]Loading weights:  19%|█▉        | 61/320 [00:02<00:08, 31.70it/s]Loading weights:  23%|██▎       | 75/320 [00:02<00:05, 42.97it/s]Loading weights:  27%|██▋       | 86/320 [00:02<00:04, 49.50it/s]Loading weights:  30%|███       | 96/320 [00:03<00:05, 41.03it/s]Loading weights:  33%|███▎      | 106/320 [00:03<00:05, 42.61it/s]Loading weights:  38%|███▊      | 120/320 [00:03<00:05, 39.59it/s]Loading weights:  42%|████▏     | 133/320 [00:04<00:05, 35.11it/s]Loading weights:  44%|████▍     | 142/320 [00:04<00:04, 39.68it/s]Loading weights:  47%|████▋     | 151/320 [00:04<00:04, 38.84it/s]Loading weights:  49%|████▉     | 157/320 [00:04<00:03, 40.97it/s]Loading weights:  52%|█████▏    | 167/320 [00:05<00:03, 41.78it/s]Loading weights:  55%|█████▌    | 177/320 [00:05<00:02, 49.18it/s]Loading weights:  58%|█████▊    | 187/320 [00:05<00:02, 45.55it/s]Loading weights:  62%|██████▏   | 199/320 [00:06<00:04, 28.19it/s]Loading weights:  66%|██████▋   | 212/320 [00:06<00:02, 37.78it/s]Loading weights:  68%|██████▊   | 219/320 [00:06<00:02, 40.59it/s]Loading weights:  70%|███████   | 225/320 [00:06<00:02, 39.07it/s]Loading weights:  72%|███████▏  | 231/320 [00:06<00:02, 37.35it/s]Loading weights:  75%|███████▌  | 240/320 [00:06<00:01, 44.75it/s]Loading weights:  78%|███████▊  | 250/320 [00:07<00:01, 47.50it/s]Loading weights:  83%|████████▎ | 265/320 [00:07<00:00, 66.25it/s]Loading weights:  86%|████████▌ | 274/320 [00:07<00:00, 60.45it/s]Loading weights:  88%|████████▊ | 282/320 [00:07<00:00, 53.38it/s]Loading weights:  94%|█████████▍| 301/320 [00:07<00:00, 78.59it/s]Loading weights:  97%|█████████▋| 311/320 [00:07<00:00, 73.49it/s]Loading weights: 100%|██████████| 320/320 [00:07<00:00, 40.45it/s]
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v1_20260915_012459",
+ "output_dir": "experiments/control_direct_sft_tokmatched_20260915_023500",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": null,
+ "eval_file": null,
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 131072,
+ "epochs": 2.85,
+ "max_steps": 0,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 50,
+ "resume_every": 50,
+ "save_every_epoch": true,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 10243,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 23103191,
+ "train_supervised_tokens": 19509126,
+ "micro_batches_per_epoch": 1528,
+ "grad_accum": 8,
+ "steps_per_epoch": 191,
+ "total_steps": 545,
+ "n_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40171258",
+ "transformers": "5.17.0"
+}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"step": 0, "eval_loss": 1.3022718756229632, "eval_ppl": 3.677642329835481, "eval_tokens": 519192, "time": 31.7}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:288: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 1, "epoch": 0.005, "loss": 1.325394548889327, "lr": 3.125e-06, "grad_norm": 10.366985321044922, "tokens_seen": 121472, "max_mem_gb": 11.23, "time": 59.4}
+{"step": 10, "epoch": 0.052, "loss": 0.9647028099748042, "lr": 3.125e-05, "grad_norm": 9.060527801513672, "tokens_seen": 1194588, "max_mem_gb": 16.01, "time": 226.7}

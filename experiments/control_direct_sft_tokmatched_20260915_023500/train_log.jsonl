@@ -1,0 +1,3 @@
+{"step": 0, "eval_loss": 1.3022718756229632, "eval_ppl": 3.677642329835481, "eval_tokens": 519192, "time": 31.7}
+{"step": 1, "epoch": 0.005, "loss": 1.325394548889327, "lr": 3.125e-06, "grad_norm": 10.366985321044922, "tokens_seen": 121472, "max_mem_gb": 11.23, "time": 59.4}
+{"step": 10, "epoch": 0.052, "loss": 0.9647028099748042, "lr": 3.125e-05, "grad_norm": 9.060527801513672, "tokens_seen": 1194588, "max_mem_gb": 16.01, "time": 226.7}

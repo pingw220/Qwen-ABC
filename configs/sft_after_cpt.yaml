@@ -13,6 +13,6 @@ warmup_ratio: 0.03
 weight_decay: 0.0
 grad_clip: 1.0
 eval_every: 50
-resume_every: 100
+resume_every: 50
 eval_limit: 256
 seed: 1234

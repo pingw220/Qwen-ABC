@@ -1,0 +1,52 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:01<05:47,  1.09s/it]Loading weights:   9%|▉         | 28/320 [00:01<00:10, 28.19it/s]Loading weights:  12%|█▏        | 39/320 [00:01<00:07, 37.58it/s]Loading weights:  15%|█▌        | 48/320 [00:01<00:07, 34.47it/s]Loading weights:  19%|█▉        | 61/320 [00:01<00:05, 43.49it/s]Loading weights:  21%|██▏       | 68/320 [00:02<00:08, 29.78it/s]Loading weights:  29%|██▉       | 94/320 [00:02<00:04, 47.95it/s]Loading weights:  32%|███▏      | 101/320 [00:02<00:05, 42.25it/s]Loading weights:  33%|███▎      | 107/320 [00:03<00:04, 44.45it/s]Loading weights:  36%|███▌      | 114/320 [00:03<00:04, 45.14it/s]Loading weights:  38%|███▊      | 120/320 [00:03<00:04, 45.21it/s]Loading weights:  42%|████▏     | 134/320 [00:03<00:03, 59.82it/s]Loading weights:  45%|████▍     | 143/320 [00:03<00:02, 62.32it/s]Loading weights:  47%|████▋     | 150/320 [00:04<00:04, 34.63it/s]Loading weights:  49%|████▉     | 156/320 [00:04<00:04, 37.41it/s]Loading weights:  51%|█████     | 162/320 [00:04<00:03, 40.71it/s]Loading weights:  52%|█████▎    | 168/320 [00:04<00:04, 37.81it/s]Loading weights:  54%|█████▍    | 173/320 [00:04<00:04, 35.95it/s]Loading weights:  56%|█████▌    | 178/320 [00:04<00:04, 33.50it/s]Loading weights:  58%|█████▊    | 185/320 [00:05<00:04, 32.55it/s]Loading weights:  62%|██████▏   | 198/320 [00:05<00:03, 38.25it/s]Loading weights:  63%|██████▎   | 202/320 [00:05<00:03, 37.15it/s]Loading weights:  66%|██████▋   | 212/320 [00:05<00:02, 45.74it/s]Loading weights:  70%|██████▉   | 223/320 [00:05<00:01, 56.92it/s]Loading weights:  73%|███████▎  | 235/320 [00:05<00:01, 65.13it/s]Loading weights:  76%|███████▌  | 242/320 [00:05<00:01, 64.20it/s]Loading weights:  78%|███████▊  | 249/320 [00:06<00:01, 54.26it/s]Loading weights:  80%|███████▉  | 255/320 [00:06<00:01, 50.03it/s]Loading weights:  82%|████████▏ | 261/320 [00:06<00:01, 43.85it/s]Loading weights:  85%|████████▌ | 273/320 [00:06<00:00, 59.35it/s]Loading weights:  88%|████████▊ | 280/320 [00:06<00:01, 37.56it/s]Loading weights:  94%|█████████▍| 302/320 [00:07<00:00, 49.21it/s]Loading weights:  96%|█████████▋| 308/320 [00:07<00:00, 42.65it/s]Loading weights: 100%|██████████| 320/320 [00:07<00:00, 42.18it/s]
+{
+ "mode": "cpt",
+ "data_dir": "data/generated/abc_v1_20260915_012459",
+ "output_dir": "experiments/abc_cpt_20260915_023500",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": null,
+ "eval_file": null,
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 131072,
+ "epochs": 1,
+ "max_steps": 0,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 50,
+ "resume_every": 50,
+ "save_every_epoch": true,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 10243,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 19509126,
+ "train_supervised_tokens": 19509126,
+ "micro_batches_per_epoch": 1271,
+ "grad_accum": 8,
+ "steps_per_epoch": 159,
+ "total_steps": 159,
+ "n_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40171256",
+ "transformers": "5.17.0"
+}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"step": 0, "eval_loss": 1.628315513016056, "eval_ppl": 5.095284545054596, "eval_tokens": 518936, "time": 28.0}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:288: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 1, "epoch": 0.006, "loss": 1.6493007488882798, "lr": 1.25e-05, "grad_norm": 9.625104904174805, "tokens_seen": 123184, "max_mem_gb": 11.23, "time": 50.7}
+{"step": 10, "epoch": 0.063, "loss": 1.2553055957433799, "lr": 4.9884559776317644e-05, "grad_norm": 5.766921520233154, "tokens_seen": 1222747, "max_mem_gb": 16.01, "time": 233.8}
