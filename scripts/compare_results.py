@@ -181,6 +181,24 @@ def main() -> None:
               f"{g('key_change', 'baseline_in_new_scale'):.2f} |")
     print()
 
+    # greedy probes (deterministic decoding: any change is caused by the condition)
+    print("| run | lyric swap: new lyrics recall | old lyrics recall | melody distance | pitch-contour distance | "
+          "tritone key: in new scale | in old scale | before: in new / old scale |")
+    print("|---|---|---|---|---|---|---|---|")
+    for n in names:
+        pg = summaries.get(n, {}).get("probes_greedy")
+        if not pg:
+            continue
+
+        def h(sec, k):
+            return pg.get(sec, {}).get(k, {}).get("mean", float("nan"))
+
+        print(f"| {n} | {h('lyric_swap', 'lyric_recall_new'):.3f} | {h('lyric_swap', 'lyric_recall_of_old_lyrics'):.3f} | "
+              f"{h('lyric_swap', 'melody_distance'):.3f} | {h('lyric_swap', 'pitch_contour_distance'):.3f} | "
+              f"{h('key_tritone', 'in_new_scale'):.3f} | {h('key_tritone', 'in_old_scale'):.3f} | "
+              f"{h('key_tritone', 'baseline_in_new_scale'):.3f} / {h('key_tritone', 'baseline_in_old_scale'):.3f} |")
+    print()
+
     # loss by category
     cats = ["pitch", "duration", "lyric_text", "lyric_marker", "lyric_bar", "chord", "bar", "rest", "tie", "structure"]
     print("| run | " + " | ".join(cats) + " |")

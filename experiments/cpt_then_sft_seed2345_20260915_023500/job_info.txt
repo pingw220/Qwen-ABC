@@ -1,0 +1,4 @@
+job=40173063 host=g3100 partition=ckpt-all
+NVIDIA L40S, 46068 MiB
+commit=a403bfed9a5b137683b5e5b7f30cf4b34ae68967 dirty_files=23
+overrides=seed=2345 model_name_or_path=experiments/abc_cpt_20260915_023500/final_model

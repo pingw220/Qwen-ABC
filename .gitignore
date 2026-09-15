@@ -17,3 +17,6 @@ experiments/**/resume_state/
 experiments/**/epoch-*/
 experiments/samples_*/
 *.wav
+experiments/midi_llm_*/gen/
+experiments/midi_llm_*/specs/
+experiments/midi_llm_*/logs_*.txt

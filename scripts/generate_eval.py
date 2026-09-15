@@ -84,10 +84,11 @@ def melody_distance(a: Song, b: Song) -> float:
     return 1 - lcs_len(ta, tb) / max(len(ta), len(tb), 1)
 
 
-def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict):
+def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, temperature=None):
     if out_path.exists():
         return json.loads(out_path.read_text(encoding="utf-8"))
-    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, args.temperature, args.top_p)
+    temp = args.temperature if temperature is None else temperature
+    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, temp, args.top_p)
     res = parse_abc(gen["text"], meta.get("song_id", "gen"))
     row = {**meta, "seed": seed, "prompt": prompt, "generation": gen["text"], "new_tokens": gen["new_tokens"],
            "hit_eos": gen["hit_eos"], "seconds": gen["seconds"], "parse_ok": res.ok, "strict_ok": res.strict_ok,
@@ -128,6 +129,7 @@ def main() -> None:
     ap.add_argument("--shard", type=int, default=0)
     ap.add_argument("--num-shards", type=int, default=1, help=">1: generate only this shard, write no summary")
     ap.add_argument("--probes-only", action="store_true", help="generate probe outputs only (for a separate job)")
+    ap.add_argument("--greedy-probes-only", action="store_true", help="generate the greedy probe set only")
     ap.add_argument("--aggregate-only", action="store_true", help="no model: summarize cached generations")
     args = ap.parse_args()
     out = args.output_dir
@@ -141,15 +143,15 @@ def main() -> None:
     if not args.aggregate_only:
         model, tok = load_for_generation(args.checkpoint)
 
-    def cached_or_generate(prompt, spec, seed, path, meta):
+    def cached_or_generate(prompt, spec, seed, path, meta, temperature=None):
         if args.aggregate_only:
             if not path.exists():
                 raise SystemExit(f"missing generation {path}; run the generation shards first")
             return json.loads(path.read_text(encoding="utf-8"))
-        return run_one(model, tok, prompt, spec, seed, args, path, meta)
+        return run_one(model, tok, prompt, spec, seed, args, path, meta, temperature)
 
     gen_rows, ref_rows, gen_songs, ref_songs = [], [], [], []
-    main_songs = [] if args.probes_only else (songs[args.shard:: args.num_shards] if sharded else songs)
+    main_songs = [] if (args.probes_only or args.greedy_probes_only) else (songs[args.shard:: args.num_shards] if sharded else songs)
     for i, r in enumerate(main_songs):
         ref = Song.from_json(r["song"])
         ref_parse = parse_abc(r["abc"], r["song_id"])
@@ -172,6 +174,10 @@ def main() -> None:
 
     if sharded and not args.probes_only:
         print("SHARD_DONE")
+        return
+    if args.greedy_probes_only:
+        run_greedy_probes(songs[: args.num_probe_songs], out, cached_or_generate)
+        print("GREEDY_PROBES_DONE")
         return
     if args.probes_only:
         probe_songs = songs[: args.num_probe_songs]
@@ -197,6 +203,8 @@ def main() -> None:
 
     if args.probes or args.aggregate_only and (out / "probes").exists():
         summary["probes"] = run_probes(songs[: args.num_probe_songs], args, out, cached_or_generate)
+    if args.aggregate_only and (out / "probes_greedy").exists():
+        summary["probes_greedy"] = run_greedy_probes(songs[: args.num_probe_songs], out, cached_or_generate)
     (out / "summary.json").write_text(json.dumps(summary, indent=1, ensure_ascii=False), encoding="utf-8")
     print(json.dumps({k: v for k, v in summary.items() if k not in ("generated", "reference")}, indent=1))
     print("EVAL_DONE")
@@ -263,6 +271,64 @@ def run_probes(probe, args, out, gen):
         "tempo_change": aggregate(tempo_rows),
         "key_change": aggregate(key_rows),
     }
+
+
+def run_greedy_probes(probe, out, gen):
+    """Deterministic sensitivity: greedy decoding, so any change is caused by the condition.
+
+    * lyric swap: same structure/tempo/key, another song's lyrics re-flowed into the sections
+    * key change by a tritone (+6): shares only 2 of 7 scale degrees, unlike +5
+    """
+    d = out / "probes_greedy"
+    swaps, keys = [], []
+    names = ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
+    for i, r in enumerate(probe):
+        donor = probe[(i + 1) % len(probe)]
+        base = gen(spec_to_prompt(r["spec"]), r["spec"], 0, d / f"{r['song_id']}_base.json",
+                   {"song_id": r["song_id"], "kind": "greedy_base"}, 0.0)
+        spec2 = reflow_lyrics(r["spec"], donor["spec"])
+        swap = gen(spec_to_prompt(spec2), spec2, 0, d / f"{r['song_id']}_lyricswap.json",
+                   {"song_id": r["song_id"], "kind": "greedy_lyric_swap", "donor": donor["song_id"]}, 0.0)
+        parsed = parse_key_name(r["spec"].get("key"))
+        key = None
+        if parsed:
+            pc, mode = parsed
+            spec4 = copy.deepcopy(r["spec"])
+            spec4["key"] = canonical_key(f"{names[(pc + 6) % 12]} {mode}")
+            key = gen(spec_to_prompt(spec4), spec4, 0, d / f"{r['song_id']}_key6.json",
+                      {"song_id": r["song_id"], "kind": "greedy_key6"}, 0.0)
+        if not base.get("song"):
+            continue
+        b = Song.from_json(base["song"])
+        if swap.get("song"):
+            s2 = Song.from_json(swap["song"])
+            swaps.append({"melody_distance": melody_distance(b, s2),
+                          "pitch_contour_distance": contour_distance(b, s2),
+                          "lyric_recall_new": swap["metrics"]["lyric_recall"],
+                          "lyric_recall_of_old_lyrics": _recall_of(s2, r["spec"])})
+        if key is not None and key.get("song"):
+            s4 = Song.from_json(key["song"])
+            tonic = parse_key_name(spec4["key"])[0]
+            keys.append({"key_followed": float(s4.key == spec4["key"]),
+                         "in_new_scale": _in_scale_frac(s4, tonic, mode),
+                         "baseline_in_new_scale": _in_scale_frac(b, tonic, mode),
+                         "in_old_scale": _in_scale_frac(s4, pc, mode),
+                         "baseline_in_old_scale": _in_scale_frac(b, pc, mode)})
+    return {"n_songs": len(probe), "lyric_swap": aggregate(swaps), "key_tritone": aggregate(keys)}
+
+
+def contour_distance(a: Song, b: Song) -> float:
+    """1 - normalized LCS over the pitch-interval sequence (timing ignored)."""
+    ia = [str(y.pitch - x.pitch) for x, y in zip(a.notes, a.notes[1:])]
+    ib = [str(y.pitch - x.pitch) for x, y in zip(b.notes, b.notes[1:])]
+    return 1 - lcs_len(ia, ib) / max(len(ia), len(ib), 1)
+
+
+def _recall_of(song: Song, spec: dict) -> float:
+    from qwen_abc.prompt import spec_syllables
+    want = spec_syllables(spec)
+    got = [x for n in song.notes if n.lyric for x in n.lyric]
+    return lcs_len(want, got) / max(len(want), 1)
 
 
 def _in_scale_frac(song: Song, tonic: int, mode: str) -> float:
