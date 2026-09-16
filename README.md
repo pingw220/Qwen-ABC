@@ -26,12 +26,14 @@ Reports:
 * `reports/ABC_V2_DATASET_VALIDATION.md`: ABC-v2 dataset checks, determinism, leakage re-verification
 * `reports/CLEAN_TEST_SUBSET.md`: the 34-song clean subset, and model error vs label noise
 * `reports/LONG_STRUCTURE_EXPERIMENTS.md`: **round-2 results and verdict**
+* `reports/LEADSHEET_TO_AUDIO.md`: ABC → FastSinger → MuseControlLite, and the note↔syllable pairing it needs
 
 ## Layout
 
 ```
 qwen_abc/        library: canonical model, corpus adapter, ABC writer/parser, MIDI, prompt, splits, train, metrics
-                 round 2: abc_v2.py (counters), cleaning.py (section boundaries), longrange.py (E3 tasks)
+                 round 2: abc_v2.py (counters), cleaning.py (section boundaries), longrange.py (E3 tasks),
+                 leadsheet_midi.py + fastsinger.py (inputs for the FastSinger / MuseControlLite renderers)
 scripts/         build / validate / inspect dataset, train, generate+evaluate, samples
                  round 2: build_abc_v2_dataset.py, validate_abc_v2_dataset.py, build_longrange_tasks.py,
                  select_clean_subset.py, eval_continuation.py, eval_infill.py, compare_r2.py,
@@ -102,6 +104,16 @@ python scripts/make_samples.py --data-dir <dataset> --song-ids reports/listening
 
 MuseScore opens the `.musicxml` (melody, lyrics, chord symbols, section marks) and the `.mid` directly;
 plain `.abc` needs an ABC plugin or a tool such as EasyABC / abcjs. Requires `music21` and `verovio`.
+
+For a sung, full-band recording the lead sheet goes through FastSinger and MuseControlLite, the same
+two models MIDI-LLM's lead sheets go through — see `reports/LEADSHEET_TO_AUDIO.md`:
+
+```bash
+python scripts/export_leadsheet_midi.py --sample-dir experiments/<samples> --outdir experiments/<out>/leadsheets
+LEADSHEETS=$PWD/experiments/<out>/leadsheets OUT=<audio dir on /gscratch/ark> \
+    sbatch --chdir=$PWD/experiments/<out> scripts/slurm/midi_sag_render.sbatch
+python scripts/collect_midi_sag_audio.py --render-dir <audio dir> --sample-dir experiments/<samples>
+```
 
 ## Results
 

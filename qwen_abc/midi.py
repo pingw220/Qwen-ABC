@@ -6,7 +6,7 @@ tempo drift is not represented (see ABC_SCHEMA.md, lossy conversions).
 
 from __future__ import annotations
 
-from typing import List, Tuple
+from typing import List, Optional, Sequence, Tuple
 
 import mido
 
@@ -15,6 +15,7 @@ from .theory import key_to_abc, parse_chord_symbol
 
 PPQ = 480
 MIDI_PER_TICK = PPQ // TICKS_PER_BEAT
+CLICK_TICKS = PPQ // 8  # audible but well inside one beat
 
 
 def _abs_to_delta(events: List[Tuple[int, int, mido.Message]]) -> List[mido.Message]:
@@ -26,7 +27,22 @@ def _abs_to_delta(events: List[Tuple[int, int, mido.Message]]) -> List[mido.Mess
     return out
 
 
-def song_to_midi(song: Song, path: str, chord_velocity: int = 56) -> None:
+def song_to_midi(
+    song: Song,
+    path: str,
+    chord_velocity: int = 56,
+    markers: Optional[Sequence[Tuple[int, str]]] = None,
+    click: Optional[Tuple[int, int]] = None,
+) -> None:
+    """Write the song as a type-1 MIDI file.
+
+    ``markers`` replaces the default one-marker-per-section conductor text with
+    explicit ``(tick, text)`` pairs (ticks in canonical units, not PPQ), for
+    consumers that want a different marker spelling. ``click`` is a
+    ``(downbeat_pitch, beat_pitch)`` pair that adds a ``click_raw`` track on the
+    percussion channel, one note per beat of the score's own bar grid; the
+    downbeat pitch marks the first beat of every bar.
+    """
     mid = mido.MidiFile(type=1, ticks_per_beat=PPQ, charset="utf-8")
 
     # conductor: tempo, meter changes, key, section markers
@@ -43,9 +59,12 @@ def song_to_midi(song: Song, path: str, chord_velocity: int = 56) -> None:
             cond.append((start * MIDI_PER_TICK, 1, mido.MetaMessage("time_signature", numerator=beats, denominator=4)))
             current = beats
     starts = song.bar_starts()
-    for sec in song.sections:
-        if sec.start_bar < len(starts):
-            cond.append((starts[sec.start_bar] * MIDI_PER_TICK, 2, mido.MetaMessage("marker", text=sec.label)))
+    if markers is None:
+        markers = [
+            (starts[sec.start_bar], sec.label) for sec in song.sections if sec.start_bar < len(starts)
+        ]
+    for tick, text in markers:
+        cond.append((tick * MIDI_PER_TICK, 2, mido.MetaMessage("marker", text=text)))
     track = mido.MidiTrack(_abs_to_delta(cond))
     track.insert(0, mido.MetaMessage("track_name", name="conductor", time=0))
     mid.tracks.append(track)
@@ -79,6 +98,21 @@ def song_to_midi(song: Song, path: str, chord_velocity: int = 56) -> None:
     track.insert(0, mido.MetaMessage("track_name", name="chords", time=0))
     track.insert(1, mido.Message("program_change", channel=1, program=0, time=0))
     mid.tracks.append(track)
+
+    # click: the metrical grid the score is written on, one note per beat
+    if click is not None:
+        downbeat_pitch, beat_pitch = click
+        cl: List[Tuple[int, int, mido.Message]] = []
+        for start, beats in zip(starts, song.bar_beats):
+            for b in range(beats):
+                on = (start + b * TICKS_PER_BEAT) * MIDI_PER_TICK
+                pitch = downbeat_pitch if b == 0 else beat_pitch
+                cl.append((on, 1, mido.Message("note_on", channel=9, note=pitch, velocity=100)))
+                cl.append((on + CLICK_TICKS, 0, mido.Message("note_off", channel=9, note=pitch, velocity=0)))
+        track = mido.MidiTrack(_abs_to_delta(cl))
+        track.insert(0, mido.MetaMessage("track_name", name="click_raw", time=0))
+        mid.tracks.append(track)
+
     mid.save(path)
 
 

@@ -34,3 +34,5 @@ experiments/*/epoch-*
 experiments/listen_now_*/
 experiments/listen_now_*.tar.gz
 *.mp3
+experiments/midi_sag_*/leadsheets/
+experiments/midi_sag_*/*.out
