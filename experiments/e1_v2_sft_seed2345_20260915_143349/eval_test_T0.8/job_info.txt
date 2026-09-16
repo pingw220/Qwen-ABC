@@ -1,0 +1,12 @@
+job=40189243 host=g3123 restart=0 date=2026-09-15T16:31:11-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=67
+ckpt=experiments/e1_v2_sft_seed2345_20260915_143349/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--max-total 10240 --max-new-tokens 10240
+job=40189254 host=g3123 restart=0 date=2026-09-15T16:37:49-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=68
+ckpt=experiments/e1_v2_sft_seed2345_20260915_143349/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--max-total 10240 --max-new-tokens 10240
+job=40191413 host=g3101 restart=0 date=2026-09-15T17:46:09-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=69
+ckpt=experiments/e1_v2_sft_seed2345_20260915_143349/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--max-total 10240 --max-new-tokens 10240
+job=40191514 host=g3108 restart=0 date=2026-09-15T17:52:59-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=70
+ckpt=experiments/e1_v2_sft_seed2345_20260915_143349/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--max-total 10240 --max-new-tokens 10240
+job=40192230 host=g3108 restart=0 date=2026-09-15T18:30:30-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=70
+ckpt=experiments/e1_v2_sft_seed2345_20260915_143349/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--max-total 10240 --max-new-tokens 10240
+job=40197192 host=g3112 restart=0 date=2026-09-15T19:03:20-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=71
+ckpt=experiments/e1_v2_sft_seed2345_20260915_143349/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--max-total 10240 --max-new-tokens 10240

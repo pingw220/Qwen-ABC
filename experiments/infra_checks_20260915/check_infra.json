@@ -1,0 +1,101 @@
+{
+ "checkpoint": "experiments/direct_sft_20260915_023500/final_model",
+ "gpu": "NVIDIA L40S",
+ "greedy_batched_vs_single": [
+  {
+   "single_tokens": 400,
+   "batched_tokens": 400,
+   "identical": false,
+   "agreeing_prefix_tokens": 117
+  },
+  {
+   "single_tokens": 400,
+   "batched_tokens": 400,
+   "identical": false,
+   "agreeing_prefix_tokens": 104
+  },
+  {
+   "single_tokens": 400,
+   "batched_tokens": 400,
+   "identical": false,
+   "agreeing_prefix_tokens": 59
+  },
+  {
+   "single_tokens": 400,
+   "batched_tokens": 400,
+   "identical": true,
+   "agreeing_prefix_tokens": 400
+  },
+  {
+   "single_tokens": 400,
+   "batched_tokens": 400,
+   "identical": false,
+   "agreeing_prefix_tokens": 155
+  },
+  {
+   "single_tokens": 400,
+   "batched_tokens": 400,
+   "identical": false,
+   "agreeing_prefix_tokens": 131
+  }
+ ],
+ "throughput": {
+  "batch1_tokens_per_sec": 26.9,
+  "batch16_tokens_per_sec": 241.6,
+  "batch16_seconds": 137.4,
+  "batch_new_tokens": [
+   2429,
+   2587,
+   2922,
+   2196,
+   1991,
+   2454,
+   3359,
+   1655,
+   2039,
+   765,
+   1576,
+   1750,
+   1868,
+   2671,
+   892,
+   2028
+  ],
+  "batch_hit_eos": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "peak_mem_gb": 2.95
+ },
+ "train_step_one_sequence": {
+  "8192": {
+   "peak_gb": 6.78,
+   "fwd_bwd_seconds": 14.89,
+   "finite_loss": true
+  },
+  "16384": {
+   "peak_gb": 7.98,
+   "fwd_bwd_seconds": 3.32,
+   "finite_loss": true
+  },
+  "32768": {
+   "peak_gb": 11.41,
+   "fwd_bwd_seconds": 82.3,
+   "finite_loss": true
+  }
+ }
+}

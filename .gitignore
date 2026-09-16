@@ -20,3 +20,14 @@ experiments/samples_*/
 experiments/midi_llm_*/gen/
 experiments/midi_llm_*/specs/
 experiments/midi_llm_*/logs_*.txt
+# round 2
+experiments/midi_llm_*/mode*/gen/
+experiments/midi_llm_*/mode*/logs/
+experiments/midi_llm_*/mode*/eval_test/generations/
+experiments/clean_subset_*/inspect.md
+experiments/listening_*/
+experiments/**/step-*/
+experiments/**/*.tmp/
+data/generated/*/cleaning_report_fragment.md
+experiments/*/final_model
+experiments/*/epoch-*

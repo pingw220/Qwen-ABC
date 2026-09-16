@@ -1,0 +1,1 @@
+final_model deleted 2026-09-15 to free scrubbed space after all evaluations for this run completed (eval_test_T0.8, eval_continuation_T0.8, loss_test.json are kept). Re-train from configs/ + resolved_config.json to reproduce.

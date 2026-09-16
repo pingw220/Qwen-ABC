@@ -1,4 +1,4 @@
-"""Causal-LM training for ABC CPT and lyrics->ABC SFT (single process, one GPU).
+"""Causal-LM training for ABC CPT and lyrics->ABC SFT (one GPU, or data-parallel via torchrun).
 
 Design choices, all recorded in the run's resolved config:
 
@@ -12,7 +12,12 @@ Design choices, all recorded in the run's resolved config:
 * loss = sum of token NLL / number of supervised tokens in the whole
   optimizer update (not a mean of per-micro-batch means), so long and short
   songs weigh by tokens;
-* SFT supervises completion tokens + EOS only; CPT supervises every token.
+* SFT supervises completion tokens + EOS only; CPT supervises every token;
+* optional data parallelism (``torchrun --nproc_per_node N``): the update is
+  built from exactly the same micro-batches as on one GPU (rank r runs
+  micro-batches r, r+N, ... of the update), gradients are summed across ranks
+  and the loss is normalized by the update's global supervised-token count, so
+  N GPUs compute the same optimizer step as one GPU up to kernel numerics.
 """
 
 from __future__ import annotations
@@ -45,6 +50,7 @@ class TrainConfig:
     tokens_per_update: int = 131072  # approx padded tokens per optimizer step
     epochs: float = 2.0
     max_steps: int = 0  # overrides epochs when > 0
+    stop_after_steps: int = 0  # >0: snapshot and exit at this step, keeping the full run's LR schedule (stability probes)
     learning_rate: float = 5e-5
     min_lr_ratio: float = 0.1
     warmup_ratio: float = 0.03
@@ -54,6 +60,7 @@ class TrainConfig:
     eval_every: int = 100
     resume_every: int = 100  # steps between resumable snapshots (overwritten); 0 disables
     save_every_epoch: bool = True
+    save_every: int = 0  # >0: also save an HF checkpoint every N optimizer steps (generation-based selection)
     save_final: bool = True
     seed: int = 1234
     gradient_checkpointing: bool = True
@@ -163,17 +170,81 @@ def load_model(name: str, attn_impl: str, dtype=torch.float32):
     return model, tok
 
 
+# ------------------------------------------------------------ distributed
+class Dist:
+    """Rank bookkeeping; a no-op on one GPU (no torchrun)."""
+
+    def __init__(self) -> None:
+        self.world = int(os.environ.get("WORLD_SIZE", "1"))
+        self.rank = int(os.environ.get("RANK", "0"))
+        self.local_rank = int(os.environ.get("LOCAL_RANK", "0"))
+        if self.world > 1:
+            torch.cuda.set_device(self.local_rank)
+            torch.distributed.init_process_group("nccl")
+
+    @property
+    def main(self) -> bool:
+        return self.rank == 0
+
+    def sum(self, *values: float) -> List[float]:
+        if self.world == 1:
+            return [float(v) for v in values]
+        t = torch.tensor([float(v) for v in values], dtype=torch.float64, device="cuda")
+        torch.distributed.all_reduce(t)
+        return t.tolist()
+
+    def max(self, value: float) -> float:
+        if self.world == 1:
+            return float(value)
+        t = torch.tensor([float(value)], dtype=torch.float64, device="cuda")
+        torch.distributed.all_reduce(t, op=torch.distributed.ReduceOp.MAX)
+        return float(t.item())
+
+    def sum_grads(self, params: List[torch.nn.Parameter], bucket_numel: int = 1 << 26) -> None:
+        if self.world == 1:
+            return
+        for p in params:  # a rank with no micro-batch in this update still contributes zeros
+            if p.grad is None:
+                p.grad = torch.zeros_like(p)
+        bucket: List[torch.Tensor] = []
+        size = 0
+        for p in params + [None]:
+            if p is not None:
+                bucket.append(p.grad)
+                size += p.grad.numel()
+            if bucket and (p is None or size >= bucket_numel):
+                flat = torch.cat([g.reshape(-1) for g in bucket])
+                torch.distributed.all_reduce(flat)
+                off = 0
+                for g in bucket:
+                    g.copy_(flat[off: off + g.numel()].view_as(g))
+                    off += g.numel()
+                bucket, size = [], 0
+
+    def barrier(self) -> None:
+        if self.world > 1:
+            torch.distributed.barrier()
+
+    def close(self) -> None:
+        if self.world > 1:
+            torch.distributed.destroy_process_group()
+
+
 @torch.no_grad()
-def evaluate(model, examples: List[dict], pad_id: int, tokens_per_batch: int, device) -> Dict[str, float]:
+def evaluate(model, examples: List[dict], pad_id: int, tokens_per_batch: int, device, dist: Optional[Dist] = None) -> Dict[str, float]:
     model.eval()
     rng = random.Random(0)
     total_nll, total_tok = 0.0, 0
-    for idx in make_batches(examples, tokens_per_batch, rng):
+    world, rank = (dist.world, dist.rank) if dist else (1, 0)
+    for idx in make_batches(examples, tokens_per_batch, rng)[rank::world]:
         batch = {k: v.to(device) for k, v in collate(examples, idx, pad_id).items()}
         with torch.autocast("cuda", dtype=torch.bfloat16):
             nll, n = token_nll_sum(model, batch)
         total_nll += float(nll)
         total_tok += n
+    if dist:
+        total_nll, total_tok = dist.sum(total_nll, total_tok)
+        total_tok = int(total_tok)
     model.train()
     loss = total_nll / max(total_tok, 1)
     return {"eval_loss": loss, "eval_ppl": math.exp(min(loss, 50)), "eval_tokens": total_tok}
@@ -188,14 +259,30 @@ def lr_at(step: int, total: int, cfg: TrainConfig) -> float:
     return cfg.learning_rate * (cfg.min_lr_ratio + (1 - cfg.min_lr_ratio) * cosine)
 
 
+def update_plan(n_micro_per_epoch: int, cfg: TrainConfig, world: int) -> Dict[str, int]:
+    """Optimizer-step accounting shared by the trainer, tests and budget reports.
+
+    ``tokens_per_update`` is a *padded* token budget: an update holds
+    ``accum * world`` micro-batches of at most ``tokens_per_micro_batch`` padded
+    tokens each. Real (unpadded) tokens per update are therefore somewhat lower.
+    """
+    accum = max(round(cfg.tokens_per_update / (cfg.tokens_per_micro_batch * world)), 1)
+    per_update = accum * world
+    steps_per_epoch = math.ceil(n_micro_per_epoch / per_update)
+    total = cfg.max_steps or math.ceil(steps_per_epoch * cfg.epochs)
+    return {"grad_accum": accum, "micro_batches_per_update": per_update, "steps_per_epoch": steps_per_epoch,
+            "total_steps": total, "padded_tokens_per_update_budget": per_update * cfg.tokens_per_micro_batch}
+
+
 def train(cfg: TrainConfig) -> None:
+    dist = Dist()
     out = Path(cfg.output_dir)
     out.mkdir(parents=True, exist_ok=True)
     if (out / "final_model").exists():
         raise SystemExit(f"{out}/final_model exists; refusing to overwrite a finished run")
     random.seed(cfg.seed)
     torch.manual_seed(cfg.seed)
-    device = torch.device("cuda")
+    device = torch.device("cuda", dist.local_rank)
 
     model, tok = load_model(cfg.model_name_or_path, cfg.attn_implementation)
     model.to(device)
@@ -219,115 +306,165 @@ def train(cfg: TrainConfig) -> None:
     all_tokens = sum(len(e["input_ids"]) for e in train_ex)
 
     micro_per_epoch = len(make_batches(train_ex, cfg.tokens_per_micro_batch, random.Random(0)))
-    accum = max(round(cfg.tokens_per_update / cfg.tokens_per_micro_batch), 1)
-    steps_per_epoch = math.ceil(micro_per_epoch / accum)
-    total_steps = cfg.max_steps or math.ceil(steps_per_epoch * cfg.epochs)
+    plan = update_plan(micro_per_epoch, cfg, dist.world)
+    accum, per_update, total_steps = plan["grad_accum"], plan["micro_batches_per_update"], plan["total_steps"]
 
     decay, no_decay = [], []
     for n, p in model.named_parameters():
         if p.requires_grad:
             (no_decay if p.ndim < 2 or "norm" in n or "A_log" in n or "dt_bias" in n else decay).append(p)
+    params = [p for p in model.parameters() if p.requires_grad]
     opt = torch.optim.AdamW(
         [{"params": decay, "weight_decay": cfg.weight_decay}, {"params": no_decay, "weight_decay": 0.0}],
         lr=cfg.learning_rate, betas=(0.9, cfg.adam_beta2), eps=1e-8, fused=True,
     )
 
+    lengths = sorted(len(e["input_ids"]) for e in train_ex)
     resolved = asdict(cfg) | {
         "train_examples": len(train_ex), "eval_examples": len(eval_ex),
         "train_dropped_over_max_len": len(train_rows) - len(train_ex),
         "train_tokens": all_tokens, "train_supervised_tokens": sup_tokens,
-        "micro_batches_per_epoch": micro_per_epoch, "grad_accum": accum,
-        "steps_per_epoch": steps_per_epoch, "total_steps": total_steps,
+        "train_max_example_tokens": lengths[-1] if lengths else 0,
+        "micro_batches_per_epoch": micro_per_epoch, **plan,
+        "world_size": dist.world,
+        "real_tokens_per_update_mean": all_tokens / max(plan["steps_per_epoch"], 1),
+        "supervised_tokens_per_update_mean": sup_tokens / max(plan["steps_per_epoch"], 1),
         "n_params": sum(p.numel() for p in model.parameters()),
-        "torch": torch.__version__, "cuda_device": torch.cuda.get_device_name(0),
+        "n_trainable_params": sum(p.numel() for p in params),
+        "torch": torch.__version__, "cuda_device": torch.cuda.get_device_name(dist.local_rank),
         "slurm_job_id": os.environ.get("SLURM_JOB_ID"),
     }
     import transformers
 
     resolved["transformers"] = transformers.__version__
-    (out / "resolved_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
-    print(json.dumps(resolved, indent=1), flush=True)
-    log = open(out / "train_log.jsonl", "a", encoding="utf-8")
+    try:
+        import fla
+
+        resolved["flash_linear_attention"] = fla.__version__
+    except Exception:  # noqa: BLE001
+        resolved["flash_linear_attention"] = None
+    log = None
+    if dist.main:
+        (out / "resolved_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
+        print(json.dumps(resolved, indent=1), flush=True)
+        log = open(out / "train_log.jsonl", "a", encoding="utf-8")
 
     def emit(row: dict) -> None:
+        if not dist.main:
+            return
         row["time"] = round(time.time() - t0, 1)
         log.write(json.dumps(row) + "\n")
         log.flush()
         print(json.dumps(row), flush=True)
 
     t0 = time.time()
-    step, epoch, tokens_seen, resume_group = 0, 0, 0, 0
+    step, epoch, tokens_seen, sup_seen, resume_group = 0, 0, 0, 0, 0
     state_path = out / "resume_state" / "state.pt"
     if state_path.exists():
         state = torch.load(state_path, map_location="cpu", weights_only=False)
         model.load_state_dict(state["model"])
         opt.load_state_dict(state["optimizer"])
         step, epoch, tokens_seen, resume_group = state["step"], state["epoch"], state["tokens_seen"], state["next_group"]
+        sup_seen = state.get("sup_tokens_seen", 0)
         torch.set_rng_state(state["torch_rng"])
-        emit({"step": step, "resumed": True, "epoch": epoch, "next_group": resume_group,
+        emit({"step": step, "resumed": True, "epoch": epoch, "next_group": resume_group, "world_size": dist.world,
               "slurm_job_id": os.environ.get("SLURM_JOB_ID")})
         del state
     else:
-        emit({"step": 0, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
+        emit({"step": 0, "world_size": dist.world, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device, dist)})
     model.train()
     done = step >= total_steps
+    last_t, last_tokens = time.time(), tokens_seen
     while not done:
         batches = make_batches(train_ex, cfg.tokens_per_micro_batch, random.Random(cfg.seed + epoch))
-        for start in range(resume_group, len(batches), accum):
-            group = batches[start: start + accum]
+        for start in range(resume_group, len(batches), per_update):
+            group = batches[start: start + per_update]
             n_sup = sum(sum(1 for x in train_ex[i]["labels"][1:] if x != -100) for b in group for i in b)
             lr = lr_at(step, total_steps, cfg)
             for g in opt.param_groups:
                 g["lr"] = lr
-            loss_sum = 0.0
-            for idx in group:
+            loss_sum, local_tokens = 0.0, 0
+            for idx in group[dist.rank:: dist.world]:
                 batch = {k: v.to(device, non_blocking=True) for k, v in collate(train_ex, idx, pad_id).items()}
                 with torch.autocast("cuda", dtype=torch.bfloat16):
                     nll, _ = token_nll_sum(model, batch)
                 (nll / n_sup).backward()
                 loss_sum += float(nll)
-                tokens_seen += int(batch["attention_mask"].sum())
-            gnorm = torch.nn.utils.clip_grad_norm_(model.parameters(), cfg.grad_clip)
+                local_tokens += int(batch["attention_mask"].sum())
+            dist.sum_grads(params)
+            loss_sum, local_tokens = dist.sum(loss_sum, local_tokens)
+            tokens_seen += int(local_tokens)
+            sup_seen += n_sup
+            gnorm = torch.nn.utils.clip_grad_norm_(params, cfg.grad_clip)
             opt.step()
             opt.zero_grad(set_to_none=True)
             step += 1
             if step % cfg.log_every == 0 or step == 1:
+                now = time.time()
                 emit({"step": step, "epoch": round(epoch + (start + len(group)) / len(batches), 3),
                       "loss": loss_sum / n_sup, "lr": lr, "grad_norm": float(gnorm), "tokens_seen": tokens_seen,
-                      "max_mem_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2)})
+                      "sup_tokens_seen": sup_seen,
+                      "tokens_per_sec": round((tokens_seen - last_tokens) / max(now - last_t, 1e-6), 1),
+                      "max_mem_gb": round(dist.max(torch.cuda.max_memory_allocated(device)) / 2**30, 2),
+                      "max_reserved_gb": round(dist.max(torch.cuda.max_memory_reserved(device)) / 2**30, 2)})
+                last_t, last_tokens = now, tokens_seen
             if cfg.eval_every and step % cfg.eval_every == 0:
-                emit({"step": step, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
+                emit({"step": step, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device, dist)})
+            if cfg.save_every and step % cfg.save_every == 0 and step < total_steps and dist.main:
+                save(model, tok, out / f"step-{step}", resolved)
             if step >= total_steps:
                 done = True
                 break
+            if cfg.stop_after_steps and step >= cfg.stop_after_steps:
+                if dist.main:
+                    snapshot(state_path, model, opt, step, epoch, tokens_seen, start + per_update, sup_seen)
+                emit({"step": step, "stopped_early_for_probe": True, "tokens_seen": tokens_seen, "sup_tokens_seen": sup_seen,
+                      "elapsed_hours_this_job": round((time.time() - t0) / 3600, 3)})
+                dist.barrier()
+                dist.close()
+                return
             if cfg.resume_every and step % cfg.resume_every == 0:
-                snapshot(state_path, model, opt, step, epoch, tokens_seen, start + accum)
+                if dist.main:
+                    snapshot(state_path, model, opt, step, epoch, tokens_seen, start + per_update, sup_seen)
+                dist.barrier()
         resume_group = 0
         epoch += 1
-        if cfg.save_every_epoch and not done:
+        if cfg.save_every_epoch and not done and dist.main:
             save(model, tok, out / f"epoch-{epoch}", resolved)
-    emit({"step": step, "final": True, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
-    if cfg.save_final:
+        dist.barrier()
+    emit({"step": step, "final": True, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device, dist)})
+    if cfg.save_final and dist.main:
         save(model, tok, out / "final_model", resolved)
-    emit({"step": step, "done": True, "elapsed_hours_this_job": round((time.time() - t0) / 3600, 3)})
-    if state_path.exists():  # a finished run needs no resume snapshot (9 GB)
+    emit({"step": step, "done": True, "elapsed_hours_this_job": round((time.time() - t0) / 3600, 3),
+          "tokens_seen": tokens_seen, "sup_tokens_seen": sup_seen, "world_size": dist.world,
+          "max_mem_gb": round(dist.max(torch.cuda.max_memory_allocated(device)) / 2**30, 2)})
+    if dist.main and state_path.exists():  # a finished run needs no resume snapshot (9 GB)
         state_path.unlink()
         state_path.parent.rmdir()
+    dist.barrier()
+    dist.close()
 
 
-def snapshot(path: Path, model, opt, step: int, epoch: int, tokens_seen: int, next_group: int) -> None:
+def snapshot(path: Path, model, opt, step: int, epoch: int, tokens_seen: int, next_group: int, sup_seen: int = 0) -> None:
     """Atomically write everything needed to continue after preemption."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
     torch.save({"model": model.state_dict(), "optimizer": opt.state_dict(), "step": step, "epoch": epoch,
-                "tokens_seen": tokens_seen, "next_group": next_group, "torch_rng": torch.get_rng_state()}, tmp)
+                "tokens_seen": tokens_seen, "sup_tokens_seen": sup_seen, "next_group": next_group,
+                "torch_rng": torch.get_rng_state()}, tmp)
     os.replace(tmp, path)
 
 
 def save(model, tok, path: Path, resolved: dict) -> None:
-    path.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.mkdir(parents=True, exist_ok=True)
     # bf16 on disk (half the size); training keeps fp32 master weights
     state = {k: (v.to(torch.bfloat16) if v.is_floating_point() else v) for k, v in model.state_dict().items()}
-    model.save_pretrained(path, state_dict=state, safe_serialization=True)
-    tok.save_pretrained(path)
-    (path / "training_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
+    model.save_pretrained(tmp, state_dict=state, safe_serialization=True)
+    tok.save_pretrained(tmp)
+    (tmp / "training_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
+    if path.exists():  # an interrupted earlier attempt at the same step
+        import shutil
+
+        shutil.rmtree(path)
+    os.replace(tmp, path)

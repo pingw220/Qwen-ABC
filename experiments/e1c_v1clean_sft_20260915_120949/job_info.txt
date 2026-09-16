@@ -1,0 +1,10 @@
+job=40179452 host=g3109 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T12:16:45-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty_files=44
+overrides=
+job=40179452 host=g3123 partition=ckpt-all restart=1 nproc=2 date=2026-09-15T12:34:58-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty_files=46
+overrides=

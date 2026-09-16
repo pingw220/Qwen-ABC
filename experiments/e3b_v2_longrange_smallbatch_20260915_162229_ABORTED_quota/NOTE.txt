@@ -1,0 +1,1 @@
+E3b snapshot removed (9.2 GB freed); E3b will be restarted from scratch if space allows

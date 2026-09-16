@@ -1,0 +1,21 @@
+# E1c: cleaning-only ablation. ABC-v1 syntax on the cleaned section boundaries (same songs/split as E0/E1).
+mode: sft
+model_name_or_path: Qwen/Qwen3.5-0.8B-Base
+data_dir: data/generated/abc_v2_20260915_120927
+train_file: data/generated/abc_v2_20260915_120927/sft_v1clean_train.jsonl
+eval_file: data/generated/abc_v2_20260915_120927/sft_v1clean_validation.jsonl
+output_dir: experiments/CHANGE_ME
+max_seq_len: 8192
+tokens_per_micro_batch: 16384
+tokens_per_update: 131072
+epochs: 2
+learning_rate: 5.0e-5
+min_lr_ratio: 0.1
+warmup_ratio: 0.03
+weight_decay: 0.0
+grad_clip: 1.0
+eval_every: 50
+resume_every: 50
+save_every: 100
+eval_limit: 256
+seed: 1234

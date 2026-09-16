@@ -11,18 +11,31 @@ Two recipes, identical except for one stage:
 
 Both use the same base model, SFT data, SFT hyper-parameters, test songs and evaluation.
 
+Round 2 asks what limits long-form structure, diversity, coherence and lyric alignment: representation
+(ABC-v2 counters), data cleaning, effective batch size, a long-range objective, decoding, and model scale.
+
 Reports:
 
 * `reports/DATA_AUDIT.md`: what data exists and why D1 was chosen
-* `reports/ABC_SCHEMA.md`: the ABC format (lyrics, melisma, sections, round trip)
-* `reports/DATASET_VALIDATION.md`: dataset sanity checks
-* `reports/REPORT.md`: results and verdict
+* `reports/ABC_SCHEMA.md`: the ABC-v1 format (lyrics, melisma, sections, round trip)
+* `reports/DATASET_VALIDATION.md`: ABC-v1 dataset sanity checks
+* `reports/REPORT.md`: round-1 results and verdict
+* `reports/LONG_CONTEXT_AUDIT.md`: Qwen context, what the trainer really does, token lengths
+* `reports/ABC_V2_SCHEMA.md`: ABC-v2 (section header + per-bar countdown) and the variants measured
+* `reports/ABC_V2_DATA_CLEANING.md`: section-boundary cleaning, decisions and before/after examples
+* `reports/ABC_V2_DATASET_VALIDATION.md`: ABC-v2 dataset checks, determinism, leakage re-verification
+* `reports/CLEAN_TEST_SUBSET.md`: the 34-song clean subset, and model error vs label noise
+* `reports/LONG_STRUCTURE_EXPERIMENTS.md`: **round-2 results and verdict**
 
 ## Layout
 
 ```
 qwen_abc/        library: canonical model, corpus adapter, ABC writer/parser, MIDI, prompt, splits, train, metrics
+                 round 2: abc_v2.py (counters), cleaning.py (section boundaries), longrange.py (E3 tasks)
 scripts/         build / validate / inspect dataset, train, generate+evaluate, samples
+                 round 2: build_abc_v2_dataset.py, validate_abc_v2_dataset.py, build_longrange_tasks.py,
+                 select_clean_subset.py, eval_continuation.py, eval_infill.py, compare_r2.py,
+                 budget_report.py, check_infra.py, check_left_padding.py, midi_llm_r2_report.py
 scripts/slurm/   Slurm launchers (L40S and L40 variants)
 configs/         training configs (sft_direct, cpt_abc, sft_after_cpt)
 tests/           pytest: round trip, lyric alignment, parser errors, splits/leakage, determinism
@@ -78,16 +91,26 @@ python scripts/eval_loss.py --checkpoint experiments/<run>/final_model --data-di
 python scripts/compare_results.py --run A=experiments/direct_sft_<ts> --run B=experiments/cpt_then_sft_<ts> > table.md
 ```
 
-## Results so far (225 de-duplicated held-out songs; details in `reports/REPORT.md`)
+## Results
 
-Two training seeds per arm (seed 1234 / seed 2345):
+**Round 1** (`reports/REPORT.md`): direct SFT on ABC-v1 works; same-data CPT hurts prompt adherence.
 
-| | direct SFT | CPT → SFT |
-|---|---|---|
-| test loss (nats/token) | 0.4837 / 0.4833 | 0.4809 / 0.4802 |
-| parse / strict-valid ABC | 100% / 67%, 60% | 100% / 60%, 60% |
-| lyric recall (in order) | 0.956 / 0.931 | 0.885 / 0.832 |
-| section plan exactly as requested | 0.55 / 0.63 | 0.32 / 0.34 |
-| songs ending before the requested structure | 9 / 13 | 45 / 62 |
+**Round 2** (`reports/LONG_STRUCTURE_EXPERIMENTS.md`), 225 de-duplicated held-out songs, one sample
+per song:
 
-Direct SFT is sufficient; same-data CPT lowers loss but hurts prompt adherence.
+| | E0 (ABC-v1) | E1 (ABC-v2) | **E3b (ABC-v2 + infill)** | E3b @ T=1.0 | reference |
+|---|---|---|---|---|---|
+| exact section+bar plan | 0.53 | 0.86 | **0.98** | 0.98 | 1.00 |
+| early EOS | 4.0% | 0% | 0% | 0% | 0% |
+| lyric recall | 0.955 | 0.964 | 0.967 | 0.976 | 1.00 |
+| strict-valid ABC | 0.71 | 0.63 | **0.84** | 0.73 | 1.00 |
+| pitch range (semitones) | 14.1 | 13.3 | 13.8 | **17.9** | 22.0 |
+| distinct bars | 0.46 | 0.47 | 0.47 | **0.77** | 0.87 |
+
+* **Representation fixes structure:** cleaned section boundaries + a per-bar countdown (`[r:k]`) take
+  exact structure 0.53 → 0.86; a long-range infilling objective at the same batch size takes it to 0.98.
+* **Melodic conservatism was decoding, not capacity:** temperature 1.0 / top-p 0.95 recovers corpus-like
+  range, syncopation and repetition with no loss of lyric or structure control.
+* **A 4× effective batch does not help;** optimizer updates are the scarce resource.
+* **8K context was never a limit** (longest example 6,703 tokens).
+* **Scaling to ~2B was not justified** by the pre-registered criteria and was not run.

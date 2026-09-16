@@ -11,6 +11,12 @@ next to the same metrics computed on the reference ABC of the same songs.
     the same sections) -> does the melody change?
   * tempo / key change with the same lyrics -> does the output follow?
 Generation resumes: songs whose generation file already exists are skipped.
+
+Round-2 options: --format v2 (ABC-v2 prompts; counters scored), --batch-size N
+(left-padded batched sampling for the main set; see qwen_abc/generate.py),
+--read-generations DIR + --rescore (re-score cached generations of an earlier
+run with the current metric code, writing only into --output-dir), and
+--song-id-list FILE (one song id per line).
 """
 
 from __future__ import annotations
@@ -25,10 +31,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from qwen_abc.abc import parse_abc  # noqa: E402
 from qwen_abc.canonical import Song  # noqa: E402
-from qwen_abc.generate import generate_one, load_for_generation  # noqa: E402
+from qwen_abc.abc_v2 import counter_report, spec_to_prompt_v2  # noqa: E402
+from qwen_abc.generate import generate_batch, generate_one, load_for_generation  # noqa: E402
 from qwen_abc.metrics import aggregate, distribution_distances, lcs_len, song_metrics  # noqa: E402
 from qwen_abc.prompt import spec_to_prompt, split_syllables  # noqa: E402
 from qwen_abc.theory import canonical_key, parse_key_name  # noqa: E402
+
+
+PROMPT_FN = [spec_to_prompt]  # set from --format in main(); probes use the same prompt format
 
 
 def pick_songs(data_dir: Path, split: str, n: int, song_ids=None):
@@ -84,17 +94,20 @@ def melody_distance(a: Song, b: Song) -> float:
     return 1 - lcs_len(ta, tb) / max(len(ta), len(tb), 1)
 
 
-def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, temperature=None):
-    if out_path.exists():
-        return json.loads(out_path.read_text(encoding="utf-8"))
-    temp = args.temperature if temperature is None else temperature
-    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, temp, args.top_p)
-    res = parse_abc(gen["text"], meta.get("song_id", "gen"))
-    row = {**meta, "seed": seed, "prompt": prompt, "generation": gen["text"], "new_tokens": gen["new_tokens"],
-           "hit_eos": gen["hit_eos"], "seconds": gen["seconds"], "parse_ok": res.ok, "strict_ok": res.strict_ok,
-           "errors": dict(res.errors), "warnings": dict(res.warnings)}
+def score_row(row: dict, spec: dict, fmt: str) -> dict:
+    """(Re)compute parse, metrics, counters and MIDI export for a generation row in place."""
+    res = parse_abc(row["generation"], row.get("song_id", "gen"))
+    row.update(parse_ok=res.ok, strict_ok=res.strict_ok, errors=dict(res.errors), warnings=dict(res.warnings))
+    row.pop("metrics", None)
+    row.pop("song", None)
     if res.ok:
-        row["metrics"] = song_metrics(res.song, spec, res)
+        m = song_metrics(res.song, spec, res)
+        m["hit_eos"] = float(bool(row.get("hit_eos")))
+        m["early_eos"] = float(bool(row.get("hit_eos")) and m.get("fewer_sections_than_requested", 0.0) == 1.0)
+        m["new_tokens"] = row.get("new_tokens")
+        if fmt == "v2":
+            m.update(counter_report(row["generation"], spec))
+        row["metrics"] = m
         row["song"] = res.song.to_json()
         try:
             import tempfile
@@ -107,9 +120,46 @@ def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, te
             row["midi_error"] = str(exc)
     else:
         row["midi_ok"] = False
+    return row
+
+
+def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, temperature=None):
+    if out_path.exists():
+        return json.loads(out_path.read_text(encoding="utf-8"))
+    temp = args.temperature if temperature is None else temperature
+    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, temp, args.top_p, args.max_total)
+    row = {**meta, "seed": seed, "prompt": prompt, "generation": gen["text"], "new_tokens": gen["new_tokens"],
+           "hit_eos": gen["hit_eos"], "seconds": gen["seconds"], "temperature": temp, "top_p": args.top_p}
+    score_row(row, spec, args.format)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(row, ensure_ascii=False), encoding="utf-8")
     return row
+
+
+def generate_main_batched(model, tok, songs, args, gen_dir: Path, make_prompt) -> None:
+    """Batched sampling for every main-set song whose generation file is missing (sorted by length)."""
+    pending = []
+    for r in songs:
+        for seed in range(args.seeds):
+            path = gen_dir / f"{r['song_id']}_s{seed}.json"
+            if not path.exists():
+                pending.append((len(r["abc"]), r, seed, path))
+    pending.sort(key=lambda x: (x[0], x[1]["song_id"], x[2]))
+    for k in range(0, len(pending), args.batch_size):
+        chunk = pending[k: k + args.batch_size]
+        prompts = [make_prompt(r["spec"]) for _, r, _, _ in chunk]
+        outs = generate_batch(model, tok, prompts, 1000 + k, args.max_new_tokens, args.temperature, args.top_p, args.max_total)
+        for (_, r, seed, path), prompt, gen in zip(chunk, prompts, outs):
+            row = {"song_id": r["song_id"], "kind": "main", "seed": seed, "batch_seed": 1000 + k, "prompt": prompt,
+                   "generation": gen["text"], "new_tokens": gen["new_tokens"], "hit_eos": gen["hit_eos"],
+                   "seconds": gen["seconds"], "batch_size": gen["batch_size"], "batch_seconds": gen["batch_seconds"],
+                   "temperature": args.temperature, "top_p": args.top_p}
+            score_row(row, r["spec"], args.format)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(row, ensure_ascii=False), encoding="utf-8")
+        print(f"[batch {k // args.batch_size + 1}/{-(-len(pending) // args.batch_size)}] {len(chunk)} songs "
+              f"{outs[0]['batch_seconds']}s tokens={sum(g['new_tokens'] for g in outs)} "
+              f"eos={sum(g['hit_eos'] for g in outs)}", flush=True)
 
 
 def main() -> None:
@@ -131,12 +181,23 @@ def main() -> None:
     ap.add_argument("--probes-only", action="store_true", help="generate probe outputs only (for a separate job)")
     ap.add_argument("--greedy-probes-only", action="store_true", help="generate the greedy probe set only")
     ap.add_argument("--aggregate-only", action="store_true", help="no model: summarize cached generations")
+    ap.add_argument("--format", choices=["v1", "v2"], default="v1", help="prompt format (v2: ABC-v2 prompt + counter metrics)")
+    ap.add_argument("--batch-size", type=int, default=1, help=">1: batched sampling for the main set")
+    ap.add_argument("--max-total", type=int, default=8192, help="prompt + generation token cap")
+    ap.add_argument("--read-generations", type=Path, default=None, help="cached generations dir (default OUT/generations)")
+    ap.add_argument("--rescore", action="store_true", help="re-score cached rows with the current metric code")
+    ap.add_argument("--song-id-list", type=Path, default=None, help="text file, one song id per line")
     args = ap.parse_args()
     out = args.output_dir
     out.mkdir(parents=True, exist_ok=True)
     (out / "args.json").write_text(json.dumps({k: str(v) for k, v in vars(args).items()}, indent=1))
 
     ids = [json.loads(l)["song_id"] for l in open(args.song_ids_from, encoding="utf-8")] if args.song_ids_from else None
+    if args.song_id_list:
+        ids = [l.strip() for l in open(args.song_id_list, encoding="utf-8") if l.strip()]
+    make_prompt = spec_to_prompt_v2 if args.format == "v2" else spec_to_prompt
+    PROMPT_FN[0] = make_prompt
+    gen_dir = args.read_generations or (out / "generations")
     songs = pick_songs(args.data_dir, args.split, args.num_songs, ids)
     sharded = args.num_shards > 1
     model = tok = None
@@ -147,20 +208,23 @@ def main() -> None:
         if args.aggregate_only:
             if not path.exists():
                 raise SystemExit(f"missing generation {path}; run the generation shards first")
-            return json.loads(path.read_text(encoding="utf-8"))
+            row = json.loads(path.read_text(encoding="utf-8"))
+            return score_row(row, spec, args.format) if args.rescore else row
         return run_one(model, tok, prompt, spec, seed, args, path, meta, temperature)
 
     gen_rows, ref_rows, gen_songs, ref_songs = [], [], [], []
     main_songs = [] if (args.probes_only or args.greedy_probes_only) else (songs[args.shard:: args.num_shards] if sharded else songs)
+    if args.batch_size > 1 and main_songs and not args.aggregate_only:
+        generate_main_batched(model, tok, main_songs, args, gen_dir, make_prompt)
     for i, r in enumerate(main_songs):
         ref = Song.from_json(r["song"])
         ref_parse = parse_abc(r["abc"], r["song_id"])
         ref_rows.append(song_metrics(ref, r["spec"], ref_parse))
         ref_songs.append(ref)
         for seed in range(args.seeds):
-            prompt = spec_to_prompt(r["spec"])
+            prompt = make_prompt(r["spec"])
             row = cached_or_generate(prompt, r["spec"], 1000 + seed,
-                                     out / "generations" / f"{r['song_id']}_s{seed}.json",
+                                     gen_dir / f"{r['song_id']}_s{seed}.json",
                                      {"song_id": r["song_id"], "kind": "main"})
             gen_rows.append(row)
             if row.get("song"):
@@ -192,6 +256,8 @@ def main() -> None:
         "strict_valid": sum(r["strict_ok"] for r in gen_rows) / n,
         "midi_success": sum(bool(r.get("midi_ok")) for r in gen_rows) / n,
         "hit_eos": sum(r["hit_eos"] for r in gen_rows) / n,
+        "format": args.format, "temperature": args.temperature, "top_p": args.top_p, "batch_size": args.batch_size,
+        "generations_dir": str(gen_dir), "rescored": args.rescore,
         "error_counts": {},
         "generated": aggregate([r["metrics"] for r in gen_rows if "metrics" in r]),
         "reference": aggregate(ref_rows),
@@ -216,7 +282,7 @@ def run_probes(probe, args, out, gen):
     # probe job never races a generation shard writing the same file
     base = {}
     for r in probe:
-        base[r["song_id"]] = gen(spec_to_prompt(r["spec"]), r["spec"], 1000,
+        base[r["song_id"]] = gen(PROMPT_FN[0](r["spec"]), r["spec"], 1000,
                                  out / "probes" / f"{r['song_id']}_base.json",
                                  {"song_id": r["song_id"], "kind": "probe_base"})
     swaps, tempo_rows, key_rows, reseed = [], [], [], []
@@ -228,20 +294,20 @@ def run_probes(probe, args, out, gen):
         b_song = Song.from_json(b["song"])
         # same seed, different lyrics
         spec2 = reflow_lyrics(r["spec"], donor["spec"])
-        row = gen(spec_to_prompt(spec2), spec2, 1000, out / "probes" / f"{r['song_id']}_lyricswap.json",
+        row = gen(PROMPT_FN[0](spec2), spec2, 1000, out / "probes" / f"{r['song_id']}_lyricswap.json",
                   {"song_id": r["song_id"], "kind": "lyric_swap", "donor": donor["song_id"]})
         if row.get("song"):
             swaps.append({"melody_distance": melody_distance(b_song, Song.from_json(row["song"])),
                           "lyric_recall_new": row["metrics"]["lyric_recall"]})
         # same prompt, different seed: the noise floor for melody distance
-        row = gen(spec_to_prompt(r["spec"]), r["spec"], 2000, out / "probes" / f"{r['song_id']}_reseed.json",
+        row = gen(PROMPT_FN[0](r["spec"]), r["spec"], 2000, out / "probes" / f"{r['song_id']}_reseed.json",
                   {"song_id": r["song_id"], "kind": "reseed"})
         if row.get("song"):
             reseed.append({"melody_distance": melody_distance(b_song, Song.from_json(row["song"]))})
         # tempo change
         spec3 = copy.deepcopy(r["spec"])
         spec3["tempo_bpm"] = int(round(r["spec"]["tempo_bpm"] * 1.25))
-        row = gen(spec_to_prompt(spec3), spec3, 1000, out / "probes" / f"{r['song_id']}_tempo.json",
+        row = gen(PROMPT_FN[0](spec3), spec3, 1000, out / "probes" / f"{r['song_id']}_tempo.json",
                   {"song_id": r["song_id"], "kind": "tempo"})
         if row.get("song"):
             s3 = Song.from_json(row["song"])
@@ -255,7 +321,7 @@ def run_probes(probe, args, out, gen):
             pc, mode = parsed
             names = ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
             spec4["key"] = canonical_key(f"{names[(pc + 5) % 12]} {mode}")
-            row = gen(spec_to_prompt(spec4), spec4, 1000, out / "probes" / f"{r['song_id']}_key.json",
+            row = gen(PROMPT_FN[0](spec4), spec4, 1000, out / "probes" / f"{r['song_id']}_key.json",
                       {"song_id": r["song_id"], "kind": "key"})
             if row.get("song"):
                 s4 = Song.from_json(row["song"])
@@ -284,10 +350,10 @@ def run_greedy_probes(probe, out, gen):
     names = ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
     for i, r in enumerate(probe):
         donor = probe[(i + 1) % len(probe)]
-        base = gen(spec_to_prompt(r["spec"]), r["spec"], 0, d / f"{r['song_id']}_base.json",
+        base = gen(PROMPT_FN[0](r["spec"]), r["spec"], 0, d / f"{r['song_id']}_base.json",
                    {"song_id": r["song_id"], "kind": "greedy_base"}, 0.0)
         spec2 = reflow_lyrics(r["spec"], donor["spec"])
-        swap = gen(spec_to_prompt(spec2), spec2, 0, d / f"{r['song_id']}_lyricswap.json",
+        swap = gen(PROMPT_FN[0](spec2), spec2, 0, d / f"{r['song_id']}_lyricswap.json",
                    {"song_id": r["song_id"], "kind": "greedy_lyric_swap", "donor": donor["song_id"]}, 0.0)
         parsed = parse_key_name(r["spec"].get("key"))
         key = None
@@ -295,7 +361,7 @@ def run_greedy_probes(probe, out, gen):
             pc, mode = parsed
             spec4 = copy.deepcopy(r["spec"])
             spec4["key"] = canonical_key(f"{names[(pc + 6) % 12]} {mode}")
-            key = gen(spec_to_prompt(spec4), spec4, 0, d / f"{r['song_id']}_key6.json",
+            key = gen(PROMPT_FN[0](spec4), spec4, 0, d / f"{r['song_id']}_key6.json",
                       {"song_id": r["song_id"], "kind": "greedy_key6"}, 0.0)
         if not base.get("song"):
             continue

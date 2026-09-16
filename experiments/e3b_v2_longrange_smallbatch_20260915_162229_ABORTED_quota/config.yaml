@@ -1,0 +1,21 @@
+# E3b: the E3 long-range mixture at E1's batch (131,072 tokens/update) and the same 2 epochs, so the infill objective is isolated from the 4x batch change. It sees 1.5x the tokens of E1 (the infill examples), which is the remaining confound.
+mode: sft
+model_name_or_path: Qwen/Qwen3.5-0.8B-Base
+data_dir: data/generated/abc_v2_20260915_120927
+train_file: data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl
+eval_file: data/generated/abc_v2_20260915_120927/sft_validation.jsonl
+output_dir: experiments/CHANGE_ME
+max_seq_len: 8192
+tokens_per_micro_batch: 16384
+tokens_per_update: 131072
+epochs: 2
+learning_rate: 5.0e-5
+min_lr_ratio: 0.1
+warmup_ratio: 0.03
+weight_decay: 0.0
+grad_clip: 1.0
+eval_every: 50
+resume_every: 50
+save_every: 0
+eval_limit: 256
+seed: 1234

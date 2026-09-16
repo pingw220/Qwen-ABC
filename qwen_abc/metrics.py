@@ -171,6 +171,7 @@ def song_metrics(song: Song, spec: Optional[dict] = None, parse: Optional[ParseR
         m["lyric_alignment_errors"] = float(parse.errors.get("lyric_overflow", 0) + parse.errors.get("orphan_melisma", 0)
                                             + parse.errors.get("lyric_bar_overflow", 0))
         m["lyric_alignment_valid"] = float(m["lyric_alignment_errors"] == 0)
+    m.update(long_structure_metrics(song, spec))
     return m
 
 
@@ -240,3 +241,237 @@ def corpus_distributions(songs: List[Song]) -> Dict[str, List[float]]:
 def distribution_distances(gen: List[Song], ref: List[Song]) -> Dict[str, Optional[float]]:
     g, r = corpus_distributions(gen), corpus_distributions(ref)
     return {f"js_{k}": js_divergence(g[k], r[k]) for k in g}
+
+
+# ================================================================ long-structure metrics (round 2)
+def lcs_matches(a: Sequence[str], b: Sequence[str]) -> List[int]:
+    """Indices into ``a`` matched by one longest common subsequence with ``b``."""
+    n, m = len(a), len(b)
+    if not n or not m:
+        return []
+    dp = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n - 1, -1, -1):
+        ai, row, nxt = a[i], dp[i], dp[i + 1]
+        for j in range(m - 1, -1, -1):
+            row[j] = nxt[j + 1] + 1 if ai == b[j] else (nxt[j] if nxt[j] >= row[j + 1] else row[j + 1])
+    out, i, j = [], 0, 0
+    while i < n and j < m:
+        if a[i] == b[j]:
+            out.append(i)
+            i += 1
+            j += 1
+        elif dp[i + 1][j] >= dp[i][j + 1]:
+            i += 1
+        else:
+            j += 1
+    return out
+
+
+def _section_notes(song: Song) -> List[List]:
+    starts = song.bar_starts()
+    total = song.total_ticks
+    out = []
+    for s in song.sections:
+        a = starts[s.start_bar] if s.start_bar < len(starts) else total
+        e = s.start_bar + s.num_bars
+        b = starts[e] if e < len(starts) else total
+        out.append([n for n in song.notes if a <= n.onset < b])
+    return out
+
+
+def motif_tokens(notes) -> List[str]:
+    """Transposition-invariant motif tokens: (interval, inter-onset interval) per note transition."""
+    return [f"{max(-12, min(12, y.pitch - x.pitch))}:{min(y.onset - x.onset, 16)}" for x, y in zip(notes, notes[1:])]
+
+
+def motif_similarity(a_notes, b_notes) -> Optional[float]:
+    ta, tb = motif_tokens(a_notes), motif_tokens(b_notes)
+    if len(ta) < 3 or len(tb) < 3:
+        return None
+    return lcs_len(ta, tb) / max(len(ta), len(tb))
+
+
+def _ngrams(seq, n):
+    return [tuple(seq[i:i + n]) for i in range(len(seq) - n + 1)]
+
+
+def _mean(xs):
+    xs = [x for x in xs if x is not None]
+    return sum(xs) / len(xs) if xs else None
+
+
+SCALE_STEPS = {"major": (0, 2, 4, 5, 7, 9, 11), "minor": (0, 2, 3, 5, 7, 8, 10, 11)}
+
+
+def long_structure_metrics(song: Song, spec: Optional[dict] = None) -> Dict[str, float]:
+    m: Dict[str, float] = {}
+    # tonal consistency with the declared key: high temperature buys variety partly by leaving the key
+    key = parse_key_name(song.key)
+    if key and song.notes:
+        tonic, mode = key
+        steps = SCALE_STEPS[mode]
+        dur = sum(n.duration for n in song.notes)
+        m["melody_in_key_frac"] = sum(n.duration for n in song.notes if (n.pitch - tonic) % 12 in steps) / max(dur, 1)
+        rooted = [(c, parse_chord_symbol(c.symbol)) for c in song.chords]
+        rooted = [(c, i) for c, i in rooted if i and i["root_pc"] is not None]
+        tot = sum(c.duration for c, _ in rooted)
+        if tot:
+            m["chord_root_in_key_frac"] = sum(c.duration for c, i in rooted if (i["root_pc"] - tonic) % 12 in steps) / tot
+            m["chord_all_tones_in_key_frac"] = sum(c.duration for c, i in rooted
+                                                   if all((pc - tonic) % 12 in steps for pc in i["pcs"])) / tot
+    notes = song.notes
+    bars = _bar_signatures(song)
+    nonempty = [b for b in bars if b]
+    # ---------------------------------------------- repetition / diversity
+    seen, rep = set(), 0
+    for b in nonempty:
+        rep += b in seen
+        seen.add(b)
+    m["repeated_bar_frac"] = rep / max(len(nonempty), 1)
+    m["consecutive_repeat_bar_frac"] = sum(1 for a, b in zip(bars, bars[1:]) if a and a == b) / max(len(nonempty), 1)
+    pitches = [n.pitch for n in notes]
+    ints = [b - a for a, b in zip(pitches, pitches[1:])]
+    for name, seq in (("pitch", pitches), ("interval", ints)):
+        g = _ngrams(seq, 4)
+        m[f"{name}_4gram_repeat_frac"] = 1 - len(set(g)) / len(g) if g else 0.0
+    # transposition-invariant bar motifs (interval + rhythm inside the bar)
+    starts = song.bar_starts()
+    bar_notes: List[list] = [[] for _ in starts]
+    for n in notes:
+        i = bisect.bisect_right(starts, n.onset) - 1
+        bar_notes[max(i, 0)].append(n)
+    motifs = []
+    for i, bn in enumerate(bar_notes):
+        if len(bn) >= 2:
+            motifs.append(tuple((y.pitch - x.pitch, x.onset - starts[i], x.duration) for x, y in zip(bn, bn[1:])))
+        else:
+            motifs.append(None)
+    m["consecutive_motif_repeat_frac"] = sum(1 for a, b in zip(motifs, motifs[1:]) if a and a == b) / max(sum(1 for x in motifs if x), 1)
+    # ---------------------------------------------- musical content
+    if len(notes) >= 2:
+        absint = [abs(x) for x in ints]
+        k = len(absint)
+        m["int_repeat_frac"] = sum(1 for x in absint if x == 0) / k
+        m["int_step_frac"] = sum(1 for x in absint if 1 <= x <= 2) / k
+        m["int_skip_frac"] = sum(1 for x in absint if 3 <= x <= 4) / k
+        m["int_leap_frac"] = sum(1 for x in absint if 5 <= x <= 7) / k
+        m["int_large_frac"] = sum(1 for x in absint if x > 7) / k
+    if notes:
+        pos = []
+        sync = 0
+        for n in notes:
+            i = bisect.bisect_right(starts, n.onset) - 1
+            p = (n.onset - starts[max(i, 0)]) % TICKS_PER_BEAT
+            pos.append(p)
+            # syncopation proxy: an off-beat attack that sustains across the next beat
+            if p != 0 and n.onset + n.duration > n.onset - p + TICKS_PER_BEAT:
+                sync += 1
+        m["offbeat_8th_frac"] = sum(1 for p in pos if p == 2) / len(notes)
+        m["syncopation_frac"] = sync / len(notes)
+        durs = [n.duration for n in notes]
+        m["dur_16th_frac"] = sum(1 for d in durs if d <= 1) / len(durs)
+        m["dur_8th_frac"] = sum(1 for d in durs if d == 2) / len(durs)
+        m["dur_long_frac"] = sum(1 for d in durs if d >= 8) / len(durs)
+        attacks = [n for n in notes if n.lyric]
+        sylls = sum(len(n.lyric) for n in attacks)
+        m["cram_syllable_frac"] = sum(len(n.lyric) for n in attacks if len(n.lyric) > 1) / max(sylls, 1)
+        # early vs late half of the song (by time)
+        mid = song.total_ticks / 2
+        first = [n for n in notes if n.onset < mid]
+        second = [n for n in notes if n.onset >= mid]
+        if len(first) >= 4 and len(second) >= 4:
+            r1 = max(x.pitch for x in first) - min(x.pitch for x in first)
+            r2 = max(x.pitch for x in second) - min(x.pitch for x in second)
+            m["late_minus_early_pitch_range"] = r2 - r1
+
+            def rhythm_div(ns):
+                sig = {}
+                for n in ns:
+                    i = bisect.bisect_right(starts, n.onset) - 1
+                    sig.setdefault(i, []).append((n.onset - starts[max(i, 0)], n.duration))
+                pats = [tuple(v) for v in sig.values()]
+                return len(set(pats)) / max(len(pats), 1)
+
+            m["late_minus_early_rhythm_diversity"] = rhythm_div(second) - rhythm_div(first)
+    # ---------------------------------------------- long-range coherence (same-label sections)
+    sec_notes = _section_notes(song)
+    labels = [s.label for s in song.sections]
+    by_label: Dict[str, List[int]] = {}
+    for i, l in enumerate(labels):
+        if len(sec_notes[i]) >= 4:
+            by_label.setdefault(l, []).append(i)
+    for lab in ("verse", "chorus"):
+        idx = by_label.get(lab, [])
+        sims = [motif_similarity(sec_notes[a], sec_notes[b]) for k, a in enumerate(idx) for b in idx[k + 1:]]
+        v = _mean(sims)
+        if v is not None:
+            m[f"{lab}_{lab}_motif_sim"] = v
+    ch = by_label.get("chorus", [])
+    if len(ch) >= 2:
+        g0 = set(_ngrams([max(-12, min(12, y.pitch - x.pitch)) for x, y in zip(sec_notes[ch[0]], sec_notes[ch[0]][1:])], 4))
+        pres = []
+        for c in ch[1:]:
+            g = set(_ngrams([max(-12, min(12, y.pitch - x.pitch)) for x, y in zip(sec_notes[c], sec_notes[c][1:])], 4))
+            if g0 and g:
+                pres.append(len(g0 & g) / len(g0))
+        if pres:
+            m["chorus_motif_preservation"] = sum(pres) / len(pres)
+    cross = []
+    labelled = [i for i in range(len(labels)) if len(sec_notes[i]) >= 4]
+    for k, a in enumerate(labelled):
+        for b in labelled[k + 1:]:
+            if labels[a] != labels[b] and {labels[a], labels[b]} <= {"verse", "chorus", "prechorus", "bridge"}:
+                cross.append(motif_similarity(sec_notes[a], sec_notes[b]))
+    v = _mean(cross)
+    if v is not None:
+        m["cross_label_motif_sim"] = v
+    within = []
+    for i, s in enumerate(song.sections):
+        bm = [bar_notes[b] for b in range(s.start_bar, min(s.start_bar + s.num_bars, len(bar_notes)))]
+        for x, y in zip(bm, bm[1:]):
+            within.append(motif_similarity(x, y) if len(x) >= 4 and len(y) >= 4 else None)
+    v = _mean(within)
+    if v is not None:
+        m["within_section_adjacent_bar_motif_sim"] = v
+    # ---------------------------------------------- structure vs the request
+    if spec is not None:
+        want = spec["sections"]
+        got = song.sections
+        n_want = len(want)
+        m["section_count_match"] = float(len(got) == n_want)
+        m["section_bars_seq_match"] = float([s["bars"] for s in want] == [s.num_bars for s in got])
+        m["section_completion_ratio"] = min(len(got), n_want) / max(n_want, 1)
+        m["eos_section_index"] = len(got)
+        m["fewer_sections_than_requested"] = float(len(got) < n_want)
+        m["more_sections_than_requested"] = float(len(got) > n_want)
+        same_idx = [(w, got[i] if i < len(got) else None) for i, w in enumerate(want)]
+        m["section_bars_exact_frac"] = sum(1 for w, g in same_idx if g is not None and g.num_bars == w["bars"] and g.label == w["label"]) / max(n_want, 1)
+        want_bars = sum(s["bars"] for s in want)
+        m["total_bars_ratio"] = len(song.bar_beats) / max(want_bars, 1)
+        m["abs_total_bar_error"] = abs(len(song.bar_beats) - want_bars)
+        late = [i for i in range(n_want) if i >= math.ceil(2 * n_want / 3)]
+        if late:
+            m["late_section_present"] = sum(1 for i in late if i < len(got) and got[i].label == want[i]["label"]) / len(late)
+            m["late_section_exact"] = sum(1 for i in late if i < len(got) and got[i].label == want[i]["label"]
+                                          and got[i].num_bars == want[i]["bars"]) / len(late)
+        for lab in ("bridge", "outro"):
+            idx = [i for i in range(n_want) if want[i]["label"] == lab]
+            if idx:
+                m[f"{lab}_completion"] = sum(1 for i in idx if i < len(got) and got[i].label == lab) / len(idx)
+        # lyrics: which requested syllables were sung (one LCS alignment over the whole song)
+        from .prompt import split_syllables
+
+        wanted = []
+        for i, s in enumerate(want):
+            for line in s["lines"]:
+                wanted.extend((i, x) for x in split_syllables(line))
+        sung = [x for n in notes if n.lyric for x in n.lyric]
+        matched = set(lcs_matches([x for _, x in wanted], sung))
+        if wanted:
+            cut = math.ceil(2 * len(wanted) / 3)
+            tail = range(cut, len(wanted))
+            m["late_lyric_recall"] = sum(1 for j in tail if j in matched) / max(len(tail), 1)
+            lsec = [j for j, (i, _) in enumerate(wanted) if i in late] if late else []
+            if lsec:
+                m["late_section_lyric_recall"] = sum(1 for j in lsec if j in matched) / len(lsec)
+    return m

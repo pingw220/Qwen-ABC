@@ -42,7 +42,7 @@ def char_categories(abc: str):
         if line[:2] in ("X:", "M:", "L:", "Q:", "K:"):
             cats.extend(["header"] * len(line))
             continue
-        if line.startswith("P:"):
+        if line.startswith("% section") or line.startswith("P:"):
             cats.extend(["structure"] * len(line))
             continue
         in_chord = in_inline = False
@@ -85,11 +85,12 @@ def main() -> None:
     ap.add_argument("--data-dir", type=Path, required=True)
     ap.add_argument("--split", default="test")
     ap.add_argument("--output", type=Path, required=True)
+    ap.add_argument("--sft-file", type=Path, default=None, help="default: DATA/sft_{split}.jsonl")
     args = ap.parse_args()
 
     model, tok = load_model(args.checkpoint, "sdpa", dtype=torch.bfloat16)
     model.cuda().eval()
-    rows = read_examples(args.data_dir / f"sft_{args.split}.jsonl")
+    rows = read_examples(args.sft_file or args.data_dir / f"sft_{args.split}.jsonl")
     nll_by = defaultdict(float)
     n_by = defaultdict(int)
     per_song = []

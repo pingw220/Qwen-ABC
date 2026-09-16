@@ -1,0 +1,2 @@
+job=40179637 host=g3113 restart=0 date=2026-09-15T12:11:05-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=38
+ckpt=experiments/direct_sft_20260915_023500/final_model data=data/generated/abc_v1_20260915_012459 fmt=v1 args=--split validation --song-id-list reports/decoding_sweep_validation_song_ids.txt --temperature 0.0 --top-p 1.0 --max-total 8192 --max-new-tokens 8192

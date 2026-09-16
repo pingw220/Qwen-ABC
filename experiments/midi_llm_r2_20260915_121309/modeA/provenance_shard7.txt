@@ -1,0 +1,1 @@
+job=40179954 host=g3100 midi_llm_commit=bea55974ebdadced9078bddbdd52f855ca96a68c dirty_tracked= ckpt=runs/original-midi-llm-onestage-multitask-v1-v4/full/final mode=A flags=--forbid-no-lyric --min-chord-sec 0.25 --max-notes-per-syllable 4 --require-section-syllables --max-wordless-notes-per-bar 1.5 --max-chords-per-bar 3.0

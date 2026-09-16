@@ -1,0 +1,78 @@
+[
+ {
+  "category": "simple_verse_chorus",
+  "song_id": "1tKSEmbS7vmv7cFc24sjlI",
+  "clean": true,
+  "n_sections": 7,
+  "choruses": 2,
+  "latin": false,
+  "syll_per_bar": 2.92,
+  "melisma": 0.147
+ },
+ {
+  "category": "long_multi_section",
+  "song_id": "2HVhqSDfh4XVdrRJuwpG6x",
+  "clean": false,
+  "n_sections": 16,
+  "choruses": 9,
+  "latin": false,
+  "syll_per_bar": 6.96,
+  "melisma": 0.024
+ },
+ {
+  "category": "bridge",
+  "song_id": "7qDiugtLVz4njwHDGCfdB5",
+  "clean": true,
+  "n_sections": 14,
+  "choruses": 7,
+  "latin": false,
+  "syll_per_bar": 2.78,
+  "melisma": 0.072
+ },
+ {
+  "category": "repeated_chorus",
+  "song_id": "5CbNIRIgmrh1W9xNnhtSz1",
+  "clean": true,
+  "n_sections": 13,
+  "choruses": 7,
+  "latin": true,
+  "syll_per_bar": 2.75,
+  "melisma": 0.197
+ },
+ {
+  "category": "high_lyric_density",
+  "song_id": "1Fo23uW11ZN4JCFCeB0ngS",
+  "clean": false,
+  "n_sections": 10,
+  "choruses": 5,
+  "latin": false,
+  "syll_per_bar": 6.39,
+  "melisma": 0.077
+ },
+ {
+  "category": "melisma_heavy",
+  "song_id": "5rc5x4FKWvrJb8qxFNp1bO",
+  "clean": false,
+  "n_sections": 10,
+  "choruses": 6,
+  "latin": false,
+  "syll_per_bar": 0.78,
+  "melisma": 0.614
+ },
+ {
+  "category": "code_switching",
+  "song_id": "28I269iDvkDyb2Fqo2p1TI",
+  "clean": false,
+  "n_sections": 15,
+  "choruses": 7,
+  "latin": true,
+  "syll_per_bar": 4.02,
+  "melisma": 0.039
+ },
+ {
+  "category": "random",
+  "song_id": "3X3BdYpVpN78IFIpmhhEmU",
+  "clean": false,
+  "n_sections": 11
+ }
+]

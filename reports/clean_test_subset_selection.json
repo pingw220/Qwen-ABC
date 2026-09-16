@@ -1,0 +1,200 @@
+{
+ "rules": [
+  "no_pathology_flag",
+  "tempo_60_170_bpm",
+  "stable_key",
+  "regular_bars_le_10pct",
+  "no_section_lyric_cut",
+  "note_density_2_to_6_per_bar",
+  "aligner_cramming_le_5pct",
+  "wordless_le_10pct",
+  "chord_tone_ge_55pct",
+  "no_1bar_section",
+  "at_least_4_sections",
+  "pitch_range_le_28"
+ ],
+ "rule_failures": {
+  "stable_key": 45,
+  "no_section_lyric_cut": 121,
+  "no_pathology_flag": 20,
+  "note_density_2_to_6_per_bar": 27,
+  "tempo_60_170_bpm": 10,
+  "wordless_le_10pct": 25,
+  "regular_bars_le_10pct": 31,
+  "aligner_cramming_le_5pct": 14,
+  "pitch_range_le_28": 35,
+  "chord_tone_ge_55pct": 13,
+  "no_1bar_section": 26
+ },
+ "n_candidates": 42,
+ "manual": {
+  "0ZMWpv0aFBioxywoXsmaId": {
+   "decision": "KEEP",
+   "note": "Clean melody, lyric alignment and sections; minor syllable merges only."
+  },
+  "0ccEIUOa32bbAoGaPHGQuX": {
+   "decision": "KEEP",
+   "note": "Mostly clean; a few irregular bars and stray * in later chorus, pre-chorus labelled chorus."
+  },
+  "18wGt2QzrQO73VY4akreyx": {
+   "decision": "KEEP",
+   "note": "Opening line piles syllables on one note, rest aligned; low but consistent register."
+  },
+  "1C6yky5bXstgnFRiWmfze3": {
+   "decision": "DROP",
+   "note": "Verse bars with melody but no lyrics, erratic phrase segmentation, stray octave drops, messy rap alignment."
+  },
+  "1F3t9l7U8CnKmzVyFbR1aG": {
+   "decision": "DROP",
+   "note": "Pervasive melisma runs (up to 6 _), syllables lag bars, instrumental sections carry notes/lyrics."
+  },
+  "1mcMqHzkg79tfjUqeLAzpI": {
+   "decision": "KEEP",
+   "note": "Clean alignment; second chorus reuses verse melody (label slightly off), occasional low A,, dips."
+  },
+  "1tKSEmbS7vmv7cFc24sjlI": {
+   "decision": "KEEP",
+   "note": "Simple children's song, clean melody, lyrics and chords."
+  },
+  "255drLOJ94rmt1SDRj6H3N": {
+   "decision": "KEEP",
+   "note": "Clean overall; a few tilde merges; verse-content chorus label minor."
+  },
+  "28IzuspwIj6C8XAOoIJ1Wp": {
+   "decision": "KEEP",
+   "note": "Mostly clean; one line piles 7 syllables on one note, some 2/4 bars."
+  },
+  "2CowpOAsDHkhMHQRknInwx": {
+   "decision": "DROP",
+   "note": "Frequent long melisma runs, octave register flipping between phrases, one chorus section entirely rests."
+  },
+  "2doqLn2sfIhgoUB2DaLRiv": {
+   "decision": "KEEP",
+   "note": "Clean melody and alignment; enharmonic chord spellings only."
+  },
+  "2fqUJToyhc6bzIXootn4nv": {
+   "decision": "KEEP",
+   "note": "Alignment fine; chords suggest E major vs estimated B, chorus modulates; plausible."
+  },
+  "2jnjsOk91pDjhn7AI9C7eC": {
+   "decision": "DROP",
+   "note": "Intro has unsung melody, chorus notes without lyrics, long melisma, fragmented verse labels, octave jumps."
+  },
+  "2y0wImEpj5p6SxBmY0opQN": {
+   "decision": "KEEP",
+   "note": "Very long silent intro; melody and lyrics clean; second chorus is verse repeat."
+  },
+  "3DtjJWwGp2qAVFkqeZ2Fgn": {
+   "decision": "KEEP",
+   "note": "Mostly clean; occasional one-note lyric lag and octave leaps, acceptable."
+  },
+  "3JjXD9DVfxh001wI5IACZ1": {
+   "decision": "KEEP",
+   "note": "Clean melody, alignment, sections and chords."
+  },
+  "3mGw54mWnUpV2wNONvBTJy": {
+   "decision": "DROP",
+   "note": "Many 1/4, 2/4, 3/4, 5/4 bars mid-phrase (grid instability); 14-note melisma opening labelled bridge."
+  },
+  "3tOVrJlfy9g1dPBI8czFIy": {
+   "decision": "KEEP",
+   "note": "Verse minor mode, chorus major; syncopated but consistent; lyrics well aligned."
+  },
+  "499ghNme62G8hsotXXlAIE": {
+   "decision": "KEEP",
+   "note": "Clean melody and alignment; minor label granularity."
+  },
+  "49pMRkESXndNlp0jD1Vxnj": {
+   "decision": "KEEP",
+   "note": "Clean; sung opening hook labelled bridge, minor."
+  },
+  "4VEbbZeJwrlqRBTTscq3m2": {
+   "decision": "KEEP",
+   "note": "Mostly clean; short chorus fragments and a 1/4 bar, acceptable."
+  },
+  "4VfHbfbzNPZmX5KI4iAOyT": {
+   "decision": "KEEP",
+   "note": "Rhythmic speech-like pop; repeated pitches match lyrics; alignment good."
+  },
+  "4eMDRwO2dreLU0IvNoARUP": {
+   "decision": "KEEP",
+   "note": "Some 2/4 and 6/4 bars and 4-bar chorus fragments; melody and lyrics otherwise plausible."
+  },
+  "4eNxB89LADQeQnUvvIIuRG": {
+   "decision": "KEEP",
+   "note": "Clean melody, alignment, sections and chords."
+  },
+  "53a8hVCKsw8NhGxmRH1YeZ": {
+   "decision": "KEEP",
+   "note": "Clean; chorus split into 4+6 bar sections, minor."
+  },
+  "56EoTwd4LGjmEO7UzQrDoX": {
+   "decision": "KEEP",
+   "note": "Clean melody, alignment, sections and chords."
+  },
+  "58ajbBxQUMMFpqHA62QNO0": {
+   "decision": "KEEP",
+   "note": "Clean overall; ending chorus slightly fragmented."
+  },
+  "5CbNIRIgmrh1W9xNnhtSz1": {
+   "decision": "KEEP",
+   "note": "Clean melody, alignment, sections and chords."
+  },
+  "5K8AQ2dBiXolebEfawTrzv": {
+   "decision": "KEEP",
+   "note": "Melismatic ballad style, frequent short melismas but consistent; chords fine."
+  },
+  "5LlXalu5DZuQl7Q9CmNKp0": {
+   "decision": "KEEP",
+   "note": "Some melisma runs and register shifts, plausible for this song; sections fine."
+  },
+  "5i64hhiLZt1NWnRZiVubSL": {
+   "decision": "KEEP",
+   "note": "Clean melody and alignment; long chorus section, minor."
+  },
+  "5icriKgD89JhLxeSnd9o74": {
+   "decision": "DROP",
+   "note": "Echo phrases piled onto single long notes each verse, octave register flips in chorus, melody in instrumental."
+  },
+  "6I3A7q18EJgbdZf2Zx1wxm": {
+   "decision": "KEEP",
+   "note": "Alignment fine; chorus label on verse-type content, low register, acceptable."
+  },
+  "6N1sew50IOyienxE3u6WEM": {
+   "decision": "DROP",
+   "note": "Systematic back-and-forth octave jumps every bar, monotone runs; chorus label on verse melody."
+  },
+  "6NqPOID1RsXpj7IAEsgd2v": {
+   "decision": "KEEP",
+   "note": "Clean melody and alignment; mostly verse labels, acceptable."
+  },
+  "6ast0Gzj3H6MgDfkRHZxx1": {
+   "decision": "KEEP",
+   "note": "Clean melody and alignment; minor tilde merges."
+  },
+  "6ousLSFH3faAPCokCk2gCm": {
+   "decision": "KEEP",
+   "note": "Clean melody, alignment, sections and chords."
+  },
+  "72yPhoXJHKpAeCt99RLdK4": {
+   "decision": "KEEP",
+   "note": "Mostly clean; short chorus sections, a few irregular bars, stray notes in instrumental."
+  },
+  "7IE2jtO8pkWtcSdj71OnlT": {
+   "decision": "KEEP",
+   "note": "Repeated pitches match syllabic pop style; alignment and sections clean."
+  },
+  "7iUYsnszotTdqXyh8tzQlZ": {
+   "decision": "DROP",
+   "note": "Verse syllables piled with tildes then melisma, long _ runs in chorus, irregular bars, unsung intro melody."
+  },
+  "7omMiE6h9Js24Cr22A0Fbv": {
+   "decision": "KEEP",
+   "note": "Clean melody, alignment, sections and chords."
+  },
+  "7qDiugtLVz4njwHDGCfdB5": {
+   "decision": "KEEP",
+   "note": "Sung preface labelled bridge before intro; otherwise alignment acceptable, wide register."
+  }
+ }
+}

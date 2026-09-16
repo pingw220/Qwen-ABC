@@ -1,0 +1,5 @@
+
++else
++  python scripts/train.py "$CONFIG" output_dir="$RUN_DIR" ${OVERRIDES:-} 2>&1 | tee -a "$RUN_DIR/stdout.log" || exit $?
++fi
+ echo TRAIN_OK

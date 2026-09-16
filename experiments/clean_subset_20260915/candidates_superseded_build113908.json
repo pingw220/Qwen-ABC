@@ -1,0 +1,852 @@
+{
+ "rules": [
+  "no_pathology_flag",
+  "tempo_60_170_bpm",
+  "stable_key",
+  "regular_bars_le_10pct",
+  "no_section_lyric_cut",
+  "note_density_2_to_6_per_bar",
+  "aligner_cramming_le_5pct",
+  "wordless_le_10pct",
+  "chord_tone_ge_55pct",
+  "no_1bar_section",
+  "at_least_4_sections",
+  "pitch_range_le_28"
+ ],
+ "n_test": 225,
+ "n_candidates": 42,
+ "rule_failures": {
+  "stable_key": 45,
+  "no_section_lyric_cut": 121,
+  "no_pathology_flag": 20,
+  "note_density_2_to_6_per_bar": 27,
+  "tempo_60_170_bpm": 10,
+  "wordless_le_10pct": 25,
+  "regular_bars_le_10pct": 31,
+  "aligner_cramming_le_5pct": 14,
+  "pitch_range_le_28": 35,
+  "chord_tone_ge_55pct": 13,
+  "no_1bar_section": 26
+ },
+ "candidates": [
+  "0ZMWpv0aFBioxywoXsmaId",
+  "0ccEIUOa32bbAoGaPHGQuX",
+  "18wGt2QzrQO73VY4akreyx",
+  "1C6yky5bXstgnFRiWmfze3",
+  "1F3t9l7U8CnKmzVyFbR1aG",
+  "1mcMqHzkg79tfjUqeLAzpI",
+  "1tKSEmbS7vmv7cFc24sjlI",
+  "255drLOJ94rmt1SDRj6H3N",
+  "28IzuspwIj6C8XAOoIJ1Wp",
+  "2CowpOAsDHkhMHQRknInwx",
+  "2doqLn2sfIhgoUB2DaLRiv",
+  "2fqUJToyhc6bzIXootn4nv",
+  "2jnjsOk91pDjhn7AI9C7eC",
+  "2y0wImEpj5p6SxBmY0opQN",
+  "3DtjJWwGp2qAVFkqeZ2Fgn",
+  "3JjXD9DVfxh001wI5IACZ1",
+  "3mGw54mWnUpV2wNONvBTJy",
+  "3tOVrJlfy9g1dPBI8czFIy",
+  "499ghNme62G8hsotXXlAIE",
+  "49pMRkESXndNlp0jD1Vxnj",
+  "4VEbbZeJwrlqRBTTscq3m2",
+  "4VfHbfbzNPZmX5KI4iAOyT",
+  "4eMDRwO2dreLU0IvNoARUP",
+  "4eNxB89LADQeQnUvvIIuRG",
+  "53a8hVCKsw8NhGxmRH1YeZ",
+  "56EoTwd4LGjmEO7UzQrDoX",
+  "58ajbBxQUMMFpqHA62QNO0",
+  "5CbNIRIgmrh1W9xNnhtSz1",
+  "5K8AQ2dBiXolebEfawTrzv",
+  "5LlXalu5DZuQl7Q9CmNKp0",
+  "5i64hhiLZt1NWnRZiVubSL",
+  "5icriKgD89JhLxeSnd9o74",
+  "6I3A7q18EJgbdZf2Zx1wxm",
+  "6N1sew50IOyienxE3u6WEM",
+  "6NqPOID1RsXpj7IAEsgd2v",
+  "6ast0Gzj3H6MgDfkRHZxx1",
+  "6ousLSFH3faAPCokCk2gCm",
+  "72yPhoXJHKpAeCt99RLdK4",
+  "7IE2jtO8pkWtcSdj71OnlT",
+  "7iUYsnszotTdqXyh8tzQlZ",
+  "7omMiE6h9Js24Cr22A0Fbv",
+  "7qDiugtLVz4njwHDGCfdB5"
+ ],
+ "failed_rules_per_song": {
+  "05QmUFMQMUYV3CCVgs8G6Z": [
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "05Yqjul6jLsld0Vh8K36KH": [
+   "no_pathology_flag",
+   "stable_key",
+   "note_density_2_to_6_per_bar"
+  ],
+  "09RY5jQZ5kNoMSU5toQlfU": [
+   "tempo_60_170_bpm",
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar"
+  ],
+  "09d4jeFypKBWzZVfHKBeVY": [
+   "no_section_lyric_cut"
+  ],
+  "0A4ehMRLl7v8TFyhSbdkh8": [
+   "no_section_lyric_cut"
+  ],
+  "0B1k0zh8Rsa1aE7LgF6eHi": [
+   "no_section_lyric_cut"
+  ],
+  "0BetT2tdyEMm4FTs2y464B": [
+   "no_section_lyric_cut"
+  ],
+  "0CxfpbQfmX4bR6mA6aarL3": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "wordless_le_10pct"
+  ],
+  "0FadVuelB7Srb98yUbTbwI": [
+   "regular_bars_le_10pct",
+   "aligner_cramming_le_5pct",
+   "pitch_range_le_28"
+  ],
+  "0FdW541km7r4Zh7hq02jBZ": [
+   "stable_key",
+   "note_density_2_to_6_per_bar",
+   "pitch_range_le_28"
+  ],
+  "0GX8F6CUMYSh0WLvTIR0vF": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "0ITY3kOaEoiDxaCI88jET6": [
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "0TdPZ2mnbhww9mVUiZZhX5": [
+   "no_section_lyric_cut"
+  ],
+  "0XV81gUVudUkxWP4x6rJhW": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "chord_tone_ge_55pct"
+  ],
+  "0YZZPAvQgazIok3JIr8mEy": [
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "0ZMWpv0aFBioxywoXsmaId": [],
+  "0ccEIUOa32bbAoGaPHGQuX": [],
+  "0exfMqddpIIZQbZZny68Rc": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "aligner_cramming_le_5pct",
+   "wordless_le_10pct"
+  ],
+  "0hzBWWiSp4x1dzcorjP9FN": [
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "0j9LdgpOzc5zMjq4hBlUcn": [
+   "no_section_lyric_cut"
+  ],
+  "0jcOCNg3QQCYcwM4s8JyZI": [
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "0mGuXhYffcFglH8T4rEA2a": [
+   "no_section_lyric_cut"
+  ],
+  "0zcMdzPJ7ANImvROghMVsY": [
+   "wordless_le_10pct"
+  ],
+  "18wGt2QzrQO73VY4akreyx": [],
+  "18wo5vJV7bRnjt3wlkSDCJ": [
+   "no_section_lyric_cut"
+  ],
+  "19eK3bar5P6Xcw6LzdXCHb": [
+   "stable_key",
+   "wordless_le_10pct",
+   "pitch_range_le_28"
+  ],
+  "1C6yky5bXstgnFRiWmfze3": [],
+  "1EbYNhVhmnZpriRnaFygWN": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "chord_tone_ge_55pct"
+  ],
+  "1F3t9l7U8CnKmzVyFbR1aG": [],
+  "1FBJbPIt388FFDgZbHVRyV": [
+   "regular_bars_le_10pct"
+  ],
+  "1Fo23uW11ZN4JCFCeB0ngS": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar",
+   "wordless_le_10pct",
+   "pitch_range_le_28"
+  ],
+  "1QK8j48LA0pLCJly3Yqd82": [
+   "note_density_2_to_6_per_bar",
+   "no_1bar_section"
+  ],
+  "1UytAxYwD5crlQcPiL3ZaE": [
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "1WVlzSesyFUorHX8iso9dG": [
+   "no_section_lyric_cut"
+  ],
+  "1YNdE3GjlS8a3OvGm9tQ0F": [
+   "no_section_lyric_cut"
+  ],
+  "1bIiaFMdH3udqWyXyeQMoH": [
+   "no_pathology_flag",
+   "regular_bars_le_10pct",
+   "note_density_2_to_6_per_bar",
+   "aligner_cramming_le_5pct",
+   "chord_tone_ge_55pct"
+  ],
+  "1eFSgOay51iMZIdmXU3ISl": [
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "1hWIEh1MKbcB4ouWgWL5Og": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "1heBg3CKPc4qVUXzVO49I2": [
+   "regular_bars_le_10pct"
+  ],
+  "1mcMqHzkg79tfjUqeLAzpI": [],
+  "1oDW3JIhobplQhuTVBjtcB": [
+   "tempo_60_170_bpm",
+   "chord_tone_ge_55pct"
+  ],
+  "1oWX2EGO7Z8YCZ5jJuGrpM": [
+   "no_section_lyric_cut"
+  ],
+  "1ong56tLkuTP0YuTxYAr9F": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "no_1bar_section"
+  ],
+  "1qcgbHATg4tVyVqudr2pxK": [
+   "no_pathology_flag",
+   "tempo_60_170_bpm",
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar"
+  ],
+  "1sVsi9Q7g5zYcw3Aj90bcc": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "pitch_range_le_28"
+  ],
+  "1tKSEmbS7vmv7cFc24sjlI": [],
+  "1tlU1rCRQ7gzHWk0frnlVj": [
+   "no_section_lyric_cut"
+  ],
+  "1z51mKj5nHYxrGCEq6c3Eq": [
+   "no_section_lyric_cut"
+  ],
+  "1zsXjmo39vHJkLW8FJVB0t": [
+   "stable_key"
+  ],
+  "20WNhehqO6xfLVktkDefs2": [
+   "no_pathology_flag",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "255drLOJ94rmt1SDRj6H3N": [],
+  "27o7ErWiozSj47o3dnPvVf": [
+   "no_pathology_flag",
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar",
+   "aligner_cramming_le_5pct",
+   "pitch_range_le_28"
+  ],
+  "28I269iDvkDyb2Fqo2p1TI": [
+   "no_section_lyric_cut",
+   "aligner_cramming_le_5pct",
+   "chord_tone_ge_55pct",
+   "no_1bar_section"
+  ],
+  "28IzuspwIj6C8XAOoIJ1Wp": [],
+  "2Ao4GCbjB6dejFu7OWyDuc": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct"
+  ],
+  "2BOyzQctN9FQpLfNM9GHQW": [
+   "no_section_lyric_cut"
+  ],
+  "2CBn4vqG1420rIiELQRmZW": [
+   "no_section_lyric_cut"
+  ],
+  "2CowpOAsDHkhMHQRknInwx": [],
+  "2HVhqSDfh4XVdrRJuwpG6x": [
+   "note_density_2_to_6_per_bar",
+   "chord_tone_ge_55pct"
+  ],
+  "2MAwZYWDPVFHl7OFJ2vtS8": [
+   "no_section_lyric_cut"
+  ],
+  "2Pg6rODAW3EZCCBgE8iPZq": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "2TSoqk7lI5AomIgffxCw4g": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "2Wcz0tFIoJn6xEzVQkOlDR": [
+   "no_pathology_flag",
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "2YSqK9S0SZjulBJdc9BYuu": [
+   "stable_key",
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut",
+   "aligner_cramming_le_5pct",
+   "pitch_range_le_28"
+  ],
+  "2alKIQAr2MPs28ZI5AHvJB": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "2dNIwWWsu0zmvKgHlE43dG": [
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "2doqLn2sfIhgoUB2DaLRiv": [],
+  "2fqUJToyhc6bzIXootn4nv": [],
+  "2fx7D86fwFlVfBJSGhuZFg": [
+   "aligner_cramming_le_5pct"
+  ],
+  "2gDzOOf3ElxOa1v6g0Xk7M": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "2gmcPtNdcxvNqs0CJRGgel": [
+   "no_section_lyric_cut"
+  ],
+  "2jnjsOk91pDjhn7AI9C7eC": [],
+  "2kNj4xVed7CbulRhF3C4nT": [
+   "no_section_lyric_cut"
+  ],
+  "2mwrlsAA6AzX0AgheZBF41": [
+   "stable_key"
+  ],
+  "2nGGovqWeOxXH2WbnoS3RX": [
+   "no_section_lyric_cut"
+  ],
+  "2r6PR48twaBEyqvTggRzZa": [
+   "regular_bars_le_10pct"
+  ],
+  "2rwYS769lcaMmFpqzR2bBZ": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "wordless_le_10pct"
+  ],
+  "2vnn9onO7sQBevG0O2iPHi": [
+   "no_section_lyric_cut"
+  ],
+  "2xtwnA7wTLBrUYKe3p58oe": [
+   "stable_key",
+   "chord_tone_ge_55pct"
+  ],
+  "2y0wImEpj5p6SxBmY0opQN": [],
+  "32Wt3NCmKIU2u5RmSN53TJ": [
+   "pitch_range_le_28"
+  ],
+  "32fzm1b8Ivyyj9qKXjiMZw": [
+   "no_section_lyric_cut",
+   "aligner_cramming_le_5pct",
+   "pitch_range_le_28"
+  ],
+  "3ACFBxapkdupp48I4hSHeX": [
+   "no_section_lyric_cut"
+  ],
+  "3DtjJWwGp2qAVFkqeZ2Fgn": [],
+  "3FT4dcOfYXmlNbLecPiMrm": [
+   "no_section_lyric_cut"
+  ],
+  "3IIAyAsxuQR9jsikumTVHo": [
+   "no_section_lyric_cut"
+  ],
+  "3JjXD9DVfxh001wI5IACZ1": [],
+  "3KEgUftkAZzQeugm2kVwbT": [
+   "no_pathology_flag",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "3Oljg1NEoLgRgcJnWJpiAT": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "3QdCMpU6fQ1dsJ3GTzG5HW": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "3SYxHNDH5nXWkzcQHw4YnX": [
+   "stable_key"
+  ],
+  "3SZ3hiasAHYoajQX3XH4FU": [
+   "no_section_lyric_cut"
+  ],
+  "3SlCzm1GRT5idmfyQ8LjYP": [
+   "tempo_60_170_bpm"
+  ],
+  "3UD90WH9z5Ftofm8XRf3Ld": [
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "3Wlox2t540dXpZpm20Zjyb": [
+   "no_pathology_flag",
+   "tempo_60_170_bpm",
+   "regular_bars_le_10pct",
+   "note_density_2_to_6_per_bar"
+  ],
+  "3X3BdYpVpN78IFIpmhhEmU": [
+   "pitch_range_le_28"
+  ],
+  "3Yg7Z2rVweAHOwUiPkqTvE": [
+   "no_1bar_section"
+  ],
+  "3fqOOwQx6M8XpJMf8Bsp9K": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct"
+  ],
+  "3fuDrXgVS9Be7HQqDuX5qV": [
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar"
+  ],
+  "3im9iOhpZNgaTS4VGYOGF9": [
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar",
+   "aligner_cramming_le_5pct"
+  ],
+  "3mGw54mWnUpV2wNONvBTJy": [],
+  "3q9kTZg82Fxa7KptbOLqav": [
+   "no_section_lyric_cut"
+  ],
+  "3t677uctclLy3tETsBtGF9": [
+   "stable_key"
+  ],
+  "3tOVrJlfy9g1dPBI8czFIy": [],
+  "3tmLIBcbVxYe6tTKvUyMIk": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "no_1bar_section"
+  ],
+  "3xqFOwya52XoVYyO2HphmG": [
+   "no_pathology_flag",
+   "stable_key",
+   "no_1bar_section",
+   "pitch_range_le_28"
+  ],
+  "40RF2zemUhNk0aPkIJNWxM": [
+   "no_pathology_flag",
+   "stable_key",
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar",
+   "pitch_range_le_28"
+  ],
+  "4218Xav4mopAXlguvSJ9Uv": [
+   "no_section_lyric_cut"
+  ],
+  "479FYDDkEokgYf3BG9x6fp": [
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "47ZxPbe5sBnGaQanA7sQDq": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "499ghNme62G8hsotXXlAIE": [],
+  "49pMRkESXndNlp0jD1Vxnj": [],
+  "4Aguf5QHJzRN4PcXwFX7X0": [
+   "chord_tone_ge_55pct"
+  ],
+  "4BDdKKIImyCOH0UFXGSoMu": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "pitch_range_le_28"
+  ],
+  "4Bsy0tFLV7FdP4t1gUY5XI": [
+   "regular_bars_le_10pct",
+   "wordless_le_10pct"
+  ],
+  "4C8V4YVVhGQdsoyD1uuhyJ": [
+   "stable_key",
+   "regular_bars_le_10pct"
+  ],
+  "4Cvd1vwstGUZTdnL6X35md": [
+   "no_section_lyric_cut"
+  ],
+  "4DJ0DsOmFv6fR5LeyUsslY": [
+   "no_section_lyric_cut"
+  ],
+  "4KnaiD9UY8fAhM1GrM9M8m": [
+   "chord_tone_ge_55pct"
+  ],
+  "4M901X90BfY3H74MqcXZNi": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "4QvcPLQoWZK9qiX8uU6zft": [
+   "no_section_lyric_cut"
+  ],
+  "4REzuXet7gr8UCA3T5tK2s": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "4T4TeoIBft7oIW5WOte5Au": [
+   "no_pathology_flag",
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "pitch_range_le_28"
+  ],
+  "4VEbbZeJwrlqRBTTscq3m2": [],
+  "4VfHbfbzNPZmX5KI4iAOyT": [],
+  "4eMDRwO2dreLU0IvNoARUP": [],
+  "4eNxB89LADQeQnUvvIIuRG": [],
+  "4gXVhPeuxE9ojFL0Ose0vA": [
+   "stable_key",
+   "wordless_le_10pct"
+  ],
+  "4h1AwwM52VG8iwNmDf1FIK": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "4i0tFVka77iJFMvsLWUALb": [
+   "no_section_lyric_cut",
+   "aligner_cramming_le_5pct"
+  ],
+  "4iexiXer21ge7jm3GPQkT2": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "4trtyNhvxt6BDPMt2Rpw48": [
+   "no_section_lyric_cut",
+   "chord_tone_ge_55pct"
+  ],
+  "4uJ6Twc8EbeVIaqBj5CJs7": [
+   "no_section_lyric_cut"
+  ],
+  "4yZY7e169iMB1o29Pk41cz": [
+   "no_section_lyric_cut"
+  ],
+  "50OR02Pg9seVMqYyJ7Nmrb": [
+   "no_section_lyric_cut"
+  ],
+  "51G9MuAKc5GOKrfoP4M4uO": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "53a8hVCKsw8NhGxmRH1YeZ": [],
+  "56EoTwd4LGjmEO7UzQrDoX": [],
+  "58ajbBxQUMMFpqHA62QNO0": [],
+  "59E7BFFni2GTDisijRqKU7": [
+   "no_1bar_section"
+  ],
+  "5AC7fEOMQqxqzqCq5z7nc9": [
+   "stable_key",
+   "wordless_le_10pct",
+   "chord_tone_ge_55pct",
+   "no_1bar_section"
+  ],
+  "5AEMs1wDhUJeZnTl5xyfys": [
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "5AxCJOjIDdu4mVxvCWECuV": [
+   "regular_bars_le_10pct",
+   "no_1bar_section"
+  ],
+  "5BldrYOHmqUwouMmcBNEtK": [
+   "aligner_cramming_le_5pct",
+   "no_1bar_section"
+  ],
+  "5CbNIRIgmrh1W9xNnhtSz1": [],
+  "5CqrGysexXG1yOlouhkm6p": [
+   "no_section_lyric_cut"
+  ],
+  "5DOdnY5NIJVe0tln5eFm7f": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "5EbU9BSwgacaX0mW7zU4jN": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "no_1bar_section",
+   "pitch_range_le_28"
+  ],
+  "5Fpa2uQd90iYGAEsbKSSZR": [
+   "no_section_lyric_cut"
+  ],
+  "5IhH7idp4sHJ4o0pnxH59X": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar",
+   "aligner_cramming_le_5pct",
+   "wordless_le_10pct",
+   "no_1bar_section",
+   "pitch_range_le_28"
+  ],
+  "5K8AQ2dBiXolebEfawTrzv": [],
+  "5LPdNDuOWYSDT5P20iCRYO": [
+   "no_section_lyric_cut"
+  ],
+  "5LlXalu5DZuQl7Q9CmNKp0": [],
+  "5OqvADUGavUqQnYH0Ukt7T": [
+   "tempo_60_170_bpm",
+   "note_density_2_to_6_per_bar"
+  ],
+  "5SifuCu1raOyB2mljEPWoM": [
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "5a7cNKUhxWPg9jWE0fUukb": [
+   "regular_bars_le_10pct"
+  ],
+  "5bVKIpODZbjn82L68A80hv": [
+   "no_pathology_flag",
+   "stable_key",
+   "wordless_le_10pct"
+  ],
+  "5bf4zyUkbC7Df7icueGtcR": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "no_1bar_section"
+  ],
+  "5dxFx2Ez14xXuqyOK3Pgxd": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "5eZwk6UYsVAbqSomPjNSDE": [
+   "no_section_lyric_cut"
+  ],
+  "5fTRjBPvXscWyOOukAGtW5": [
+   "no_pathology_flag",
+   "tempo_60_170_bpm",
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "5gIW9IMReT6xicyfHKtcug": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "5i64hhiLZt1NWnRZiVubSL": [],
+  "5icriKgD89JhLxeSnd9o74": [],
+  "5igSw7TE7vW1iKMCU9ACMJ": [
+   "no_pathology_flag",
+   "chord_tone_ge_55pct",
+   "no_1bar_section",
+   "pitch_range_le_28"
+  ],
+  "5jRB7otWSFz3kMR3fAOQ2n": [
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "5jwyaHQbtmpEPVmHwq19Fy": [
+   "no_section_lyric_cut"
+  ],
+  "5kehUJhVBQAMgzY9IQXIOV": [
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "5mh8LL52KOZXeb80QpcUVG": [
+   "no_pathology_flag",
+   "no_section_lyric_cut",
+   "wordless_le_10pct",
+   "pitch_range_le_28"
+  ],
+  "5ojQLq8MsewWoGbVQEBd8f": [
+   "pitch_range_le_28"
+  ],
+  "5pewA4rsox31wXDX26VMlr": [
+   "no_1bar_section"
+  ],
+  "5rVNJGnGulbxFwEgUeqAPg": [
+   "no_pathology_flag",
+   "no_section_lyric_cut",
+   "no_1bar_section",
+   "pitch_range_le_28"
+  ],
+  "5rc5x4FKWvrJb8qxFNp1bO": [
+   "no_section_lyric_cut",
+   "note_density_2_to_6_per_bar"
+  ],
+  "5zpJSe86hLBaTpd6ZW3TFB": [
+   "stable_key",
+   "wordless_le_10pct",
+   "pitch_range_le_28"
+  ],
+  "61g5RPLFCdbnVwAQ363gyP": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct"
+  ],
+  "64ksmDDLWaiY21WDVXBoYC": [
+   "no_section_lyric_cut"
+  ],
+  "65qUlixRrzCOI7RIHMZ8b0": [
+   "no_section_lyric_cut"
+  ],
+  "66x69ddxo6rH3KZoa5yNfO": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "6A4DbuFY7yg40irHQW5VL3": [
+   "chord_tone_ge_55pct"
+  ],
+  "6FmfdFUbG8q6U2KbsNFo3y": [
+   "stable_key",
+   "pitch_range_le_28"
+  ],
+  "6H1qeLID2gslZMgxpwfACS": [
+   "no_pathology_flag",
+   "stable_key",
+   "regular_bars_le_10pct",
+   "aligner_cramming_le_5pct"
+  ],
+  "6I3A7q18EJgbdZf2Zx1wxm": [],
+  "6M8dGV2alakIhqDFNFIEfg": [
+   "regular_bars_le_10pct"
+  ],
+  "6N1sew50IOyienxE3u6WEM": [],
+  "6NgFmG5lumvnyBEpjye3Rd": [
+   "no_pathology_flag",
+   "tempo_60_170_bpm",
+   "stable_key",
+   "note_density_2_to_6_per_bar"
+  ],
+  "6NqPOID1RsXpj7IAEsgd2v": [],
+  "6TCciGLZyMSTZDJDmrdVSI": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct"
+  ],
+  "6URmER9CypxglzgwthpWTU": [
+   "stable_key",
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "6W6bjaq3SpD6OMuxWgPM9X": [
+   "regular_bars_le_10pct",
+   "note_density_2_to_6_per_bar"
+  ],
+  "6WGLxfoN1BIjmIJYcb2Wwn": [
+   "regular_bars_le_10pct"
+  ],
+  "6XwWuAFFTqL2IoPdeA4iis": [
+   "pitch_range_le_28"
+  ],
+  "6alSXplRoBcYCNHKqJDWPz": [
+   "no_section_lyric_cut"
+  ],
+  "6ast0Gzj3H6MgDfkRHZxx1": [],
+  "6bPSr7yKukRjAGk9cIkJ4J": [
+   "stable_key"
+  ],
+  "6ceBOPyGnJnumkJ2wOTt7D": [
+   "no_section_lyric_cut"
+  ],
+  "6coZcwGP3Cmhyqzvp6sEJS": [
+   "no_section_lyric_cut",
+   "wordless_le_10pct"
+  ],
+  "6gkCBQjjSFX0UctwaFFdL2": [
+   "no_section_lyric_cut"
+  ],
+  "6i6Lrq6Lkfsjw4WCLOr6zp": [
+   "stable_key",
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "6jK3PQWd5QOPHLAJw6nvCD": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "6lyPKJbCwZEiOtxwXxTDLD": [
+   "no_section_lyric_cut"
+  ],
+  "6n5cdQsg6li2aDYUGUiL5l": [
+   "regular_bars_le_10pct"
+  ],
+  "6oFUns8NczIrmLbQOLYJhD": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "6ousLSFH3faAPCokCk2gCm": [],
+  "6pQe06VbPHfAD9MVV7y7ed": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "6tnnVnCMhhIbXsnReXa0KX": [
+   "stable_key"
+  ],
+  "72HBFpZW26bT1E0POMsQUW": [
+   "no_section_lyric_cut"
+  ],
+  "72yPhoXJHKpAeCt99RLdK4": [],
+  "75eCpTAhv6j4enqG1OMBOg": [
+   "no_section_lyric_cut",
+   "no_1bar_section",
+   "pitch_range_le_28"
+  ],
+  "7DWvcbGGWWtk0edvck09X3": [
+   "regular_bars_le_10pct"
+  ],
+  "7DeY1fKszqaJKtXUk1NiiH": [
+   "no_pathology_flag",
+   "tempo_60_170_bpm",
+   "note_density_2_to_6_per_bar"
+  ],
+  "7G1ifUUwRSuQCc8wnDgi6T": [
+   "note_density_2_to_6_per_bar"
+  ],
+  "7Ga5M55lfOVkuHxzUgk4ZX": [
+   "no_section_lyric_cut"
+  ],
+  "7IE2jtO8pkWtcSdj71OnlT": [],
+  "7fnhHkS67SrSqsWpwkD6CM": [
+   "no_section_lyric_cut"
+  ],
+  "7iUYsnszotTdqXyh8tzQlZ": [],
+  "7jDM04sebBiBcWysWcvSFx": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut"
+  ],
+  "7ntQ7iPTYMS4LLAumzJQ7R": [
+   "no_section_lyric_cut"
+  ],
+  "7omMiE6h9Js24Cr22A0Fbv": [],
+  "7ozbJ4EX6Ps7AqVpZ2sDnT": [
+   "no_section_lyric_cut",
+   "no_1bar_section"
+  ],
+  "7q5MNn6t2YpWawZvWDpAhv": [
+   "no_pathology_flag",
+   "tempo_60_170_bpm",
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut",
+   "aligner_cramming_le_5pct"
+  ],
+  "7qDiugtLVz4njwHDGCfdB5": [],
+  "7urNxXDmuL6xVKEOoEY41E": [
+   "no_section_lyric_cut"
+  ],
+  "7v46DZBqB4xmaTHRygC8gy": [
+   "regular_bars_le_10pct",
+   "no_section_lyric_cut",
+   "pitch_range_le_28"
+  ],
+  "7ya27A8QscYolruZhE2dAy": [
+   "stable_key",
+   "no_section_lyric_cut"
+  ],
+  "7zvq0c9K75w1mijevp7GPQ": [
+   "stable_key"
+  ]
+ }
+}

@@ -1,0 +1,498 @@
+W0915 13:04:09.018000 126389 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] 
+W0915 13:04:09.018000 126389 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+W0915 13:04:09.018000 126389 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0915 13:04:09.018000 126389 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:08<46:27,  8.74s/it]Loading weights:  28%|██▊       | 89/320 [00:08<00:16, 14.00it/s]Loading weights:   0%|          | 1/320 [00:09<47:52,  9.01s/it]Loading weights:  42%|████▏     | 134/320 [00:09<00:08, 22.58it/s]Loading weights:  42%|████▏     | 134/320 [00:09<00:09, 20.23it/s]Loading weights:  48%|████▊     | 154/320 [00:09<00:06, 25.75it/s]Loading weights:  50%|█████     | 160/320 [00:10<00:07, 20.96it/s]Loading weights:  52%|█████▎    | 168/320 [00:10<00:06, 23.99it/s]Loading weights:  55%|█████▌    | 176/320 [00:10<00:06, 22.11it/s]Loading weights:  56%|█████▌    | 178/320 [00:10<00:06, 23.20it/s]Loading weights:  58%|█████▊    | 185/320 [00:11<00:06, 20.31it/s]Loading weights:  58%|█████▊    | 187/320 [00:11<00:06, 20.19it/s]Loading weights:  60%|█████▉    | 191/320 [00:11<00:05, 21.70it/s]Loading weights:  62%|██████▏   | 199/320 [00:12<00:05, 20.18it/s]Loading weights:  62%|██████▏   | 199/320 [00:12<00:06, 19.23it/s]Loading weights:  64%|██████▍   | 205/320 [00:12<00:05, 21.30it/s]Loading weights:  64%|██████▍   | 205/320 [00:12<00:05, 21.39it/s]Loading weights:  66%|██████▋   | 212/320 [00:12<00:04, 24.23it/s]Loading weights:  66%|██████▋   | 212/320 [00:12<00:04, 23.26it/s]Loading weights:  69%|██████▉   | 221/320 [00:12<00:03, 30.14it/s]Loading weights:  69%|██████▉   | 221/320 [00:12<00:03, 27.33it/s]Loading weights:  73%|███████▎  | 234/320 [00:12<00:02, 34.07it/s]Loading weights:  73%|███████▎  | 234/320 [00:12<00:02, 38.89it/s]Loading weights:  75%|███████▌  | 241/320 [00:13<00:02, 31.81it/s]Loading weights:  75%|███████▌  | 240/320 [00:13<00:02, 33.39it/s]Loading weights:  78%|███████▊  | 249/320 [00:13<00:01, 38.73it/s]Loading weights:  78%|███████▊  | 249/320 [00:13<00:02, 35.36it/s]Loading weights:  81%|████████  | 258/320 [00:13<00:01, 43.67it/s]Loading weights:  81%|████████  | 258/320 [00:13<00:01, 39.91it/s]Loading weights:  82%|████████▎ | 264/320 [00:13<00:01, 41.28it/s]Loading weights:  84%|████████▍ | 270/320 [00:13<00:01, 36.31it/s]Loading weights:  82%|████████▎ | 264/320 [00:13<00:01, 31.64it/s]Loading weights:  85%|████████▌ | 273/320 [00:14<00:01, 25.34it/s]Loading weights:  86%|████████▌ | 275/320 [00:14<00:01, 22.83it/s]Loading weights:  87%|████████▋ | 279/320 [00:14<00:02, 17.89it/s]Loading weights:  87%|████████▋ | 278/320 [00:14<00:02, 20.40it/s]Loading weights:  90%|████████▉ | 287/320 [00:15<00:01, 24.63it/s]Loading weights:  90%|████████▉ | 287/320 [00:15<00:01, 21.70it/s]Loading weights:  93%|█████████▎| 298/320 [00:15<00:01, 20.99it/s]Loading weights:  93%|█████████▎| 297/320 [00:15<00:01, 16.21it/s]Loading weights:  94%|█████████▍| 301/320 [00:16<00:01, 14.18it/s]Loading weights:  94%|█████████▍| 301/320 [00:16<00:01, 14.49it/s]Loading weights:  96%|█████████▌| 307/320 [00:16<00:00, 14.40it/s]Loading weights:  96%|█████████▌| 307/320 [00:16<00:00, 14.62it/s]Loading weights:  97%|█████████▋| 310/320 [00:16<00:00, 15.65it/s]Loading weights:  97%|█████████▋| 310/320 [00:16<00:00, 15.48it/s]Loading weights:  99%|█████████▉| 318/320 [00:16<00:00, 22.28it/s]Loading weights:  99%|█████████▉| 318/320 [00:16<00:00, 22.34it/s]Loading weights: 100%|██████████| 320/320 [00:16<00:00, 18.89it/s]
+Loading weights: 100%|██████████| 320/320 [00:16<00:00, 18.84it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v2_20260915_120927",
+ "output_dir": "experiments/e2b_v2_bigbatch_matched_updates_20260915_130350",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": null,
+ "eval_file": null,
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 524288,
+ "epochs": 100,
+ "max_steps": 506,
+ "stop_after_steps": 0,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 25,
+ "resume_every": 25,
+ "save_every_epoch": true,
+ "save_every": 100,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 10243,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 29803925,
+ "train_supervised_tokens": 25468575,
+ "train_max_example_tokens": 6703,
+ "micro_batches_per_epoch": 2017,
+ "grad_accum": 16,
+ "micro_batches_per_update": 32,
+ "steps_per_epoch": 64,
+ "total_steps": 506,
+ "padded_tokens_per_update_budget": 524288,
+ "world_size": 2,
+ "real_tokens_per_update_mean": 465686.328125,
+ "supervised_tokens_per_update_mean": 397946.484375,
+ "n_params": 752393024,
+ "n_trainable_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40181500",
+ "transformers": "5.17.0",
+ "flash_linear_attention": "0.5.2"
+}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"step": 0, "world_size": 2, "eval_loss": 1.0154602209312709, "eval_ppl": 2.7606336064347152, "eval_tokens": 672601, "time": 17.5}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 1, "epoch": 0.016, "loss": 1.0034363963554969, "lr": 3.3333333333333333e-06, "grad_norm": 8.141502380371094, "tokens_seen": 469142, "sup_tokens_seen": 402891, "tokens_per_sec": 12118.2, "max_mem_gb": 11.23, "max_reserved_gb": 11.41, "time": 56.3}
+{"step": 10, "epoch": 0.159, "loss": 0.7241083974279608, "lr": 3.3333333333333335e-05, "grad_norm": 9.414787292480469, "tokens_seen": 4704876, "sup_tokens_seen": 4021750, "tokens_per_sec": 12371.4, "max_mem_gb": 16.01, "max_reserved_gb": 16.99, "time": 398.6}
+{"step": 20, "epoch": 0.317, "loss": 0.5887881242578659, "lr": 4.9992631390188354e-05, "grad_norm": 4.061250686645508, "tokens_seen": 9451373, "sup_tokens_seen": 8073986, "tokens_per_sec": 12539.9, "max_mem_gb": 16.02, "max_reserved_gb": 17.09, "time": 777.2}
+{"step": 25, "eval_loss": 0.5640449592154654, "eval_ppl": 1.7577682404743893, "eval_tokens": 672601, "time": 985.1}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+{"step": 30, "epoch": 0.476, "loss": 0.5247024754569549, "lr": 4.990978994740977e-05, "grad_norm": 1.906833529472351, "tokens_seen": 14193112, "sup_tokens_seen": 12124802, "tokens_per_sec": 11665.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 1183.6}
+{"step": 40, "epoch": 0.635, "loss": 0.5007650733058546, "lr": 4.973523645933689e-05, "grad_norm": 1.7417585849761963, "tokens_seen": 18902009, "sup_tokens_seen": 16145641, "tokens_per_sec": 12472.8, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 1561.2}
+{"step": 50, "epoch": 0.793, "loss": 0.45655735924578805, "lr": 4.946968528596335e-05, "grad_norm": 2.1427576541900635, "tokens_seen": 23631254, "sup_tokens_seen": 20192466, "tokens_per_sec": 12391.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 1942.8}
+{"step": 50, "eval_loss": 0.4750385231990251, "eval_ppl": 1.6080761445299392, "eval_tokens": 672601, "time": 1957.5}
+{"step": 60, "epoch": 0.952, "loss": 0.44529647871168315, "lr": 4.9114223195228403e-05, "grad_norm": 1.9519013166427612, "tokens_seen": 28387824, "sup_tokens_seen": 24255883, "tokens_per_sec": 11376.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 2360.9}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.00s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.00s/it]
+{"step": 70, "epoch": 1.095, "loss": 0.4315748893987016, "lr": 4.867030491542012e-05, "grad_norm": 1.2100321054458618, "tokens_seen": 32632674, "sup_tokens_seen": 27886500, "tokens_per_sec": 12296.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 2706.1}
+{"step": 75, "eval_loss": 0.4427649765843717, "eval_ppl": 1.5570063583845017, "eval_tokens": 672601, "time": 2910.7}
+{"step": 80, "epoch": 1.254, "loss": 0.42340274345172574, "lr": 4.8139747181701135e-05, "grad_norm": 1.741556167602539, "tokens_seen": 37368060, "sup_tokens_seen": 31932537, "tokens_per_sec": 11419.8, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 3120.8}
+{"step": 90, "epoch": 1.412, "loss": 0.4047121197638642, "lr": 4.752472130112163e-05, "grad_norm": 0.9475738406181335, "tokens_seen": 42095179, "sup_tokens_seen": 35972258, "tokens_per_sec": 12421.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 3501.3}
+{"step": 100, "epoch": 1.571, "loss": 0.4165772603311906, "lr": 4.6827744266547193e-05, "grad_norm": 1.295567512512207, "tokens_seen": 46849404, "sup_tokens_seen": 40033379, "tokens_per_sec": 12414.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 3884.3}
+{"step": 100, "eval_loss": 0.4232077237952692, "eval_ppl": 1.5268514264006519, "eval_tokens": 672601, "time": 3899.0}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]
+{"step": 110, "epoch": 1.73, "loss": 0.3943230598405804, "lr": 4.6051668455867756e-05, "grad_norm": 1.6234949827194214, "tokens_seen": 51568346, "sup_tokens_seen": 44066901, "tokens_per_sec": 11427.8, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 4297.2}
+{"step": 120, "epoch": 1.888, "loss": 0.4079753667035426, "lr": 4.5199669958643635e-05, "grad_norm": 1.3657968044281006, "tokens_seen": 56274529, "sup_tokens_seen": 48090294, "tokens_per_sec": 12298.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 4679.9}
+{"step": 125, "eval_loss": 0.41145908857345403, "eval_ppl": 1.509017970467706, "eval_tokens": 672601, "time": 4884.4}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.01s/it]Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.01s/it]
+{"step": 130, "epoch": 2.032, "loss": 0.3870871480422197, "lr": 4.427523557796184e-05, "grad_norm": 1.7316656112670898, "tokens_seen": 60553524, "sup_tokens_seen": 51743863, "tokens_per_sec": 10322.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 5094.4}
+{"step": 140, "epoch": 2.19, "loss": 0.3717135296747171, "lr": 4.328214856069761e-05, "grad_norm": 1.0504460334777832, "tokens_seen": 65323099, "sup_tokens_seen": 55819676, "tokens_per_sec": 12438.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 5477.9}
+{"step": 150, "epoch": 2.349, "loss": 0.3838159649102861, "lr": 4.222447311457986e-05, "grad_norm": 1.415777325630188, "tokens_seen": 70025635, "sup_tokens_seen": 59838711, "tokens_per_sec": 12463.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 5855.2}
+{"step": 150, "eval_loss": 0.4032629760179024, "eval_ppl": 1.4967004362356364, "eval_tokens": 672601, "time": 5869.8}
+{"step": 160, "epoch": 2.508, "loss": 0.37528937723104894, "lr": 4.1106537775424834e-05, "grad_norm": 0.6188907027244568, "tokens_seen": 74751016, "sup_tokens_seen": 63876686, "tokens_per_sec": 11505.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 6265.9}
+{"step": 170, "epoch": 2.666, "loss": 0.35994879925875706, "lr": 3.993291769260702e-05, "grad_norm": 0.9467667937278748, "tokens_seen": 79464626, "sup_tokens_seen": 67909285, "tokens_per_sec": 12424.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 6645.3}
+{"step": 175, "eval_loss": 0.3954741874965619, "eval_ppl": 1.4850882342554237, "eval_tokens": 672601, "time": 6850.2}
+{"step": 180, "epoch": 2.825, "loss": 0.36764446847903043, "lr": 3.870841590526451e-05, "grad_norm": 1.036447286605835, "tokens_seen": 84182396, "sup_tokens_seen": 71939038, "tokens_per_sec": 9814.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 7126.0}
+{"step": 190, "epoch": 2.984, "loss": 0.3709030102186855, "lr": 3.743804368586557e-05, "grad_norm": 0.6251651048660278, "tokens_seen": 88923923, "sup_tokens_seen": 75989369, "tokens_per_sec": 12415.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 7507.9}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:06<00:00,  6.07s/it]Writing model shards: 100%|██████████| 1/1 [00:06<00:00,  6.07s/it]
+{"step": 200, "epoch": 3.127, "loss": 0.3370639281477573, "lr": 3.6127000031580656e-05, "grad_norm": 0.712938129901886, "tokens_seen": 93192710, "sup_tokens_seen": 79637158, "tokens_per_sec": 11348.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 7884.1}
+{"step": 200, "eval_loss": 0.3975145608794952, "eval_ppl": 1.4881214621663446, "eval_tokens": 672601, "time": 7898.7}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:13<00:00, 13.18s/it]Writing model shards: 100%|██████████| 1/1 [00:13<00:00, 13.19s/it]
+{"step": 210, "epoch": 3.286, "loss": 0.3465058453918709, "lr": 3.478065038739102e-05, "grad_norm": 0.7748454809188843, "tokens_seen": 97912972, "sup_tokens_seen": 83665960, "tokens_per_sec": 8846.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 8417.6}
+{"step": 220, "epoch": 3.444, "loss": 0.33878760692910814, "lr": 3.3404504688009985e-05, "grad_norm": 0.8038022518157959, "tokens_seen": 102643329, "sup_tokens_seen": 87705357, "tokens_per_sec": 12534.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 8795.0}
+{"step": 225, "eval_loss": 0.39293970286241164, "eval_ppl": 1.4813290667337926, "eval_tokens": 672601, "time": 8998.6}
+{"step": 230, "epoch": 3.603, "loss": 0.34785586323380374, "lr": 3.20041948084801e-05, "grad_norm": 0.746321976184845, "tokens_seen": 107369761, "sup_tokens_seen": 91743727, "tokens_per_sec": 10877.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 9229.5}
+{"step": 240, "epoch": 3.762, "loss": 0.3336990409980912, "lr": 3.0585451515729515e-05, "grad_norm": 0.43898287415504456, "tokens_seen": 112086801, "sup_tokens_seen": 95778694, "tokens_per_sec": 12484.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 9607.4}
+{"step": 250, "epoch": 3.92, "loss": 0.3411064572218863, "lr": 2.9154081015413486e-05, "grad_norm": 0.676382303237915, "tokens_seen": 116843995, "sup_tokens_seen": 99847358, "tokens_per_sec": 12311.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 9993.8}
+{"step": 250, "eval_loss": 0.3903856606912591, "eval_ppl": 1.4775505171694645, "eval_tokens": 672601, "time": 10008.4}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]
+{"step": 260, "epoch": 4.063, "loss": 0.31857474084179876, "lr": 2.7715941190022926e-05, "grad_norm": 0.8238745927810669, "tokens_seen": 121117096, "sup_tokens_seen": 103500517, "tokens_per_sec": 10880.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 10386.5}
+{"step": 270, "epoch": 4.222, "loss": 0.3105859905692441, "lr": 2.6276917625505543e-05, "grad_norm": 0.675930380821228, "tokens_seen": 125870549, "sup_tokens_seen": 107559575, "tokens_per_sec": 12410.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 10769.5}
+{"step": 275, "eval_loss": 0.4039655754666051, "eval_ppl": 1.4977523866436226, "eval_tokens": 672601, "time": 10975.1}
+{"step": 280, "epoch": 4.381, "loss": 0.3000706561212495, "lr": 2.4842899524510648e-05, "grad_norm": 0.6240861415863037, "tokens_seen": 130585017, "sup_tokens_seen": 111591179, "tokens_per_sec": 10324.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 11226.1}
+{"step": 290, "epoch": 4.539, "loss": 0.3100292283016879, "lr": 2.341975560483256e-05, "grad_norm": 0.6076224446296692, "tokens_seen": 135308409, "sup_tokens_seen": 115628005, "tokens_per_sec": 12397.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 11607.2}
+{"step": 300, "epoch": 4.698, "loss": 0.30072556894370156, "lr": 2.2013310081688287e-05, "grad_norm": 0.5227521657943726, "tokens_seen": 140014620, "sup_tokens_seen": 119649138, "tokens_per_sec": 12522.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 11983.0}
+{"step": 300, "eval_loss": 0.40236699722740293, "eval_ppl": 1.4953600249687418, "eval_tokens": 672601, "time": 11997.6}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]
+{"step": 310, "epoch": 4.857, "loss": 0.30493376102840825, "lr": 2.062931883212198e-05, "grad_norm": 0.6349362134933472, "tokens_seen": 144739881, "sup_tokens_seen": 123688602, "tokens_per_sec": 11042.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 12410.9}
+{"step": 320, "epoch": 5.0, "loss": 0.38038837608959636, "lr": 1.9273445839083286e-05, "grad_norm": 2.6838438510894775, "tokens_seen": 149019625, "sup_tokens_seen": 127342875, "tokens_per_sec": 12428.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 12755.2}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]
+{"step": 325, "eval_loss": 0.4102201252015148, "eval_ppl": 1.507149510190633, "eval_tokens": 672601, "time": 12964.4}
+{"step": 330, "epoch": 5.159, "loss": 0.26649717531929795, "lr": 1.7951240011582177e-05, "grad_norm": 0.9481748938560486, "tokens_seen": 153755813, "sup_tokens_seen": 131391126, "tokens_per_sec": 11218.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 13177.4}
+{"step": 340, "epoch": 5.317, "loss": 0.24680555103191454, "lr": 1.666811247578382e-05, "grad_norm": 0.6764567494392395, "tokens_seen": 158482625, "sup_tokens_seen": 135430782, "tokens_per_sec": 12429.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 13557.7}
+{"step": 350, "epoch": 5.476, "loss": 0.2404661233887331, "lr": 1.5429314429979565e-05, "grad_norm": 0.6069505214691162, "tokens_seen": 163158249, "sup_tokens_seen": 139425601, "tokens_per_sec": 12497.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 13931.8}
+{"step": 350, "eval_loss": 0.4260793432272393, "eval_ppl": 1.5312422640164358, "eval_tokens": 672601, "time": 13946.5}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/serialization.py", line 967, in save
+[rank0]:     _save(
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/serialization.py", line 1268, in _save
+[rank0]:     zip_file.write_record(name, storage, num_bytes)
+[rank0]: RuntimeError: [enforce fail at inline_container.cc:858] . PytorchStreamWriter failed writing file data/0: file write failed
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/scripts/train.py", line 13, in <module>
+[rank0]:     train(load_config(sys.argv[1], sys.argv[2:]))
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 428, in train
+[rank0]:     snapshot(state_path, model, opt, step, epoch, tokens_seen, start + per_update, sup_seen)
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 452, in snapshot
+[rank0]:     torch.save({"model": model.state_dict(), "optimizer": opt.state_dict(), "step": step, "epoch": epoch,
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/serialization.py", line 966, in save
+[rank0]:     with _open_zipfile_writer(f) as opened_zipfile:
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/serialization.py", line 798, in __exit__
+[rank0]:     self.file_like.write_end_of_file()
+[rank0]: RuntimeError: [enforce fail at inline_container.cc:664] . unexpected pos 157952 vs 157846
+W0915 16:58:43.244000 126389 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 126550 closing signal SIGTERM
+E0915 16:58:43.612000 126389 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 126549) of binary: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/python
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+scripts/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-15_16:58:43
+  host      : g3123.hyak.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 126549)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+W0915 18:00:33.645000 2664876 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] 
+W0915 18:00:33.645000 2664876 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+W0915 18:00:33.645000 2664876 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0915 18:00:33.645000 2664876 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 423, in _lazy_init
+    queued_call()
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 269, in _check_capability
+    capability = get_device_capability(d)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 600, in get_device_capability
+    prop = get_device_properties(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 620, in get_device_properties
+    return _get_device_properties(device)  # type: ignore[name-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=1, num_gpus=1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/scripts/train.py", line 13, in <module>
+    train(load_config(sys.argv[1], sys.argv[2:]))
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 278, in train
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 423, in _lazy_init
+    dist = Dist()
+           ^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 182, in __init__
+    torch.cuda.set_device(self.local_rank)
+    queued_call()
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 569, in set_device
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 269, in _check_capability
+    capability = get_device_capability(d)
+    torch._C._cuda_setDevice(device)
+            File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 429, in _lazy_init
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 600, in get_device_capability
+    raise DeferredCudaCallError(msg) from e
+torch.cuda.DeferredCudaCallError: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=1, num_gpus=1
+
+CUDA call was originally invoked at:
+
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/scripts/train.py", line 8, in <module>
+    from qwen_abc.train import load_config, train  # noqa: E402
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 34, in <module>
+    import torch
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+    prop = get_device_properties(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 620, in get_device_properties
+    return _get_device_properties(device)  # type: ignore[name-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=1, num_gpus=1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/scripts/train.py", line 13, in <module>
+    train(load_config(sys.argv[1], sys.argv[2:]))
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 278, in train
+    dist = Dist()
+           ^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 182, in __init__
+    torch.cuda.set_device(self.local_rank)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 569, in set_device
+    torch._C._cuda_setDevice(device)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 429, in _lazy_init
+    raise DeferredCudaCallError(msg) from e
+torch.cuda.DeferredCudaCallError: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=1, num_gpus=1
+
+CUDA call was originally invoked at:
+
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/scripts/train.py", line 8, in <module>
+    from qwen_abc.train import load_config, train  # noqa: E402
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 34, in <module>
+    import torch
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+E0915 18:00:38.084000 2664876 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 2665049) of binary: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/python
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+scripts/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-15_18:00:38
+  host      : g3108.hyak.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2665050)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-15_18:00:38
+  host      : g3108.hyak.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2665049)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+W0915 18:07:05.767000 2543515 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] 
+W0915 18:07:05.767000 2543515 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+W0915 18:07:05.767000 2543515 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0915 18:07:05.767000 2543515 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:08<45:10,  8.50s/it]Loading weights:   0%|          | 1/320 [00:08<44:43,  8.41s/it]Loading weights:   7%|▋         | 23/320 [00:08<01:20,  3.71it/s]Loading weights:  14%|█▍        | 46/320 [00:08<00:35,  7.63it/s]Loading weights:  42%|████▏     | 134/320 [00:09<00:07, 25.04it/s]Loading weights:  42%|████▏     | 134/320 [00:09<00:07, 25.99it/s]Loading weights:  46%|████▌     | 147/320 [00:09<00:06, 27.77it/s]Loading weights:  49%|████▉     | 156/320 [00:09<00:05, 28.55it/s]Loading weights:  49%|████▉     | 157/320 [00:09<00:05, 30.00it/s]Loading weights:  52%|█████▏    | 166/320 [00:09<00:04, 32.36it/s]Loading weights:  54%|█████▍    | 172/320 [00:10<00:05, 28.81it/s]Loading weights:  54%|█████▍    | 174/320 [00:10<00:04, 29.68it/s]Loading weights:  57%|█████▋    | 181/320 [00:11<00:06, 20.74it/s]Loading weights:  57%|█████▋    | 183/320 [00:11<00:05, 22.90it/s]Loading weights:  60%|█████▉    | 191/320 [00:11<00:05, 23.81it/s]Loading weights:  58%|█████▊    | 186/320 [00:11<00:07, 18.19it/s]Loading weights:  62%|██████▏   | 198/320 [00:11<00:05, 24.35it/s]Loading weights:  62%|██████▏   | 198/320 [00:11<00:05, 24.24it/s]Loading weights:  65%|██████▌   | 209/320 [00:11<00:04, 25.73it/s]Loading weights:  65%|██████▌   | 209/320 [00:12<00:04, 26.16it/s]Loading weights:  69%|██████▉   | 220/320 [00:12<00:03, 27.03it/s]Loading weights:  69%|██████▉   | 220/320 [00:12<00:03, 27.56it/s]Loading weights:  71%|███████   | 226/320 [00:12<00:03, 29.59it/s]Loading weights:  73%|███████▎  | 233/320 [00:12<00:02, 37.04it/s]Loading weights:  73%|███████▎  | 235/320 [00:12<00:02, 34.80it/s]Loading weights:  75%|███████▌  | 240/320 [00:12<00:02, 37.25it/s]Loading weights:  78%|███████▊  | 249/320 [00:12<00:01, 47.98it/s]Loading weights:  80%|████████  | 257/320 [00:12<00:01, 37.14it/s]Loading weights:  81%|████████  | 258/320 [00:13<00:01, 36.13it/s]Loading weights:  82%|████████▎ | 264/320 [00:13<00:02, 25.63it/s]Loading weights:  84%|████████▍ | 269/320 [00:13<00:02, 21.73it/s]Loading weights:  82%|████████▏ | 263/320 [00:14<00:02, 20.51it/s]Loading weights:  85%|████████▌ | 273/320 [00:14<00:01, 24.92it/s]Loading weights:  85%|████████▌ | 273/320 [00:14<00:02, 21.33it/s]Loading weights:  87%|████████▋ | 279/320 [00:14<00:01, 26.91it/s]Loading weights:  89%|████████▉ | 286/320 [00:14<00:01, 20.48it/s]Loading weights:  90%|█████████ | 288/320 [00:14<00:01, 23.16it/s]Loading weights:  91%|█████████▏| 292/320 [00:15<00:01, 21.29it/s]Loading weights:  92%|█████████▏| 293/320 [00:15<00:01, 22.58it/s]Loading weights:  96%|█████████▌| 307/320 [00:15<00:00, 20.34it/s]Loading weights:  96%|█████████▌| 307/320 [00:15<00:00, 20.33it/s]Loading weights: 100%|██████████| 320/320 [00:15<00:00, 20.14it/s]
+Loading weights: 100%|██████████| 320/320 [00:16<00:00, 19.94it/s]
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v2_20260915_120927",
+ "output_dir": "experiments/e2b_v2_bigbatch_matched_updates_20260915_130350",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": null,
+ "eval_file": null,
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 524288,
+ "epochs": 100,
+ "max_steps": 506,
+ "stop_after_steps": 0,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 25,
+ "resume_every": 0,
+ "save_every_epoch": false,
+ "save_every": 0,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 10243,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 29803925,
+ "train_supervised_tokens": 25468575,
+ "train_max_example_tokens": 6703,
+ "micro_batches_per_epoch": 2017,
+ "grad_accum": 16,
+ "micro_batches_per_update": 32,
+ "steps_per_epoch": 64,
+ "total_steps": 506,
+ "padded_tokens_per_update_budget": 524288,
+ "world_size": 2,
+ "real_tokens_per_update_mean": 465686.328125,
+ "supervised_tokens_per_update_mean": 397946.484375,
+ "n_params": 752393024,
+ "n_trainable_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40191725",
+ "transformers": "5.17.0",
+ "flash_linear_attention": "0.5.2"
+}
+{"step": 325, "resumed": true, "epoch": 5, "next_group": 160, "world_size": 2, "slurm_job_id": "40191725", "time": 40.0}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 330, "epoch": 5.159, "loss": 0.26651809626687456, "lr": 1.7951240011582177e-05, "grad_norm": 0.9470204710960388, "tokens_seen": 153755813, "sup_tokens_seen": 131391126, "tokens_per_sec": 11247.6, "max_mem_gb": 16.01, "max_reserved_gb": 16.93, "time": 249.8}
+{"step": 340, "epoch": 5.317, "loss": 0.2468585621743171, "lr": 1.666811247578382e-05, "grad_norm": 0.6779404282569885, "tokens_seen": 158482625, "sup_tokens_seen": 135430782, "tokens_per_sec": 12599.2, "max_mem_gb": 16.02, "max_reserved_gb": 17.01, "time": 624.8}
+{"step": 350, "epoch": 5.476, "loss": 0.24050568540423964, "lr": 1.5429314429979565e-05, "grad_norm": 0.6087133288383484, "tokens_seen": 163158249, "sup_tokens_seen": 139425601, "tokens_per_sec": 12653.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.03, "time": 994.3}
+{"step": 350, "eval_loss": 0.42605469163071097, "eval_ppl": 1.5312045169152213, "eval_tokens": 672601, "time": 1008.8}
+{"step": 360, "epoch": 5.635, "loss": 0.2657975728380136, "lr": 1.4239915654062674e-05, "grad_norm": 0.6711254119873047, "tokens_seen": 167897261, "sup_tokens_seen": 143476489, "tokens_per_sec": 12195.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.03, "time": 1382.9}
+{"step": 370, "epoch": 5.793, "loss": 0.24510306273015517, "lr": 1.3104783761458595e-05, "grad_norm": 0.6242498755455017, "tokens_seen": 172639706, "sup_tokens_seen": 147529022, "tokens_per_sec": 12582.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.03, "time": 1759.8}
+{"step": 375, "eval_loss": 0.42124535787219364, "eval_ppl": 1.523858123130622, "eval_tokens": 672601, "time": 1962.1}
+{"step": 380, "epoch": 5.952, "loss": 0.25362847501418795, "lr": 1.202856427842143e-05, "grad_norm": 0.5934374332427979, "tokens_seen": 177372787, "sup_tokens_seen": 151573121, "tokens_per_sec": 12170.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 2148.7}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+{"step": 390, "epoch": 6.095, "loss": 0.21029283710876343, "lr": 1.1015661632221889e-05, "grad_norm": 1.1059651374816895, "tokens_seen": 181656567, "sup_tokens_seen": 155229717, "tokens_per_sec": 12663.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 2487.0}
+{"step": 400, "epoch": 6.254, "loss": 0.19615790616672282, "lr": 1.007022112603258e-05, "grad_norm": 0.8137320280075073, "tokens_seen": 186382401, "sup_tokens_seen": 159270849, "tokens_per_sec": 12781.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 2856.7}
+{"step": 400, "eval_loss": 0.45139870983363467, "eval_ppl": 1.5705073339962434, "eval_tokens": 672601, "time": 2871.2}
+{"step": 410, "epoch": 6.412, "loss": 0.20512519689927022, "lr": 9.196111974278556e-06, "grad_norm": 0.7912991046905518, "tokens_seen": 191101916, "sup_tokens_seen": 163302798, "tokens_per_sec": 12198.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 3243.6}
+{"step": 420, "epoch": 6.571, "loss": 0.22673037817647562, "lr": 8.396911467880711e-06, "grad_norm": 0.7525475025177002, "tokens_seen": 195810064, "sup_tokens_seen": 167326233, "tokens_per_sec": 12594.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.11, "time": 3617.5}
+{"step": 425, "eval_loss": 0.4582844812032644, "eval_ppl": 1.58135880593406, "eval_tokens": 672601, "time": 3817.3}
+{"step": 430, "epoch": 6.73, "loss": 0.21157624906416525, "lr": 7.675890334195868e-06, "grad_norm": 0.7172996401786804, "tokens_seen": 200555254, "sup_tokens_seen": 171382915, "tokens_per_sec": 12234.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 4005.3}
+{"step": 440, "epoch": 6.888, "loss": 0.20396497762664992, "lr": 7.035999351568047e-06, "grad_norm": 0.72991943359375, "tokens_seen": 205293833, "sup_tokens_seen": 175431535, "tokens_per_sec": 12679.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 4379.0}
+{"step": 450, "epoch": 7.032, "loss": 0.17176608633883572, "lr": 6.4798572732707e-06, "grad_norm": 0.8747090101242065, "tokens_seen": 209576484, "sup_tokens_seen": 179091954, "tokens_per_sec": 12619.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 4718.4}
+{"step": 450, "eval_loss": 0.48775967950294363, "eval_ppl": 1.6286634017396977, "eval_tokens": 672601, "time": 4732.8}
+{"step": 460, "epoch": 7.19, "loss": 0.16233832883844942, "lr": 6.009740110261293e-06, "grad_norm": 0.87883460521698, "tokens_seen": 214312498, "sup_tokens_seen": 183137995, "tokens_per_sec": 12206.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 5106.4}
+{"step": 470, "epoch": 7.349, "loss": 0.17811184615952397, "lr": 5.627571816608512e-06, "grad_norm": 0.9045705795288086, "tokens_seen": 219031915, "sup_tokens_seen": 187168488, "tokens_per_sec": 12627.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 5480.1}
+{"step": 475, "eval_loss": 0.48942480139019084, "eval_ppl": 1.6313775839118447, "eval_tokens": 672601, "time": 5682.4}
+{"step": 480, "epoch": 7.508, "loss": 0.1714559789647393, "lr": 5.334916415711934e-06, "grad_norm": 0.8557102680206299, "tokens_seen": 223775519, "sup_tokens_seen": 191222237, "tokens_per_sec": 12167.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 5870.0}
+{"step": 490, "epoch": 7.666, "loss": 0.16404460807464996, "lr": 5.13297159953769e-06, "grad_norm": 0.8330147862434387, "tokens_seen": 228497790, "sup_tokens_seen": 195259254, "tokens_per_sec": 12661.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 6242.9}
+{"step": 500, "epoch": 7.825, "loss": 0.1711200316183398, "lr": 5.022563827065153e-06, "grad_norm": 0.849226713180542, "tokens_seen": 233216987, "sup_tokens_seen": 199293502, "tokens_per_sec": 12674.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 6615.3}
+{"step": 500, "eval_loss": 0.49076488895812675, "eval_ppl": 1.633565238227441, "eval_tokens": 672601, "time": 6629.7}
+{"step": 506, "final": true, "eval_loss": 0.4891313187332878, "eval_ppl": 1.6308988731341976, "eval_tokens": 672601, "time": 6869.3}
+[rank0]: OSError: [Errno 122] Disk quota exceeded
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/scripts/train.py", line 13, in <module>
+[rank0]:     train(load_config(sys.argv[1], sys.argv[2:]))
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 437, in train
+[rank0]:     save(model, tok, out / "final_model", resolved)
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 463, in save
+[rank0]:     model.save_pretrained(tmp, state_dict=state, safe_serialization=True)
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/transformers/modeling_utils.py", line 3366, in save_pretrained
+[rank0]:     model_to_save.config.save_pretrained(save_directory)
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/transformers/configuration_utils.py", line 606, in save_pretrained
+[rank0]:     self.to_json_file(output_config_file, use_diff=True)
+[rank0]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/transformers/configuration_utils.py", line 1167, in to_json_file
+[rank0]:     with open(json_file_path, "w", encoding="utf-8") as writer:
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: OSError: [Errno 122] Disk quota exceeded
+W0915 20:03:06.563000 2543515 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 2546141 closing signal SIGTERM
+E0915 20:03:07.031000 2543515 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 2546140) of binary: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/python
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+scripts/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-15_20:03:06
+  host      : g3111.hyak.local
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2546140)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

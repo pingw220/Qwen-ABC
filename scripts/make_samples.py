@@ -43,13 +43,22 @@ def main() -> None:
     ap.add_argument("--split", default="test")
     ap.add_argument("--num", type=int, default=8)
     ap.add_argument("--audio", action="store_true")
+    ap.add_argument("--song-ids", type=Path, default=None, help="json list from scripts/select_listening_songs.py, or a text file of ids")
     args = ap.parse_args()
     evals = dict(e.split("=", 1) for e in args.eval)
     available = None
     for name, path in evals.items():
         ids = {p.name.rsplit("_s", 1)[0] for p in (Path(path) / "generations").glob("*_s0.json")}
         available = ids if available is None else available & ids
-    chosen = sorted(available)[: args.num]
+    if args.song_ids:
+        raw = args.song_ids.read_text(encoding="utf-8")
+        wanted = [r["song_id"] for r in json.loads(raw)] if raw.lstrip().startswith("[") else [l.strip() for l in raw.split() if l.strip()]
+        missing = [s for s in wanted if s not in available]
+        chosen = [s for s in wanted if s in available]
+        if missing:
+            print(f"note: {len(missing)} requested songs are missing from some run: {missing}")
+    else:
+        chosen = sorted(available)[: args.num]
     songs = {}
     with open(args.data_dir / f"songs_{args.split}.jsonl", encoding="utf-8") as fh:
         for line in fh:

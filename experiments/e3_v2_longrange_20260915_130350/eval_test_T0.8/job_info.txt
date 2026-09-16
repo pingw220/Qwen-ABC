@@ -1,0 +1,2 @@
+job=40187365 host=g3123 restart=0 date=2026-09-15T15:37:13-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=62
+ckpt=experiments/e3_v2_longrange_20260915_130350/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--max-total 10240 --max-new-tokens 10240

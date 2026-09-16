@@ -1,0 +1,6 @@
+{"step": 0, "world_size": 2, "eval_loss": 1.3379464170138446, "eval_ppl": 3.8112088299317834, "eval_tokens": 31384, "time": 33.8}
+{"step": 1, "epoch": 0.088, "loss": 1.3361480221680329, "lr": 5e-05, "grad_norm": 10.412578582763672, "tokens_seen": 119168, "sup_tokens_seen": 100522, "tokens_per_sec": 3969.7, "max_mem_gb": 11.23, "max_reserved_gb": 11.45, "time": 64.2}
+{"step": 2, "epoch": 0.176, "loss": 3.9333017969351887, "lr": 5e-05, "grad_norm": 122.43175506591797, "tokens_seen": 242400, "sup_tokens_seen": 204362, "tokens_per_sec": 9346.1, "max_mem_gb": 15.97, "max_reserved_gb": 16.85, "time": 77.0}
+{"step": 3, "epoch": 0.264, "loss": 2.845009728734875, "lr": 2.7500000000000004e-05, "grad_norm": 97.32150268554688, "tokens_seen": 359706, "sup_tokens_seen": 303368, "tokens_per_sec": 11033.4, "max_mem_gb": 15.97, "max_reserved_gb": 16.85, "time": 87.7}
+{"step": 3, "final": true, "eval_loss": 2.10206285447999, "eval_ppl": 8.183032919741239, "eval_tokens": 31384, "time": 90.2}
+{"step": 3, "done": true, "elapsed_hours_this_job": 0.025, "tokens_seen": 359706, "sup_tokens_seen": 303368, "world_size": 2, "max_mem_gb": 15.97, "time": 90.2}

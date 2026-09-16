@@ -1,0 +1,181 @@
+W0915 12:39:13.852000 117079 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] 
+W0915 12:39:13.852000 117079 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+W0915 12:39:13.852000 117079 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0915 12:39:13.852000 117079 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:49,  1.88it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 589.26it/s]
+Loading weights:   0%|          | 1/320 [00:00<03:10,  1.68it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 526.25it/s]
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v2_20260915_120927",
+ "output_dir": "experiments/e2a_v2_bigbatch_lr50e5_20260915_123850",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": null,
+ "eval_file": null,
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 524288,
+ "epochs": 2,
+ "max_steps": 0,
+ "stop_after_steps": 30,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 10,
+ "resume_every": 10,
+ "save_every_epoch": true,
+ "save_every": 25,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 10243,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 29803925,
+ "train_supervised_tokens": 25468575,
+ "train_max_example_tokens": 6703,
+ "micro_batches_per_epoch": 2017,
+ "grad_accum": 16,
+ "micro_batches_per_update": 32,
+ "steps_per_epoch": 64,
+ "total_steps": 128,
+ "padded_tokens_per_update_budget": 524288,
+ "world_size": 2,
+ "real_tokens_per_update_mean": 465686.328125,
+ "supervised_tokens_per_update_mean": 397946.484375,
+ "n_params": 752393024,
+ "n_trainable_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40180604",
+ "transformers": "5.17.0",
+ "flash_linear_attention": "0.5.2"
+}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"step": 0, "world_size": 2, "eval_loss": 1.0154602209312709, "eval_ppl": 2.7606336064347152, "eval_tokens": 672601, "time": 15.9}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 1, "epoch": 0.016, "loss": 1.0034363963554969, "lr": 1.6666666666666667e-05, "grad_norm": 8.141888618469238, "tokens_seen": 469142, "sup_tokens_seen": 402891, "tokens_per_sec": 10027.4, "max_mem_gb": 11.23, "max_reserved_gb": 11.41, "time": 62.7}
+{"step": 10, "epoch": 0.159, "loss": 0.7062877020590063, "lr": 4.974466425660307e-05, "grad_norm": 3.071585178375244, "tokens_seen": 4704876, "sup_tokens_seen": 4021750, "tokens_per_sec": 11228.3, "max_mem_gb": 16.01, "max_reserved_gb": 16.99, "time": 440.0}
+{"step": 10, "eval_loss": 0.725022224676805, "eval_ppl": 2.064776988457799, "eval_tokens": 672601, "time": 454.6}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+{"step": 20, "epoch": 0.317, "loss": 0.5877026761626511, "lr": 4.820521656573209e-05, "grad_norm": 2.1514320373535156, "tokens_seen": 9451373, "sup_tokens_seen": 8073986, "tokens_per_sec": 10734.7, "max_mem_gb": 16.02, "max_reserved_gb": 17.09, "time": 882.1}
+{"step": 20, "eval_loss": 0.5863000929356241, "eval_ppl": 1.7973261583817148, "eval_tokens": 672601, "time": 896.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.74s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.74s/it]
+{"step": 30, "epoch": 0.476, "loss": 0.5186998270942136, "lr": 4.53647839695763e-05, "grad_norm": 1.7417510747909546, "tokens_seen": 14193112, "sup_tokens_seen": 12124802, "tokens_per_sec": 11177.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.09, "time": 1306.4}
+{"step": 30, "eval_loss": 0.5218214054411067, "eval_ppl": 1.6850940957851839, "eval_tokens": 672601, "time": 1321.0}
+{"step": 30, "stopped_early_for_probe": true, "tokens_seen": 14193112, "sup_tokens_seen": 12124802, "elapsed_hours_this_job": 0.374, "time": 1344.8}
+W0915 13:04:09.020000 126387 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] 
+W0915 13:04:09.020000 126387 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+W0915 13:04:09.020000 126387 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0915 13:04:09.020000 126387 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:08<46:33,  8.76s/it]Loading weights:   0%|          | 1/320 [00:08<46:57,  8.83s/it]Loading weights:   4%|▍         | 12/320 [00:09<02:48,  1.83it/s]Loading weights:   1%|          | 2/320 [00:09<20:00,  3.77s/it]Loading weights:  42%|████▏     | 134/320 [00:09<00:06, 27.18it/s]Loading weights:  42%|████▏     | 134/320 [00:09<00:06, 27.77it/s]Loading weights:  48%|████▊     | 154/320 [00:09<00:05, 29.86it/s]Loading weights:  48%|████▊     | 154/320 [00:09<00:05, 30.38it/s]Loading weights:  53%|█████▎    | 169/320 [00:10<00:05, 27.47it/s]Loading weights:  53%|█████▎    | 169/320 [00:10<00:05, 27.58it/s]Loading weights:  56%|█████▌    | 179/320 [00:11<00:05, 26.06it/s]Loading weights:  56%|█████▌    | 179/320 [00:11<00:05, 26.46it/s]Loading weights:  58%|█████▊    | 187/320 [00:11<00:06, 21.91it/s]Loading weights:  58%|█████▊    | 187/320 [00:11<00:06, 21.59it/s]Loading weights:  62%|██████▏   | 199/320 [00:12<00:05, 21.25it/s]Loading weights:  62%|██████▏   | 199/320 [00:12<00:05, 21.49it/s]Loading weights:  64%|██████▍   | 205/320 [00:12<00:05, 22.95it/s]Loading weights:  64%|██████▍   | 205/320 [00:12<00:05, 21.04it/s]Loading weights:  66%|██████▌   | 211/320 [00:12<00:04, 24.56it/s]Loading weights:  69%|██████▉   | 221/320 [00:12<00:03, 29.38it/s]Loading weights:  69%|██████▉   | 221/320 [00:12<00:03, 30.33it/s]Loading weights:  73%|███████▎  | 234/320 [00:12<00:02, 37.90it/s]Loading weights:  73%|███████▎  | 234/320 [00:13<00:02, 34.22it/s]Loading weights:  75%|███████▌  | 240/320 [00:13<00:02, 33.20it/s]Loading weights:  75%|███████▌  | 241/320 [00:13<00:02, 33.30it/s]Loading weights:  78%|███████▊  | 249/320 [00:13<00:01, 36.51it/s]Loading weights:  78%|███████▊  | 249/320 [00:13<00:01, 38.12it/s]Loading weights:  81%|████████  | 258/320 [00:13<00:01, 41.01it/s]Loading weights:  81%|████████  | 258/320 [00:13<00:01, 42.84it/s]Loading weights:  82%|████████▎ | 264/320 [00:13<00:01, 43.35it/s]Loading weights:  82%|████████▎ | 264/320 [00:13<00:01, 31.56it/s]Loading weights:  85%|████████▌ | 273/320 [00:14<00:01, 25.43it/s]Loading weights:  85%|████████▌ | 273/320 [00:14<00:01, 23.92it/s]Loading weights:  88%|████████▊ | 283/320 [00:14<00:01, 23.83it/s]Loading weights:  87%|████████▋ | 279/320 [00:14<00:01, 21.57it/s]Loading weights:  90%|████████▉ | 287/320 [00:15<00:01, 24.38it/s]Loading weights:  90%|████████▉ | 287/320 [00:15<00:01, 22.51it/s]Loading weights:  92%|█████████▏| 293/320 [00:15<00:01, 16.43it/s]Loading weights:  92%|█████████▏| 293/320 [00:15<00:01, 17.36it/s]Loading weights:  94%|█████████▍| 301/320 [00:16<00:01, 15.44it/s]Loading weights:  94%|█████████▍| 301/320 [00:16<00:01, 14.84it/s]Loading weights:  96%|█████████▌| 307/320 [00:16<00:00, 14.88it/s]Loading weights:  96%|█████████▌| 307/320 [00:16<00:00, 15.32it/s]Loading weights:  97%|█████████▋| 310/320 [00:16<00:00, 15.88it/s]Loading weights:  97%|█████████▋| 310/320 [00:16<00:00, 16.27it/s]Loading weights:  99%|█████████▉| 318/320 [00:17<00:00, 22.43it/s]Loading weights:  99%|█████████▉| 318/320 [00:17<00:00, 22.80it/s]Loading weights: 100%|██████████| 320/320 [00:17<00:00, 18.78it/s]Loading weights: 100%|██████████| 320/320 [00:17<00:00, 18.80it/s]
+
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v2_20260915_120927",
+ "output_dir": "experiments/e2a_v2_bigbatch_lr50e5_20260915_123850",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": null,
+ "eval_file": null,
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 524288,
+ "epochs": 2,
+ "max_steps": 0,
+ "stop_after_steps": 0,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 10,
+ "resume_every": 10,
+ "save_every_epoch": true,
+ "save_every": 25,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 10243,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 29803925,
+ "train_supervised_tokens": 25468575,
+ "train_max_example_tokens": 6703,
+ "micro_batches_per_epoch": 2017,
+ "grad_accum": 16,
+ "micro_batches_per_update": 32,
+ "steps_per_epoch": 64,
+ "total_steps": 128,
+ "padded_tokens_per_update_budget": 524288,
+ "world_size": 2,
+ "real_tokens_per_update_mean": 465686.328125,
+ "supervised_tokens_per_update_mean": 397946.484375,
+ "n_params": 752393024,
+ "n_trainable_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40181499",
+ "transformers": "5.17.0",
+ "flash_linear_attention": "0.5.2"
+}
+{"step": 30, "resumed": true, "epoch": 0, "next_group": 960, "world_size": 2, "slurm_job_id": "40181499", "time": 55.0}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 40, "epoch": 0.635, "loss": 0.487619251988763, "lr": 4.1401841294532525e-05, "grad_norm": 2.1841650009155273, "tokens_seen": 18902009, "sup_tokens_seen": 16145641, "tokens_per_sec": 12416.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.01, "time": 434.4}
+{"step": 40, "eval_loss": 0.48601562038289603, "eval_ppl": 1.6258253920281405, "eval_tokens": 672601, "time": 449.1}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+{"step": 50, "epoch": 0.793, "loss": 0.4496009906890274, "lr": 3.6565394803557413e-05, "grad_norm": 1.4893991947174072, "tokens_seen": 23631254, "sup_tokens_seen": 20192466, "tokens_per_sec": 11437.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 847.9}
+{"step": 50, "eval_loss": 0.46444018861514386, "eval_ppl": 1.5911232106324635, "eval_tokens": 672601, "time": 862.5}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.29s/it]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.29s/it]
+{"step": 60, "epoch": 0.952, "loss": 0.44863025957172475, "lr": 3.1159336216884884e-05, "grad_norm": 2.5513033866882324, "tokens_seen": 28387824, "sup_tokens_seen": 24255883, "tokens_per_sec": 11328.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1267.8}
+{"step": 60, "eval_loss": 0.4631407097833866, "eval_ppl": 1.5890569225411155, "eval_tokens": 672601, "time": 1282.4}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.73s/it]Writing model shards: 100%|██████████| 1/1 [00:05<00:00,  5.73s/it]
+{"step": 70, "epoch": 1.095, "loss": 0.4311712209480054, "lr": 2.5523348077608284e-05, "grad_norm": 1.8612231016159058, "tokens_seen": 32632674, "sup_tokens_seen": 27886500, "tokens_per_sec": 11162.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1648.0}
+{"step": 70, "eval_loss": 0.4443386133876176, "eval_ppl": 1.5594584497375263, "eval_tokens": 672601, "time": 1662.7}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]
+{"step": 80, "epoch": 1.254, "loss": 0.41547332402009246, "lr": 2.00115602482328e-05, "grad_norm": 1.2761579751968384, "tokens_seen": 37368060, "sup_tokens_seen": 31932537, "tokens_per_sec": 11537.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2058.5}
+{"step": 80, "eval_loss": 0.43499129002210263, "eval_ppl": 1.5449496024158458, "eval_tokens": 672601, "time": 2073.1}
+{"step": 90, "epoch": 1.412, "loss": 0.4042135625933602, "lr": 1.497029862901578e-05, "grad_norm": 0.6298199892044067, "tokens_seen": 42095179, "sup_tokens_seen": 35972258, "tokens_per_sec": 11576.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2466.8}
+{"step": 90, "eval_loss": 0.4268090975631587, "eval_ppl": 1.5323601025220852, "eval_tokens": 672601, "time": 2481.5}
+{"step": 100, "epoch": 1.571, "loss": 0.41193643310701, "lr": 1.0716324227955904e-05, "grad_norm": 0.5053250789642334, "tokens_seen": 46849404, "sup_tokens_seen": 40033379, "tokens_per_sec": 11559.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2878.1}
+{"step": 100, "eval_loss": 0.421487132231407, "eval_ppl": 1.5242265974939055, "eval_tokens": 672601, "time": 2892.7}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.28it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.28it/s]
+{"step": 110, "epoch": 1.73, "loss": 0.38983161936164484, "lr": 7.51692990169525e-06, "grad_norm": 0.41940781474113464, "tokens_seen": 51568346, "sup_tokens_seen": 44066901, "tokens_per_sec": 11540.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 3287.0}
+{"step": 110, "eval_loss": 0.4177720448551245, "eval_ppl": 1.5185744680811073, "eval_tokens": 672601, "time": 3301.7}
+{"step": 120, "epoch": 1.888, "loss": 0.4072139481317018, "lr": 5.573145362302012e-06, "grad_norm": 0.4086388945579529, "tokens_seen": 56274529, "sup_tokens_seen": 48090294, "tokens_per_sec": 11500.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 3696.2}
+{"step": 120, "eval_loss": 0.41517264798596465, "eval_ppl": 1.5146322163214034, "eval_tokens": 672601, "time": 3710.9}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]Writing model shards: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]
+{"step": 128, "final": true, "eval_loss": 0.41381716498973065, "eval_ppl": 1.5125805489209023, "eval_tokens": 672601, "time": 4026.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]
+{"step": 128, "done": true, "elapsed_hours_this_job": 1.124, "tokens_seen": 59607850, "sup_tokens_seen": 50937150, "world_size": 2, "max_mem_gb": 16.03, "time": 4045.0}

@@ -3,7 +3,7 @@ export QWEN_ABC_ROOT=/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC
 export PATH="$QWEN_ABC_ROOT/.venv/bin:$PATH"
 export PYTHONPATH="$QWEN_ABC_ROOT${PYTHONPATH:+:$PYTHONPATH}"
 # model weights go to scrubbed, not the 10 GB home quota; the token stays where huggingface-cli put it
-export HF_HUB_CACHE="$QWEN_ABC_ROOT/.hf_cache/hub"
+export HF_HUB_CACHE="${HF_HUB_CACHE:-$QWEN_ABC_ROOT/.hf_cache/hub}"  # override to keep weights off a full filesystem
 export HF_TOKEN_PATH="${HF_TOKEN_PATH:-$HOME/.cache/huggingface/token}"
 export TOKENIZERS_PARALLELISM=false
 export PYTHONUNBUFFERED=1

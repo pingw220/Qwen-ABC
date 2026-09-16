@@ -1,0 +1,939 @@
+diff --git a/qwen_abc/abc.py b/qwen_abc/abc.py
+index fb833c5..e616766 100644
+--- a/qwen_abc/abc.py
++++ b/qwen_abc/abc.py
+@@ -68,7 +68,10 @@ class _BarSpeller:
+         return acc + abc_note_name(letter, octave)
+ 
+ 
+-def song_to_abc(song: Song, bars_per_line: int = 4) -> str:
++def song_to_abc(song: Song, bars_per_line: int = 4, bar_prefix=None, section_header=None) -> str:
++    """ABC-v1 text. ``bar_prefix(sec_idx, n_sections, bar_in_sec, sec_bars, line_start)`` and
++    ``section_header(sec_idx, n_sections, section)`` are ABC-v2 hooks (see abc_v2.py); with
++    both None the output is exactly the v1 format."""
+     lines = [
+         "X:1",
+         f"M:{song.meter_num}/4",
+@@ -86,19 +89,26 @@ def song_to_abc(song: Song, bars_per_line: int = 4) -> str:
+     current_meter = song.meter_num
+     ni = 0
+ 
+-    for sec in song.sections:
++    n_sections = len(song.sections)
++    for si, sec in enumerate(song.sections):
+         lines.append(f"P:{sec.label}")
++        if section_header is not None:
++            lines.append(section_header(si, n_sections, sec))
+         bars = list(range(sec.start_bar, sec.start_bar + sec.num_bars))
+         for chunk_start in range(0, len(bars), bars_per_line):
+             chunk = bars[chunk_start: chunk_start + bars_per_line]
+             music: List[str] = []
+             lyric_bars: List[List[str]] = []
+-            for b in chunk:
++            for ci, b in enumerate(chunk):
+                 speller.reset()
+                 start = bar_starts[b]
+                 end = start + song.bar_beats[b] * TICKS_PER_BEAT
+                 tokens: List[str] = []
+                 lyr: List[str] = []
++                if bar_prefix is not None:
++                    prefix = bar_prefix(si, n_sections, chunk_start + ci, sec.num_bars, ci == 0)
++                    if prefix:
++                        tokens.append(prefix)
+                 if song.bar_beats[b] != current_meter:
+                     current_meter = song.bar_beats[b]
+                     tokens.append(f"[M:{current_meter}/4]")
+diff --git a/qwen_abc/generate.py b/qwen_abc/generate.py
+index 4e4d96a..2aaf0d3 100644
+--- a/qwen_abc/generate.py
++++ b/qwen_abc/generate.py
+@@ -48,3 +48,50 @@ def generate_one(model, tok, prompt: str, seed: int, max_new_tokens: int, temper
+         "truncated": not hit_eos,
+         "seconds": round(time.time() - t0, 2),
+     }
++
++
++@torch.no_grad()
++def generate_batch(model, tok, prompts: List[str], seed: int, max_new_tokens: int, temperature: float,
++                   top_p: float, max_total: int = 8192) -> List[Dict]:
++    """Left-padded batched sampling.
++
++    Padding is safe for the hybrid model: Transformers zeroes padded inputs
++    before the Gated-DeltaNet mixer during prefill (``create_recurrent_attention_mask``),
++    so the recurrent and conv states stay exactly zero until the first real
++    token, and full attention masks pads. ``scripts/check_infra.py`` verifies
++    greedy batched output against batch-1 output. Random draws differ from
++    batch-1 sampling with the same seed, so samples are statistically, not
++    bitwise, equivalent.
++    """
++    side = tok.padding_side
++    tok.padding_side = "left"
++    enc = tok(prompts, add_special_tokens=False, return_tensors="pt", padding=True)
++    tok.padding_side = side
++    ids, mask = enc["input_ids"].to("cuda"), enc["attention_mask"].to("cuda")
++    budget = min(max_new_tokens, max_total - ids.shape[1])
++    torch.manual_seed(seed)
++    t0 = time.time()
++    eos = tok.eos_token_id
++    kwargs = dict(max_new_tokens=budget, eos_token_id=eos, pad_token_id=tok.pad_token_id if tok.pad_token_id is not None else eos)
++    if temperature > 0:
++        kwargs.update(do_sample=True, temperature=temperature, top_p=top_p, top_k=0)
++    else:
++        kwargs.update(do_sample=False)
++    out = model.generate(ids, attention_mask=mask, **kwargs)
++    seconds = time.time() - t0
++    rows = []
++    for r in range(len(prompts)):
++        new = out[r, ids.shape[1]:].tolist()
++        hit_eos = eos in new
++        if hit_eos:
++            new = new[: new.index(eos)]
++        rows.append({
++            "text": tok.decode(new, skip_special_tokens=True),
++            "new_tokens": len(new) + int(hit_eos),
++            "hit_eos": hit_eos,
++            "truncated": not hit_eos,
++            "seconds": round(seconds / len(prompts), 2),
++            "batch_size": len(prompts),
++            "batch_seconds": round(seconds, 2),
++        })
++    return rows
+diff --git a/qwen_abc/metrics.py b/qwen_abc/metrics.py
+index ccc89e7..78d4301 100644
+--- a/qwen_abc/metrics.py
++++ b/qwen_abc/metrics.py
+@@ -171,6 +171,7 @@ def song_metrics(song: Song, spec: Optional[dict] = None, parse: Optional[ParseR
+         m["lyric_alignment_errors"] = float(parse.errors.get("lyric_overflow", 0) + parse.errors.get("orphan_melisma", 0)
+                                             + parse.errors.get("lyric_bar_overflow", 0))
+         m["lyric_alignment_valid"] = float(m["lyric_alignment_errors"] == 0)
++    m.update(long_structure_metrics(song, spec))
+     return m
+ 
+ 
+@@ -240,3 +241,220 @@ def corpus_distributions(songs: List[Song]) -> Dict[str, List[float]]:
+ def distribution_distances(gen: List[Song], ref: List[Song]) -> Dict[str, Optional[float]]:
+     g, r = corpus_distributions(gen), corpus_distributions(ref)
+     return {f"js_{k}": js_divergence(g[k], r[k]) for k in g}
++
++
++# ================================================================ long-structure metrics (round 2)
++def lcs_matches(a: Sequence[str], b: Sequence[str]) -> List[int]:
++    """Indices into ``a`` matched by one longest common subsequence with ``b``."""
++    n, m = len(a), len(b)
++    if not n or not m:
++        return []
++    dp = [[0] * (m + 1) for _ in range(n + 1)]
++    for i in range(n - 1, -1, -1):
++        ai, row, nxt = a[i], dp[i], dp[i + 1]
++        for j in range(m - 1, -1, -1):
++            row[j] = nxt[j + 1] + 1 if ai == b[j] else (nxt[j] if nxt[j] >= row[j + 1] else row[j + 1])
++    out, i, j = [], 0, 0
++    while i < n and j < m:
++        if a[i] == b[j]:
++            out.append(i)
++            i += 1
++            j += 1
++        elif dp[i + 1][j] >= dp[i][j + 1]:
++            i += 1
++        else:
++            j += 1
++    return out
++
++
++def _section_notes(song: Song) -> List[List]:
++    starts = song.bar_starts()
++    total = song.total_ticks
++    out = []
++    for s in song.sections:
++        a = starts[s.start_bar] if s.start_bar < len(starts) else total
++        e = s.start_bar + s.num_bars
++        b = starts[e] if e < len(starts) else total
++        out.append([n for n in song.notes if a <= n.onset < b])
++    return out
++
++
++def motif_tokens(notes) -> List[str]:
++    """Transposition-invariant motif tokens: (interval, inter-onset interval) per note transition."""
++    return [f"{max(-12, min(12, y.pitch - x.pitch))}:{min(y.onset - x.onset, 16)}" for x, y in zip(notes, notes[1:])]
++
++
++def motif_similarity(a_notes, b_notes) -> Optional[float]:
++    ta, tb = motif_tokens(a_notes), motif_tokens(b_notes)
++    if len(ta) < 3 or len(tb) < 3:
++        return None
++    return lcs_len(ta, tb) / max(len(ta), len(tb))
++
++
++def _ngrams(seq, n):
++    return [tuple(seq[i:i + n]) for i in range(len(seq) - n + 1)]
++
++
++def _mean(xs):
++    xs = [x for x in xs if x is not None]
++    return sum(xs) / len(xs) if xs else None
++
++
++def long_structure_metrics(song: Song, spec: Optional[dict] = None) -> Dict[str, float]:
++    m: Dict[str, float] = {}
++    notes = song.notes
++    bars = _bar_signatures(song)
++    nonempty = [b for b in bars if b]
++    # ---------------------------------------------- repetition / diversity
++    seen, rep = set(), 0
++    for b in nonempty:
++        rep += b in seen
++        seen.add(b)
++    m["repeated_bar_frac"] = rep / max(len(nonempty), 1)
++    m["consecutive_repeat_bar_frac"] = sum(1 for a, b in zip(bars, bars[1:]) if a and a == b) / max(len(nonempty), 1)
++    pitches = [n.pitch for n in notes]
++    ints = [b - a for a, b in zip(pitches, pitches[1:])]
++    for name, seq in (("pitch", pitches), ("interval", ints)):
++        g = _ngrams(seq, 4)
++        m[f"{name}_4gram_repeat_frac"] = 1 - len(set(g)) / len(g) if g else 0.0
++    # transposition-invariant bar motifs (interval + rhythm inside the bar)
++    starts = song.bar_starts()
++    bar_notes: List[list] = [[] for _ in starts]
++    for n in notes:
++        i = bisect.bisect_right(starts, n.onset) - 1
++        bar_notes[max(i, 0)].append(n)
++    motifs = []
++    for i, bn in enumerate(bar_notes):
++        if len(bn) >= 2:
++            motifs.append(tuple((y.pitch - x.pitch, x.onset - starts[i], x.duration) for x, y in zip(bn, bn[1:])))
++        else:
++            motifs.append(None)
++    m["consecutive_motif_repeat_frac"] = sum(1 for a, b in zip(motifs, motifs[1:]) if a and a == b) / max(sum(1 for x in motifs if x), 1)
++    # ---------------------------------------------- musical content
++    if len(notes) >= 2:
++        absint = [abs(x) for x in ints]
++        k = len(absint)
++        m["int_repeat_frac"] = sum(1 for x in absint if x == 0) / k
++        m["int_step_frac"] = sum(1 for x in absint if 1 <= x <= 2) / k
++        m["int_skip_frac"] = sum(1 for x in absint if 3 <= x <= 4) / k
++        m["int_leap_frac"] = sum(1 for x in absint if 5 <= x <= 7) / k
++        m["int_large_frac"] = sum(1 for x in absint if x > 7) / k
++    if notes:
++        pos = []
++        sync = 0
++        for n in notes:
++            i = bisect.bisect_right(starts, n.onset) - 1
++            p = (n.onset - starts[max(i, 0)]) % TICKS_PER_BEAT
++            pos.append(p)
++            # syncopation proxy: an off-beat attack that sustains across the next beat
++            if p != 0 and n.onset + n.duration > n.onset - p + TICKS_PER_BEAT:
++                sync += 1
++        m["offbeat_8th_frac"] = sum(1 for p in pos if p == 2) / len(notes)
++        m["syncopation_frac"] = sync / len(notes)
++        durs = [n.duration for n in notes]
++        m["dur_16th_frac"] = sum(1 for d in durs if d <= 1) / len(durs)
++        m["dur_8th_frac"] = sum(1 for d in durs if d == 2) / len(durs)
++        m["dur_long_frac"] = sum(1 for d in durs if d >= 8) / len(durs)
++        attacks = [n for n in notes if n.lyric]
++        sylls = sum(len(n.lyric) for n in attacks)
++        m["cram_syllable_frac"] = sum(len(n.lyric) for n in attacks if len(n.lyric) > 1) / max(sylls, 1)
++        # early vs late half of the song (by time)
++        mid = song.total_ticks / 2
++        first = [n for n in notes if n.onset < mid]
++        second = [n for n in notes if n.onset >= mid]
++        if len(first) >= 4 and len(second) >= 4:
++            r1 = max(x.pitch for x in first) - min(x.pitch for x in first)
++            r2 = max(x.pitch for x in second) - min(x.pitch for x in second)
++            m["late_minus_early_pitch_range"] = r2 - r1
++
++            def rhythm_div(ns):
++                sig = {}
++                for n in ns:
++                    i = bisect.bisect_right(starts, n.onset) - 1
++                    sig.setdefault(i, []).append((n.onset - starts[max(i, 0)], n.duration))
++                pats = [tuple(v) for v in sig.values()]
++                return len(set(pats)) / max(len(pats), 1)
++
++            m["late_minus_early_rhythm_diversity"] = rhythm_div(second) - rhythm_div(first)
++    # ---------------------------------------------- long-range coherence (same-label sections)
++    sec_notes = _section_notes(song)
++    labels = [s.label for s in song.sections]
++    by_label: Dict[str, List[int]] = {}
++    for i, l in enumerate(labels):
++        if len(sec_notes[i]) >= 4:
++            by_label.setdefault(l, []).append(i)
++    for lab in ("verse", "chorus"):
++        idx = by_label.get(lab, [])
++        sims = [motif_similarity(sec_notes[a], sec_notes[b]) for k, a in enumerate(idx) for b in idx[k + 1:]]
++        v = _mean(sims)
++        if v is not None:
++            m[f"{lab}_{lab}_motif_sim"] = v
++    ch = by_label.get("chorus", [])
++    if len(ch) >= 2:
++        g0 = set(_ngrams([max(-12, min(12, y.pitch - x.pitch)) for x, y in zip(sec_notes[ch[0]], sec_notes[ch[0]][1:])], 4))
++        pres = []
++        for c in ch[1:]:
++            g = set(_ngrams([max(-12, min(12, y.pitch - x.pitch)) for x, y in zip(sec_notes[c], sec_notes[c][1:])], 4))
++            if g0 and g:
++                pres.append(len(g0 & g) / len(g0))
++        if pres:
++            m["chorus_motif_preservation"] = sum(pres) / len(pres)
++    cross = []
++    labelled = [i for i in range(len(labels)) if len(sec_notes[i]) >= 4]
++    for k, a in enumerate(labelled):
++        for b in labelled[k + 1:]:
++            if labels[a] != labels[b] and {labels[a], labels[b]} <= {"verse", "chorus", "prechorus", "bridge"}:
++                cross.append(motif_similarity(sec_notes[a], sec_notes[b]))
++    v = _mean(cross)
++    if v is not None:
++        m["cross_label_motif_sim"] = v
++    within = []
++    for i, s in enumerate(song.sections):
++        bm = [bar_notes[b] for b in range(s.start_bar, min(s.start_bar + s.num_bars, len(bar_notes)))]
++        for x, y in zip(bm, bm[1:]):
++            within.append(motif_similarity(x, y) if len(x) >= 4 and len(y) >= 4 else None)
++    v = _mean(within)
++    if v is not None:
++        m["within_section_adjacent_bar_motif_sim"] = v
++    # ---------------------------------------------- structure vs the request
++    if spec is not None:
++        want = spec["sections"]
++        got = song.sections
++        n_want = len(want)
++        m["section_count_match"] = float(len(got) == n_want)
++        m["section_bars_seq_match"] = float([s["bars"] for s in want] == [s.num_bars for s in got])
++        m["section_completion_ratio"] = min(len(got), n_want) / max(n_want, 1)
++        m["eos_section_index"] = len(got)
++        m["fewer_sections_than_requested"] = float(len(got) < n_want)
++        m["more_sections_than_requested"] = float(len(got) > n_want)
++        same_idx = [(w, got[i] if i < len(got) else None) for i, w in enumerate(want)]
++        m["section_bars_exact_frac"] = sum(1 for w, g in same_idx if g is not None and g.num_bars == w["bars"] and g.label == w["label"]) / max(n_want, 1)
++        want_bars = sum(s["bars"] for s in want)
++        m["total_bars_ratio"] = len(song.bar_beats) / max(want_bars, 1)
++        m["abs_total_bar_error"] = abs(len(song.bar_beats) - want_bars)
++        late = [i for i in range(n_want) if i >= math.ceil(2 * n_want / 3)]
++        if late:
++            m["late_section_present"] = sum(1 for i in late if i < len(got) and got[i].label == want[i]["label"]) / len(late)
++            m["late_section_exact"] = sum(1 for i in late if i < len(got) and got[i].label == want[i]["label"]
++                                          and got[i].num_bars == want[i]["bars"]) / len(late)
++        for lab in ("bridge", "outro"):
++            idx = [i for i in range(n_want) if want[i]["label"] == lab]
++            if idx:
++                m[f"{lab}_completion"] = sum(1 for i in idx if i < len(got) and got[i].label == lab) / len(idx)
++        # lyrics: which requested syllables were sung (one LCS alignment over the whole song)
++        from .prompt import split_syllables
++
++        wanted = []
++        for i, s in enumerate(want):
++            for line in s["lines"]:
++                wanted.extend((i, x) for x in split_syllables(line))
++        sung = [x for n in notes if n.lyric for x in n.lyric]
++        matched = set(lcs_matches([x for _, x in wanted], sung))
++        if wanted:
++            cut = math.ceil(2 * len(wanted) / 3)
++            tail = range(cut, len(wanted))
++            m["late_lyric_recall"] = sum(1 for j in tail if j in matched) / max(len(tail), 1)
++            lsec = [j for j, (i, _) in enumerate(wanted) if i in late] if late else []
++            if lsec:
++                m["late_section_lyric_recall"] = sum(1 for j in lsec if j in matched) / len(lsec)
++    return m
+diff --git a/qwen_abc/train.py b/qwen_abc/train.py
+index ac8299a..04f423f 100644
+--- a/qwen_abc/train.py
++++ b/qwen_abc/train.py
+@@ -1,4 +1,4 @@
+-"""Causal-LM training for ABC CPT and lyrics->ABC SFT (single process, one GPU).
++"""Causal-LM training for ABC CPT and lyrics->ABC SFT (one GPU, or data-parallel via torchrun).
+ 
+ Design choices, all recorded in the run's resolved config:
+ 
+@@ -12,7 +12,12 @@ Design choices, all recorded in the run's resolved config:
+ * loss = sum of token NLL / number of supervised tokens in the whole
+   optimizer update (not a mean of per-micro-batch means), so long and short
+   songs weigh by tokens;
+-* SFT supervises completion tokens + EOS only; CPT supervises every token.
++* SFT supervises completion tokens + EOS only; CPT supervises every token;
++* optional data parallelism (``torchrun --nproc_per_node N``): the update is
++  built from exactly the same micro-batches as on one GPU (rank r runs
++  micro-batches r, r+N, ... of the update), gradients are summed across ranks
++  and the loss is normalized by the update's global supervised-token count, so
++  N GPUs compute the same optimizer step as one GPU up to kernel numerics.
+ """
+ 
+ from __future__ import annotations
+@@ -54,6 +59,7 @@ class TrainConfig:
+     eval_every: int = 100
+     resume_every: int = 100  # steps between resumable snapshots (overwritten); 0 disables
+     save_every_epoch: bool = True
++    save_every: int = 0  # >0: also save an HF checkpoint every N optimizer steps (generation-based selection)
+     save_final: bool = True
+     seed: int = 1234
+     gradient_checkpointing: bool = True
+@@ -163,17 +169,81 @@ def load_model(name: str, attn_impl: str, dtype=torch.float32):
+     return model, tok
+ 
+ 
++# ------------------------------------------------------------ distributed
++class Dist:
++    """Rank bookkeeping; a no-op on one GPU (no torchrun)."""
++
++    def __init__(self) -> None:
++        self.world = int(os.environ.get("WORLD_SIZE", "1"))
++        self.rank = int(os.environ.get("RANK", "0"))
++        self.local_rank = int(os.environ.get("LOCAL_RANK", "0"))
++        if self.world > 1:
++            torch.cuda.set_device(self.local_rank)
++            torch.distributed.init_process_group("nccl")
++
++    @property
++    def main(self) -> bool:
++        return self.rank == 0
++
++    def sum(self, *values: float) -> List[float]:
++        if self.world == 1:
++            return [float(v) for v in values]
++        t = torch.tensor([float(v) for v in values], dtype=torch.float64, device="cuda")
++        torch.distributed.all_reduce(t)
++        return t.tolist()
++
++    def max(self, value: float) -> float:
++        if self.world == 1:
++            return float(value)
++        t = torch.tensor([float(value)], dtype=torch.float64, device="cuda")
++        torch.distributed.all_reduce(t, op=torch.distributed.ReduceOp.MAX)
++        return float(t.item())
++
++    def sum_grads(self, params: List[torch.nn.Parameter], bucket_numel: int = 1 << 26) -> None:
++        if self.world == 1:
++            return
++        for p in params:  # a rank with no micro-batch in this update still contributes zeros
++            if p.grad is None:
++                p.grad = torch.zeros_like(p)
++        bucket: List[torch.Tensor] = []
++        size = 0
++        for p in params + [None]:
++            if p is not None:
++                bucket.append(p.grad)
++                size += p.grad.numel()
++            if bucket and (p is None or size >= bucket_numel):
++                flat = torch.cat([g.reshape(-1) for g in bucket])
++                torch.distributed.all_reduce(flat)
++                off = 0
++                for g in bucket:
++                    g.copy_(flat[off: off + g.numel()].view_as(g))
++                    off += g.numel()
++                bucket, size = [], 0
++
++    def barrier(self) -> None:
++        if self.world > 1:
++            torch.distributed.barrier()
++
++    def close(self) -> None:
++        if self.world > 1:
++            torch.distributed.destroy_process_group()
++
++
+ @torch.no_grad()
+-def evaluate(model, examples: List[dict], pad_id: int, tokens_per_batch: int, device) -> Dict[str, float]:
++def evaluate(model, examples: List[dict], pad_id: int, tokens_per_batch: int, device, dist: Optional[Dist] = None) -> Dict[str, float]:
+     model.eval()
+     rng = random.Random(0)
+     total_nll, total_tok = 0.0, 0
+-    for idx in make_batches(examples, tokens_per_batch, rng):
++    world, rank = (dist.world, dist.rank) if dist else (1, 0)
++    for idx in make_batches(examples, tokens_per_batch, rng)[rank::world]:
+         batch = {k: v.to(device) for k, v in collate(examples, idx, pad_id).items()}
+         with torch.autocast("cuda", dtype=torch.bfloat16):
+             nll, n = token_nll_sum(model, batch)
+         total_nll += float(nll)
+         total_tok += n
++    if dist:
++        total_nll, total_tok = dist.sum(total_nll, total_tok)
++        total_tok = int(total_tok)
+     model.train()
+     loss = total_nll / max(total_tok, 1)
+     return {"eval_loss": loss, "eval_ppl": math.exp(min(loss, 50)), "eval_tokens": total_tok}
+@@ -188,14 +258,30 @@ def lr_at(step: int, total: int, cfg: TrainConfig) -> float:
+     return cfg.learning_rate * (cfg.min_lr_ratio + (1 - cfg.min_lr_ratio) * cosine)
+ 
+ 
++def update_plan(n_micro_per_epoch: int, cfg: TrainConfig, world: int) -> Dict[str, int]:
++    """Optimizer-step accounting shared by the trainer, tests and budget reports.
++
++    ``tokens_per_update`` is a *padded* token budget: an update holds
++    ``accum * world`` micro-batches of at most ``tokens_per_micro_batch`` padded
++    tokens each. Real (unpadded) tokens per update are therefore somewhat lower.
++    """
++    accum = max(round(cfg.tokens_per_update / (cfg.tokens_per_micro_batch * world)), 1)
++    per_update = accum * world
++    steps_per_epoch = math.ceil(n_micro_per_epoch / per_update)
++    total = cfg.max_steps or math.ceil(steps_per_epoch * cfg.epochs)
++    return {"grad_accum": accum, "micro_batches_per_update": per_update, "steps_per_epoch": steps_per_epoch,
++            "total_steps": total, "padded_tokens_per_update_budget": per_update * cfg.tokens_per_micro_batch}
++
++
+ def train(cfg: TrainConfig) -> None:
++    dist = Dist()
+     out = Path(cfg.output_dir)
+     out.mkdir(parents=True, exist_ok=True)
+     if (out / "final_model").exists():
+         raise SystemExit(f"{out}/final_model exists; refusing to overwrite a finished run")
+     random.seed(cfg.seed)
+     torch.manual_seed(cfg.seed)
+-    device = torch.device("cuda")
++    device = torch.device("cuda", dist.local_rank)
+ 
+     model, tok = load_model(cfg.model_name_or_path, cfg.attn_implementation)
+     model.to(device)
+@@ -219,115 +305,157 @@ def train(cfg: TrainConfig) -> None:
+     all_tokens = sum(len(e["input_ids"]) for e in train_ex)
+ 
+     micro_per_epoch = len(make_batches(train_ex, cfg.tokens_per_micro_batch, random.Random(0)))
+-    accum = max(round(cfg.tokens_per_update / cfg.tokens_per_micro_batch), 1)
+-    steps_per_epoch = math.ceil(micro_per_epoch / accum)
+-    total_steps = cfg.max_steps or math.ceil(steps_per_epoch * cfg.epochs)
++    plan = update_plan(micro_per_epoch, cfg, dist.world)
++    accum, per_update, total_steps = plan["grad_accum"], plan["micro_batches_per_update"], plan["total_steps"]
+ 
+     decay, no_decay = [], []
+     for n, p in model.named_parameters():
+         if p.requires_grad:
+             (no_decay if p.ndim < 2 or "norm" in n or "A_log" in n or "dt_bias" in n else decay).append(p)
++    params = [p for p in model.parameters() if p.requires_grad]
+     opt = torch.optim.AdamW(
+         [{"params": decay, "weight_decay": cfg.weight_decay}, {"params": no_decay, "weight_decay": 0.0}],
+         lr=cfg.learning_rate, betas=(0.9, cfg.adam_beta2), eps=1e-8, fused=True,
+     )
+ 
++    lengths = sorted(len(e["input_ids"]) for e in train_ex)
+     resolved = asdict(cfg) | {
+         "train_examples": len(train_ex), "eval_examples": len(eval_ex),
+         "train_dropped_over_max_len": len(train_rows) - len(train_ex),
+         "train_tokens": all_tokens, "train_supervised_tokens": sup_tokens,
+-        "micro_batches_per_epoch": micro_per_epoch, "grad_accum": accum,
+-        "steps_per_epoch": steps_per_epoch, "total_steps": total_steps,
++        "train_max_example_tokens": lengths[-1] if lengths else 0,
++        "micro_batches_per_epoch": micro_per_epoch, **plan,
++        "world_size": dist.world,
++        "real_tokens_per_update_mean": all_tokens / max(plan["steps_per_epoch"], 1),
++        "supervised_tokens_per_update_mean": sup_tokens / max(plan["steps_per_epoch"], 1),
+         "n_params": sum(p.numel() for p in model.parameters()),
+-        "torch": torch.__version__, "cuda_device": torch.cuda.get_device_name(0),
++        "n_trainable_params": sum(p.numel() for p in params),
++        "torch": torch.__version__, "cuda_device": torch.cuda.get_device_name(dist.local_rank),
+         "slurm_job_id": os.environ.get("SLURM_JOB_ID"),
+     }
+     import transformers
+ 
+     resolved["transformers"] = transformers.__version__
+-    (out / "resolved_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
+-    print(json.dumps(resolved, indent=1), flush=True)
+-    log = open(out / "train_log.jsonl", "a", encoding="utf-8")
++    try:
++        import fla
++
++        resolved["flash_linear_attention"] = fla.__version__
++    except Exception:  # noqa: BLE001
++        resolved["flash_linear_attention"] = None
++    log = None
++    if dist.main:
++        (out / "resolved_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
++        print(json.dumps(resolved, indent=1), flush=True)
++        log = open(out / "train_log.jsonl", "a", encoding="utf-8")
+ 
+     def emit(row: dict) -> None:
++        if not dist.main:
++            return
+         row["time"] = round(time.time() - t0, 1)
+         log.write(json.dumps(row) + "\n")
+         log.flush()
+         print(json.dumps(row), flush=True)
+ 
+     t0 = time.time()
+-    step, epoch, tokens_seen, resume_group = 0, 0, 0, 0
++    step, epoch, tokens_seen, sup_seen, resume_group = 0, 0, 0, 0, 0
+     state_path = out / "resume_state" / "state.pt"
+     if state_path.exists():
+         state = torch.load(state_path, map_location="cpu", weights_only=False)
+         model.load_state_dict(state["model"])
+         opt.load_state_dict(state["optimizer"])
+         step, epoch, tokens_seen, resume_group = state["step"], state["epoch"], state["tokens_seen"], state["next_group"]
++        sup_seen = state.get("sup_tokens_seen", 0)
+         torch.set_rng_state(state["torch_rng"])
+-        emit({"step": step, "resumed": True, "epoch": epoch, "next_group": resume_group,
++        emit({"step": step, "resumed": True, "epoch": epoch, "next_group": resume_group, "world_size": dist.world,
+               "slurm_job_id": os.environ.get("SLURM_JOB_ID")})
+         del state
+     else:
+-        emit({"step": 0, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
++        emit({"step": 0, "world_size": dist.world, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device, dist)})
+     model.train()
+     done = step >= total_steps
++    last_t, last_tokens = time.time(), tokens_seen
+     while not done:
+         batches = make_batches(train_ex, cfg.tokens_per_micro_batch, random.Random(cfg.seed + epoch))
+-        for start in range(resume_group, len(batches), accum):
+-            group = batches[start: start + accum]
++        for start in range(resume_group, len(batches), per_update):
++            group = batches[start: start + per_update]
+             n_sup = sum(sum(1 for x in train_ex[i]["labels"][1:] if x != -100) for b in group for i in b)
+             lr = lr_at(step, total_steps, cfg)
+             for g in opt.param_groups:
+                 g["lr"] = lr
+-            loss_sum = 0.0
+-            for idx in group:
++            loss_sum, local_tokens = 0.0, 0
++            for idx in group[dist.rank:: dist.world]:
+                 batch = {k: v.to(device, non_blocking=True) for k, v in collate(train_ex, idx, pad_id).items()}
+                 with torch.autocast("cuda", dtype=torch.bfloat16):
+                     nll, _ = token_nll_sum(model, batch)
+                 (nll / n_sup).backward()
+                 loss_sum += float(nll)
+-                tokens_seen += int(batch["attention_mask"].sum())
+-            gnorm = torch.nn.utils.clip_grad_norm_(model.parameters(), cfg.grad_clip)
++                local_tokens += int(batch["attention_mask"].sum())
++            dist.sum_grads(params)
++            loss_sum, local_tokens = dist.sum(loss_sum, local_tokens)
++            tokens_seen += int(local_tokens)
++            sup_seen += n_sup
++            gnorm = torch.nn.utils.clip_grad_norm_(params, cfg.grad_clip)
+             opt.step()
+             opt.zero_grad(set_to_none=True)
+             step += 1
+             if step % cfg.log_every == 0 or step == 1:
++                now = time.time()
+                 emit({"step": step, "epoch": round(epoch + (start + len(group)) / len(batches), 3),
+                       "loss": loss_sum / n_sup, "lr": lr, "grad_norm": float(gnorm), "tokens_seen": tokens_seen,
+-                      "max_mem_gb": round(torch.cuda.max_memory_allocated() / 2**30, 2)})
++                      "sup_tokens_seen": sup_seen,
++                      "tokens_per_sec": round((tokens_seen - last_tokens) / max(now - last_t, 1e-6), 1),
++                      "max_mem_gb": round(dist.max(torch.cuda.max_memory_allocated(device)) / 2**30, 2),
++                      "max_reserved_gb": round(dist.max(torch.cuda.max_memory_reserved(device)) / 2**30, 2)})
++                last_t, last_tokens = now, tokens_seen
+             if cfg.eval_every and step % cfg.eval_every == 0:
+-                emit({"step": step, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
++                emit({"step": step, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device, dist)})
++            if cfg.save_every and step % cfg.save_every == 0 and step < total_steps and dist.main:
++                save(model, tok, out / f"step-{step}", resolved)
+             if step >= total_steps:
+                 done = True
+                 break
+             if cfg.resume_every and step % cfg.resume_every == 0:
+-                snapshot(state_path, model, opt, step, epoch, tokens_seen, start + accum)
++                if dist.main:
++                    snapshot(state_path, model, opt, step, epoch, tokens_seen, start + per_update, sup_seen)
++                dist.barrier()
+         resume_group = 0
+         epoch += 1
+-        if cfg.save_every_epoch and not done:
++        if cfg.save_every_epoch and not done and dist.main:
+             save(model, tok, out / f"epoch-{epoch}", resolved)
+-    emit({"step": step, "final": True, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device)})
+-    if cfg.save_final:
++        dist.barrier()
++    emit({"step": step, "final": True, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device, dist)})
++    if cfg.save_final and dist.main:
+         save(model, tok, out / "final_model", resolved)
+-    emit({"step": step, "done": True, "elapsed_hours_this_job": round((time.time() - t0) / 3600, 3)})
+-    if state_path.exists():  # a finished run needs no resume snapshot (9 GB)
++    emit({"step": step, "done": True, "elapsed_hours_this_job": round((time.time() - t0) / 3600, 3),
++          "tokens_seen": tokens_seen, "sup_tokens_seen": sup_seen, "world_size": dist.world,
++          "max_mem_gb": round(dist.max(torch.cuda.max_memory_allocated(device)) / 2**30, 2)})
++    if dist.main and state_path.exists():  # a finished run needs no resume snapshot (9 GB)
+         state_path.unlink()
+         state_path.parent.rmdir()
++    dist.barrier()
++    dist.close()
+ 
+ 
+-def snapshot(path: Path, model, opt, step: int, epoch: int, tokens_seen: int, next_group: int) -> None:
++def snapshot(path: Path, model, opt, step: int, epoch: int, tokens_seen: int, next_group: int, sup_seen: int = 0) -> None:
+     """Atomically write everything needed to continue after preemption."""
+     path.parent.mkdir(parents=True, exist_ok=True)
+     tmp = path.with_suffix(".tmp")
+     torch.save({"model": model.state_dict(), "optimizer": opt.state_dict(), "step": step, "epoch": epoch,
+-                "tokens_seen": tokens_seen, "next_group": next_group, "torch_rng": torch.get_rng_state()}, tmp)
++                "tokens_seen": tokens_seen, "sup_tokens_seen": sup_seen, "next_group": next_group,
++                "torch_rng": torch.get_rng_state()}, tmp)
+     os.replace(tmp, path)
+ 
+ 
+ def save(model, tok, path: Path, resolved: dict) -> None:
+-    path.mkdir(parents=True, exist_ok=True)
++    tmp = path.with_name(path.name + ".tmp")
++    tmp.mkdir(parents=True, exist_ok=True)
+     # bf16 on disk (half the size); training keeps fp32 master weights
+     state = {k: (v.to(torch.bfloat16) if v.is_floating_point() else v) for k, v in model.state_dict().items()}
+-    model.save_pretrained(path, state_dict=state, safe_serialization=True)
+-    tok.save_pretrained(path)
+-    (path / "training_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
++    model.save_pretrained(tmp, state_dict=state, safe_serialization=True)
++    tok.save_pretrained(tmp)
++    (tmp / "training_config.json").write_text(json.dumps(resolved, indent=1), encoding="utf-8")
++    if path.exists():  # an interrupted earlier attempt at the same step
++        import shutil
++
++        shutil.rmtree(path)
++    os.replace(tmp, path)
+diff --git a/scripts/generate_eval.py b/scripts/generate_eval.py
+index 5aa295c..3b4a040 100644
+--- a/scripts/generate_eval.py
++++ b/scripts/generate_eval.py
+@@ -11,6 +11,12 @@ next to the same metrics computed on the reference ABC of the same songs.
+     the same sections) -> does the melody change?
+   * tempo / key change with the same lyrics -> does the output follow?
+ Generation resumes: songs whose generation file already exists are skipped.
++
++Round-2 options: --format v2 (ABC-v2 prompts; counters scored), --batch-size N
++(left-padded batched sampling for the main set; see qwen_abc/generate.py),
++--read-generations DIR + --rescore (re-score cached generations of an earlier
++run with the current metric code, writing only into --output-dir), and
++--song-id-list FILE (one song id per line).
+ """
+ 
+ from __future__ import annotations
+@@ -25,12 +31,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+ 
+ from qwen_abc.abc import parse_abc  # noqa: E402
+ from qwen_abc.canonical import Song  # noqa: E402
+-from qwen_abc.generate import generate_one, load_for_generation  # noqa: E402
++from qwen_abc.abc_v2 import counter_report, spec_to_prompt_v2  # noqa: E402
++from qwen_abc.generate import generate_batch, generate_one, load_for_generation  # noqa: E402
+ from qwen_abc.metrics import aggregate, distribution_distances, lcs_len, song_metrics  # noqa: E402
+ from qwen_abc.prompt import spec_to_prompt, split_syllables  # noqa: E402
+ from qwen_abc.theory import canonical_key, parse_key_name  # noqa: E402
+ 
+ 
++PROMPT_FN = [spec_to_prompt]  # set from --format in main(); probes use the same prompt format
++
++
+ def pick_songs(data_dir: Path, split: str, n: int, song_ids=None):
+     """Every k-th song (sorted by id), or an explicit id list. Streams the (large) song file."""
+     path = data_dir / f"songs_{split}.jsonl"
+@@ -84,17 +94,20 @@ def melody_distance(a: Song, b: Song) -> float:
+     return 1 - lcs_len(ta, tb) / max(len(ta), len(tb), 1)
+ 
+ 
+-def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, temperature=None):
+-    if out_path.exists():
+-        return json.loads(out_path.read_text(encoding="utf-8"))
+-    temp = args.temperature if temperature is None else temperature
+-    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, temp, args.top_p)
+-    res = parse_abc(gen["text"], meta.get("song_id", "gen"))
+-    row = {**meta, "seed": seed, "prompt": prompt, "generation": gen["text"], "new_tokens": gen["new_tokens"],
+-           "hit_eos": gen["hit_eos"], "seconds": gen["seconds"], "parse_ok": res.ok, "strict_ok": res.strict_ok,
+-           "errors": dict(res.errors), "warnings": dict(res.warnings)}
++def score_row(row: dict, spec: dict, fmt: str) -> dict:
++    """(Re)compute parse, metrics, counters and MIDI export for a generation row in place."""
++    res = parse_abc(row["generation"], row.get("song_id", "gen"))
++    row.update(parse_ok=res.ok, strict_ok=res.strict_ok, errors=dict(res.errors), warnings=dict(res.warnings))
++    row.pop("metrics", None)
++    row.pop("song", None)
+     if res.ok:
+-        row["metrics"] = song_metrics(res.song, spec, res)
++        m = song_metrics(res.song, spec, res)
++        m["hit_eos"] = float(bool(row.get("hit_eos")))
++        m["early_eos"] = float(bool(row.get("hit_eos")) and m.get("fewer_sections_than_requested", 0.0) == 1.0)
++        m["new_tokens"] = row.get("new_tokens")
++        if fmt == "v2":
++            m.update(counter_report(row["generation"], spec))
++        row["metrics"] = m
+         row["song"] = res.song.to_json()
+         try:
+             import tempfile
+@@ -107,11 +120,48 @@ def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, te
+             row["midi_error"] = str(exc)
+     else:
+         row["midi_ok"] = False
++    return row
++
++
++def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, temperature=None):
++    if out_path.exists():
++        return json.loads(out_path.read_text(encoding="utf-8"))
++    temp = args.temperature if temperature is None else temperature
++    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, temp, args.top_p, args.max_total)
++    row = {**meta, "seed": seed, "prompt": prompt, "generation": gen["text"], "new_tokens": gen["new_tokens"],
++           "hit_eos": gen["hit_eos"], "seconds": gen["seconds"], "temperature": temp, "top_p": args.top_p}
++    score_row(row, spec, args.format)
+     out_path.parent.mkdir(parents=True, exist_ok=True)
+     out_path.write_text(json.dumps(row, ensure_ascii=False), encoding="utf-8")
+     return row
+ 
+ 
++def generate_main_batched(model, tok, songs, args, gen_dir: Path, make_prompt) -> None:
++    """Batched sampling for every main-set song whose generation file is missing (sorted by length)."""
++    pending = []
++    for r in songs:
++        for seed in range(args.seeds):
++            path = gen_dir / f"{r['song_id']}_s{seed}.json"
++            if not path.exists():
++                pending.append((len(r["abc"]), r, seed, path))
++    pending.sort(key=lambda x: (x[0], x[1]["song_id"], x[2]))
++    for k in range(0, len(pending), args.batch_size):
++        chunk = pending[k: k + args.batch_size]
++        prompts = [make_prompt(r["spec"]) for _, r, _, _ in chunk]
++        outs = generate_batch(model, tok, prompts, 1000 + k, args.max_new_tokens, args.temperature, args.top_p, args.max_total)
++        for (_, r, seed, path), prompt, gen in zip(chunk, prompts, outs):
++            row = {"song_id": r["song_id"], "kind": "main", "seed": seed, "batch_seed": 1000 + k, "prompt": prompt,
++                   "generation": gen["text"], "new_tokens": gen["new_tokens"], "hit_eos": gen["hit_eos"],
++                   "seconds": gen["seconds"], "batch_size": gen["batch_size"], "batch_seconds": gen["batch_seconds"],
++                   "temperature": args.temperature, "top_p": args.top_p}
++            score_row(row, r["spec"], args.format)
++            path.parent.mkdir(parents=True, exist_ok=True)
++            path.write_text(json.dumps(row, ensure_ascii=False), encoding="utf-8")
++        print(f"[batch {k // args.batch_size + 1}/{-(-len(pending) // args.batch_size)}] {len(chunk)} songs "
++              f"{outs[0]['batch_seconds']}s tokens={sum(g['new_tokens'] for g in outs)} "
++              f"eos={sum(g['hit_eos'] for g in outs)}", flush=True)
++
++
+ def main() -> None:
+     ap = argparse.ArgumentParser()
+     ap.add_argument("--checkpoint", required=True)
+@@ -131,12 +181,23 @@ def main() -> None:
+     ap.add_argument("--probes-only", action="store_true", help="generate probe outputs only (for a separate job)")
+     ap.add_argument("--greedy-probes-only", action="store_true", help="generate the greedy probe set only")
+     ap.add_argument("--aggregate-only", action="store_true", help="no model: summarize cached generations")
++    ap.add_argument("--format", choices=["v1", "v2"], default="v1", help="prompt format (v2: ABC-v2 prompt + counter metrics)")
++    ap.add_argument("--batch-size", type=int, default=1, help=">1: batched sampling for the main set")
++    ap.add_argument("--max-total", type=int, default=8192, help="prompt + generation token cap")
++    ap.add_argument("--read-generations", type=Path, default=None, help="cached generations dir (default OUT/generations)")
++    ap.add_argument("--rescore", action="store_true", help="re-score cached rows with the current metric code")
++    ap.add_argument("--song-id-list", type=Path, default=None, help="text file, one song id per line")
+     args = ap.parse_args()
+     out = args.output_dir
+     out.mkdir(parents=True, exist_ok=True)
+     (out / "args.json").write_text(json.dumps({k: str(v) for k, v in vars(args).items()}, indent=1))
+ 
+     ids = [json.loads(l)["song_id"] for l in open(args.song_ids_from, encoding="utf-8")] if args.song_ids_from else None
++    if args.song_id_list:
++        ids = [l.strip() for l in open(args.song_id_list, encoding="utf-8") if l.strip()]
++    make_prompt = spec_to_prompt_v2 if args.format == "v2" else spec_to_prompt
++    PROMPT_FN[0] = make_prompt
++    gen_dir = args.read_generations or (out / "generations")
+     songs = pick_songs(args.data_dir, args.split, args.num_songs, ids)
+     sharded = args.num_shards > 1
+     model = tok = None
+@@ -147,20 +208,23 @@ def main() -> None:
+         if args.aggregate_only:
+             if not path.exists():
+                 raise SystemExit(f"missing generation {path}; run the generation shards first")
+-            return json.loads(path.read_text(encoding="utf-8"))
++            row = json.loads(path.read_text(encoding="utf-8"))
++            return score_row(row, spec, args.format) if args.rescore else row
+         return run_one(model, tok, prompt, spec, seed, args, path, meta, temperature)
+ 
+     gen_rows, ref_rows, gen_songs, ref_songs = [], [], [], []
+     main_songs = [] if (args.probes_only or args.greedy_probes_only) else (songs[args.shard:: args.num_shards] if sharded else songs)
++    if args.batch_size > 1 and main_songs and not args.aggregate_only:
++        generate_main_batched(model, tok, main_songs, args, gen_dir, make_prompt)
+     for i, r in enumerate(main_songs):
+         ref = Song.from_json(r["song"])
+         ref_parse = parse_abc(r["abc"], r["song_id"])
+         ref_rows.append(song_metrics(ref, r["spec"], ref_parse))
+         ref_songs.append(ref)
+         for seed in range(args.seeds):
+-            prompt = spec_to_prompt(r["spec"])
++            prompt = make_prompt(r["spec"])
+             row = cached_or_generate(prompt, r["spec"], 1000 + seed,
+-                                     out / "generations" / f"{r['song_id']}_s{seed}.json",
++                                     gen_dir / f"{r['song_id']}_s{seed}.json",
+                                      {"song_id": r["song_id"], "kind": "main"})
+             gen_rows.append(row)
+             if row.get("song"):
+@@ -192,6 +256,8 @@ def main() -> None:
+         "strict_valid": sum(r["strict_ok"] for r in gen_rows) / n,
+         "midi_success": sum(bool(r.get("midi_ok")) for r in gen_rows) / n,
+         "hit_eos": sum(r["hit_eos"] for r in gen_rows) / n,
++        "format": args.format, "temperature": args.temperature, "top_p": args.top_p, "batch_size": args.batch_size,
++        "generations_dir": str(gen_dir), "rescored": args.rescore,
+         "error_counts": {},
+         "generated": aggregate([r["metrics"] for r in gen_rows if "metrics" in r]),
+         "reference": aggregate(ref_rows),
+@@ -216,7 +282,7 @@ def run_probes(probe, args, out, gen):
+     # probe job never races a generation shard writing the same file
+     base = {}
+     for r in probe:
+-        base[r["song_id"]] = gen(spec_to_prompt(r["spec"]), r["spec"], 1000,
++        base[r["song_id"]] = gen(PROMPT_FN[0](r["spec"]), r["spec"], 1000,
+                                  out / "probes" / f"{r['song_id']}_base.json",
+                                  {"song_id": r["song_id"], "kind": "probe_base"})
+     swaps, tempo_rows, key_rows, reseed = [], [], [], []
+@@ -228,20 +294,20 @@ def run_probes(probe, args, out, gen):
+         b_song = Song.from_json(b["song"])
+         # same seed, different lyrics
+         spec2 = reflow_lyrics(r["spec"], donor["spec"])
+-        row = gen(spec_to_prompt(spec2), spec2, 1000, out / "probes" / f"{r['song_id']}_lyricswap.json",
++        row = gen(PROMPT_FN[0](spec2), spec2, 1000, out / "probes" / f"{r['song_id']}_lyricswap.json",
+                   {"song_id": r["song_id"], "kind": "lyric_swap", "donor": donor["song_id"]})
+         if row.get("song"):
+             swaps.append({"melody_distance": melody_distance(b_song, Song.from_json(row["song"])),
+                           "lyric_recall_new": row["metrics"]["lyric_recall"]})
+         # same prompt, different seed: the noise floor for melody distance
+-        row = gen(spec_to_prompt(r["spec"]), r["spec"], 2000, out / "probes" / f"{r['song_id']}_reseed.json",
++        row = gen(PROMPT_FN[0](r["spec"]), r["spec"], 2000, out / "probes" / f"{r['song_id']}_reseed.json",
+                   {"song_id": r["song_id"], "kind": "reseed"})
+         if row.get("song"):
+             reseed.append({"melody_distance": melody_distance(b_song, Song.from_json(row["song"]))})
+         # tempo change
+         spec3 = copy.deepcopy(r["spec"])
+         spec3["tempo_bpm"] = int(round(r["spec"]["tempo_bpm"] * 1.25))
+-        row = gen(spec_to_prompt(spec3), spec3, 1000, out / "probes" / f"{r['song_id']}_tempo.json",
++        row = gen(PROMPT_FN[0](spec3), spec3, 1000, out / "probes" / f"{r['song_id']}_tempo.json",
+                   {"song_id": r["song_id"], "kind": "tempo"})
+         if row.get("song"):
+             s3 = Song.from_json(row["song"])
+@@ -255,7 +321,7 @@ def run_probes(probe, args, out, gen):
+             pc, mode = parsed
+             names = ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
+             spec4["key"] = canonical_key(f"{names[(pc + 5) % 12]} {mode}")
+-            row = gen(spec_to_prompt(spec4), spec4, 1000, out / "probes" / f"{r['song_id']}_key.json",
++            row = gen(PROMPT_FN[0](spec4), spec4, 1000, out / "probes" / f"{r['song_id']}_key.json",
+                       {"song_id": r["song_id"], "kind": "key"})
+             if row.get("song"):
+                 s4 = Song.from_json(row["song"])
+@@ -284,10 +350,10 @@ def run_greedy_probes(probe, out, gen):
+     names = ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
+     for i, r in enumerate(probe):
+         donor = probe[(i + 1) % len(probe)]
+-        base = gen(spec_to_prompt(r["spec"]), r["spec"], 0, d / f"{r['song_id']}_base.json",
++        base = gen(PROMPT_FN[0](r["spec"]), r["spec"], 0, d / f"{r['song_id']}_base.json",
+                    {"song_id": r["song_id"], "kind": "greedy_base"}, 0.0)
+         spec2 = reflow_lyrics(r["spec"], donor["spec"])
+-        swap = gen(spec_to_prompt(spec2), spec2, 0, d / f"{r['song_id']}_lyricswap.json",
++        swap = gen(PROMPT_FN[0](spec2), spec2, 0, d / f"{r['song_id']}_lyricswap.json",
+                    {"song_id": r["song_id"], "kind": "greedy_lyric_swap", "donor": donor["song_id"]}, 0.0)
+         parsed = parse_key_name(r["spec"].get("key"))
+         key = None
+@@ -295,7 +361,7 @@ def run_greedy_probes(probe, out, gen):
+             pc, mode = parsed
+             spec4 = copy.deepcopy(r["spec"])
+             spec4["key"] = canonical_key(f"{names[(pc + 6) % 12]} {mode}")
+-            key = gen(spec_to_prompt(spec4), spec4, 0, d / f"{r['song_id']}_key6.json",
++            key = gen(PROMPT_FN[0](spec4), spec4, 0, d / f"{r['song_id']}_key6.json",
+                       {"song_id": r["song_id"], "kind": "greedy_key6"}, 0.0)
+         if not base.get("song"):
+             continue
+diff --git a/scripts/slurm/_train_body.sh b/scripts/slurm/_train_body.sh
+index 13a4539..94eedf5 100644
+--- a/scripts/slurm/_train_body.sh
++++ b/scripts/slurm/_train_body.sh
+@@ -1,14 +1,21 @@
+ # Sourced by the run_*.sbatch wrappers (which carry the #SBATCH resource lines).
+ # Required env: CONFIG, RUN_DIR (experiments/<name>_<timestamp>); optional OVERRIDES ("k=v k=v").
++# NPROC>1 (or several GPUs allocated) runs data-parallel through torchrun; the optimizer step is unchanged.
+ set -euo pipefail
+ cd /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC
+ source scripts/env.sh
+ : "${CONFIG:?}" "${RUN_DIR:?}"
+ mkdir -p "$RUN_DIR"
+-cp "$CONFIG" "$RUN_DIR/config.yaml"
+-{ echo "job=${SLURM_JOB_ID:-none} host=$(hostname) partition=${SLURM_JOB_PARTITION:-none}"
++[ -f "$RUN_DIR/config.yaml" ] || cp "$CONFIG" "$RUN_DIR/config.yaml"
++NPROC=${NPROC:-$(nvidia-smi -L | wc -l)}
++{ echo "job=${SLURM_JOB_ID:-none} host=$(hostname) partition=${SLURM_JOB_PARTITION:-none} restart=${SLURM_RESTART_COUNT:-0} nproc=$NPROC date=$(date -Is)"
+   nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
+   echo "commit=$(git rev-parse HEAD 2>/dev/null || echo none) dirty_files=$(git status --porcelain 2>/dev/null | wc -l)"
+   echo "overrides=${OVERRIDES:-}"; } | tee -a "$RUN_DIR/job_info.txt"
+-python scripts/train.py "$CONFIG" output_dir="$RUN_DIR" ${OVERRIDES:-} 2>&1 | tee -a "$RUN_DIR/stdout.log"
++git diff > "$RUN_DIR/git_diff_${SLURM_JOB_ID:-local}.patch" 2>/dev/null || true
++if [ "$NPROC" -gt 1 ]; then
++  torchrun --standalone --nproc_per_node "$NPROC" scripts/train.py "$CONFIG" output_dir="$RUN_DIR" ${OVERRIDES:-} 2>&1 | tee -a "$RUN_DIR/stdout.log"
++else
++  python scripts/train.py "$CONFIG" output_dir="$RUN_DIR" ${OVERRIDES:-} 2>&1 | tee -a "$RUN_DIR/stdout.log"
++fi
+ echo TRAIN_OK

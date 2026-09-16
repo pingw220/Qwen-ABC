@@ -1,0 +1,4 @@
+job=40178333 host=g3124 partition=ckpt-all restart=0 nproc=1 date=2026-09-15T11:51:49-07:00
+NVIDIA L40S, 46068 MiB
+commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty_files=15
+overrides=data_dir=data/generated/abc_v1_20260915_012459 train_limit=600 max_steps=3 eval_limit=16 eval_every=0 resume_every=0 save_every_epoch=false save_final=false log_every=1

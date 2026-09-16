@@ -68,7 +68,10 @@ class _BarSpeller:
         return acc + abc_note_name(letter, octave)
 
 
-def song_to_abc(song: Song, bars_per_line: int = 4) -> str:
+def song_to_abc(song: Song, bars_per_line: int = 4, bar_prefix=None, section_header=None) -> str:
+    """ABC-v1 text. ``bar_prefix(sec_idx, n_sections, bar_in_sec, sec_bars, line_start)`` and
+    ``section_header(sec_idx, n_sections, section)`` are ABC-v2 hooks (see abc_v2.py); with
+    both None the output is exactly the v1 format."""
     lines = [
         "X:1",
         f"M:{song.meter_num}/4",
@@ -86,19 +89,26 @@ def song_to_abc(song: Song, bars_per_line: int = 4) -> str:
     current_meter = song.meter_num
     ni = 0
 
-    for sec in song.sections:
+    n_sections = len(song.sections)
+    for si, sec in enumerate(song.sections):
         lines.append(f"P:{sec.label}")
+        if section_header is not None:
+            lines.append(section_header(si, n_sections, sec))
         bars = list(range(sec.start_bar, sec.start_bar + sec.num_bars))
         for chunk_start in range(0, len(bars), bars_per_line):
             chunk = bars[chunk_start: chunk_start + bars_per_line]
             music: List[str] = []
             lyric_bars: List[List[str]] = []
-            for b in chunk:
+            for ci, b in enumerate(chunk):
                 speller.reset()
                 start = bar_starts[b]
                 end = start + song.bar_beats[b] * TICKS_PER_BEAT
                 tokens: List[str] = []
                 lyr: List[str] = []
+                if bar_prefix is not None:
+                    prefix = bar_prefix(si, n_sections, chunk_start + ci, sec.num_bars, ci == 0)
+                    if prefix:
+                        tokens.append(prefix)
                 if song.bar_beats[b] != current_meter:
                     current_meter = song.bar_beats[b]
                     tokens.append(f"[M:{current_meter}/4]")

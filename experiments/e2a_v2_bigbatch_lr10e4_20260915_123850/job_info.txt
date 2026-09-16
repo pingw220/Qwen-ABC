@@ -1,0 +1,5 @@
+job=40180605 host=g3123 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T12:39:05-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty_files=47
+overrides=learning_rate=1.0e-4 stop_after_steps=30

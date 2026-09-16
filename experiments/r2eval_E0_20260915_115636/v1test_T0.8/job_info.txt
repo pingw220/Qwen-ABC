@@ -1,0 +1,2 @@
+job=40178387 host=g3112 restart=0 date=2026-09-15T11:57:56-07:00 commit=cbeafac7a5bc2610ed50c14bf5fb81b1bb9445a1 dirty=24
+ckpt=experiments/direct_sft_20260915_023500/final_model data=data/generated/abc_v1_20260915_012459 fmt=v1 args=

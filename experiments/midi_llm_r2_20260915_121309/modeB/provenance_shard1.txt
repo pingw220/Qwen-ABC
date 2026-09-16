@@ -1,0 +1,1 @@
+job=40179956 host=g3122 midi_llm_commit=bea55974ebdadced9078bddbdd52f855ca96a68c dirty_tracked= ckpt=runs/original-midi-llm-onestage-multitask-v1-v4/full/final mode=B flags=--free-lyric-assignment --free-section-labels

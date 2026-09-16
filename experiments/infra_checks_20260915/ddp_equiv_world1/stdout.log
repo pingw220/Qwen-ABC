@@ -1,0 +1,64 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:02<13:05,  2.46s/it]Loading weights:   8%|▊         | 26/320 [00:02<00:21, 13.46it/s]Loading weights:  11%|█         | 34/320 [00:02<00:17, 16.54it/s]Loading weights:  12%|█▎        | 40/320 [00:03<00:25, 11.04it/s]Loading weights:  14%|█▍        | 46/320 [00:04<00:20, 13.14it/s]Loading weights:  16%|█▌        | 50/320 [00:04<00:19, 14.20it/s]Loading weights:  19%|█▉        | 61/320 [00:05<00:20, 12.46it/s]Loading weights:  21%|██        | 66/320 [00:05<00:18, 13.79it/s]Loading weights:  22%|██▏       | 69/320 [00:05<00:17, 14.44it/s]Loading weights:  25%|██▌       | 80/320 [00:06<00:14, 16.34it/s]Loading weights:  29%|██▉       | 93/320 [00:06<00:08, 25.52it/s]Loading weights:  31%|███▏      | 100/320 [00:06<00:08, 24.65it/s]Loading weights:  35%|███▍      | 111/320 [00:07<00:06, 30.28it/s]Loading weights:  36%|███▋      | 116/320 [00:07<00:09, 22.34it/s]Loading weights:  38%|███▊      | 120/320 [00:07<00:09, 20.79it/s]Loading weights:  41%|████      | 131/320 [00:08<00:07, 25.69it/s]Loading weights:  42%|████▏     | 135/320 [00:08<00:06, 26.49it/s]Loading weights:  45%|████▌     | 145/320 [00:08<00:04, 35.13it/s]Loading weights:  47%|████▋     | 150/320 [00:08<00:05, 33.96it/s]Loading weights:  48%|████▊     | 154/320 [00:08<00:06, 25.71it/s]Loading weights:  50%|█████     | 160/320 [00:09<00:06, 23.50it/s]Loading weights:  52%|█████▎    | 168/320 [00:09<00:06, 25.05it/s]Loading weights:  54%|█████▍    | 173/320 [00:09<00:05, 27.46it/s]Loading weights:  57%|█████▋    | 182/320 [00:09<00:05, 24.95it/s]Loading weights:  58%|█████▊    | 187/320 [00:10<00:04, 27.86it/s]Loading weights:  61%|██████    | 195/320 [00:10<00:03, 32.12it/s]Loading weights:  62%|██████▎   | 200/320 [00:10<00:04, 29.84it/s]Loading weights:  69%|██████▉   | 220/320 [00:10<00:01, 53.09it/s]Loading weights:  71%|███████   | 227/320 [00:11<00:04, 21.73it/s]Loading weights:  75%|███████▍  | 239/320 [00:11<00:02, 29.85it/s]Loading weights:  77%|███████▋  | 245/320 [00:12<00:02, 25.64it/s]Loading weights:  78%|███████▊  | 250/320 [00:12<00:02, 26.76it/s]Loading weights:  80%|███████▉  | 255/320 [00:12<00:02, 26.45it/s]Loading weights:  81%|████████  | 259/320 [00:12<00:02, 21.34it/s]Loading weights:  83%|████████▎ | 267/320 [00:13<00:03, 15.49it/s]Loading weights:  87%|████████▋ | 277/320 [00:13<00:02, 20.69it/s]Loading weights:  90%|█████████ | 288/320 [00:13<00:01, 27.22it/s]Loading weights:  91%|█████████▏| 292/320 [00:14<00:01, 27.48it/s]Loading weights:  94%|█████████▍| 302/320 [00:14<00:00, 34.99it/s]Loading weights:  98%|█████████▊| 312/320 [00:14<00:00, 40.98it/s]Loading weights: 100%|██████████| 320/320 [00:14<00:00, 22.22it/s]
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v1_20260915_012459",
+ "output_dir": "experiments/infra_checks_20260915/ddp_equiv_world1",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": null,
+ "eval_file": null,
+ "train_limit": 600,
+ "eval_limit": 16,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 131072,
+ "epochs": 2,
+ "max_steps": 3,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 0,
+ "resume_every": 0,
+ "save_every_epoch": false,
+ "save_every": 0,
+ "save_final": false,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 1,
+ "extra": {},
+ "train_examples": 600,
+ "eval_examples": 16,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 1365717,
+ "train_supervised_tokens": 1153284,
+ "train_max_example_tokens": 4595,
+ "micro_batches_per_epoch": 91,
+ "grad_accum": 8,
+ "micro_batches_per_update": 8,
+ "steps_per_epoch": 12,
+ "total_steps": 3,
+ "padded_tokens_per_update_budget": 131072,
+ "world_size": 1,
+ "real_tokens_per_update_mean": 113809.75,
+ "supervised_tokens_per_update_mean": 96107.0,
+ "n_params": 752393024,
+ "n_trainable_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40178333",
+ "transformers": "5.17.0",
+ "flash_linear_attention": "0.5.2"
+}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"step": 0, "world_size": 1, "eval_loss": 1.3379464170138446, "eval_ppl": 3.8112088299317834, "eval_tokens": 31384, "time": 15.7}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py:391: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 1, "epoch": 0.088, "loss": 1.3361480221680329, "lr": 5e-05, "grad_norm": 10.41148567199707, "tokens_seen": 119168, "sup_tokens_seen": 100522, "tokens_per_sec": 4475.0, "max_mem_gb": 11.23, "max_reserved_gb": 11.39, "time": 42.4}
+{"step": 2, "epoch": 0.176, "loss": 3.9335092600394836, "lr": 5e-05, "grad_norm": 122.45801544189453, "tokens_seen": 242400, "sup_tokens_seen": 204362, "tokens_per_sec": 5310.4, "max_mem_gb": 15.97, "max_reserved_gb": 16.89, "time": 65.6}
+{"step": 3, "epoch": 0.264, "loss": 2.847406580788033, "lr": 2.7500000000000004e-05, "grad_norm": 97.41954803466797, "tokens_seen": 359706, "sup_tokens_seen": 303368, "tokens_per_sec": 6084.5, "max_mem_gb": 15.97, "max_reserved_gb": 16.89, "time": 84.9}
+{"step": 3, "final": true, "eval_loss": 2.1022267765820164, "eval_ppl": 8.184374409645311, "eval_tokens": 31384, "time": 86.3}
+{"step": 3, "done": true, "elapsed_hours_this_job": 0.024, "tokens_seen": 359706, "sup_tokens_seen": 303368, "world_size": 1, "max_mem_gb": 15.97, "time": 86.3}

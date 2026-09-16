@@ -1,0 +1,68 @@
+[
+ {
+  "tokens": 1553,
+  "pad": 0,
+  "left_max_abs_dlogp_of_argmax": 0.12975233793258667,
+  "right_max_abs_dlogp_of_argmax": 0.12975233793258667,
+  "left_argmax_agree": 0.992917001247406,
+  "right_argmax_agree": 0.992917001247406,
+  "left_mean_abs_dlogp": 0.0522124208509922,
+  "right_mean_abs_dlogp": 0.0522124208509922,
+  "near_tie_positions_frac(top2 gap<0.05)": 0.027044430375099182
+ },
+ {
+  "tokens": 1458,
+  "pad": 95,
+  "left_max_abs_dlogp_of_argmax": 0.14329397678375244,
+  "right_max_abs_dlogp_of_argmax": 0.11485707759857178,
+  "left_argmax_agree": 0.9876543283462524,
+  "right_argmax_agree": 0.9862825870513916,
+  "left_mean_abs_dlogp": 0.05589981749653816,
+  "right_mean_abs_dlogp": 0.054000940173864365,
+  "near_tie_positions_frac(top2 gap<0.05)": 0.03086419776082039
+ },
+ {
+  "tokens": 1447,
+  "pad": 106,
+  "left_max_abs_dlogp_of_argmax": 0.20006203651428223,
+  "right_max_abs_dlogp_of_argmax": 0.18506336212158203,
+  "left_argmax_agree": 0.9861782789230347,
+  "right_argmax_agree": 0.9930891394615173,
+  "left_mean_abs_dlogp": 0.05502893403172493,
+  "right_mean_abs_dlogp": 0.053291793912649155,
+  "near_tie_positions_frac(top2 gap<0.05)": 0.024187974631786346
+ },
+ {
+  "tokens": 1401,
+  "pad": 152,
+  "left_max_abs_dlogp_of_argmax": 0.16644835472106934,
+  "right_max_abs_dlogp_of_argmax": 0.11836659908294678,
+  "left_argmax_agree": 0.9928622245788574,
+  "right_argmax_agree": 0.9964311122894287,
+  "left_mean_abs_dlogp": 0.05591613054275513,
+  "right_mean_abs_dlogp": 0.05545733869075775,
+  "near_tie_positions_frac(top2 gap<0.05)": 0.017844397574663162
+ },
+ {
+  "tokens": 1386,
+  "pad": 167,
+  "left_max_abs_dlogp_of_argmax": 0.13460206985473633,
+  "right_max_abs_dlogp_of_argmax": 0.13623785972595215,
+  "left_argmax_agree": 0.9920634627342224,
+  "right_argmax_agree": 0.9949495196342468,
+  "left_mean_abs_dlogp": 0.05796721950173378,
+  "right_mean_abs_dlogp": 0.05608324706554413,
+  "near_tie_positions_frac(top2 gap<0.05)": 0.017316017299890518
+ },
+ {
+  "tokens": 1438,
+  "pad": 115,
+  "left_max_abs_dlogp_of_argmax": 0.15671730041503906,
+  "right_max_abs_dlogp_of_argmax": 0.11278235912322998,
+  "left_argmax_agree": 0.9944367408752441,
+  "right_argmax_agree": 0.9951321482658386,
+  "left_mean_abs_dlogp": 0.05612887069582939,
+  "right_mean_abs_dlogp": 0.0540766716003418,
+  "near_tie_positions_frac(top2 gap<0.05)": 0.011821975000202656
+ }
+]
