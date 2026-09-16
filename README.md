@@ -91,6 +91,18 @@ python scripts/eval_loss.py --checkpoint experiments/<run>/final_model --data-di
 python scripts/compare_results.py --run A=experiments/direct_sft_<ts> --run B=experiments/cpt_then_sft_<ts> > table.md
 ```
 
+## Looking at / listening to lead sheets
+
+```bash
+# adds <name>.clean.abc (ABC-v1 text), <name>.musicxml and engraved <name>.pN.svg next to every .abc
+python scripts/build_viewable_samples.py experiments/<sample dir>
+# audio (needs fluidsynth; see scripts/make_samples.py for the soundfont path)
+python scripts/make_samples.py --data-dir <dataset> --song-ids reports/listening_song_ids.json --audio --output-dir experiments/<out> --eval name=<eval dir>
+```
+
+MuseScore opens the `.musicxml` (melody, lyrics, chord symbols, section marks) and the `.mid` directly;
+plain `.abc` needs an ABC plugin or a tool such as EasyABC / abcjs. Requires `music21` and `verovio`.
+
 ## Results
 
 **Round 1** (`reports/REPORT.md`): direct SFT on ABC-v1 works; same-data CPT hurts prompt adherence.
