@@ -622,9 +622,9 @@ structure number that comes with unusable validity.
        metrics only against the corpus band.
     4. **Then**, if a capacity question remains, run the single 2B control — after, not before, the
        above.
-    5. **Keep the long-range infilling objective and 131K tokens/update** (E3b), and train for ~3
-       epochs rather than 2: that combination gives structure 0.98, validity 0.84 and lyric recall
-       0.97 at T=0.8, and structure 0.98 with corpus-like musical statistics at T=1.0. It also
+    5. **Keep the long-range infilling objective at 131K tokens/update** (E3b: 2 epochs over the
+       whole-song + infill mixture, 758 updates): that gives structure 0.98, validity 0.84 and lyric
+       recall 0.97 at T=0.8, and structure 0.98 with corpus-like musical statistics at T=1.0. It also
        provides section infilling as a usable feature.
 
 ## 15. Reproduction
