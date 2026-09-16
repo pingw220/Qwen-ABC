@@ -98,10 +98,31 @@ python scripts/collect_midi_sag_audio.py \
     --sample-dir experiments/listen_now_<ts>
 ```
 
-About 3.5 min of L40 time per song (20 s of singing, the rest diffusion) and
-~200 MB of wav, which is why the audio lives on `/gscratch/ark` and only the
-mp3 comes back next to the score. Both stages skip songs that are already
-rendered, so the job can be requeued.
+About 2.5 min of L40 time per song (20 s of singing, ~1 min of diffusion, the
+rest reloading both models, which each stage does per song) and ~160 MB of wav,
+which is why the audio lives on `/gscratch/ark` and only the mp3 comes back next
+to the score. Both stages skip songs that are already rendered, so the job can
+be requeued.
+
+## The first run
+
+`experiments/midi_sag_20260916`, job 40224719 on one L40: **19 of 19 lead sheets
+rendered, 0 failures**, 48 min, 3.1 GB of wav. Four songs × {E0, E3b @ T=0.8,
+E3b @ T=1.0, MIDI-LLM mode A, human reference}; the fifth combination is missing
+because MIDI-LLM refused that song at G2P.
+
+Two checks the renderer does not do, run separately on all 19:
+
+* MIDI-SAG's own validator: 0 errors (warnings are irregular bars, real here);
+* round trip against the source ABC: every melody pitch and onset in the
+  exported MIDI matches the score exactly.
+
+SoulX-Singer, MIDI-SAG's built-in singer, was tried first and is not used: its
+Mandarin g2p has no pronunciation for a Latin-script word, so one English word
+("mask") in a generated lyric failed a whole song. Two SoulX renders of
+`1Fo23uW11ZN4JCFCeB0ngS` survive under
+`/gscratch/ark/pingw220/qwen_abc_r2_offload/midi_sag_soulx_partial_20260916/`
+if the two singers are worth comparing.
 
 ## What a listening comparison can and cannot say
 

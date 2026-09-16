@@ -60,15 +60,18 @@ def main() -> None:
             missing.append({"run": run.name, "error": (state.get("error") or {}).get("type", "no result.json"),
                             "stopped_after": state.get("stopped_after")})
             continue
-        out_dir = args.sample_dir / song / model
+        # The human reference has no model subdirectory: its files sit at the
+        # song root next to reference.abc, so its audio is named the same way.
+        out_dir = args.sample_dir / song if model == "reference" else args.sample_dir / song / model
+        prefix = "reference_" if model == "reference" else ""
         if not out_dir.is_dir():
             missing.append({"run": run.name, "error": f"no sample dir {out_dir}"})
             continue
         made = {}
         for stem, (name, bitrate) in WANTED.items():
             src = run / f"{stem}.wav"
-            if src.is_file() and encode(src, out_dir / name, bitrate, args.ffmpeg):
-                made[stem] = str(out_dir / name)
+            if src.is_file() and encode(src, out_dir / (prefix + name), bitrate, args.ffmpeg):
+                made[stem] = str(out_dir / (prefix + name))
         rows.append({"song": song, "model": model, "render_dir": str(run), "audio": made})
         print(f"{song}/{model}: {', '.join(sorted(made)) or 'nothing'}")
 
