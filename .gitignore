@@ -31,3 +31,6 @@ experiments/**/*.tmp/
 data/generated/*/cleaning_report_fragment.md
 experiments/*/final_model
 experiments/*/epoch-*
+experiments/listen_now_*/
+experiments/listen_now_*.tar.gz
+*.mp3
