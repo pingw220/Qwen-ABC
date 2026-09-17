@@ -19,7 +19,9 @@ What is left out, and why:
   next word on them;
 * a note carrying more than one syllable (the corpus joins an unmatched
   syllable onto its neighbour) is divided between them, since one note sings
-  one symbol; only syllables with no room left at all are dropped;
+  one symbol -- but only as far as each syllable still lasts ``MIN_SYLLABLE_S``;
+  the rest are dropped, because a lead sheet that asks for 19 syllables inside
+  0.19 s is asking for a burst of clicks, not words;
 * non-Chinese syllables: FastSinger's Mandarin lexicon has no pronunciation for
   them, so they are sung as a held vowel instead of derailing the line.
 
@@ -40,6 +42,13 @@ CJK = re.compile(r"[㐀-䶿一-鿿豈-﫿]")
 
 MELISMA = "#"
 MIN_NOTE_S = 0.03  # shorter than this cannot carry a phoneme
+# A syllable needs about this long to be sung as a word rather than a click.
+# It matters because a lead sheet can pile many syllables onto one note (the
+# ABC `w:` line holding more syllables than the bar has notes leaves the
+# remainder on the last note): 19 syllables on a 0.19 s note were measured.
+# Dividing that note by the note floor alone sings a machine-gun burst, so
+# syllables that have no room at this length are dropped and counted instead.
+MIN_SYLLABLE_S = 0.12
 LINE_GAP_S = 0.6  # a rest this long is a breath: start a new phrase
 HOLD_GAP_S = 1.0  # a melisma note further than this from its syllable is not a held vowel
 # FastSinger's own comment: notes should sit inside C#3..D5.
@@ -89,7 +98,7 @@ def sung_notes(song: Song, line_gap_s: float = LINE_GAP_S) -> Tuple[List[Dict], 
         # divided between them rather than losing all but the first.
         if len(chars) > 1:
             stats["notes_split"] += 1
-            room = max(1, int((end - start) // MIN_NOTE_S))
+            room = max(1, int((end - start) // MIN_SYLLABLE_S))
             if room < len(chars):
                 stats["extra_syllables_dropped"] += len(chars) - room
                 chars = chars[:room]

@@ -63,7 +63,7 @@ sheet whose counts do not match. Four rules, each counted in the audit JSON:
 |---|---|---|
 | wordless note (an instrumental line) | not sung, absent from both files | it is not the vocal; if it stayed, the next word would be sung on it |
 | melisma note (`~` in ABC) | one `#` | holds the previous syllable, which is what `#` means |
-| note carrying several syllables | the note is divided between them | the corpus joins a syllable it could not place onto its neighbour; dropping all but the first cost 18% of the lyrics on one song |
+| note carrying several syllables | the note is divided between them, as far as each part lasts 120 ms | the corpus joins a syllable it could not place onto its neighbour; dropping all but the first cost 18% of the lyrics on one song, and dividing without a floor sang 19 syllables inside 0.19 s as a burst of clicks |
 | non-Chinese syllable | sung as a held vowel | FastSinger's Mandarin lexicon has no pronunciation for it |
 
 Over the 19 exported lead sheets: 6 861 melody notes → **6 786 sung symbols**,
@@ -116,6 +116,32 @@ Two checks the renderer does not do, run separately on all 19:
 * MIDI-SAG's own validator: 0 errors (warnings are irregular bars, real here);
 * round trip against the source ABC: every melody pitch and onset in the
   exported MIDI matches the score exactly.
+
+## The second run, and what listening changed
+
+`experiments/midi_sag_20260917`, job 40249314: the same 19 lead sheets, again
+19/19. Listening to the first run turned up two rendering faults, both fixed
+here and neither of them in the lead sheets:
+
+* **The intro and outro read as holes.** MIDI-SAG's per-tag defaults ask an
+  intro for "soft synthesizer pads … ethereal … fading slowly". On these songs
+  the instrumental intro runs 11–28 s, and the backing sat 13 dB below the
+  verses and decayed to −49 dBFS in the second before the vocal entered. Asking
+  those three tags (`intro`, `outro`, `inst`) for the full band instead lifted
+  the intro of `1tKSEmbS7vmv7cFc24sjlI` from −35.9 to −28.4 dBFS mean and its
+  quietest second from −48.8 to −31.3, leaving the body alone (−16.3 → −16.9).
+  Verse and chorus prompts are untouched. The intro is still ~11 dB under the
+  body, which is what an intro should be.
+* **Crammed syllables sang as clicks.** 194 notes across the 19 lead sheets
+  carry more than one syllable and 183 of them have no free note after to
+  spread onto; the worst asks for 19 syllables inside 0.19 s. `MIN_SYLLABLE_S`
+  (120 ms) now bounds how far a note is divided, and the rest are dropped:
+  0.6% → 2.9% of syllables, fastest syllable 32 ms → 110 ms.
+
+The second fix hides a defect rather than repairing it. The cramming is in the
+lead sheet — it is what `lyric_cramming` measures — and the renderer should not
+be the thing that makes it inaudible. The long intro, by contrast, is not a
+defect: that song's human reference has 22.4 s before its first sung note.
 
 SoulX-Singer, MIDI-SAG's built-in singer, was tried first and is not used: its
 Mandarin g2p has no pronunciation for a Latin-script word, so one English word

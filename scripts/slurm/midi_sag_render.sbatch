@@ -34,6 +34,12 @@ FS_EPOCH="${FS_EPOCH:-400}"
 FS_SPKR="${FS_SPKR:-6}"
 LEADSHEETS="${LEADSHEETS:?set LEADSHEETS to a directory of exported *.mid}"
 OUT="${OUT:?set OUT to an output directory}"
+# MIDI-SAG's default intro/outro prompts ask for "soft synthesizer pads,
+# ethereal, fading slowly", which on these songs left the 11-28 s instrumental
+# intro 13 dB below the verses and decaying to -46 dBFS just before the vocal
+# enters -- it reads as a hole rather than an introduction. These override only
+# the sections that were empty; every other tag keeps the repo's own prompt.
+TAG_PROMPTS="${TAG_PROMPTS:-{\"intro\": \"Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar\", \"outro\": \"Mandarin pop outro with the full band playing out: drums, bass, piano and guitar\", \"inst\": \"Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar\"}}"
 
 export HF_HOME="${HF_HOME:-/gscratch/ark/pingw220/midisag/hf_home}"
 export TOKENIZERS_PARALLELISM=false
@@ -77,7 +83,7 @@ for mid in "$LEADSHEETS"/*.mid; do
     # would re-harmonize from the melody and drop melody-free sections.
     ( cd "$MIDI_SAG_ROOT" && "$VPY" tools/midi_llm_adapter/run_midi_llm_to_midi_sag.py \
         --midi "$mid" --output-dir "$dir" --vocal-audio "$vocal" \
-        --gpu 0 --harmonizer leadsheet ) > "$dir/midi_sag.log" 2>&1
+        --gpu 0 --harmonizer leadsheet --tag-prompts "$TAG_PROMPTS" ) > "$dir/midi_sag.log" 2>&1
     status=$?
     if [ -f "$dir/mix.wav" ]; then
         echo "    mix ok -> $dir/mix.wav"
