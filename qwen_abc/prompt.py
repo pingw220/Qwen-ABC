@@ -37,12 +37,14 @@ def song_to_spec(song: Song) -> Dict[str, Any]:
         end_bar = sec.start_bar + sec.num_bars
         end = starts[end_bar] if end_bar < len(starts) else total
         lines: List[List[str]] = []
+        line_ids: List[Any] = []
         last_line: Optional[int] = object()  # sentinel never equal to a line index
         for n in song.notes:
             if not (begin <= n.onset < end) or not n.lyric:
                 continue
             if n.line != last_line or not lines:
                 lines.append([])
+                line_ids.append(n.line)
                 last_line = n.line
             lines[-1].extend(n.lyric)
         beats = song.bar_beats[sec.start_bar:end_bar]
@@ -51,6 +53,9 @@ def song_to_spec(song: Song) -> Dict[str, Any]:
             "bars": sec.num_bars,
             "beats": beats,
             "lines": [join_syllables(l) for l in lines],
+            # which lyric line each entry came from: equal ids either side of a
+            # section boundary mean one line was split by it (usually a pickup)
+            "line_ids": line_ids,
         })
     return {
         "language": song.language,

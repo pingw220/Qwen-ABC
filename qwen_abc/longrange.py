@@ -72,13 +72,14 @@ def choose_infill_target(song_id: str, spec: Dict) -> Optional[int]:
     return cands[_h(song_id, "infill") % len(cands)]
 
 
-def infill_example(song: Song, spec: Dict, target: int) -> Dict[str, str]:
+def infill_example(song: Song, spec: Dict, target: int, prompt_fn=None) -> Dict[str, str]:
+    """``prompt_fn`` writes the plan part of the prompt (default: the ABC-v2 writer)."""
     abc = song_to_abc_v2(song)
     header, blocks = split_abc_sections(abc)
     tgt = blocks[target]
     head_lines = tgt.split("\n")[:2]  # "P:label" and "% section i/N | B bars"
     gapped = header + "".join(blocks[:target]) + "\n".join(head_lines) + "\n" + GAP_LINE + "\n" + "".join(blocks[target + 1:])
-    base = spec_to_prompt_v2(spec)
+    base = (prompt_fn or spec_to_prompt_v2)(spec)
     assert base.startswith(PROMPT_HEADER_V2) and base.endswith(COMPLETION_MARKER)
     body = base[len(PROMPT_HEADER_V2): -len(COMPLETION_MARKER)]
     prompt = INFILL_HEADER + body + "ABC with a gap:\n" + gapped + "\n" + INFILL_MARKER
