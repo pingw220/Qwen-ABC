@@ -132,6 +132,10 @@ per song:
 | pitch range (semitones) | 14.1 | 13.3 | 13.8 | **17.9** | 22.0 |
 | distinct bars | 0.46 | 0.47 | 0.47 | **0.77** | 0.87 |
 
+**R3-B** (`reports/BEST_OF_N_DECODING.md`): four samples at T=1.0 with an inference-time selector
+(no training, 2.1 GPU-h) — strict-valid **0.978**, exact structure **0.996**, lyric recall **0.982**,
+crammed syllables 0.163 → **0.114**, with pitch range and interval distribution unchanged.
+
 * **Representation fixes structure:** cleaned section boundaries + a per-bar countdown (`[r:k]`) take
   exact structure 0.53 → 0.86; a long-range infilling objective at the same batch size takes it to 0.98.
 * **Melodic conservatism was decoding, not capacity:** temperature 1.0 / top-p 0.95 recovers corpus-like
