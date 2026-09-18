@@ -28,6 +28,7 @@ Reports:
 * `reports/LONG_STRUCTURE_EXPERIMENTS.md`: **round-2 results and verdict**
 * `reports/LEADSHEET_TO_AUDIO.md`: ABC → FastSinger → MuseControlLite, and the note↔syllable pairing it needs
 * `reports/BEST_OF_N_DECODING.md`: best-of-n sampling (R3-B) — strict validity 0.81 → 0.98 with no training
+* `reports/R3A_SYLLABLE_BUDGET.md`: R3-A — a syllable budget in the prompt does **not** fix cramming (negative result)
 
 ## Layout
 
