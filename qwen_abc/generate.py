@@ -25,8 +25,19 @@ def load_for_generation(path: str, attn_impl: str = "sdpa"):
 
 
 @torch.no_grad()
+def _constraint(tok, prompt_len: int, batch: int, no_cram: bool):
+    """The logits processor list for a run, or None when unconstrained."""
+    if not no_cram:
+        return None, None
+    from transformers import LogitsProcessorList
+
+    from .constrained import NoSyllableJoins
+    proc = NoSyllableJoins(tok, prompt_len, batch)
+    return LogitsProcessorList([proc]), proc
+
+
 def generate_one(model, tok, prompt: str, seed: int, max_new_tokens: int, temperature: float,
-                 top_p: float, max_total: int = 8192) -> Dict:
+                 top_p: float, max_total: int = 8192, no_cram: bool = False) -> Dict:
     ids = tok(prompt, add_special_tokens=False, return_tensors="pt")["input_ids"].to("cuda")
     budget = min(max_new_tokens, max_total - ids.shape[1])
     torch.manual_seed(seed)
@@ -36,6 +47,9 @@ def generate_one(model, tok, prompt: str, seed: int, max_new_tokens: int, temper
         kwargs.update(do_sample=True, temperature=temperature, top_p=top_p, top_k=0)
     else:
         kwargs.update(do_sample=False)
+    procs, proc = _constraint(tok, ids.shape[1], 1, no_cram)
+    if procs is not None:
+        kwargs["logits_processor"] = procs
     out = model.generate(ids, attention_mask=torch.ones_like(ids), **kwargs)
     new = out[0, ids.shape[1]:].tolist()
     hit_eos = bool(new) and new[-1] == tok.eos_token_id
@@ -52,7 +66,7 @@ def generate_one(model, tok, prompt: str, seed: int, max_new_tokens: int, temper
 
 @torch.no_grad()
 def generate_batch(model, tok, prompts: List[str], seed: int, max_new_tokens: int, temperature: float,
-                   top_p: float, max_total: int = 8192) -> List[Dict]:
+                   top_p: float, max_total: int = 8192, no_cram: bool = False) -> List[Dict]:
     """Left-padded batched sampling.
 
     Padding is safe for the hybrid model: Transformers zeroes padded inputs
@@ -77,6 +91,9 @@ def generate_batch(model, tok, prompts: List[str], seed: int, max_new_tokens: in
         kwargs.update(do_sample=True, temperature=temperature, top_p=top_p, top_k=0)
     else:
         kwargs.update(do_sample=False)
+    procs, proc = _constraint(tok, ids.shape[1], len(prompts), no_cram)
+    if procs is not None:
+        kwargs["logits_processor"] = procs
     out = model.generate(ids, attention_mask=mask, **kwargs)
     seconds = time.time() - t0
     rows = []

@@ -128,7 +128,8 @@ def run_one(model, tok, prompt, spec, seed, args, out_path: Path, meta: dict, te
     if out_path.exists():
         return json.loads(out_path.read_text(encoding="utf-8"))
     temp = args.temperature if temperature is None else temperature
-    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, temp, args.top_p, args.max_total)
+    gen = generate_one(model, tok, prompt, seed, args.max_new_tokens, temp, args.top_p, args.max_total,
+                       no_cram=getattr(args, "no_cram", False))
     row = {**meta, "seed": seed, "prompt": prompt, "generation": gen["text"], "new_tokens": gen["new_tokens"],
            "hit_eos": gen["hit_eos"], "seconds": gen["seconds"], "temperature": temp, "top_p": args.top_p}
     score_row(row, spec, args.format)
@@ -149,7 +150,8 @@ def generate_main_batched(model, tok, songs, args, gen_dir: Path, make_prompt) -
     for k in range(0, len(pending), args.batch_size):
         chunk = pending[k: k + args.batch_size]
         prompts = [make_prompt(r["spec"]) for _, r, _, _ in chunk]
-        outs = generate_batch(model, tok, prompts, 1000 + k, args.max_new_tokens, args.temperature, args.top_p, args.max_total)
+        outs = generate_batch(model, tok, prompts, 1000 + k, args.max_new_tokens, args.temperature, args.top_p,
+                              args.max_total, no_cram=getattr(args, "no_cram", False))
         for (_, r, seed, path), prompt, gen in zip(chunk, prompts, outs):
             row = {"song_id": r["song_id"], "kind": "main", "seed": seed, "batch_seed": 1000 + k, "prompt": prompt,
                    "generation": gen["text"], "new_tokens": gen["new_tokens"], "hit_eos": gen["hit_eos"],
@@ -188,6 +190,8 @@ def main() -> None:
     ap.add_argument("--max-total", type=int, default=8192, help="prompt + generation token cap")
     ap.add_argument("--read-generations", type=Path, default=None, help="cached generations dir (default OUT/generations)")
     ap.add_argument("--rescore", action="store_true", help="re-score cached rows with the current metric code")
+    ap.add_argument("--no-cram", action="store_true",
+                    help="constrained decoding: forbid '~' inside a w: line, so no note can carry several syllables")
     ap.add_argument("--song-id-list", type=Path, default=None, help="text file, one song id per line")
     args = ap.parse_args()
     out = args.output_dir

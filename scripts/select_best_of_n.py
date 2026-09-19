@@ -70,6 +70,25 @@ def rank_key(row: dict, rule: str, seed: int):
                 round(in_key(row), 3),
                 -round(signal(row, "cram_syllable_frac"), 3),
                 -seed)
+    if rule == "cram_lex":
+        # among the samples that are valid and on plan, take the least crammed.
+        # The oracle over four samples is 0.086 against the `sum` rule's 0.114,
+        # so this is the whole of what reranking still has to give.
+        return (signal(row, "strict_valid"),
+                signal(row, "section_plan_exact"),
+                -round(signal(row, "cram_syllable_frac"), 3),
+                round(signal(row, "lyric_recall"), 3),
+                -seed)
+    if rule == "cram3":
+        # the weighted rule with cramming weighted 3x instead of 1x
+        return (2.0 * signal(row, "strict_valid")
+                + 1.5 * signal(row, "section_plan_exact")
+                + 1.5 * signal(row, "lyric_recall")
+                + 1.0 * in_key(row)
+                + 0.5 * signal(row, "chord_tone_frac")
+                - 3.0 * signal(row, "cram_syllable_frac")
+                - 1.0 * signal(row, "early_eos"),
+                -seed)
     if rule == "sum":
         return (2.0 * signal(row, "strict_valid")
                 + 1.5 * signal(row, "section_plan_exact")
@@ -86,7 +105,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--generations", type=Path, required=True, help="dir of <song>_s<k>.json")
     ap.add_argument("--out", type=Path, required=True, help="output dir; chosen rows land in <out>/generations")
-    ap.add_argument("--rule", default="lex", choices=["seed0", "valid", "lex", "sum"])
+    ap.add_argument("--rule", default="lex", choices=["seed0", "valid", "lex", "sum", "cram3", "cram_lex"])
     args = ap.parse_args()
 
     by_song: dict[str, list[tuple[int, Path]]] = {}
