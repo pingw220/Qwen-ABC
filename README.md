@@ -29,6 +29,7 @@ Reports:
 * `reports/LEADSHEET_TO_AUDIO.md`: ABC → FastSinger → MuseControlLite, and the note↔syllable pairing it needs
 * `reports/BEST_OF_N_DECODING.md`: best-of-n sampling (R3-B) — strict validity 0.81 → 0.98 with no training
 * `reports/R3A_SYLLABLE_BUDGET.md`: R3-A — a syllable budget in the prompt does **not** fix cramming (negative result)
+* `reports/CRAMMING_ATTACKS.md`: **three attacks on cramming** — repaired targets work, reranking is at its ceiling, constrained decoding fails
 
 ## Layout
 
@@ -136,6 +137,12 @@ per song:
 **R3-B** (`reports/BEST_OF_N_DECODING.md`): four samples at T=1.0 with an inference-time selector
 (no training, 2.1 GPU-h) — strict-valid **0.978**, exact structure **0.996**, lyric recall **0.982**,
 crammed syllables 0.163 → **0.114**, with pitch range and interval distribution unchanged.
+
+**R3-C** (`reports/CRAMMING_ATTACKS.md`): training on repaired targets — no note carries several
+syllables — takes crammed syllables to **0.043**, below the corpus 0.057, with lyric recall unchanged
+and no significant cost to validity or structure. Banning the join token at decode time instead
+drives cramming to zero but validity to 0.342: in ABC the notes are committed before the lyric line,
+so the constraint arrives too late.
 
 * **Representation fixes structure:** cleaned section boundaries + a per-bar countdown (`[r:k]`) take
   exact structure 0.53 → 0.86; a long-range infilling objective at the same batch size takes it to 0.98.
