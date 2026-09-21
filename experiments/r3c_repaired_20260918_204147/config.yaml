@@ -1,0 +1,21 @@
+# R3-C: E3b's recipe on repaired targets (no note carries several syllables). The prompt is byte-identical to E3b's, so this isolates the target side.
+mode: sft
+model_name_or_path: Qwen/Qwen3.5-0.8B-Base
+data_dir: data/generated/abc_v2r_20260918_203632
+train_file: data/generated/abc_v2r_20260918_203632/sft_longrange_train.jsonl
+eval_file: data/generated/abc_v2r_20260918_203632/sft_validation.jsonl
+output_dir: experiments/CHANGE_ME
+max_seq_len: 8192
+tokens_per_micro_batch: 16384
+tokens_per_update: 131072
+epochs: 2
+learning_rate: 5.0e-5
+min_lr_ratio: 0.1
+warmup_ratio: 0.03
+weight_decay: 0.0
+grad_clip: 1.0
+eval_every: 50
+resume_every: 50
+save_every: 0
+eval_limit: 256
+seed: 1234

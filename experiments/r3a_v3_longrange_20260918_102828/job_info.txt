@@ -1,0 +1,25 @@
+job=40295745 host=g3107 partition=ckpt-all restart=0 nproc=2 date=2026-09-18T11:49:01-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=b5cff8241ef5f9918d22a52f83ac7b36eb914a3f dirty_files=9
+overrides=
+job=40295745 host=g3109 partition=ckpt-all restart=1 nproc=2 date=2026-09-18T12:16:58-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=8369faa81abbe8efecd12119face61a1c393d6b2 dirty_files=2
+overrides=
+job=40295745 host=g3100 partition=ckpt-all restart=2 nproc=2 date=2026-09-18T12:26:00-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=8369faa81abbe8efecd12119face61a1c393d6b2 dirty_files=2
+overrides=
+job=40295745 host=g3100 partition=ckpt-all restart=3 nproc=2 date=2026-09-18T13:41:26-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=8369faa81abbe8efecd12119face61a1c393d6b2 dirty_files=2
+overrides=
+job=40295745 host=g3122 partition=ckpt-all restart=4 nproc=2 date=2026-09-18T13:54:21-07:00
+NVIDIA L40S, 46068 MiB
+NVIDIA L40S, 46068 MiB
+commit=8369faa81abbe8efecd12119face61a1c393d6b2 dirty_files=2
+overrides=

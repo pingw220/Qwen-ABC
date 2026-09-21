@@ -1,0 +1,90 @@
+W0918 20:51:09.144000 249771 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] 
+W0918 20:51:09.144000 249771 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+W0918 20:51:09.144000 249771 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0918 20:51:09.144000 249771 .venv/lib/python3.12/site-packages/torch/distributed/run.py:774] *****************************************
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:06<36:26,  6.85s/it]Loading weights:   0%|          | 1/320 [00:07<37:29,  7.05s/it]Loading weights:  22%|██▏       | 71/320 [00:07<00:17, 14.26it/s]Loading weights:  14%|█▍        | 46/320 [00:07<00:30,  8.97it/s]Loading weights:  40%|████      | 129/320 [00:07<00:06, 29.88it/s]Loading weights:  40%|████      | 129/320 [00:07<00:06, 31.12it/s]Loading weights:  51%|█████▏    | 164/320 [00:07<00:04, 34.43it/s]Loading weights:  52%|█████▎    | 168/320 [00:08<00:04, 36.28it/s]Loading weights:  61%|██████    | 195/320 [00:08<00:02, 43.14it/s]Loading weights:  61%|██████    | 195/320 [00:08<00:02, 42.19it/s]Loading weights:  67%|██████▋   | 214/320 [00:08<00:02, 43.40it/s]Loading weights:  68%|██████▊   | 216/320 [00:08<00:02, 44.30it/s]Loading weights:  72%|███████▏  | 231/320 [00:08<00:01, 47.50it/s]Loading weights:  71%|███████▏  | 228/320 [00:08<00:01, 46.12it/s]Loading weights:  76%|███████▋  | 244/320 [00:09<00:01, 52.92it/s]Loading weights:  75%|███████▌  | 240/320 [00:08<00:01, 50.14it/s]Loading weights:  78%|███████▊  | 251/320 [00:09<00:01, 41.03it/s]Loading weights:  80%|████████  | 256/320 [00:09<00:01, 40.94it/s]Loading weights:  81%|████████  | 259/320 [00:09<00:01, 41.05it/s]Loading weights:  83%|████████▎ | 265/320 [00:09<00:01, 38.46it/s]Loading weights:  83%|████████▎ | 266/320 [00:09<00:01, 40.88it/s]Loading weights:  86%|████████▋ | 276/320 [00:09<00:01, 41.65it/s]Loading weights:  85%|████████▌ | 273/320 [00:10<00:01, 37.83it/s]Loading weights:  87%|████████▋ | 279/320 [00:10<00:01, 38.81it/s]Loading weights:  88%|████████▊ | 282/320 [00:10<00:00, 42.17it/s]Loading weights:  92%|█████████▏| 293/320 [00:10<00:00, 42.49it/s]Loading weights:  91%|█████████▏| 292/320 [00:10<00:00, 40.70it/s]Loading weights:  94%|█████████▍| 301/320 [00:10<00:00, 36.74it/s]Loading weights:  94%|█████████▍| 301/320 [00:10<00:00, 38.46it/s]Loading weights:  96%|█████████▌| 307/320 [00:11<00:00, 38.14it/s]Loading weights:  96%|█████████▌| 307/320 [00:10<00:00, 36.75it/s]Loading weights: 100%|██████████| 320/320 [00:11<00:00, 28.98it/s]Loading weights: 100%|██████████| 320/320 [00:10<00:00, 29.51it/s]
+
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[rank1]:[W918 21:07:35.929088475 socket.cpp:460] [c10d] waitForInput: poll for socket SocketImpl(fd=47, addr=[g3103.hyak.local]:57470, remote=[g3103.hyak.local]:39761) returned 0, likely a timeout
+[rank1]:[W918 21:07:35.929369196 socket.cpp:485] [c10d] waitForInput: socket SocketImpl(fd=47, addr=[g3103.hyak.local]:57470, remote=[g3103.hyak.local]:39761) timed out after 600000ms
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/scripts/train.py", line 13, in <module>
+[rank1]:     train(load_config(sys.argv[1], sys.argv[2:]))
+[rank1]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 374, in train
+[rank1]:     emit({"step": 0, "world_size": dist.world, **evaluate(model, eval_ex, pad_id, cfg.tokens_per_micro_batch, device, dist)})
+[rank1]:                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 246, in evaluate
+[rank1]:     total_nll, total_tok = dist.sum(total_nll, total_tok)
+[rank1]:                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/qwen_abc/train.py", line 193, in sum
+[rank1]:     torch.distributed.all_reduce(t)
+[rank1]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 2924, in all_reduce
+[rank1]:     work = group.allreduce([tensor], opts)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: torch.distributed.DistBackendError: [1] is setting up NCCL communicator and retrieving ncclUniqueId from [0] via c10d key-value store by key '0', but store->get('0') got error: wait timeout after 600000ms, keys: /default_pg/0//cuda//0
+[rank1]: Exception raised from doWait at /pytorch/torch/csrc/distributed/c10d/TCPStore.cpp:597 (most recent call first):
+[rank1]: frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x80 (0x149cfa360eb0 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libc10.so)
+[rank1]: frame #1: <unknown function> + 0x5cd0381 (0x149d3bd49381 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #2: <unknown function> + 0x1361e6c (0x149d373dae6c in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #3: c10d::TCPStore::doGet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x33 (0x149d3bde0fe3 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #4: c10d::TCPStore::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x114 (0x149d3bde20f4 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #5: c10d::PrefixStore::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x30 (0x149d3bd90700 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #6: c10d::PrefixStore::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x30 (0x149d3bd90700 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #7: c10d::PrefixStore::get(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x30 (0x149d3bd90700 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #8: c10d::ProcessGroupNCCL::broadcastUniqueNCCLID(ncclUniqueId*, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) + 0x5c4 (0x149cfb2ccbd4 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cuda.so)
+[rank1]: frame #9: c10d::ProcessGroupNCCL::initNCCLComm(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, c10::Device&, c10d::OpType, int, bool) + 0x1bba (0x149cfb2cf67a in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cuda.so)
+[rank1]: frame #10: <unknown function> + 0xe4e1af (0x149cfb2d51af in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cuda.so)
+[rank1]: frame #11: c10d::ProcessGroupNCCL::allreduce_impl(at::Tensor&, char const*, c10d::AllreduceOptions const&) + 0xc2 (0x149cfb2d5a22 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cuda.so)
+[rank1]: frame #12: c10d::ProcessGroupNCCL::allreduce(std::vector<at::Tensor, std::allocator<at::Tensor> >&, c10d::AllreduceOptions const&) + 0x709 (0x149cfb2d6179 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cuda.so)
+[rank1]: frame #13: <unknown function> + 0x5d07921 (0x149d3bd80921 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #14: <unknown function> + 0x5d16572 (0x149d3bd8f572 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #15: <unknown function> + 0x53413e5 (0x149d3b3ba3e5 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #16: <unknown function> + 0x5d222e9 (0x149d3bd9b2e9 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #17: <unknown function> + 0x5d30ee9 (0x149d3bda9ee9 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+[rank1]: frame #18: <unknown function> + 0xc78d78 (0x149d4b1f6d78 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_python.so)
+[rank1]: frame #19: <unknown function> + 0x3767d2 (0x149d4a8f47d2 in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/lib/libtorch_python.so)
+[rank1]: <omitting python frames>
+[rank1]: frame #31: __libc_start_main + 0xe5 (0x149d68b0a865 in /lib64/libc.so.6)
+[rank1]: frame #32: _start + 0x2e (0x556f70c1774e in /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/python)
+[rank1]: . This may indicate a possible application crash on rank 0 or a network set up issue.
+W0918 21:07:43.760000 249771 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 255777 closing signal SIGTERM
+W0918 21:08:13.761000 249771 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:919] Unable to shutdown process 255777 via 15, forcefully exiting via 9
+E0918 21:09:04.275000 249771 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 1 (pid: 255778) of binary: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/python
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+scripts/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-18_21:07:43
+  host      : g3103.hyak.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 255778)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
