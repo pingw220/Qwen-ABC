@@ -6,19 +6,29 @@ models put 16.3% of syllables on a note that already carries one against a corpu
 ruled out asking the model (a syllable budget in the prompt changed nothing).
 All three remaining routes were run.
 
-**Result: repairing the training targets works. The other two do not.**
+**Result: none of the three is adopted.** Each lowers cramming and each takes more
+out of the music than it puts back. E3b + best-of-4 remains the recipe.
 
-| | crammed syllables | strict-valid | exact structure | lyric recall |
-|---|---|---|---|---|
-| corpus | 0.057 | 1.000 | 1.000 | 1.000 |
-| E3b + best-of-4 *(previous best)* | 0.114 | 0.978 | 0.996 | 0.982 |
-| **repaired targets + best-of-4** | **0.043** | 0.964 | 0.978 | 0.982 |
-| cram-weighted reranking | 0.113 | 0.938 † | 1.000 † | 0.978 † |
-| constrained decoding | **0.000** | 0.342 | 0.800 | 0.902 |
+| | crammed syllables | strict-valid | exact structure | lyric recall | what it costs |
+|---|---|---|---|---|---|
+| corpus | 0.057 | 1.000 | 1.000 | 1.000 | — |
+| **E3b + best-of-4** *(kept)* | 0.114 | 0.978 | 0.996 | 0.982 | — |
+| repaired targets + best-of-4 | **0.043** | 0.964 | 0.978 | 0.982 | melody and harmony (below) |
+| cram-weighted reranking | 0.113 † | 0.938 † | 1.000 † | 0.978 † | syncopation, pitch range |
+| constrained decoding | **0.000** | 0.342 | 0.800 | 0.902 | everything |
 
 † validation subset, the others are the 225-song test set.
 
-## 1. Repairing the targets — adopted
+> **Correction.** An earlier version of this report adopted the repaired targets
+> and called the cost "no significant cost to validity, structure or lyrics".
+> That sentence was true and beside the point: those three measure whether the
+> *score is correct*, not whether the *music is good*. A listening pass caught
+> what they missed — the repaired model writes near-monotone melodies and drops
+> chords. The musical metrics had said so (repeated-pitch intervals, notes per
+> bar and sixteenth durations all moved significantly), and this report had
+> filed them as "a rhythmic fingerprint". They were the result.
+
+## 1. Repairing the targets — works on cramming, not adopted
 
 `qwen_abc/repair.py` splits a note carrying several syllables into one note per
 syllable, same pitch, equal durations; `scripts/build_repaired_dataset.py`
@@ -41,14 +51,37 @@ At best-of-4, against E3b (paired bootstrap, 225 songs):
 | lyric recall | 0.982 | 0.982 | +0.000 [−0.006, +0.006] |
 | lyrics exactly as requested | 0.364 | 0.427 | +0.062 [−0.004, +0.129] |
 
-Cramming lands **below** the corpus rate, at no significant cost to validity,
-structure or lyrics. The one real cost is a rhythmic fingerprint: the model
-learned the repair's equal subdivision, so notes per bar 3.49 → 3.68 (corpus
-3.47), sixteenth durations 0.146 → 0.196 (corpus 0.167) and repeated-pitch
-intervals 0.330 → 0.356 (corpus 0.260). Off-beat sixteenths, by contrast, land
-exactly on the corpus (0.164 → 0.191 against 0.193). A repair that varied the
-subdivision, or preferred a melisma where the melody already moves, would leave
-less of a trace.
+Cramming lands **below** the corpus rate, and validity, structure and lyric
+recall are all unchanged. Then someone listened, and the verdict was that the
+repaired model is worse: "the melody is all one note", "the chords are broken
+up", "some melody has no lyrics".
+
+All three are in the data, and the damage is systematic rather than anecdotal:
+
+| | corpus | E3b | repaired | songs clearly worse |
+|---|---|---|---|---|
+| repeated-pitch intervals | 0.260 | 0.330 | 0.356 | **99 / 225** |
+| chord time coverage | — | 0.984 | 0.977 | 59 / 225 |
+| songs with chord coverage < 0.95 | — | 18 | **30** | |
+| chords per bar | 0.982 | 1.000 | 0.951 | |
+| wordless notes | — | 0.033 | 0.051 | 49 / 225 |
+| notes per bar | 3.466 | 3.486 | 3.681 | |
+| sixteenth durations | 0.167 | 0.146 | 0.196 | |
+
+On the worst song of the listening set the melody collapses: repeated-pitch
+intervals **0.424 → 0.931** — 93% of its intervals are the same pitch again —
+with wordless notes 0.061 → 0.193. On another, the chords thin out from 108 to
+68, 0.991 to 0.624 per bar against a corpus 0.982.
+
+The mechanism is the repair itself. Splitting a crammed note into equal pieces
+**at the same pitch** taught the model to write runs of short repeated notes,
+and a run of short repeated notes is exactly the shape that used to be a crammed
+note. It swapped one pathology for a worse one, and the cramming metric — which
+counts syllables per note — cannot see the substitution.
+
+A repair that spent a melisma where the melody already moves, or that only split
+notes long enough to give each syllable a real duration, would not teach this.
+That is the experiment to run if this line is picked up again.
 
 ## 2. Cram-weighted reranking — at its ceiling
 
@@ -88,19 +121,40 @@ fit, and the line overflows. Cramming is a decision made when the melody is
 written, which is why the only thing that worked was changing what the model
 learned to write.
 
-## The recipe this leaves
+## What this round establishes
 
-ABC-v2 + infill mixture at 131K tokens/update, **trained on repaired targets**,
-sampled at T=1.0 / top-p 0.95, **four samples with the `sum` selector**:
+**The recipe does not change.** ABC-v2 + infill at 131K tokens/update, sampled at
+T=1.0 / top-p 0.95, four samples with the `sum` selector: strict-valid 0.978,
+exact structure 0.996, lyric recall 0.982, crammed syllables 0.114, pitch range
+17.6.
 
-| | value | corpus |
-|---|---|---|
-| strict-valid ABC | 0.964 | 1.000 |
-| exact structure | 0.978 | 1.000 |
-| lyric recall | 0.982 | 1.000 |
-| crammed syllables | 0.043 | 0.057 |
-| pitch range | 18.2 | 22.0 |
-| melody in declared key | 0.998 | 0.958 |
+Four attempts on cramming, four different failure modes:
+
+| attempt | where it failed |
+|---|---|
+| syllable budget in the prompt (R3-A) | the model does not act on the count |
+| cram-weighted reranking | cannot beat the distribution it samples from (oracle 0.086) |
+| banning the join at decode time | the notes are committed before the lyric line is written |
+| repairing the targets | teaches a worse pathology in place of the one it removes |
+
+Each failure is informative and they point the same way: **cramming is decided
+when the melody is written, and it is in the training data because the
+note↔lyric matcher that produced the labels could not place every syllable.**
+Every fix so far has operated downstream of that. The honest next move is either
+to fix the matcher upstream, or to accept 0.114 — twice the corpus rate — as the
+cost of pseudo-labelled data and stop paying for it elsewhere.
+
+## A note on how this was nearly missed
+
+Three rounds of metrics said the repaired model was fine. Validity, structure and
+lyric recall are the metrics this project leans on, and all three were unchanged.
+They measure whether the lead sheet says what was asked, and a near-monotone
+melody with thinned-out chords can say exactly what was asked. The musical
+metrics did flag it — repeated-pitch intervals, notes per bar and sixteenth
+durations all moved with CIs excluding zero — and were written up as a
+"fingerprint" rather than as the finding. **Listening is what separated the two
+readings**, on four songs, in one pass. That is an argument for the listening
+study being a gate on this project, not an optional extra.
 
 ## Reproduction
 

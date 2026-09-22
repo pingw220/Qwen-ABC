@@ -29,7 +29,7 @@ Reports:
 * `reports/LEADSHEET_TO_AUDIO.md`: ABC → FastSinger → MuseControlLite, and the note↔syllable pairing it needs
 * `reports/BEST_OF_N_DECODING.md`: best-of-n sampling (R3-B) — strict validity 0.81 → 0.98 with no training
 * `reports/R3A_SYLLABLE_BUDGET.md`: R3-A — a syllable budget in the prompt does **not** fix cramming (negative result)
-* `reports/CRAMMING_ATTACKS.md`: **three attacks on cramming** — repaired targets work, reranking is at its ceiling, constrained decoding fails
+* `reports/CRAMMING_ATTACKS.md`: **three attacks on cramming**, none adopted — and what listening caught that the metrics did not
 
 ## Layout
 
@@ -138,11 +138,14 @@ per song:
 (no training, 2.1 GPU-h) — strict-valid **0.978**, exact structure **0.996**, lyric recall **0.982**,
 crammed syllables 0.163 → **0.114**, with pitch range and interval distribution unchanged.
 
-**R3-C** (`reports/CRAMMING_ATTACKS.md`): training on repaired targets — no note carries several
-syllables — takes crammed syllables to **0.043**, below the corpus 0.057, with lyric recall unchanged
-and no significant cost to validity or structure. Banning the join token at decode time instead
-drives cramming to zero but validity to 0.342: in ABC the notes are committed before the lyric line,
-so the constraint arrives too late.
+**R3-C** (`reports/CRAMMING_ATTACKS.md`): four attempts on syllable cramming, **none adopted**.
+Repairing the targets takes crammed syllables to 0.043 (corpus 0.057) with validity, structure and
+lyric recall unchanged — and a listening pass then found near-monotone melodies (repeated-pitch
+intervals 0.330 → 0.356, worse on 99 of 225 songs) and thinned chords (songs with coverage < 0.95:
+18 → 30). Splitting a crammed note into equal same-pitch pieces teaches the model to write runs of
+repeated notes. Banning the join token at decode time drives cramming to zero and validity to 0.342,
+because in ABC the notes are committed before the lyric line is written. Cramming is decided when
+the melody is written, and it is in the data because the note↔lyric matcher put it there.
 
 * **Representation fixes structure:** cleaned section boundaries + a per-bar countdown (`[r:k]`) take
   exact structure 0.53 → 0.86; a long-range infilling objective at the same batch size takes it to 0.98.
