@@ -39,3 +39,4 @@ experiments/midi_sag_*/*.out
 experiments/leadsheets_*.tar.gz
 experiments/*/*/generations/
 experiments/midi_sag_*/leadsheets/
+models/
