@@ -1,0 +1,5 @@
+job=40473949 host=g3072 partition=gpu-a40 restart=0 nproc=2 date=2026-09-23T00:18:40-07:00
+NVIDIA A40, 46068 MiB
+NVIDIA A40, 46068 MiB
+commit=555ff3fb53eefdaab50fe3565b3c029140f98b51 dirty_files=4
+overrides=

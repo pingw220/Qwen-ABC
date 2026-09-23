@@ -30,6 +30,7 @@ Reports:
 * `reports/BEST_OF_N_DECODING.md`: best-of-n sampling (R3-B) — strict validity 0.81 → 0.98 with no training
 * `reports/R3A_SYLLABLE_BUDGET.md`: R3-A — a syllable budget in the prompt does **not** fix cramming (negative result)
 * `reports/CRAMMING_ATTACKS.md`: **three attacks on cramming**, none adopted — and what listening caught that the metrics did not
+* `reports/R4_MUSIC_PRETRAINED_BASE.md`: **MuPT vs Qwen** — symbolic-music pretraining transfers musical competence, not instruction-following
 
 ## Layout
 
@@ -153,4 +154,8 @@ the melody is written, and it is in the data because the note↔lyric matcher pu
   range, syncopation and repetition with no loss of lyric or structure control.
 * **A 4× effective batch does not help;** optimizer updates are the scarce resource.
 * **8K context was never a limit** (longest example 6,703 tokens).
+* **A music-pretrained base does not help** (`reports/R4_MUSIC_PRETRAINED_BASE.md`): MuPT-1.07B, pretrained
+  on 10B tokens of ABC, ties Qwen on everything it writes — parse rate, bar durations, internal countdown
+  consistency, pitch range, interval distribution, chord density — and loses on everything it was asked for:
+  exact structure 0.689 vs 0.996, lyric recall 0.539 vs 0.982, despite 41% more optimizer steps.
 * **Scaling to ~2B was not justified** by the pre-registered criteria and was not run.
