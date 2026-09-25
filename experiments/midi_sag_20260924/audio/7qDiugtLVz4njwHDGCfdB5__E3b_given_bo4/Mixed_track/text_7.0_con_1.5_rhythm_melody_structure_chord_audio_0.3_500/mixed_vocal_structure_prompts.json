@@ -1,0 +1,105 @@
+{
+  "song_id": "vocal",
+  "vocal_audio_file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/vocal.wav",
+  "mixed_audio_file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/Mixed_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/mixed_vocal_full.wav",
+  "segments": [
+    {
+      "index": 0,
+      "start_s": 0.0,
+      "end_s": 17.538444,
+      "tag": "bridge",
+      "prompt": "Reflective instrumental passage with piano, synth pad, bass, and gentle percussion"
+    },
+    {
+      "index": 1,
+      "start_s": 17.538444,
+      "end_s": 33.230736,
+      "tag": "intro",
+      "prompt": "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar"
+    },
+    {
+      "index": 2,
+      "start_s": 33.230736,
+      "end_s": 47.999952,
+      "tag": "verse",
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums"
+    },
+    {
+      "index": 3,
+      "start_s": 47.999952,
+      "end_s": 64.61532,
+      "tag": "verse",
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums"
+    },
+    {
+      "index": 4,
+      "start_s": 64.61532,
+      "end_s": 79.384536,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 5,
+      "start_s": 79.384536,
+      "end_s": 95.999904,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 6,
+      "start_s": 95.999904,
+      "end_s": 112.615272,
+      "tag": "inst",
+      "prompt": "Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar"
+    },
+    {
+      "index": 7,
+      "start_s": 112.615272,
+      "end_s": 127.384488,
+      "tag": "verse",
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums"
+    },
+    {
+      "index": 8,
+      "start_s": 127.384488,
+      "end_s": 143.999856,
+      "tag": "verse",
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums"
+    },
+    {
+      "index": 9,
+      "start_s": 143.999856,
+      "end_s": 158.769072,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 10,
+      "start_s": 158.769072,
+      "end_s": 173.538288,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 11,
+      "start_s": 173.538288,
+      "end_s": 188.307504,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 12,
+      "start_s": 188.307504,
+      "end_s": 204.922872,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 13,
+      "start_s": 204.922872,
+      "end_s": 220.6151700680272,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+[adapter 23:04:44] === 1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4 ===
+[adapter 23:04:44] source: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/leadsheets/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4.mid
+[adapter 23:04:44] output: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4
+validation: 1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4
+  [WARNING] time_signature: 6 time-signature changes
+  [WARNING] downbeat_encoding: 2 of 79 bars do not have the modal stride of 4 beats
+  [INFO   ] duration: 175.51s
+  [INFO   ] tempo: 107.00 BPM
+  [INFO   ] melody_monophonic: melody is monophonic (0/272 notes = 0.00% overlapping)
+  [INFO   ] click_grid: 313 beats, median IOI 0.5607s (107.00 BPM effective), max/min IOI ratio 1.000
+  [INFO   ] downbeat_encoding: 80 downbeats (pitch 36), beat pitch 37, stride 4 beats/bar
+  [INFO   ] sections_label_map: MIDI-LLM labels remapped to MIDI-SAG tags: instrumental -> inst
+  [INFO   ] sections_window: 7 segment(s), longest 26.92s < 47.55s window
+  [INFO   ] timeline_consistency: all note tracks end within 12.9% of each other
+  [INFO   ] lyrics: 216 lyric events, 216 non-empty
+  -> PASS (0 error(s), 2 warning(s))
+[adapter 23:04:44] melody MIDI  -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4_melody.mid
+[adapter 23:04:44] rhythm       -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4_beat_times.txt (313 beats), /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4_downbeat_times.txt (80 downbeats)
+[adapter 23:04:44] structure    -> 7 segments ['intro', 'verse', 'chorus', 'inst', 'verse', 'chorus', 'outro']
+[adapter 23:04:44] label remap  -> {'instrumental': 'inst'}
+[adapter 23:04:44] checkpoint   OK   F0MelodyEncoder/melody_encoder.pt         1,325,603 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/melody_encoder.pt
+[adapter 23:04:44] checkpoint   OK   MuseControlLite/attn1_qkv.safetensors   679,485,480 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/attn1_qkv.safetensors
+[adapter 23:04:44] checkpoint   OK   MuseControlLite/attn_procs.safetensors  339,747,744 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/attn_procs.safetensors
+[adapter 23:04:44] checkpoint   OK   MuseControlLite/chord_cnn.safetensors       195,264 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/chord_cnn.safetensors
+[adapter 23:04:44] checkpoint   OK   MuseControlLite/melody_emb.safetensors    1,701,768 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/melody_emb.safetensors
+[adapter 23:04:44] checkpoint   OK   MuseControlLite/rhythm_cnn.safetensors      187,584 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/rhythm_cnn.safetensors
+[adapter 23:04:44] checkpoint   OK   MuseControlLite/struct_emb.safetensors        5,720 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/struct_emb.safetensors
+[adapter 23:04:44] checkpoint   OK   RMVPE/rmvpe_model.pt                    368,492,925 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/rmvpe_model.pt
+[adapter 23:04:44] checkpoint   OK   SoulX-Singer/model.pt                  2,818,092,278 B  /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/SoulX-Singer/model.pt
+[adapter 23:04:46] chord        -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/chord.txt (90 spans from the lead sheet's own chord track, 90 named exactly / 0 approximated, 175.5s covered, AccoMontage2 not used)
+[adapter 23:04:46] vocal        -> supplied by --vocal-audio: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/vocal_fs.wav
+[adapter 23:04:46] vocal        -> padded 153.804s to 175.514s (lead sheet duration 175.514s) @ 44100 Hz
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MuseControlLite/rmvpe/inference.py:56: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(model_path, map_location=self.device)
+[adapter 23:04:57] pitch        -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/pitch.npz (4756 frames @ 100 Hz, 48.6% voiced, 240.29-511.99 Hz)
+[adapter 23:04:57] musecontrollite $ (cd /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG && /gscratch/ark/pingw220/midisag/.venv-midisag/bin/python MuseControlLite/MuseControlLite_inference_continuation.py --vocal_audio_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/vocal.wav --chord_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/chord.txt --vocal_beat_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4_beat_times.txt --vocal_downbeat_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/conditions/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4_downbeat_times.txt --checkpoint_path /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint --output_dir /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/Mixed_track/ --structure_starts 0.000000 22.429920 49.345824 75.140232 100.934640 127.850544 152.523456 --structure_tags intro verse chorus inst verse chorus outro --structure_prompts 'Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar' 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar' 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Mandarin pop outro with the full band playing out: drums, bass, piano and guitar')
+load chord_extractor
+Loaded 6 tensors:
+load rhythm_extractor
+Loaded 1 tensors:
+load struct_emb_extractor
+Loaded 6 tensors:
+load melody_emb_extractor
+Loading RMVPE from /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MuseControlLite/../MIDI-SAG_checkpoints/rmvpe_model.pt ...
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MuseControlLite/rmvpe/inference.py:56: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(model_path, map_location=self.device)
+Loading F0MelodyEncoder from /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MuseControlLite/../MIDI-SAG_checkpoints/melody_encoder.pt ...
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MuseControlLite/MuseControlLite_inference_continuation.py:475: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  _f0_state = torch.load(F0_MELODY_CKPT, map_location="cuda")
+F0MelodyEncoder loaded.
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/gscratch/ark/pingw220/midisag/.venv-midisag/lib64/python3.12/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:00, 10.53it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:00<00:00,  8.37it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00,  7.71it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  9.67it/s]
+Unexpected: []
+`LlamaRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+load transformer_blocks.0.attn2.processor
+load transformer_blocks.1.attn2.processor
+load transformer_blocks.2.attn2.processor
+load transformer_blocks.3.attn2.processor
+load transformer_blocks.4.attn2.processor
+load transformer_blocks.5.attn2.processor
+load transformer_blocks.6.attn2.processor
+load transformer_blocks.7.attn2.processor
+load transformer_blocks.8.attn2.processor
+load transformer_blocks.9.attn2.processor
+load transformer_blocks.10.attn2.processor
+load transformer_blocks.11.attn2.processor
+load transformer_blocks.12.attn2.processor
+load transformer_blocks.13.attn2.processor
+load transformer_blocks.14.attn2.processor
+load transformer_blocks.15.attn2.processor
+load transformer_blocks.16.attn2.processor
+load transformer_blocks.17.attn2.processor
+load transformer_blocks.18.attn2.processor
+load transformer_blocks.19.attn2.processor
+load transformer_blocks.20.attn2.processor
+load transformer_blocks.21.attn2.processor
+load transformer_blocks.22.attn2.processor
+load transformer_blocks.23.attn2.processor
+structure2id {'intro': 0, 'outro': 1, 'break': 2, 'bridge': 3, 'inst': 4, 'solo': 5, 'verse': 6, 'chorus': 7}
+_vocal_duration 175.514126984127
+structure_segments [(0.0, 'intro', 'Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar'), (22.42992, 'verse', 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums'), (49.345824, 'chorus', 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release'), (75.140232, 'inst', 'Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar'), (100.93464, 'verse', 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums'), (127.850544, 'chorus', 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release'), (152.523456, 'outro', 'Mandarin pop outro with the full band playing out: drums, bass, piano and guitar')]
+structure_starts_seconds [0.0, 22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456]
+structure_ends_seconds [22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456, 175.514126984127]
+structures_ids_list [0, 6, 7, 4, 6, 7, 1]
+segments_list [0, 1, 2, 3, 4, 5, 6]
+structure_prompt_list ['Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar', 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums', 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release', 'Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar', 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums', 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release', 'Mandarin pop outro with the full band playing out: drums, bass, piano and guitar']
+Generating segment 1/7
+structure_tag intro
+_ref_end 0
+_ref_start 0
+audio_mid_s,  22.42992
+prompt_1 Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar
+prompt_2 Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums
+  0%|          | 0/50 [00:00<?, ?it/s]/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MuseControlLite/pipeline/stable_audio_multi_cfg_pipe_free.py:743: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/gscratch/ark/pingw220/midisag/.venv-midisag/lib64/python3.12/site-packages/torchsde/_brownian/brownian_interval.py:608: UserWarning: Should have tb<=t1 but got tb=500.00006103515625 and t1=500.0.
+  warnings.warn(f"Should have {tb_name}<=t1 but got {tb_name}={tb} and t1={self._end}.")
+  2%|▏         | 1/50 [00:00<00:17,  2.81it/s]  4%|▍         | 2/50 [00:00<00:12,  3.95it/s]  6%|▌         | 3/50 [00:00<00:10,  4.56it/s]  8%|▊         | 4/50 [00:00<00:09,  4.90it/s] 10%|█         | 5/50 [00:01<00:08,  5.12it/s] 12%|█▏        | 6/50 [00:01<00:08,  5.26it/s] 14%|█▍        | 7/50 [00:01<00:08,  5.35it/s] 16%|█▌        | 8/50 [00:01<00:07,  5.42it/s] 18%|█▊        | 9/50 [00:01<00:07,  5.47it/s] 20%|██        | 10/50 [00:01<00:07,  5.50it/s] 22%|██▏       | 11/50 [00:02<00:07,  5.52it/s] 24%|██▍       | 12/50 [00:02<00:06,  5.54it/s] 26%|██▌       | 13/50 [00:02<00:06,  5.54it/s] 28%|██▊       | 14/50 [00:02<00:06,  5.55it/s] 30%|███       | 15/50 [00:02<00:06,  5.56it/s] 32%|███▏      | 16/50 [00:03<00:06,  5.56it/s] 34%|███▍      | 17/50 [00:03<00:05,  5.57it/s] 36%|███▌      | 18/50 [00:03<00:05,  5.57it/s] 38%|███▊      | 19/50 [00:03<00:05,  5.57it/s] 40%|████      | 20/50 [00:03<00:05,  5.57it/s] 42%|████▏     | 21/50 [00:03<00:05,  5.57it/s] 44%|████▍     | 22/50 [00:04<00:05,  5.57it/s] 46%|████▌     | 23/50 [00:04<00:04,  5.57it/s] 48%|████▊     | 24/50 [00:04<00:04,  5.58it/s] 50%|█████     | 25/50 [00:04<00:04,  5.58it/s] 52%|█████▏    | 26/50 [00:04<00:04,  5.58it/s] 54%|█████▍    | 27/50 [00:05<00:04,  5.58it/s] 56%|█████▌    | 28/50 [00:05<00:03,  5.57it/s] 58%|█████▊    | 29/50 [00:05<00:03,  5.57it/s] 60%|██████    | 30/50 [00:05<00:03,  5.57it/s] 62%|██████▏   | 31/50 [00:05<00:03,  5.57it/s] 64%|██████▍   | 32/50 [00:05<00:03,  5.58it/s] 66%|██████▌   | 33/50 [00:06<00:03,  5.58it/s] 68%|██████▊   | 34/50 [00:06<00:02,  5.58it/s] 70%|███████   | 35/50 [00:06<00:02,  5.58it/s] 72%|███████▏  | 36/50 [00:06<00:02,  5.58it/s] 74%|███████▍  | 37/50 [00:06<00:02,  5.59it/s] 76%|███████▌  | 38/50 [00:06<00:02,  5.59it/s] 78%|███████▊  | 39/50 [00:07<00:01,  5.59it/s] 80%|████████  | 40/50 [00:07<00:01,  5.59it/s] 82%|████████▏ | 41/50 [00:07<00:01,  5.59it/s] 84%|████████▍ | 42/50 [00:07<00:01,  5.59it/s] 86%|████████▌ | 43/50 [00:07<00:01,  5.59it/s] 88%|████████▊ | 44/50 [00:08<00:01,  5.59it/s] 90%|█████████ | 45/50 [00:08<00:00,  5.60it/s] 92%|█████████▏| 46/50 [00:08<00:00,  5.60it/s] 94%|█████████▍| 47/50 [00:08<00:00,  5.59it/s] 96%|█████████▌| 48/50 [00:08<00:00,  5.60it/s]/gscratch/ark/pingw220/midisag/.venv-midisag/lib64/python3.12/site-packages/torchsde/_brownian/brownian_interval.py:599: UserWarning: Should have ta>=t0 but got ta=0.29999998211860657 and t0=0.3.
+  warnings.warn(f"Should have ta>=t0 but got ta={ta} and t0={self._start}.")
+ 98%|█████████▊| 49/50 [00:08<00:00,  5.63it/s]/gscratch/ark/pingw220/midisag/.venv-midisag/lib64/python3.12/site-packages/torchsde/_brownian/brownian_interval.py:599: UserWarning: Should have ta>=t0 but got ta=0.0 and t0=0.3.
+  warnings.warn(f"Should have ta>=t0 but got ta={ta} and t0={self._start}.")
+/gscratch/ark/pingw220/midisag/.venv-midisag/lib64/python3.12/site-packages/torchsde/_brownian/brownian_interval.py:602: UserWarning: Should have tb>=t0 but got tb=0.29999998211860657 and t0=0.3.
+  warnings.warn(f"Should have {tb_name}>=t0 but got {tb_name}={tb} and t0={self._start}.")
+100%|██████████| 50/50 [00:09<00:00,  5.66it/s]100%|██████████| 50/50 [00:09<00:00,  5.47it/s]
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MuseControlLite/pipeline/stable_audio_multi_cfg_pipe_free.py:776: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Generate intro segment
+generate 0.0 ~ 22.42992 seconds
+backing audio length 22.429909297052156 seconds
+===============================
+Generating segment 2/7
+structure_tag verse
+config['structure_start_seconds'] [0.0, 22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456, 175.514126984127]
+1.7913378684807255 ~ 22.429909297052156 seconds will be reference audio
+audio_condition_ref torch.Size([1, 64, 444])
+_ref_end 989159
+_ref_start 78998
+audio_mid_s,  20.638571428571428
+prompt_1 Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar
+prompt_2 Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:00<00:09,  5.33it/s]  4%|▍         | 2/50 [00:00<00:08,  5.38it/s]  6%|▌         | 3/50 [00:00<00:08,  5.46it/s]  8%|▊         | 4/50 [00:00<00:08,  5.50it/s] 10%|█         | 5/50 [00:00<00:08,  5.51it/s] 12%|█▏        | 6/50 [00:01<00:07,  5.53it/s] 14%|█▍        | 7/50 [00:01<00:07,  5.54it/s] 16%|█▌        | 8/50 [00:01<00:07,  5.55it/s] 18%|█▊        | 9/50 [00:01<00:07,  5.56it/s] 20%|██        | 10/50 [00:01<00:07,  5.56it/s] 22%|██▏       | 11/50 [00:01<00:07,  5.57it/s] 24%|██▍       | 12/50 [00:02<00:06,  5.57it/s] 26%|██▌       | 13/50 [00:02<00:06,  5.57it/s] 28%|██▊       | 14/50 [00:02<00:06,  5.57it/s] 30%|███       | 15/50 [00:02<00:06,  5.57it/s] 32%|███▏      | 16/50 [00:02<00:06,  5.58it/s] 34%|███▍      | 17/50 [00:03<00:05,  5.59it/s] 36%|███▌      | 18/50 [00:03<00:05,  5.58it/s] 38%|███▊      | 19/50 [00:03<00:05,  5.58it/s] 40%|████      | 20/50 [00:03<00:05,  5.58it/s] 42%|████▏     | 21/50 [00:03<00:05,  5.58it/s] 44%|████▍     | 22/50 [00:03<00:05,  5.58it/s] 46%|████▌     | 23/50 [00:04<00:04,  5.58it/s] 48%|████▊     | 24/50 [00:04<00:04,  5.59it/s] 50%|█████     | 25/50 [00:04<00:04,  5.59it/s] 52%|█████▏    | 26/50 [00:04<00:04,  5.59it/s] 54%|█████▍    | 27/50 [00:04<00:04,  5.59it/s] 56%|█████▌    | 28/50 [00:05<00:03,  5.59it/s] 58%|█████▊    | 29/50 [00:05<00:03,  5.59it/s] 60%|██████    | 30/50 [00:05<00:03,  5.59it/s] 62%|██████▏   | 31/50 [00:05<00:03,  5.59it/s] 64%|██████▍   | 32/50 [00:05<00:03,  5.59it/s] 66%|██████▌   | 33/50 [00:05<00:03,  5.59it/s] 68%|██████▊   | 34/50 [00:06<00:02,  5.59it/s] 70%|███████   | 35/50 [00:06<00:02,  5.59it/s] 72%|███████▏  | 36/50 [00:06<00:02,  5.59it/s] 74%|███████▍  | 37/50 [00:06<00:02,  5.60it/s] 76%|███████▌  | 38/50 [00:06<00:02,  5.61it/s] 78%|███████▊  | 39/50 [00:06<00:01,  5.61it/s] 80%|████████  | 40/50 [00:07<00:01,  5.60it/s] 82%|████████▏ | 41/50 [00:07<00:01,  5.61it/s] 84%|████████▍ | 42/50 [00:07<00:01,  5.61it/s] 86%|████████▌ | 43/50 [00:07<00:01,  5.60it/s] 88%|████████▊ | 44/50 [00:07<00:01,  5.60it/s] 90%|█████████ | 45/50 [00:08<00:00,  5.60it/s] 92%|█████████▏| 46/50 [00:08<00:00,  5.59it/s] 94%|█████████▍| 47/50 [00:08<00:00,  5.59it/s] 96%|█████████▌| 48/50 [00:08<00:00,  5.59it/s] 98%|█████████▊| 49/50 [00:08<00:00,  5.63it/s]100%|██████████| 50/50 [00:08<00:00,  5.66it/s]100%|██████████| 50/50 [00:08<00:00,  5.58it/s]
+Generate verse segment
+generate 22.42992 ~ 49.345824 seconds
+backing audio length 49.34580498866213 seconds
+===============================
+Generating segment 3/7
+structure_tag chorus
+config['structure_start_seconds'] [0.0, 22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456, 175.514126984127]
+27.585759637188207 ~ 49.34580498866213 seconds will be reference audio
+audio_condition_ref torch.Size([1, 64, 468])
+_ref_end 2176150
+_ref_start 1216532
+audio_mid_s,  21.760045351473924
+prompt_1 Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums
+prompt_2 Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:00<00:08,  5.59it/s]  4%|▍         | 2/50 [00:00<00:08,  5.51it/s]  6%|▌         | 3/50 [00:00<00:08,  5.53it/s]  8%|▊         | 4/50 [00:00<00:08,  5.54it/s] 10%|█         | 5/50 [00:00<00:08,  5.54it/s] 12%|█▏        | 6/50 [00:01<00:07,  5.55it/s] 14%|█▍        | 7/50 [00:01<00:07,  5.54it/s] 16%|█▌        | 8/50 [00:01<00:07,  5.55it/s] 18%|█▊        | 9/50 [00:01<00:07,  5.56it/s] 20%|██        | 10/50 [00:01<00:07,  5.56it/s] 22%|██▏       | 11/50 [00:01<00:07,  5.57it/s] 24%|██▍       | 12/50 [00:02<00:06,  5.56it/s] 26%|██▌       | 13/50 [00:02<00:06,  5.56it/s] 28%|██▊       | 14/50 [00:02<00:06,  5.56it/s] 30%|███       | 15/50 [00:02<00:06,  5.56it/s] 32%|███▏      | 16/50 [00:02<00:06,  5.57it/s] 34%|███▍      | 17/50 [00:03<00:05,  5.57it/s] 36%|███▌      | 18/50 [00:03<00:05,  5.57it/s] 38%|███▊      | 19/50 [00:03<00:05,  5.57it/s] 40%|████      | 20/50 [00:03<00:05,  5.58it/s] 42%|████▏     | 21/50 [00:03<00:05,  5.57it/s] 44%|████▍     | 22/50 [00:03<00:05,  5.58it/s] 46%|████▌     | 23/50 [00:04<00:04,  5.58it/s] 48%|████▊     | 24/50 [00:04<00:04,  5.58it/s] 50%|█████     | 25/50 [00:04<00:04,  5.59it/s] 52%|█████▏    | 26/50 [00:04<00:04,  5.58it/s] 54%|█████▍    | 27/50 [00:04<00:04,  5.58it/s] 56%|█████▌    | 28/50 [00:05<00:03,  5.58it/s] 58%|█████▊    | 29/50 [00:05<00:03,  5.58it/s] 60%|██████    | 30/50 [00:05<00:03,  5.58it/s] 62%|██████▏   | 31/50 [00:05<00:03,  5.58it/s] 64%|██████▍   | 32/50 [00:05<00:03,  5.58it/s] 66%|██████▌   | 33/50 [00:05<00:03,  5.59it/s] 68%|██████▊   | 34/50 [00:06<00:02,  5.58it/s] 70%|███████   | 35/50 [00:06<00:02,  5.58it/s] 72%|███████▏  | 36/50 [00:06<00:02,  5.58it/s] 74%|███████▍  | 37/50 [00:06<00:02,  5.59it/s] 76%|███████▌  | 38/50 [00:06<00:02,  5.59it/s] 78%|███████▊  | 39/50 [00:06<00:01,  5.59it/s] 80%|████████  | 40/50 [00:07<00:01,  5.59it/s] 82%|████████▏ | 41/50 [00:07<00:01,  5.59it/s] 84%|████████▍ | 42/50 [00:07<00:01,  5.59it/s] 86%|████████▌ | 43/50 [00:07<00:01,  5.59it/s] 88%|████████▊ | 44/50 [00:07<00:01,  5.59it/s] 90%|█████████ | 45/50 [00:08<00:00,  5.60it/s] 92%|█████████▏| 46/50 [00:08<00:00,  5.60it/s] 94%|█████████▍| 47/50 [00:08<00:00,  5.60it/s] 96%|█████████▌| 48/50 [00:08<00:00,  5.60it/s] 98%|█████████▊| 49/50 [00:08<00:00,  5.64it/s]100%|██████████| 50/50 [00:08<00:00,  5.66it/s]100%|██████████| 50/50 [00:08<00:00,  5.58it/s]
+Generate chorus segment
+generate 49.345824 ~ 75.140232 seconds
+backing audio length 75.14020408163265 seconds
+===============================
+Generating segment 4/7
+structure_tag inst
+config['structure_start_seconds'] [0.0, 22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456, 175.514126984127]
+53.38015873015873 ~ 75.14022675736962 seconds will be reference audio
+audio_condition_ref torch.Size([1, 64, 468])
+_ref_end 3313684
+_ref_start 2354065
+audio_mid_s,  21.760068027210885
+prompt_1 Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release
+prompt_2 Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:00<00:08,  5.61it/s]  4%|▍         | 2/50 [00:00<00:08,  5.58it/s]  6%|▌         | 3/50 [00:00<00:08,  5.57it/s]  8%|▊         | 4/50 [00:00<00:08,  5.57it/s] 10%|█         | 5/50 [00:00<00:08,  5.56it/s] 12%|█▏        | 6/50 [00:01<00:07,  5.56it/s] 14%|█▍        | 7/50 [00:01<00:07,  5.55it/s] 16%|█▌        | 8/50 [00:01<00:07,  5.56it/s] 18%|█▊        | 9/50 [00:01<00:07,  5.56it/s] 20%|██        | 10/50 [00:01<00:07,  5.56it/s] 22%|██▏       | 11/50 [00:01<00:07,  5.56it/s] 24%|██▍       | 12/50 [00:02<00:06,  5.56it/s] 26%|██▌       | 13/50 [00:02<00:06,  5.56it/s] 28%|██▊       | 14/50 [00:02<00:06,  5.56it/s] 30%|███       | 15/50 [00:02<00:06,  5.56it/s] 32%|███▏      | 16/50 [00:02<00:06,  5.57it/s] 34%|███▍      | 17/50 [00:03<00:05,  5.57it/s] 36%|███▌      | 18/50 [00:03<00:05,  5.57it/s] 38%|███▊      | 19/50 [00:03<00:05,  5.56it/s] 40%|████      | 20/50 [00:03<00:05,  5.56it/s] 42%|████▏     | 21/50 [00:03<00:05,  5.56it/s] 44%|████▍     | 22/50 [00:03<00:05,  5.55it/s] 46%|████▌     | 23/50 [00:04<00:04,  5.55it/s] 48%|████▊     | 24/50 [00:04<00:04,  5.56it/s] 50%|█████     | 25/50 [00:04<00:04,  5.56it/s] 52%|█████▏    | 26/50 [00:04<00:04,  5.56it/s] 54%|█████▍    | 27/50 [00:04<00:04,  5.57it/s] 56%|█████▌    | 28/50 [00:05<00:03,  5.56it/s] 58%|█████▊    | 29/50 [00:05<00:03,  5.57it/s] 60%|██████    | 30/50 [00:05<00:03,  5.57it/s] 62%|██████▏   | 31/50 [00:05<00:03,  5.56it/s] 64%|██████▍   | 32/50 [00:05<00:03,  5.57it/s] 66%|██████▌   | 33/50 [00:05<00:03,  5.57it/s] 68%|██████▊   | 34/50 [00:06<00:02,  5.56it/s] 70%|███████   | 35/50 [00:06<00:02,  5.56it/s] 72%|███████▏  | 36/50 [00:06<00:02,  5.56it/s] 74%|███████▍  | 37/50 [00:06<00:02,  5.57it/s] 76%|███████▌  | 38/50 [00:06<00:02,  5.57it/s] 78%|███████▊  | 39/50 [00:07<00:01,  5.58it/s] 80%|████████  | 40/50 [00:07<00:01,  5.57it/s] 82%|████████▏ | 41/50 [00:07<00:01,  5.57it/s] 84%|████████▍ | 42/50 [00:07<00:01,  5.57it/s] 86%|████████▌ | 43/50 [00:07<00:01,  5.58it/s] 88%|████████▊ | 44/50 [00:07<00:01,  5.57it/s] 90%|█████████ | 45/50 [00:08<00:00,  5.59it/s] 92%|█████████▏| 46/50 [00:08<00:00,  5.58it/s] 94%|█████████▍| 47/50 [00:08<00:00,  5.57it/s] 96%|█████████▌| 48/50 [00:08<00:00,  5.57it/s] 98%|█████████▊| 49/50 [00:08<00:00,  5.61it/s]100%|██████████| 50/50 [00:08<00:00,  5.64it/s]100%|██████████| 50/50 [00:08<00:00,  5.57it/s]
+Generate inst segment
+generate 75.140232 ~ 100.93464 seconds
+backing audio length 100.93460317460317 seconds
+===============================
+Generating segment 5/7
+structure_tag verse
+config['structure_start_seconds'] [0.0, 22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456, 175.514126984127]
+80.2960544217687 ~ 100.93462585034014 seconds will be reference audio
+audio_condition_ref torch.Size([1, 64, 444])
+_ref_end 4451217
+_ref_start 3541056
+audio_mid_s,  20.638571428571428
+prompt_1 Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar
+prompt_2 Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:00<00:08,  5.60it/s]  4%|▍         | 2/50 [00:00<00:08,  5.55it/s]  6%|▌         | 3/50 [00:00<00:08,  5.54it/s]  8%|▊         | 4/50 [00:00<00:08,  5.54it/s] 10%|█         | 5/50 [00:00<00:08,  5.53it/s] 12%|█▏        | 6/50 [00:01<00:07,  5.53it/s] 14%|█▍        | 7/50 [00:01<00:07,  5.53it/s] 16%|█▌        | 8/50 [00:01<00:07,  5.54it/s] 18%|█▊        | 9/50 [00:01<00:07,  5.54it/s] 20%|██        | 10/50 [00:01<00:07,  5.54it/s] 22%|██▏       | 11/50 [00:01<00:07,  5.56it/s] 24%|██▍       | 12/50 [00:02<00:06,  5.55it/s] 26%|██▌       | 13/50 [00:02<00:06,  5.55it/s] 28%|██▊       | 14/50 [00:02<00:06,  5.55it/s] 30%|███       | 15/50 [00:02<00:06,  5.56it/s] 32%|███▏      | 16/50 [00:02<00:06,  5.56it/s] 34%|███▍      | 17/50 [00:03<00:05,  5.56it/s] 36%|███▌      | 18/50 [00:03<00:05,  5.56it/s] 38%|███▊      | 19/50 [00:03<00:05,  5.56it/s] 40%|████      | 20/50 [00:03<00:05,  5.56it/s] 42%|████▏     | 21/50 [00:03<00:05,  5.56it/s] 44%|████▍     | 22/50 [00:03<00:05,  5.56it/s] 46%|████▌     | 23/50 [00:04<00:04,  5.56it/s] 48%|████▊     | 24/50 [00:04<00:04,  5.57it/s] 50%|█████     | 25/50 [00:04<00:04,  5.57it/s] 52%|█████▏    | 26/50 [00:04<00:04,  5.56it/s] 54%|█████▍    | 27/50 [00:04<00:04,  5.56it/s] 56%|█████▌    | 28/50 [00:05<00:03,  5.56it/s] 58%|█████▊    | 29/50 [00:05<00:03,  5.56it/s] 60%|██████    | 30/50 [00:05<00:03,  5.55it/s] 62%|██████▏   | 31/50 [00:05<00:03,  5.55it/s] 64%|██████▍   | 32/50 [00:05<00:03,  5.56it/s] 66%|██████▌   | 33/50 [00:05<00:03,  5.56it/s] 68%|██████▊   | 34/50 [00:06<00:02,  5.56it/s] 70%|███████   | 35/50 [00:06<00:02,  5.56it/s] 72%|███████▏  | 36/50 [00:06<00:02,  5.55it/s] 74%|███████▍  | 37/50 [00:06<00:02,  5.56it/s] 76%|███████▌  | 38/50 [00:06<00:02,  5.56it/s] 78%|███████▊  | 39/50 [00:07<00:01,  5.56it/s] 80%|████████  | 40/50 [00:07<00:01,  5.56it/s] 82%|████████▏ | 41/50 [00:07<00:01,  5.56it/s] 84%|████████▍ | 42/50 [00:07<00:01,  5.56it/s] 86%|████████▌ | 43/50 [00:07<00:01,  5.57it/s] 88%|████████▊ | 44/50 [00:07<00:01,  5.57it/s] 90%|█████████ | 45/50 [00:08<00:00,  5.57it/s] 92%|█████████▏| 46/50 [00:08<00:00,  5.57it/s] 94%|█████████▍| 47/50 [00:08<00:00,  5.57it/s] 96%|█████████▌| 48/50 [00:08<00:00,  5.57it/s] 98%|█████████▊| 49/50 [00:08<00:00,  5.61it/s]100%|██████████| 50/50 [00:08<00:00,  5.64it/s]100%|██████████| 50/50 [00:08<00:00,  5.56it/s]
+Generate verse segment
+generate 100.93464 ~ 127.850544 seconds
+backing audio length 127.85049886621316 seconds
+===============================
+Generating segment 6/7
+structure_tag chorus
+config['structure_start_seconds'] [0.0, 22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456, 175.514126984127]
+104.96897959183673 ~ 127.85052154195012 seconds will be reference audio
+audio_condition_ref torch.Size([1, 64, 492])
+_ref_end 5638208
+_ref_start 4629132
+audio_mid_s,  22.88154195011338
+prompt_1 Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums
+prompt_2 Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:00<00:08,  5.58it/s]  4%|▍         | 2/50 [00:00<00:08,  5.55it/s]  6%|▌         | 3/50 [00:00<00:08,  5.55it/s]  8%|▊         | 4/50 [00:00<00:08,  5.55it/s] 10%|█         | 5/50 [00:00<00:08,  5.54it/s] 12%|█▏        | 6/50 [00:01<00:07,  5.54it/s] 14%|█▍        | 7/50 [00:01<00:07,  5.53it/s] 16%|█▌        | 8/50 [00:01<00:07,  5.54it/s] 18%|█▊        | 9/50 [00:01<00:07,  5.54it/s] 20%|██        | 10/50 [00:01<00:07,  5.54it/s] 22%|██▏       | 11/50 [00:01<00:07,  5.54it/s] 24%|██▍       | 12/50 [00:02<00:06,  5.54it/s] 26%|██▌       | 13/50 [00:02<00:06,  5.53it/s] 28%|██▊       | 14/50 [00:02<00:06,  5.54it/s] 30%|███       | 15/50 [00:02<00:06,  5.54it/s] 32%|███▏      | 16/50 [00:02<00:06,  5.55it/s] 34%|███▍      | 17/50 [00:03<00:05,  5.55it/s] 36%|███▌      | 18/50 [00:03<00:05,  5.55it/s] 38%|███▊      | 19/50 [00:03<00:05,  5.54it/s] 40%|████      | 20/50 [00:03<00:05,  5.55it/s] 42%|████▏     | 21/50 [00:03<00:05,  5.52it/s] 44%|████▍     | 22/50 [00:03<00:05,  5.53it/s] 46%|████▌     | 23/50 [00:04<00:04,  5.53it/s] 48%|████▊     | 24/50 [00:04<00:04,  5.54it/s] 50%|█████     | 25/50 [00:04<00:04,  5.55it/s] 52%|█████▏    | 26/50 [00:04<00:04,  5.55it/s] 54%|█████▍    | 27/50 [00:04<00:04,  5.55it/s] 56%|█████▌    | 28/50 [00:05<00:03,  5.55it/s] 58%|█████▊    | 29/50 [00:05<00:03,  5.55it/s] 60%|██████    | 30/50 [00:05<00:03,  5.55it/s] 62%|██████▏   | 31/50 [00:05<00:03,  5.55it/s] 64%|██████▍   | 32/50 [00:05<00:03,  5.56it/s] 66%|██████▌   | 33/50 [00:05<00:03,  5.56it/s] 68%|██████▊   | 34/50 [00:06<00:02,  5.56it/s] 70%|███████   | 35/50 [00:06<00:02,  5.56it/s] 72%|███████▏  | 36/50 [00:06<00:02,  5.56it/s] 74%|███████▍  | 37/50 [00:06<00:02,  5.57it/s] 76%|███████▌  | 38/50 [00:06<00:02,  5.57it/s] 78%|███████▊  | 39/50 [00:07<00:01,  5.57it/s] 80%|████████  | 40/50 [00:07<00:01,  5.56it/s] 82%|████████▏ | 41/50 [00:07<00:01,  5.57it/s] 84%|████████▍ | 42/50 [00:07<00:01,  5.57it/s] 86%|████████▌ | 43/50 [00:07<00:01,  5.57it/s] 88%|████████▊ | 44/50 [00:07<00:01,  5.57it/s] 90%|█████████ | 45/50 [00:08<00:00,  5.58it/s] 92%|█████████▏| 46/50 [00:08<00:00,  5.58it/s] 94%|█████████▍| 47/50 [00:08<00:00,  5.58it/s] 96%|█████████▌| 48/50 [00:08<00:00,  5.58it/s] 98%|█████████▊| 49/50 [00:08<00:00,  5.61it/s]100%|██████████| 50/50 [00:08<00:00,  5.65it/s]100%|██████████| 50/50 [00:08<00:00,  5.56it/s]
+Generate chorus segment
+generate 127.850544 ~ 152.523456 seconds
+backing audio length 152.52340136054423 seconds
+===============================
+Generating segment 7/7
+structure_tag outro
+config['structure_start_seconds'] [0.0, 22.42992, 49.345824, 75.140232, 100.93464, 127.850544, 152.523456, 175.514126984127]
+127.95965986394557 ~ 152.52344671201814 seconds will be reference audio
+audio_condition_ref torch.Size([1, 64, 528])
+_ref_end 6726284
+_ref_start 5643021
+audio_mid_s,  24.563786848072564
+prompt_1 Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release
+prompt_2 Mandarin pop outro with the full band playing out: drums, bass, piano and guitar
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:00<00:08,  5.60it/s]  4%|▍         | 2/50 [00:00<00:08,  5.56it/s]  6%|▌         | 3/50 [00:00<00:08,  5.55it/s]  8%|▊         | 4/50 [00:00<00:08,  5.54it/s] 10%|█         | 5/50 [00:00<00:08,  5.54it/s] 12%|█▏        | 6/50 [00:01<00:07,  5.54it/s] 14%|█▍        | 7/50 [00:01<00:07,  5.54it/s] 16%|█▌        | 8/50 [00:01<00:07,  5.54it/s] 18%|█▊        | 9/50 [00:01<00:07,  5.54it/s] 20%|██        | 10/50 [00:01<00:07,  5.53it/s] 22%|██▏       | 11/50 [00:01<00:07,  5.54it/s] 24%|██▍       | 12/50 [00:02<00:06,  5.53it/s] 26%|██▌       | 13/50 [00:02<00:06,  5.53it/s] 28%|██▊       | 14/50 [00:02<00:06,  5.53it/s] 30%|███       | 15/50 [00:02<00:06,  5.53it/s] 32%|███▏      | 16/50 [00:02<00:06,  5.53it/s] 34%|███▍      | 17/50 [00:03<00:05,  5.54it/s] 36%|███▌      | 18/50 [00:03<00:05,  5.53it/s] 38%|███▊      | 19/50 [00:03<00:05,  5.53it/s] 40%|████      | 20/50 [00:03<00:05,  5.54it/s] 42%|████▏     | 21/50 [00:03<00:05,  5.54it/s] 44%|████▍     | 22/50 [00:03<00:05,  5.53it/s] 46%|████▌     | 23/50 [00:04<00:04,  5.53it/s] 48%|████▊     | 24/50 [00:04<00:04,  5.54it/s] 50%|█████     | 25/50 [00:04<00:04,  5.55it/s] 52%|█████▏    | 26/50 [00:04<00:04,  5.54it/s] 54%|█████▍    | 27/50 [00:04<00:04,  5.55it/s] 56%|█████▌    | 28/50 [00:05<00:03,  5.54it/s] 58%|█████▊    | 29/50 [00:05<00:03,  5.54it/s] 60%|██████    | 30/50 [00:05<00:03,  5.54it/s] 62%|██████▏   | 31/50 [00:05<00:03,  5.55it/s] 64%|██████▍   | 32/50 [00:05<00:03,  5.55it/s] 66%|██████▌   | 33/50 [00:05<00:03,  5.56it/s] 68%|██████▊   | 34/50 [00:06<00:02,  5.56it/s] 70%|███████   | 35/50 [00:06<00:02,  5.56it/s] 72%|███████▏  | 36/50 [00:06<00:02,  5.55it/s] 74%|███████▍  | 37/50 [00:06<00:02,  5.57it/s] 76%|███████▌  | 38/50 [00:06<00:02,  5.56it/s] 78%|███████▊  | 39/50 [00:07<00:01,  5.56it/s] 80%|████████  | 40/50 [00:07<00:01,  5.56it/s] 82%|████████▏ | 41/50 [00:07<00:01,  5.56it/s] 84%|████████▍ | 42/50 [00:07<00:01,  5.56it/s] 86%|████████▌ | 43/50 [00:07<00:01,  5.56it/s] 88%|████████▊ | 44/50 [00:07<00:01,  5.56it/s] 90%|█████████ | 45/50 [00:08<00:00,  5.57it/s] 92%|█████████▏| 46/50 [00:08<00:00,  5.57it/s] 94%|█████████▍| 47/50 [00:08<00:00,  5.58it/s] 96%|█████████▌| 48/50 [00:08<00:00,  5.59it/s] 98%|█████████▊| 49/50 [00:08<00:00,  5.62it/s]100%|██████████| 50/50 [00:08<00:00,  5.65it/s]100%|██████████| 50/50 [00:08<00:00,  5.56it/s]
+Generate outro segment
+generate 152.523456 ~ 175.514126984127 seconds
+backing audio length 175.5140589569161 seconds
+===============================
+waveform_vocal 175.514126984127
+backing_audio 175.5140589569161
+Saved backing track to /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/Mixed_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/backing_vocal_full.wav
+Saved structure prompts to /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/Mixed_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/mixed_vocal_structure_prompts.json
+[adapter 23:06:27] musecontrollite exit=0 in 89.6s
+[adapter 23:06:27] mix          -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/mix.wav
+[adapter 23:06:27] backing      -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4/backing.wav
+[adapter 23:06:27] done
+
+==============================================================================
+summary
+  OK             1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4 -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__E3b_given_bo4

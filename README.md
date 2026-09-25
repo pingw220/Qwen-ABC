@@ -31,6 +31,7 @@ Reports:
 * `reports/R3A_SYLLABLE_BUDGET.md`: R3-A — a syllable budget in the prompt does **not** fix cramming (negative result)
 * `reports/CRAMMING_ATTACKS.md`: **three attacks on cramming**, none adopted — and what listening caught that the metrics did not
 * `reports/R4_MUSIC_PRETRAINED_BASE.md`: **MuPT vs Qwen** — symbolic-music pretraining transfers musical competence, not instruction-following
+* `reports/R5_FREE_LYRIC_ASSIGNMENT.md`: **R5** — the per-section lyric assignment is not needed; the model can allocate but cannot budget
 
 ## Layout
 

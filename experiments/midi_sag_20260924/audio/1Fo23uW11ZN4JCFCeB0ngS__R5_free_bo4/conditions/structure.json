@@ -1,0 +1,244 @@
+{
+  "structure_starts": [
+    0.0,
+    12.467536,
+    24.935072,
+    49.870144,
+    74.805216,
+    87.272752,
+    112.207824,
+    137.142896,
+    149.610432,
+    168.311736
+  ],
+  "structure_tags": [
+    "intro",
+    "intro",
+    "verse",
+    "chorus",
+    "inst",
+    "verse",
+    "chorus",
+    "chorus",
+    "chorus",
+    "chorus"
+  ],
+  "structure_prompts": [
+    "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar",
+    "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar",
+    "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+    "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+    "Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar",
+    "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+    "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+    "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+    "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+    "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+  ],
+  "raw_labels": [
+    "intro",
+    "intro",
+    "verse",
+    "chorus",
+    "instrumental",
+    "verse",
+    "chorus",
+    "chorus",
+    "chorus",
+    "chorus"
+  ],
+  "label_remap": {
+    "instrumental": "inst"
+  },
+  "midi_sag_tag_vocabulary": [
+    "intro",
+    "outro",
+    "break",
+    "bridge",
+    "inst",
+    "solo",
+    "verse",
+    "chorus"
+  ],
+  "window_seconds": 47.55446712018141,
+  "duration_s": 189.350703,
+  "segments": [
+    {
+      "index": 0,
+      "raw_label": "intro",
+      "tag": "intro",
+      "start_s": 0.0,
+      "end_s": 12.468,
+      "span_s": 12.468,
+      "window_s": [
+        0.0,
+        47.554
+      ],
+      "reference_audio_s": null,
+      "prompt": "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar",
+      "prompt_source": "tag prompt[intro]"
+    },
+    {
+      "index": 1,
+      "raw_label": "intro",
+      "tag": "intro",
+      "start_s": 12.468,
+      "end_s": 24.935,
+      "span_s": 12.468,
+      "window_s": [
+        0.0,
+        47.554
+      ],
+      "reference_audio_s": [
+        0.0,
+        12.468
+      ],
+      "prompt": "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar",
+      "prompt_source": "tag prompt[intro]"
+    },
+    {
+      "index": 2,
+      "raw_label": "verse",
+      "tag": "verse",
+      "start_s": 24.935,
+      "end_s": 49.87,
+      "span_s": 24.935,
+      "window_s": [
+        2.316,
+        49.87
+      ],
+      "reference_audio_s": [
+        2.316,
+        24.935
+      ],
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+      "prompt_source": "tag prompt[verse]"
+    },
+    {
+      "index": 3,
+      "raw_label": "chorus",
+      "tag": "chorus",
+      "start_s": 49.87,
+      "end_s": 74.805,
+      "span_s": 24.935,
+      "window_s": [
+        27.251,
+        74.805
+      ],
+      "reference_audio_s": [
+        27.251,
+        49.87
+      ],
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "prompt_source": "tag prompt[chorus]"
+    },
+    {
+      "index": 4,
+      "raw_label": "instrumental",
+      "tag": "inst",
+      "start_s": 74.805,
+      "end_s": 87.273,
+      "span_s": 12.468,
+      "window_s": [
+        39.718,
+        87.273
+      ],
+      "reference_audio_s": [
+        39.718,
+        74.805
+      ],
+      "prompt": "Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar",
+      "prompt_source": "tag prompt[inst]"
+    },
+    {
+      "index": 5,
+      "raw_label": "verse",
+      "tag": "verse",
+      "start_s": 87.273,
+      "end_s": 112.208,
+      "span_s": 24.935,
+      "window_s": [
+        64.653,
+        112.208
+      ],
+      "reference_audio_s": [
+        64.653,
+        87.273
+      ],
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+      "prompt_source": "tag prompt[verse]"
+    },
+    {
+      "index": 6,
+      "raw_label": "chorus",
+      "tag": "chorus",
+      "start_s": 112.208,
+      "end_s": 137.143,
+      "span_s": 24.935,
+      "window_s": [
+        89.588,
+        137.143
+      ],
+      "reference_audio_s": [
+        89.588,
+        112.208
+      ],
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "prompt_source": "tag prompt[chorus]"
+    },
+    {
+      "index": 7,
+      "raw_label": "chorus",
+      "tag": "chorus",
+      "start_s": 137.143,
+      "end_s": 149.61,
+      "span_s": 12.468,
+      "window_s": [
+        102.056,
+        149.61
+      ],
+      "reference_audio_s": [
+        102.056,
+        137.143
+      ],
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "prompt_source": "tag prompt[chorus]"
+    },
+    {
+      "index": 8,
+      "raw_label": "chorus",
+      "tag": "chorus",
+      "start_s": 149.61,
+      "end_s": 168.312,
+      "span_s": 18.701,
+      "window_s": [
+        120.757,
+        168.312
+      ],
+      "reference_audio_s": [
+        120.757,
+        149.61
+      ],
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "prompt_source": "tag prompt[chorus]"
+    },
+    {
+      "index": 9,
+      "raw_label": "chorus",
+      "tag": "chorus",
+      "start_s": 168.312,
+      "end_s": 189.351,
+      "span_s": 21.039,
+      "window_s": [
+        141.796,
+        189.351
+      ],
+      "reference_audio_s": [
+        141.796,
+        168.312
+      ],
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "prompt_source": "tag prompt[chorus]"
+    }
+  ]
+}

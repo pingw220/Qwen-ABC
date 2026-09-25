@@ -1,0 +1,342 @@
+{
+  "sample": "1Fo23uW11ZN4JCFCeB0ngS__MuPT_bo4",
+  "source_midi": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260923/leadsheets/1Fo23uW11ZN4JCFCeB0ngS__MuPT_bo4.mid",
+  "ticks_per_beat": 480,
+  "duration_s": 239.220847,
+  "max_tick": 147360,
+  "initial_bpm": 76.999978,
+  "tempo_events": [
+    {
+      "tick": 0,
+      "bpm": 76.999978
+    }
+  ],
+  "time_signatures": [
+    {
+      "tick": 0,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 99840,
+      "numerator": 3,
+      "denominator": 4
+    },
+    {
+      "tick": 101280,
+      "numerator": 4,
+      "denominator": 4
+    }
+  ],
+  "key_signatures": [
+    {
+      "tick": 0,
+      "key": "E"
+    }
+  ],
+  "tracks": [
+    {
+      "index": 0,
+      "name": "conductor",
+      "role": null,
+      "channels": [],
+      "programs": [],
+      "n_messages": 20,
+      "n_notes": 0,
+      "n_lyrics": 0,
+      "pitch_range": null
+    },
+    {
+      "index": 1,
+      "name": "melody",
+      "role": "melody",
+      "channels": [
+        0
+      ],
+      "programs": [
+        73
+      ],
+      "n_messages": 1263,
+      "n_notes": 520,
+      "n_lyrics": 220,
+      "pitch_range": [
+        47,
+        68
+      ]
+    },
+    {
+      "index": 2,
+      "name": "chords",
+      "role": "chords",
+      "channels": [
+        1
+      ],
+      "programs": [
+        0
+      ],
+      "n_messages": 671,
+      "n_notes": 334,
+      "n_lyrics": 0,
+      "pitch_range": [
+        45,
+        71
+      ]
+    },
+    {
+      "index": 3,
+      "name": "click_raw",
+      "role": "click",
+      "channels": [
+        9
+      ],
+      "programs": [],
+      "n_messages": 616,
+      "n_notes": 307,
+      "n_lyrics": 0,
+      "pitch_range": [
+        36,
+        37
+      ]
+    }
+  ],
+  "melody": {
+    "n_notes": 520,
+    "pitch_range": [
+      47,
+      68
+    ],
+    "first_onset_s": 25.7143,
+    "last_offset_s": 239.2208
+  },
+  "chords": {
+    "n_notes": 334,
+    "pitch_range": [
+      45,
+      71
+    ]
+  },
+  "click": {
+    "beat_pitch": 37,
+    "downbeat_pitch": 36,
+    "n_beats": 307,
+    "n_downbeats": 77,
+    "first_beat_s": 0.0,
+    "last_beat_s": 238.4416
+  },
+  "lyrics": {
+    "n_events": 220,
+    "sample": [
+      "出互",
+      "萎",
+      "地",
+      "保",
+      "▁\"D/",
+      "泥",
+      "敢",
+      "怜",
+      "止",
+      "乐",
+      "会",
+      "昏",
+      "始",
+      "荼",
+      "如",
+      "dueno"
+    ]
+  },
+  "sections": [
+    {
+      "index": 0,
+      "tick": 0,
+      "start_s": 0.0,
+      "raw_label": "intro",
+      "midi_sag_tag": "intro"
+    },
+    {
+      "index": 1,
+      "tick": 7680,
+      "start_s": 12.4675,
+      "raw_label": "intro",
+      "midi_sag_tag": "intro"
+    },
+    {
+      "index": 2,
+      "tick": 15360,
+      "start_s": 24.9351,
+      "raw_label": "verse",
+      "midi_sag_tag": "verse"
+    },
+    {
+      "index": 3,
+      "tick": 30720,
+      "start_s": 49.8701,
+      "raw_label": "instrumental",
+      "midi_sag_tag": "inst"
+    },
+    {
+      "index": 4,
+      "tick": 38400,
+      "start_s": 62.3377,
+      "raw_label": "verse",
+      "midi_sag_tag": "verse"
+    },
+    {
+      "index": 5,
+      "tick": 53760,
+      "start_s": 87.2728,
+      "raw_label": "chorus",
+      "midi_sag_tag": "chorus"
+    },
+    {
+      "index": 6,
+      "tick": 69120,
+      "start_s": 112.2078,
+      "raw_label": "chorus",
+      "midi_sag_tag": "chorus"
+    },
+    {
+      "index": 7,
+      "tick": 76800,
+      "start_s": 124.6754,
+      "raw_label": "chorus",
+      "midi_sag_tag": "chorus"
+    },
+    {
+      "index": 8,
+      "tick": 88320,
+      "start_s": 143.3767,
+      "raw_label": "chorus",
+      "midi_sag_tag": "chorus"
+    },
+    {
+      "index": 9,
+      "tick": 101280,
+      "start_s": 164.4156,
+      "raw_label": "8] [m:4/4] \"b\"g f/ f e/ e/ e c/ c/ e/- \"e/b\"e/ c/ e | [r:7] \"amaj7\"g f/ f e/ e/ e c/ c/ e c/ e | [r:6] \"b\"g f/ f e/ e/ e c/ c/ e c/ e | [r:5] \"amaj7\"g f/ f e e c/ c/ e/- \"b\"e/ c/ e |",
+      "midi_sag_tag": "verse"
+    },
+    {
+      "index": 10,
+      "tick": 108960,
+      "start_s": 176.8832,
+      "raw_label": "instrumental",
+      "midi_sag_tag": "inst"
+    },
+    {
+      "index": 11,
+      "tick": 124320,
+      "start_s": 201.8182,
+      "raw_label": "instrumental",
+      "midi_sag_tag": "inst"
+    },
+    {
+      "index": 12,
+      "tick": 139680,
+      "start_s": 226.7533,
+      "raw_label": "verse",
+      "midi_sag_tag": "verse"
+    }
+  ],
+  "validation": {
+    "sample": "1Fo23uW11ZN4JCFCeB0ngS__MuPT_bo4",
+    "ok": true,
+    "n_errors": 0,
+    "n_warnings": 2,
+    "findings": [
+      {
+        "severity": "info",
+        "check": "duration",
+        "message": "239.22s",
+        "detail": {
+          "duration_s": 239.221
+        }
+      },
+      {
+        "severity": "info",
+        "check": "tempo",
+        "message": "77.00 BPM",
+        "detail": {
+          "bpm": 77.0
+        }
+      },
+      {
+        "severity": "warning",
+        "check": "time_signature",
+        "message": "3 time-signature changes",
+        "detail": {}
+      },
+      {
+        "severity": "info",
+        "check": "melody_monophonic",
+        "message": "melody is monophonic (0/520 notes = 0.00% overlapping)",
+        "detail": {
+          "polyphony_ratio": 0.0
+        }
+      },
+      {
+        "severity": "info",
+        "check": "click_grid",
+        "message": "307 beats, median IOI 0.7792s (77.00 BPM effective), max/min IOI ratio 1.000",
+        "detail": {
+          "n_beats": 307,
+          "median_ioi_s": 0.77922,
+          "effective_bpm": 77.0
+        }
+      },
+      {
+        "severity": "info",
+        "check": "downbeat_encoding",
+        "message": "77 downbeats (pitch 36), beat pitch 37, stride 4 beats/bar",
+        "detail": {
+          "n_downbeats": 77,
+          "stride": 4,
+          "downbeat_pitch": 36,
+          "beat_pitch": 37
+        }
+      },
+      {
+        "severity": "warning",
+        "check": "downbeat_encoding",
+        "message": "1 of 76 bars do not have the modal stride of 4 beats",
+        "detail": {}
+      },
+      {
+        "severity": "info",
+        "check": "sections_label_map",
+        "message": "MIDI-LLM labels remapped to MIDI-SAG tags: 8] [m:4/4] \"b\"g f/ f e/ e/ e c/ c/ e/- \"e/b\"e/ c/ e | [r:7] \"amaj7\"g f/ f e/ e/ e c/ c/ e c/ e | [r:6] \"b\"g f/ f e/ e/ e c/ c/ e c/ e | [r:5] \"amaj7\"g f/ f e e c/ c/ e/- \"b\"e/ c/ e | -> verse (unrecognised label, defaulted), instrumental -> inst",
+        "detail": {
+          "mapping": {
+            "instrumental": "inst",
+            "8] [m:4/4] \"b\"g f/ f e/ e/ e c/ c/ e/- \"e/b\"e/ c/ e | [r:7] \"amaj7\"g f/ f e/ e/ e c/ c/ e c/ e | [r:6] \"b\"g f/ f e/ e/ e c/ c/ e c/ e | [r:5] \"amaj7\"g f/ f e e c/ c/ e/- \"b\"e/ c/ e |": "verse (unrecognised label, defaulted)"
+          }
+        }
+      },
+      {
+        "severity": "info",
+        "check": "sections_window",
+        "message": "13 segment(s), longest 24.94s < 47.55s window",
+        "detail": {}
+      },
+      {
+        "severity": "info",
+        "check": "timeline_consistency",
+        "message": "all note tracks end within 0.3% of each other",
+        "detail": {
+          "track_end_ticks": {
+            "track1:melody": 147360,
+            "track2:chords": 147360,
+            "track3:click_raw": 146940
+          }
+        }
+      },
+      {
+        "severity": "info",
+        "check": "lyrics",
+        "message": "220 lyric events, 220 non-empty",
+        "detail": {
+          "n_lyrics": 220
+        }
+      }
+    ]
+  }
+}

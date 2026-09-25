@@ -1,0 +1,279 @@
+{
+  "sample": "7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4",
+  "source_midi": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/leadsheets/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4.mid",
+  "output_dir": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4",
+  "stages": {
+    "adapter": {
+      "ok": true,
+      "input_copy": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/input.mid",
+      "melody_midi": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4_melody.mid",
+      "beat_file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4_beat_times.txt",
+      "downbeat_file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4_downbeat_times.txt",
+      "structure_json": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/structure.json",
+      "conditions_dir": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions"
+    },
+    "chords": {
+      "ok": true,
+      "chord_file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/chord.txt",
+      "chord_source": "leadsheet",
+      "n_chord_spans": 110,
+      "n_chord_exact": 110,
+      "n_chord_approx": 0,
+      "chord_covered_s": 219.69,
+      "steps": []
+    },
+    "vocal": {
+      "ok": true,
+      "vocal_audio": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/vocal.wav",
+      "source": "--vocal-audio",
+      "vocal_fit": {
+        "action": "trimmed",
+        "sample_rate": 44100,
+        "original_s": 221.0382,
+        "final_s": 220.6152,
+        "leadsheet_duration_s": 220.6152
+      },
+      "pitch": {
+        "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/pitch.npz",
+        "frames": 4756,
+        "frame_rate_hz": 100.0,
+        "voiced_fraction": 0.4565,
+        "f0_min_hz": 121.19,
+        "f0_max_hz": 322.33,
+        "window_start_s": 0.0
+      }
+    },
+    "backing": {
+      "ok": true,
+      "mixed_track_dir": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/Mixed_track",
+      "mix_candidates": [
+        "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/Mixed_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/mixed_vocal_full.wav"
+      ],
+      "mix": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/mix.wav",
+      "backing": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/backing.wav",
+      "backing_candidates": [
+        "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/Mixed_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/backing_vocal_full.wav"
+      ],
+      "segment_wavs": [],
+      "steps": [
+        {
+          "label": "musecontrollite",
+          "cwd": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG",
+          "command": [
+            "/gscratch/ark/pingw220/midisag/.venv-midisag/bin/python",
+            "MuseControlLite/MuseControlLite_inference_continuation.py",
+            "--vocal_audio_file",
+            "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/vocal.wav",
+            "--chord_file",
+            "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/chord.txt",
+            "--vocal_beat_file",
+            "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4_beat_times.txt",
+            "--vocal_downbeat_file",
+            "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4_downbeat_times.txt",
+            "--checkpoint_path",
+            "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint",
+            "--output_dir",
+            "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/Mixed_track/",
+            "--structure_starts",
+            "0.000000",
+            "17.538444",
+            "33.230736",
+            "47.999952",
+            "64.615320",
+            "79.384536",
+            "95.999904",
+            "112.615272",
+            "127.384488",
+            "143.999856",
+            "158.769072",
+            "173.538288",
+            "188.307504",
+            "204.922872",
+            "--structure_tags",
+            "bridge",
+            "intro",
+            "verse",
+            "verse",
+            "chorus",
+            "chorus",
+            "inst",
+            "verse",
+            "verse",
+            "chorus",
+            "chorus",
+            "chorus",
+            "chorus",
+            "chorus",
+            "--structure_prompts",
+            "Reflective instrumental passage with piano, synth pad, bass, and gentle percussion",
+            "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar",
+            "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+            "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+            "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+            "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+            "Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar",
+            "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+            "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+            "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+            "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+            "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+            "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+            "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+          ],
+          "command_str": "cd /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG && /gscratch/ark/pingw220/midisag/.venv-midisag/bin/python MuseControlLite/MuseControlLite_inference_continuation.py --vocal_audio_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/vocal.wav --chord_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/chord.txt --vocal_beat_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4_beat_times.txt --vocal_downbeat_file /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/conditions/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4_downbeat_times.txt --checkpoint_path /mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint --output_dir /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4/Mixed_track/ --structure_starts 0.000000 17.538444 33.230736 47.999952 64.615320 79.384536 95.999904 112.615272 127.384488 143.999856 158.769072 173.538288 188.307504 204.922872 --structure_tags bridge intro verse verse chorus chorus inst verse verse chorus chorus chorus chorus chorus --structure_prompts 'Reflective instrumental passage with piano, synth pad, bass, and gentle percussion' 'Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar' 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums' 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar' 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums' 'Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release' 'Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release'",
+          "returncode": 0,
+          "seconds": 159.98
+        }
+      ]
+    }
+  },
+  "validation": {
+    "sample": "7qDiugtLVz4njwHDGCfdB5__E3b_given_bo4",
+    "ok": true,
+    "n_errors": 0,
+    "n_warnings": 2,
+    "findings": [
+      {
+        "severity": "info",
+        "check": "duration",
+        "message": "220.62s",
+        "detail": {
+          "duration_s": 220.615
+        }
+      },
+      {
+        "severity": "info",
+        "check": "tempo",
+        "message": "130.00 BPM",
+        "detail": {
+          "bpm": 130.0
+        }
+      },
+      {
+        "severity": "warning",
+        "check": "time_signature",
+        "message": "4 time-signature changes",
+        "detail": {}
+      },
+      {
+        "severity": "info",
+        "check": "melody_monophonic",
+        "message": "melody is monophonic (0/426 notes = 0.00% overlapping)",
+        "detail": {
+          "polyphony_ratio": 0.0
+        }
+      },
+      {
+        "severity": "info",
+        "check": "click_grid",
+        "message": "478 beats, median IOI 0.4615s (130.00 BPM effective), max/min IOI ratio 1.000",
+        "detail": {
+          "n_beats": 478,
+          "median_ioi_s": 0.46154,
+          "effective_bpm": 130.0
+        }
+      },
+      {
+        "severity": "info",
+        "check": "downbeat_encoding",
+        "message": "121 downbeats (pitch 36), beat pitch 37, stride 4 beats/bar",
+        "detail": {
+          "n_downbeats": 121,
+          "stride": 4,
+          "downbeat_pitch": 36,
+          "beat_pitch": 37
+        }
+      },
+      {
+        "severity": "warning",
+        "check": "downbeat_encoding",
+        "message": "2 of 120 bars do not have the modal stride of 4 beats",
+        "detail": {}
+      },
+      {
+        "severity": "info",
+        "check": "sections_label_map",
+        "message": "MIDI-LLM labels remapped to MIDI-SAG tags: instrumental -> inst",
+        "detail": {
+          "mapping": {
+            "instrumental": "inst"
+          }
+        }
+      },
+      {
+        "severity": "info",
+        "check": "sections_window",
+        "message": "14 segment(s), longest 17.54s < 47.55s window",
+        "detail": {}
+      },
+      {
+        "severity": "info",
+        "check": "timeline_consistency",
+        "message": "all note tracks end within 0.3% of each other",
+        "detail": {
+          "track_end_ticks": {
+            "track1:melody": 228840,
+            "track2:chords": 229440,
+            "track3:click_raw": 229020
+          }
+        }
+      },
+      {
+        "severity": "info",
+        "check": "lyrics",
+        "message": "331 lyric events, 331 non-empty",
+        "detail": {
+          "n_lyrics": 331
+        }
+      }
+    ]
+  },
+  "checkpoints": {
+    "MuseControlLite/attn1_qkv.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/attn1_qkv.safetensors",
+      "present": true,
+      "bytes": 679485480
+    },
+    "MuseControlLite/attn_procs.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/attn_procs.safetensors",
+      "present": true,
+      "bytes": 339747744
+    },
+    "MuseControlLite/rhythm_cnn.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/rhythm_cnn.safetensors",
+      "present": true,
+      "bytes": 187584
+    },
+    "MuseControlLite/struct_emb.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/struct_emb.safetensors",
+      "present": true,
+      "bytes": 5720
+    },
+    "MuseControlLite/melody_emb.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/melody_emb.safetensors",
+      "present": true,
+      "bytes": 1701768
+    },
+    "MuseControlLite/chord_cnn.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/chord_cnn.safetensors",
+      "present": true,
+      "bytes": 195264
+    },
+    "RMVPE/rmvpe_model.pt": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/rmvpe_model.pt",
+      "present": true,
+      "bytes": 368492925
+    },
+    "F0MelodyEncoder/melody_encoder.pt": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/melody_encoder.pt",
+      "present": true,
+      "bytes": 1325603
+    },
+    "SoulX-Singer/model.pt": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/SoulX-Singer/model.pt",
+      "present": true,
+      "bytes": 2818092278
+    }
+  },
+  "ok": true
+}

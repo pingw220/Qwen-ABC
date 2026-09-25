@@ -1,0 +1,107 @@
+diff --git a/scripts/build_prompt_variant.py b/scripts/build_prompt_variant.py
+index 43cc4d1..70f7ff9 100644
+--- a/scripts/build_prompt_variant.py
++++ b/scripts/build_prompt_variant.py
+@@ -1,12 +1,14 @@
+ #!/usr/bin/env python
+-"""ABC-v3 training files, derived from an existing ABC-v2 dataset.
++"""Training files for a prompt variant, derived from an existing ABC-v2 dataset.
+ 
+-  scripts/build_v3_prompts.py --v2-dir data/generated/abc_v2_<ts> --output-dir data/generated/abc_v3_<ts>
++  scripts/build_prompt_variant.py --prompt v3   --v2-dir data/generated/abc_v2_<ts> --output-dir data/generated/abc_v3_<ts>
++  scripts/build_prompt_variant.py --prompt free --v2-dir data/generated/abc_v2_<ts> --output-dir data/generated/abc_free_<ts>
+ 
+-v3 changes the prompt only (syllable budget per section, continuation marks on
+-lyric lines a section boundary splits — see ``qwen_abc/abc_v3.py``). The lead
+-sheets, the cleaning, the split and every completion stay exactly as they are,
+-so a v3 run against E3b isolates one variable.
++Both variants change the prompt only — ``v3`` adds a syllable budget and
++continuation marks (``qwen_abc/abc_v3.py``); ``free`` drops the per-section lyric
++assignment and hands the model the rejoined lyric instead
++(``qwen_abc/abc_free.py``). The lead sheets, the cleaning, the split and every
++completion stay exactly as they are, so a run against E3b isolates one variable.
+ 
+ Deriving the files rather than rebuilding the corpus is what makes that
+ guarantee checkable: every completion here is asserted byte-identical to the
+@@ -27,6 +29,7 @@ from pathlib import Path
+ 
+ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+ 
++from qwen_abc.abc_free import ABC_FREE_VERSION, assignment_report, spec_to_prompt_free  # noqa: E402
+ from qwen_abc.abc_v3 import ABC_V3_VERSION, budget_report, spec_to_prompt_v3, strip_v3_marks  # noqa: E402
+ from qwen_abc.canonical import Song  # noqa: E402
+ from qwen_abc.longrange import GAP_LINE, choose_infill_target, infill_example  # noqa: E402
+@@ -60,6 +63,7 @@ def main() -> None:
+     ap.add_argument("--output-dir", type=Path, required=True)
+     ap.add_argument("--infill-fraction", type=float, default=0.5)
+     ap.add_argument("--tokenizer", default="Qwen/Qwen3.5-0.8B-Base")
++    ap.add_argument("--prompt", choices=["v3", "free"], default="v3")
+     args = ap.parse_args()
+     out = args.output_dir
+     if out.exists() and any(out.iterdir()):
+@@ -72,8 +76,11 @@ def main() -> None:
+     def ntok(text: str) -> int:
+         return len(tok(text, add_special_tokens=False)["input_ids"])
+ 
+-    report = {"v3_version": ABC_V3_VERSION, "v2_dir": str(args.v2_dir), "infill_fraction": args.infill_fraction,
+-              "splits": {}}
++    make_prompt = spec_to_prompt_v3 if args.prompt == "v3" else spec_to_prompt_free
++    describe = budget_report if args.prompt == "v3" else assignment_report
++    report = {"prompt": args.prompt,
++              "version": ABC_V3_VERSION if args.prompt == "v3" else ABC_FREE_VERSION,
++              "v2_dir": str(args.v2_dir), "infill_fraction": args.infill_fraction, "splits": {}}
+     for split in ("train", "validation", "test"):
+         songs = [json.loads(l) for l in open(args.v2_dir / f"songs_{split}.jsonl", encoding="utf-8")]
+         v2_sft = [json.loads(l) for l in open(args.v2_dir / f"sft_{split}.jsonl", encoding="utf-8")]
+@@ -87,20 +94,20 @@ def main() -> None:
+             for r, old in zip(songs, v2_sft):
+                 assert r["song_id"] == old["song_id"]
+                 spec = r["spec"]
+-                prompt = spec_to_prompt_v3(spec)
+-                # the marks are notation, not lyrics: stripping them from the
+-                # written prompt must give back exactly the requested syllables
++                prompt = make_prompt(spec)
++                # whatever the variant writes, the syllables it asks for must be
++                # exactly the ones the lead sheet sings, in order
+                 written = [line for line in prompt.split("\n")
+                            if line and not line.startswith(("P:", "Task", "Language", "Meter", "Tempo", "Key",
+-                                                            "Structure", "ABC"))]
++                                                            "Structure", "ABC", "Lyrics"))]
+                 assert [s for line in written for s in split_syllables(strip_v3_marks(line))] == spec_syllables(spec)
+                 assert old["completion"] == r["abc"], "v2 sft completion must be the song's ABC"
+                 pt = ntok(prompt)
+                 stats["prompt_tokens_v2"] += old["prompt_tokens"]
+                 stats["prompt_tokens_v3"] += pt
+-                b = budget_report(spec)
+-                stats["lines_marked_continuation"] += b["lines_split_by_a_boundary"]
+-                stats["fragment_lines"] += b["fragment_lines"]
++                b = describe(spec)
++                stats["lines_marked_continuation"] += b.get("lines_split_by_a_boundary", b.get("fragments_removed", 0))
++                stats["fragment_lines"] += b.get("fragment_lines", b.get("fragment_lines_as_labelled", 0))
+                 row = {"id": f"sft:{r['song_id']}", "song_id": r["song_id"], "prompt": prompt,
+                        "completion": r["abc"], "prompt_tokens": pt, "completion_tokens": old["completion_tokens"]}
+                 f_sft.write(json.dumps(row, ensure_ascii=False) + "\n")
+@@ -109,7 +116,7 @@ def main() -> None:
+                 t = choose_infill_target(r["song_id"], spec)
+                 if t is None:
+                     continue
+-                ex = infill_example(Song.from_json(r["song"]), spec, t, prompt_fn=spec_to_prompt_v3)
++                ex = infill_example(Song.from_json(r["song"]), spec, t, prompt_fn=make_prompt)
+                 assert ex["prompt"].count(GAP_LINE) == 1
+                 inf = {"id": f"infill:{r['song_id']}", "song_id": r["song_id"], "task": "infill",
+                        "prompt": ex["prompt"], "completion": ex["completion"], "target_section": t,
+@@ -144,12 +151,12 @@ def main() -> None:
+             checks[f"mixture_size_identical_{split}"] = len(ia) == len(ib)
+     report["checks"] = checks
+     report["files_sha256"] = {p.name: sha256_file(p) for p in sorted(out.glob("*.jsonl"))}
+-    (out / "v3_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
++    (out / f"{args.prompt}_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+     bad = [k for k, v in checks.items() if not v]
+     print(json.dumps(checks, indent=1))
+     if bad:
+         raise SystemExit(f"FAILED: {bad}")
+-    print(f"V3_OK -> {out}")
++    print(f"{args.prompt.upper()}_OK -> {out}")
+ 
+ 
+ if __name__ == "__main__":

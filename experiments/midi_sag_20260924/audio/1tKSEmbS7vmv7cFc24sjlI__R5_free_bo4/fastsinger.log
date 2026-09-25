@@ -1,0 +1,23 @@
+/gscratch/ark/pingw220/miniconda3/envs/fastsinger/lib/python3.10/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+args.spkr_ref ['6']
+| Use shift consonant forward alignment: True
+Encoder parameters:  63.04M
+Decoder parameters:  63.15M
+FastSpeech model loaded from /gscratch/scrubbed/pingw220/music_acc/fastsinger/params.FastSpeech.@400.torch
+Time to load FastSpeech: 5.19 seconds
+| Loading vocoder checkpoint: /gscratch/scrubbed/pingw220/music_acc/fastsinger/Sandee2yiwen_spkr_embedding_slur/interval/checkpoint-140000steps.pkl
+mel2f0 False
+Vocoder model loaded from /gscratch/scrubbed/pingw220/music_acc/fastsinger/Sandee2yiwen_spkr_embedding_slur/interval/checkpoint-140000steps.pkl
+Time to load Vocoder: 8.04 seconds
+Base output directory for this run: logs/generation/suming_MBJCUganFM_rmvpe_bs32_autoalign_slur_flag.hifigan.@400
+--- Processing single MIDI file task from command line arguments ---
+Task-specific output directory: logs/generation/suming_MBJCUganFM_rmvpe_bs32_autoalign_slur_flag.hifigan.@400
+Total number of notes:  283
+Total number of words:  283
+Using speaker ID: 6
+
+--- Processing Pitch Shift: 0 semitones for speaker: 6 ---
+Generating (P-shift: 0, Spkr: 6):   0%|          | 0/23 [00:00<?, ?it/s]Generating (P-shift: 0, Spkr: 6):   4%|▍         | 1/23 [00:00<00:17,  1.23it/s]Generating (P-shift: 0, Spkr: 6):  13%|█▎        | 3/23 [00:00<00:05,  3.67it/s]Generating (P-shift: 0, Spkr: 6):  17%|█▋        | 4/23 [00:01<00:04,  4.33it/s]Generating (P-shift: 0, Spkr: 6):  22%|██▏       | 5/23 [00:01<00:03,  5.08it/s]Generating (P-shift: 0, Spkr: 6):  30%|███       | 7/23 [00:01<00:02,  7.12it/s]Generating (P-shift: 0, Spkr: 6):  39%|███▉      | 9/23 [00:01<00:01,  8.50it/s]Generating (P-shift: 0, Spkr: 6):  48%|████▊     | 11/23 [00:01<00:01,  9.54it/s]Generating (P-shift: 0, Spkr: 6):  57%|█████▋    | 13/23 [00:01<00:01,  9.41it/s]Generating (P-shift: 0, Spkr: 6):  65%|██████▌   | 15/23 [00:02<00:00,  9.47it/s]Generating (P-shift: 0, Spkr: 6):  74%|███████▍  | 17/23 [00:02<00:00,  7.92it/s]Generating (P-shift: 0, Spkr: 6):  83%|████████▎ | 19/23 [00:02<00:00,  8.95it/s]Generating (P-shift: 0, Spkr: 6):  87%|████████▋ | 20/23 [00:02<00:00,  8.86it/s]Generating (P-shift: 0, Spkr: 6):  96%|█████████▌| 22/23 [00:02<00:00,  9.77it/s]Generating (P-shift: 0, Spkr: 6): 100%|██████████| 23/23 [00:03<00:00,  7.28it/s]
+Full song saved to: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__R5_free_bo4/vocal_fs.wav
+Total time for pitch shift 0 and speaker 6: 3.31 seconds

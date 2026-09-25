@@ -1,0 +1,56 @@
+{
+  "song_id": "vocal",
+  "vocal_audio_file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__reference/vocal.wav",
+  "mixed_audio_file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260924/audio/1tKSEmbS7vmv7cFc24sjlI__reference/Mixed_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/mixed_vocal_full.wav",
+  "segments": [
+    {
+      "index": 0,
+      "start_s": 0.0,
+      "end_s": 22.42992,
+      "tag": "intro",
+      "prompt": "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar"
+    },
+    {
+      "index": 1,
+      "start_s": 22.42992,
+      "end_s": 49.345824,
+      "tag": "verse",
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums"
+    },
+    {
+      "index": 2,
+      "start_s": 49.345824,
+      "end_s": 75.140232,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 3,
+      "start_s": 75.140232,
+      "end_s": 100.93464,
+      "tag": "inst",
+      "prompt": "Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar"
+    },
+    {
+      "index": 4,
+      "start_s": 100.93464,
+      "end_s": 127.850544,
+      "tag": "verse",
+      "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums"
+    },
+    {
+      "index": 5,
+      "start_s": 127.850544,
+      "end_s": 152.523456,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    },
+    {
+      "index": 6,
+      "start_s": 152.523456,
+      "end_s": 175.514126984127,
+      "tag": "outro",
+      "prompt": "Mandarin pop outro with the full band playing out: drums, bass, piano and guitar"
+    }
+  ]
+}

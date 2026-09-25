@@ -1,0 +1,2 @@
+job=40587702 host=g3060 restart=0 date=2026-09-24T20:33:44-07:00 commit=14ff2ac1f3a97cbcf8661cf6a88e2010cf804da1 dirty=10
+ckpt=/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r5_free_20260924_100314/final_model data=data/generated/abc_free_20260924_095912 fmt=free args=--split test --seeds 4 --temperature 1.0 --top-p 0.95

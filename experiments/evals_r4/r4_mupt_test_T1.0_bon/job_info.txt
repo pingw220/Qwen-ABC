@@ -1,0 +1,6 @@
+job=40486016 host=g3052 restart=0 date=2026-09-23T05:31:08-07:00 commit=d18f4d3c0ad6e5777aaa112f5393e68a97d26f4e dirty=1
+ckpt=/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--split test --seeds 4 --temperature 1.0 --top-p 0.95
+job=40486073 host=g3052 restart=0 date=2026-09-23T05:52:56-07:00 commit=d18f4d3c0ad6e5777aaa112f5393e68a97d26f4e dirty=2
+ckpt=/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--split test --seeds 4 --temperature 1.0 --top-p 0.95
+job=40489515 host=g3052 restart=0 date=2026-09-23T11:13:54-07:00 commit=d18f4d3c0ad6e5777aaa112f5393e68a97d26f4e dirty=2
+ckpt=/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model data=data/generated/abc_v2_20260915_120927 fmt=v2 args=--split test --seeds 4 --temperature 1.0 --top-p 0.95

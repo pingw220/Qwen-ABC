@@ -32,6 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from qwen_abc.abc import parse_abc  # noqa: E402
 from qwen_abc.canonical import Song  # noqa: E402
 from qwen_abc.abc_v2 import counter_report, spec_to_prompt_v2  # noqa: E402
+from qwen_abc.abc_free import spec_to_prompt_free  # noqa: E402
 from qwen_abc.abc_v3 import spec_to_prompt_v3  # noqa: E402
 from qwen_abc.generate import generate_batch, generate_one, load_for_generation  # noqa: E402
 from qwen_abc.metrics import aggregate, distribution_distances, lcs_len, song_metrics  # noqa: E402
@@ -106,7 +107,7 @@ def score_row(row: dict, spec: dict, fmt: str) -> dict:
         m["hit_eos"] = float(bool(row.get("hit_eos")))
         m["early_eos"] = float(bool(row.get("hit_eos")) and m.get("fewer_sections_than_requested", 0.0) == 1.0)
         m["new_tokens"] = row.get("new_tokens")
-        if fmt in ("v2", "v3"):  # v3 completions are ABC-v2 text, counters and all
+        if fmt in ("v2", "v3", "free"):  # every variant completes in ABC-v2 text, counters and all
             m.update(counter_report(row["generation"], spec))
         row["metrics"] = m
         row["song"] = res.song.to_json()
@@ -184,8 +185,8 @@ def main() -> None:
     ap.add_argument("--probes-only", action="store_true", help="generate probe outputs only (for a separate job)")
     ap.add_argument("--greedy-probes-only", action="store_true", help="generate the greedy probe set only")
     ap.add_argument("--aggregate-only", action="store_true", help="no model: summarize cached generations")
-    ap.add_argument("--format", choices=["v1", "v2", "v3"], default="v1",
-                    help="prompt format (v2: ABC-v2 prompt + counter metrics; v3: + syllable budget and continuation marks)")
+    ap.add_argument("--format", choices=["v1", "v2", "v3", "free"], default="v1",
+                    help="prompt format (v2: ABC-v2 prompt + counter metrics; v3: + syllable budget and continuation marks; free: the plan without the per-section lyric assignment)")
     ap.add_argument("--batch-size", type=int, default=1, help=">1: batched sampling for the main set")
     ap.add_argument("--max-total", type=int, default=8192, help="prompt + generation token cap")
     ap.add_argument("--read-generations", type=Path, default=None, help="cached generations dir (default OUT/generations)")
@@ -201,7 +202,8 @@ def main() -> None:
     ids = [json.loads(l)["song_id"] for l in open(args.song_ids_from, encoding="utf-8")] if args.song_ids_from else None
     if args.song_id_list:
         ids = [l.strip() for l in open(args.song_id_list, encoding="utf-8") if l.strip()]
-    make_prompt = {"v2": spec_to_prompt_v2, "v3": spec_to_prompt_v3}.get(args.format, spec_to_prompt)
+    make_prompt = {"v2": spec_to_prompt_v2, "v3": spec_to_prompt_v3,
+                   "free": spec_to_prompt_free}.get(args.format, spec_to_prompt)
     PROMPT_FN[0] = make_prompt
     gen_dir = args.read_generations or (out / "generations")
     songs = pick_songs(args.data_dir, args.split, args.num_songs, ids)

@@ -1,0 +1,410 @@
+{
+  "adapter": "tools/midi_llm_adapter/run_midi_llm_to_midi_sag.py",
+  "repo_root": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG",
+  "argv": [
+    "tools/midi_llm_adapter/run_midi_llm_to_midi_sag.py",
+    "--midi",
+    "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260923/leadsheets/5CbNIRIgmrh1W9xNnhtSz1__reference.mid",
+    "--output-dir",
+    "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260923/audio/5CbNIRIgmrh1W9xNnhtSz1__reference",
+    "--vocal-audio",
+    "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260923/audio/5CbNIRIgmrh1W9xNnhtSz1__reference/vocal_fs.wav",
+    "--gpu",
+    "0",
+    "--harmonizer",
+    "leadsheet",
+    "--tag-prompts",
+    "{\"intro\": \"Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar\", \"outro\": \"Mandarin pop outro with the full band playing out: drums, bass, piano and guitar\", \"inst\": \"Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar\"}"
+  ],
+  "args": {
+    "midi": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260923/leadsheets/5CbNIRIgmrh1W9xNnhtSz1__reference.mid",
+    "input_dir": null,
+    "output_dir": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260923/audio/5CbNIRIgmrh1W9xNnhtSz1__reference",
+    "prompt": null,
+    "tag_prompts": "{\"intro\": \"Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar\", \"outro\": \"Mandarin pop outro with the full band playing out: drums, bass, piano and guitar\", \"inst\": \"Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar\"}",
+    "gpu": "0",
+    "musecontrollite_checkpoint": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint",
+    "stop_after": "backing",
+    "harmonizer": "leadsheet",
+    "chord_file": null,
+    "chord_style": "POP_STANDARD",
+    "chords_per_bar": 1,
+    "key": "auto",
+    "use_beat_file": true,
+    "downbeat_phase": 0,
+    "vocal_audio": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_sag_20260923/audio/5CbNIRIgmrh1W9xNnhtSz1__reference/vocal_fs.wav",
+    "soulx_prompt_wav": null,
+    "soulx_prompt_meta": null,
+    "soulx_language": "Mandarin",
+    "soulx_vocal_sep": "False",
+    "simplify_lyrics": true,
+    "melisma": "slur",
+    "no_pitch_dump": false,
+    "allow_pileup": false,
+    "allow_window_overflow": false,
+    "allow_polyphonic_melody": false
+  },
+  "cuda_visible_devices": "0",
+  "midi_sag_gpu_id": "0",
+  "musecontrollite_checkpoint": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint",
+  "stable_audio_open_model": "stabilityai/stable-audio-open-1.0",
+  "inference_entry_point": "MuseControlLite/MuseControlLite_inference_continuation.py",
+  "chord_entry_point": "AccoMontage2/demo_SOME.py",
+  "structure_plan": {
+    "structure_starts": [
+      0.0,
+      15.882336,
+      29.999968,
+      44.1176,
+      58.235232,
+      75.882272,
+      89.999904,
+      104.117536,
+      118.235168,
+      132.3528,
+      146.470432,
+      160.588064,
+      174.705696
+    ],
+    "structure_tags": [
+      "intro",
+      "verse",
+      "verse",
+      "chorus",
+      "chorus",
+      "verse",
+      "verse",
+      "chorus",
+      "chorus",
+      "inst",
+      "chorus",
+      "chorus",
+      "chorus"
+    ],
+    "structure_prompts": [
+      "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar",
+      "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+      "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+      "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+      "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+      "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar",
+      "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+      "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release"
+    ],
+    "raw_labels": [
+      "intro",
+      "verse",
+      "verse",
+      "chorus",
+      "chorus",
+      "verse",
+      "verse",
+      "chorus",
+      "chorus",
+      "instrumental",
+      "chorus",
+      "chorus",
+      "chorus"
+    ],
+    "label_remap": {
+      "instrumental": "inst"
+    },
+    "midi_sag_tag_vocabulary": [
+      "intro",
+      "outro",
+      "break",
+      "bridge",
+      "inst",
+      "solo",
+      "verse",
+      "chorus"
+    ],
+    "window_seconds": 47.55446712018141,
+    "duration_s": 192.352736,
+    "segments": [
+      {
+        "index": 0,
+        "raw_label": "intro",
+        "tag": "intro",
+        "start_s": 0.0,
+        "end_s": 15.882,
+        "span_s": 15.882,
+        "window_s": [
+          0.0,
+          47.554
+        ],
+        "reference_audio_s": null,
+        "prompt": "Mandarin pop introduction with the full band already playing: drums, bass, piano and electric guitar",
+        "prompt_source": "tag prompt[intro]"
+      },
+      {
+        "index": 1,
+        "raw_label": "verse",
+        "tag": "verse",
+        "start_s": 15.882,
+        "end_s": 30.0,
+        "span_s": 14.118,
+        "window_s": [
+          0.0,
+          47.554
+        ],
+        "reference_audio_s": [
+          0.0,
+          15.882
+        ],
+        "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+        "prompt_source": "tag prompt[verse]"
+      },
+      {
+        "index": 2,
+        "raw_label": "verse",
+        "tag": "verse",
+        "start_s": 30.0,
+        "end_s": 44.118,
+        "span_s": 14.118,
+        "window_s": [
+          0.0,
+          47.554
+        ],
+        "reference_audio_s": [
+          0.0,
+          30.0
+        ],
+        "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+        "prompt_source": "tag prompt[verse]"
+      },
+      {
+        "index": 3,
+        "raw_label": "chorus",
+        "tag": "chorus",
+        "start_s": 44.118,
+        "end_s": 58.235,
+        "span_s": 14.118,
+        "window_s": [
+          10.681,
+          58.235
+        ],
+        "reference_audio_s": [
+          10.681,
+          44.118
+        ],
+        "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+        "prompt_source": "tag prompt[chorus]"
+      },
+      {
+        "index": 4,
+        "raw_label": "chorus",
+        "tag": "chorus",
+        "start_s": 58.235,
+        "end_s": 75.882,
+        "span_s": 17.647,
+        "window_s": [
+          28.328,
+          75.882
+        ],
+        "reference_audio_s": [
+          28.328,
+          58.235
+        ],
+        "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+        "prompt_source": "tag prompt[chorus]"
+      },
+      {
+        "index": 5,
+        "raw_label": "verse",
+        "tag": "verse",
+        "start_s": 75.882,
+        "end_s": 90.0,
+        "span_s": 14.118,
+        "window_s": [
+          42.445,
+          90.0
+        ],
+        "reference_audio_s": [
+          42.445,
+          75.882
+        ],
+        "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+        "prompt_source": "tag prompt[verse]"
+      },
+      {
+        "index": 6,
+        "raw_label": "verse",
+        "tag": "verse",
+        "start_s": 90.0,
+        "end_s": 104.118,
+        "span_s": 14.118,
+        "window_s": [
+          56.563,
+          104.118
+        ],
+        "reference_audio_s": [
+          56.563,
+          90.0
+        ],
+        "prompt": "Melancholic yet hopeful acoustic feel with fingerpicked acoustic guitar, electric piano, bass, and steady drums",
+        "prompt_source": "tag prompt[verse]"
+      },
+      {
+        "index": 7,
+        "raw_label": "chorus",
+        "tag": "chorus",
+        "start_s": 104.118,
+        "end_s": 118.235,
+        "span_s": 14.118,
+        "window_s": [
+          70.681,
+          118.235
+        ],
+        "reference_audio_s": [
+          70.681,
+          104.118
+        ],
+        "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+        "prompt_source": "tag prompt[chorus]"
+      },
+      {
+        "index": 8,
+        "raw_label": "chorus",
+        "tag": "chorus",
+        "start_s": 118.235,
+        "end_s": 132.353,
+        "span_s": 14.118,
+        "window_s": [
+          84.798,
+          132.353
+        ],
+        "reference_audio_s": [
+          84.798,
+          118.235
+        ],
+        "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+        "prompt_source": "tag prompt[chorus]"
+      },
+      {
+        "index": 9,
+        "raw_label": "instrumental",
+        "tag": "inst",
+        "start_s": 132.353,
+        "end_s": 146.47,
+        "span_s": 14.118,
+        "window_s": [
+          98.916,
+          146.47
+        ],
+        "reference_audio_s": [
+          98.916,
+          132.353
+        ],
+        "prompt": "Mandarin pop instrumental break with the full band: drums, bass, piano and lead guitar",
+        "prompt_source": "tag prompt[inst]"
+      },
+      {
+        "index": 10,
+        "raw_label": "chorus",
+        "tag": "chorus",
+        "start_s": 146.47,
+        "end_s": 160.588,
+        "span_s": 14.118,
+        "window_s": [
+          113.034,
+          160.588
+        ],
+        "reference_audio_s": [
+          113.034,
+          146.47
+        ],
+        "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+        "prompt_source": "tag prompt[chorus]"
+      },
+      {
+        "index": 11,
+        "raw_label": "chorus",
+        "tag": "chorus",
+        "start_s": 160.588,
+        "end_s": 174.706,
+        "span_s": 14.118,
+        "window_s": [
+          127.151,
+          174.706
+        ],
+        "reference_audio_s": [
+          127.151,
+          160.588
+        ],
+        "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+        "prompt_source": "tag prompt[chorus]"
+      },
+      {
+        "index": 12,
+        "raw_label": "chorus",
+        "tag": "chorus",
+        "start_s": 174.706,
+        "end_s": 192.353,
+        "span_s": 17.647,
+        "window_s": [
+          144.798,
+          192.353
+        ],
+        "reference_audio_s": [
+          144.798,
+          174.706
+        ],
+        "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, emotional release",
+        "prompt_source": "tag prompt[chorus]"
+      }
+    ]
+  },
+  "checkpoints": {
+    "MuseControlLite/attn1_qkv.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/attn1_qkv.safetensors",
+      "present": true,
+      "bytes": 679485480
+    },
+    "MuseControlLite/attn_procs.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/attn_procs.safetensors",
+      "present": true,
+      "bytes": 339747744
+    },
+    "MuseControlLite/rhythm_cnn.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/rhythm_cnn.safetensors",
+      "present": true,
+      "bytes": 187584
+    },
+    "MuseControlLite/struct_emb.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/struct_emb.safetensors",
+      "present": true,
+      "bytes": 5720
+    },
+    "MuseControlLite/melody_emb.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/melody_emb.safetensors",
+      "present": true,
+      "bytes": 1701768
+    },
+    "MuseControlLite/chord_cnn.safetensors": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/MuseControlLite_checkpoint/chord_cnn.safetensors",
+      "present": true,
+      "bytes": 195264
+    },
+    "RMVPE/rmvpe_model.pt": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/rmvpe_model.pt",
+      "present": true,
+      "bytes": 368492925
+    },
+    "F0MelodyEncoder/melody_encoder.pt": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/melody_encoder.pt",
+      "present": true,
+      "bytes": 1325603
+    },
+    "SoulX-Singer/model.pt": {
+      "path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/MIDI-SAG_checkpoints/SoulX-Singer/model.pt",
+      "present": true,
+      "bytes": 2818092278
+    }
+  }
+}
