@@ -30,7 +30,10 @@ cd "$ML"; export PYTHONPATH="$PWD:$PWD/scripts"
 echo "job=${SLURM_JOB_ID:-none} array=${SLURM_ARRAY_JOB_ID:-none}_$SHARD host=$(hostname) start=$(date -Is) midi_llm_commit=$(git rev-parse HEAD) dirty_tracked=$(git diff --stat | tail -1) ckpt=$CKPT flags=$FLAGS"
 i=0
 LIST=$QA/experiments/paper_final/midi_llm/tasks.tsv
-[ "${REVERSE:-0}" = 1 ] && LIST=<(tac "$QA/experiments/paper_final/midi_llm/tasks.tsv")
+if [ "${REVERSE:-0}" = 1 ]; then
+  LIST=$QA/experiments/paper_final/midi_llm/tasks_reversed.tsv
+  tac "$QA/experiments/paper_final/midi_llm/tasks.tsv" > "$LIST.$SHARD.tmp" && mv "$LIST.$SHARD.tmp" "$LIST"
+fi
 while IFS=$'\t' read -r cond seed sid spec out; do
   if (( i % NSHARDS == SHARD )); then
     mkdir -p "$LOGS/${cond}_$seed" "$out"
