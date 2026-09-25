@@ -1,0 +1,175 @@
+{
+ "frozen": "2026-09-25",
+ "dataset_dir": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/data/generated/abc_v2_20260915_120927",
+ "split_counts": {
+  "train": 10243,
+  "validation": 273,
+  "test": 225
+ },
+ "split_sha256": {
+  "train": "1d1329fdd6b3d77ed7ffce5c1829997af79f7b47f1974012d89cc23e00a7a440",
+  "validation": "614877482fac92e48ced35324beafc7b3c269e0448bf457901fce4f7fc3ca69e",
+  "test": "8b511dde4379080b212500a708bbe365a6b40053d83ffa377de2a6d13c7997cf"
+ },
+ "test_ids_sha256": "8b511dde4379080b212500a708bbe365a6b40053d83ffa377de2a6d13c7997cf",
+ "clean_subset_n": 34,
+ "clean_ids_sha256": "4432ffb8544b78a0eb570005229e8b6cedba30c5c26ce80a39760922ba5d9f49",
+ "decoding": {
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "top_k": 0,
+  "max_total_tokens": 9216,
+  "max_new_tokens": 8704,
+  "batch_size": 16,
+  "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+ },
+ "seeds": {
+  "S1": 101,
+  "S2": 202,
+  "S3": 303,
+  "S4": 404
+ },
+ "bon_seeds": [
+  "S1",
+  "S2",
+  "S3",
+  "S4"
+ ],
+ "intervention_seeds": [
+  "S1",
+  "S2"
+ ],
+ "extra_seeds": {
+  "lyrics_all": [
+   "S3",
+   "S4"
+  ]
+ },
+ "interventions": {
+  "bars_m4": [
+   "bars",
+   -4
+  ],
+  "bars_m2": [
+   "bars",
+   -2
+  ],
+  "bars_p2": [
+   "bars",
+   2
+  ],
+  "bars_p4": [
+   "bars",
+   4
+  ],
+  "label_bridge": [
+   "label",
+   "bridge"
+  ],
+  "label_swap": [
+   "label",
+   "swap"
+  ],
+  "key_p2": [
+   "key",
+   2
+  ],
+  "key_p5": [
+   "key",
+   5
+  ],
+  "key_m3": [
+   "key",
+   -3
+  ],
+  "tempo_x0.8": [
+   "tempo",
+   0.8
+  ],
+  "tempo_x1.25": [
+   "tempo",
+   1.25
+  ],
+  "lyrics_all": [
+   "lyrics",
+   "all"
+  ],
+  "lyrics_sec": [
+   "lyrics",
+   "sec"
+  ]
+ },
+ "ood_conditions": [
+  "ood_chorus_first",
+  "ood_end_on_verse",
+  "ood_long20",
+  "ood_long28",
+  "ood_sections_p3",
+  "ood_sections_p6",
+  "ood_tempo"
+ ],
+ "ood_regime": {
+  "orig": "in-distribution",
+  "ood_chorus_first": "compositional",
+  "ood_end_on_verse": "compositional",
+  "ood_long20": "extrapolative",
+  "ood_long28": "extrapolative",
+  "ood_sections_p3": "extrapolative",
+  "ood_sections_p6": "extrapolative",
+  "ood_tempo": "extrapolative"
+ },
+ "models": {
+  "qwen_e3b": {
+   "ckpt": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+   "fmt": "v2",
+   "family": "Qwen-ABC",
+   "desc": "Qwen3.5-0.8B, ABC-v2 (ESS) + late-section reconstruction, 758 updates (current best)"
+  },
+  "qwen_e1": {
+   "ckpt": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model",
+   "fmt": "v2",
+   "family": "Qwen-ABC",
+   "desc": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 506 updates"
+  },
+  "qwen_e1long": {
+   "ckpt": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model",
+   "fmt": "v2",
+   "family": "Qwen-ABC",
+   "desc": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 758 updates (matched-update control for E3b)"
+  },
+  "qwen_e0": {
+   "ckpt": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model",
+   "fmt": "v1",
+   "family": "Qwen-ABC",
+   "desc": "Qwen3.5-0.8B, ABC-v1 (no ESS, uncleaned training boundaries), 382 updates"
+  },
+  "mupt": {
+   "ckpt": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model",
+   "fmt": "v2",
+   "family": "MuPT",
+   "desc": "MuPT-1.07B (ABC-pretrained), same data/recipe as E3b, 1070 updates"
+  }
+ },
+ "midi_llm": {
+  "repo": "MIDI-LLM-phoneme-lyric-v1@bea5597",
+  "checkpoint": "runs/original-midi-llm-onestage-multitask-v1-v4/full/final",
+  "mode": "A (recommended constraints)",
+  "seeds": [
+   1000,
+   1001,
+   1002,
+   1003
+  ]
+ },
+ "selector": {
+  "rule": "sum",
+  "weights": "2.0*strict_valid + 1.5*section_plan_exact + 1.5*lyric_recall + 1.0*mean(melody_in_key,chord_root_in_key) + 0.5*chord_tone - 1.0*cram_syllable_frac - 1.0*early_eos",
+  "chosen_on": "64 validation songs (reports/decoding_sweep_validation_song_ids.txt)"
+ },
+ "bootstrap": {
+  "resamples": 10000,
+  "unit": "song",
+  "ci": "95% percentile",
+  "rng_seed": 0
+ }
+}

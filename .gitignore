@@ -40,3 +40,5 @@ experiments/leadsheets_*.tar.gz
 experiments/*/*/generations/
 experiments/midi_sag_*/leadsheets/
 models/
+# paper-final round: generations, specs and indexes carry lyrics
+experiments/paper_final/
