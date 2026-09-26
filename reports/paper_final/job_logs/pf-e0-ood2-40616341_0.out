@@ -1,0 +1,13 @@
+job=40616349 array=40616341_0 host=g3137 partition=gpu-l40s gpu=NVIDIA L40S start=2026-09-25T15:04:59-07:00 commit=06027f571e15eee20259ba4b6f9fef45939b2795 model=qwen_e0 suites=ood conditions=all songs=all shard=0/4
+model=qwen_e0 suite=ood tasks=1555 skipped=20 shard=0/4 batches=25 pending=89
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   9%|▉         | 29/321 [00:01<00:13, 21.05it/s]Loading weights:  15%|█▍        | 47/321 [00:01<00:08, 32.76it/s]Loading weights:  17%|█▋        | 54/321 [00:01<00:08, 33.19it/s]Loading weights:  26%|██▌       | 84/321 [00:01<00:03, 65.59it/s]Loading weights:  32%|███▏      | 103/321 [00:02<00:02, 75.89it/s]Loading weights:  46%|████▋     | 149/321 [00:02<00:01, 131.15it/s]Loading weights:  57%|█████▋    | 183/321 [00:02<00:00, 167.39it/s]Loading weights:  65%|██████▍   | 208/321 [00:02<00:00, 160.33it/s]Loading weights:  83%|████████▎ | 268/321 [00:02<00:00, 241.94it/s]Loading weights:  93%|█████████▎| 300/321 [00:03<00:00, 137.40it/s]Loading weights: 100%|██████████| 321/321 [00:03<00:00, 103.88it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/6] n=11 81.08s eos=11 parse=11 done=11/89 elapsed=99s
+[2/6] n=15 244.22s eos=12 parse=15 done=26/89 elapsed=376s
+[3/6] n=16 248.36s eos=15 parse=16 done=42/89 elapsed=634s
+[4/6] n=16 246.76s eos=15 parse=16 done=58/89 elapsed=883s
+[5/6] n=15 238.71s eos=12 parse=15 done=73/89 elapsed=1125s
+[6/6] n=16 245.82s eos=12 parse=16 done=89/89 elapsed=1375s
+GENERATION_DONE
+end=2026-09-25T15:31:51-07:00 PF_GEN_OK

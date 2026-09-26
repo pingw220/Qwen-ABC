@@ -1,0 +1,45 @@
+{
+ "questions": {
+  "longer_section": "Both clips contain the same run of sections. In which clip is the MIDDLE section longer? (A / B / no difference)",
+  "higher_key": "Which clip is in the higher key, i.e. sounds higher overall? (A / B / no difference)",
+  "matches_lyrics": "Which clip sings the words shown on screen in its middle section? (A / B / neither)",
+  "plausibility_A": "How musically plausible is clip A as a pop song excerpt? (1 = not at all ... 5 = completely)",
+  "plausibility_B": "How musically plausible is clip B? (1-5)",
+  "edit_happened": "Compared with the ORIGINAL, did the EDITED clip carry out the requested edit? (yes / partly / no)",
+  "unrelated_consistent": "Apart from the requested edit, did the rest of the music stay the same? (1 = completely different ... 5 = identical)"
+ },
+ "conditions": {
+  "bars_p4": "longer_section",
+  "bars_m4": "longer_section",
+  "key_p5": "higher_key",
+  "key_m3": "higher_key",
+  "lyrics_sec": "matches_lyrics"
+ },
+ "eligible_songs": {
+  "bars_p4": {
+   "eligible": 224
+  },
+  "bars_m4": {
+   "eligible": 224
+  },
+  "key_p5": {
+   "eligible": 224
+  },
+  "key_m3": {
+   "eligible": 224
+  },
+  "lyrics_sec": {
+   "eligible": 224
+  }
+ },
+ "n_items": 66,
+ "n_test": 60,
+ "n_catch": 6,
+ "lists": {
+  "0": 66,
+  "1": 66,
+  "2": 66,
+  "3": 66
+ },
+ "seed": 20260925
+}

@@ -1,0 +1,67 @@
+list_id,trial,item_id,question,clip_A,clip_B,edited_is,original_clip,edited_clip,edit_text,shows_lyrics
+3,1,dadf80372a,matches_lyrics,a8f0e02fff.wav,69d362ba98.wav,A,69d362ba98.wav,a8f0e02fff.wav,the middle section should sing the NEW words shown on screen,True
+3,2,4245dcdf09,higher_key,103ea49b44.wav,d209518553.wav,B,103ea49b44.wav,d209518553.wav,,False
+3,3,48d85cfec7,higher_key,91de2443d8.wav,5420e0dc29.wav,A,5420e0dc29.wav,91de2443d8.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,4,dfe7738892,matches_lyrics,4eb40dc4f3.wav,208f29f868.wav,A,208f29f868.wav,4eb40dc4f3.wav,the middle section should sing the NEW words shown on screen,True
+3,5,301de861ba,longer_section,5352d8b038.wav,bb922e189b.wav,A,bb922e189b.wav,5352d8b038.wav,the middle section should be 4 bars SHORTER,False
+3,6,6e0d291ce3,longer_section,af2400e928.wav,89a27e77b8.wav,B,af2400e928.wav,89a27e77b8.wav,the middle section should be 4 bars LONGER,False
+3,7,2741a5bc8d,higher_key,3eebf3db78.wav,7a83884d2b.wav,B,3eebf3db78.wav,7a83884d2b.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,8,5cf51318b8,longer_section,03ffa7ba71.wav,507811e0f0.wav,B,03ffa7ba71.wav,507811e0f0.wav,,False
+3,9,97c3cb6cbb,higher_key,8d3f631edf.wav,2934d76a00.wav,B,8d3f631edf.wav,2934d76a00.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,10,c200ff04da,longer_section,7169daf605.wav,bb6cc6f9d8.wav,B,7169daf605.wav,bb6cc6f9d8.wav,the middle section should be 4 bars SHORTER,False
+3,11,e136c9face,higher_key,d4ce127436.wav,244067831a.wav,A,244067831a.wav,d4ce127436.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,12,74f70288c4,longer_section,4b7f555629.wav,69cdc33fab.wav,B,4b7f555629.wav,69cdc33fab.wav,the middle section should be 4 bars SHORTER,False
+3,13,4c37e4d031,matches_lyrics,596c3fd86c.wav,ce5d18b3dc.wav,A,ce5d18b3dc.wav,596c3fd86c.wav,the middle section should sing the NEW words shown on screen,True
+3,14,e46fd2ecb9,longer_section,80553ef9a0.wav,b28eb7b21b.wav,A,b28eb7b21b.wav,80553ef9a0.wav,the middle section should be 4 bars LONGER,False
+3,15,da2fdb3f9d,matches_lyrics,eefda88c13.wav,0461adf0a5.wav,A,0461adf0a5.wav,eefda88c13.wav,the middle section should sing the NEW words shown on screen,True
+3,16,7a0bb9ce0d,higher_key,1434cc11d2.wav,fd397bd5b1.wav,A,fd397bd5b1.wav,1434cc11d2.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,17,c2a23a34a2,matches_lyrics,82b689bed0.wav,ac6f64339f.wav,B,82b689bed0.wav,ac6f64339f.wav,the middle section should sing the NEW words shown on screen,True
+3,18,394e308dcf,matches_lyrics,418551e400.wav,01a4b24ba3.wav,B,418551e400.wav,01a4b24ba3.wav,the middle section should sing the NEW words shown on screen,True
+3,19,f06aab3137,higher_key,7fc720fe8b.wav,083381394f.wav,B,7fc720fe8b.wav,083381394f.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,20,1cc7be7a3c,longer_section,99cc65c739.wav,7f65c29de0.wav,B,99cc65c739.wav,7f65c29de0.wav,the middle section should be 4 bars LONGER,False
+3,21,b831be80f6,longer_section,8ebab0908e.wav,39d31e0bcd.wav,A,39d31e0bcd.wav,8ebab0908e.wav,the middle section should be 4 bars SHORTER,False
+3,22,7e3197cdc2,longer_section,8e3e15737e.wav,bdc367ca6b.wav,B,8e3e15737e.wav,bdc367ca6b.wav,the middle section should be 4 bars LONGER,False
+3,23,1747bcab76,higher_key,82af6d6418.wav,f079d4d957.wav,A,f079d4d957.wav,82af6d6418.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,24,5ee70d70ea,matches_lyrics,26d82d3b0d.wav,b15679a7f7.wav,A,b15679a7f7.wav,26d82d3b0d.wav,the middle section should sing the NEW words shown on screen,True
+3,25,0b6ede76ea,higher_key,5cac66f39a.wav,6003fe3596.wav,B,5cac66f39a.wav,6003fe3596.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,26,46d1d24f3a,higher_key,f1e95c6fc6.wav,ef862af2a8.wav,B,f1e95c6fc6.wav,ef862af2a8.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,27,6f368205f5,longer_section,bbd9103800.wav,88eaf0d18b.wav,A,88eaf0d18b.wav,bbd9103800.wav,the middle section should be 4 bars LONGER,False
+3,28,455e790890,longer_section,a7838a3869.wav,a3ef1be4e3.wav,A,a3ef1be4e3.wav,a7838a3869.wav,the middle section should be 4 bars LONGER,False
+3,29,c5b415d40a,longer_section,bcea40d882.wav,612130a58f.wav,A,612130a58f.wav,bcea40d882.wav,,False
+3,30,be8efadbbc,higher_key,ac36c16b43.wav,f272290b2e.wav,B,ac36c16b43.wav,f272290b2e.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,31,3e8ea99323,longer_section,9c4766157e.wav,9a912892aa.wav,A,9a912892aa.wav,9c4766157e.wav,the middle section should be 4 bars SHORTER,False
+3,32,4ba49b4dca,longer_section,378afaafc8.wav,d2f17098fb.wav,A,d2f17098fb.wav,378afaafc8.wav,the middle section should be 4 bars LONGER,False
+3,33,2aeff3e56e,matches_lyrics,752a33871f.wav,8a0aaf8cf7.wav,B,752a33871f.wav,8a0aaf8cf7.wav,the middle section should sing the NEW words shown on screen,True
+3,34,a1a7a5b910,longer_section,f2fad919d5.wav,1220fea6fd.wav,B,f2fad919d5.wav,1220fea6fd.wav,the middle section should be 4 bars SHORTER,False
+3,35,dcff3953eb,higher_key,7d161b6c07.wav,536fbaacfc.wav,B,7d161b6c07.wav,536fbaacfc.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,36,5b423247fa,longer_section,450172d0bd.wav,02e1888e03.wav,A,02e1888e03.wav,450172d0bd.wav,the middle section should be 4 bars SHORTER,False
+3,37,7165182d76,matches_lyrics,704ba1460b.wav,42254d017a.wav,A,42254d017a.wav,704ba1460b.wav,the middle section should sing the NEW words shown on screen,True
+3,38,3a1c7c8895,longer_section,69b88483ec.wav,5f72a0340c.wav,A,5f72a0340c.wav,69b88483ec.wav,,False
+3,39,21e9766e03,longer_section,912031d669.wav,b7b0f17126.wav,A,b7b0f17126.wav,912031d669.wav,the middle section should be 4 bars SHORTER,False
+3,40,341a825d25,matches_lyrics,e43888ac96.wav,66feabaa3e.wav,B,e43888ac96.wav,66feabaa3e.wav,the middle section should sing the NEW words shown on screen,True
+3,41,d116b47491,longer_section,e476d59488.wav,248ef967b2.wav,A,248ef967b2.wav,e476d59488.wav,the middle section should be 4 bars LONGER,False
+3,42,342be3ce88,higher_key,bea815b484.wav,1c10c988b1.wav,A,1c10c988b1.wav,bea815b484.wav,,False
+3,43,9b95dd4482,higher_key,c21441cca6.wav,a8d02aa3bc.wav,A,a8d02aa3bc.wav,c21441cca6.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,44,00b430fbc5,higher_key,62462d4225.wav,d73bb10c33.wav,B,62462d4225.wav,d73bb10c33.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,45,32de453755,higher_key,29b038d0d5.wav,881811663d.wav,A,881811663d.wav,29b038d0d5.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,46,0ed0914c9a,higher_key,8e462b16a3.wav,e452164587.wav,A,e452164587.wav,8e462b16a3.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,47,2fb2d21f9f,higher_key,a16fd97c5e.wav,b1be91906a.wav,B,a16fd97c5e.wav,b1be91906a.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,48,0c87905e06,higher_key,9d7fa79bc5.wav,89c6ecab81.wav,B,9d7fa79bc5.wav,89c6ecab81.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,49,6cd3bf1669,longer_section,c9e1df798d.wav,40aed9aa77.wav,B,c9e1df798d.wav,40aed9aa77.wav,the middle section should be 4 bars SHORTER,False
+3,50,4479e666dd,longer_section,54c59f1b32.wav,01ec9bafdd.wav,A,01ec9bafdd.wav,54c59f1b32.wav,the middle section should be 4 bars LONGER,False
+3,51,a5ab1db8ee,higher_key,777d9aa84e.wav,6e1c5da91e.wav,A,6e1c5da91e.wav,777d9aa84e.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,52,146147c231,longer_section,648d9d4b76.wav,cf9554d667.wav,B,648d9d4b76.wav,cf9554d667.wav,the middle section should be 4 bars LONGER,False
+3,53,acc04d688c,matches_lyrics,cc56aaae1d.wav,ae8858dc03.wav,B,cc56aaae1d.wav,ae8858dc03.wav,the middle section should sing the NEW words shown on screen,True
+3,54,de7cf8fc82,higher_key,27cf2d76e0.wav,0ad44e8daf.wav,B,27cf2d76e0.wav,0ad44e8daf.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,55,e980b70b48,longer_section,79061e51c2.wav,4120f05c38.wav,A,4120f05c38.wav,79061e51c2.wav,the middle section should be 4 bars SHORTER,False
+3,56,b3b83a185d,higher_key,09ddddbf6f.wav,a04b661cf6.wav,A,a04b661cf6.wav,09ddddbf6f.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,57,6a773a9990,longer_section,ab36abc0e6.wav,f22f6f8368.wav,B,ab36abc0e6.wav,f22f6f8368.wav,the middle section should be 4 bars SHORTER,False
+3,58,3ef0a39f0a,higher_key,b7392ead5a.wav,d87790dbad.wav,A,d87790dbad.wav,b7392ead5a.wav,the song should be transposed DOWN by 3 semitones (a minor third),False
+3,59,26a83887fd,longer_section,77fbb9421f.wav,9ec3e92b18.wav,B,77fbb9421f.wav,9ec3e92b18.wav,the middle section should be 4 bars SHORTER,False
+3,60,09f761724a,higher_key,a35515984b.wav,b71c7b2d35.wav,B,a35515984b.wav,b71c7b2d35.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,61,f227283374,matches_lyrics,28524dd2cf.wav,c4351edb73.wav,B,28524dd2cf.wav,c4351edb73.wav,the middle section should sing the NEW words shown on screen,True
+3,62,a7de748e77,longer_section,219f613d6d.wav,eb29ff92bc.wav,B,219f613d6d.wav,eb29ff92bc.wav,the middle section should be 4 bars LONGER,False
+3,63,e026cd28a0,longer_section,9564322c6d.wav,33f6cf6afc.wav,B,9564322c6d.wav,33f6cf6afc.wav,,False
+3,64,668117805e,higher_key,6719a2cfd7.wav,e2a9eee008.wav,A,e2a9eee008.wav,6719a2cfd7.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False
+3,65,be397f82b3,longer_section,5a02a59be0.wav,8fdeeb391e.wav,B,5a02a59be0.wav,8fdeeb391e.wav,the middle section should be 4 bars LONGER,False
+3,66,1657a00435,higher_key,60eb41131e.wav,ab808b9b49.wav,A,ab808b9b49.wav,60eb41131e.wav,the song should be transposed UP by 5 semitones (a perfect fourth),False

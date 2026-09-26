@@ -1,0 +1,76 @@
+job=40618335 host=n3197 start=2026-09-25T15:30:24-07:00 commit=06027f571e15eee20259ba4b6f9fef45939b2795 systems=qwen_e3b:bars_p4,qwen_e3b:ood_long20,qwen_e3b:lyrics_all
+qwen_e3b:bars_p4: 213 songs to query (11 already done)
+  qwen_e3b:bars_p4 1/213 5s
+  qwen_e3b:bars_p4 26/213 7s
+  qwen_e3b:bars_p4 51/213 13s
+  qwen_e3b:bars_p4 76/213 18s
+  qwen_e3b:bars_p4 101/213 21s
+  qwen_e3b:bars_p4 126/213 26s
+  qwen_e3b:bars_p4 151/213 31s
+  qwen_e3b:bars_p4 176/213 36s
+  qwen_e3b:bars_p4 201/213 40s
+qwen_e3b:ood_long20: 221 songs to query (3 already done)
+  qwen_e3b:ood_long20 1/221 5s
+  qwen_e3b:ood_long20 26/221 6s
+  qwen_e3b:ood_long20 51/221 12s
+  qwen_e3b:ood_long20 76/221 17s
+  qwen_e3b:ood_long20 101/221 22s
+  qwen_e3b:ood_long20 126/221 26s
+  qwen_e3b:ood_long20 151/221 29s
+  qwen_e3b:ood_long20 176/221 35s
+  qwen_e3b:ood_long20 201/221 39s
+qwen_e3b:lyrics_all: 213 songs to query (12 already done)
+  qwen_e3b:lyrics_all 1/213 5s
+  qwen_e3b:lyrics_all 26/213 6s
+  qwen_e3b:lyrics_all 51/213 12s
+  qwen_e3b:lyrics_all 76/213 17s
+  qwen_e3b:lyrics_all 101/213 22s
+  qwen_e3b:lyrics_all 126/213 27s
+  qwen_e3b:lyrics_all 151/213 29s
+  qwen_e3b:lyrics_all 176/213 34s
+  qwen_e3b:lyrics_all 201/213 39s
+QUERY_DONE
+{
+ "n_train": 10243,
+ "thresholds_ref_p99": {
+  "interval": 0.24736598130390614,
+  "contour": 0.331240408614355,
+  "rhythm": 0.4858172612388358,
+  "motif": 0.26460630016989917,
+  "chord": 0.6779912018810361,
+  "abc": 0.23543682992652687,
+  "plan": 0.6569756500359897,
+  "lyrics": 0.17077212507217474
+ },
+ "ref_interval_run_max": 33.0,
+ "ref_interval_run_p99": 14.279999999999973,
+ "ref_interval_run_nz_p99": 16.279999999999973,
+ "ref_interval_run_nz_max": 30.0,
+ "shortlist_validation": [
+  {
+   "rep": "interval",
+   "n": 20,
+   "exact_nn_found": 2,
+   "max_gap": 0.16772151898734178,
+   "mean_gap": 0.028430191396350456
+  },
+  {
+   "rep": "rhythm",
+   "n": 20,
+   "exact_nn_found": 7,
+   "max_gap": 0.10852134999067686,
+   "mean_gap": 0.030429257217587234
+  },
+  {
+   "rep": "chord",
+   "n": 20,
+   "exact_nn_found": 6,
+   "max_gap": 0.17619047619047618,
+   "mean_gap": 0.033164772860665784
+  }
+ ],
+ "n_train_distinct_bars3": 381992,
+ "source": "job 40604645 build-index log"
+}
+REPORT_DONE
+end=2026-09-25T15:33:31-07:00 PF_MEM_OK

@@ -1,0 +1,36 @@
+job=40604418 array=40604418_2 host=g3101 partition=gpu-l40s gpu=NVIDIA L40S start=2026-09-25T11:30:49-07:00 commit=f8bcb96a55274bba940fd66b6aa934655671b624 model=qwen_e3b suites=bon replay conditions=all songs=all shard=2/3
+model=qwen_e3b suite=bon tasks=900 skipped=0 shard=2/3 batches=19 pending=292
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   5%|▍         | 16/321 [00:00<00:05, 56.33it/s]Loading weights:  16%|█▌        | 50/321 [00:00<00:01, 135.80it/s]Loading weights:  21%|██        | 68/321 [00:00<00:03, 72.05it/s] Loading weights:  25%|██▍       | 80/321 [00:01<00:03, 72.11it/s]Loading weights:  29%|██▉       | 93/321 [00:01<00:02, 76.39it/s]Loading weights:  32%|███▏      | 103/321 [00:01<00:03, 70.12it/s]Loading weights:  35%|███▍      | 112/321 [00:01<00:03, 69.19it/s]Loading weights:  48%|████▊     | 153/321 [00:01<00:01, 134.85it/s]Loading weights:  89%|████████▉ | 286/321 [00:01<00:00, 373.74it/s]Loading weights: 100%|██████████| 321/321 [00:01<00:00, 168.19it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/19] n=16 48.56s eos=16 parse=16 done=16/292 elapsed=49s
+[2/19] n=16 47.33s eos=16 parse=16 done=32/292 elapsed=97s
+[3/19] n=16 50.26s eos=16 parse=16 done=48/292 elapsed=148s
+[4/19] n=16 62.97s eos=16 parse=16 done=64/292 elapsed=212s
+[5/19] n=16 62.01s eos=16 parse=16 done=80/292 elapsed=274s
+[6/19] n=16 65.77s eos=16 parse=16 done=96/292 elapsed=341s
+[7/19] n=16 60.08s eos=16 parse=16 done=112/292 elapsed=401s
+[8/19] n=16 87.2s eos=16 parse=16 done=128/292 elapsed=490s
+[9/19] n=16 67.47s eos=16 parse=16 done=144/292 elapsed=558s
+[10/19] n=16 73.78s eos=16 parse=16 done=160/292 elapsed=632s
+[11/19] n=16 83.22s eos=16 parse=16 done=176/292 elapsed=716s
+[12/19] n=16 75.24s eos=16 parse=16 done=192/292 elapsed=793s
+[13/19] n=16 76.05s eos=16 parse=16 done=208/292 elapsed=870s
+[14/19] n=16 76.47s eos=16 parse=16 done=224/292 elapsed=947s
+[15/19] n=16 248.05s eos=14 parse=16 done=240/292 elapsed=1197s
+[16/19] n=16 248.27s eos=15 parse=16 done=256/292 elapsed=1446s
+[17/19] n=16 96.66s eos=16 parse=16 done=272/292 elapsed=1544s
+[18/19] n=16 94.21s eos=16 parse=16 done=288/292 elapsed=1640s
+[19/19] n=4 176.46s eos=3 parse=4 done=292/292 elapsed=1817s
+GENERATION_DONE
+model=qwen_e3b suite=replay tasks=225 skipped=0 shard=2/3 batches=5 pending=65
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   5%|▌         | 17/321 [00:00<00:02, 141.12it/s]Loading weights:  10%|▉         | 32/321 [00:00<00:04, 62.07it/s] Loading weights:  13%|█▎        | 41/321 [00:00<00:04, 63.98it/s]Loading weights:  15%|█▌        | 49/321 [00:00<00:04, 57.09it/s]Loading weights:  18%|█▊        | 57/321 [00:00<00:04, 62.04it/s]Loading weights:  20%|█▉        | 64/321 [00:01<00:05, 48.46it/s]Loading weights:  24%|██▎       | 76/321 [00:01<00:03, 62.31it/s]Loading weights:  46%|████▋     | 149/321 [00:01<00:00, 200.47it/s]Loading weights:  62%|██████▏   | 200/321 [00:01<00:00, 226.77it/s]Loading weights:  79%|███████▊  | 252/321 [00:01<00:00, 282.75it/s]Loading weights:  88%|████████▊ | 284/321 [00:01<00:00, 245.61it/s]Loading weights:  97%|█████████▋| 311/321 [00:01<00:00, 247.34it/s]Loading weights: 100%|██████████| 321/321 [00:01<00:00, 162.43it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/5] n=16 86.47s eos=16 parse=16 done=16/65 elapsed=88s
+[2/5] n=16 77.87s eos=16 parse=16 done=32/65 elapsed=167s
+[3/5] n=16 80.22s eos=16 parse=16 done=48/65 elapsed=248s
+[4/5] n=16 60.43s eos=16 parse=16 done=64/65 elapsed=308s
+[5/5] n=1 14.27s eos=1 parse=1 done=65/65 elapsed=323s
+GENERATION_DONE
+end=2026-09-25T12:10:13-07:00 PF_GEN_OK

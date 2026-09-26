@@ -1,0 +1,3 @@
+job=40605112 array=40605089_1 host=g3101 start=2026-09-25T12:00:27-07:00 midi_llm_commit=bea55974ebdadced9078bddbdd52f855ca96a68c dirty_tracked= ckpt=runs/original-midi-llm-onestage-multitask-v1-v4/full/final flags=--forbid-no-lyric --min-chord-sec 0.25 --max-notes-per-syllable 4 --require-section-syllables --max-wordless-notes-per-bar 1.5 --max-chords-per-bar 3.0
+/var/spool/slurmd/job40605112/slurm_script: line 55: /dev/fd/63: No such file or directory
+end=2026-09-25T12:00:28-07:00 PF_MIDILLM_OK

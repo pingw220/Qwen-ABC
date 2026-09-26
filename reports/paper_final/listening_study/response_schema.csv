@@ -1,0 +1,9 @@
+column,type,description
+participant_id,str,pseudonymous id
+list_id,int,which lists/list_<k>.csv
+trial,int,trial number within the list
+item_id,str,from the list
+question_id,str,"one of: longer_section, higher_key, matches_lyrics, plausibility_A, plausibility_B, edit_happened, unrelated_consistent"
+response,str,A|B|none for 2AFC; yes|partly|no for edit_happened; 1-5 for Likert
+rt_ms,int,response time
+timestamp,str,ISO-8601

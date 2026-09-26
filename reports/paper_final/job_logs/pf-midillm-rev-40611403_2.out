@@ -1,0 +1,10 @@
+job=40614220 array=40611403_2 host=g3101 start=2026-09-25T14:37:58-07:00 midi_llm_commit=bea55974ebdadced9078bddbdd52f855ca96a68c dirty_tracked= ckpt=runs/original-midi-llm-onestage-multitask-v1-v4/full/final flags=--forbid-no-lyric --min-chord-sec 0.25 --max-notes-per-syllable 4 --require-section-syllables --max-wordless-notes-per-bar 1.5 --max-chords-per-bar 3.0
+orig 1001 7iUYsnszotTdqXyh8tzQlZ exit=0 seconds=146 retried=
+orig 1003 7DWvcbGGWWtk0edvck09X3 exit=0 seconds=47 retried=
+orig 1002 75eCpTAhv6j4enqG1OMBOg exit=2 seconds=39 retried=
+orig 1001 6ousLSFH3faAPCokCk2gCm exit=0 seconds=52 retried=
+orig 1003 6coZcwGP3Cmhyqzvp6sEJS exit=0 seconds=50 retried=
+orig 1001 6WGLxfoN1BIjmIJYcb2Wwn exit=0 seconds=58 retried=
+orig 1002 6I3A7q18EJgbdZf2Zx1wxm exit=0 seconds=75 retried=yes
+orig 1003 61g5RPLFCdbnVwAQ363gyP exit=0 seconds=85 retried=yes
+end=2026-09-25T14:47:16-07:00 PF_MIDILLM_OK

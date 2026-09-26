@@ -1,0 +1,95 @@
+job=40604983 array=40604442_1 host=g3136 partition=gpu-l40s gpu=NVIDIA L40S start=2026-09-25T11:53:09-07:00 commit=f8bcb96a55274bba940fd66b6aa934655671b624 model=qwen_e3b suites=interventions ood conditions=all songs=all shard=1/6
+model=qwen_e3b suite=interventions tasks=6286 skipped=7 shard=1/6 batches=66 pending=1044
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   6%|▌         | 18/321 [00:00<00:01, 153.46it/s]Loading weights:  11%|█         | 34/321 [00:00<00:06, 44.98it/s] Loading weights:  13%|█▎        | 43/321 [00:01<00:07, 37.44it/s]Loading weights:  17%|█▋        | 55/321 [00:01<00:07, 37.92it/s]Loading weights:  31%|███       | 98/321 [00:01<00:02, 90.00it/s]Loading weights:  41%|████      | 132/321 [00:01<00:01, 118.42it/s]Loading weights:  46%|████▋     | 149/321 [00:01<00:01, 119.84it/s]Loading weights:  71%|███████   | 228/321 [00:01<00:00, 239.48it/s]Loading weights:  85%|████████▌ | 274/321 [00:02<00:00, 237.26it/s]Loading weights:  95%|█████████▍| 304/321 [00:02<00:00, 234.80it/s]Loading weights: 100%|██████████| 321/321 [00:02<00:00, 146.50it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/66] n=16 38.04s eos=16 parse=16 done=16/1044 elapsed=39s
+[2/66] n=16 43.52s eos=16 parse=16 done=32/1044 elapsed=82s
+[3/66] n=16 39.15s eos=16 parse=16 done=48/1044 elapsed=122s
+[4/66] n=16 40.69s eos=16 parse=16 done=64/1044 elapsed=163s
+[5/66] n=16 51.39s eos=16 parse=16 done=80/1044 elapsed=215s
+[6/66] n=16 46.38s eos=16 parse=16 done=96/1044 elapsed=262s
+[7/66] n=16 49.43s eos=16 parse=16 done=112/1044 elapsed=311s
+[8/66] n=16 56.52s eos=16 parse=16 done=128/1044 elapsed=368s
+[9/66] n=16 60.74s eos=16 parse=16 done=144/1044 elapsed=430s
+[10/66] n=16 56.13s eos=16 parse=16 done=160/1044 elapsed=487s
+[11/66] n=16 52.98s eos=16 parse=16 done=176/1044 elapsed=540s
+[12/66] n=16 58.47s eos=16 parse=16 done=192/1044 elapsed=599s
+[13/66] n=16 59.07s eos=16 parse=16 done=208/1044 elapsed=659s
+[14/66] n=16 57.32s eos=16 parse=16 done=224/1044 elapsed=717s
+[15/66] n=16 50.83s eos=16 parse=16 done=240/1044 elapsed=768s
+[16/66] n=16 58.28s eos=16 parse=16 done=256/1044 elapsed=827s
+[17/66] n=16 60.11s eos=16 parse=16 done=272/1044 elapsed=888s
+[18/66] n=16 62.77s eos=16 parse=16 done=288/1044 elapsed=951s
+[19/66] n=16 54.45s eos=16 parse=16 done=304/1044 elapsed=1006s
+[20/66] n=16 81.23s eos=16 parse=16 done=320/1044 elapsed=1088s
+[21/66] n=16 78.36s eos=16 parse=16 done=336/1044 elapsed=1168s
+[22/66] n=16 63.79s eos=16 parse=16 done=352/1044 elapsed=1232s
+[23/66] n=16 63.7s eos=16 parse=16 done=368/1044 elapsed=1297s
+[24/66] n=16 66.41s eos=16 parse=16 done=384/1044 elapsed=1364s
+[25/66] n=16 68.36s eos=16 parse=16 done=400/1044 elapsed=1433s
+[26/66] n=16 58.6s eos=16 parse=16 done=416/1044 elapsed=1492s
+[27/66] n=16 65.24s eos=16 parse=16 done=432/1044 elapsed=1559s
+[28/66] n=16 79.06s eos=16 parse=16 done=448/1044 elapsed=1638s
+[29/66] n=16 72.24s eos=16 parse=16 done=464/1044 elapsed=1711s
+[30/66] n=16 93.33s eos=16 parse=16 done=480/1044 elapsed=1806s
+[31/66] n=16 67.01s eos=16 parse=16 done=496/1044 elapsed=1874s
+[32/66] n=16 67.89s eos=16 parse=16 done=512/1044 elapsed=1942s
+[33/66] n=16 63.15s eos=16 parse=16 done=528/1044 elapsed=2006s
+[34/66] n=16 68.91s eos=16 parse=16 done=544/1044 elapsed=2076s
+[35/66] n=16 74.25s eos=16 parse=16 done=560/1044 elapsed=2151s
+[36/66] n=16 66.76s eos=16 parse=16 done=576/1044 elapsed=2219s
+[37/66] n=16 50.14s eos=16 parse=16 done=592/1044 elapsed=2269s
+[38/66] n=16 69.17s eos=16 parse=16 done=608/1044 elapsed=2339s
+[39/66] n=16 99.02s eos=16 parse=16 done=624/1044 elapsed=2439s
+[40/66] n=16 79.36s eos=16 parse=16 done=640/1044 elapsed=2519s
+[41/66] n=16 83.72s eos=16 parse=16 done=656/1044 elapsed=2604s
+[42/66] n=16 81.64s eos=16 parse=16 done=672/1044 elapsed=2687s
+[43/66] n=16 70.53s eos=16 parse=16 done=688/1044 elapsed=2758s
+[44/66] n=16 88.12s eos=16 parse=16 done=704/1044 elapsed=2847s
+[45/66] n=16 75.22s eos=16 parse=16 done=720/1044 elapsed=2924s
+[46/66] n=16 73.67s eos=16 parse=16 done=736/1044 elapsed=2998s
+[47/66] n=16 75.36s eos=16 parse=16 done=752/1044 elapsed=3075s
+[48/66] n=16 87.65s eos=16 parse=16 done=768/1044 elapsed=3163s
+[49/66] n=14 75.69s eos=14 parse=14 done=782/1044 elapsed=3240s
+[50/66] n=6 69.26s eos=6 parse=6 done=788/1044 elapsed=3310s
+[51/66] n=16 74.66s eos=16 parse=16 done=804/1044 elapsed=3385s
+[52/66] n=16 80.96s eos=16 parse=16 done=820/1044 elapsed=3467s
+[53/66] n=16 249.65s eos=15 parse=16 done=836/1044 elapsed=3718s
+[54/66] n=16 94.04s eos=16 parse=16 done=852/1044 elapsed=3814s
+[55/66] n=16 81.94s eos=16 parse=16 done=868/1044 elapsed=3897s
+[56/66] n=16 88.05s eos=16 parse=16 done=884/1044 elapsed=3986s
+[57/66] n=16 76.35s eos=16 parse=16 done=900/1044 elapsed=4064s
+[58/66] n=16 71.36s eos=16 parse=16 done=916/1044 elapsed=4136s
+[59/66] n=16 72.0s eos=16 parse=16 done=932/1044 elapsed=4209s
+[60/66] n=16 113.15s eos=16 parse=16 done=948/1044 elapsed=4323s
+[61/66] n=16 80.08s eos=16 parse=16 done=964/1044 elapsed=4405s
+[62/66] n=16 93.91s eos=16 parse=16 done=980/1044 elapsed=4500s
+[63/66] n=16 92.37s eos=16 parse=16 done=996/1044 elapsed=4594s
+[64/66] n=16 248.47s eos=15 parse=16 done=1012/1044 elapsed=4844s
+[65/66] n=16 109.06s eos=16 parse=16 done=1028/1044 elapsed=4954s
+[66/66] n=16 91.35s eos=16 parse=16 done=1044/1044 elapsed=5048s
+GENERATION_DONE
+model=qwen_e3b suite=ood tasks=1555 skipped=20 shard=1/6 batches=17 pending=252
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   3%|▎         | 10/321 [00:00<00:05, 55.64it/s]Loading weights:   5%|▍         | 16/321 [00:00<00:10, 29.82it/s]Loading weights:   6%|▌         | 20/321 [00:00<00:10, 28.99it/s]Loading weights:   7%|▋         | 24/321 [00:00<00:13, 22.17it/s]Loading weights:   9%|▉         | 29/321 [00:01<00:12, 22.55it/s]Loading weights:  13%|█▎        | 41/321 [00:01<00:08, 32.89it/s]Loading weights:  14%|█▍        | 45/321 [00:01<00:13, 20.89it/s]Loading weights:  25%|██▍       | 79/321 [00:01<00:04, 57.03it/s]Loading weights:  46%|████▋     | 149/321 [00:02<00:01, 128.96it/s]Loading weights:  71%|███████   | 227/321 [00:02<00:00, 160.71it/s]Loading weights:  81%|████████  | 260/321 [00:02<00:00, 173.97it/s]Loading weights: 100%|██████████| 321/321 [00:02<00:00, 117.43it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/17] n=16 49.5s eos=16 parse=16 done=16/252 elapsed=50s
+[2/17] n=16 54.95s eos=16 parse=16 done=32/252 elapsed=105s
+[3/17] n=16 59.41s eos=16 parse=16 done=48/252 elapsed=165s
+[4/17] n=16 66.47s eos=16 parse=16 done=64/252 elapsed=233s
+[5/17] n=16 81.12s eos=16 parse=16 done=80/252 elapsed=314s
+[6/17] n=16 92.77s eos=16 parse=16 done=96/252 elapsed=408s
+[7/17] n=16 75.16s eos=16 parse=16 done=112/252 elapsed=484s
+[8/17] n=16 82.29s eos=16 parse=16 done=128/252 elapsed=567s
+[9/17] n=16 79.46s eos=16 parse=16 done=144/252 elapsed=648s
+[10/17] n=11 77.82s eos=11 parse=11 done=155/252 elapsed=726s
+[11/17] n=16 88.14s eos=16 parse=16 done=171/252 elapsed=815s
+[12/17] n=16 104.14s eos=16 parse=16 done=187/252 elapsed=920s
+[13/17] n=16 118.68s eos=16 parse=16 done=203/252 elapsed=1040s
+[14/17] n=16 107.24s eos=16 parse=16 done=219/252 elapsed=1149s
+[15/17] n=16 110.78s eos=16 parse=16 done=235/252 elapsed=1261s
+[16/17] n=15 126.18s eos=15 parse=15 done=250/252 elapsed=1390s
+[17/17] n=2 127.34s eos=2 parse=2 done=252/252 elapsed=1518s
+GENERATION_DONE
+end=2026-09-25T13:44:21-07:00 PF_GEN_OK

@@ -1,0 +1,6 @@
+{
+ "spearman_song_length_vs_cram": 0.15061346717301918,
+ "spearman_song_length_vs_recall": -0.2516618062450021,
+ "spearman_reference_cram_vs_generated_cram": 0.17201741920372246,
+ "n_songs": 225
+}

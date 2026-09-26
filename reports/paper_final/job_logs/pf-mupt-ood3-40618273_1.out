@@ -1,0 +1,13 @@
+job=40618275 array=40618273_1 host=g3111 partition=ckpt-all gpu=NVIDIA L40S start=2026-09-25T15:28:16-07:00 commit=06027f571e15eee20259ba4b6f9fef45939b2795 model=mupt suites=ood conditions=ood_chorus_first,ood_long20,ood_sections_p3,ood_tempo songs=all shard=1/4
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/paper_eval/generation.py", line 152, in <module>
+    main()
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/paper_eval/generation.py", line 107, in main
+    jdump(skipped, man_dir / f"skipped_{tag}.json")
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/paper_eval/common.py", line 65, in jdump
+    tmp.replace(p)
+  File "/usr/lib64/python3.12/pathlib.py", line 1376, in replace
+    os.replace(self, target)
+FileNotFoundError: [Errno 2] No such file or directory: '/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/skipped_ood_ood_chorus_first+ood_long20+ood_sections_p3+ood_tempo.json.tmp' -> '/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/skipped_ood_ood_chorus_first+ood_long20+ood_sections_p3+ood_tempo.json'

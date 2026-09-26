@@ -1,0 +1,36 @@
+job=40604425 array=40604418_1 host=g3120 partition=gpu-l40s gpu=NVIDIA L40S start=2026-09-25T11:30:50-07:00 commit=f8bcb96a55274bba940fd66b6aa934655671b624 model=qwen_e3b suites=bon replay conditions=all songs=all shard=1/3
+model=qwen_e3b suite=bon tasks=900 skipped=0 shard=1/3 batches=19 pending=300
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/321 [00:00<00:07, 44.04it/s]Loading weights:   3%|▎         | 11/321 [00:00<00:19, 16.27it/s]Loading weights:   8%|▊         | 26/321 [00:00<00:08, 33.44it/s]Loading weights:  16%|█▌        | 51/321 [00:00<00:03, 72.44it/s]Loading weights:  20%|█▉        | 64/321 [00:01<00:03, 64.57it/s]Loading weights:  29%|██▊       | 92/321 [00:01<00:02, 82.94it/s]Loading weights:  42%|████▏     | 134/321 [00:01<00:01, 134.65it/s]Loading weights:  47%|████▋     | 152/321 [00:01<00:01, 142.82it/s]Loading weights:  58%|█████▊    | 187/321 [00:01<00:00, 166.90it/s]Loading weights:  74%|███████▍  | 238/321 [00:01<00:00, 228.20it/s]Loading weights:  93%|█████████▎| 297/321 [00:02<00:00, 305.22it/s]Loading weights: 100%|██████████| 321/321 [00:02<00:00, 142.66it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/19] n=16 85.74s eos=16 parse=16 done=16/300 elapsed=86s
+[2/19] n=16 87.0s eos=16 parse=16 done=32/300 elapsed=174s
+[3/19] n=16 90.97s eos=16 parse=16 done=48/300 elapsed=266s
+[4/19] n=16 350.57s eos=15 parse=16 done=64/300 elapsed=618s
+[5/19] n=16 96.02s eos=16 parse=16 done=80/300 elapsed=715s
+[6/19] n=16 142.1s eos=16 parse=16 done=96/300 elapsed=858s
+[7/19] n=16 109.81s eos=16 parse=16 done=112/300 elapsed=969s
+[8/19] n=16 114.01s eos=16 parse=16 done=128/300 elapsed=1085s
+[9/19] n=16 142.15s eos=16 parse=16 done=144/300 elapsed=1229s
+[10/19] n=16 112.96s eos=16 parse=16 done=160/300 elapsed=1343s
+[11/19] n=16 112.48s eos=16 parse=16 done=176/300 elapsed=1457s
+[12/19] n=16 121.76s eos=16 parse=16 done=192/300 elapsed=1580s
+[13/19] n=16 131.86s eos=16 parse=16 done=208/300 elapsed=1714s
+[14/19] n=16 170.76s eos=16 parse=16 done=224/300 elapsed=1886s
+[15/19] n=16 120.77s eos=16 parse=16 done=240/300 elapsed=2009s
+[16/19] n=16 128.84s eos=16 parse=16 done=256/300 elapsed=2139s
+[17/19] n=16 127.93s eos=16 parse=16 done=272/300 elapsed=2269s
+[18/19] n=12 139.98s eos=12 parse=12 done=284/300 elapsed=2411s
+[19/19] n=16 165.9s eos=16 parse=16 done=300/300 elapsed=2579s
+GENERATION_DONE
+model=qwen_e3b suite=replay tasks=225 skipped=0 shard=1/3 batches=5 pending=78
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   1%|          | 3/321 [00:00<00:12, 26.21it/s]Loading weights:   2%|▏         | 6/321 [00:01<01:18,  4.01it/s]Loading weights:  10%|▉         | 32/321 [00:01<00:09, 29.87it/s]Loading weights:  14%|█▍        | 45/321 [00:02<00:15, 18.19it/s]Loading weights:  17%|█▋        | 53/321 [00:02<00:11, 22.42it/s]Loading weights:  25%|██▌       | 81/321 [00:03<00:06, 36.84it/s]Loading weights:  31%|███       | 98/321 [00:03<00:06, 35.44it/s]Loading weights:  37%|███▋      | 119/321 [00:04<00:05, 35.78it/s]Loading weights:  44%|████▎     | 140/321 [00:04<00:05, 35.17it/s]Loading weights:  45%|████▌     | 145/321 [00:05<00:05, 31.31it/s]Loading weights:  46%|████▋     | 149/321 [00:05<00:06, 27.43it/s]Loading weights:  48%|████▊     | 154/321 [00:05<00:06, 24.49it/s]Loading weights:  53%|█████▎    | 169/321 [00:05<00:04, 33.80it/s]Loading weights:  63%|██████▎   | 202/321 [00:06<00:01, 64.69it/s]Loading weights:  69%|██████▊   | 220/321 [00:06<00:01, 62.84it/s]Loading weights:  83%|████████▎ | 265/321 [00:06<00:00, 101.44it/s]Loading weights:  87%|████████▋ | 279/321 [00:08<00:01, 34.76it/s] Loading weights:  92%|█████████▏| 295/321 [00:08<00:00, 42.10it/s]Loading weights:  96%|█████████▌| 308/321 [00:08<00:00, 34.54it/s]Loading weights:  99%|█████████▉| 317/321 [00:08<00:00, 37.23it/s]Loading weights: 100%|██████████| 321/321 [00:08<00:00, 35.77it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/5] n=15 167.6s eos=15 parse=15 done=15/78 elapsed=170s
+[2/5] n=15 136.96s eos=15 parse=15 done=30/78 elapsed=309s
+[3/5] n=16 140.5s eos=16 parse=16 done=46/78 elapsed=451s
+[4/5] n=16 123.94s eos=16 parse=16 done=62/78 elapsed=577s
+[5/5] n=16 87.06s eos=16 parse=16 done=78/78 elapsed=665s
+GENERATION_DONE
+end=2026-09-25T12:30:19-07:00 PF_GEN_OK

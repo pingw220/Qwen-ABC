@@ -1,0 +1,4 @@
+split,songs,sections/song median [5–95%],bars/song,lyric syllables/song,tempo (BPM),minor-key share,ABC-v2 completion tokens
+train,10243,10 [7–14],86 [59–138],221 [118–400],111 [71–167],0.18,2440 [1648–3515]
+validation,273,10 [7–14],90 [56–132],256 [121–432],111 [71–150],0.18,2627 [1566–3500]
+test,225,11 [7–14],93 [60–137],250 [122–399],115 [71–167],0.14,2608 [1686–3630]

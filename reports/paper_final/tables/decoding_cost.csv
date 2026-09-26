@@ -1,0 +1,8 @@
+system,samples/song,GPU-s per sample,"GPU-h per 225 songs, single","GPU-h per 225 songs, @4"
+E3b (legacy x4),4,4.7,0.29,1.17
+E3b (paired-seed x4),4,6.5,0.40,1.61
+MuPT (legacy x4),4,21.4,1.34,5.35
+MuPT (paired-seed x4),4,19.0,1.19,4.76
+E1-long (paired-seed x4),4,5.1,0.32,1.28
+E1 (paired-seed x4),4,5.1,0.32,1.28
+E0 (paired-seed x4),4,3.7,0.23,0.93

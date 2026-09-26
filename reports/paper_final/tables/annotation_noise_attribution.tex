@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+system & metric & error rate, all & error rate, clean & share of error absent on clean songs [95\% CI] \\
+\midrule
+Qwen-ABC E3b (single) & exact structure & 0.018 & 0.000 & 1.00 [1.00, 1.00] \\
+Qwen-ABC E3b (single) & strict validity & 0.223 & 0.132 & 0.41 [0.05, 0.70] \\
+Qwen-ABC E3b (single) & lyric recall & 0.030 & 0.023 & 0.24 [-0.04, 0.46] \\
+Qwen-ABC E3b (selector@4, legacy) & exact structure & 0.004 & 0.000 & 1.00 [1.00, 1.00] \\
+Qwen-ABC E3b (selector@4, legacy) & strict validity & 0.022 & 0.000 & 1.00 [1.00, 1.00] \\
+Qwen-ABC E3b (selector@4, legacy) & lyric recall & 0.018 & 0.009 & 0.52 [0.20, 0.76] \\
+MuPT (single) & exact structure & 0.659 & 0.596 & 0.10 [-0.08, 0.27] \\
+MuPT (single) & strict validity & 0.797 & 0.735 & 0.08 [-0.05, 0.21] \\
+MuPT (single) & lyric recall & 0.517 & 0.485 & 0.06 [-0.01, 0.14] \\
+MIDI-LLM (single) & exact structure & 0.116 & 0.029 & 0.75 [0.10, 1.00] \\
+MIDI-LLM (single) & strict validity & 0.237 & 0.118 & 0.50 [0.14, 0.77] \\
+MIDI-LLM (single) & lyric recall & 0.266 & 0.168 & 0.37 [0.11, 0.53] \\
+Qwen E1 (single) & exact structure & 0.156 & 0.132 & 0.15 [-0.30, 0.51] \\
+Qwen E1 (single) & strict validity & 0.426 & 0.309 & 0.27 [0.04, 0.50] \\
+Qwen E1 (single) & lyric recall & 0.029 & 0.018 & 0.37 [0.13, 0.56] \\
+Qwen E0 (single) & exact structure & 0.448 & 0.287 & 0.36 [0.15, 0.54] \\
+Qwen E0 (single) & strict validity & 0.391 & 0.272 & 0.30 [0.05, 0.55] \\
+Qwen E0 (single) & lyric recall & 0.025 & 0.017 & 0.33 [-0.23, 0.67] \\
+\bottomrule
+\end{tabular}
+\caption{Share of the full-set error rate that is absent on clean songs (upper-bound estimate of label-noise-attributable error; clean songs are also simpler)}
+\label{tab:annotation_noise_attribution}
+\end{table}

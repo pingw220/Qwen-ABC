@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qwen-abc/paper_final/annotation_record_v1",
+  "title": "One human verification record for one test song's pseudo lead sheet",
+  "type": "object",
+  "required": ["schema_version", "song_id", "annotator_id", "sections"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "song_id": {"type": "string", "description": "test song id (see candidates.csv)"},
+    "annotator_id": {"type": "string"},
+    "updated": {"type": "string", "description": "ISO-8601 time of the last edit"},
+    "complete": {"type": "boolean", "description": "every section has label_correct and bars_correct filled"},
+    "confidence": {"type": ["integer", "null"], "minimum": 1, "maximum": 5, "description": "annotator confidence in this record (5 = certain)"},
+    "key_correct": {"enum": ["yes", "no", null]},
+    "correct_key": {"type": ["string", "null"], "description": "e.g. 'A minor', only if key_correct = no"},
+    "grid_correct": {"enum": ["yes", "half_time", "double_time", "no", null], "description": "tempo / downbeat grid"},
+    "notes": {"type": ["string", "null"]},
+    "sections": {
+      "type": "array",
+      "description": "one entry per pseudo-label section, in order",
+      "items": {
+        "type": "object",
+        "required": ["index", "pseudo_label", "pseudo_bars"],
+        "properties": {
+          "index": {"type": "integer", "minimum": 0},
+          "pseudo_label": {"type": "string"},
+          "pseudo_bars": {"type": "integer", "minimum": 0},
+          "label_correct": {"enum": ["yes", "no", null]},
+          "correct_label": {"enum": ["intro", "verse", "prechorus", "chorus", "bridge", "instrumental", "outro", "other", null]},
+          "bars_correct": {"enum": ["yes", "no", null]},
+          "correct_bars": {"type": ["integer", "null"], "minimum": 0},
+          "boundary_ok": {"enum": ["yes", "no", "unsure", null], "description": "the section START is at the right bar"},
+          "boundary_shift_bars": {"type": ["integer", "null"], "description": "where the start should be, in bars relative to the pseudo start (+ = later)"},
+          "lyric_alignment_errors": {"type": ["integer", "null"], "minimum": 0, "description": "syllables sung on the wrong note, crammed, or placed in the wrong section"},
+          "wrong_lyric_syllables": {"type": ["integer", "null"], "minimum": 0, "description": "syllables whose TEXT is wrong or not sung at all in the recording"},
+          "melody_error": {"enum": ["0", "1", "2", "3", null], "description": "0 none, 1 a few notes, 2 phrase-level (octave/rhythm), 3 section unusable"},
+          "chord_error": {"enum": ["0", "1", "2", "3", null], "description": "same scale for chords"}
+        }
+      }
+    },
+    "corrected_sections": {
+      "type": ["array", "null"],
+      "description": "optional full human section list when sections must be merged, split, added or removed; overrides per-section corrections",
+      "items": {"type": "object", "required": ["label", "bars"],
+                "properties": {"label": {"type": "string"}, "bars": {"type": "integer", "minimum": 1}}}
+    }
+  }
+}

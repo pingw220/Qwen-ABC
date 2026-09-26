@@ -1,0 +1,13 @@
+job=40616355 array=40616342_1 host=g3112 partition=gpu-l40s gpu=NVIDIA L40S start=2026-09-25T15:05:03-07:00 commit=06027f571e15eee20259ba4b6f9fef45939b2795 model=qwen_e1 suites=ood conditions=all songs=all shard=1/4
+model=qwen_e1 suite=ood tasks=1555 skipped=20 shard=1/4 batches=25 pending=83
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/321 [00:00<00:09, 33.13it/s]Loading weights:   3%|▎         | 10/321 [00:00<00:11, 27.51it/s]Loading weights:   5%|▍         | 15/321 [00:00<00:09, 32.13it/s]Loading weights:   6%|▌         | 19/321 [00:00<00:14, 20.81it/s]Loading weights:   7%|▋         | 24/321 [00:00<00:11, 25.02it/s]Loading weights:   8%|▊         | 27/321 [00:01<00:17, 16.78it/s]Loading weights:  23%|██▎       | 74/321 [00:01<00:03, 63.49it/s]Loading weights:  31%|███       | 99/321 [00:01<00:02, 76.84it/s]Loading weights:  43%|████▎     | 139/321 [00:02<00:01, 91.72it/s]Loading weights:  48%|████▊     | 155/321 [00:02<00:01, 100.30it/s]Loading weights:  52%|█████▏    | 168/321 [00:02<00:01, 93.47it/s] Loading weights:  57%|█████▋    | 184/321 [00:02<00:01, 93.48it/s]Loading weights:  81%|████████▏ | 261/321 [00:02<00:00, 206.05it/s]Loading weights:  90%|████████▉ | 288/321 [00:03<00:00, 153.42it/s]Loading weights:  96%|█████████▋| 309/321 [00:03<00:00, 147.53it/s]Loading weights: 100%|██████████| 321/321 [00:03<00:00, 98.13it/s] 
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/6] n=16 118.78s eos=16 parse=16 done=16/83 elapsed=121s
+[2/6] n=16 115.34s eos=16 parse=16 done=32/83 elapsed=238s
+[3/6] n=16 115.95s eos=16 parse=16 done=48/83 elapsed=355s
+[4/6] n=16 136.52s eos=16 parse=16 done=64/83 elapsed=494s
+[5/6] n=16 158.94s eos=16 parse=16 done=80/83 elapsed=655s
+[6/6] n=3 161.92s eos=3 parse=3 done=83/83 elapsed=818s
+GENERATION_DONE
+end=2026-09-25T15:22:26-07:00 PF_GEN_OK

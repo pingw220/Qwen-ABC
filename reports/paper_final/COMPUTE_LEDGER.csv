@@ -1,0 +1,72 @@
+job_id,job_name,model,experiment,partition,gpu_type,gpu_count,start,end,wall_time,est_gpu_hours,state
+40604162,pf-smoke-e3b,qwen_e3b,qwen_e3b smoke gpu-l40s,gpu-l40s,l40s,1,2026-09-25T11:22:36,2026-09-25T11:41:10,00:18:34,0.309,COMPLETED
+40604163,pf-smoke-mupt,mupt,mupt smoke gpu-l40,gpu-l40,l40,1,2026-09-25T11:22:24,2026-09-25T11:48:19,00:25:55,0.432,CANCELLED by 1316827
+40604164,pf-smoke-e0,qwen_e0,qwen_e0 smoke gpu-l40,gpu-l40,l40,1,2026-09-25T11:22:24,2026-09-25T11:30:17,00:07:53,0.131,COMPLETED
+40604293_0,pf-smoke-midillm,midi_llm,midi_llm smoke gpu-l40,gpu-l40,l40,1,2026-09-25T11:26:01,2026-09-25T11:31:55,00:05:54,0.098,CANCELLED by 1316827
+40604418_0,pf-e3b-bon,,--job-name=pf-e3b-bon --array=0-2 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:30:39,2026-09-25T12:03:50,00:33:11,0.553,COMPLETED
+40604418_1,pf-e3b-bon,,--job-name=pf-e3b-bon --array=0-2 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:30:49,2026-09-25T12:30:19,00:59:30,0.992,COMPLETED
+40604418_2,pf-e3b-bon,,--job-name=pf-e3b-bon --array=0-2 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:30:49,2026-09-25T12:10:13,00:39:24,0.657,COMPLETED
+40604419_0,pf-e0-bon,,--job-name=pf-e0-bon --array=0 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:30:49,2026-09-25T12:30:16,00:59:27,0.991,COMPLETED
+40604420_0,pf-e1-bon,,--job-name=pf-e1-bon --array=0 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:30:49,2026-09-25T12:51:51,01:21:02,1.351,COMPLETED
+40604421_0,pf-e1long-bon,,--job-name=pf-e1long-bon --array=0 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:30:49,2026-09-25T12:51:25,01:20:36,1.343,COMPLETED
+40604422_0,pf-mupt-bon,mupt,--job-name=pf-mupt-bon -p gpu-l40 -A gpu-l40-ark --array=0-1 scripts/paper_final/gen.sbatch,gpu-l40,l40,1,2026-09-25T11:30:39,2026-09-25T13:39:34,02:08:55,2.149,COMPLETED
+40604422_1,pf-mupt-bon,mupt,--job-name=pf-mupt-bon -p gpu-l40 -A gpu-l40-ark --array=0-1 scripts/paper_final/gen.sbatch,gpu-l40,l40,1,2026-09-25T11:30:49,2026-09-25T14:06:31,02:35:42,2.595,COMPLETED
+40604433_0,pf-midillm,midi_llm,midi_llm full NSHARDS=5 gpu-l40,gpu-l40,l40,1,2026-09-25T11:32:23,2026-09-25T15:00:02,03:27:39,3.461,COMPLETED
+40604433_1,pf-midillm,midi_llm,midi_llm full NSHARDS=5 gpu-l40,gpu-l40,l40,1,2026-09-25T11:32:23,2026-09-25T14:52:25,03:20:02,3.334,COMPLETED
+40604433_2,pf-midillm,midi_llm,midi_llm full NSHARDS=5 gpu-l40,gpu-l40,l40,1,2026-09-25T11:32:54,2026-09-25T14:28:52,02:55:58,2.933,COMPLETED
+40604433_3,pf-midillm,midi_llm,midi_llm full NSHARDS=5 gpu-l40,gpu-l40,l40,1,2026-09-25T11:48:27,2026-09-25T15:03:32,03:15:05,3.251,COMPLETED
+40604433_4,pf-midillm,midi_llm,midi_llm full NSHARDS=5 gpu-l40,gpu-l40,l40,1,2026-09-25T12:02:13,2026-09-25T15:03:20,03:01:07,3.019,COMPLETED
+40604442_0,pf-e3b-int,,--job-name=pf-e3b-int --array=0-5 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:33:24,2026-09-25T14:36:43,03:03:19,3.055,COMPLETED
+40604442_1,pf-e3b-int,,--job-name=pf-e3b-int --array=0-5 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T11:53:08,2026-09-25T13:44:21,01:51:13,1.854,COMPLETED
+40604442_2,pf-e3b-int,,--job-name=pf-e3b-int --array=0-5 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T12:52:03,2026-09-25T14:44:39,01:52:36,1.877,COMPLETED
+40604442_3,pf-e3b-int,,--job-name=pf-e3b-int --array=0-5 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T12:52:34,2026-09-25T14:36:04,01:43:30,1.725,COMPLETED
+40604442_4,pf-e3b-int,,--job-name=pf-e3b-int --array=0-5 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T12:55:12,2026-09-25T14:37:38,01:42:26,1.707,COMPLETED
+40604442_5,pf-e3b-int,,--job-name=pf-e3b-int --array=0-5 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T12:59:03,2026-09-25T14:46:11,01:47:08,1.786,COMPLETED
+40604443_0,pf-e0-ood,,--job-name=pf-e0-ood --array=0 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T13:04:24,2026-09-25T15:04:49,02:00:25,2.007,CANCELLED by 1316827
+40604444_0,pf-e1-ood,,--job-name=pf-e1-ood --array=0 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T13:13:29,2026-09-25T15:04:49,01:51:20,1.856,CANCELLED by 1316827
+40604445_[0-2],pf-mupt-int,mupt,--job-name=pf-mupt-int -p gpu-l40 -A gpu-l40-ark --array=0-2 scripts/paper_final/gen.sbatch,gpu-l40,none,0,None,2026-09-25T11:58:57,00:00:00,0.0,CANCELLED by 1316827
+40604446_[0],pf-mupt-ood,mupt,--job-name=pf-mupt-ood -p gpu-l40 -A gpu-l40-ark --array=0 scripts/paper_final/gen.sbatch,gpu-l40,none,0,None,2026-09-25T11:58:57,00:00:00,0.0,CANCELLED by 1316827
+40604530,pf-edit-gen,,"cancelled by me (pending, never ran)",gpu-l40s,none,0,None,2026-09-25T11:40:31,00:00:00,0.0,CANCELLED by 1316827
+40604536,pf-edit-gen,,"edit_rerender generation (E3b, 2 songs; replaces 40604530 which was held by the ark L40S group limit) ckpt-all/ckpt-ark l40s requeue",ckpt-all,l40s,1,2026-09-25T11:40:43,2026-09-25T11:45:36,00:04:53,0.081,COMPLETED
+40604589,pf-memorization,,cancelled (AssocGrpCpuLimit on cpu-g2-stf); 40604645 memorization CPU resubmitted ckpt-all,cpu-g2,none,0,None,2026-09-25T11:44:25,00:00:00,0.0,CANCELLED by 1316827
+40604716,pf-edit-render,,"edit_rerender render 4VfHbfbzNPZmX5KI4iAOyT (8 lead sheets, FastSinger+MuseControlLite via scripts/slurm/midi_sag_render.sbatch) ckpt-all/ckpt-ark l40s requeue",ckpt-all,l40s,1,2026-09-25T11:47:51,2026-09-25T12:12:59,00:25:08,0.419,COMPLETED
+40604717,pf-edit-render,,"edit_rerender render 6coZcwGP3Cmhyqzvp6sEJS (8 lead sheets, FastSinger+MuseControlLite via scripts/slurm/midi_sag_render.sbatch) ckpt-all/ckpt-ark l40s requeue",ckpt-all,l40s,1,2026-09-25T11:48:03,2026-09-25T12:47:44,00:59:41,0.995,COMPLETED
+40604781_[0-2],pf-midillm-rev,midi_llm,midi_llm REVERSE=1 NSHARDS=3 gpu-l40s,gpu-l40s,none,0,None,2026-09-25T12:55:38,00:00:00,0.0,CANCELLED by 1316827
+40604827,pf-mem-inspect,,memorization flagged-case inspection ckpt-all,ckpt-all,none,0,2026-09-25T11:49:37,2026-09-25T11:49:56,00:00:19,0.0,COMPLETED
+40604919,pf-listen-render,,"listening-study pilot render (FastSinger+fluidsynth, 32 stimuli) gpu-l40",gpu-l40,l40,1,2026-09-25T14:39:57,2026-09-25T14:55:45,00:15:48,0.263,COMPLETED
+40604924,pf-mem-inspect,,memorization flagged-case inspection (resubmit; 40604827 cancelled: node-local output path) ckpt-all,ckpt-all,none,0,2026-09-25T11:51:43,2026-09-25T11:52:12,00:00:29,0.0,COMPLETED
+40604982,pf-memorization,,memorization v2 (informative runs) validate+query+report ckpt-all,ckpt-all,none,0,2026-09-25T11:53:17,2026-09-25T11:56:17,00:03:00,0.0,COMPLETED
+40605085_0,pf-mupt-int,mupt,--job-name=pf-mupt-int -p gpu-l40 -A gpu-l40-ark --array=0-2 scripts/paper_final/gen.sbatch,gpu-l40,l40,1,2026-09-25T12:02:13,2026-09-25T14:39:43,02:37:30,2.625,COMPLETED
+40605085_1,pf-mupt-int,mupt,--job-name=pf-mupt-int -p gpu-l40 -A gpu-l40-ark --array=0-2 scripts/paper_final/gen.sbatch,gpu-l40,l40,1,2026-09-25T13:39:44,2026-09-25T16:07:48,02:28:04,2.468,COMPLETED
+40605085_2,pf-mupt-int,mupt,--job-name=pf-mupt-int -p gpu-l40 -A gpu-l40-ark --array=0-2 scripts/paper_final/gen.sbatch,gpu-l40,l40,1,2026-09-25T14:06:48,2026-09-25T16:42:07,02:35:19,2.589,COMPLETED
+40605086_3,pf-mupt-int-ck,mupt,--job-name=pf-mupt-int-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=3-5 scripts/paper_final/gen.sbatch,ckpt-all,l40s,1,2026-09-25T13:57:01,2026-09-25T14:27:14,00:30:13,0.504,COMPLETED
+40605086_4,pf-mupt-int-ck,mupt,--job-name=pf-mupt-int-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=3-5 scripts/paper_final/gen.sbatch,ckpt-all,l40s,1,2026-09-25T11:59:29,2026-09-25T14:42:03,02:42:34,2.709,COMPLETED
+40605086_5,pf-mupt-int-ck,mupt,--job-name=pf-mupt-int-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=3-5 scripts/paper_final/gen.sbatch,ckpt-all,l40s,1,2026-09-25T11:59:29,2026-09-25T14:34:21,02:34:52,2.581,COMPLETED
+40605087_0,pf-mupt-ood,mupt,--job-name=pf-mupt-ood -p gpu-l40 -A gpu-l40-ark --array=0 scripts/paper_final/gen.sbatch,gpu-l40,l40,1,2026-09-25T14:28:55,2026-09-25T15:27:59,00:59:04,0.984,CANCELLED by 1316827
+40605088_1,pf-mupt-ood-ck,mupt,--job-name=pf-mupt-ood-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=1 scripts/paper_final/gen.sbatch,ckpt-all,l40s,1,2026-09-25T12:00:07,2026-09-25T14:32:34,02:32:27,2.541,COMPLETED
+40605089_0,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:00:23,2026-09-25T12:00:25,00:00:02,0.001,COMPLETED
+40605089_1,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:00:27,2026-09-25T12:00:30,00:00:03,0.001,COMPLETED
+40605089_2,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:00:27,2026-09-25T12:00:30,00:00:03,0.001,COMPLETED
+40605089_3,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:00:27,2026-09-25T12:00:28,00:00:01,0.0,COMPLETED
+40611402_0,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:56:36,2026-09-25T14:50:03,01:53:27,1.891,COMPLETED
+40611402_1,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:56:36,2026-09-25T14:48:29,01:51:53,1.865,COMPLETED
+40611402_2,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:56:36,2026-09-25T14:46:53,01:50:17,1.838,COMPLETED
+40611402_3,pf-midillm-ck,midi_llm,--job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,ckpt-all,l40s,1,2026-09-25T12:57:10,2026-09-25T15:02:30,02:05:20,2.089,COMPLETED
+40611403_0,pf-midillm-rev,midi_llm,--job-name=pf-midillm-rev -p gpu-l40s -A gpu-l40s-ark --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,gpu-l40s,l40s,1,2026-09-25T14:36:19,2026-09-25T14:51:05,00:14:46,0.246,COMPLETED
+40611403_1,pf-midillm-rev,midi_llm,--job-name=pf-midillm-rev -p gpu-l40s -A gpu-l40s-ark --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,gpu-l40s,l40s,1,2026-09-25T14:36:58,2026-09-25T14:49:13,00:12:15,0.204,COMPLETED
+40611403_2,pf-midillm-rev,midi_llm,--job-name=pf-midillm-rev -p gpu-l40s -A gpu-l40s-ark --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,gpu-l40s,l40s,1,2026-09-25T14:37:58,2026-09-25T14:47:16,00:09:18,0.155,COMPLETED
+40611403_3,pf-midillm-rev,midi_llm,--job-name=pf-midillm-rev -p gpu-l40s -A gpu-l40s-ark --array=0-3 scripts/paper_final/midi_llm_shard.sbatch,gpu-l40s,l40s,1,2026-09-25T14:44:41,2026-09-25T15:02:20,00:17:39,0.294,COMPLETED
+40616341_0,pf-e0-ood2,,--job-name=pf-e0-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:04:59,2026-09-25T15:31:51,00:26:52,0.448,COMPLETED
+40616341_1,pf-e0-ood2,,--job-name=pf-e0-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:04:59,2026-09-25T15:31:18,00:26:19,0.439,COMPLETED
+40616341_2,pf-e0-ood2,,--job-name=pf-e0-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:04:59,2026-09-25T15:32:02,00:27:03,0.451,COMPLETED
+40616341_3,pf-e0-ood2,,--job-name=pf-e0-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:04:59,2026-09-25T15:34:00,00:29:01,0.484,COMPLETED
+40616342_0,pf-e1-ood2,,--job-name=pf-e1-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:05:03,2026-09-25T15:25:51,00:20:48,0.347,COMPLETED
+40616342_1,pf-e1-ood2,,--job-name=pf-e1-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:05:03,2026-09-25T15:22:26,00:17:23,0.29,COMPLETED
+40616342_2,pf-e1-ood2,,--job-name=pf-e1-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:05:07,2026-09-25T15:29:44,00:24:37,0.41,COMPLETED
+40616342_3,pf-e1-ood2,,--job-name=pf-e1-ood2 --array=0-3 scripts/paper_final/gen.sbatch,gpu-l40s,l40s,1,2026-09-25T15:22:27,2026-09-25T15:45:21,00:22:54,0.382,COMPLETED
+40618273_0,pf-mupt-ood3,mupt,mupt ood NSHARDS=4 ckpt-all,ckpt-all,l40s,1,2026-09-25T15:28:03,2026-09-25T16:11:45,00:43:42,0.728,COMPLETED
+40618273_1,pf-mupt-ood3,mupt,mupt ood NSHARDS=4 ckpt-all,ckpt-all,l40s,1,2026-09-25T15:28:15,2026-09-25T15:28:19,00:00:04,0.001,FAILED
+40618273_2,pf-mupt-ood3,mupt,mupt ood NSHARDS=4 ckpt-all,ckpt-all,l40s,1,2026-09-25T15:28:15,2026-09-25T16:22:38,00:54:23,0.906,COMPLETED
+40618273_3,pf-mupt-ood3,mupt,mupt ood NSHARDS=4 ckpt-all,ckpt-all,l40s,1,2026-09-25T15:28:15,2026-09-25T15:28:24,00:00:09,0.003,COMPLETED
+40618328,pf-listen-rend2,,listening pilot re-render (final design),gpu-l40,l40,1,2026-09-25T15:30:03,2026-09-25T15:40:00,00:09:57,0.166,COMPLETED
+40618335,pf-memorization,,memorization: extend to E3b intervention samples (CPU),ckpt-all,none,0,2026-09-25T15:30:24,2026-09-25T15:33:31,00:03:07,0.0,COMPLETED

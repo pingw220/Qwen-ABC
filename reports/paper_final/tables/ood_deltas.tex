@@ -1,0 +1,87 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+model & condition & regime & metric & OOD $-$ ID [95\% CI] & N \\
+\midrule
+qwen\_e3b & ood\_chorus\_first & compositional & plan\_exact & +0.009 [+0.000, +0.023] & 213 \\
+qwen\_e3b & ood\_chorus\_first & compositional & strict\_valid & +0.066 [+0.000, +0.136] & 213 \\
+qwen\_e3b & ood\_chorus\_first & compositional & lyric\_recall & -0.001 [-0.006, +0.004] & 213 \\
+qwen\_e3b & ood\_end\_on\_verse & compositional & plan\_exact & -0.018 [-0.045, +0.005] & 221 \\
+qwen\_e3b & ood\_end\_on\_verse & compositional & strict\_valid & -0.005 [-0.077, +0.063] & 221 \\
+qwen\_e3b & ood\_end\_on\_verse & compositional & lyric\_recall & +0.001 [-0.004, +0.005] & 221 \\
+qwen\_e3b & ood\_long20 & extrapolative & plan\_exact & -0.004 [-0.022, +0.009] & 224 \\
+qwen\_e3b & ood\_long20 & extrapolative & strict\_valid & +0.013 [-0.058, +0.085] & 224 \\
+qwen\_e3b & ood\_long20 & extrapolative & lyric\_recall & -0.007 [-0.013, -0.001] & 224 \\
+qwen\_e3b & ood\_long28 & extrapolative & plan\_exact & -0.018 [-0.040, +0.000] & 224 \\
+qwen\_e3b & ood\_long28 & extrapolative & strict\_valid & -0.031 [-0.103, +0.040] & 224 \\
+qwen\_e3b & ood\_long28 & extrapolative & lyric\_recall & -0.007 [-0.013, -0.002] & 224 \\
+qwen\_e3b & ood\_sections\_p3 & extrapolative & plan\_exact & -0.018 [-0.040, +0.000] & 224 \\
+qwen\_e3b & ood\_sections\_p3 & extrapolative & strict\_valid & -0.080 [-0.152, -0.004] & 224 \\
+qwen\_e3b & ood\_sections\_p3 & extrapolative & lyric\_recall & -0.001 [-0.006, +0.004] & 224 \\
+qwen\_e3b & ood\_sections\_p6 & extrapolative & plan\_exact & -0.121 [-0.165, -0.080] & 224 \\
+qwen\_e3b & ood\_sections\_p6 & extrapolative & strict\_valid & -0.045 [-0.121, +0.031] & 224 \\
+qwen\_e3b & ood\_sections\_p6 & extrapolative & lyric\_recall & -0.005 [-0.011, +0.001] & 224 \\
+qwen\_e3b & ood\_tempo & extrapolative & plan\_exact & -0.013 [-0.036, +0.004] & 225 \\
+qwen\_e3b & ood\_tempo & extrapolative & strict\_valid & +0.040 [-0.027, +0.107] & 225 \\
+qwen\_e3b & ood\_tempo & extrapolative & lyric\_recall & +0.003 [-0.003, +0.011] & 225 \\
+qwen\_e1 & ood\_chorus\_first & compositional & plan\_exact & +0.052 [-0.005, +0.108] & 213 \\
+qwen\_e1 & ood\_chorus\_first & compositional & strict\_valid & -0.042 [-0.131, +0.042] & 213 \\
+qwen\_e1 & ood\_chorus\_first & compositional & lyric\_recall & -0.002 [-0.007, +0.003] & 213 \\
+qwen\_e1 & ood\_end\_on\_verse & compositional & plan\_exact & +0.036 [-0.023, +0.095] & 221 \\
+qwen\_e1 & ood\_end\_on\_verse & compositional & strict\_valid & -0.059 [-0.140, +0.023] & 221 \\
+qwen\_e1 & ood\_end\_on\_verse & compositional & lyric\_recall & -0.001 [-0.006, +0.003] & 221 \\
+qwen\_e1 & ood\_long20 & extrapolative & plan\_exact & -0.018 [-0.085, +0.049] & 224 \\
+qwen\_e1 & ood\_long20 & extrapolative & strict\_valid & -0.027 [-0.094, +0.045] & 224 \\
+qwen\_e1 & ood\_long20 & extrapolative & lyric\_recall & -0.006 [-0.011, -0.000] & 224 \\
+qwen\_e1 & ood\_long28 & extrapolative & plan\_exact & -0.080 [-0.147, -0.013] & 224 \\
+qwen\_e1 & ood\_long28 & extrapolative & strict\_valid & -0.049 [-0.129, +0.027] & 224 \\
+qwen\_e1 & ood\_long28 & extrapolative & lyric\_recall & -0.008 [-0.014, -0.002] & 224 \\
+qwen\_e1 & ood\_sections\_p3 & extrapolative & plan\_exact & -0.018 [-0.085, +0.049] & 224 \\
+qwen\_e1 & ood\_sections\_p3 & extrapolative & strict\_valid & -0.147 [-0.232, -0.062] & 224 \\
+qwen\_e1 & ood\_sections\_p3 & extrapolative & lyric\_recall & -0.010 [-0.017, -0.004] & 224 \\
+qwen\_e1 & ood\_sections\_p6 & extrapolative & plan\_exact & -0.116 [-0.188, -0.045] & 224 \\
+qwen\_e1 & ood\_sections\_p6 & extrapolative & strict\_valid & -0.138 [-0.228, -0.049] & 224 \\
+qwen\_e1 & ood\_sections\_p6 & extrapolative & lyric\_recall & -0.014 [-0.021, -0.007] & 224 \\
+qwen\_e1 & ood\_tempo & extrapolative & plan\_exact & -0.022 [-0.084, +0.040] & 225 \\
+qwen\_e1 & ood\_tempo & extrapolative & strict\_valid & -0.067 [-0.151, +0.018] & 225 \\
+qwen\_e1 & ood\_tempo & extrapolative & lyric\_recall & -0.008 [-0.019, -0.000] & 225 \\
+qwen\_e0 & ood\_chorus\_first & compositional & plan\_exact & +0.028 [-0.056, +0.113] & 213 \\
+qwen\_e0 & ood\_chorus\_first & compositional & strict\_valid & +0.028 [-0.052, +0.108] & 213 \\
+qwen\_e0 & ood\_chorus\_first & compositional & lyric\_recall & -0.003 [-0.012, +0.008] & 213 \\
+qwen\_e0 & ood\_end\_on\_verse & compositional & plan\_exact & +0.023 [-0.059, +0.104] & 221 \\
+qwen\_e0 & ood\_end\_on\_verse & compositional & strict\_valid & -0.018 [-0.100, +0.063] & 221 \\
+qwen\_e0 & ood\_end\_on\_verse & compositional & lyric\_recall & -0.004 [-0.012, +0.006] & 221 \\
+qwen\_e0 & ood\_long20 & extrapolative & plan\_exact & -0.237 [-0.312, -0.161] & 224 \\
+qwen\_e0 & ood\_long20 & extrapolative & strict\_valid & +0.049 [-0.031, +0.129] & 224 \\
+qwen\_e0 & ood\_long20 & extrapolative & lyric\_recall & -0.009 [-0.020, +0.003] & 224 \\
+qwen\_e0 & ood\_long28 & extrapolative & plan\_exact & -0.411 [-0.487, -0.339] & 224 \\
+qwen\_e0 & ood\_long28 & extrapolative & strict\_valid & -0.062 [-0.147, +0.022] & 224 \\
+qwen\_e0 & ood\_long28 & extrapolative & lyric\_recall & -0.004 [-0.014, +0.005] & 224 \\
+qwen\_e0 & ood\_sections\_p3 & extrapolative & plan\_exact & -0.268 [-0.344, -0.192] & 224 \\
+qwen\_e0 & ood\_sections\_p3 & extrapolative & strict\_valid & +0.031 [-0.054, +0.116] & 224 \\
+qwen\_e0 & ood\_sections\_p3 & extrapolative & lyric\_recall & -0.035 [-0.043, -0.026] & 224 \\
+qwen\_e0 & ood\_sections\_p6 & extrapolative & plan\_exact & -0.482 [-0.549, -0.415] & 224 \\
+qwen\_e0 & ood\_sections\_p6 & extrapolative & strict\_valid & -0.241 [-0.321, -0.161] & 224 \\
+qwen\_e0 & ood\_sections\_p6 & extrapolative & lyric\_recall & -0.049 [-0.065, -0.033] & 224 \\
+qwen\_e0 & ood\_tempo & extrapolative & plan\_exact & +0.062 [-0.013, +0.138] & 225 \\
+qwen\_e0 & ood\_tempo & extrapolative & strict\_valid & +0.009 [-0.076, +0.093] & 225 \\
+qwen\_e0 & ood\_tempo & extrapolative & lyric\_recall & +0.003 [-0.005, +0.013] & 225 \\
+mupt & ood\_chorus\_first & compositional & plan\_exact & -0.047 [-0.131, +0.033] & 213 \\
+mupt & ood\_chorus\_first & compositional & strict\_valid & +0.038 [-0.038, +0.113] & 213 \\
+mupt & ood\_chorus\_first & compositional & lyric\_recall & -0.001 [-0.024, +0.021] & 213 \\
+mupt & ood\_long20 & extrapolative & plan\_exact & -0.049 [-0.125, +0.027] & 224 \\
+mupt & ood\_long20 & extrapolative & strict\_valid & +0.022 [-0.049, +0.094] & 224 \\
+mupt & ood\_long20 & extrapolative & lyric\_recall & -0.013 [-0.034, +0.007] & 224 \\
+mupt & ood\_sections\_p3 & extrapolative & plan\_exact & -0.250 [-0.321, -0.179] & 224 \\
+mupt & ood\_sections\_p3 & extrapolative & strict\_valid & +0.000 [-0.067, +0.071] & 224 \\
+mupt & ood\_sections\_p3 & extrapolative & lyric\_recall & -0.034 [-0.056, -0.011] & 224 \\
+mupt & ood\_tempo & extrapolative & plan\_exact & -0.022 [-0.102, +0.058] & 225 \\
+mupt & ood\_tempo & extrapolative & strict\_valid & +0.089 [+0.013, +0.164] & 225 \\
+mupt & ood\_tempo & extrapolative & lyric\_recall & -0.007 [-0.028, +0.015] & 225 \\
+\bottomrule
+\end{tabular}
+\caption{Paired OOD $-$ in-distribution differences (same songs, seed S1)}
+\label{tab:ood_deltas}
+\end{table}

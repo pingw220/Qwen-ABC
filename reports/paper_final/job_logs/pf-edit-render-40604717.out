@@ -1,0 +1,28 @@
+node=g3106 job=40604717
+leadsheets=/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/reports/paper_final/edit_rerender_demo/materials/leadsheets_6coZcwGP3Cmhyqzvp6sEJS out=/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender singer=suming_MBJCUganFM_rmvpe_bs32_autoalign_slur_flag@400 spkr=6
+NVIDIA L40S, 46068 MiB
+=== 6coZcwGP3Cmhyqzvp6sEJS__A_local: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__A_local/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__A_local/mix.wav
+=== 6coZcwGP3Cmhyqzvp6sEJS__A_whole: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__A_whole/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__A_whole/mix.wav
+=== 6coZcwGP3Cmhyqzvp6sEJS__B_direct: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__B_direct/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__B_direct/mix.wav
+=== 6coZcwGP3Cmhyqzvp6sEJS__B_model: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__B_model/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__B_model/mix.wav
+=== 6coZcwGP3Cmhyqzvp6sEJS__C_direct: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__C_direct/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__C_direct/mix.wav
+=== 6coZcwGP3Cmhyqzvp6sEJS__C_model: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__C_model/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__C_model/mix.wav
+=== 6coZcwGP3Cmhyqzvp6sEJS__D_local: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__D_local/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__D_local/mix.wav
+=== 6coZcwGP3Cmhyqzvp6sEJS__source: singing
+    fastsinger exit=0 -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__source/vocal_fs.wav
+    mix ok -> /gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/6coZcwGP3Cmhyqzvp6sEJS__source/mix.wav
+RENDER_DONE ok=8 failed=0 out=/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender

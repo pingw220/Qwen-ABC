@@ -1,0 +1,101 @@
+job=40604645 host=n3502 start=2026-09-25T11:44:53-07:00 commit=f8bcb96a55274bba940fd66b6aa934655671b624 systems=all
+indexed 0 songs 0s
+indexed 1000 songs 3s
+indexed 2000 songs 5s
+indexed 3000 songs 7s
+indexed 4000 songs 10s
+indexed 5000 songs 12s
+indexed 6000 songs 14s
+indexed 7000 songs 17s
+indexed 8000 songs 19s
+indexed 9000 songs 22s
+indexed 10000 songs 24s
+index: 10243 songs, 381992 distinct bars, 28s -> /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/memorization/train_index.pkl
+reference: 225 songs to query (0 already done)
+  reference 1/225 3s
+  reference 26/225 4s
+  reference 51/225 7s
+  reference 76/225 10s
+  reference 101/225 14s
+  reference 126/225 16s
+  reference 151/225 18s
+  reference 176/225 21s
+  reference 201/225 24s
+qwen_e3b: 225 songs to query (0 already done)
+  qwen_e3b 1/225 3s
+  qwen_e3b 26/225 4s
+  qwen_e3b 51/225 6s
+  qwen_e3b 76/225 9s
+  qwen_e3b 101/225 12s
+  qwen_e3b 126/225 14s
+  qwen_e3b 151/225 16s
+  qwen_e3b 176/225 18s
+  qwen_e3b 201/225 21s
+mupt: 225 songs to query (0 already done)
+  mupt 1/225 3s
+  mupt 26/225 4s
+  mupt 51/225 6s
+  mupt 76/225 9s
+  mupt 101/225 12s
+  mupt 126/225 14s
+  mupt 151/225 16s
+  mupt 176/225 18s
+  mupt 201/225 21s
+midi_llm: 225 songs to query (0 already done)
+  midi_llm 1/225 0s
+  midi_llm 26/225 2s
+  midi_llm 51/225 4s
+  midi_llm 76/225 4s
+  midi_llm 101/225 6s
+  midi_llm 126/225 8s
+  midi_llm 151/225 10s
+  midi_llm 176/225 10s
+  midi_llm 201/225 12s
+qwen_e3b:bars_p4: 9 songs to query (0 already done)
+  qwen_e3b:bars_p4 1/9 3s
+qwen_e3b:ood_long20: 3 songs to query (0 already done)
+  qwen_e3b:ood_long20 1/3 3s
+qwen_e3b:lyrics_all: 6 songs to query (0 already done)
+  qwen_e3b:lyrics_all 1/6 2s
+QUERY_DONE
+{
+ "n_train": 10243,
+ "thresholds_ref_p99": {
+  "interval": 3.931855559008986,
+  "contour": 3.243971249646588,
+  "rhythm": 6.844846091289573,
+  "motif": 5.770754113526993,
+  "chord": 8.232584507271483,
+  "abc": 7.5875117159199945,
+  "plan": 7.198985213105723,
+  "lyrics": 6.64973369147801
+ },
+ "ref_interval_run_max": 33.0,
+ "ref_interval_run_p99": 14.279999999999973,
+ "shortlist_validation": [
+  {
+   "rep": "interval",
+   "n": 4,
+   "exact_nn_found": 0,
+   "max_gap": 0.01599999999999996,
+   "mean_gap": 0.009914249942115344
+  },
+  {
+   "rep": "rhythm",
+   "n": 4,
+   "exact_nn_found": 2,
+   "max_gap": 0.052000000000000046,
+   "mean_gap": 0.0188139534883721
+  },
+  {
+   "rep": "chord",
+   "n": 4,
+   "exact_nn_found": 3,
+   "max_gap": 0.00760491112332784,
+   "mean_gap": 0.00190122778083196
+  }
+ ],
+ "n_train_distinct_bars3": 381992
+}
+REPORT_DONE
+end=2026-09-25T11:47:50-07:00 PF_MEM_OK

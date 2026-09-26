@@ -1,0 +1,13 @@
+job=40616351 array=40616341_2 host=g3103 partition=gpu-l40s gpu=NVIDIA L40S start=2026-09-25T15:04:59-07:00 commit=06027f571e15eee20259ba4b6f9fef45939b2795 model=qwen_e0 suites=ood conditions=all songs=all shard=2/4
+model=qwen_e0 suite=ood tasks=1555 skipped=20 shard=2/4 batches=24 pending=95
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   7%|▋         | 23/321 [00:00<00:01, 153.57it/s]Loading weights:  12%|█▏        | 39/321 [00:00<00:03, 70.88it/s] Loading weights:  15%|█▌        | 49/321 [00:00<00:03, 68.21it/s]Loading weights:  18%|█▊        | 57/321 [00:00<00:03, 69.16it/s]Loading weights:  22%|██▏       | 70/321 [00:00<00:03, 75.10it/s]Loading weights:  30%|██▉       | 95/321 [00:01<00:02, 88.08it/s]Loading weights:  35%|███▌      | 113/321 [00:01<00:03, 67.94it/s]Loading weights:  42%|████▏     | 135/321 [00:01<00:02, 82.94it/s]Loading weights:  45%|████▌     | 146/321 [00:01<00:02, 78.50it/s]Loading weights:  48%|████▊     | 155/321 [00:02<00:02, 60.18it/s]Loading weights:  50%|█████     | 162/321 [00:02<00:02, 56.17it/s]Loading weights:  53%|█████▎    | 169/321 [00:02<00:02, 53.59it/s]Loading weights:  59%|█████▉    | 189/321 [00:02<00:01, 75.36it/s]Loading weights:  62%|██████▏   | 198/321 [00:02<00:01, 64.99it/s]Loading weights:  65%|██████▌   | 210/321 [00:02<00:01, 73.52it/s]Loading weights:  85%|████████▌ | 273/321 [00:03<00:00, 161.71it/s]Loading weights:  90%|█████████ | 290/321 [00:03<00:00, 158.41it/s]Loading weights:  95%|█████████▌| 306/321 [00:03<00:00, 117.84it/s]Loading weights:  99%|█████████▉| 319/321 [00:03<00:00, 109.54it/s]Loading weights: 100%|██████████| 321/321 [00:03<00:00, 88.23it/s] 
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/6] n=16 260.09s eos=14 parse=16 done=16/95 elapsed=271s
+[2/6] n=16 249.74s eos=15 parse=16 done=32/95 elapsed=534s
+[3/6] n=16 249.28s eos=13 parse=16 done=48/95 elapsed=786s
+[4/6] n=16 247.81s eos=10 parse=16 done=64/95 elapsed=1076s
+[5/6] n=15 237.04s eos=11 parse=15 done=79/95 elapsed=1317s
+[6/6] n=16 243.58s eos=9 parse=16 done=95/95 elapsed=1565s
+GENERATION_DONE
+end=2026-09-25T15:32:02-07:00 PF_GEN_OK

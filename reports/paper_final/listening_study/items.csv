@@ -1,0 +1,67 @@
+item_id,kind,condition,question,song_id,stim_orig,stim_edit,edit_text,realized_complied,realized_edited_bars,realized_edited_key,realized_mean_pitch_shift,realized_new_recall_edited,realized_new_recall_orig,realized_old_recall_edited,realized_orig_bars,realized_orig_key,realized_register_agrees_with_request,realized_requested_bars,realized_requested_key,realized_target_section
+1cc7be7a3c,test,bars_p4,longer_section,0XV81gUVudUkxWP4x6rJhW,99cc65c739,7f65c29de0,the middle section should be 4 bars LONGER,True,16,,,,,,12,,,16,,9
+4479e666dd,test,bars_p4,longer_section,47ZxPbe5sBnGaQanA7sQDq,01ec9bafdd,54c59f1b32,the middle section should be 4 bars LONGER,True,12,,,,,,8,,,12,,1
+146147c231,test,bars_p4,longer_section,5icriKgD89JhLxeSnd9o74,648d9d4b76,cf9554d667,the middle section should be 4 bars LONGER,True,12,,,,,,8,,,12,,3
+d116b47491,test,bars_p4,longer_section,6ast0Gzj3H6MgDfkRHZxx1,248ef967b2,e476d59488,the middle section should be 4 bars LONGER,True,12,,,,,,8,,,12,,1
+be397f82b3,test,bars_p4,longer_section,5DOdnY5NIJVe0tln5eFm7f,5a02a59be0,8fdeeb391e,the middle section should be 4 bars LONGER,True,10,,,,,,6,,,10,,7
+455e790890,test,bars_p4,longer_section,20WNhehqO6xfLVktkDefs2,a3ef1be4e3,a7838a3869,the middle section should be 4 bars LONGER,True,14,,,,,,10,,,14,,3
+a7de748e77,test,bars_p4,longer_section,3Yg7Z2rVweAHOwUiPkqTvE,219f613d6d,eb29ff92bc,the middle section should be 4 bars LONGER,True,12,,,,,,8,,,12,,1
+6f368205f5,test,bars_p4,longer_section,5K8AQ2dBiXolebEfawTrzv,88eaf0d18b,bbd9103800,the middle section should be 4 bars LONGER,True,16,,,,,,12,,,16,,2
+7e3197cdc2,test,bars_p4,longer_section,6ousLSFH3faAPCokCk2gCm,8e3e15737e,bdc367ca6b,the middle section should be 4 bars LONGER,True,12,,,,,,8,,,12,,6
+e46fd2ecb9,test,bars_p4,longer_section,7fnhHkS67SrSqsWpwkD6CM,b28eb7b21b,80553ef9a0,the middle section should be 4 bars LONGER,True,14,,,,,,10,,,14,,7
+6e0d291ce3,test,bars_p4,longer_section,5rc5x4FKWvrJb8qxFNp1bO,af2400e928,89a27e77b8,the middle section should be 4 bars LONGER,True,12,,,,,,8,,,12,,1
+4ba49b4dca,test,bars_p4,longer_section,51G9MuAKc5GOKrfoP4M4uO,d2f17098fb,378afaafc8,the middle section should be 4 bars LONGER,True,16,,,,,,12,,,16,,2
+6a773a9990,test,bars_m4,longer_section,2TSoqk7lI5AomIgffxCw4g,ab36abc0e6,f22f6f8368,the middle section should be 4 bars SHORTER,True,5,,,,,,9,,,5,,2
+b831be80f6,test,bars_m4,longer_section,5dxFx2Ez14xXuqyOK3Pgxd,39d31e0bcd,8ebab0908e,the middle section should be 4 bars SHORTER,True,4,,,,,,8,,,4,,3
+74f70288c4,test,bars_m4,longer_section,3fuDrXgVS9Be7HQqDuX5qV,4b7f555629,69cdc33fab,the middle section should be 4 bars SHORTER,True,11,,,,,,15,,,11,,6
+5b423247fa,test,bars_m4,longer_section,2r6PR48twaBEyqvTggRzZa,02e1888e03,450172d0bd,the middle section should be 4 bars SHORTER,True,5,,,,,,9,,,5,,5
+6cd3bf1669,test,bars_m4,longer_section,09d4jeFypKBWzZVfHKBeVY,c9e1df798d,40aed9aa77,the middle section should be 4 bars SHORTER,True,8,,,,,,12,,,8,,2
+21e9766e03,test,bars_m4,longer_section,0ccEIUOa32bbAoGaPHGQuX,b7b0f17126,912031d669,the middle section should be 4 bars SHORTER,True,4,,,,,,8,,,4,,1
+a1a7a5b910,test,bars_m4,longer_section,3im9iOhpZNgaTS4VGYOGF9,f2fad919d5,1220fea6fd,the middle section should be 4 bars SHORTER,True,5,,,,,,9,,,5,,9
+3e8ea99323,test,bars_m4,longer_section,5eZwk6UYsVAbqSomPjNSDE,9a912892aa,9c4766157e,the middle section should be 4 bars SHORTER,True,4,,,,,,8,,,4,,4
+c200ff04da,test,bars_m4,longer_section,2alKIQAr2MPs28ZI5AHvJB,7169daf605,bb6cc6f9d8,the middle section should be 4 bars SHORTER,True,5,,,,,,9,,,5,,4
+e980b70b48,test,bars_m4,longer_section,2vnn9onO7sQBevG0O2iPHi,4120f05c38,79061e51c2,the middle section should be 4 bars SHORTER,True,5,,,,,,9,,,5,,5
+26a83887fd,test,bars_m4,longer_section,1EbYNhVhmnZpriRnaFygWN,77fbb9421f,9ec3e92b18,the middle section should be 4 bars SHORTER,True,5,,,,,,9,,,5,,8
+301de861ba,test,bars_m4,longer_section,6FmfdFUbG8q6U2KbsNFo3y,bb922e189b,5352d8b038,the middle section should be 4 bars SHORTER,True,5,,,,,,9,,,5,,9
+97c3cb6cbb,test,key_p5,higher_key,66x69ddxo6rH3KZoa5yNfO,8d3f631edf,2934d76a00,the song should be transposed UP by 5 semitones (a perfect fourth),True,,G major,5.18,,,,,D major,True,,G major,7
+0ed0914c9a,test,key_p5,higher_key,4T4TeoIBft7oIW5WOte5Au,e452164587,8e462b16a3,the song should be transposed UP by 5 semitones (a perfect fourth),True,,C major,3.54,,,,,G major,True,,C major,3
+0b6ede76ea,test,key_p5,higher_key,5LPdNDuOWYSDT5P20iCRYO,5cac66f39a,6003fe3596,the song should be transposed UP by 5 semitones (a perfect fourth),True,,F# major,4.65,,,,,Db major,True,,F# major,5
+668117805e,test,key_p5,higher_key,3q9kTZg82Fxa7KptbOLqav,e2a9eee008,6719a2cfd7,the song should be transposed UP by 5 semitones (a perfect fourth),True,,Bb major,0.96,,,,,F major,True,,Bb major,1
+09f761724a,test,key_p5,higher_key,1oWX2EGO7Z8YCZ5jJuGrpM,a35515984b,b71c7b2d35,the song should be transposed UP by 5 semitones (a perfect fourth),True,,E major,9.91,,,,,B major,True,,E major,4
+a5ab1db8ee,test,key_p5,higher_key,2CBn4vqG1420rIiELQRmZW,6e1c5da91e,777d9aa84e,the song should be transposed UP by 5 semitones (a perfect fourth),True,,B major,-4.53,,,,,F# major,False,,B major,5
+dcff3953eb,test,key_p5,higher_key,7IE2jtO8pkWtcSdj71OnlT,7d161b6c07,536fbaacfc,the song should be transposed UP by 5 semitones (a perfect fourth),True,,B major,-2.7,,,,,F# major,False,,B major,3
+1747bcab76,test,key_p5,higher_key,58ajbBxQUMMFpqHA62QNO0,f079d4d957,82af6d6418,the song should be transposed UP by 5 semitones (a perfect fourth),True,,E minor,-1.75,,,,,B minor,False,,E minor,4
+de7cf8fc82,test,key_p5,higher_key,7DWvcbGGWWtk0edvck09X3,27cf2d76e0,0ad44e8daf,the song should be transposed UP by 5 semitones (a perfect fourth),True,,F# major,-3.12,,,,,Db major,False,,F# major,2
+9b95dd4482,test,key_p5,higher_key,20WNhehqO6xfLVktkDefs2,a8d02aa3bc,c21441cca6,the song should be transposed UP by 5 semitones (a perfect fourth),True,,C major,-1.16,,,,,G major,False,,C major,3
+f06aab3137,test,key_p5,higher_key,0ccEIUOa32bbAoGaPHGQuX,7fc720fe8b,083381394f,the song should be transposed UP by 5 semitones (a perfect fourth),True,,F major,1.03,,,,,C major,True,,F major,1
+1657a00435,test,key_p5,higher_key,65qUlixRrzCOI7RIHMZ8b0,ab808b9b49,60eb41131e,the song should be transposed UP by 5 semitones (a perfect fourth),True,,F major,6.7,,,,,C major,True,,F major,7
+00b430fbc5,test,key_m3,higher_key,2kNj4xVed7CbulRhF3C4nT,62462d4225,d73bb10c33,the song should be transposed DOWN by 3 semitones (a minor third),True,,F minor,2.93,,,,,G# minor,False,,F minor,8
+48d85cfec7,test,key_m3,higher_key,2BOyzQctN9FQpLfNM9GHQW,5420e0dc29,91de2443d8,the song should be transposed DOWN by 3 semitones (a minor third),True,,A minor,-1.72,,,,,C minor,True,,A minor,3
+2741a5bc8d,test,key_m3,higher_key,2y0wImEpj5p6SxBmY0opQN,3eebf3db78,7a83884d2b,the song should be transposed DOWN by 3 semitones (a minor third),True,,F# major,-2.93,,,,,A major,True,,F# major,3
+3ef0a39f0a,test,key_m3,higher_key,4VfHbfbzNPZmX5KI4iAOyT,d87790dbad,b7392ead5a,the song should be transposed DOWN by 3 semitones (a minor third),True,,C major,9.06,,,,,Eb major,False,,C major,7
+46d1d24f3a,test,key_m3,higher_key,4iexiXer21ge7jm3GPQkT2,f1e95c6fc6,ef862af2a8,the song should be transposed DOWN by 3 semitones (a minor third),True,,Db major,4.99,,,,,E major,False,,Db major,10
+32de453755,test,key_m3,higher_key,5i64hhiLZt1NWnRZiVubSL,881811663d,29b038d0d5,the song should be transposed DOWN by 3 semitones (a minor third),True,,F# minor,-1.01,,,,,A minor,True,,F# minor,5
+0c87905e06,test,key_m3,higher_key,3IIAyAsxuQR9jsikumTVHo,9d7fa79bc5,89c6ecab81,the song should be transposed DOWN by 3 semitones (a minor third),True,,C# minor,-5.15,,,,,E minor,True,,C# minor,4
+7a0bb9ce0d,test,key_m3,higher_key,1C6yky5bXstgnFRiWmfze3,fd397bd5b1,1434cc11d2,the song should be transposed DOWN by 3 semitones (a minor third),True,,F# minor,5.73,,,,,A minor,False,,F# minor,4
+2fb2d21f9f,test,key_m3,higher_key,5fTRjBPvXscWyOOukAGtW5,a16fd97c5e,b1be91906a,the song should be transposed DOWN by 3 semitones (a minor third),True,,D major,1.19,,,,,F major,False,,D major,1
+b3b83a185d,test,key_m3,higher_key,7v46DZBqB4xmaTHRygC8gy,a04b661cf6,09ddddbf6f,the song should be transposed DOWN by 3 semitones (a minor third),True,,D major,0.29,,,,,F major,False,,D major,12
+be8efadbbc,test,key_m3,higher_key,1tKSEmbS7vmv7cFc24sjlI,ac36c16b43,f272290b2e,the song should be transposed DOWN by 3 semitones (a minor third),True,,E major,-6.52,,,,,G major,True,,E major,4
+e136c9face,test,key_m3,higher_key,5bf4zyUkbC7Df7icueGtcR,244067831a,d4ce127436,the song should be transposed DOWN by 3 semitones (a minor third),True,,D major,11.75,,,,,F major,False,,D major,1
+c2a23a34a2,test,lyrics_sec,matches_lyrics,7G1ifUUwRSuQCc8wnDgi6T,82b689bed0,ac6f64339f,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.053,0.053,,,,,,1
+7165182d76,test,lyrics_sec,matches_lyrics,1Fo23uW11ZN4JCFCeB0ngS,42254d017a,704ba1460b,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.062,0.062,,,,,,3
+f227283374,test,lyrics_sec,matches_lyrics,1hWIEh1MKbcB4ouWgWL5Og,28524dd2cf,c4351edb73,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.037,0.037,,,,,,4
+dfe7738892,test,lyrics_sec,matches_lyrics,7urNxXDmuL6xVKEOoEY41E,208f29f868,4eb40dc4f3,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.143,0.143,,,,,,0
+acc04d688c,test,lyrics_sec,matches_lyrics,4VEbbZeJwrlqRBTTscq3m2,cc56aaae1d,ae8858dc03,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.048,0.048,,,,,,2
+dadf80372a,test,lyrics_sec,matches_lyrics,7qDiugtLVz4njwHDGCfdB5,69d362ba98,a8f0e02fff,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.032,0.032,,,,,,12
+2aeff3e56e,test,lyrics_sec,matches_lyrics,18wGt2QzrQO73VY4akreyx,752a33871f,8a0aaf8cf7,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.062,0.062,,,,,,5
+da2fdb3f9d,test,lyrics_sec,matches_lyrics,5igSw7TE7vW1iKMCU9ACMJ,0461adf0a5,eefda88c13,the middle section should sing the NEW words shown on screen,True,,,,0.982,0.088,0.105,,,,,,3
+341a825d25,test,lyrics_sec,matches_lyrics,5IhH7idp4sHJ4o0pnxH59X,e43888ac96,66feabaa3e,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.095,0.06,,,,,,6
+4c37e4d031,test,lyrics_sec,matches_lyrics,51G9MuAKc5GOKrfoP4M4uO,ce5d18b3dc,596c3fd86c,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.192,0.192,,,,,,2
+394e308dcf,test,lyrics_sec,matches_lyrics,1EbYNhVhmnZpriRnaFygWN,418551e400,01a4b24ba3,the middle section should sing the NEW words shown on screen,True,,,,1.0,0.105,0.105,,,,,,8
+5ee70d70ea,test,lyrics_sec,matches_lyrics,72HBFpZW26bT1E0POMsQUW,b15679a7f7,26d82d3b0d,the middle section should sing the NEW words shown on screen,False,,,,0.069,0.069,0.931,,,,,,8
+e026cd28a0,catch,catch_identical,longer_section,6ceBOPyGnJnumkJ2wOTt7D,9564322c6d,33f6cf6afc,,False,,,,,,,,,,,,
+342be3ce88,catch,catch_transposed,higher_key,3FT4dcOfYXmlNbLecPiMrm,1c10c988b1,bea815b484,,True,,,,,,,,,,,,
+5cf51318b8,catch,catch_doubled,longer_section,6jK3PQWd5QOPHLAJw6nvCD,03ffa7ba71,507811e0f0,,True,,,,,,,,,,,,
+c5b415d40a,catch,catch_identical,longer_section,6M8dGV2alakIhqDFNFIEfg,612130a58f,bcea40d882,,False,,,,,,,,,,,,
+4245dcdf09,catch,catch_transposed,higher_key,09RY5jQZ5kNoMSU5toQlfU,103ea49b44,d209518553,,True,,,,,,,,,,,,
+3a1c7c8895,catch,catch_doubled,longer_section,0CxfpbQfmX4bR6mA6aarL3,5f72a0340c,69b88483ec,,True,,,,,,,,,,,,

@@ -1,0 +1,35 @@
+job=40604423 array=40604422_0 host=g3094 partition=gpu-l40 gpu=NVIDIA L40 start=2026-09-25T11:30:39-07:00 commit=f8bcb96a55274bba940fd66b6aa934655671b624 model=mupt suites=bon conditions=all songs=all shard=0/2
+model=mupt suite=bon tasks=900 skipped=0 shard=0/2 batches=29 pending=444
+Loading weights:   0%|          | 0/327 [00:00<?, ?it/s]Loading weights:   1%|          | 2/327 [00:00<00:25, 12.93it/s]Loading weights:   5%|▍         | 15/327 [00:00<00:07, 43.48it/s]Loading weights:   6%|▋         | 21/327 [00:00<00:08, 37.01it/s]Loading weights:   9%|▊         | 28/327 [00:00<00:08, 35.26it/s]Loading weights:  11%|█▏        | 37/327 [00:00<00:06, 43.51it/s]Loading weights:  13%|█▎        | 42/327 [00:01<00:07, 36.77it/s]Loading weights:  14%|█▍        | 46/327 [00:01<00:13, 21.23it/s]Loading weights:  17%|█▋        | 54/327 [00:01<00:09, 27.76it/s]Loading weights:  19%|█▉        | 62/327 [00:01<00:08, 31.96it/s]Loading weights:  20%|██        | 66/327 [00:02<00:09, 28.66it/s]Loading weights:  24%|██▍       | 79/327 [00:02<00:05, 43.46it/s]Loading weights:  26%|██▌       | 85/327 [00:02<00:05, 41.20it/s]Loading weights:  28%|██▊       | 90/327 [00:02<00:06, 35.73it/s]Loading weights:  29%|██▉       | 95/327 [00:02<00:06, 35.69it/s]Loading weights:  31%|███       | 102/327 [00:02<00:06, 36.35it/s]Loading weights:  32%|███▏      | 106/327 [00:03<00:07, 29.49it/s]Loading weights:  37%|███▋      | 120/327 [00:03<00:04, 46.53it/s]Loading weights:  39%|███▊      | 126/327 [00:03<00:04, 44.89it/s]Loading weights:  42%|████▏     | 136/327 [00:03<00:03, 51.16it/s]Loading weights:  43%|████▎     | 142/327 [00:03<00:05, 36.80it/s]Loading weights:  45%|████▍     | 147/327 [00:04<00:08, 22.31it/s]Loading weights:  48%|████▊     | 157/327 [00:04<00:06, 25.76it/s]Loading weights:  51%|█████     | 167/327 [00:04<00:04, 33.12it/s]Loading weights:  53%|█████▎    | 172/327 [00:05<00:07, 20.36it/s]Loading weights:  54%|█████▍    | 176/327 [00:06<00:10, 13.84it/s]Loading weights:  57%|█████▋    | 186/327 [00:06<00:06, 20.81it/s]Loading weights:  59%|█████▊    | 192/327 [00:06<00:05, 24.10it/s]Loading weights:  61%|██████    | 198/327 [00:06<00:04, 26.43it/s]Loading weights:  62%|██████▏   | 203/327 [00:06<00:04, 27.03it/s]Loading weights:  63%|██████▎   | 207/327 [00:06<00:04, 25.94it/s]Loading weights:  65%|██████▌   | 214/327 [00:07<00:04, 28.18it/s]Loading weights:  67%|██████▋   | 218/327 [00:07<00:04, 23.59it/s]Loading weights:  68%|██████▊   | 221/327 [00:07<00:04, 21.76it/s]Loading weights:  69%|██████▉   | 226/327 [00:07<00:04, 24.73it/s]Loading weights:  71%|███████   | 231/327 [00:07<00:03, 25.11it/s]Loading weights:  72%|███████▏  | 234/327 [00:08<00:04, 20.94it/s]Loading weights:  72%|███████▏  | 237/327 [00:08<00:04, 22.29it/s]Loading weights:  74%|███████▍  | 242/327 [00:08<00:03, 23.53it/s]Loading weights:  76%|███████▌  | 248/327 [00:08<00:02, 29.42it/s]Loading weights:  77%|███████▋  | 252/327 [00:09<00:04, 17.50it/s]Loading weights: 100%|██████████| 327/327 [00:09<00:00, 35.86it/s]
+[1/29] n=16 295.47s eos=16 parse=16 done=16/444 elapsed=296s
+[2/29] n=16 91.8s eos=16 parse=16 done=32/444 elapsed=388s
+[3/29] n=16 135.89s eos=16 parse=16 done=48/444 elapsed=525s
+[4/29] n=16 231.04s eos=16 parse=16 done=64/444 elapsed=756s
+[5/29] n=16 125.23s eos=16 parse=16 done=80/444 elapsed=882s
+[6/29] n=16 150.72s eos=16 parse=16 done=96/444 elapsed=1034s
+[7/29] n=16 167.42s eos=16 parse=16 done=112/444 elapsed=1202s
+[8/29] n=16 167.47s eos=16 parse=16 done=128/444 elapsed=1370s
+[9/29] n=16 278.7s eos=16 parse=16 done=144/444 elapsed=1649s
+[10/29] n=16 187.66s eos=16 parse=16 done=160/444 elapsed=1838s
+[11/29] n=16 224.08s eos=16 parse=16 done=176/444 elapsed=2063s
+[12/29] n=16 278.87s eos=16 parse=16 done=192/444 elapsed=2342s
+[13/29] n=16 328.32s eos=16 parse=16 done=208/444 elapsed=2672s
+[14/29] n=16 230.33s eos=16 parse=16 done=224/444 elapsed=2903s
+[15/29] n=16 243.68s eos=16 parse=16 done=240/444 elapsed=3147s
+[16/29] n=16 182.9s eos=16 parse=16 done=256/444 elapsed=3331s
+[17/29] n=16 464.44s eos=16 parse=16 done=272/444 elapsed=3796s
+[transformers] This is a friendly reminder - the current text generation call has exceeded the model's predefined maximum length (8192). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+[18/29] n=16 662.15s eos=15 parse=16 done=288/444 elapsed=4460s
+[19/29] n=16 277.9s eos=16 parse=16 done=304/444 elapsed=4739s
+[20/29] n=16 367.24s eos=16 parse=16 done=320/444 elapsed=5107s
+[21/29] n=16 405.51s eos=16 parse=16 done=336/444 elapsed=5513s
+[22/29] n=12 244.25s eos=12 parse=12 done=348/444 elapsed=5759s
+[23/29] n=16 261.95s eos=16 parse=16 done=364/444 elapsed=6022s
+[24/29] n=16 257.6s eos=16 parse=16 done=380/444 elapsed=6280s
+[25/29] n=16 262.84s eos=16 parse=16 done=396/444 elapsed=6544s
+[26/29] n=16 370.19s eos=16 parse=16 done=412/444 elapsed=6915s
+[27/29] n=12 248.62s eos=12 parse=12 done=424/444 elapsed=7165s
+[28/29] n=16 349.72s eos=16 parse=16 done=440/444 elapsed=7516s
+[29/29] n=4 172.31s eos=4 parse=4 done=444/444 elapsed=7689s
+GENERATION_DONE
+end=2026-09-25T13:39:34-07:00 PF_GEN_OK

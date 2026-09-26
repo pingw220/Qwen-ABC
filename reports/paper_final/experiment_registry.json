@@ -1,0 +1,2162 @@
+[
+ {
+  "experiment_id": "E0_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "ESS ablation: pre-ESS baseline",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "78b9dfdbaf6ae8345c16beb94818da535ec3e1960783f143e795db8fa4154912"
+  },
+  "git_commit": "job=40171255 host=g3104 partition=ckpt-all",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 382,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": null,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v1 prompt on cleaned (v2) specs; no ESS",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r2eval_E0_20260915_115636/v1cleantest_T0.8/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r2eval_E0_20260915_115636/v1cleantest_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7111111111111111,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E0_T1.0",
+  "model_family": "Qwen-ABC",
+  "role": "ESS ablation at canonical decoding",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "78b9dfdbaf6ae8345c16beb94818da535ec3e1960783f143e795db8fa4154912"
+  },
+  "git_commit": "job=40171255 host=g3104 partition=ckpt-all",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 382,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": null,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v1; no ESS",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r2eval_E0_20260915_115636/v1cleantest_T1.0_p0.95/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r2eval_E0_20260915_115636/v1cleantest_T1.0_p0.95/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.5777777777777777,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E0s2_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "training-seed replicate",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_seed2345_20260915_023500/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_seed2345_20260915_023500/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "3499d3204fb0e6fbbeab476e62d392e2db4d677b0055028299e609ebc94c59bd"
+  },
+  "git_commit": "job=40173062 host=g3114 partition=ckpt-all",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 382,
+   "learning_rate": 5e-05,
+   "seed": 2345,
+   "max_seq_len": 8192,
+   "world_size": null,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v1; no ESS",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 2345,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r2eval_E0_20260915_115636/seed2345_v1cleantest_T0.8/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r2eval_E0_20260915_115636/seed2345_v1cleantest_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.64,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E1c_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "ESS ablation: cleaning only",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1c_v1clean_sft_20260915_120949",
+  "checkpoint_exists": false,
+  "checkpoint_hash": null,
+  "git_commit": "job=40179452 host=g3109 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T12:16:45-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_v1clean_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 382,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v1 on cleaned section boundaries; no ESS",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1c_v1clean_sft_20260915_120949/eval_test_T0.8/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1c_v1clean_sft_20260915_120949/eval_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [
+   "final_model deleted after the storage incident; only T0.8 generations exist"
+  ],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.64,
+   "hit_eos": 0.9955555555555555
+  }
+ },
+ {
+  "experiment_id": "E1_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "ESS ablation: + ESS",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "0f30b730440f1de720c49fff5d7d81333d431452e58fac272f00587488ff7178"
+  },
+  "git_commit": "job=40179451 host=g3114 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T12:15:33-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 506,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS: section header + per-bar [r:k])",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/eval_test_T0.8/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/eval_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.6311111111111111,
+   "hit_eos": 0.9955555555555555
+  }
+ },
+ {
+  "experiment_id": "E1_T1.0",
+  "model_family": "Qwen-ABC",
+  "role": "ESS ablation at canonical decoding",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "0f30b730440f1de720c49fff5d7d81333d431452e58fac272f00587488ff7178"
+  },
+  "git_commit": "job=40179451 host=g3114 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T12:15:33-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 506,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/eval_test_T1.0_p0.95/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/eval_test_T1.0_p0.95/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [
+   "max_total 10240 (other T1.0 runs 8192); no output reached either limit"
+  ],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.5911111111111111,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E1s2_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "training-seed replicate",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_seed2345_20260915_143349/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_seed2345_20260915_143349/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "858a994d16ad60ec76eee8af9c7740fc42a08d58cab9bb6beb78069efed4056f"
+  },
+  "git_commit": "job=40184659 host=g3103 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T14:37:46-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 506,
+   "learning_rate": 5e-05,
+   "seed": 2345,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 2345,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1s2_test_T0.8/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1s2_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7333333333333333,
+   "hit_eos": 0.9911111111111112
+  }
+ },
+ {
+  "experiment_id": "E1s2_T1.0",
+  "model_family": "Qwen-ABC",
+  "role": "training-seed replicate",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_seed2345_20260915_143349/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_seed2345_20260915_143349/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "858a994d16ad60ec76eee8af9c7740fc42a08d58cab9bb6beb78069efed4056f"
+  },
+  "git_commit": "job=40184659 host=g3103 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T14:37:46-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 506,
+   "learning_rate": 5e-05,
+   "seed": 2345,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 2345,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1s2_test_T1.0/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1s2_test_T1.0/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7022222222222222,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E1long_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "matched-update control for E3b",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "79e42e2e85a0306e9bc4044c1fd9e861c2c598b80456a6814bd9aee92fb11923"
+  },
+  "git_commit": "job=40205107 host=g3112 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T22:51:43-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 3,
+   "total_steps": 758,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT, 758 updates",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1long_test_T0.8/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1long_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7244444444444444,
+   "hit_eos": 0.9955555555555555
+  }
+ },
+ {
+  "experiment_id": "E1long_T1.0",
+  "model_family": "Qwen-ABC",
+  "role": "matched-update control",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "79e42e2e85a0306e9bc4044c1fd9e861c2c598b80456a6814bd9aee92fb11923"
+  },
+  "git_commit": "job=40205107 host=g3112 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T22:51:43-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 131072,
+   "epochs": 3,
+   "total_steps": 758,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "whole-song SFT, 758 updates",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1long_test_T1.0/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e1long_test_T1.0/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7111111111111111,
+   "hit_eos": 0.9955555555555555
+  }
+ },
+ {
+  "experiment_id": "E2a_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "batch ablation",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e2a_v2_bigbatch_lr50e5_20260915_123850",
+  "checkpoint_exists": false,
+  "checkpoint_hash": null,
+  "git_commit": "job=40180604 host=g3123 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T12:39:05-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 524288,
+   "epochs": 2,
+   "total_steps": 128,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 524288,
+  "objective": "whole-song SFT at 524K tokens/update (128 updates)",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e2a_v2_bigbatch_lr50e5_20260915_123850/eval_test_T0.8/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e2a_v2_bigbatch_lr50e5_20260915_123850/eval_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.29333333333333333,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E2b_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "batch ablation",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e2b_201131/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e2b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "9340228b0b3231ebfe73f8e031cbf27a96658490912ad7de214559ff77b1e440"
+  },
+  "git_commit": "job=40201182 host=g3108 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T20:11:45-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": null,
+   "tokens_per_update": 524288,
+   "epochs": 100,
+   "total_steps": 506,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 10243
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 524288,
+  "objective": "whole-song SFT at 524K tokens/update (506 updates, ~8 epochs)",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e2b_test_T0.8/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e2b_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.5066666666666667,
+   "hit_eos": 0.9955555555555555
+  }
+ },
+ {
+  "experiment_id": "E3_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "objective x batch ablation",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e3_v2_longrange_20260915_130350",
+  "checkpoint_exists": false,
+  "checkpoint_hash": null,
+  "git_commit": "job=40181511 host=g3102 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T13:10:47-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 524288,
+   "epochs": 2,
+   "total_steps": 190,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 524288,
+  "objective": "+ late-section reconstruction at 524K tokens/update",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e3_v2_longrange_20260915_130350/eval_test_T0.8/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e3_v2_longrange_20260915_130350/eval_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [
+   "final_model deleted after the storage incident"
+  ],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.5022222222222222,
+   "hit_eos": 0.9911111111111112
+  }
+ },
+ {
+  "experiment_id": "E3b_T0.8",
+  "model_family": "Qwen-ABC",
+  "role": "current best model (T0.8)",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "git_commit": "job=40201183 host=g3109 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T20:11:46-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 758,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "+ late-section reconstruction (infill mixture), 131K tokens/update, 758 updates",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e3b_test_T0.8/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e3b_test_T0.8/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.8444444444444444,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E3b_T1.0",
+  "model_family": "Qwen-ABC",
+  "role": "current best model, single sample",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "git_commit": "job=40201183 host=g3109 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T20:11:46-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 758,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "+ late-section reconstruction",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "10240",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e3b_test_T1.0/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e3b_test_T1.0/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7288888888888889,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "E3b_T1.0_x4",
+  "model_family": "Qwen-ABC",
+  "role": "4 samples/song for selector@4 / oracle@4",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "git_commit": "job=40201183 host=g3109 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T20:11:46-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 758,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "+ late-section reconstruction",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 4,
+  "selector": "none (raw samples)",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 900,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/bon_e3b_test_T1.0/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/bon_e3b_test_T1.0/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7911111111111111,
+   "hit_eos": 0.9977777777777778
+  }
+ },
+ {
+  "experiment_id": "E3b_T1.0_sel4",
+  "model_family": "Qwen-ABC",
+  "role": "headline 0.996 structure: selector@4 ('sum' rule)",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "git_commit": "job=40201183 host=g3109 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T20:11:46-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 758,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "+ late-section reconstruction",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "1",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "sum rule (scripts/select_best_of_n.py), chosen on 64 validation songs",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/bon_r3b_20260918_100234/test_sum/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/bon_r3b_20260918_100234/test_sum/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [
+   "selector ranks on section_plan_exact and lyric_recall, i.e. the evaluation metrics themselves (legitimate: computed from prompt + output only)"
+  ],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.9777777777777777,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "MuPT_T1.0_x4",
+  "model_family": "MuPT",
+  "role": "music-pretrained base",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model/model.safetensors",
+   "bytes": 2165175632,
+   "sha256_first64MiB+size": "9fe91ed33f871ea23ef38fb9524c4f614536fbcfe5b512f9a9851d9e1579b284"
+  },
+  "git_commit": "job=40473949 host=g3072 partition=gpu-a40 restart=0 nproc=2 date=2026-09-23T00:18:40-07:00",
+  "training_config": {
+   "model_name_or_path": "models/mupt_zh_20260923",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 1070,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15329
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS), vocabulary extended with corpus characters",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "same infill mixture as E3b, 1070 updates",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 4,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 900,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/evals_r4/r4_mupt_test_T1.0_bon/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/evals_r4/r4_mupt_test_T1.0_bon/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [
+   "tokenizer, architecture, pretraining corpus and update count all differ from Qwen (not a controlled causal comparison)",
+   "one generation file regenerated after a quota failure (R4 report)"
+  ],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.23222222222222222,
+   "hit_eos": 0.9955555555555555
+  }
+ },
+ {
+  "experiment_id": "MuPT_T1.0_sel4",
+  "model_family": "MuPT",
+  "role": "MuPT selector@4",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model/model.safetensors",
+   "bytes": 2165175632,
+   "sha256_first64MiB+size": "9fe91ed33f871ea23ef38fb9524c4f614536fbcfe5b512f9a9851d9e1579b284"
+  },
+  "git_commit": "job=40473949 host=g3072 partition=gpu-a40 restart=0 nproc=2 date=2026-09-23T00:18:40-07:00",
+  "training_config": {
+   "model_name_or_path": "models/mupt_zh_20260923",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 1070,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15329
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 (ESS)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "infill mixture",
+  "decoding": {
+   "temperature": "0.8",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "1",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "sum rule",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/bon_r3b_20260918_100234/r4_sum/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/bon_r3b_20260918_100234/r4_sum/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.4666666666666667,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "MIDI-LLM_A_s1000",
+  "model_family": "MIDI-LLM",
+  "role": "MIDI-LLM baseline, recommended constraints",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-LLM-phoneme-lyric-v1/runs/original-midi-llm-onestage-multitask-v1-v4/full/final",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-LLM-phoneme-lyric-v1/runs/original-midi-llm-onestage-multitask-v1-v4/full/final/model.safetensors",
+   "bytes": 3469488712,
+   "sha256_first64MiB+size": "b032bfe3e2c9d6ce6877925c86f8e92ec0a2fa77a9b71d1660d38acdf21915d4"
+  },
+  "git_commit": null,
+  "training_config": null,
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "MIDI-LLM token stream (phonemes, click grid)",
+  "context_length": null,
+  "batch_size_tokens_per_update": null,
+  "objective": "MIDI-LLM one-stage multitask v4",
+  "decoding": {
+   "temperature": null,
+   "top_p": null,
+   "top_k": 0,
+   "max_total": null,
+   "batch_size": null,
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": null,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_llm_r2_20260915_121309/modeA/eval_test/generations",
+  "metric_path": null,
+  "complete": true,
+  "comparable": false,
+  "caveats": [
+   "section count, bars/section, tempo and bar grid are INPUT (click grid) and pinned by the decoder: structure exact by construction",
+   "26/225 songs refused at G2P (code-switched English)",
+   "validity is its own validator, not strict ABC",
+   "MIDI-LLM repo commit bea5597, clean tracked tree"
+  ],
+  "summary_headline": null
+ },
+ {
+  "experiment_id": "MIDI-LLM_B_s1000",
+  "model_family": "MIDI-LLM",
+  "role": "MIDI-LLM with free section labels / lyric assignment",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-LLM-phoneme-lyric-v1/runs/original-midi-llm-onestage-multitask-v1-v4/full/final",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-LLM-phoneme-lyric-v1/runs/original-midi-llm-onestage-multitask-v1-v4/full/final/model.safetensors",
+   "bytes": 3469488712,
+   "sha256_first64MiB+size": "b032bfe3e2c9d6ce6877925c86f8e92ec0a2fa77a9b71d1660d38acdf21915d4"
+  },
+  "git_commit": null,
+  "training_config": null,
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "MIDI-LLM token stream",
+  "context_length": null,
+  "batch_size_tokens_per_update": null,
+  "objective": "MIDI-LLM one-stage multitask v4",
+  "decoding": {
+   "temperature": null,
+   "top_p": null,
+   "top_k": 0,
+   "max_total": null,
+   "batch_size": null,
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 1,
+  "selector": "none",
+  "random_seeds": {
+   "training": null,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 225,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/midi_llm_r2_20260915_121309/modeB/eval_test/generations",
+  "metric_path": null,
+  "complete": true,
+  "comparable": false,
+  "caveats": [
+   "bars/section still input; labels free -> exact plan 0.027"
+  ],
+  "summary_headline": null
+ },
+ {
+  "experiment_id": "R3A_T1.0_x4",
+  "model_family": "Qwen-ABC",
+  "role": "cramming attack (negative)",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r3a_v3_longrange_20260918_102828/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r3a_v3_longrange_20260918_102828/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "89e4d0aa450586e1c114436d531c9d12cefc45cd1a542aec1a688353d8184d6b"
+  },
+  "git_commit": "job=40295745 host=g3107 partition=ckpt-all restart=0 nproc=2 date=2026-09-18T11:49:01-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v3_20260918_102229/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 774,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v3 (syllable budget in prompt)",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "infill mixture",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 4,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 900,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/r3a_test_T1.0_bon/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/r3a_test_T1.0_bon/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7244444444444444,
+   "hit_eos": 1.0
+  }
+ },
+ {
+  "experiment_id": "R3C_T1.0_x4",
+  "model_family": "Qwen-ABC",
+  "role": "cramming attack (rejected by listening)",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r3c_repaired_20260919_092032/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r3c_repaired_20260919_092032/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "de021019d830675480711bc7e2ac31685cf6ec0c6817128841868be5aa45b709"
+  },
+  "git_commit": "job=40326311 host=g3101 partition=ckpt-all restart=0 nproc=2 date=2026-09-19T09:37:08-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2r_20260918_203632/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 760,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2 on repaired targets",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "infill mixture",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 4,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 900,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/r3c_test_T1.0_bon/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/r3c_test_T1.0_bon/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.6333333333333333,
+   "hit_eos": 0.9966666666666667
+  }
+ },
+ {
+  "experiment_id": "E3b_nocram_T1.0_x4",
+  "model_family": "Qwen-ABC",
+  "role": "cramming attack (negative)",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "git_commit": "job=40201183 host=g3109 partition=ckpt-all restart=0 nproc=2 date=2026-09-15T20:11:46-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_v2_20260915_120927/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 758,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "ABC-v2",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "E3b + decode-time ban of '~' in w: lines",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 4,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 900,
+  "output_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e3b_nocram_test_T1.0/generations",
+  "metric_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/evals/e3b_nocram_test_T1.0/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.3688888888888889,
+   "hit_eos": 0.9933333333333333
+  }
+ },
+ {
+  "experiment_id": "R5_T1.0_x4",
+  "model_family": "Qwen-ABC",
+  "role": "R5 free lyric assignment",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r5_free_20260924_100314/final_model",
+  "checkpoint_exists": true,
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r5_free_20260924_100314/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "cb7df7d0346736827c0b127b5f52ff85320edc1f1c84f699684839375c6d8cf6"
+  },
+  "git_commit": "job=40565949 host=g3050 partition=gpu-a40 restart=0 nproc=2 date=2026-09-24T10:03:36-07:00",
+  "training_config": {
+   "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+   "train_file": "data/generated/abc_free_20260924_095912/sft_longrange_train.jsonl",
+   "tokens_per_update": 131072,
+   "epochs": 2,
+   "total_steps": 762,
+   "learning_rate": 5e-05,
+   "seed": 1234,
+   "max_seq_len": 8192,
+   "world_size": 2,
+   "train_examples": 15332
+  },
+  "dataset_split": "abc_v2_20260915_120927 test (225 de-duplicated songs)",
+  "representation": "free lyric assignment prompt",
+  "context_length": 8192,
+  "batch_size_tokens_per_update": 131072,
+  "objective": "infill mixture",
+  "decoding": {
+   "temperature": "1.0",
+   "top_p": "0.95",
+   "top_k": 0,
+   "max_total": "8192",
+   "batch_size": "16",
+   "sampler": "torch multinomial (seed 1000+batch offset)"
+  },
+  "candidate_count": 4,
+  "selector": "none",
+  "random_seeds": {
+   "training": 1234,
+   "sampling": "1000 + batch index (scripts/generate_eval.py)"
+  },
+  "n_songs_evaluated": 225,
+  "n_generation_files": 900,
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/evals_r5/r5_free_test_T1.0_bon/generations",
+  "metric_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/evals_r5/r5_free_test_T1.0_bon/summary.json",
+  "complete": true,
+  "comparable": true,
+  "caveats": [],
+  "summary_headline": {
+   "parse_success": 1.0,
+   "strict_valid": 0.7855555555555556,
+   "hit_eos": 0.9977777777777778
+  }
+ },
+ {
+  "experiment_id": "PF_bon_qwen_e3b",
+  "model_family": "Qwen-ABC",
+  "role": "single / selector@4 / oracle@4, reseed floor, long-range & musicality",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS) + late-section reconstruction, 758 updates (current best)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig x S1..S4 (paired-seed sampler)",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 8966,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_replay_qwen_e3b",
+  "model_family": "Qwen-ABC",
+  "role": "numeric noise floor of the paired-seed sampler",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS) + late-section reconstruction, 758 updates (current best)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig S1 re-batched",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 8966,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_interventions_qwen_e3b",
+  "model_family": "Qwen-ABC",
+  "role": "interventional controllability",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS) + late-section reconstruction, 758 updates (current best)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "13 one-control interventions x S1,S2",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 8966,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_ood_qwen_e3b",
+  "model_family": "Qwen-ABC",
+  "role": "compositional / extrapolative generalization",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "1e787f3e52bf0de3b5e852f2b68070ba4832d1576f81bf56471ce36f19dda64d"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS) + late-section reconstruction, 758 updates (current best)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "7 OOD plans x S1",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_ood_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e3b/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 8966,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_bon_qwen_e1",
+  "model_family": "Qwen-ABC",
+  "role": "single / selector@4 / oracle@4, reseed floor, long-range & musicality",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "0f30b730440f1de720c49fff5d7d81333d431452e58fac272f00587488ff7178"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 506 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig x S1..S4 (paired-seed sampler)",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_ood.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_replay_qwen_e1",
+  "model_family": "Qwen-ABC",
+  "role": "numeric noise floor of the paired-seed sampler",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "0f30b730440f1de720c49fff5d7d81333d431452e58fac272f00587488ff7178"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 506 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig S1 re-batched",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_ood.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_interventions_qwen_e1",
+  "model_family": "Qwen-ABC",
+  "role": "interventional controllability",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "0f30b730440f1de720c49fff5d7d81333d431452e58fac272f00587488ff7178"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 506 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "13 one-control interventions x S1,S2",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_ood.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_ood_qwen_e1",
+  "model_family": "Qwen-ABC",
+  "role": "compositional / extrapolative generalization",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/e1_v2_sft_20260915_120949/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "0f30b730440f1de720c49fff5d7d81333d431452e58fac272f00587488ff7178"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 506 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "7 OOD plans x S1",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1/tasks_ood.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_bon_qwen_e1long",
+  "model_family": "Qwen-ABC",
+  "role": "single / selector@4 / oracle@4, reseed floor, long-range & musicality",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "79e42e2e85a0306e9bc4044c1fd9e861c2c598b80456a6814bd9aee92fb11923"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 758 updates (matched-update control for E3b)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig x S1..S4 (paired-seed sampler)",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long/tasks_bon.jsonl"
+  ],
+  "n_generation_files": 900,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_replay_qwen_e1long",
+  "model_family": "Qwen-ABC",
+  "role": "numeric noise floor of the paired-seed sampler",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "79e42e2e85a0306e9bc4044c1fd9e861c2c598b80456a6814bd9aee92fb11923"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 758 updates (matched-update control for E3b)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig S1 re-batched",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long/tasks_bon.jsonl"
+  ],
+  "n_generation_files": 900,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_interventions_qwen_e1long",
+  "model_family": "Qwen-ABC",
+  "role": "interventional controllability",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "79e42e2e85a0306e9bc4044c1fd9e861c2c598b80456a6814bd9aee92fb11923"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 758 updates (matched-update control for E3b)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "13 one-control interventions x S1,S2",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long/tasks_bon.jsonl"
+  ],
+  "n_generation_files": 900,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_ood_qwen_e1long",
+  "model_family": "Qwen-ABC",
+  "role": "compositional / extrapolative generalization",
+  "checkpoint_path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model",
+  "checkpoint_hash": {
+   "file": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e1long_225021/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "79e42e2e85a0306e9bc4044c1fd9e861c2c598b80456a6814bd9aee92fb11923"
+  },
+  "representation": "v2",
+  "objective": "Qwen3.5-0.8B, ABC-v2 (ESS), whole-song SFT, 758 updates (matched-update control for E3b)",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "7 OOD plans x S1",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e1long/tasks_bon.jsonl"
+  ],
+  "n_generation_files": 900,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_bon_qwen_e0",
+  "model_family": "Qwen-ABC",
+  "role": "single / selector@4 / oracle@4, reseed floor, long-range & musicality",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "78b9dfdbaf6ae8345c16beb94818da535ec3e1960783f143e795db8fa4154912"
+  },
+  "representation": "v1",
+  "objective": "Qwen3.5-0.8B, ABC-v1 (no ESS, uncleaned training boundaries), 382 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig x S1..S4 (paired-seed sampler)",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood_songs3.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_replay_qwen_e0",
+  "model_family": "Qwen-ABC",
+  "role": "numeric noise floor of the paired-seed sampler",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "78b9dfdbaf6ae8345c16beb94818da535ec3e1960783f143e795db8fa4154912"
+  },
+  "representation": "v1",
+  "objective": "Qwen3.5-0.8B, ABC-v1 (no ESS, uncleaned training boundaries), 382 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig S1 re-batched",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood_songs3.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_interventions_qwen_e0",
+  "model_family": "Qwen-ABC",
+  "role": "interventional controllability",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "78b9dfdbaf6ae8345c16beb94818da535ec3e1960783f143e795db8fa4154912"
+  },
+  "representation": "v1",
+  "objective": "Qwen3.5-0.8B, ABC-v1 (no ESS, uncleaned training boundaries), 382 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "13 one-control interventions x S1,S2",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood_songs3.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_ood_qwen_e0",
+  "model_family": "Qwen-ABC",
+  "role": "compositional / extrapolative generalization",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/direct_sft_20260915_023500/final_model/model.safetensors",
+   "bytes": 2013387376,
+   "sha256_first64MiB+size": "78b9dfdbaf6ae8345c16beb94818da535ec3e1960783f143e795db8fa4154912"
+  },
+  "representation": "v1",
+  "objective": "Qwen3.5-0.8B, ABC-v1 (no ESS, uncleaned training boundaries), 382 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "7 OOD plans x S1",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/qwen_e0/tasks_ood_songs3.jsonl"
+  ],
+  "n_generation_files": 2455,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_bon_mupt",
+  "model_family": "MuPT",
+  "role": "single / selector@4 / oracle@4, reseed floor, long-range & musicality",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model/model.safetensors",
+   "bytes": 2165175632,
+   "sha256_first64MiB+size": "9fe91ed33f871ea23ef38fb9524c4f614536fbcfe5b512f9a9851d9e1579b284"
+  },
+  "representation": "v2",
+  "objective": "MuPT-1.07B (ABC-pretrained), same data/recipe as E3b, 1070 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig x S1..S4 (paired-seed sampler)",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_bars_m4+bars_p4+label_bridge+key_p5+tempo_x1.25+lyrics_all.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_ood_ood_chorus_first+ood_long20+ood_sections_p3+ood_tempo.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 4947,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_replay_mupt",
+  "model_family": "MuPT",
+  "role": "numeric noise floor of the paired-seed sampler",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model/model.safetensors",
+   "bytes": 2165175632,
+   "sha256_first64MiB+size": "9fe91ed33f871ea23ef38fb9524c4f614536fbcfe5b512f9a9851d9e1579b284"
+  },
+  "representation": "v2",
+  "objective": "MuPT-1.07B (ABC-pretrained), same data/recipe as E3b, 1070 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "orig S1 re-batched",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_bars_m4+bars_p4+label_bridge+key_p5+tempo_x1.25+lyrics_all.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_ood_ood_chorus_first+ood_long20+ood_sections_p3+ood_tempo.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 4947,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_interventions_mupt",
+  "model_family": "MuPT",
+  "role": "interventional controllability",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model/model.safetensors",
+   "bytes": 2165175632,
+   "sha256_first64MiB+size": "9fe91ed33f871ea23ef38fb9524c4f614536fbcfe5b512f9a9851d9e1579b284"
+  },
+  "representation": "v2",
+  "objective": "MuPT-1.07B (ABC-pretrained), same data/recipe as E3b, 1070 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "13 one-control interventions x S1,S2",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_bars_m4+bars_p4+label_bridge+key_p5+tempo_x1.25+lyrics_all.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_ood_ood_chorus_first+ood_long20+ood_sections_p3+ood_tempo.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 4947,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ },
+ {
+  "experiment_id": "PF_ood_mupt",
+  "model_family": "MuPT",
+  "role": "compositional / extrapolative generalization",
+  "checkpoint_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model",
+  "checkpoint_hash": {
+   "file": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/r4_mupt_20260923_001821/final_model/model.safetensors",
+   "bytes": 2165175632,
+   "sha256_first64MiB+size": "9fe91ed33f871ea23ef38fb9524c4f614536fbcfe5b512f9a9851d9e1579b284"
+  },
+  "representation": "v2",
+  "objective": "MuPT-1.07B (ABC-pretrained), same data/recipe as E3b, 1070 updates",
+  "decoding": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 0,
+   "max_total": 9216,
+   "batch_size": 16,
+   "sampler": "Gumbel-max paired-seed (paper_eval/sampler.py)"
+  },
+  "conditions": "7 OOD plans x S1",
+  "random_seeds": {
+   "S1": 101,
+   "S2": 202,
+   "S3": 303,
+   "S4": 404
+  },
+  "output_path": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt",
+  "task_manifests": [
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_bon_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_bars_m4+bars_p4+label_bridge+key_p5+tempo_x1.25+lyrics_all.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_interventions_songs3.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_ood_ood_chorus_first+ood_long20+ood_sections_p3+ood_tempo.jsonl",
+   "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/experiments/paper_final/gen/mupt/tasks_replay_songs3.jsonl"
+  ],
+  "n_generation_files": 4947,
+  "comparable": true,
+  "caveats": [],
+  "planned": true
+ }
+]

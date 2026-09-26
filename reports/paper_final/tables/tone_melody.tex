@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+melody & tones & agreement (own) & agreement (other) & own $-$ other [95\% CI] & N songs \\
+\midrule
+pseudo-GT reference & own lyric vs another song's & 0.520 & 0.494 & +0.026 [+0.013, +0.038] & 225 \\
+qwen\_e3b unmodified samples (A) & own (prompted) lyric vs the other lyric & 0.505 & 0.506 & -0.001 [-0.006, +0.004] & 225 \\
+qwen\_e3b lyric-swapped samples (B) & own (prompted) lyric vs the other lyric & 0.503 & 0.504 & -0.001 [-0.006, +0.004] & 225 \\
+mupt unmodified samples (A) & own (prompted) lyric vs the other lyric & 0.495 & 0.494 & +0.001 [-0.007, +0.009] & 225 \\
+mupt lyric-swapped samples (B) & own (prompted) lyric vs the other lyric & 0.494 & 0.498 & -0.004 [-0.013, +0.004] & 225 \\
+\bottomrule
+\end{tabular}
+\caption{Mandarin tone-melody direction agreement (chance 0.5): own lyric vs counterfactual lyric at the same syllable slots; song-level paired bootstrap}
+\label{tab:tone_melody}
+\end{table}

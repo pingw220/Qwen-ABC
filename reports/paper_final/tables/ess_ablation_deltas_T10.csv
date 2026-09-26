@@ -1,0 +1,33 @@
+step,metric,delta [95% CI],N,significant
+E1-long − E1,exact structure,"+0.009 [-0.022, +0.040]",225,no
+E1-long − E1,label sequence exact,"+0.001 [-0.008, +0.010]",225,no
+E1-long − E1,sections exact (per section),"+0.002 [-0.004, +0.009]",225,no
+E1-long − E1,|total bars − request|,"-0.468 [-0.854, -0.087]",225,yes
+E1-long − E1,early termination,"+0.003 [-0.001, +0.009]",225,no
+E1-long − E1,late-section failure (last third),"+0.004 [-0.004, +0.013]",225,no
+E1-long − E1,lyric recall,"+0.008 [+0.004, +0.012]",225,yes
+E1-long − E1,strict validity,"+0.126 [+0.080, +0.171]",225,yes
+E3b − E1-long,exact structure,"+0.129 [+0.101, +0.157]",225,yes
+E3b − E1-long,label sequence exact,"+0.002 [-0.007, +0.011]",225,no
+E3b − E1-long,sections exact (per section),"+0.018 [+0.013, +0.024]",225,yes
+E3b − E1-long,|total bars − request|,"-0.540 [-0.874, -0.211]",225,yes
+E3b − E1-long,early termination,"-0.003 [-0.009, +0.001]",225,no
+E3b − E1-long,late-section failure (last third),"-0.015 [-0.024, -0.007]",225,yes
+E3b − E1-long,lyric recall,"-0.009 [-0.013, -0.005]",225,yes
+E3b − E1-long,strict validity,"+0.077 [+0.037, +0.117]",225,yes
+E3b − E1,exact structure,"+0.138 [+0.112, +0.164]",225,yes
+E3b − E1,label sequence exact,"+0.003 [-0.006, +0.012]",225,no
+E3b − E1,sections exact (per section),"+0.021 [+0.015, +0.027]",225,yes
+E3b − E1,|total bars − request|,"-1.008 [-1.399, -0.612]",225,yes
+E3b − E1,early termination,"+0.000 [-0.003, +0.003]",225,no
+E3b − E1,late-section failure (last third),"-0.011 [-0.018, -0.004]",225,yes
+E3b − E1,lyric recall,"-0.001 [-0.006, +0.004]",225,no
+E3b − E1,strict validity,"+0.202 [+0.164, +0.240]",225,yes
+E1 − E0,exact structure,"+0.292 [+0.247, +0.338]",225,yes
+E1 − E0,label sequence exact,"+0.007 [-0.006, +0.019]",225,no
+E1 − E0,sections exact (per section),"+0.062 [+0.050, +0.075]",225,yes
+E1 − E0,|total bars − request|,"-1.602 [-2.494, -0.924]",225,yes
+E1 − E0,early termination,"-0.011 [-0.020, -0.003]",225,yes
+E1 − E0,late-section failure (last third),"-0.063 [-0.079, -0.048]",225,yes
+E1 − E0,lyric recall,"-0.004 [-0.009, +0.002]",225,no
+E1 − E0,strict validity,"-0.034 [-0.076, +0.007]",225,no

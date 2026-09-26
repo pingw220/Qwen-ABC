@@ -1,0 +1,356 @@
+{
+ "song_id": "4VfHbfbzNPZmX5KI4iAOyT",
+ "model": "qwen_e3b",
+ "checkpoint": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+ "temperature": 1.0,
+ "top_p": 0.95,
+ "sampler": "gumbel_crn",
+ "source": {
+  "seed": "S1",
+  "selection": {
+   "chosen_seed": "S1",
+   "rule": "sum (scripts/select_best_of_n.py, inference-only signals)",
+   "per_seed": {
+    "S1": {
+     "strict_ok": true,
+     "section_plan_exact": 1.0,
+     "lyric_recall": 0.9821958456973294
+    },
+    "S2": {
+     "strict_ok": true,
+     "section_plan_exact": 1.0,
+     "lyric_recall": 0.9228486646884273
+    },
+    "S3": {
+     "strict_ok": true,
+     "section_plan_exact": 1.0,
+     "lyric_recall": 0.9525222551928784
+    },
+    "S4": {
+     "strict_ok": true,
+     "section_plan_exact": 1.0,
+     "lyric_recall": 0.9792284866468842
+    }
+   }
+  },
+  "strict_ok": true,
+  "plan_exact": 1.0,
+  "lyric_recall": 0.9822,
+  "key": "Eb major",
+  "tempo": 97,
+  "target_section": 7,
+  "target_label": "chorus",
+  "target_bars": 8,
+  "n_bars": 75
+ },
+ "donor_song_for_lyrics": "4218Xav4mopAXlguvSJ9Uv",
+ "demos": {
+  "A_structure": {
+   "requested": {
+    "target_section": 7,
+    "bars_from": 8,
+    "bars_to": 12
+   },
+   "A_local": {
+    "method": "section infill (qwen_abc/longrange.py prompt), rest of score byte-identical",
+    "chosen_seed": "S1",
+    "chosen": {
+     "seed": "S1",
+     "hit_eos": true,
+     "parse_ok": true,
+     "strict_ok": true,
+     "target_label": "chorus",
+     "target_bars": 12,
+     "n_sections": 9,
+     "bars_ok": true,
+     "other_sections_text_identical": "8/8",
+     "other_sections_identical": "8/8",
+     "plan_exact": 1.0
+    },
+    "all_seeds": [
+     {
+      "seed": "S1",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": true,
+      "target_label": "chorus",
+      "target_bars": 12,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0
+     },
+     {
+      "seed": "S2",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": true,
+      "target_label": "chorus",
+      "target_bars": 12,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0
+     },
+     {
+      "seed": "S3",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": false,
+      "target_label": "chorus",
+      "target_bars": 12,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0
+     },
+     {
+      "seed": "S4",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": true,
+      "target_label": "chorus",
+      "target_bars": 12,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0
+     }
+    ],
+    "success_rate_bars_ok": 1.0
+   },
+   "A_whole": {
+    "method": "whole-song regeneration, same seed",
+    "strict_ok": true,
+    "target_bars": 12,
+    "plan_exact": 1.0,
+    "lyric_recall": 0.9822,
+    "other_sections_identical": "2/8"
+   }
+  },
+  "B_key": {
+   "requested": {
+    "key_from": "Eb major",
+    "key_to": "Ab major",
+    "semitones": 5
+   },
+   "B_direct": {
+    "method": "symbolic transposition of the parsed score (+5 semitones, chords respelled)",
+    "parse_ok": true,
+    "strict_ok": true,
+    "declared_key": "Ab major",
+    "every_note_exactly_+5": true,
+    "pc_shift_estimate": 5,
+    "melody_in_new_key": 1.0,
+    "pitch_mean_shift": 5.0,
+    "chords_same_count": true
+   },
+   "B_model": {
+    "method": "whole-song regeneration under Key+5, same seed",
+    "strict_ok": true,
+    "declared_key": "Ab major",
+    "key_followed": true,
+    "pc_shift_estimate": 0,
+    "pc_shift_correlation": 0.799,
+    "pitch_mean_shift": 3.289,
+    "melody_in_new_key": 1.0,
+    "melody_in_old_key": 0.97,
+    "source_melody_in_new_key": 0.936,
+    "source_melody_in_old_key": 1.0,
+    "plan_exact": 1.0,
+    "lyric_recall": 0.9881
+   }
+  },
+  "C_tempo": {
+   "requested": {
+    "tempo_from": 97,
+    "tempo_to": 121,
+    "factor": 1.25
+   },
+   "C_direct": {
+    "method": "only the Q: field edited",
+    "parse_ok": true,
+    "tempo": 121,
+    "notes_identical": true,
+    "score_duration_s": 147.77,
+    "source_score_duration_s": 184.33
+   },
+   "C_model": {
+    "method": "whole-song regeneration under the new tempo, same seed",
+    "strict_ok": true,
+    "tempo": 121,
+    "tempo_followed": true,
+    "bars": 75,
+    "source_bars": 75,
+    "plan_exact": 1.0,
+    "score_duration_s": 147.77,
+    "notes_per_bar": 4.747,
+    "source_notes_per_bar": 4.293,
+    "lyric_recall": 0.8902
+   }
+  },
+  "D_lyrics": {
+   "requested": {
+    "target_section": 7,
+    "n_syllables": 54,
+    "donor": "4218Xav4mopAXlguvSJ9Uv"
+   },
+   "D_local": {
+    "method": "section infill (qwen_abc/longrange.py prompt), rest of score byte-identical",
+    "chosen_seed": "S3",
+    "chosen": {
+     "seed": "S3",
+     "hit_eos": true,
+     "parse_ok": true,
+     "strict_ok": true,
+     "target_label": "chorus",
+     "target_bars": 8,
+     "n_sections": 9,
+     "bars_ok": true,
+     "other_sections_text_identical": "8/8",
+     "other_sections_identical": "8/8",
+     "plan_exact": 1.0,
+     "target_new_lyric_recall": 1.0,
+     "target_old_lyric_recall": 0.0741,
+     "source_target_new_lyric_recall": 0.0741
+    },
+    "all_seeds": [
+     {
+      "seed": "S1",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": false,
+      "target_label": "chorus",
+      "target_bars": 8,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0,
+      "target_new_lyric_recall": 1.0,
+      "target_old_lyric_recall": 0.0741,
+      "source_target_new_lyric_recall": 0.0741
+     },
+     {
+      "seed": "S2",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": false,
+      "target_label": "chorus",
+      "target_bars": 8,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0,
+      "target_new_lyric_recall": 1.0,
+      "target_old_lyric_recall": 0.0741,
+      "source_target_new_lyric_recall": 0.0741
+     },
+     {
+      "seed": "S3",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": true,
+      "target_label": "chorus",
+      "target_bars": 8,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0,
+      "target_new_lyric_recall": 1.0,
+      "target_old_lyric_recall": 0.0741,
+      "source_target_new_lyric_recall": 0.0741
+     },
+     {
+      "seed": "S4",
+      "hit_eos": true,
+      "parse_ok": true,
+      "strict_ok": false,
+      "target_label": "chorus",
+      "target_bars": 8,
+      "n_sections": 9,
+      "bars_ok": true,
+      "other_sections_text_identical": "8/8",
+      "other_sections_identical": "8/8",
+      "plan_exact": 1.0,
+      "target_new_lyric_recall": 1.0,
+      "target_old_lyric_recall": 0.0741,
+      "source_target_new_lyric_recall": 0.0741
+     }
+    ],
+    "success_rate_bars_ok": 1.0
+   }
+  }
+ },
+ "audio": {
+  "A_local": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__A_local/mix.wav",
+   "mix_seconds": 194.2268253968254,
+   "vocal_seconds": 174.1959410430839,
+   "vocal_onset_s": null,
+   "rendered": true,
+   "duration_ratio_vs_source": 1.0537
+  },
+  "A_whole": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__A_whole/mix.wav",
+   "mix_seconds": 194.2268253968254,
+   "vocal_seconds": 169.8660544217687,
+   "vocal_onset_s": null,
+   "rendered": true,
+   "duration_ratio_vs_source": 1.0537
+  },
+  "B_direct": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__B_direct/mix.wav",
+   "mix_seconds": 184.32990929705215,
+   "vocal_seconds": 167.70111111111112,
+   "vocal_onset_s": null,
+   "rendered": true,
+   "duration_ratio_vs_source": 1.0
+  },
+  "B_model": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__B_model/mix.wav",
+   "mix_seconds": 184.32990929705215,
+   "vocal_seconds": 166.4639909297052,
+   "vocal_onset_s": null,
+   "rendered": true,
+   "duration_ratio_vs_source": 1.0
+  },
+  "C_direct": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__C_direct/mix.wav",
+   "mix_seconds": 147.76857142857142,
+   "vocal_seconds": 134.63641723356008,
+   "vocal_onset_s": null,
+   "rendered": true,
+   "duration_ratio_vs_source": 0.8017
+  },
+  "C_model": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__C_model/mix.wav",
+   "mix_seconds": 147.76857142857142,
+   "vocal_seconds": 137.36369614512472,
+   "vocal_onset_s": null,
+   "rendered": true,
+   "duration_ratio_vs_source": 0.8017
+  },
+  "D_local": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__D_local/mix.wav",
+   "mix_seconds": 184.32990929705215,
+   "vocal_seconds": 167.39181405895692,
+   "vocal_onset_s": null,
+   "rendered": true,
+   "duration_ratio_vs_source": 1.0
+  },
+  "source": {
+   "mix_wav": "/gscratch/ark/pingw220/qwen_abc_r2_offload/paper_final_edit_rerender/4VfHbfbzNPZmX5KI4iAOyT__source/mix.wav",
+   "mix_seconds": 184.32990929705215,
+   "vocal_seconds": 167.70111111111112,
+   "vocal_onset_s": null,
+   "rendered": true
+  }
+ }
+}

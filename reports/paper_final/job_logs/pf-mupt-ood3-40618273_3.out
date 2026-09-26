@@ -1,0 +1,4 @@
+job=40618273 array=40618273_3 host=g3112 partition=ckpt-all gpu=NVIDIA L40S start=2026-09-25T15:28:16-07:00 commit=06027f571e15eee20259ba4b6f9fef45939b2795 model=mupt suites=ood conditions=ood_chorus_first,ood_long20,ood_sections_p3,ood_tempo songs=all shard=3/4
+model=mupt suite=ood tasks=886 skipped=14 shard=3/4 batches=14 pending=0
+NOTHING_TO_DO
+end=2026-09-25T15:28:24-07:00 PF_GEN_OK

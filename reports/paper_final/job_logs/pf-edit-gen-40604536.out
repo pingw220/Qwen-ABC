@@ -1,0 +1,6 @@
+job=40604536 host=g3103 gpu=NVIDIA L40S start=2026-09-25T11:40:43-07:00 commit=f8bcb96a55274bba940fd66b6aa934655671b624
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   9%|▊         | 28/321 [00:00<00:04, 69.20it/s]Loading weights:  14%|█▍        | 45/321 [00:00<00:05, 50.70it/s]Loading weights:  21%|██        | 66/321 [00:00<00:03, 77.00it/s]Loading weights:  38%|███▊      | 121/321 [00:01<00:01, 141.37it/s]Loading weights:  59%|█████▉    | 190/321 [00:01<00:00, 178.87it/s]Loading weights:  79%|███████▉  | 254/321 [00:01<00:00, 220.29it/s]Loading weights:  90%|█████████ | 290/321 [00:01<00:00, 202.51it/s]Loading weights: 100%|██████████| 321/321 [00:01<00:00, 173.41it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+EDIT_GEN_DONE
+end=2026-09-25T11:45:36-07:00 PF_EDIT_GEN_OK

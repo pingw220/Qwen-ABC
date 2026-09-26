@@ -1,0 +1,39 @@
+40604162 qwen_e3b smoke gpu-l40s
+40604163 mupt smoke gpu-l40
+40604164 qwen_e0 smoke gpu-l40
+40604293 midi_llm smoke gpu-l40
+40604418 --job-name=pf-e3b-bon --array=0-2 scripts/paper_final/gen.sbatch
+40604419 --job-name=pf-e0-bon --array=0 scripts/paper_final/gen.sbatch
+40604420 --job-name=pf-e1-bon --array=0 scripts/paper_final/gen.sbatch
+40604421 --job-name=pf-e1long-bon --array=0 scripts/paper_final/gen.sbatch
+40604422 --job-name=pf-mupt-bon -p gpu-l40 -A gpu-l40-ark --array=0-1 scripts/paper_final/gen.sbatch
+40604433 midi_llm full NSHARDS=5 gpu-l40
+40604442 --job-name=pf-e3b-int --array=0-5 scripts/paper_final/gen.sbatch
+40604443 --job-name=pf-e0-ood --array=0 scripts/paper_final/gen.sbatch
+40604444 --job-name=pf-e1-ood --array=0 scripts/paper_final/gen.sbatch
+40604445 --job-name=pf-mupt-int -p gpu-l40 -A gpu-l40-ark --array=0-2 scripts/paper_final/gen.sbatch
+40604446 --job-name=pf-mupt-ood -p gpu-l40 -A gpu-l40-ark --array=0 scripts/paper_final/gen.sbatch
+40604530 edit_rerender generation (E3b, 2 songs) gpu-l40s
+40604536 edit_rerender generation (E3b, 2 songs; replaces 40604530 which was held by the ark L40S group limit) ckpt-all/ckpt-ark l40s requeue
+40604530 cancelled by me (pending, never ran)
+40604589 memorization CPU (index+validate+query all systems present+report) cpu-g2
+40604589 cancelled (AssocGrpCpuLimit on cpu-g2-stf); 40604645 memorization CPU resubmitted ckpt-all
+40604716 edit_rerender render 4VfHbfbzNPZmX5KI4iAOyT (8 lead sheets, FastSinger+MuseControlLite via scripts/slurm/midi_sag_render.sbatch) ckpt-all/ckpt-ark l40s requeue
+40604717 edit_rerender render 6coZcwGP3Cmhyqzvp6sEJS (8 lead sheets, FastSinger+MuseControlLite via scripts/slurm/midi_sag_render.sbatch) ckpt-all/ckpt-ark l40s requeue
+40604781 midi_llm REVERSE=1 NSHARDS=3 gpu-l40s
+40604827 memorization flagged-case inspection ckpt-all
+40604919 listening-study pilot render (FastSinger+fluidsynth, 32 stimuli) gpu-l40
+40604924 memorization flagged-case inspection (resubmit; 40604827 cancelled: node-local output path) ckpt-all
+40604982 memorization v2 (informative runs) validate+query+report ckpt-all
+40605085 --job-name=pf-mupt-int -p gpu-l40 -A gpu-l40-ark --array=0-2 scripts/paper_final/gen.sbatch
+40605086 --job-name=pf-mupt-int-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=3-5 scripts/paper_final/gen.sbatch
+40605087 --job-name=pf-mupt-ood -p gpu-l40 -A gpu-l40-ark --array=0 scripts/paper_final/gen.sbatch
+40605088 --job-name=pf-mupt-ood-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=1 scripts/paper_final/gen.sbatch
+40605089 --job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch
+40611402 --job-name=pf-midillm-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=0-3 scripts/paper_final/midi_llm_shard.sbatch
+40611403 --job-name=pf-midillm-rev -p gpu-l40s -A gpu-l40s-ark --array=0-3 scripts/paper_final/midi_llm_shard.sbatch
+40616341 --job-name=pf-e0-ood2 --array=0-3 scripts/paper_final/gen.sbatch
+40616342 --job-name=pf-e1-ood2 --array=0-3 scripts/paper_final/gen.sbatch
+40618273 mupt ood NSHARDS=4 ckpt-all
+40618328 listening pilot re-render (final design)
+40618335 memorization: extend to E3b intervention samples (CPU)

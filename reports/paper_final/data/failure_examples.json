@@ -1,0 +1,1740 @@
+{
+ "Qwen-ABC (E3b)": {
+  "syllable_cramming": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.836,
+    "cram_syllable_frac": 0.313,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.792,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.949,
+    "cram_syllable_frac": 0.222,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.929,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.99,
+    "cram_syllable_frac": 0.22,
+    "pitch_range": 24,
+    "distinct_bar_frac": 0.882,
+    "eos_section_index": 7
+   }
+  ],
+  "lyric_omission": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.836,
+    "cram_syllable_frac": 0.313,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.792,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.882,
+    "cram_syllable_frac": 0.366,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.865,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "09d4jeFypKBWzZVfHKBeVY",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.865,
+    "cram_syllable_frac": 0.311,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.682,
+    "eos_section_index": 9
+   }
+  ],
+  "timing_inconsistency": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.905,
+    "cram_syllable_frac": 0.096,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.955,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.99,
+    "cram_syllable_frac": 0.22,
+    "pitch_range": 24,
+    "distinct_bar_frac": 0.882,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.969,
+    "cram_syllable_frac": 0.256,
+    "pitch_range": 18,
+    "distinct_bar_frac": 0.772,
+    "eos_section_index": 11
+   }
+  ],
+  "invalid_syntax": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.905,
+    "cram_syllable_frac": 0.096,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.955,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.99,
+    "cram_syllable_frac": 0.22,
+    "pitch_range": 24,
+    "distinct_bar_frac": 0.882,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.969,
+    "cram_syllable_frac": 0.256,
+    "pitch_range": 18,
+    "distinct_bar_frac": 0.772,
+    "eos_section_index": 11
+   }
+  ],
+  "degenerate_melody": [
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.882,
+    "cram_syllable_frac": 0.366,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.865,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "09d4jeFypKBWzZVfHKBeVY",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.926,
+    "cram_syllable_frac": 0.14,
+    "pitch_range": 10,
+    "distinct_bar_frac": 0.723,
+    "eos_section_index": 9
+   },
+   {
+    "song_id": "09d4jeFypKBWzZVfHKBeVY",
+    "sample": "S2",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.946,
+    "cram_syllable_frac": 0.222,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.682,
+    "eos_section_index": 9
+   }
+  ],
+  "suspected_annotation_error": [
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.882,
+    "cram_syllable_frac": 0.366,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.865,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.969,
+    "cram_syllable_frac": 0.256,
+    "pitch_range": 18,
+    "distinct_bar_frac": 0.772,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.957,
+    "cram_syllable_frac": 0.337,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.815,
+    "eos_section_index": 11
+   }
+  ],
+  "wrong_bar_count": [
+   {
+    "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 1.0,
+    "cram_syllable_frac": 0.096,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.676,
+    "eos_section_index": 10
+   },
+   {
+    "song_id": "27o7ErWiozSj47o3dnPvVf",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.926,
+    "cram_syllable_frac": 0.312,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.877,
+    "eos_section_index": 10
+   },
+   {
+    "song_id": "2Ao4GCbjB6dejFu7OWyDuc",
+    "sample": "S4",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 1.0,
+    "cram_syllable_frac": 0.476,
+    "pitch_range": 23,
+    "distinct_bar_frac": 0.661,
+    "eos_section_index": 14
+   }
+  ],
+  "wrong_section_label": [
+   {
+    "song_id": "0TdPZ2mnbhww9mVUiZZhX5",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.966,
+    "cram_syllable_frac": 0.122,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.915,
+    "eos_section_index": 13
+   },
+   {
+    "song_id": "0j9LdgpOzc5zMjq4hBlUcn",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.892,
+    "cram_syllable_frac": 0.395,
+    "pitch_range": 15,
+    "distinct_bar_frac": 0.641,
+    "eos_section_index": 12
+   },
+   {
+    "song_id": "40RF2zemUhNk0aPkIJNWxM",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.908,
+    "cram_syllable_frac": 0.414,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.681,
+    "eos_section_index": 9
+   }
+  ],
+  "repetitive_loop": [
+   {
+    "song_id": "1C6yky5bXstgnFRiWmfze3",
+    "sample": "S4",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.977,
+    "cram_syllable_frac": 0.12,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.778,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "1oDW3JIhobplQhuTVBjtcB",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.965,
+    "cram_syllable_frac": 0.041,
+    "pitch_range": 7,
+    "distinct_bar_frac": 0.545,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "2gDzOOf3ElxOa1v6g0Xk7M",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.953,
+    "cram_syllable_frac": 0.238,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.429,
+    "eos_section_index": 9
+   }
+  ],
+  "lyric_duplication": [
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.128,
+    "cram_syllable_frac": 0.6,
+    "pitch_range": 12,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 4
+   },
+   {
+    "song_id": "27o7ErWiozSj47o3dnPvVf",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.0,
+    "cram_syllable_frac": null,
+    "pitch_range": null,
+    "distinct_bar_frac": null,
+    "eos_section_index": 1
+   },
+   {
+    "song_id": "2fx7D86fwFlVfBJSGhuZFg",
+    "sample": "S2",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.993,
+    "cram_syllable_frac": 0.364,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.614,
+    "eos_section_index": 9
+   }
+  ],
+  "lyric_order_failure": [
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.642,
+    "cram_syllable_frac": 0.529,
+    "pitch_range": 22,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 5
+   },
+   {
+    "song_id": "2nGGovqWeOxXH2WbnoS3RX",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.97,
+    "cram_syllable_frac": 0.26,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.88,
+    "eos_section_index": 10
+   }
+  ],
+  "excess_continuation": [
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.642,
+    "cram_syllable_frac": 0.529,
+    "pitch_range": 22,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 5
+   }
+  ],
+  "wrong_section_count": [
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.642,
+    "cram_syllable_frac": 0.529,
+    "pitch_range": 22,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 5
+   },
+   {
+    "song_id": "1heBg3CKPc4qVUXzVO49I2",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.148,
+    "cram_syllable_frac": 0.091,
+    "pitch_range": 12,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 1
+   },
+   {
+    "song_id": "27o7ErWiozSj47o3dnPvVf",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.0,
+    "cram_syllable_frac": null,
+    "pitch_range": null,
+    "distinct_bar_frac": null,
+    "eos_section_index": 1
+   }
+  ],
+  "missing_chords": [
+   {
+    "song_id": "1heBg3CKPc4qVUXzVO49I2",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.148,
+    "cram_syllable_frac": 0.091,
+    "pitch_range": 12,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 1
+   },
+   {
+    "song_id": "6H1qeLID2gslZMgxpwfACS",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 1.0,
+    "cram_syllable_frac": 0.191,
+    "pitch_range": 9,
+    "distinct_bar_frac": 0.667,
+    "eos_section_index": 5
+   },
+   {
+    "song_id": "6I3A7q18EJgbdZf2Zx1wxm",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.985,
+    "cram_syllable_frac": 0.102,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.614,
+    "eos_section_index": 10
+   }
+  ],
+  "premature_eos": [
+   {
+    "song_id": "2nGGovqWeOxXH2WbnoS3RX",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.97,
+    "cram_syllable_frac": 0.26,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.88,
+    "eos_section_index": 10
+   }
+  ]
+ },
+ "MuPT": {
+  "lyric_omission": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.438,
+    "cram_syllable_frac": 0.173,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.894,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.587,
+    "cram_syllable_frac": 0.105,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.84,
+    "eos_section_index": 6
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.605,
+    "cram_syllable_frac": 0.126,
+    "pitch_range": 10,
+    "distinct_bar_frac": 0.543,
+    "eos_section_index": 7
+   }
+  ],
+  "wrong_section_label": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.438,
+    "cram_syllable_frac": 0.173,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.894,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.605,
+    "cram_syllable_frac": 0.126,
+    "pitch_range": 10,
+    "distinct_bar_frac": 0.543,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.615,
+    "cram_syllable_frac": 0.211,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.77,
+    "eos_section_index": 10
+   }
+  ],
+  "lyric_duplication": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.438,
+    "cram_syllable_frac": 0.173,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.894,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.587,
+    "cram_syllable_frac": 0.105,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.84,
+    "eos_section_index": 6
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.605,
+    "cram_syllable_frac": 0.126,
+    "pitch_range": 10,
+    "distinct_bar_frac": 0.543,
+    "eos_section_index": 7
+   }
+  ],
+  "syllable_cramming": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.438,
+    "cram_syllable_frac": 0.173,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.894,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.574,
+    "cram_syllable_frac": 0.264,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.373,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.508,
+    "cram_syllable_frac": 0.192,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.832,
+    "eos_section_index": 11
+   }
+  ],
+  "wrong_bar_count": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.438,
+    "cram_syllable_frac": 0.173,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.894,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.605,
+    "cram_syllable_frac": 0.126,
+    "pitch_range": 10,
+    "distinct_bar_frac": 0.543,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "0B1k0zh8Rsa1aE7LgF6eHi",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.597,
+    "cram_syllable_frac": 0.201,
+    "pitch_range": 22,
+    "distinct_bar_frac": 0.981,
+    "eos_section_index": 15
+   }
+  ],
+  "timing_inconsistency": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.587,
+    "cram_syllable_frac": 0.105,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.84,
+    "eos_section_index": 6
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.508,
+    "cram_syllable_frac": 0.192,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.832,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.559,
+    "cram_syllable_frac": 0.075,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.8,
+    "eos_section_index": 9
+   }
+  ],
+  "premature_eos": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.587,
+    "cram_syllable_frac": 0.105,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.84,
+    "eos_section_index": 6
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.559,
+    "cram_syllable_frac": 0.075,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.8,
+    "eos_section_index": 9
+   },
+   {
+    "song_id": "09RY5jQZ5kNoMSU5toQlfU",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.456,
+    "cram_syllable_frac": 0.199,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.909,
+    "eos_section_index": 10
+   }
+  ],
+  "invalid_syntax": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.587,
+    "cram_syllable_frac": 0.105,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.84,
+    "eos_section_index": 6
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.508,
+    "cram_syllable_frac": 0.192,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.832,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.622,
+    "cram_syllable_frac": 0.165,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.768,
+    "eos_section_index": 11
+   }
+  ],
+  "wrong_section_count": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.587,
+    "cram_syllable_frac": 0.105,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.84,
+    "eos_section_index": 6
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.574,
+    "cram_syllable_frac": 0.264,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.373,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.559,
+    "cram_syllable_frac": 0.075,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.8,
+    "eos_section_index": 9
+   }
+  ],
+  "lyric_order_failure": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.605,
+    "cram_syllable_frac": 0.126,
+    "pitch_range": 10,
+    "distinct_bar_frac": 0.543,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.574,
+    "cram_syllable_frac": 0.264,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.373,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.559,
+    "cram_syllable_frac": 0.075,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.8,
+    "eos_section_index": 9
+   }
+  ],
+  "degenerate_melody": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.605,
+    "cram_syllable_frac": 0.126,
+    "pitch_range": 10,
+    "distinct_bar_frac": 0.543,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.574,
+    "cram_syllable_frac": 0.264,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.373,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.615,
+    "cram_syllable_frac": 0.211,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.77,
+    "eos_section_index": 10
+   }
+  ],
+  "excess_continuation": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.574,
+    "cram_syllable_frac": 0.264,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.373,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.559,
+    "cram_syllable_frac": 0.073,
+    "pitch_range": 24,
+    "distinct_bar_frac": 0.781,
+    "eos_section_index": 12
+   },
+   {
+    "song_id": "09RY5jQZ5kNoMSU5toQlfU",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.423,
+    "cram_syllable_frac": 0.091,
+    "pitch_range": 24,
+    "distinct_bar_frac": 0.876,
+    "eos_section_index": 12
+   }
+  ],
+  "suspected_annotation_error": [
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.508,
+    "cram_syllable_frac": 0.192,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.832,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.559,
+    "cram_syllable_frac": 0.075,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.8,
+    "eos_section_index": 9
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.622,
+    "cram_syllable_frac": 0.165,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.768,
+    "eos_section_index": 11
+   }
+  ],
+  "repetitive_loop": [
+   {
+    "song_id": "0BetT2tdyEMm4FTs2y464B",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.43,
+    "cram_syllable_frac": 0.167,
+    "pitch_range": 22,
+    "distinct_bar_frac": 0.324,
+    "eos_section_index": 12
+   },
+   {
+    "song_id": "28IzuspwIj6C8XAOoIJ1Wp",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.396,
+    "cram_syllable_frac": 0.768,
+    "pitch_range": 12,
+    "distinct_bar_frac": 0.333,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "28IzuspwIj6C8XAOoIJ1Wp",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.585,
+    "cram_syllable_frac": 0.324,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.438,
+    "eos_section_index": 12
+   }
+  ],
+  "missing_chords": [
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.202,
+    "cram_syllable_frac": 0.868,
+    "pitch_range": 10,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 5
+   },
+   {
+    "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.308,
+    "cram_syllable_frac": 0.524,
+    "pitch_range": 13,
+    "distinct_bar_frac": 0.951,
+    "eos_section_index": 10
+   },
+   {
+    "song_id": "3mGw54mWnUpV2wNONvBTJy",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.397,
+    "cram_syllable_frac": 0.069,
+    "pitch_range": 18,
+    "distinct_bar_frac": 0.829,
+    "eos_section_index": 5
+   }
+  ]
+ },
+ "MIDI-LLM": {
+  "front_end_refusal": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": null,
+    "lyric_recall": null,
+    "cram_syllable_frac": null,
+    "pitch_range": null,
+    "distinct_bar_frac": null,
+    "eos_section_index": null
+   },
+   {
+    "song_id": "09d4jeFypKBWzZVfHKBeVY",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": null,
+    "lyric_recall": null,
+    "cram_syllable_frac": null,
+    "pitch_range": null,
+    "distinct_bar_frac": null,
+    "eos_section_index": null
+   },
+   {
+    "song_id": "0FadVuelB7Srb98yUbTbwI",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": null,
+    "lyric_recall": null,
+    "cram_syllable_frac": null,
+    "pitch_range": null,
+    "distinct_bar_frac": null,
+    "eos_section_index": null
+   }
+  ],
+  "lyric_omission": [
+   {
+    "song_id": "09RY5jQZ5kNoMSU5toQlfU",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.867,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 33,
+    "distinct_bar_frac": 0.992,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.862,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 24,
+    "distinct_bar_frac": 0.866,
+    "eos_section_index": 10
+   },
+   {
+    "song_id": "0B1k0zh8Rsa1aE7LgF6eHi",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.786,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 31,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 15
+   }
+  ],
+  "invalid_syntax": [
+   {
+    "song_id": "09RY5jQZ5kNoMSU5toQlfU",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.867,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 33,
+    "distinct_bar_frac": 0.992,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "0B1k0zh8Rsa1aE7LgF6eHi",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.786,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 31,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 15
+   },
+   {
+    "song_id": "0YZZPAvQgazIok3JIr8mEy",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.908,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 22,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 7
+   }
+  ],
+  "suspected_annotation_error": [
+   {
+    "song_id": "09RY5jQZ5kNoMSU5toQlfU",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.867,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 33,
+    "distinct_bar_frac": 0.992,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "0XV81gUVudUkxWP4x6rJhW",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.724,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 22,
+    "distinct_bar_frac": 0.949,
+    "eos_section_index": 13
+   },
+   {
+    "song_id": "0exfMqddpIIZQbZZny68Rc",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.762,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 20,
+    "distinct_bar_frac": 0.926,
+    "eos_section_index": 13
+   }
+  ],
+  "lyric_duplication": [
+   {
+    "song_id": "0CxfpbQfmX4bR6mA6aarL3",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.915,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 24,
+    "distinct_bar_frac": 0.925,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "0ITY3kOaEoiDxaCI88jET6",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.942,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 22,
+    "distinct_bar_frac": 0.984,
+    "eos_section_index": 10
+   },
+   {
+    "song_id": "0YZZPAvQgazIok3JIr8mEy",
+    "sample": "m1000",
+    "strict_ok": false,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.908,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 22,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 7
+   }
+  ],
+  "degenerate_melody": [
+   {
+    "song_id": "0ZMWpv0aFBioxywoXsmaId",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.791,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 34,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "499ghNme62G8hsotXXlAIE",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.715,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 20,
+    "distinct_bar_frac": 0.949,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "4C8V4YVVhGQdsoyD1uuhyJ",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.945,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 20,
+    "distinct_bar_frac": 0.919,
+    "eos_section_index": 13
+   }
+  ],
+  "extreme_pitch_range": [
+   {
+    "song_id": "2HVhqSDfh4XVdrRJuwpG6x",
+    "sample": "m1000",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.905,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 40,
+    "distinct_bar_frac": 0.93,
+    "eos_section_index": 16
+   },
+   {
+    "song_id": "19eK3bar5P6Xcw6LzdXCHb",
+    "sample": "m1001",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.914,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 43,
+    "distinct_bar_frac": 0.959,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "5bVKIpODZbjn82L68A80hv",
+    "sample": "m1002",
+    "strict_ok": true,
+    "section_plan_exact": 1.0,
+    "lyric_recall": 0.772,
+    "cram_syllable_frac": 0.0,
+    "pitch_range": 40,
+    "distinct_bar_frac": 0.959,
+    "eos_section_index": 13
+   }
+  ]
+ },
+ "Qwen E0 (no ESS)": {
+  "wrong_bar_count": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.944,
+    "cram_syllable_frac": 0.125,
+    "pitch_range": 15,
+    "distinct_bar_frac": 0.901,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.992,
+    "cram_syllable_frac": 0.303,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.946,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.974,
+    "cram_syllable_frac": 0.037,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.615,
+    "eos_section_index": 7
+   }
+  ],
+  "timing_inconsistency": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.992,
+    "cram_syllable_frac": 0.303,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.946,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.988,
+    "cram_syllable_frac": 0.12,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.82,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.969,
+    "cram_syllable_frac": 0.235,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.935,
+    "eos_section_index": 11
+   }
+  ],
+  "syllable_cramming": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.992,
+    "cram_syllable_frac": 0.303,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.946,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.887,
+    "cram_syllable_frac": 0.254,
+    "pitch_range": 20,
+    "distinct_bar_frac": 0.875,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.969,
+    "cram_syllable_frac": 0.235,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.935,
+    "eos_section_index": 11
+   }
+  ],
+  "invalid_syntax": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.992,
+    "cram_syllable_frac": 0.303,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.946,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.988,
+    "cram_syllable_frac": 0.12,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.82,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.969,
+    "cram_syllable_frac": 0.235,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.935,
+    "eos_section_index": 11
+   }
+  ],
+  "degenerate_melody": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.992,
+    "cram_syllable_frac": 0.303,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.946,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S3",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.974,
+    "cram_syllable_frac": 0.037,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.615,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.988,
+    "cram_syllable_frac": 0.12,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.82,
+    "eos_section_index": 11
+   }
+  ],
+  "lyric_omission": [
+   {
+    "song_id": "05QmUFMQMUYV3CCVgs8G6Z",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.887,
+    "cram_syllable_frac": 0.254,
+    "pitch_range": 20,
+    "distinct_bar_frac": 0.875,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "0FadVuelB7Srb98yUbTbwI",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.792,
+    "cram_syllable_frac": 0.188,
+    "pitch_range": 20,
+    "distinct_bar_frac": 0.91,
+    "eos_section_index": 7
+   },
+   {
+    "song_id": "0FdW541km7r4Zh7hq02jBZ",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.28,
+    "cram_syllable_frac": 0.076,
+    "pitch_range": 17,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 3
+   }
+  ],
+  "suspected_annotation_error": [
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.988,
+    "cram_syllable_frac": 0.12,
+    "pitch_range": 26,
+    "distinct_bar_frac": 0.82,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S2",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.969,
+    "cram_syllable_frac": 0.235,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.935,
+    "eos_section_index": 11
+   },
+   {
+    "song_id": "05Yqjul6jLsld0Vh8K36KH",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.992,
+    "cram_syllable_frac": 0.222,
+    "pitch_range": 17,
+    "distinct_bar_frac": 0.803,
+    "eos_section_index": 11
+   }
+  ],
+  "premature_eos": [
+   {
+    "song_id": "0FdW541km7r4Zh7hq02jBZ",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.28,
+    "cram_syllable_frac": 0.076,
+    "pitch_range": 17,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 3
+   },
+   {
+    "song_id": "0FdW541km7r4Zh7hq02jBZ",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.301,
+    "cram_syllable_frac": 0.153,
+    "pitch_range": 15,
+    "distinct_bar_frac": 0.914,
+    "eos_section_index": 3
+   },
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.193,
+    "cram_syllable_frac": 0.826,
+    "pitch_range": 3,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 1
+   }
+  ],
+  "wrong_section_count": [
+   {
+    "song_id": "0FdW541km7r4Zh7hq02jBZ",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.28,
+    "cram_syllable_frac": 0.076,
+    "pitch_range": 17,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 3
+   },
+   {
+    "song_id": "0FdW541km7r4Zh7hq02jBZ",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.301,
+    "cram_syllable_frac": 0.153,
+    "pitch_range": 15,
+    "distinct_bar_frac": 0.914,
+    "eos_section_index": 3
+   },
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.193,
+    "cram_syllable_frac": 0.826,
+    "pitch_range": 3,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 1
+   }
+  ],
+  "lyric_duplication": [
+   {
+    "song_id": "1C6yky5bXstgnFRiWmfze3",
+    "sample": "S1",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.995,
+    "cram_syllable_frac": 0.744,
+    "pitch_range": 27,
+    "distinct_bar_frac": 0.882,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "1C6yky5bXstgnFRiWmfze3",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.995,
+    "cram_syllable_frac": 0.309,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.726,
+    "eos_section_index": 8
+   },
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.193,
+    "cram_syllable_frac": 0.826,
+    "pitch_range": 3,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 1
+   }
+  ],
+  "missing_chords": [
+   {
+    "song_id": "1bIiaFMdH3udqWyXyeQMoH",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.193,
+    "cram_syllable_frac": 0.826,
+    "pitch_range": 3,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 1
+   },
+   {
+    "song_id": "27o7ErWiozSj47o3dnPvVf",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.903,
+    "cram_syllable_frac": 0.184,
+    "pitch_range": 26,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 13
+   },
+   {
+    "song_id": "5EbU9BSwgacaX0mW7zU4jN",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.993,
+    "cram_syllable_frac": 0.06,
+    "pitch_range": 21,
+    "distinct_bar_frac": 0.65,
+    "eos_section_index": 10
+   }
+  ],
+  "lyric_order_failure": [
+   {
+    "song_id": "20WNhehqO6xfLVktkDefs2",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.943,
+    "cram_syllable_frac": 0.32,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.821,
+    "eos_section_index": 13
+   },
+   {
+    "song_id": "28I269iDvkDyb2Fqo2p1TI",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.996,
+    "cram_syllable_frac": 0.104,
+    "pitch_range": 16,
+    "distinct_bar_frac": 0.59,
+    "eos_section_index": 14
+   },
+   {
+    "song_id": "3SYxHNDH5nXWkzcQHw4YnX",
+    "sample": "S4",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.952,
+    "cram_syllable_frac": 0.107,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.882,
+    "eos_section_index": 8
+   }
+  ],
+  "excess_continuation": [
+   {
+    "song_id": "20WNhehqO6xfLVktkDefs2",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.943,
+    "cram_syllable_frac": 0.32,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.821,
+    "eos_section_index": 13
+   },
+   {
+    "song_id": "27o7ErWiozSj47o3dnPvVf",
+    "sample": "S3",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.903,
+    "cram_syllable_frac": 0.184,
+    "pitch_range": 26,
+    "distinct_bar_frac": 1.0,
+    "eos_section_index": 13
+   },
+   {
+    "song_id": "3SYxHNDH5nXWkzcQHw4YnX",
+    "sample": "S4",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.952,
+    "cram_syllable_frac": 0.107,
+    "pitch_range": 19,
+    "distinct_bar_frac": 0.882,
+    "eos_section_index": 8
+   }
+  ],
+  "repetitive_loop": [
+   {
+    "song_id": "20WNhehqO6xfLVktkDefs2",
+    "sample": "S1",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.943,
+    "cram_syllable_frac": 0.32,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.821,
+    "eos_section_index": 13
+   },
+   {
+    "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+    "sample": "S4",
+    "strict_ok": false,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.857,
+    "cram_syllable_frac": 0.157,
+    "pitch_range": 22,
+    "distinct_bar_frac": 0.56,
+    "eos_section_index": 12
+   },
+   {
+    "song_id": "6bPSr7yKukRjAGk9cIkJ4J",
+    "sample": "S4",
+    "strict_ok": true,
+    "section_plan_exact": 0.0,
+    "lyric_recall": 0.962,
+    "cram_syllable_frac": 0.166,
+    "pitch_range": 14,
+    "distinct_bar_frac": 0.778,
+    "eos_section_index": 7
+   }
+  ]
+ }
+}
