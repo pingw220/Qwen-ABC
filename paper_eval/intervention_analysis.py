@@ -331,7 +331,8 @@ def main() -> None:
     from .tasks import INTERVENTIONS
     frames_s, frames_e = [], []
     for model in args.model:
-        conds = list(INTERVENTIONS) if model != "midi_llm" else ["bars_p4", "label_bridge", "key_p5", "tempo_x1.25", "lyrics_all"]
+        conds = {"midi_llm": ["bars_p4", "label_bridge", "key_p5", "tempo_x1.25", "lyrics_all"],
+                 "mupt": ["bars_m4", "bars_p4", "label_bridge", "key_p5", "tempo_x1.25", "lyrics_all"]}.get(model, list(INTERVENTIONS))
         s, e = analyse(model, conds)
         print(f"{model}: {len(s)} sample rows, {len(e)} effect rows")
         frames_s.append(s)

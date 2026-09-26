@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import random
 import sys
 from pathlib import Path
@@ -60,7 +61,7 @@ def jload(p) -> dict:
 def jdump(obj, p, indent: Optional[int] = 1) -> None:
     p = Path(p)
     p.parent.mkdir(parents=True, exist_ok=True)
-    tmp = p.with_suffix(p.suffix + ".tmp")
+    tmp = p.with_suffix(p.suffix + f".{os.getpid()}.tmp")  # per-process: concurrent shards write shared manifests
     tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=indent), encoding="utf-8")
     tmp.replace(p)
 

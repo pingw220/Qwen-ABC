@@ -91,10 +91,10 @@ def main() -> None:
             pooled = defaultdict(list)
             for c in cs:
                 for sid, v in per[c].items():
-                    pooled[sid].append(v["own"])
+                    pooled[sid].append(v["plan_exact"])  # one metric common to every condition
             m, lo, hi, n = bootstrap_mean_ci([mean(x) for x in pooled.values()])
             table.append({"model": model, "condition": f"[{regime}, pooled]", "regime": regime, "N": n,
-                          "condition adherence": fmt_ci(m, lo, hi)})
+                          "exact plan": fmt_ci(m, lo, hi)})
     write_table(table, "ood_generalization", "Control adherence by regime (seed S1; song-level 95% bootstrap CI). "
                 "Condition adherence: exact plan (reordering, extra sections), target-section bars (long sections), tempo header (tempo)")
     write_table(deltas, "ood_deltas", "Paired OOD − in-distribution differences (same songs, seed S1)")
