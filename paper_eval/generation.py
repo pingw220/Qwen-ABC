@@ -139,7 +139,7 @@ def main() -> None:
                    "prompt_tokens": g["prompt_tokens"], "token_budget": g["token_budget"],
                    "temperature": TEMPERATURE, "top_p": TOP_P, "sampler": "gumbel_crn", "max_total": MAX_TOTAL,
                    "checkpoint": cfg["ckpt"], "fmt": cfg["fmt"], "commit": commit, "meta": t["meta"], "spec": t["spec"]}
-            score_row(row, t["spec"], cfg["fmt"])
+            score_row(row, t["spec"], "v2" if cfg["fmt"] == "mel" else cfg["fmt"])  # melody-only output is ABC-v2 minus chords
             jdump(row, task_path(t), indent=None)
         done += len(batch)
         print(f"[{bi + 1}/{len(pending)}] n={len(batch)} {outs[0]['batch_seconds']}s "

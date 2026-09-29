@@ -42,3 +42,6 @@ experiments/midi_sag_*/leadsheets/
 models/
 # paper-final round: generations, specs and indexes carry lyrics
 experiments/paper_final/
+
+# component-sota round: datasets, runs, generations, renders (lyrics / weights / audio)
+experiments/component_sota/

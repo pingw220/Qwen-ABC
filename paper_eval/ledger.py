@@ -26,8 +26,15 @@ def elapsed_s(s: str) -> int:
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--report-dir", default=str(REPORT_DIR))
+    ap.add_argument("--submissions", default="job_logs/SUBMISSIONS.txt")
+    a = ap.parse_args()
+    from pathlib import Path
+    rdir = Path(a.report_dir)
     subs = {}
-    for line in (REPORT_DIR / "job_logs/SUBMISSIONS.txt").read_text().splitlines():
+    for line in (rdir / a.submissions).read_text().splitlines():
         m = re.match(r"(\d+)\s+(.*)", line.strip())
         if m:
             subs[m.group(1)] = m.group(2)
@@ -43,7 +50,8 @@ def main():
         gtype = (gpu.group(1) if gpu and gpu.group(1) else ("l40s" if "l40s" in part else "l40" if "l40" in part else "")) if gpu else "none"
         secs = elapsed_s(el) if el else 0
         desc = subs.get(base, "")
-        model = next((m for m in ("qwen_e3b", "qwen_e1long", "qwen_e1", "qwen_e0", "mupt", "midi_llm", "midi-llm")
+        model = next((m for m in ("qwen_e3b", "qwen_e1long", "qwen_e1", "qwen_e0", "mupt", "midi_llm", "midi-llm", "csl", "am2",
+                                  "svs", "mel", "chord", "infill", "backing")
                       if m in desc.lower() or m in name), "")
         rows.append({"job_id": jid, "job_name": name.strip(), "model": model or ("midi_llm" if "midillm" in name else ""),
                      "experiment": desc[:160], "partition": part, "gpu_type": gtype, "gpu_count": n_gpu,
@@ -51,7 +59,7 @@ def main():
                      "state": state})
     rows.sort(key=lambda r: r["job_id"])
     cols = list(rows[0]) if rows else []
-    with open(REPORT_DIR / "COMPUTE_LEDGER.csv", "w", newline="") as fh:
+    with open(rdir / "COMPUTE_LEDGER.csv", "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=cols)
         w.writeheader()
         w.writerows(rows)

@@ -19,7 +19,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 # prompted in its own format from the same specs, as in round 2.
 DATA_DIR = ROOT / "data/generated/abc_v2_20260915_120927"
 TRAIN_DATA_DIR = DATA_DIR
-OUT_ROOT = ROOT / "experiments/paper_final"          # raw generations (git-ignored: they contain lyrics)
+OUT_ROOT = Path(os.environ.get("PAPER_EVAL_OUT_ROOT", ROOT / "experiments/paper_final"))  # raw generations (git-ignored: lyrics)
+PAPER_FINAL_GEN = ROOT / "experiments/paper_final/gen"   # the paper-final round's generations (read-only here)
 REPORT_DIR = ROOT / "reports/paper_final"
 TABLE_DIR = REPORT_DIR / "tables"
 FIG_DIR = REPORT_DIR / "figures"
@@ -40,6 +41,9 @@ MODELS: Dict[str, Dict[str, str]] = {
                 "desc": "Qwen3.5-0.8B, ABC-v1 (no ESS, uncleaned training boundaries), 382 updates"},
     "mupt": {"ckpt": str(ROOT / "experiments/r4_mupt_20260923_001821/final_model"), "fmt": "v2", "family": "MuPT",
              "desc": "MuPT-1.07B (ABC-pretrained), same data/recipe as E3b, 1070 updates"},
+    # component-sota round
+    "qwen_mel": {"ckpt": str(ROOT / "experiments/component_sota/runs/mel_sft/final_model"), "fmt": "mel", "family": "Qwen-ABC",
+                 "desc": "Qwen3.5-0.8B melody-only: E3b's mixture without chords, 758 updates (equal-update control)"},
 }
 
 DISPLAY = {"qwen_e3b": "Qwen-ABC (E3b)", "qwen_e1": "Qwen E1 (ESS)", "qwen_e1long": "Qwen E1-long (ESS)",
@@ -93,6 +97,9 @@ def clean_ids() -> List[str]:
 def make_prompt(fmt: str, spec: dict) -> str:
     from qwen_abc.abc_v2 import spec_to_prompt_v2
     from qwen_abc.prompt import spec_to_prompt
+    if fmt == "mel":
+        from .component_sota.formats import mel_prompt
+        return mel_prompt(spec)
     return {"v2": spec_to_prompt_v2, "v1": spec_to_prompt}[fmt](spec)
 
 

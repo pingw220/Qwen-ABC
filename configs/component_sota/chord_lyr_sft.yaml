@@ -1,0 +1,22 @@
+# Qwen melody->chord harmonizer (chord_lyr): melody read-only in the prompt, chord lines as the completion. Recipe copied from configs/e3b_v2_longrange_smallbatch_sft.yaml (same base, LR, schedule, batch, seed).
+mode: sft
+model_name_or_path: Qwen/Qwen3.5-0.8B-Base
+data_dir: data/generated/abc_v2_20260915_120927
+train_file: experiments/component_sota/data/chord_lyr/train.jsonl
+eval_file: experiments/component_sota/data/chord_lyr/validation.jsonl
+output_dir: experiments/CHANGE_ME
+max_seq_len: 8192
+tokens_per_micro_batch: 16384
+tokens_per_update: 131072
+epochs: 2
+# 2 epochs, as E3b
+learning_rate: 5.0e-5
+min_lr_ratio: 0.1
+warmup_ratio: 0.03
+weight_decay: 0.0
+grad_clip: 1.0
+eval_every: 50
+resume_every: 50
+save_every: 0
+eval_limit: 256
+seed: 1234
