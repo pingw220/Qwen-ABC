@@ -50,9 +50,11 @@ def main():
         gtype = (gpu.group(1) if gpu and gpu.group(1) else ("l40s" if "l40s" in part else "l40" if "l40" in part else "")) if gpu else "none"
         secs = elapsed_s(el) if el else 0
         desc = subs.get(base, "")
-        model = next((m for m in ("qwen_e3b", "qwen_e1long", "qwen_e1", "qwen_e0", "mupt", "midi_llm", "midi-llm", "csl", "am2",
-                                  "svs", "mel", "chord", "infill", "backing")
+        # specific components first (e.g. "am2 csl_offc shard" is an AccoMontage2 job, "qwen chord gen mel:S1" a harmonizer job)
+        model = next((m for m in ("qwen_e3b", "qwen_e1long", "qwen_e1", "qwen_e0", "mupt", "midi_llm", "midi-llm", "am2",
+                                  "backing", "svs", "audio tools", "listening", "chord", "infill", "csl", "mel", "semantics")
                       if m in desc.lower() or m in name), "")
+        model = {"audio tools": "audio_tools"}.get(model, model)
         rows.append({"job_id": jid, "job_name": name.strip(), "model": model or ("midi_llm" if "midillm" in name else ""),
                      "experiment": desc[:160], "partition": part, "gpu_type": gtype, "gpu_count": n_gpu,
                      "start": start, "end": end, "wall_time": el, "est_gpu_hours": round(secs * n_gpu / 3600, 3),

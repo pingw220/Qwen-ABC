@@ -30,13 +30,22 @@ else
   if [ -s "$L" ]; then   # BTC runs from its own directory over a directory of files: link each wav into a scratch dir
     D=$(mktemp -d -p $QA/experiments/component_sota/tmp btc.XXXX); i=0
     while read -r p; do ln -s "$p" "$D/$(printf %05d $i).wav"; echo "$(printf %05d $i) $p" >> $D/map.txt; i=$((i+1)); done < "$L"
-    ( cd /mmfs1/gscratch/scrubbed/pingw220/music_acc/BTC-ISMIR19 && LD_LIBRARY_PATH=$E/sheetsagepp-btc/lib $E/sheetsagepp-btc/bin/python test.py --voca True --audio_dir $D --save_dir $D )
+    ( cd /mmfs1/gscratch/scrubbed/pingw220/music_acc/BTC-ISMIR19 && LD_LIBRARY_PATH=$E/sheetsagepp-btc/lib $E/sheetsagepp-btc/bin/python $T/btc_run.py --voca True --audio_dir $D --save_dir $D )
     while read -r k p; do [ -f "$D/$k.lab" ] && cp "$D/$k.lab" "$p.lab"; done < $D/map.txt
   fi
   L=$(todo .songeval.json)
-  if [ -s "$L" ]; then
-    O=$(mktemp -d -p $QA/experiments/component_sota/tmp songeval.XXXX)
-    ( cd /gscratch/ark/pingw220/andysu/SongEval && $E/audio_eval/bin/python eval.py -i "$L" -o $O ) && cp -r $O $LIST.songeval_out
+  if [ -s "$L" ]; then   # SongEval keys results by file stem (every file here is mix.wav): link under unique names, map back
+    O=$(mktemp -d -p $QA/experiments/component_sota/tmp songeval.XXXX); i=0
+    while read -r p; do k=$(printf %05d $i); ln -s "$p" "$O/$k.wav"; echo "$k $p" >> $O/map.txt; echo "$O/$k.wav" >> $O/list.txt; i=$((i+1)); done < "$L"
+    ( cd /gscratch/ark/pingw220/andysu/SongEval && $E/audio_eval/bin/python eval.py -i $O/list.txt -o $O/out ) && \
+    $E/audio_eval/bin/python -c "
+import json, sys
+res = json.load(open('$O/out/result.json'))
+for line in open('$O/map.txt'):
+    k, p = line.split(' ', 1)
+    if k in res:
+        json.dump(res[k], open(p.strip() + '.songeval.json', 'w'))
+"
   fi
 fi
 L=$(todo .aes.json); [ -s "$L" ] && $E/music-rl/bin/python $T/audiobox.py "$L"

@@ -14,6 +14,7 @@ import argparse
 import json
 
 import matplotlib
+import matplotlib.ticker
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
@@ -67,7 +68,8 @@ def fig1():
     ax.axis("off")
     B = lambda x, y, t, fc="#f4f3ee": ax.text(x, y, t, ha="center", va="center", fontsize=7, color=INK,
                                              bbox=dict(boxstyle="round,pad=0.35", fc=fc, ec=MUTED, lw=0.8))
-    A = lambda x0, y0, x1, y1, c=MUTED: ax.annotate("", xy=(x1, y1), xytext=(x0, y0), arrowprops=dict(arrowstyle="->", color=c, lw=1))
+    A = lambda x0, y0, x1, y1, c=MUTED, rad=0.0: ax.annotate("", xy=(x1, y1), xytext=(x0, y0),
+                                                            arrowprops=dict(arrowstyle="->", color=c, lw=1, connectionstyle=f"arc3,rad={rad}"))
     B(0.06, 0.5, "lyrics +\ncontrols\n(plan, key,\ntempo)")
     B(0.30, 0.85, "Qwen Full (E3b)\njoint melody + chords", "#cde2fb")
     B(0.27, 0.45, "melody model\nQwen Melody-Only |\nCSL-L2M")
@@ -78,9 +80,10 @@ def fig1():
     B(0.84, 0.10, "detectors: ASR (PER),\nRMVPE F0, BTC chords,\nBeatNet, key, SongEval")
     B(0.64, 0.12, "section infill\n(local edit)", "#e7f6ef")
     for a in ((0.11, 0.55, 0.22, 0.83), (0.11, 0.48, 0.20, 0.45), (0.34, 0.45, 0.40, 0.45), (0.54, 0.47, 0.60, 0.60),
-              (0.38, 0.83, 0.59, 0.70), (0.69, 0.70, 0.78, 0.86), (0.69, 0.62, 0.78, 0.48), (0.84, 0.78, 0.84, 0.20),
+              (0.38, 0.83, 0.59, 0.70), (0.69, 0.70, 0.78, 0.86), (0.69, 0.62, 0.78, 0.48),
               (0.84, 0.36, 0.84, 0.20), (0.64, 0.56, 0.64, 0.20)):
         A(*a)
+    A(0.905, 0.86, 0.905, 0.12, rad=-0.45)   # SVS -> detectors, routed around the backing box
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     save(fig, "fig1_decomposition")
@@ -110,8 +113,10 @@ def fig3():
         for s in srcs:
             g = df[df.source == s]
             stats.append(bootstrap_mean_ci((g[f"cross_{d}"] - g[f"within_{d}"]).dropna().tolist()))
-        dots(ax, [NAME[s] for s in srcs], stats, [COL[s] for s in srcs], f"{t}\nlyric swap − reseed (> 0: lyrics move melody)", "{:+.3f}")
+        dots(ax, [NAME[s] for s in srcs], stats, [COL[s] for s in srcs], t, "{:+.3f}")
         ax.axvline(0, color=MUTED, lw=1)
+        ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(4))
+    fig.suptitle("lyric swap − reseed distance, per song (> 0: replacing the lyrics moves the melody beyond sampling noise)", fontsize=8.5)
     fig.tight_layout()
     save(fig, "fig3_lyric_vs_reseed")
 
@@ -153,7 +158,7 @@ def fig5():
         if x[0] is None or y[0] is None:
             continue
         ax.errorbar(x[0], y[0], xerr=[[x[0] - x[1]], [x[2] - x[0]]], yerr=[[y[0] - y[1]], [y[2] - y[0]]], fmt="o", color=COL[cs], ms=6, capsize=2)
-        ax.annotate(NAME[cs], (x[0], y[0]), textcoords="offset points", xytext=(6, 4), fontsize=7.5, color=INK)
+        ax.annotate(NAME[cs], (x[0], y[0]), textcoords="offset points", xytext=(8, -12) if cs == "qwen_lyr" else (6, 4), fontsize=7.5, color=INK)
     ax.set_xlabel("reference similarity: chord chroma F1 vs pseudo-reference")
     ax.set_ylabel("compatibility: strong-beat chord-tone ratio")
     ax.set_title("Harmonizing the same (reference) melodies", fontsize=8.5)
@@ -211,19 +216,26 @@ def fig8():
     lab = {"key_gen": "key +5: regenerate", "key_transpose": "key +5: transpose score", "tempo_gen": "tempo ×1.25: regenerate",
            "tempo_direct": "tempo ×1.25: edit Q:"}
     fig, ax = plt.subplots(figsize=(6.2, 3.0))
-    for j, (c, name, color) in enumerate((("symbolic_success", "in the score", "#2a78d6"), ("audio_success", "detected in rendered audio", "#eb6834"))):
+    series = (("symbolic_success", "in the score", "#2a78d6"),
+              ("audio_success", "detected in audio (key: absolute; tempo: octave-tolerant)", "#eb6834"),
+              ("audio_shift_success", "key: detected shift of +5 vs the draft's detected key", "#1baf7a"),
+              ("audio_success_strict", "tempo: within 4%, no octave tolerance", "#4a3aa7"))
+    seen = set()
+    for j, (c, name, color) in enumerate(series):
         for i, cond in enumerate(conds):
             g = ctl[ctl.condition == cond]
             if c not in g or not g[c].notna().any():
                 continue
             m, lo, hi, n = bootstrap_mean_ci(g[c].dropna().tolist())
-            ax.errorbar(m, i + (j - 0.5) * 0.3, xerr=[[m - lo], [hi - m]], fmt="o", color=color, ms=5, capsize=2.5, label=name if i == 0 else None)
+            ax.errorbar(m, i + (j - 1.5) * 0.18, xerr=[[m - lo], [hi - m]], fmt="o", color=color, ms=5, capsize=2.5,
+                        label=None if c in seen else name)
+            seen.add(c)
     ax.set_yticks(range(len(conds)))
     ax.set_yticklabels([lab[c] for c in conds])
     ax.invert_yaxis()
     ax.set_xlim(-0.02, 1.05)
     ax.set_xlabel("requested value realized")
-    ax.legend(fontsize=7.5, loc="lower left")
+    ax.legend(fontsize=7, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2)
     save(fig, "fig8_symbolic_vs_audio_control")
 
 

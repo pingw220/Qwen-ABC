@@ -175,6 +175,21 @@ def main():
                 if (s, "fastsinger") in piv and (s, "soulx") in piv:
                     d = paired_bootstrap(piv[(s, "soulx")].dropna().to_dict(), piv[(s, "fastsinger")].dropna().to_dict())
                     eff.append({"metric": lab, "contrast": f"SoulX − FastSinger | {DISPLAY.get(s, s)}", "estimate [95% CI]": fmt_ci(d["diff"], d["lo"], d["hi"], 3, True), "N": d["n"]})
+        # interaction: does the renderer effect differ between melody sources? (difference of paired
+        # differences, bootstrapped over songs present in both sources and both renderers)
+        if ("fastsinger" in {r for _, r in piv.columns}) and ("soulx" in {r for _, r in piv.columns}):
+            for s1, s2 in (("mel", "csl_rtc"), ("mel", "csl_offc"), ("e3b", "csl_rtc"), ("mel", "ref")):
+                keys = [(s1, "soulx"), (s1, "fastsinger"), (s2, "soulx"), (s2, "fastsinger")]
+                if all(k in piv for k in keys):
+                    sub = piv[keys].dropna()
+                    dd = ((sub[keys[0]] - sub[keys[1]]) - (sub[keys[2]] - sub[keys[3]])).to_dict()
+                    d = paired_bootstrap(dd, {k: 0.0 for k in dd})
+                    eff.append({"metric": lab, "contrast": f"interaction: (SoulX − FastSinger | {DISPLAY.get(s1, s1)}) − (same | {DISPLAY.get(s2, s2)})",
+                                "estimate [95% CI]": fmt_ci(d["diff"], d["lo"], d["hi"], 3, True), "N": d["n"]})
+                    main = (((sub[keys[0]] + sub[keys[1]]) - (sub[keys[2]] + sub[keys[3]])) / 2).to_dict()
+                    d = paired_bootstrap(main, {k: 0.0 for k in main})
+                    eff.append({"metric": lab, "contrast": f"melody main effect: {DISPLAY.get(s1, s1)} − {DISPLAY.get(s2, s2)} (mean of both renderers)",
+                                "estimate [95% CI]": fmt_ci(d["diff"], d["lo"], d["hi"], 3, True), "N": d["n"]})
         # ranking consistency: Spearman of per-source means across renderers
         means = {r: [piv[(s, r)].mean() for s in srcs if (s, r) in piv] for r in ("fastsinger", "soulx")}
         if len(means["fastsinger"]) == len(means["soulx"]) and len(srcs) > 2:

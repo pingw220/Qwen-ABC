@@ -3,7 +3,7 @@
 
   python -m paper_eval.component_sota.melody_eval [--sources ref,e3b,mel,csl_off,csl_rt] [--workers 16]
 
-Writes reports/component_sota/data/melody_samples.parquet (one row per sample, failures kept)
+Writes reports/component_sota/data/melody_samples_<condition>.parquet (one row per sample, failures kept)
 and tables/lyrics_to_melody.* (Table 1) with song-level bootstrap CIs and paired differences.
 """
 
@@ -121,7 +121,7 @@ def main():
             m, lo, hi, n = bootstrap_mean_ci(list(v.values()))
             row[label] = fmt_ci(m, lo, hi, d) if m is not None else "n/a"
         table.append(row)
-    write_table(table, "lyrics_to_melody", "Lyrics→melody on the 225 test songs (mean over 4 samples per song; failures = 0 in rates; "
+    write_table(table, "lyrics_to_melody" + ("" if args.condition == "orig" else f"_{args.condition}"), "Lyrics→melody on the 225 test songs (mean over 4 samples per song; failures = 0 in rates; "
                 "PD/DD/MD vs the pseudo-reference as in CSL-L2M). Structure n/a for systems without plan input.",
                 table_dir=CS_REPORT / "tables")
     pairs = [("mel", "csl_offc"), ("mel", "csl_rtc"), ("mel", "e3b"), ("csl_rtc", "csl_offc"), ("e3b", "csl_offc"), ("e3b", "csl_rtc"),
@@ -137,7 +137,7 @@ def main():
                     drows.append({"comparison": f"{DISPLAY[a]} − {DISPLAY[b]}", "metric": label,
                                   "difference [95% CI]": fmt_ci(d["diff"], d["lo"], d["hi"], 3, True), "N songs": d["n"],
                                   "resolved": "yes" if d["lo"] > 0 or d["hi"] < 0 else "no"})
-    write_table(drows, "lyrics_to_melody_paired", "Paired song-level differences (bootstrap 10,000)", table_dir=CS_REPORT / "tables")
+    write_table(drows, "lyrics_to_melody_paired" + ("" if args.condition == "orig" else f"_{args.condition}"), "Paired song-level differences (bootstrap 10,000)", table_dir=CS_REPORT / "tables")
     print("MELODY_EVAL_DONE")
 
 

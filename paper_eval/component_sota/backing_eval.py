@@ -13,6 +13,10 @@ lead sheet that was rendered (``<name>.song.json``: melody, chords, key, tempo o
 * Key accuracy: detected == requested; MIREX weighted score (fifth 0.5, relative 0.3, parallel 0.2).
 * Rhythm F1 (MIDI-SAG): detected beats vs the score's beat times, 70 ms tolerance; BPM error from
   the median detected inter-beat interval (and octave-tolerant BPM accuracy within 4%).
+* Closed loop: the request is derived from the draft (key +5 semitones, tempo x1.25). Tempo success is
+  octave-tolerant (x0.5/1/2 within 4%, which cannot confuse x1.25 with the draft) and strict; key success
+  is absolute (detected == requested, capped by the detector's accuracy on the draft itself) and relative
+  (detected key moved by +5 from the draft's detected key).
 """
 
 from __future__ import annotations
@@ -143,6 +147,36 @@ def evaluate_mix(d: Path, song: Song) -> dict:
     return rec
 
 
+def chord_f1_matrix():
+    """Discriminability control: Chord F1 of each render's detected chords against every chord source's
+    *requested* chords for the same song (diagonal = the real measurement, off-diagonal = wrong request)."""
+    B = AUDIO / "backing" / "chords"
+    srcs = ("qwen", "am2", "ref")
+    rows = []
+    for a in srcs:
+        row = {"rendered chords": a}
+        for b in srcs:
+            v = []
+            for d in sorted((B / "render").glob(f"*__{a}")):
+                sid = d.name.split("__")[0]
+                lab, pb = d / "mix.wav.lab", B / f"{sid}__{b}.song.json"
+                if not lab.exists() or not pb.exists():
+                    continue
+                s = Song.from_json(json.loads(pb.read_text()))
+                dur = sum(s.bar_beats) * 60.0 / s.tempo_bpm
+                R, _ = chroma_frames(req_segments(s), dur)
+                D, _ = chroma_frames(lab_segments(lab), dur)
+                n = min(len(R), len(D))
+                tp = (R[:n] * D[:n]).sum()
+                pr, rc = tp / max(D[:n].sum(), 1), tp / max(R[:n].sum(), 1)
+                v.append(2 * pr * rc / max(pr + rc, 1e-9))
+            m, lo, hi, n = bootstrap_mean_ci(v)
+            row[f"vs requested {b}"] = fmt_ci(m, lo, hi)
+        rows.append(row)
+    write_table(rows, "backing_chord_f1_matrix", "Chord F1 of detected vs requested chords, for every (rendered, requested) chord-source pair on the same songs; "
+                "off-diagonal cells are the no-information control", table_dir=CS_REPORT / "tables")
+
+
 def main():
     import pandas as pd
     ap = argparse.ArgumentParser()
@@ -174,12 +208,16 @@ def main():
             df.loc[i, "request"] = want
             df.loc[i, "symbolic_success"] = float(parse_key_name(r["requested_key"]) == parse_key_name(want))
             df.loc[i, "audio_success"] = float(parse_key_name(r.get("detected_key")) == parse_key_name(want)) if isinstance(r.get("detected_key"), str) else None
+            # detector-bias-free check: did the detected key move by +5 semitones from the draft's *detected* key?
+            a, b = parse_key_name(r.get("detected_key") or ""), parse_key_name(d.get("detected_key") or "")
+            df.loc[i, "audio_shift_success"] = float(a is not None and b is not None and (a[0] - b[0]) % 12 == 5) if (a and b) else None
         elif r["condition"].startswith("tempo"):
             want = int(round(d["requested_bpm"] * 1.25))
             df.loc[i, "request"] = str(want)
             df.loc[i, "symbolic_success"] = float(r["requested_bpm"] == want)
             det = r.get("detected_bpm")
             df.loc[i, "audio_success"] = float(min(abs(det * f - want) for f in (0.5, 1, 2)) <= 0.04 * want) if det == det and det is not None else None
+            df.loc[i, "audio_success_strict"] = float(abs(det - want) <= 0.04 * want) if det == det and det is not None else None
             df.loc[i, "audio_abs_error"] = abs(det - want) if det == det and det is not None else None
     df.to_parquet(CS_REPORT / "data" / "backing.parquet", index=False)
     cols = [("chord_f1", "Chord F1 ↑", 3), ("chord_root_acc", "chord root acc. ↑", 3), ("key_acc", "Key accuracy ↑", 3),
@@ -187,6 +225,8 @@ def main():
             ("bpm_acc_4pct", "BPM within 4%", 3), ("bpm_acc_octave", "BPM within 4% (octave-tolerant)", 3),
             ("aes_PQ", "Audiobox PQ", 2), ("aes_CE", "Audiobox CE", 2),
             ("symbolic_success", "requested value in the score", 3), ("audio_success", "requested value detected in audio", 3),
+            ("audio_success_strict", "tempo detected within 4% (no octave tolerance)", 3),
+            ("audio_shift_success", "detected key moved +5 from the draft's detected key", 3),
             ("audio_abs_error", "abs. detected − requested BPM", 1)]
     se_cols = [c for c in df.columns if c.startswith("songeval_")]
     cols += [(c, c.replace("songeval_", "SongEval "), 2) for c in se_cols]
@@ -202,6 +242,20 @@ def main():
                     row[lab] = fmt_ci(m, lo, hi, dg)
             table.append(row)
         write_table(table, stem, cap, table_dir=CS_REPORT / "tables")
+    drows = []
+    pairs = (("chords", "qwen", "am2"), ("chords", "qwen", "ref"), ("chords", "am2", "ref"),
+             ("control", "key_transpose", "key_gen"), ("control", "tempo_direct", "tempo_gen"))
+    for grp, a, b in pairs:
+        g = df[df.group == grp]
+        A, B = g[g.condition == a].set_index("song_id"), g[g.condition == b].set_index("song_id")
+        for c, lab, dg in cols:
+            if c in A and c in B:
+                d = paired_bootstrap(A[c].dropna().to_dict(), B[c].dropna().to_dict())
+                if d["n"]:
+                    drows.append({"contrast": f"{a} − {b}", "metric": lab, "difference [95% CI]": fmt_ci(d["diff"], d["lo"], d["hi"], 3, True), "N": d["n"]})
+    write_table(drows, "backing_paired", "Paired song-level differences between chord sources (Table 7) and between control implementations (Table 8)",
+                table_dir=CS_REPORT / "tables")
+    chord_f1_matrix()
     print("BACKING_EVAL_DONE")
 
 
