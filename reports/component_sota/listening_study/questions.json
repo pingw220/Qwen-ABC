@@ -1,0 +1,42 @@
+{
+ "questions": {
+  "A": {
+   "fits_lyrics": "Which melody fits the lyrics better? (A | B | no_difference)",
+   "coherent": "Which melody sounds more coherent? (A | B | no_difference)",
+   "natural_phrasing": "Which melody has more natural phrasing? (A | B | no_difference)",
+   "stronger_structure": "Which has stronger phrase/section structure? (A | B | no_difference)"
+  },
+  "B": {
+   "clearer": "Which singing is clearer? (A | B | no_difference)",
+   "more_natural": "Which is more natural? (A | B | no_difference)",
+   "follows_target": "Which follows the target melody (the piano clip) better? (A | B | no_difference)"
+  },
+  "C": {
+   "fits_melody": "Which accompaniment fits the melody better? (A | B | no_difference)",
+   "harmonically_coherent": "Which sounds more harmonically coherent? (A | B | no_difference)",
+   "more_natural": "Which sounds more natural? (A | B | no_difference)"
+  },
+  "D": {
+   "connects_naturally": "Does the inserted (edited) section connect naturally to what comes before and after? (1 = not at all ... 5 = seamlessly)",
+   "unrelated_consistent": "Compared with the ORIGINAL, did the unrelated sections remain consistent? (1 = completely different ... 5 = identical)"
+  },
+  "E": {
+   "more_chorus_like": "Which version of the marked section sounds more chorus-like? (A | B | no_difference)",
+   "more_bridge_like": "Which version of the marked section sounds more bridge-like? (A | B | no_difference)"
+  }
+ },
+ "block_titles": {
+  "A": "Lyrics→Melody",
+  "B": "SVS renderer robustness",
+  "C": "Melody→Chord harmonization",
+  "D": "Edited-section continuity",
+  "E": "Section semantic control"
+ },
+ "instructions": {
+  "A": "Both clips sing the same lyrics (shown on the sheet). Compare the MELODIES.",
+  "B": "Both clips sing the same melody. First listen to the piano clip (the target melody).",
+  "C": "Both clips have the same vocal melody. Compare the ACCOMPANIMENT.",
+  "D": "The first clip is the ORIGINAL; in the second, one marked section was rewritten.",
+  "E": "Listen to the marked section in each clip."
+ }
+}

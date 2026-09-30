@@ -1,0 +1,6 @@
+<!-- Chord F1 of detected vs requested chords, for every (rendered, requested) chord-source pair on the same songs; off-diagonal cells are the no-information control -->
+| rendered chords | vs requested qwen | vs requested am2 | vs requested ref |
+|---|---|---|---|
+| qwen | 0.923 [0.909, 0.935] | 0.465 [0.434, 0.496] | 0.541 [0.504, 0.579] |
+| am2 | 0.472 [0.437, 0.506] | 0.921 [0.905, 0.935] | 0.474 [0.451, 0.497] |
+| ref | 0.535 [0.498, 0.573] | 0.463 [0.439, 0.487] | 0.888 [0.858, 0.913] |

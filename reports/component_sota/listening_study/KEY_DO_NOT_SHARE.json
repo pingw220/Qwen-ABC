@@ -1,0 +1,5722 @@
+{
+ "note": "NOT PARTICIPANT-FACING",
+ "seed": 20260927,
+ "salt": "qwenabc-component-listening-2026",
+ "items": [
+  {
+   "block": "A",
+   "song_id": "27o7ErWiozSj47o3dnPvVf",
+   "systems": [
+    "mel",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/27o7ErWiozSj47o3dnPvVf/fastsinger.wav",
+     "start": 17.09,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/27o7ErWiozSj47o3dnPvVf/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "d28ddeec03",
+   "clip_ids": {
+    "mel": "a0ba6f1623",
+    "csl_offc": "a92d5d0bba"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "mel",
+    "2": "csl_offc",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "systems": [
+    "mel",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/4VEbbZeJwrlqRBTTscq3m2/fastsinger.wav",
+     "start": 8.71,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/4VEbbZeJwrlqRBTTscq3m2/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "fece8f579d",
+   "clip_ids": {
+    "mel": "234d63966a",
+    "csl_offc": "645051d91f"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "mel",
+    "2": "csl_offc",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "255drLOJ94rmt1SDRj6H3N",
+   "systems": [
+    "mel",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/255drLOJ94rmt1SDRj6H3N/fastsinger.wav",
+     "start": 16.2,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/255drLOJ94rmt1SDRj6H3N/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "95447182e3",
+   "clip_ids": {
+    "mel": "d35ff86b82",
+    "csl_offc": "ea4a238ee4"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "csl_offc",
+    "2": "mel",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "1oWX2EGO7Z8YCZ5jJuGrpM",
+   "systems": [
+    "mel",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/1oWX2EGO7Z8YCZ5jJuGrpM/soulx/generated.wav",
+     "start": 14.43,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/1oWX2EGO7Z8YCZ5jJuGrpM/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "e7328473a2",
+   "clip_ids": {
+    "mel": "283b1d50cc",
+    "csl_offc": "d1f9f6a3de"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "mel",
+    "2": "csl_offc",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "4218Xav4mopAXlguvSJ9Uv",
+   "systems": [
+    "mel",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/4218Xav4mopAXlguvSJ9Uv/soulx/generated.wav",
+     "start": 18.2,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/4218Xav4mopAXlguvSJ9Uv/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "d3ffe9b579",
+   "clip_ids": {
+    "mel": "617a975d19",
+    "csl_offc": "5257e9f001"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "csl_offc",
+    "2": "mel",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "7v46DZBqB4xmaTHRygC8gy",
+   "systems": [
+    "mel",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/7v46DZBqB4xmaTHRygC8gy/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/7v46DZBqB4xmaTHRygC8gy/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "fa5d6568db",
+   "clip_ids": {
+    "mel": "7d0403f65b",
+    "csl_offc": "ef127e90b1"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "csl_offc",
+    "2": "mel",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "5K8AQ2dBiXolebEfawTrzv",
+   "systems": [
+    "mel",
+    "e3b"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/5K8AQ2dBiXolebEfawTrzv/soulx/generated.wav",
+     "start": 16.94,
+     "dur": 30.0,
+     "ready": true
+    },
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/5K8AQ2dBiXolebEfawTrzv/soulx/generated.wav",
+     "start": 17.5,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "b0ae654733",
+   "clip_ids": {
+    "mel": "452c4d32e8",
+    "e3b": "1d3055a1dd"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "e3b",
+    "1": "mel",
+    "2": "e3b",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "2YSqK9S0SZjulBJdc9BYuu",
+   "systems": [
+    "mel",
+    "e3b"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/2YSqK9S0SZjulBJdc9BYuu/soulx/generated.wav",
+     "start": 11.15,
+     "dur": 30.0,
+     "ready": true
+    },
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/2YSqK9S0SZjulBJdc9BYuu/soulx/generated.wav",
+     "start": 11.53,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "aaa92dc9ba",
+   "clip_ids": {
+    "mel": "6a28520d45",
+    "e3b": "190dabd8f8"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "e3b",
+    "2": "mel",
+    "3": "e3b"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+   "systems": [
+    "mel",
+    "e3b"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/3im9iOhpZNgaTS4VGYOGF9/soulx/generated.wav",
+     "start": 7.97,
+     "dur": 30.0,
+     "ready": true
+    },
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/3im9iOhpZNgaTS4VGYOGF9/soulx/generated.wav",
+     "start": 7.04,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "5eacfa4ac2",
+   "clip_ids": {
+    "mel": "0a775e3161",
+    "e3b": "d47754ac7e"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "e3b",
+    "1": "mel",
+    "2": "e3b",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "255drLOJ94rmt1SDRj6H3N",
+   "systems": [
+    "mel",
+    "e3b"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/255drLOJ94rmt1SDRj6H3N/fastsinger.wav",
+     "start": 16.2,
+     "dur": 30.0,
+     "ready": true
+    },
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/255drLOJ94rmt1SDRj6H3N/fastsinger.wav",
+     "start": 15.78,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "5f13bf698c",
+   "clip_ids": {
+    "mel": "cdc74936f5",
+    "e3b": "b0e3357278"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "e3b",
+    "2": "mel",
+    "3": "e3b"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+   "systems": [
+    "mel",
+    "e3b"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/0A4ehMRLl7v8TFyhSbdkh8/fastsinger.wav",
+     "start": 19.16,
+     "dur": 30.0,
+     "ready": true
+    },
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/0A4ehMRLl7v8TFyhSbdkh8/fastsinger.wav",
+     "start": 18.8,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "5a6512d813",
+   "clip_ids": {
+    "mel": "2ee6bd1d24",
+    "e3b": "274bedaec5"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "e3b",
+    "2": "mel",
+    "3": "e3b"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "4VfHbfbzNPZmX5KI4iAOyT",
+   "systems": [
+    "mel",
+    "e3b"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/4VfHbfbzNPZmX5KI4iAOyT/soulx/generated.wav",
+     "start": 1.78,
+     "dur": 30.0,
+     "ready": true
+    },
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/4VfHbfbzNPZmX5KI4iAOyT/soulx/generated.wav",
+     "start": 0.86,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "603f0ba44c",
+   "clip_ids": {
+    "mel": "7515e75dd8",
+    "e3b": "f452604dfd"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "e3b",
+    "1": "mel",
+    "2": "e3b",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "32fzm1b8Ivyyj9qKXjiMZw",
+   "systems": [
+    "e3b",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/32fzm1b8Ivyyj9qKXjiMZw/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/32fzm1b8Ivyyj9qKXjiMZw/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "21ac814491",
+   "clip_ids": {
+    "e3b": "6abfa1d732",
+    "csl_offc": "ddcf9f7b80"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "e3b",
+    "1": "csl_offc",
+    "2": "e3b",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "1oWX2EGO7Z8YCZ5jJuGrpM",
+   "systems": [
+    "e3b",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/1oWX2EGO7Z8YCZ5jJuGrpM/fastsinger.wav",
+     "start": 13.57,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/1oWX2EGO7Z8YCZ5jJuGrpM/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "c453bb6708",
+   "clip_ids": {
+    "e3b": "b2fa205ad0",
+    "csl_offc": "60606bb3db"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "e3b",
+    "2": "csl_offc",
+    "3": "e3b"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "5LlXalu5DZuQl7Q9CmNKp0",
+   "systems": [
+    "e3b",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/5LlXalu5DZuQl7Q9CmNKp0/soulx/generated.wav",
+     "start": 6.06,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/5LlXalu5DZuQl7Q9CmNKp0/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "4d2615170e",
+   "clip_ids": {
+    "e3b": "9ee045c9b3",
+    "csl_offc": "11a5a0d818"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "e3b",
+    "2": "csl_offc",
+    "3": "e3b"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "5gIW9IMReT6xicyfHKtcug",
+   "systems": [
+    "e3b",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/5gIW9IMReT6xicyfHKtcug/soulx/generated.wav",
+     "start": 7.19,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/5gIW9IMReT6xicyfHKtcug/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "48e3864988",
+   "clip_ids": {
+    "e3b": "6be7fa8d3b",
+    "csl_offc": "99ed67c63f"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "e3b",
+    "1": "csl_offc",
+    "2": "e3b",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "4VfHbfbzNPZmX5KI4iAOyT",
+   "systems": [
+    "e3b",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/4VfHbfbzNPZmX5KI4iAOyT/fastsinger.wav",
+     "start": 0.86,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/4VfHbfbzNPZmX5KI4iAOyT/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "460da9f455",
+   "clip_ids": {
+    "e3b": "2e0fdb6669",
+    "csl_offc": "ed14791986"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "e3b",
+    "2": "csl_offc",
+    "3": "e3b"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "6TCciGLZyMSTZDJDmrdVSI",
+   "systems": [
+    "e3b",
+    "csl_offc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "e3b": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/6TCciGLZyMSTZDJDmrdVSI/fastsinger.wav",
+     "start": 31.77,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/6TCciGLZyMSTZDJDmrdVSI/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "8821cd37f3",
+   "clip_ids": {
+    "e3b": "4dbb305cc8",
+    "csl_offc": "bd26cf2579"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "e3b",
+    "1": "csl_offc",
+    "2": "e3b",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "4VfHbfbzNPZmX5KI4iAOyT",
+   "systems": [
+    "csl_offc",
+    "csl_rtc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/4VfHbfbzNPZmX5KI4iAOyT/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_rtc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/4VfHbfbzNPZmX5KI4iAOyT/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "fed983b168",
+   "clip_ids": {
+    "csl_offc": "078749a1fe",
+    "csl_rtc": "048fd6fb1a"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_rtc",
+    "1": "csl_offc",
+    "2": "csl_rtc",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "47ZxPbe5sBnGaQanA7sQDq",
+   "systems": [
+    "csl_offc",
+    "csl_rtc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/47ZxPbe5sBnGaQanA7sQDq/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_rtc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/47ZxPbe5sBnGaQanA7sQDq/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "611650dfe5",
+   "clip_ids": {
+    "csl_offc": "93112863d4",
+    "csl_rtc": "90ffc9eef3"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_rtc",
+    "1": "csl_offc",
+    "2": "csl_rtc",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "7v46DZBqB4xmaTHRygC8gy",
+   "systems": [
+    "csl_offc",
+    "csl_rtc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/7v46DZBqB4xmaTHRygC8gy/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": false
+    },
+    "csl_rtc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/7v46DZBqB4xmaTHRygC8gy/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": false
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "6605450e0f",
+   "clip_ids": {
+    "csl_offc": "c1450dfe1e",
+    "csl_rtc": "378506459c"
+   },
+   "status": "pending_audio",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "csl_rtc",
+    "2": "csl_offc",
+    "3": "csl_rtc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+   "systems": [
+    "csl_offc",
+    "csl_rtc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/0A4ehMRLl7v8TFyhSbdkh8/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_rtc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/0A4ehMRLl7v8TFyhSbdkh8/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "e1e70c9b2b",
+   "clip_ids": {
+    "csl_offc": "fa818311f3",
+    "csl_rtc": "986259794d"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "csl_rtc",
+    "2": "csl_offc",
+    "3": "csl_rtc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "2YSqK9S0SZjulBJdc9BYuu",
+   "systems": [
+    "csl_offc",
+    "csl_rtc"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/2YSqK9S0SZjulBJdc9BYuu/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_rtc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/2YSqK9S0SZjulBJdc9BYuu/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "878c3a473a",
+   "clip_ids": {
+    "csl_offc": "5b56156c6f",
+    "csl_rtc": "f963440279"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_rtc",
+    "1": "csl_offc",
+    "2": "csl_rtc",
+    "3": "csl_offc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "7omMiE6h9Js24Cr22A0Fbv",
+   "systems": [
+    "csl_offc",
+    "csl_rtc"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "csl_offc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/7omMiE6h9Js24Cr22A0Fbv/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "csl_rtc": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/7omMiE6h9Js24Cr22A0Fbv/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "01d4edbd75",
+   "clip_ids": {
+    "csl_offc": "f27a634c13",
+    "csl_rtc": "580b932314"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "csl_offc",
+    "1": "csl_rtc",
+    "2": "csl_offc",
+    "3": "csl_rtc"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+   "systems": [
+    "mel",
+    "ref"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/3im9iOhpZNgaTS4VGYOGF9/soulx/generated.wav",
+     "start": 7.97,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/3im9iOhpZNgaTS4VGYOGF9/soulx/generated.wav",
+     "start": 7.81,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "999f0e4b7b",
+   "clip_ids": {
+    "mel": "a4ef2f3aaa",
+    "ref": "225936920d"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "mel",
+    "2": "ref",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "28IzuspwIj6C8XAOoIJ1Wp",
+   "systems": [
+    "mel",
+    "ref"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/28IzuspwIj6C8XAOoIJ1Wp/soulx/generated.wav",
+     "start": 0.2,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/28IzuspwIj6C8XAOoIJ1Wp/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "88c9bbeeb0",
+   "clip_ids": {
+    "mel": "bba7eee359",
+    "ref": "d2bc68e09f"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "ref",
+    "2": "mel",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "09d4jeFypKBWzZVfHKBeVY",
+   "systems": [
+    "mel",
+    "ref"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/09d4jeFypKBWzZVfHKBeVY/fastsinger.wav",
+     "start": 13.85,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/09d4jeFypKBWzZVfHKBeVY/fastsinger.wav",
+     "start": 14.15,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "55b90593a0",
+   "clip_ids": {
+    "mel": "39bb615c13",
+    "ref": "44b7c45ce7"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "ref",
+    "2": "mel",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "5icriKgD89JhLxeSnd9o74",
+   "systems": [
+    "mel",
+    "ref"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/5icriKgD89JhLxeSnd9o74/soulx/generated.wav",
+     "start": 14.1,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/5icriKgD89JhLxeSnd9o74/soulx/generated.wav",
+     "start": 14.1,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "766bfb5bff",
+   "clip_ids": {
+    "mel": "7a164664b0",
+    "ref": "9201f2254d"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "mel",
+    "2": "ref",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "59E7BFFni2GTDisijRqKU7",
+   "systems": [
+    "mel",
+    "ref"
+   ],
+   "context": {
+    "renderer": "fastsinger"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/59E7BFFni2GTDisijRqKU7/fastsinger.wav",
+     "start": 17.78,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/59E7BFFni2GTDisijRqKU7/fastsinger.wav",
+     "start": 23.78,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "4c67ace47f",
+   "clip_ids": {
+    "mel": "83d0ac776f",
+    "ref": "274c3fa7cb"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "mel",
+    "2": "ref",
+    "3": "mel"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "systems": [
+    "mel",
+    "ref"
+   ],
+   "context": {
+    "renderer": "soulx"
+   },
+   "clips": {
+    "mel": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/4VEbbZeJwrlqRBTTscq3m2/soulx/generated.wav",
+     "start": 8.71,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/4VEbbZeJwrlqRBTTscq3m2/soulx/generated.wav",
+     "start": 8.49,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "test",
+   "item_id": "2633e00eb8",
+   "clip_ids": {
+    "mel": "5eee3a8344",
+    "ref": "668d97399c"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "mel",
+    "1": "ref",
+    "2": "mel",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "09d4jeFypKBWzZVfHKBeVY",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "ref"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/09d4jeFypKBWzZVfHKBeVY/fastsinger.wav",
+     "start": 14.15,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/09d4jeFypKBWzZVfHKBeVY/soulx/generated.wav",
+     "start": 14.15,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/09d4jeFypKBWzZVfHKBeVY/fs.mid",
+    "start": 14.15,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "effc68c400",
+   "clip_ids": {
+    "fastsinger": "830e9f8fc3",
+    "soulx": "b625d6f986",
+    "_target": "4d73cc1871"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "27o7ErWiozSj47o3dnPvVf",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "ref"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/27o7ErWiozSj47o3dnPvVf/fastsinger.wav",
+     "start": 15.1,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/27o7ErWiozSj47o3dnPvVf/soulx/generated.wav",
+     "start": 15.1,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/27o7ErWiozSj47o3dnPvVf/fs.mid",
+    "start": 15.1,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "bfd33cd7d4",
+   "clip_ids": {
+    "fastsinger": "9008185f61",
+    "soulx": "6ff4a1b0b6",
+    "_target": "de42f616d5"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "47ZxPbe5sBnGaQanA7sQDq",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "ref"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/47ZxPbe5sBnGaQanA7sQDq/fastsinger.wav",
+     "start": 1.14,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/47ZxPbe5sBnGaQanA7sQDq/soulx/generated.wav",
+     "start": 1.14,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/47ZxPbe5sBnGaQanA7sQDq/fs.mid",
+    "start": 1.14,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "8478922c84",
+   "clip_ids": {
+    "fastsinger": "61c24834d9",
+    "soulx": "dc3f7690d0",
+    "_target": "21efa35880"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "4Cvd1vwstGUZTdnL6X35md",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "ref"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/4Cvd1vwstGUZTdnL6X35md/fastsinger.wav",
+     "start": 12.33,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/4Cvd1vwstGUZTdnL6X35md/soulx/generated.wav",
+     "start": 12.33,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/ref/4Cvd1vwstGUZTdnL6X35md/fs.mid",
+    "start": 12.33,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "057ac462b8",
+   "clip_ids": {
+    "fastsinger": "adb0e771a6",
+    "soulx": "78a36f1efe",
+    "_target": "50c4c03b2a"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "2YSqK9S0SZjulBJdc9BYuu",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "e3b"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/2YSqK9S0SZjulBJdc9BYuu/fastsinger.wav",
+     "start": 11.53,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/2YSqK9S0SZjulBJdc9BYuu/soulx/generated.wav",
+     "start": 11.53,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/2YSqK9S0SZjulBJdc9BYuu/fs.mid",
+    "start": 11.53,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "109fd427b0",
+   "clip_ids": {
+    "fastsinger": "fb4a1269bc",
+    "soulx": "a7494feeb1",
+    "_target": "7eb5643c3d"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "27o7ErWiozSj47o3dnPvVf",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "e3b"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/27o7ErWiozSj47o3dnPvVf/fastsinger.wav",
+     "start": 16.65,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/27o7ErWiozSj47o3dnPvVf/soulx/generated.wav",
+     "start": 16.65,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/27o7ErWiozSj47o3dnPvVf/fs.mid",
+    "start": 16.65,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "36f5ffd195",
+   "clip_ids": {
+    "fastsinger": "d0bfad5173",
+    "soulx": "422ca71e46",
+    "_target": "1347fb508b"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "e3b"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/4VEbbZeJwrlqRBTTscq3m2/fastsinger.wav",
+     "start": 8.71,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/4VEbbZeJwrlqRBTTscq3m2/soulx/generated.wav",
+     "start": 8.71,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/4VEbbZeJwrlqRBTTscq3m2/fs.mid",
+    "start": 8.71,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "b1a387227f",
+   "clip_ids": {
+    "fastsinger": "09b6dd6c36",
+    "soulx": "03d60f0d83",
+    "_target": "3247fef7d8"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "5LlXalu5DZuQl7Q9CmNKp0",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "e3b"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/5LlXalu5DZuQl7Q9CmNKp0/fastsinger.wav",
+     "start": 6.06,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/5LlXalu5DZuQl7Q9CmNKp0/soulx/generated.wav",
+     "start": 6.06,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/e3b/5LlXalu5DZuQl7Q9CmNKp0/fs.mid",
+    "start": 6.06,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "bbb3f2ea82",
+   "clip_ids": {
+    "fastsinger": "7801c90341",
+    "soulx": "1d4a235cac",
+    "_target": "52c31418a2"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "mel"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/0A4ehMRLl7v8TFyhSbdkh8/fastsinger.wav",
+     "start": 19.16,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/0A4ehMRLl7v8TFyhSbdkh8/soulx/generated.wav",
+     "start": 19.16,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/0A4ehMRLl7v8TFyhSbdkh8/fs.mid",
+    "start": 19.16,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "3694887b53",
+   "clip_ids": {
+    "fastsinger": "7dc7cd37ec",
+    "soulx": "adc920d9de",
+    "_target": "8325798bd8"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "32fzm1b8Ivyyj9qKXjiMZw",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "mel"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/32fzm1b8Ivyyj9qKXjiMZw/fastsinger.wav",
+     "start": 5.08,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/32fzm1b8Ivyyj9qKXjiMZw/soulx/generated.wav",
+     "start": 5.08,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/32fzm1b8Ivyyj9qKXjiMZw/fs.mid",
+    "start": 5.08,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "804c72766c",
+   "clip_ids": {
+    "fastsinger": "07b217cd03",
+    "soulx": "f5c75e1005",
+    "_target": "bc515aec49"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "1heBg3CKPc4qVUXzVO49I2",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "mel"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/1heBg3CKPc4qVUXzVO49I2/fastsinger.wav",
+     "start": 12.2,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/1heBg3CKPc4qVUXzVO49I2/soulx/generated.wav",
+     "start": 12.2,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/1heBg3CKPc4qVUXzVO49I2/fs.mid",
+    "start": 12.2,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "345dea94b4",
+   "clip_ids": {
+    "fastsinger": "434feeecc1",
+    "soulx": "9ed85d69af",
+    "_target": "fe2e34c3ac"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "255drLOJ94rmt1SDRj6H3N",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "mel"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/255drLOJ94rmt1SDRj6H3N/fastsinger.wav",
+     "start": 16.2,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/255drLOJ94rmt1SDRj6H3N/soulx/generated.wav",
+     "start": 16.2,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/255drLOJ94rmt1SDRj6H3N/fs.mid",
+    "start": 16.2,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "3385fc5424",
+   "clip_ids": {
+    "fastsinger": "4fbb2f5f87",
+    "soulx": "a7c3f790ec",
+    "_target": "38b13d4f95"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "4Cvd1vwstGUZTdnL6X35md",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_offc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/4Cvd1vwstGUZTdnL6X35md/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/4Cvd1vwstGUZTdnL6X35md/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/4Cvd1vwstGUZTdnL6X35md/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "febd1d0c80",
+   "clip_ids": {
+    "fastsinger": "0abec19850",
+    "soulx": "238af383ac",
+    "_target": "206cc9ede7"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "1heBg3CKPc4qVUXzVO49I2",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_offc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/1heBg3CKPc4qVUXzVO49I2/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/1heBg3CKPc4qVUXzVO49I2/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/1heBg3CKPc4qVUXzVO49I2/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "21dca2fe2f",
+   "clip_ids": {
+    "fastsinger": "5c7b09b7a2",
+    "soulx": "b5b84730f3",
+    "_target": "eef643fb4c"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "09d4jeFypKBWzZVfHKBeVY",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_offc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/09d4jeFypKBWzZVfHKBeVY/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/09d4jeFypKBWzZVfHKBeVY/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/09d4jeFypKBWzZVfHKBeVY/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "639702996e",
+   "clip_ids": {
+    "fastsinger": "430408305c",
+    "soulx": "2f639f6e7f",
+    "_target": "1ca7f12a6a"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "28IzuspwIj6C8XAOoIJ1Wp",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_offc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/28IzuspwIj6C8XAOoIJ1Wp/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/28IzuspwIj6C8XAOoIJ1Wp/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_offc/28IzuspwIj6C8XAOoIJ1Wp/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "f5880a1cd2",
+   "clip_ids": {
+    "fastsinger": "43aaa838ed",
+    "soulx": "5e90b5a9fe",
+    "_target": "e33d62bfd6"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "47ZxPbe5sBnGaQanA7sQDq",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_rtc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/47ZxPbe5sBnGaQanA7sQDq/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/47ZxPbe5sBnGaQanA7sQDq/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/47ZxPbe5sBnGaQanA7sQDq/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "1c39ac91ad",
+   "clip_ids": {
+    "fastsinger": "7ab0a35955",
+    "soulx": "d00db376ce",
+    "_target": "cbc4232137"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "27o7ErWiozSj47o3dnPvVf",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_rtc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/27o7ErWiozSj47o3dnPvVf/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": false
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/27o7ErWiozSj47o3dnPvVf/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/27o7ErWiozSj47o3dnPvVf/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "d6b48fcaf1",
+   "clip_ids": {
+    "fastsinger": "5207bd1124",
+    "soulx": "81d8ea9b98",
+    "_target": "96a6969616"
+   },
+   "status": "pending_audio",
+   "A_is": {
+    "0": "fastsinger",
+    "1": "soulx",
+    "2": "fastsinger",
+    "3": "soulx"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "4KnaiD9UY8fAhM1GrM9M8m",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_rtc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/4KnaiD9UY8fAhM1GrM9M8m/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/4KnaiD9UY8fAhM1GrM9M8m/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/4KnaiD9UY8fAhM1GrM9M8m/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "c06dd51670",
+   "clip_ids": {
+    "fastsinger": "8a80a316c1",
+    "soulx": "ab0f98627b",
+    "_target": "4a94f72464"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "5K8AQ2dBiXolebEfawTrzv",
+   "systems": [
+    "fastsinger",
+    "soulx"
+   ],
+   "context": {
+    "melody_source": "csl_rtc"
+   },
+   "clips": {
+    "fastsinger": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/5K8AQ2dBiXolebEfawTrzv/fastsinger.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "soulx": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/5K8AQ2dBiXolebEfawTrzv/soulx/generated.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/csl_rtc/5K8AQ2dBiXolebEfawTrzv/fs.mid",
+    "start": 0.0,
+    "dur": 30.0,
+    "ready": true
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "76fadea85b",
+   "clip_ids": {
+    "fastsinger": "5a8716d12b",
+    "soulx": "cfea721e4b",
+    "_target": "e8076c8e61"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "soulx",
+    "1": "fastsinger",
+    "2": "soulx",
+    "3": "fastsinger"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "5LlXalu5DZuQl7Q9CmNKp0",
+   "systems": [
+    "qwen",
+    "am2"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__qwen/mix.wav",
+     "start": 5.06,
+     "dur": 30.0,
+     "ready": true
+    },
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__am2/mix.wav",
+     "start": 5.06,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "695ac8ead0",
+   "clip_ids": {
+    "qwen": "5fc32eefbe",
+    "am2": "966082fd0c"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "am2",
+    "1": "qwen",
+    "2": "am2",
+    "3": "qwen"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "6NqPOID1RsXpj7IAEsgd2v",
+   "systems": [
+    "qwen",
+    "am2"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__qwen/mix.wav",
+     "start": 9.21,
+     "dur": 30.0,
+     "ready": true
+    },
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__am2/mix.wav",
+     "start": 9.21,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "6458daaee0",
+   "clip_ids": {
+    "qwen": "8dbd6571d9",
+    "am2": "ee52a887cf"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "qwen",
+    "1": "am2",
+    "2": "qwen",
+    "3": "am2"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "1oWX2EGO7Z8YCZ5jJuGrpM",
+   "systems": [
+    "qwen",
+    "am2"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__qwen/mix.wav",
+     "start": 13.43,
+     "dur": 30.0,
+     "ready": true
+    },
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__am2/mix.wav",
+     "start": 13.43,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "f189fef362",
+   "clip_ids": {
+    "qwen": "6887a8e018",
+    "am2": "99119c1546"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "qwen",
+    "1": "am2",
+    "2": "qwen",
+    "3": "am2"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "5gIW9IMReT6xicyfHKtcug",
+   "systems": [
+    "qwen",
+    "am2"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__qwen/mix.wav",
+     "start": 5.85,
+     "dur": 30.0,
+     "ready": true
+    },
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__am2/mix.wav",
+     "start": 5.85,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "3dca0ee9be",
+   "clip_ids": {
+    "qwen": "737b90d0fd",
+    "am2": "1dabbd1dff"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "qwen",
+    "1": "am2",
+    "2": "qwen",
+    "3": "am2"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+   "systems": [
+    "qwen",
+    "am2"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__qwen/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__am2/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "5861965bc0",
+   "clip_ids": {
+    "qwen": "9e3ad9bc49",
+    "am2": "2d966f5f17"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "am2",
+    "1": "qwen",
+    "2": "am2",
+    "3": "qwen"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "2YSqK9S0SZjulBJdc9BYuu",
+   "systems": [
+    "qwen",
+    "am2"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__qwen/mix.wav",
+     "start": 10.53,
+     "dur": 30.0,
+     "ready": true
+    },
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__am2/mix.wav",
+     "start": 10.53,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "fdf6e642f4",
+   "clip_ids": {
+    "qwen": "3641d50042",
+    "am2": "dcff586adb"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "am2",
+    "1": "qwen",
+    "2": "am2",
+    "3": "qwen"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "59E7BFFni2GTDisijRqKU7",
+   "systems": [
+    "qwen",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__qwen/mix.wav",
+     "start": 16.26,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__ref/mix.wav",
+     "start": 16.26,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "aea95ce939",
+   "clip_ids": {
+    "qwen": "c58692f970",
+    "ref": "ef3c3dbb16"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "qwen",
+    "2": "ref",
+    "3": "qwen"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "28IzuspwIj6C8XAOoIJ1Wp",
+   "systems": [
+    "qwen",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__qwen/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__ref/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "b316b4831d",
+   "clip_ids": {
+    "qwen": "6c9892190d",
+    "ref": "810a9a1ea8"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "qwen",
+    "1": "ref",
+    "2": "qwen",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "5K8AQ2dBiXolebEfawTrzv",
+   "systems": [
+    "qwen",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__qwen/mix.wav",
+     "start": 16.22,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__ref/mix.wav",
+     "start": 16.22,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "1c998c9107",
+   "clip_ids": {
+    "qwen": "015d40ebfc",
+    "ref": "f2a289cdba"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "qwen",
+    "1": "ref",
+    "2": "qwen",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "7ya27A8QscYolruZhE2dAy",
+   "systems": [
+    "qwen",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__qwen/mix.wav",
+     "start": 17.46,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__ref/mix.wav",
+     "start": 17.46,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "f780c121e7",
+   "clip_ids": {
+    "qwen": "0a0bef2545",
+    "ref": "10dbb17073"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "qwen",
+    "2": "ref",
+    "3": "qwen"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "47ZxPbe5sBnGaQanA7sQDq",
+   "systems": [
+    "qwen",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__qwen/mix.wav",
+     "start": 0.14,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__ref/mix.wav",
+     "start": 0.14,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "51a1fdc4bb",
+   "clip_ids": {
+    "qwen": "63dd97db6b",
+    "ref": "a6a0e63b2b"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "qwen",
+    "2": "ref",
+    "3": "qwen"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "systems": [
+    "qwen",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "qwen": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__qwen/mix.wav",
+     "start": 7.49,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__ref/mix.wav",
+     "start": 7.49,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "532f7d60df",
+   "clip_ids": {
+    "qwen": "562b10fbad",
+    "ref": "12bb9b00ac"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "qwen",
+    "1": "ref",
+    "2": "qwen",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "1heBg3CKPc4qVUXzVO49I2",
+   "systems": [
+    "am2",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__am2/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__ref/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "03df11ae6c",
+   "clip_ids": {
+    "am2": "e06d15e774",
+    "ref": "7dc6b9ef40"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "am2",
+    "1": "ref",
+    "2": "am2",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "47ZxPbe5sBnGaQanA7sQDq",
+   "systems": [
+    "am2",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__am2/mix.wav",
+     "start": 0.14,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__ref/mix.wav",
+     "start": 0.14,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "3546319c8f",
+   "clip_ids": {
+    "am2": "db8534efbc",
+    "ref": "4aceb40912"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "am2",
+    "2": "ref",
+    "3": "am2"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "3JjXD9DVfxh001wI5IACZ1",
+   "systems": [
+    "am2",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__am2/mix.wav",
+     "start": 16.06,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__ref/mix.wav",
+     "start": 16.06,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "1f62cd6593",
+   "clip_ids": {
+    "am2": "e4253e86e2",
+    "ref": "a1805f1411"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "am2",
+    "2": "ref",
+    "3": "am2"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+   "systems": [
+    "am2",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__am2/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__ref/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "8c2bcf050a",
+   "clip_ids": {
+    "am2": "d7d3cf2c3b",
+    "ref": "a945110ea6"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "ref",
+    "1": "am2",
+    "2": "ref",
+    "3": "am2"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "32fzm1b8Ivyyj9qKXjiMZw",
+   "systems": [
+    "am2",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__am2/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__ref/mix.wav",
+     "start": 0.0,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "240b298698",
+   "clip_ids": {
+    "am2": "a2e76e494b",
+    "ref": "ee2d1fb7c2"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "am2",
+    "1": "ref",
+    "2": "am2",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "C",
+   "song_id": "0CxfpbQfmX4bR6mA6aarL3",
+   "systems": [
+    "am2",
+    "ref"
+   ],
+   "context": {
+    "melody": "reference"
+   },
+   "clips": {
+    "am2": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__am2/mix.wav",
+     "start": 17.65,
+     "dur": 30.0,
+     "ready": true
+    },
+    "ref": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__ref/mix.wav",
+     "start": 17.65,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_melody",
+    "harmonically_coherent",
+    "more_natural"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "5de118abe6",
+   "clip_ids": {
+    "am2": "b075b9f0c6",
+    "ref": "561cb11abc"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "am2",
+    "1": "ref",
+    "2": "am2",
+    "3": "ref"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "32fzm1b8Ivyyj9qKXjiMZw",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 4
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/f998958da0/fastsinger.wav",
+     "render_key": "f998958da0",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/32fzm1b8Ivyyj9qKXjiMZw_S1.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 72.67,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/7786320a89/fastsinger.wav",
+     "render_key": "7786320a89",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_resample/32fzm1b8Ivyyj9qKXjiMZw_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 72.67,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "09743a97ec",
+   "clip_ids": {
+    "original": "a57f2a5549",
+    "infill": "9cbf84927c"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "32fzm1b8Ivyyj9qKXjiMZw",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 4
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/f998958da0/fastsinger.wav",
+     "render_key": "f998958da0",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/32fzm1b8Ivyyj9qKXjiMZw_S1.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 72.67,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ef31c55b1a/fastsinger.wav",
+     "render_key": "ef31c55b1a",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/32fzm1b8Ivyyj9qKXjiMZw_S2.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 72.67,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "d1f9fd2928",
+   "clip_ids": {
+    "original": "dfadca5961",
+    "regenerate": "7841b30f11"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "0CxfpbQfmX4bR6mA6aarL3",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 7
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/f2fb7d799a/fastsinger.wav",
+     "render_key": "f2fb7d799a",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/0CxfpbQfmX4bR6mA6aarL3_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 126.2,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/4186f9eafb/fastsinger.wav",
+     "render_key": "4186f9eafb",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_resample/0CxfpbQfmX4bR6mA6aarL3_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 126.2,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "b19dc78e5b",
+   "clip_ids": {
+    "original": "2f0cd7bc5c",
+    "infill": "7a456b190b"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "0CxfpbQfmX4bR6mA6aarL3",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 7
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/f2fb7d799a/fastsinger.wav",
+     "render_key": "f2fb7d799a",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/0CxfpbQfmX4bR6mA6aarL3_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 126.2,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/d8ba2c358c/fastsinger.wav",
+     "render_key": "d8ba2c358c",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/0CxfpbQfmX4bR6mA6aarL3_S2.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 126.2,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "bb405f2e92",
+   "clip_ids": {
+    "original": "ebd8dcb600",
+    "regenerate": "fb1ac944e3"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "7omMiE6h9Js24Cr22A0Fbv",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 7
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/afae9ebcd1/fastsinger.wav",
+     "render_key": "afae9ebcd1",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/7omMiE6h9Js24Cr22A0Fbv_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 98.84,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/57087723db/fastsinger.wav",
+     "render_key": "57087723db",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_resample/7omMiE6h9Js24Cr22A0Fbv_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 98.84,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "51cc90875b",
+   "clip_ids": {
+    "original": "c7bdc67dfd",
+    "infill": "a9bc8de7c2"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "7omMiE6h9Js24Cr22A0Fbv",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 7
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/afae9ebcd1/fastsinger.wav",
+     "render_key": "afae9ebcd1",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/7omMiE6h9Js24Cr22A0Fbv_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 98.84,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/a9deb0cbda/fastsinger.wav",
+     "render_key": "a9deb0cbda",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/7omMiE6h9Js24Cr22A0Fbv_S2.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 98.84,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "a7faa07593",
+   "clip_ids": {
+    "original": "238acc4aae",
+    "regenerate": "bb763aaa1d"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "1oWX2EGO7Z8YCZ5jJuGrpM",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 4
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/bfe26f13e5/fastsinger.wav",
+     "render_key": "bfe26f13e5",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/1oWX2EGO7Z8YCZ5jJuGrpM_S1.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 68.43,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/77b0c8d44c/fastsinger.wav",
+     "render_key": "77b0c8d44c",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_resample/1oWX2EGO7Z8YCZ5jJuGrpM_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 68.43,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "89db4f808f",
+   "clip_ids": {
+    "original": "16701548db",
+    "infill": "dfcbe93a55"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "1oWX2EGO7Z8YCZ5jJuGrpM",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 4
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/bfe26f13e5/fastsinger.wav",
+     "render_key": "bfe26f13e5",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/1oWX2EGO7Z8YCZ5jJuGrpM_S1.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 68.43,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/b28a090532/fastsinger.wav",
+     "render_key": "b28a090532",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/1oWX2EGO7Z8YCZ5jJuGrpM_S2.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      5
+     ],
+     "start": 68.43,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "c61018d748",
+   "clip_ids": {
+    "original": "7499aa97ea",
+    "regenerate": "81540f2cc9"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "2r6PR48twaBEyqvTggRzZa",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 5
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/086bcfdb66/fastsinger.wav",
+     "render_key": "086bcfdb66",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/2r6PR48twaBEyqvTggRzZa_S1.json",
+     "render_field": "song",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 85.59,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/15bda87b2b/fastsinger.wav",
+     "render_key": "15bda87b2b",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_resample/2r6PR48twaBEyqvTggRzZa_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 85.59,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "c94bb6d06e",
+   "clip_ids": {
+    "original": "2f6bea8132",
+    "infill": "18af03e16d"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "2r6PR48twaBEyqvTggRzZa",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 5
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/086bcfdb66/fastsinger.wav",
+     "render_key": "086bcfdb66",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/2r6PR48twaBEyqvTggRzZa_S1.json",
+     "render_field": "song",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 85.59,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/c44b4be994/fastsinger.wav",
+     "render_key": "c44b4be994",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/2r6PR48twaBEyqvTggRzZa_S2.json",
+     "render_field": "song",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 85.59,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "5c9fa4c844",
+   "clip_ids": {
+    "original": "83ba45e7c8",
+    "regenerate": "b78d65fcb7"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "7ya27A8QscYolruZhE2dAy",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 6
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ff88384fad/fastsinger.wav",
+     "render_key": "ff88384fad",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/7ya27A8QscYolruZhE2dAy_S1.json",
+     "render_field": "song",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 96.3,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/f43be8e0d4/fastsinger.wav",
+     "render_key": "f43be8e0d4",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_resample/7ya27A8QscYolruZhE2dAy_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 96.3,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "135ba869a3",
+   "clip_ids": {
+    "original": "d5b9625d43",
+    "infill": "fe5b3bdc0e"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "7ya27A8QscYolruZhE2dAy",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_resample",
+    "target_section": 6
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ff88384fad/fastsinger.wav",
+     "render_key": "ff88384fad",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/7ya27A8QscYolruZhE2dAy_S1.json",
+     "render_field": "song",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 96.3,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/403c2ab275/fastsinger.wav",
+     "render_key": "403c2ab275",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/7ya27A8QscYolruZhE2dAy_S2.json",
+     "render_field": "song",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 95.76,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": false,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "682966ee55",
+   "clip_ids": {
+    "original": "524a7b2fb2",
+    "regenerate": "bf122cb5c4"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "6TCciGLZyMSTZDJDmrdVSI",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 5
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ca06691e6b/fastsinger.wav",
+     "render_key": "ca06691e6b",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/6TCciGLZyMSTZDJDmrdVSI_S1.json",
+     "render_field": "song",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 67.77,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/bc022da1b9/fastsinger.wav",
+     "render_key": "bc022da1b9",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_lyrics/6TCciGLZyMSTZDJDmrdVSI_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 67.77,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "8508ae3d95",
+   "clip_ids": {
+    "original": "9b6a5a5e3e",
+    "infill": "5dc51218c8"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "6TCciGLZyMSTZDJDmrdVSI",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 5
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ca06691e6b/fastsinger.wav",
+     "render_key": "ca06691e6b",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/6TCciGLZyMSTZDJDmrdVSI_S1.json",
+     "render_field": "song",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 67.77,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/0aa42dee01/fastsinger.wav",
+     "render_key": "0aa42dee01",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/lyrics_sec/6TCciGLZyMSTZDJDmrdVSI_S1.json",
+     "render_field": "song",
+     "sections": [
+      4,
+      6
+     ],
+     "start": 67.77,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "46300cfdda",
+   "clip_ids": {
+    "original": "2b94457dc9",
+    "regenerate": "5f6937f05d"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "6NqPOID1RsXpj7IAEsgd2v",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 3
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/5e36b5f6ab/fastsinger.wav",
+     "render_key": "5e36b5f6ab",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/6NqPOID1RsXpj7IAEsgd2v_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      4
+     ],
+     "start": 36.58,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ab88e539d2/fastsinger.wav",
+     "render_key": "ab88e539d2",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_lyrics/6NqPOID1RsXpj7IAEsgd2v_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      2,
+      4
+     ],
+     "start": 36.58,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "5477f70bb1",
+   "clip_ids": {
+    "original": "2baec4d93f",
+    "infill": "ec12b52de5"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "6NqPOID1RsXpj7IAEsgd2v",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 3
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/5e36b5f6ab/fastsinger.wav",
+     "render_key": "5e36b5f6ab",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/6NqPOID1RsXpj7IAEsgd2v_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      4
+     ],
+     "start": 36.58,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/772fe5c421/fastsinger.wav",
+     "render_key": "772fe5c421",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/lyrics_sec/6NqPOID1RsXpj7IAEsgd2v_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      4
+     ],
+     "start": 36.58,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "aae750c034",
+   "clip_ids": {
+    "original": "74dd377b60",
+    "regenerate": "25afa069e5"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 2
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/62160333c8/fastsinger.wav",
+     "render_key": "62160333c8",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4VEbbZeJwrlqRBTTscq3m2_S1.json",
+     "render_field": "song",
+     "sections": [
+      1,
+      3
+     ],
+     "start": 8.26,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/039502367a/fastsinger.wav",
+     "render_key": "039502367a",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_lyrics/4VEbbZeJwrlqRBTTscq3m2_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      1,
+      3
+     ],
+     "start": 8.26,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "52d72aa8e0",
+   "clip_ids": {
+    "original": "64230060f4",
+    "infill": "ddab275195"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 2
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/62160333c8/fastsinger.wav",
+     "render_key": "62160333c8",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4VEbbZeJwrlqRBTTscq3m2_S1.json",
+     "render_field": "song",
+     "sections": [
+      1,
+      3
+     ],
+     "start": 8.26,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ecfa6ba6b0/fastsinger.wav",
+     "render_key": "ecfa6ba6b0",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/lyrics_sec/4VEbbZeJwrlqRBTTscq3m2_S1.json",
+     "render_field": "song",
+     "sections": [
+      1,
+      3
+     ],
+     "start": 8.26,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "29eca9394a",
+   "clip_ids": {
+    "original": "a42664dda3",
+    "regenerate": "711bb97742"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "4Cvd1vwstGUZTdnL6X35md",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 1
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/a59aaadb10/fastsinger.wav",
+     "render_key": "a59aaadb10",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4Cvd1vwstGUZTdnL6X35md_S1.json",
+     "render_field": "song",
+     "sections": [
+      0,
+      2
+     ],
+     "start": 0.0,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/7fd2ab91c1/fastsinger.wav",
+     "render_key": "7fd2ab91c1",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_lyrics/4Cvd1vwstGUZTdnL6X35md_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      0,
+      2
+     ],
+     "start": 0.0,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "b51b349dcb",
+   "clip_ids": {
+    "original": "ad32d0caa0",
+    "infill": "4aba5c19a2"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "4Cvd1vwstGUZTdnL6X35md",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 1
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/a59aaadb10/fastsinger.wav",
+     "render_key": "a59aaadb10",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4Cvd1vwstGUZTdnL6X35md_S1.json",
+     "render_field": "song",
+     "sections": [
+      0,
+      2
+     ],
+     "start": 0.0,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/6a8ba926f2/fastsinger.wav",
+     "render_key": "6a8ba926f2",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/lyrics_sec/4Cvd1vwstGUZTdnL6X35md_S1.json",
+     "render_field": "song",
+     "sections": [
+      0,
+      2
+     ],
+     "start": 0.0,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "d6a9f26736",
+   "clip_ids": {
+    "original": "0d17a1e152",
+    "regenerate": "af6662a5c9"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "4KnaiD9UY8fAhM1GrM9M8m",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 6
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/72b8c15700/fastsinger.wav",
+     "render_key": "72b8c15700",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4KnaiD9UY8fAhM1GrM9M8m_S1.json",
+     "render_field": "song",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 112.81,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/069c4107fa/fastsinger.wav",
+     "render_key": "069c4107fa",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_lyrics/4KnaiD9UY8fAhM1GrM9M8m_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 112.81,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "cb0dd299e8",
+   "clip_ids": {
+    "original": "fc3e3dab87",
+    "infill": "daaab26612"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "4KnaiD9UY8fAhM1GrM9M8m",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 6
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/72b8c15700/fastsinger.wav",
+     "render_key": "72b8c15700",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4KnaiD9UY8fAhM1GrM9M8m_S1.json",
+     "render_field": "song",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 112.81,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/84b98b9b1b/fastsinger.wav",
+     "render_key": "84b98b9b1b",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/lyrics_sec/4KnaiD9UY8fAhM1GrM9M8m_S1.json",
+     "render_field": "song",
+     "sections": [
+      5,
+      7
+     ],
+     "start": 112.81,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "a647425495",
+   "clip_ids": {
+    "original": "22ac7c98a7",
+    "regenerate": "e7c1c3b593"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "5gIW9IMReT6xicyfHKtcug",
+   "systems": [
+    "original",
+    "infill"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 7
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/5341943f46/fastsinger.wav",
+     "render_key": "5341943f46",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/5gIW9IMReT6xicyfHKtcug_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 84.85,
+     "dur": 45.0,
+     "ready": true
+    },
+    "infill": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/2c26a3a7a0/fastsinger.wav",
+     "render_key": "2c26a3a7a0",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/infill/qwen_e3b/edit_lyrics/5gIW9IMReT6xicyfHKtcug_S1.json",
+     "render_field": "assembled",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 84.85,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "55694456db",
+   "clip_ids": {
+    "original": "16fcdd913d",
+    "infill": "3281cfd4ae"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "D",
+   "song_id": "5gIW9IMReT6xicyfHKtcug",
+   "systems": [
+    "original",
+    "regenerate"
+   ],
+   "context": {
+    "edit": "edit_lyrics",
+    "target_section": 7
+   },
+   "clips": {
+    "original": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/5341943f46/fastsinger.wav",
+     "render_key": "5341943f46",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/5gIW9IMReT6xicyfHKtcug_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 84.85,
+     "dur": 45.0,
+     "ready": true
+    },
+    "regenerate": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/1e551b6fe5/fastsinger.wav",
+     "render_key": "1e551b6fe5",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/lyrics_sec/5gIW9IMReT6xicyfHKtcug_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      8
+     ],
+     "start": 84.85,
+     "dur": 45.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "connects_naturally",
+    "unrelated_consistent"
+   ],
+   "lyrics_sheet": true,
+   "fixed_order": true,
+   "kind": "test",
+   "item_id": "1d033b4b74",
+   "clip_ids": {
+    "original": "0b91abc4f0",
+    "regenerate": "7de39c6ff3"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original",
+    "1": "original",
+    "2": "original",
+    "3": "original"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "59E7BFFni2GTDisijRqKU7",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_swap",
+    "original_label": "verse",
+    "requested_label": "chorus",
+    "target_section": 8
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/41e5a3f448/fastsinger.wav",
+     "render_key": "41e5a3f448",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/59E7BFFni2GTDisijRqKU7_S1.json",
+     "render_field": "song",
+     "sections": [
+      8,
+      8
+     ],
+     "start": 130.48,
+     "dur": 18.7,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/9c3a9efed0/fastsinger.wav",
+     "render_key": "9c3a9efed0",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_swap/59E7BFFni2GTDisijRqKU7_S1.json",
+     "render_field": "song",
+     "sections": [
+      8,
+      8
+     ],
+     "start": 130.48,
+     "dur": 18.7,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_chorus_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "7b06023045",
+   "clip_ids": {
+    "original_label": "ff4d4f8473",
+    "relabelled": "186f2211ce"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original_label",
+    "1": "relabelled",
+    "2": "original_label",
+    "3": "relabelled"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "6NqPOID1RsXpj7IAEsgd2v",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_swap",
+    "original_label": "verse",
+    "requested_label": "chorus",
+    "target_section": 3
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/5e36b5f6ab/fastsinger.wav",
+     "render_key": "5e36b5f6ab",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/6NqPOID1RsXpj7IAEsgd2v_S1.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      3
+     ],
+     "start": 62.96,
+     "dur": 23.1,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/f6b8bf78b1/fastsinger.wav",
+     "render_key": "f6b8bf78b1",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_swap/6NqPOID1RsXpj7IAEsgd2v_S1.json",
+     "render_field": "song",
+     "sections": [
+      3,
+      3
+     ],
+     "start": 62.96,
+     "dur": 23.1,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_chorus_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "5da81eed51",
+   "clip_ids": {
+    "original_label": "b5c7e3e37b",
+    "relabelled": "f370d93cd9"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original_label",
+    "1": "relabelled",
+    "2": "original_label",
+    "3": "relabelled"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "5LlXalu5DZuQl7Q9CmNKp0",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_swap",
+    "original_label": "chorus",
+    "requested_label": "verse",
+    "target_section": 2
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/1df5d56b08/fastsinger.wav",
+     "render_key": "1df5d56b08",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/5LlXalu5DZuQl7Q9CmNKp0_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 34.29,
+     "dur": 37.29,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/173e8cff62/fastsinger.wav",
+     "render_key": "173e8cff62",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_swap/5LlXalu5DZuQl7Q9CmNKp0_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 34.29,
+     "dur": 37.29,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_chorus_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "26ae8ff0f8",
+   "clip_ids": {
+    "original_label": "a390251726",
+    "relabelled": "fb1da093cd"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original_label",
+    "1": "relabelled",
+    "2": "original_label",
+    "3": "relabelled"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "5ojQLq8MsewWoGbVQEBd8f",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_swap",
+    "original_label": "verse",
+    "requested_label": "chorus",
+    "target_section": 2
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/7e48f08f9b/fastsinger.wav",
+     "render_key": "7e48f08f9b",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/5ojQLq8MsewWoGbVQEBd8f_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 38.59,
+     "dur": 21.79,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/d402e89a27/fastsinger.wav",
+     "render_key": "d402e89a27",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_swap/5ojQLq8MsewWoGbVQEBd8f_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 38.59,
+     "dur": 21.79,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_chorus_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "33d0a34383",
+   "clip_ids": {
+    "original_label": "ee5ef120df",
+    "relabelled": "c916d513c8"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "relabelled",
+    "1": "original_label",
+    "2": "relabelled",
+    "3": "original_label"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "09d4jeFypKBWzZVfHKBeVY",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_swap",
+    "original_label": "chorus",
+    "requested_label": "verse",
+    "target_section": 2
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ade88769ec/fastsinger.wav",
+     "render_key": "ade88769ec",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/09d4jeFypKBWzZVfHKBeVY_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 54.67,
+     "dur": 31.69,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/5263db7c9d/fastsinger.wav",
+     "render_key": "5263db7c9d",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_swap/09d4jeFypKBWzZVfHKBeVY_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 54.67,
+     "dur": 31.69,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_chorus_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "2ae50c1014",
+   "clip_ids": {
+    "original_label": "c7ffdbde55",
+    "relabelled": "803e8b731c"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original_label",
+    "1": "relabelled",
+    "2": "original_label",
+    "3": "relabelled"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "7ya27A8QscYolruZhE2dAy",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_swap",
+    "original_label": "chorus",
+    "requested_label": "verse",
+    "target_section": 6
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ff88384fad/fastsinger.wav",
+     "render_key": "ff88384fad",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/7ya27A8QscYolruZhE2dAy_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      6
+     ],
+     "start": 115.76,
+     "dur": 19.3,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/176ca18baa/fastsinger.wav",
+     "render_key": "176ca18baa",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_swap/7ya27A8QscYolruZhE2dAy_S1.json",
+     "render_field": "song",
+     "sections": [
+      6,
+      6
+     ],
+     "start": 115.76,
+     "dur": 19.3,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_chorus_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "26904ed5ff",
+   "clip_ids": {
+    "original_label": "0ae64ad10b",
+    "relabelled": "5480be7479"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "relabelled",
+    "1": "original_label",
+    "2": "relabelled",
+    "3": "original_label"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "09d4jeFypKBWzZVfHKBeVY",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_bridge",
+    "original_label": "chorus",
+    "requested_label": "bridge",
+    "target_section": 2
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ade88769ec/fastsinger.wav",
+     "render_key": "ade88769ec",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/09d4jeFypKBWzZVfHKBeVY_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 54.67,
+     "dur": 31.69,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/dd862a870f/fastsinger.wav",
+     "render_key": "dd862a870f",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_bridge/09d4jeFypKBWzZVfHKBeVY_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 54.67,
+     "dur": 31.69,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_bridge_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "b8e3d135dc",
+   "clip_ids": {
+    "original_label": "a6712a7407",
+    "relabelled": "598f834360"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original_label",
+    "1": "relabelled",
+    "2": "original_label",
+    "3": "relabelled"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "0CxfpbQfmX4bR6mA6aarL3",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_bridge",
+    "original_label": "chorus",
+    "requested_label": "bridge",
+    "target_section": 7
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/f2fb7d799a/fastsinger.wav",
+     "render_key": "f2fb7d799a",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/0CxfpbQfmX4bR6mA6aarL3_S1.json",
+     "render_field": "song",
+     "sections": [
+      7,
+      7
+     ],
+     "start": 143.0,
+     "dur": 21.2,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/fea2d83f74/fastsinger.wav",
+     "render_key": "fea2d83f74",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_bridge/0CxfpbQfmX4bR6mA6aarL3_S1.json",
+     "render_field": "song",
+     "sections": [
+      7,
+      7
+     ],
+     "start": 143.0,
+     "dur": 21.2,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_bridge_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "7ece45252d",
+   "clip_ids": {
+    "original_label": "71d1c146e8",
+    "relabelled": "34078637aa"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "relabelled",
+    "1": "original_label",
+    "2": "relabelled",
+    "3": "original_label"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "2YSqK9S0SZjulBJdc9BYuu",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_bridge",
+    "original_label": "verse",
+    "requested_label": "bridge",
+    "target_section": 2
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/5115b00ee6/fastsinger.wav",
+     "render_key": "5115b00ee6",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/2YSqK9S0SZjulBJdc9BYuu_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 33.18,
+     "dur": 23.27,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/c862b41b17/fastsinger.wav",
+     "render_key": "c862b41b17",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_bridge/2YSqK9S0SZjulBJdc9BYuu_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 33.18,
+     "dur": 23.27,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_bridge_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "fc177aa053",
+   "clip_ids": {
+    "original_label": "eabaecb2fb",
+    "relabelled": "3b2c94a8dc"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "relabelled",
+    "1": "original_label",
+    "2": "relabelled",
+    "3": "original_label"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "4VEbbZeJwrlqRBTTscq3m2",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_bridge",
+    "original_label": "verse",
+    "requested_label": "bridge",
+    "target_section": 2
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/62160333c8/fastsinger.wav",
+     "render_key": "62160333c8",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4VEbbZeJwrlqRBTTscq3m2_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 24.59,
+     "dur": 16.12,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/0e7f0d01d0/fastsinger.wav",
+     "render_key": "0e7f0d01d0",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_bridge/4VEbbZeJwrlqRBTTscq3m2_S1.json",
+     "render_field": "song",
+     "sections": [
+      2,
+      2
+     ],
+     "start": 24.59,
+     "dur": 16.12,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_bridge_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "5e720cc2ff",
+   "clip_ids": {
+    "original_label": "8996dc8bcb",
+    "relabelled": "915d39b71b"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "relabelled",
+    "1": "original_label",
+    "2": "relabelled",
+    "3": "original_label"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "4Cvd1vwstGUZTdnL6X35md",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_bridge",
+    "original_label": "verse",
+    "requested_label": "bridge",
+    "target_section": 1
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/a59aaadb10/fastsinger.wav",
+     "render_key": "a59aaadb10",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/4Cvd1vwstGUZTdnL6X35md_S1.json",
+     "render_field": "song",
+     "sections": [
+      1,
+      1
+     ],
+     "start": 12.33,
+     "dur": 25.7,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/4e928b16cc/fastsinger.wav",
+     "render_key": "4e928b16cc",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_bridge/4Cvd1vwstGUZTdnL6X35md_S1.json",
+     "render_field": "song",
+     "sections": [
+      1,
+      1
+     ],
+     "start": 12.33,
+     "dur": 25.7,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_bridge_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "27b1c10b94",
+   "clip_ids": {
+    "original_label": "8e83c7dc1f",
+    "relabelled": "352e3a70ea"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "relabelled",
+    "1": "original_label",
+    "2": "relabelled",
+    "3": "original_label"
+   }
+  },
+  {
+   "block": "E",
+   "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+   "systems": [
+    "original_label",
+    "relabelled"
+   ],
+   "context": {
+    "condition": "label_bridge",
+    "original_label": "chorus",
+    "requested_label": "bridge",
+    "target_section": 9
+   },
+   "clips": {
+    "original_label": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/2f914e3dd8/fastsinger.wav",
+     "render_key": "2f914e3dd8",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/orig/3im9iOhpZNgaTS4VGYOGF9_S1.json",
+     "render_field": "song",
+     "sections": [
+      9,
+      9
+     ],
+     "start": 164.77,
+     "dur": 21.79,
+     "ready": true
+    },
+    "relabelled": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/listening_render/ef54642c59/fastsinger.wav",
+     "render_key": "ef54642c59",
+     "render_src": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/paper_final/gen/qwen_e3b/label_bridge/3im9iOhpZNgaTS4VGYOGF9_S1.json",
+     "render_field": "song",
+     "sections": [
+      9,
+      9
+     ],
+     "start": 164.77,
+     "dur": 21.79,
+     "ready": true
+    }
+   },
+   "questions": [
+    "more_bridge_like"
+   ],
+   "lyrics_sheet": false,
+   "kind": "test",
+   "item_id": "013f9f95fb",
+   "clip_ids": {
+    "original_label": "b84b279034",
+    "relabelled": "71d042ca32"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "original_label",
+    "1": "relabelled",
+    "2": "original_label",
+    "3": "relabelled"
+   }
+  },
+  {
+   "block": "B",
+   "song_id": "0A4ehMRLl7v8TFyhSbdkh8",
+   "systems": [
+    "clean",
+    "copy"
+   ],
+   "context": {
+    "qc": "qc_identical",
+    "source_block": "B"
+   },
+   "clips": {
+    "clean": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/0A4ehMRLl7v8TFyhSbdkh8/fastsinger.wav",
+     "start": 19.16,
+     "dur": 30.0,
+     "ready": true
+    },
+    "copy": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/0A4ehMRLl7v8TFyhSbdkh8/fastsinger.wav",
+     "start": 19.16,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "clearer",
+    "more_natural",
+    "follows_target"
+   ],
+   "lyrics_sheet": false,
+   "kind": "qc_identical",
+   "reference_clip": {
+    "type": "midi_to_render",
+    "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/0A4ehMRLl7v8TFyhSbdkh8/fs.mid",
+    "start": 19.16,
+    "dur": 30.0,
+    "ready": true
+   },
+   "item_id": "9e03809536",
+   "clip_ids": {
+    "clean": "c679f73b48",
+    "copy": "1ed0a507fd",
+    "_target": "846fb4f582"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "clean",
+    "1": "copy",
+    "2": "clean",
+    "3": "copy"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "5K8AQ2dBiXolebEfawTrzv",
+   "systems": [
+    "clean",
+    "copy"
+   ],
+   "context": {
+    "qc": "qc_identical",
+    "source_block": "A"
+   },
+   "clips": {
+    "clean": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/5K8AQ2dBiXolebEfawTrzv/soulx/generated.wav",
+     "start": 16.94,
+     "dur": 30.0,
+     "ready": true
+    },
+    "copy": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/5K8AQ2dBiXolebEfawTrzv/soulx/generated.wav",
+     "start": 16.94,
+     "dur": 30.0,
+     "ready": true
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "qc_identical",
+   "item_id": "c5157c835d",
+   "clip_ids": {
+    "clean": "1431f7c946",
+    "copy": "947da478e0"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "clean",
+    "1": "copy",
+    "2": "clean",
+    "3": "copy"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "1oWX2EGO7Z8YCZ5jJuGrpM",
+   "systems": [
+    "clean",
+    "degraded"
+   ],
+   "context": {
+    "qc": "qc_degraded",
+    "source_block": "A"
+   },
+   "clips": {
+    "clean": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/1oWX2EGO7Z8YCZ5jJuGrpM/soulx/generated.wav",
+     "start": 14.43,
+     "dur": 30.0,
+     "ready": true
+    },
+    "degraded": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/1oWX2EGO7Z8YCZ5jJuGrpM/soulx/generated.wav",
+     "start": 14.43,
+     "dur": 30.0,
+     "ready": true,
+     "transform": "degrade"
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "qc_degraded",
+   "item_id": "34d3e87c70",
+   "clip_ids": {
+    "clean": "d900b8a2a2",
+    "degraded": "5bf07edff9"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "clean",
+    "1": "degraded",
+    "2": "clean",
+    "3": "degraded"
+   }
+  },
+  {
+   "block": "A",
+   "song_id": "3im9iOhpZNgaTS4VGYOGF9",
+   "systems": [
+    "clean",
+    "degraded"
+   ],
+   "context": {
+    "qc": "qc_degraded",
+    "source_block": "A"
+   },
+   "clips": {
+    "clean": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/3im9iOhpZNgaTS4VGYOGF9/soulx/generated.wav",
+     "start": 7.97,
+     "dur": 30.0,
+     "ready": true
+    },
+    "degraded": {
+     "type": "wav",
+     "path": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/svs/mel/3im9iOhpZNgaTS4VGYOGF9/soulx/generated.wav",
+     "start": 7.97,
+     "dur": 30.0,
+     "ready": true,
+     "transform": "degrade"
+    }
+   },
+   "questions": [
+    "fits_lyrics",
+    "coherent",
+    "natural_phrasing",
+    "stronger_structure"
+   ],
+   "lyrics_sheet": true,
+   "kind": "qc_degraded",
+   "item_id": "e7040a2b16",
+   "clip_ids": {
+    "clean": "73fc5ab1f9",
+    "degraded": "2bcd0c5c25"
+   },
+   "status": "ready",
+   "A_is": {
+    "0": "degraded",
+    "1": "clean",
+    "2": "degraded",
+    "3": "clean"
+   }
+  }
+ ]
+}

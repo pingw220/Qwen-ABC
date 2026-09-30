@@ -1,0 +1,115 @@
+<!-- Renderer effect per melody source (paired over songs) and melody-ranking agreement across renderers -->
+| metric | contrast | estimate [95% CI] | N |
+|---|---|---|---|
+| PER ↓ | SoulX − FastSinger | CSL-L2M official, section-chunked | -0.013 [-0.030, +0.003] | 35 |
+| PER ↓ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | -0.009 [-0.018, -0.000] | 34 |
+| PER ↓ | SoulX − FastSinger | Qwen Full (E3b) → melody | +0.012 [-0.008, +0.033] | 35 |
+| PER ↓ | SoulX − FastSinger | Qwen Melody-Only | +0.028 [+0.010, +0.047] | 35 |
+| PER ↓ | SoulX − FastSinger | Pseudo-reference | +0.016 [+0.004, +0.030] | 35 |
+| PER ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | +0.038 [+0.021, +0.055] | 34 |
+| PER ↓ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | +0.048 [+0.037, +0.060] | 34 |
+| PER ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | +0.042 [+0.017, +0.067] | 35 |
+| PER ↓ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | +0.017 [-0.001, +0.036] | 35 |
+| PER ↓ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | +0.024 [+0.006, +0.043] | 34 |
+| PER ↓ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | +0.046 [+0.036, +0.057] | 34 |
+| PER ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | +0.012 [-0.005, +0.030] | 35 |
+| PER ↓ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | +0.020 [+0.008, +0.033] | 35 |
+| PER ↓ | rank agreement of melody sources across renderers (Spearman) | +0.50 | 5 |
+| CER ↓ | SoulX − FastSinger | CSL-L2M official, section-chunked | -0.036 [-0.060, -0.012] | 35 |
+| CER ↓ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | -0.018 [-0.031, -0.005] | 34 |
+| CER ↓ | SoulX − FastSinger | Qwen Full (E3b) → melody | +0.002 [-0.022, +0.026] | 35 |
+| CER ↓ | SoulX − FastSinger | Qwen Melody-Only | +0.008 [-0.015, +0.032] | 35 |
+| CER ↓ | SoulX − FastSinger | Pseudo-reference | +0.006 [-0.008, +0.021] | 35 |
+| CER ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | +0.028 [+0.007, +0.050] | 34 |
+| CER ↓ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | +0.079 [+0.062, +0.095] | 34 |
+| CER ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | +0.044 [+0.012, +0.078] | 35 |
+| CER ↓ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | +0.032 [+0.007, +0.055] | 35 |
+| CER ↓ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | +0.023 [-0.001, +0.047] | 34 |
+| CER ↓ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | +0.080 [+0.063, +0.097] | 34 |
+| CER ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | +0.002 [-0.020, +0.025] | 35 |
+| CER ↓ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | +0.042 [+0.026, +0.059] | 35 |
+| CER ↓ | rank agreement of melody sources across renderers (Spearman) | +0.90 | 5 |
+| note pitch acc. (±50c) ↑ | SoulX − FastSinger | CSL-L2M official, section-chunked | -0.005 [-0.051, +0.040] | 35 |
+| note pitch acc. (±50c) ↑ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | -0.033 [-0.050, -0.017] | 34 |
+| note pitch acc. (±50c) ↑ | SoulX − FastSinger | Qwen Full (E3b) → melody | +0.031 [+0.010, +0.053] | 35 |
+| note pitch acc. (±50c) ↑ | SoulX − FastSinger | Qwen Melody-Only | -0.001 [-0.021, +0.018] | 35 |
+| note pitch acc. (±50c) ↑ | SoulX − FastSinger | Pseudo-reference | -0.006 [-0.032, +0.016] | 35 |
+| note pitch acc. (±50c) ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | +0.032 [+0.011, +0.052] | 34 |
+| note pitch acc. (±50c) ↑ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | -0.028 [-0.048, -0.005] | 34 |
+| note pitch acc. (±50c) ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | +0.003 [-0.041, +0.048] | 35 |
+| note pitch acc. (±50c) ↑ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | +0.061 [+0.023, +0.102] | 35 |
+| note pitch acc. (±50c) ↑ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | +0.060 [+0.037, +0.086] | 34 |
+| note pitch acc. (±50c) ↑ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | -0.040 [-0.065, -0.013] | 34 |
+| note pitch acc. (±50c) ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | +0.005 [-0.019, +0.029] | 35 |
+| note pitch acc. (±50c) ↑ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | +0.001 [-0.018, +0.019] | 35 |
+| note pitch acc. (±50c) ↑ | rank agreement of melody sources across renderers (Spearman) | +0.60 | 5 |
+| pitch acc., octave-folded ↑ | SoulX − FastSinger | CSL-L2M official, section-chunked | -0.006 [-0.053, +0.038] | 35 |
+| pitch acc., octave-folded ↑ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | -0.033 [-0.050, -0.017] | 34 |
+| pitch acc., octave-folded ↑ | SoulX − FastSinger | Qwen Full (E3b) → melody | +0.032 [+0.010, +0.053] | 35 |
+| pitch acc., octave-folded ↑ | SoulX − FastSinger | Qwen Melody-Only | -0.001 [-0.020, +0.018] | 35 |
+| pitch acc., octave-folded ↑ | SoulX − FastSinger | Pseudo-reference | -0.006 [-0.031, +0.017] | 35 |
+| pitch acc., octave-folded ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | +0.032 [+0.011, +0.052] | 34 |
+| pitch acc., octave-folded ↑ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | -0.028 [-0.048, -0.005] | 34 |
+| pitch acc., octave-folded ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | +0.005 [-0.039, +0.049] | 35 |
+| pitch acc., octave-folded ↑ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | +0.057 [+0.022, +0.096] | 35 |
+| pitch acc., octave-folded ↑ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | +0.060 [+0.037, +0.086] | 34 |
+| pitch acc., octave-folded ↑ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | -0.039 [-0.065, -0.013] | 34 |
+| pitch acc., octave-folded ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | +0.004 [-0.020, +0.028] | 35 |
+| pitch acc., octave-folded ↑ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | +0.001 [-0.018, +0.019] | 35 |
+| pitch acc., octave-folded ↑ | rank agreement of melody sources across renderers (Spearman) | +0.60 | 5 |
+| octave errors ↓ | SoulX − FastSinger | CSL-L2M official, section-chunked | -0.005 [-0.011, -0.001] | 35 |
+| octave errors ↓ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | +0.000 [+0.000, +0.000] | 34 |
+| octave errors ↓ | SoulX − FastSinger | Qwen Full (E3b) → melody | -0.000 [-0.001, +0.001] | 35 |
+| octave errors ↓ | SoulX − FastSinger | Qwen Melody-Only | +0.000 [-0.001, +0.001] | 35 |
+| octave errors ↓ | SoulX − FastSinger | Pseudo-reference | +0.001 [+0.000, +0.002] | 35 |
+| octave errors ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | +0.000 [-0.001, +0.001] | 34 |
+| octave errors ↓ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | +0.000 [+0.000, +0.001] | 34 |
+| octave errors ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | +0.005 [+0.001, +0.011] | 35 |
+| octave errors ↓ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | -0.004 [-0.007, -0.001] | 35 |
+| octave errors ↓ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | -0.000 [-0.001, +0.001] | 34 |
+| octave errors ↓ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | +0.001 [+0.000, +0.001] | 34 |
+| octave errors ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | -0.001 [-0.002, +0.000] | 35 |
+| octave errors ↓ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | -0.000 [-0.001, +0.000] | 35 |
+| octave errors ↓ | rank agreement of melody sources across renderers (Spearman) | +0.70 | 5 |
+| abs. cents (folded) ↓ | SoulX − FastSinger | CSL-L2M official, section-chunked | -2.165 [-14.787, +11.238] | 35 |
+| abs. cents (folded) ↓ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | +9.315 [+6.001, +13.561] | 34 |
+| abs. cents (folded) ↓ | SoulX − FastSinger | Qwen Full (E3b) → melody | +0.138 [-4.811, +5.407] | 35 |
+| abs. cents (folded) ↓ | SoulX − FastSinger | Qwen Melody-Only | +5.199 [+1.401, +9.408] | 35 |
+| abs. cents (folded) ↓ | SoulX − FastSinger | Pseudo-reference | +6.796 [+2.333, +12.458] | 35 |
+| abs. cents (folded) ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | -4.049 [-9.000, +0.845] | 34 |
+| abs. cents (folded) ↓ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | +5.032 [+0.798, +8.831] | 34 |
+| abs. cents (folded) ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | +7.364 [-6.167, +20.354] | 35 |
+| abs. cents (folded) ↓ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | -17.295 [-28.475, -7.472] | 35 |
+| abs. cents (folded) ↓ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | -8.249 [-14.236, -2.764] | 34 |
+| abs. cents (folded) ↓ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | +6.389 [+1.532, +11.237] | 34 |
+| abs. cents (folded) ↓ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | -1.597 [-5.682, +2.476] | 35 |
+| abs. cents (folded) ↓ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | -0.285 [-3.497, +2.988] | 35 |
+| abs. cents (folded) ↓ | rank agreement of melody sources across renderers (Spearman) | +0.60 | 5 |
+| voicing F1 vs score ↑ | SoulX − FastSinger | CSL-L2M official, section-chunked | -0.039 [-0.048, -0.030] | 35 |
+| voicing F1 vs score ↑ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | -0.035 [-0.040, -0.031] | 34 |
+| voicing F1 vs score ↑ | SoulX − FastSinger | Qwen Full (E3b) → melody | -0.036 [-0.040, -0.032] | 35 |
+| voicing F1 vs score ↑ | SoulX − FastSinger | Qwen Melody-Only | -0.034 [-0.038, -0.031] | 35 |
+| voicing F1 vs score ↑ | SoulX − FastSinger | Pseudo-reference | -0.034 [-0.038, -0.030] | 35 |
+| voicing F1 vs score ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | +0.001 [-0.004, +0.007] | 34 |
+| voicing F1 vs score ↑ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | +0.004 [-0.001, +0.009] | 34 |
+| voicing F1 vs score ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | +0.004 [-0.004, +0.013] | 35 |
+| voicing F1 vs score ↑ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | +0.018 [+0.010, +0.027] | 35 |
+| voicing F1 vs score ↑ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | -0.001 [-0.006, +0.005] | 34 |
+| voicing F1 vs score ↑ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | -0.000 [-0.006, +0.006] | 34 |
+| voicing F1 vs score ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | -0.001 [-0.006, +0.004] | 35 |
+| voicing F1 vs score ↑ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | +0.000 [-0.004, +0.004] | 35 |
+| voicing F1 vs score ↑ | rank agreement of melody sources across renderers (Spearman) | +0.90 | 5 |
+| phrase onsets within 100 ms ↑ | SoulX − FastSinger | CSL-L2M official, section-chunked | -0.109 [-0.188, -0.033] | 35 |
+| phrase onsets within 100 ms ↑ | SoulX − FastSinger | CSL-L2M retrained, section-chunked | -0.139 [-0.216, -0.065] | 34 |
+| phrase onsets within 100 ms ↑ | SoulX − FastSinger | Qwen Full (E3b) → melody | -0.195 [-0.246, -0.147] | 35 |
+| phrase onsets within 100 ms ↑ | SoulX − FastSinger | Qwen Melody-Only | -0.194 [-0.244, -0.143] | 35 |
+| phrase onsets within 100 ms ↑ | SoulX − FastSinger | Pseudo-reference | -0.187 [-0.249, -0.129] | 35 |
+| phrase onsets within 100 ms ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M retrained, section-chunked) | -0.061 [-0.144, +0.031] | 34 |
+| phrase onsets within 100 ms ↑ | melody main effect: Qwen Melody-Only − CSL-L2M retrained, section-chunked (mean of both renderers) | -0.024 [-0.062, +0.017] | 34 |
+| phrase onsets within 100 ms ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | CSL-L2M official, section-chunked) | -0.084 [-0.171, +0.001] | 35 |
+| phrase onsets within 100 ms ↑ | melody main effect: Qwen Melody-Only − CSL-L2M official, section-chunked (mean of both renderers) | +0.042 [-0.005, +0.091] | 35 |
+| phrase onsets within 100 ms ↑ | interaction: (SoulX − FastSinger | Qwen Full (E3b) → melody) − (same | CSL-L2M retrained, section-chunked) | -0.059 [-0.129, +0.014] | 34 |
+| phrase onsets within 100 ms ↑ | melody main effect: Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked (mean of both renderers) | -0.050 [-0.089, -0.012] | 34 |
+| phrase onsets within 100 ms ↑ | interaction: (SoulX − FastSinger | Qwen Melody-Only) − (same | Pseudo-reference) | -0.006 [-0.071, +0.059] | 35 |
+| phrase onsets within 100 ms ↑ | melody main effect: Qwen Melody-Only − Pseudo-reference (mean of both renderers) | -0.003 [-0.033, +0.027] | 35 |
+| phrase onsets within 100 ms ↑ | rank agreement of melody sources across renderers (Spearman) | +0.60 | 5 |

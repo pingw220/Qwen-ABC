@@ -1,0 +1,85 @@
+<!-- Paired song-level differences between chord sources (Table 7) and between control implementations (Table 8) -->
+| contrast | metric | difference [95% CI] | N |
+|---|---|---|---|
+| qwen − am2 | Chord F1 ↑ | +0.002 [-0.011, +0.015] | 36 |
+| qwen − am2 | chord root acc. ↑ | +0.018 [-0.004, +0.041] | 36 |
+| qwen − am2 | Key accuracy ↑ | -0.194 [-0.361, -0.028] | 36 |
+| qwen − am2 | Key (MIREX weighted) ↑ | -0.150 [-0.281, -0.022] | 36 |
+| qwen − am2 | Rhythm F1 ↑ | +0.006 [-0.015, +0.031] | 36 |
+| qwen − am2 | abs. BPM error | +1.860 [-3.898, +9.072] | 36 |
+| qwen − am2 | BPM within 4% | -0.028 [-0.139, +0.056] | 36 |
+| qwen − am2 | BPM within 4% (octave-tolerant) | -0.056 [-0.139, +0.000] | 36 |
+| qwen − am2 | Audiobox PQ | +0.008 [-0.026, +0.049] | 36 |
+| qwen − am2 | Audiobox CE | +0.022 [-0.007, +0.057] | 36 |
+| qwen − am2 | SongEval Coherence | +0.037 [-0.010, +0.078] | 36 |
+| qwen − am2 | SongEval Musicality | +0.032 [-0.015, +0.076] | 36 |
+| qwen − am2 | SongEval Memorability | +0.048 [-0.007, +0.100] | 36 |
+| qwen − am2 | SongEval Clarity | +0.040 [-0.006, +0.083] | 36 |
+| qwen − am2 | SongEval Naturalness | +0.052 [-0.002, +0.103] | 36 |
+| qwen − ref | Chord F1 ↑ | +0.035 [+0.010, +0.063] | 36 |
+| qwen − ref | chord root acc. ↑ | +0.014 [-0.006, +0.037] | 36 |
+| qwen − ref | Key accuracy ↑ | +0.222 [+0.083, +0.389] | 36 |
+| qwen − ref | Key (MIREX weighted) ↑ | +0.119 [-0.008, +0.247] | 36 |
+| qwen − ref | Rhythm F1 ↑ | +0.010 [-0.027, +0.049] | 36 |
+| qwen − ref | abs. BPM error | -0.305 [-9.630, +8.915] | 36 |
+| qwen − ref | BPM within 4% | +0.028 [-0.083, +0.139] | 36 |
+| qwen − ref | BPM within 4% (octave-tolerant) | -0.028 [-0.083, +0.000] | 36 |
+| qwen − ref | Audiobox PQ | -0.017 [-0.052, +0.016] | 36 |
+| qwen − ref | Audiobox CE | -0.005 [-0.037, +0.027] | 36 |
+| qwen − ref | SongEval Coherence | +0.028 [-0.024, +0.081] | 36 |
+| qwen − ref | SongEval Musicality | +0.029 [-0.018, +0.079] | 36 |
+| qwen − ref | SongEval Memorability | +0.014 [-0.043, +0.071] | 36 |
+| qwen − ref | SongEval Clarity | +0.035 [-0.012, +0.081] | 36 |
+| qwen − ref | SongEval Naturalness | +0.046 [-0.008, +0.103] | 36 |
+| am2 − ref | Chord F1 ↑ | +0.033 [+0.006, +0.064] | 36 |
+| am2 − ref | chord root acc. ↑ | -0.003 [-0.034, +0.027] | 36 |
+| am2 − ref | Key accuracy ↑ | +0.417 [+0.222, +0.583] | 36 |
+| am2 − ref | Key (MIREX weighted) ↑ | +0.269 [+0.144, +0.394] | 36 |
+| am2 − ref | Rhythm F1 ↑ | +0.005 [-0.032, +0.041] | 36 |
+| am2 − ref | abs. BPM error | -2.165 [-8.520, +3.968] | 36 |
+| am2 − ref | BPM within 4% | +0.056 [-0.056, +0.167] | 36 |
+| am2 − ref | BPM within 4% (octave-tolerant) | +0.028 [+0.000, +0.083] | 36 |
+| am2 − ref | Audiobox PQ | -0.024 [-0.055, +0.004] | 36 |
+| am2 − ref | Audiobox CE | -0.028 [-0.062, +0.008] | 36 |
+| am2 − ref | SongEval Coherence | -0.008 [-0.058, +0.043] | 36 |
+| am2 − ref | SongEval Musicality | -0.003 [-0.053, +0.053] | 36 |
+| am2 − ref | SongEval Memorability | -0.033 [-0.088, +0.020] | 36 |
+| am2 − ref | SongEval Clarity | -0.005 [-0.055, +0.048] | 36 |
+| am2 − ref | SongEval Naturalness | -0.005 [-0.063, +0.055] | 36 |
+| key_transpose − key_gen | Chord F1 ↑ | -0.010 [-0.045, +0.017] | 36 |
+| key_transpose − key_gen | chord root acc. ↑ | -0.010 [-0.039, +0.016] | 36 |
+| key_transpose − key_gen | Key accuracy ↑ | -0.056 [-0.250, +0.139] | 36 |
+| key_transpose − key_gen | Key (MIREX weighted) ↑ | -0.019 [-0.142, +0.108] | 36 |
+| key_transpose − key_gen | Rhythm F1 ↑ | +0.006 [-0.030, +0.041] | 36 |
+| key_transpose − key_gen | abs. BPM error | +5.919 [-1.916, +14.537] | 36 |
+| key_transpose − key_gen | BPM within 4% | -0.083 [-0.195, +0.028] | 36 |
+| key_transpose − key_gen | BPM within 4% (octave-tolerant) | -0.056 [-0.139, +0.000] | 36 |
+| key_transpose − key_gen | Audiobox PQ | +0.036 [-0.006, +0.076] | 36 |
+| key_transpose − key_gen | Audiobox CE | +0.038 [-0.006, +0.082] | 36 |
+| key_transpose − key_gen | requested value in the score | +0.000 [+0.000, +0.000] | 36 |
+| key_transpose − key_gen | requested value detected in audio | -0.056 [-0.250, +0.139] | 36 |
+| key_transpose − key_gen | detected key moved +5 from the draft's detected key | +0.389 [+0.222, +0.556] | 36 |
+| key_transpose − key_gen | SongEval Coherence | +0.051 [-0.036, +0.143] | 36 |
+| key_transpose − key_gen | SongEval Musicality | +0.059 [-0.022, +0.147] | 36 |
+| key_transpose − key_gen | SongEval Memorability | +0.062 [-0.023, +0.153] | 36 |
+| key_transpose − key_gen | SongEval Clarity | +0.068 [-0.021, +0.162] | 36 |
+| key_transpose − key_gen | SongEval Naturalness | +0.067 [-0.017, +0.157] | 36 |
+| tempo_direct − tempo_gen | Chord F1 ↑ | -0.018 [-0.041, +0.002] | 36 |
+| tempo_direct − tempo_gen | chord root acc. ↑ | -0.016 [-0.063, +0.038] | 36 |
+| tempo_direct − tempo_gen | Key accuracy ↑ | +0.056 [-0.111, +0.222] | 36 |
+| tempo_direct − tempo_gen | Key (MIREX weighted) ↑ | +0.011 [-0.114, +0.136] | 36 |
+| tempo_direct − tempo_gen | Rhythm F1 ↑ | +0.014 [-0.024, +0.053] | 36 |
+| tempo_direct − tempo_gen | abs. BPM error | -4.851 [-14.142, +3.414] | 36 |
+| tempo_direct − tempo_gen | BPM within 4% | +0.056 [-0.056, +0.167] | 36 |
+| tempo_direct − tempo_gen | BPM within 4% (octave-tolerant) | +0.000 [+0.000, +0.000] | 36 |
+| tempo_direct − tempo_gen | Audiobox PQ | +0.038 [-0.036, +0.108] | 36 |
+| tempo_direct − tempo_gen | Audiobox CE | +0.032 [-0.038, +0.105] | 36 |
+| tempo_direct − tempo_gen | requested value in the score | +0.000 [+0.000, +0.000] | 36 |
+| tempo_direct − tempo_gen | requested value detected in audio | +0.000 [+0.000, +0.000] | 36 |
+| tempo_direct − tempo_gen | tempo detected within 4% (no octave tolerance) | +0.056 [-0.056, +0.167] | 36 |
+| tempo_direct − tempo_gen | abs. detected − requested BPM | -4.851 [-14.142, +3.414] | 36 |
+| tempo_direct − tempo_gen | SongEval Coherence | -0.009 [-0.074, +0.058] | 36 |
+| tempo_direct − tempo_gen | SongEval Musicality | +0.007 [-0.060, +0.076] | 36 |
+| tempo_direct − tempo_gen | SongEval Memorability | +0.008 [-0.074, +0.093] | 36 |
+| tempo_direct − tempo_gen | SongEval Clarity | +0.006 [-0.064, +0.079] | 36 |
+| tempo_direct − tempo_gen | SongEval Naturalness | -0.022 [-0.093, +0.052] | 36 |

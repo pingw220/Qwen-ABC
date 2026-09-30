@@ -1,0 +1,58 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "component listening-study response",
+ "type": "object",
+ "required": [
+  "participant_id",
+  "list_id",
+  "trial",
+  "item_id",
+  "question_id",
+  "response"
+ ],
+ "properties": {
+  "participant_id": {
+   "type": "string"
+  },
+  "list_id": {
+   "type": "integer",
+   "minimum": 0,
+   "maximum": 3
+  },
+  "trial": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "item_id": {
+   "type": "string"
+  },
+  "question_id": {
+   "enum": [
+    "clearer",
+    "coherent",
+    "connects_naturally",
+    "fits_lyrics",
+    "fits_melody",
+    "follows_target",
+    "harmonically_coherent",
+    "more_bridge_like",
+    "more_chorus_like",
+    "more_natural",
+    "natural_phrasing",
+    "stronger_structure",
+    "unrelated_consistent"
+   ]
+  },
+  "response": {
+   "type": "string",
+   "description": "A|B|no_difference for 2AFC; 1-5 for block D"
+  },
+  "rt_ms": {
+   "type": "integer"
+  },
+  "timestamp": {
+   "type": "string",
+   "format": "date-time"
+  }
+ }
+}

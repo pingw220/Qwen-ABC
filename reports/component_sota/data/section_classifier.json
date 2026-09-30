@@ -1,0 +1,19 @@
+{
+ "train_sections": 38065,
+ "test_sections": 1750,
+ "test_auc": 0.8468334444127075,
+ "test_acc": 0.7777142857142857,
+ "chorus_share_test": 0.5554285714285714,
+ "weights": {
+  "rel_register": 1.3976280092502662,
+  "rel_max_pitch": 0.0007815983318342042,
+  "notes_per_bar": 0.03479142081261436,
+  "pitch_range": -0.05205432851643015,
+  "mean_abs_interval": 0.20586663554870346,
+  "sixteenth_frac": -0.05885655483283804,
+  "distinct_bar_frac": -0.0368852021615405,
+  "chords_per_bar": 0.18570370251607987,
+  "tonic_frac": -0.1450486142011529,
+  "syll_per_bar": -0.10561552399363308
+ }
+}

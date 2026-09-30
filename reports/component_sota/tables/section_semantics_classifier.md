@@ -1,0 +1,6 @@
+<!-- Verse/chorus classifier (trained on train-split reference sections) applied to generated sections before and after relabelling -->
+| section originally | relabelled to | P(chorus) unmodified | P(chorus) relabelled | difference [95% CI] | N |
+|---|---|---|---|---|---|
+| verse | chorus | 0.391 | 0.484 | +0.093 [+0.057, +0.129] | 106 |
+| chorus | verse | 0.636 | 0.576 | -0.060 [-0.090, -0.030] | 118 |
+| classifier check | held-out reference sections: AUC 0.847, acc 0.778 |  |  |  | 1750 |

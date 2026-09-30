@@ -1,0 +1,36 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+edit & metric & infill $-$ regenerate [95\% CI] & N \\
+\midrule
+edit\_resample & target label+bars as requested & -0.005 [-0.018, +0.007] & 222 \\
+edit\_resample & target lyric recall & -0.013 [-0.031, +0.003] & 222 \\
+edit\_resample & untouched sections byte-identical & +0.999 [+0.997, +1.000] & 222 \\
+edit\_resample & untouched: notes identical & +0.815 [+0.797, +0.832] & 222 \\
+edit\_resample & untouched: chords identical & +0.979 [+0.973, +0.984] & 222 \\
+edit\_resample & untouched: lyrics identical & +0.237 [+0.213, +0.261] & 222 \\
+edit\_resample & untouched: label+bars identical & +0.006 [+0.001, +0.013] & 222 \\
+edit\_resample & untouched: melody change (1$-$LCS) & -0.949 [-0.953, -0.943] & 222 \\
+edit\_lyrics & target label+bars as requested & -0.009 [-0.025, +0.005] & 222 \\
+edit\_lyrics & target lyric recall & -0.054 [-0.083, -0.028] & 222 \\
+edit\_lyrics & untouched sections byte-identical & +0.970 [+0.964, +0.975] & 222 \\
+edit\_lyrics & untouched: notes identical & +0.808 [+0.791, +0.825] & 222 \\
+edit\_lyrics & untouched: chords identical & +0.949 [+0.941, +0.957] & 222 \\
+edit\_lyrics & untouched: lyrics identical & +0.225 [+0.201, +0.249] & 222 \\
+edit\_lyrics & untouched: label+bars identical & +0.005 [-0.000, +0.012] & 222 \\
+edit\_lyrics & untouched: melody change (1$-$LCS) & -0.926 [-0.933, -0.919] & 222 \\
+edit\_extend & target label+bars as requested & -0.029 [-0.047, -0.014] & 222 \\
+edit\_extend & target lyric recall & -0.012 [-0.025, +0.001] & 222 \\
+edit\_extend & untouched sections byte-identical & +0.948 [+0.940, +0.955] & 222 \\
+edit\_extend & untouched: notes identical & +0.796 [+0.779, +0.814] & 222 \\
+edit\_extend & untouched: chords identical & +0.920 [+0.910, +0.930] & 222 \\
+edit\_extend & untouched: lyrics identical & +0.235 [+0.213, +0.257] & 222 \\
+edit\_extend & untouched: label+bars identical & +0.001 [-0.002, +0.003] & 222 \\
+edit\_extend & untouched: melody change (1$-$LCS) & -0.896 [-0.905, -0.886] & 222 \\
+\bottomrule
+\end{tabular}
+\caption{Paired infill $-$ whole-song regeneration, same edit request, same songs}
+\label{tab:infill_vs_regen}
+\end{table}

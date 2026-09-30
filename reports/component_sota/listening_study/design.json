@@ -1,0 +1,42 @@
+{
+ "n_items": 108,
+ "n_test": 104,
+ "n_qc": 4,
+ "per_block_status": {
+  "A": {
+   "ready": 29,
+   "pending_audio": 1
+  },
+  "B": {
+   "ready": 19,
+   "pending_audio": 1
+  },
+  "C": {
+   "ready": 18
+  },
+  "D": {
+   "ready": 24
+  },
+  "E": {
+   "ready": 12
+  }
+ },
+ "qc_status": {
+  "ready": 4
+ },
+ "lists": {
+  "0": 108,
+  "1": 108,
+  "2": 108,
+  "3": 108
+ },
+ "seed": 20260927,
+ "clip_seconds": 30.0,
+ "parameters": {
+  "per_pair_A": 6,
+  "per_source_B": 4,
+  "per_pair_C": 6,
+  "per_kind_D": 6,
+  "per_condition_E": 6
+ }
+}

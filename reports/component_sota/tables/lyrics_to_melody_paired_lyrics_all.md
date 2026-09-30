@@ -1,0 +1,154 @@
+<!-- Paired song-level differences (bootstrap 10,000) -->
+| comparison | metric | difference [95% CI] | N songs | resolved |
+|---|---|---|---|---|
+| Qwen Melody-Only − CSL-L2M official, section-chunked | generation success | +0.069 [+0.039, +0.103] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | PD ↑ | +0.242 [+0.221, +0.262] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | PD (pitch class) ↑ | +0.238 [+0.217, +0.260] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | DD ↑ | +0.179 [+0.161, +0.197] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | DD, timebase-invariant ↑ | +0.140 [+0.126, +0.156] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | MD ↓ | -0.386 [-0.434, -0.339] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | pitch range | -2.006 [-2.686, -1.287] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | notes/bar | -2.867 [-3.050, -2.681] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | lyric recall | +0.008 [+0.005, +0.013] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | lyric recall (Han only) | +0.008 [+0.005, +0.013] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | crammed syll. | +0.151 [+0.141, +0.163] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | melisma notes | +0.099 [+0.088, +0.111] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | interval sim. to ref ↑ | +0.001 [-0.004, +0.006] | 211 | no |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | rhythm entropy | +0.845 [+0.766, +0.924] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, section-chunked | distinct bars | +0.131 [+0.115, +0.147] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | generation success | +0.062 [+0.031, +0.093] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | PD ↑ | +0.181 [+0.161, +0.201] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | PD (pitch class) ↑ | +0.244 [+0.225, +0.265] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | DD ↑ | +0.132 [+0.114, +0.151] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | DD, timebase-invariant ↑ | +0.102 [+0.088, +0.117] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | MD ↓ | -0.146 [-0.175, -0.116] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | pitch range | +2.009 [+1.607, +2.419] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | notes/bar | -1.784 [-1.943, -1.620] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | lyric recall | +0.008 [+0.004, +0.012] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | lyric recall (Han only) | +0.008 [+0.004, +0.012] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | crammed syll. | +0.151 [+0.141, +0.163] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | melisma notes | +0.112 [+0.101, +0.124] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | interval sim. to ref ↑ | +0.004 [-0.001, +0.010] | 211 | no |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | rhythm entropy | +0.919 [+0.847, +0.993] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, section-chunked | distinct bars | +0.117 [+0.100, +0.135] | 211 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | generation success | +0.000 [+0.000, +0.000] | 225 | no |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | PD ↑ | +0.012 [-0.004, +0.029] | 225 | no |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | PD (pitch class) ↑ | +0.004 [-0.007, +0.016] | 225 | no |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | DD ↑ | +0.016 [+0.006, +0.026] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | DD, timebase-invariant ↑ | +0.012 [+0.004, +0.020] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | MD ↓ | -0.041 [-0.063, -0.019] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | pitch range | -0.519 [-0.910, -0.136] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | notes/bar | +0.151 [+0.104, +0.197] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | lyric recall | +0.000 [+0.000, +0.001] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | lyric recall (Han only) | +0.000 [+0.000, +0.001] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | crammed syll. | -0.034 [-0.043, -0.024] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | melisma notes | +0.007 [-0.001, +0.014] | 225 | no |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | exact structure | -0.037 [-0.056, -0.019] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | interval sim. to ref ↑ | +0.006 [+0.002, +0.010] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | rhythm entropy | +0.083 [+0.035, +0.132] | 225 | yes |
+| Qwen Melody-Only − Qwen Full (E3b) → melody | distinct bars | +0.012 [-0.001, +0.024] | 225 | no |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | generation success | +0.007 [+0.000, +0.017] | 225 | no |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | PD ↑ | +0.061 [+0.046, +0.075] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | PD (pitch class) ↑ | -0.006 [-0.023, +0.010] | 211 | no |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | DD ↑ | +0.046 [+0.031, +0.061] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | DD, timebase-invariant ↑ | +0.038 [+0.029, +0.047] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | MD ↓ | -0.241 [-0.286, -0.195] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | pitch range | -4.015 [-4.581, -3.423] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | notes/bar | -1.083 [-1.188, -0.976] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | lyric recall | +0.001 [+0.000, +0.002] | 225 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | lyric recall (Han only) | +0.001 [+0.000, +0.002] | 225 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | crammed syll. | +0.000 [+0.000, +0.000] | 211 | no |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | melisma notes | -0.013 [-0.024, -0.002] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | interval sim. to ref ↑ | -0.003 [-0.008, +0.002] | 211 | no |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | rhythm entropy | -0.074 [-0.118, -0.030] | 211 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M official, section-chunked | distinct bars | +0.013 [-0.000, +0.027] | 211 | no |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | generation success | +0.069 [+0.039, +0.103] | 225 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | PD ↑ | +0.231 [+0.211, +0.251] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | PD (pitch class) ↑ | +0.232 [+0.211, +0.253] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | DD ↑ | +0.161 [+0.143, +0.180] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | DD, timebase-invariant ↑ | +0.128 [+0.114, +0.143] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | MD ↓ | -0.342 [-0.388, -0.295] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | pitch range | -1.530 [-2.219, -0.819] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | notes/bar | -3.032 [-3.209, -2.851] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | lyric recall | +0.008 [+0.004, +0.012] | 225 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | lyric recall (Han only) | +0.008 [+0.004, +0.012] | 225 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | crammed syll. | +0.187 [+0.177, +0.198] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | melisma notes | +0.090 [+0.080, +0.100] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | interval sim. to ref ↑ | -0.005 [-0.010, +0.000] | 211 | no |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | rhythm entropy | +0.772 [+0.700, +0.846] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M official, section-chunked | distinct bars | +0.121 [+0.104, +0.137] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | generation success | +0.062 [+0.031, +0.093] | 225 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | PD ↑ | +0.170 [+0.153, +0.188] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | PD (pitch class) ↑ | +0.238 [+0.219, +0.256] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | DD ↑ | +0.115 [+0.096, +0.134] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | DD, timebase-invariant ↑ | +0.090 [+0.076, +0.104] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | MD ↓ | -0.101 [-0.130, -0.073] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | pitch range | +2.486 [+2.070, +2.905] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | notes/bar | -1.949 [-2.105, -1.789] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | lyric recall | +0.007 [+0.003, +0.012] | 225 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | lyric recall (Han only) | +0.007 [+0.003, +0.012] | 225 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | crammed syll. | +0.187 [+0.177, +0.198] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | melisma notes | +0.103 [+0.092, +0.114] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | interval sim. to ref ↑ | -0.002 [-0.006, +0.003] | 211 | no |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | rhythm entropy | +0.846 [+0.781, +0.913] | 211 | yes |
+| Qwen Full (E3b) → melody − CSL-L2M retrained, section-chunked | distinct bars | +0.107 [+0.090, +0.124] | 211 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | generation success | +0.331 [+0.274, +0.388] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | PD ↑ | +0.300 [+0.278, +0.323] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | PD (pitch class) ↑ | +0.297 [+0.271, +0.322] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | DD ↑ | +0.236 [+0.215, +0.256] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | DD, timebase-invariant ↑ | +0.194 [+0.176, +0.212] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | MD ↓ | -0.093 [-0.127, -0.059] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | pitch range | +3.600 [+3.081, +4.141] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | notes/bar | -2.817 [-3.080, -2.544] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | lyric recall | +0.039 [+0.032, +0.046] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | lyric recall (Han only) | +0.040 [+0.033, +0.047] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | crammed syll. | +0.147 [+0.136, +0.160] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | melisma notes | +0.133 [+0.121, +0.145] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | interval sim. to ref ↑ | +0.006 [-0.000, +0.012] | 172 | no |
+| Qwen Melody-Only − CSL-L2M official, whole song | rhythm entropy | +1.309 [+1.233, +1.385] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M official, whole song | distinct bars | +0.223 [+0.204, +0.244] | 172 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | generation success | +0.081 [+0.049, +0.118] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | PD ↑ | +0.238 [+0.218, +0.258] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | PD (pitch class) ↑ | +0.308 [+0.289, +0.327] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | DD ↑ | +0.174 [+0.155, +0.194] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | DD, timebase-invariant ↑ | +0.132 [+0.117, +0.148] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | MD ↓ | -0.117 [-0.149, -0.084] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | pitch range | +4.882 [+4.472, +5.295] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | notes/bar | -2.004 [-2.181, -1.809] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | lyric recall | +0.010 [+0.006, +0.015] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | lyric recall (Han only) | +0.010 [+0.006, +0.015] | 225 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | crammed syll. | +0.150 [+0.141, +0.162] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | melisma notes | +0.125 [+0.113, +0.136] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | interval sim. to ref ↑ | +0.007 [+0.001, +0.012] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | rhythm entropy | +1.225 [+1.157, +1.293] | 209 | yes |
+| Qwen Melody-Only − CSL-L2M retrained, whole song | distinct bars | +0.207 [+0.187, +0.227] | 209 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | generation success | +0.262 [+0.209, +0.314] | 225 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | PD ↑ | +0.043 [+0.031, +0.056] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | PD (pitch class) ↑ | +0.041 [+0.022, +0.059] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | DD ↑ | +0.039 [+0.028, +0.051] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | DD, timebase-invariant ↑ | +0.039 [+0.030, +0.049] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | MD ↓ | +0.286 [+0.238, +0.338] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | pitch range | +4.913 [+4.247, +5.594] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | notes/bar | +0.280 [+0.098, +0.477] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | lyric recall | +0.031 [+0.025, +0.037] | 225 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | lyric recall (Han only) | +0.031 [+0.025, +0.038] | 225 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | crammed syll. | +0.000 [+0.000, +0.000] | 172 | no |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | melisma notes | +0.021 [+0.015, +0.027] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | interval sim. to ref ↑ | +0.003 [-0.001, +0.006] | 172 | no |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | rhythm entropy | +0.355 [+0.301, +0.411] | 172 | yes |
+| CSL-L2M official, section-chunked − CSL-L2M official, whole song | distinct bars | +0.083 [+0.066, +0.101] | 172 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | generation success | +0.019 [+0.004, +0.037] | 225 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | PD ↑ | +0.055 [+0.046, +0.064] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | PD (pitch class) ↑ | +0.061 [+0.051, +0.071] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | DD ↑ | +0.042 [+0.035, +0.049] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | DD, timebase-invariant ↑ | +0.029 [+0.021, +0.036] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | MD ↓ | +0.032 [+0.011, +0.053] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | pitch range | +2.876 [+2.562, +3.199] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | notes/bar | -0.200 [-0.264, -0.130] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | lyric recall | +0.002 [+0.001, +0.005] | 225 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | lyric recall (Han only) | +0.002 [+0.001, +0.005] | 225 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | crammed syll. | +0.000 [+0.000, +0.000] | 209 | no |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | melisma notes | +0.012 [+0.004, +0.019] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | interval sim. to ref ↑ | +0.002 [-0.001, +0.005] | 209 | no |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | rhythm entropy | +0.295 [+0.260, +0.331] | 209 | yes |
+| CSL-L2M retrained, section-chunked − CSL-L2M retrained, whole song | distinct bars | +0.087 [+0.076, +0.100] | 209 | yes |

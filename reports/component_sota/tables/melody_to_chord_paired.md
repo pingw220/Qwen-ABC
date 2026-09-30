@@ -1,0 +1,105 @@
+<!-- Paired harmonizer differences on the reference melodies -->
+| comparison (reference melody) | metric | difference [95% CI] | N |
+|---|---|---|---|
+| qwen − am2 | success | +0.062 [+0.031, +0.093] | 225 |
+| qwen − am2 | root acc. vs ref | +0.113 [+0.098, +0.129] | 211 |
+| qwen − am2 | maj/min acc. vs ref | +0.122 [+0.106, +0.137] | 211 |
+| qwen − am2 | chord chroma F1 vs ref | +0.090 [+0.078, +0.102] | 211 |
+| qwen − am2 | progression sim. vs ref | +0.060 [+0.046, +0.075] | 211 |
+| qwen − am2 | cadence agreement | +0.160 [+0.131, +0.188] | 211 |
+| qwen − am2 | chord-tone ratio | +0.088 [+0.075, +0.102] | 211 |
+| qwen − am2 | strong-beat chord-tone | +0.115 [+0.096, +0.136] | 211 |
+| qwen − am2 | strong-beat dissonance | -0.028 [-0.041, -0.015] | 211 |
+| qwen − am2 | chroma compatibility | +0.057 [+0.046, +0.068] | 211 |
+| qwen − am2 | roots in key | -0.079 [-0.096, -0.063] | 211 |
+| qwen − am2 | cadence I/V | +0.139 [+0.103, +0.174] | 211 |
+| qwen − am2 | chords/bar | +0.158 [+0.123, +0.192] | 211 |
+| qwen − am2 | distinct chords | -0.323 [-0.694, +0.047] | 211 |
+| qwen − am2 | chord entropy | +0.032 [-0.020, +0.083] | 211 |
+| qwen − am2 | time on tonic | -0.065 [-0.082, -0.049] | 211 |
+| qwen − am2 | root motion by 4th/5th | +0.027 [+0.007, +0.046] | 211 |
+| qwen − ref | success | +0.000 [+0.000, +0.000] | 225 |
+| qwen − ref | root acc. vs ref | -0.664 [-0.680, -0.648] | 225 |
+| qwen − ref | maj/min acc. vs ref | -0.698 [-0.715, -0.681] | 225 |
+| qwen − ref | chord chroma F1 vs ref | -0.437 [-0.450, -0.423] | 225 |
+| qwen − ref | progression sim. vs ref | -0.532 [-0.546, -0.518] | 225 |
+| qwen − ref | cadence agreement | -0.554 [-0.580, -0.528] | 225 |
+| qwen − ref | chord-tone ratio | -0.048 [-0.059, -0.038] | 224 |
+| qwen − ref | strong-beat chord-tone | -0.045 [-0.060, -0.030] | 224 |
+| qwen − ref | strong-beat dissonance | +0.020 [+0.009, +0.032] | 224 |
+| qwen − ref | chroma compatibility | -0.027 [-0.035, -0.019] | 224 |
+| qwen − ref | roots in key | -0.000 [-0.012, +0.011] | 225 |
+| qwen − ref | cadence I/V | -0.036 [-0.064, -0.008] | 225 |
+| qwen − ref | chords/bar | +0.019 [-0.013, +0.049] | 225 |
+| qwen − ref | distinct chords | -1.172 [-1.544, -0.809] | 225 |
+| qwen − ref | chord entropy | -0.139 [-0.194, -0.083] | 225 |
+| qwen − ref | time on tonic | -0.009 [-0.024, +0.005] | 225 |
+| qwen − ref | root motion by 4th/5th | -0.040 [-0.062, -0.018] | 225 |
+| am2 − ref | success | -0.062 [-0.093, -0.031] | 225 |
+| am2 − ref | root acc. vs ref | -0.779 [-0.789, -0.770] | 211 |
+| am2 − ref | maj/min acc. vs ref | -0.822 [-0.832, -0.812] | 211 |
+| am2 − ref | chord chroma F1 vs ref | -0.529 [-0.538, -0.520] | 211 |
+| am2 − ref | progression sim. vs ref | -0.593 [-0.608, -0.579] | 211 |
+| am2 − ref | cadence agreement | -0.717 [-0.740, -0.693] | 211 |
+| am2 − ref | chord-tone ratio | -0.134 [-0.148, -0.121] | 210 |
+| am2 − ref | strong-beat chord-tone | -0.156 [-0.178, -0.135] | 210 |
+| am2 − ref | strong-beat dissonance | +0.044 [+0.029, +0.060] | 210 |
+| am2 − ref | chroma compatibility | -0.083 [-0.094, -0.073] | 210 |
+| am2 − ref | roots in key | +0.080 [+0.063, +0.098] | 211 |
+| am2 − ref | cadence I/V | -0.177 [-0.214, -0.141] | 211 |
+| am2 − ref | chords/bar | -0.139 [-0.186, -0.093] | 211 |
+| am2 − ref | distinct chords | -0.863 [-1.370, -0.365] | 211 |
+| am2 − ref | chord entropy | -0.170 [-0.240, -0.101] | 211 |
+| am2 − ref | time on tonic | +0.055 [+0.036, +0.073] | 211 |
+| am2 − ref | root motion by 4th/5th | -0.067 [-0.094, -0.040] | 211 |
+| qwen_lyr − qwen | success | +0.000 [+0.000, +0.000] | 225 |
+| qwen_lyr − qwen | root acc. vs ref | +0.001 [-0.006, +0.009] | 225 |
+| qwen_lyr − qwen | maj/min acc. vs ref | +0.001 [-0.006, +0.009] | 225 |
+| qwen_lyr − qwen | chord chroma F1 vs ref | +0.007 [+0.001, +0.013] | 225 |
+| qwen_lyr − qwen | progression sim. vs ref | -0.008 [-0.017, +0.001] | 225 |
+| qwen_lyr − qwen | cadence agreement | +0.003 [-0.015, +0.021] | 225 |
+| qwen_lyr − qwen | chord-tone ratio | +0.003 [-0.004, +0.009] | 225 |
+| qwen_lyr − qwen | strong-beat chord-tone | -0.001 [-0.011, +0.009] | 225 |
+| qwen_lyr − qwen | strong-beat dissonance | +0.002 [-0.006, +0.010] | 225 |
+| qwen_lyr − qwen | chroma compatibility | -0.001 [-0.006, +0.003] | 225 |
+| qwen_lyr − qwen | roots in key | -0.001 [-0.010, +0.007] | 225 |
+| qwen_lyr − qwen | cadence I/V | -0.001 [-0.021, +0.018] | 225 |
+| qwen_lyr − qwen | chords/bar | -0.027 [-0.046, -0.008] | 225 |
+| qwen_lyr − qwen | distinct chords | -0.183 [-0.400, +0.031] | 225 |
+| qwen_lyr − qwen | chord entropy | -0.053 [-0.089, -0.017] | 225 |
+| qwen_lyr − qwen | time on tonic | +0.015 [+0.004, +0.027] | 225 |
+| qwen_lyr − qwen | root motion by 4th/5th | +0.008 [-0.006, +0.022] | 225 |
+| qwen − diatonic | success | +0.000 [+0.000, +0.000] | 225 |
+| qwen − diatonic | root acc. vs ref | +0.016 [+0.002, +0.029] | 225 |
+| qwen − diatonic | maj/min acc. vs ref | +0.014 [+0.001, +0.027] | 225 |
+| qwen − diatonic | chord chroma F1 vs ref | +0.002 [-0.007, +0.012] | 225 |
+| qwen − diatonic | progression sim. vs ref | +0.109 [+0.094, +0.123] | 225 |
+| qwen − diatonic | cadence agreement | +0.065 [+0.036, +0.095] | 225 |
+| qwen − diatonic | chord-tone ratio | -0.150 [-0.160, -0.140] | 225 |
+| qwen − diatonic | strong-beat chord-tone | -0.142 [-0.155, -0.129] | 225 |
+| qwen − diatonic | strong-beat dissonance | +0.078 [+0.068, +0.088] | 225 |
+| qwen − diatonic | chroma compatibility | -0.122 [-0.129, -0.114] | 225 |
+| qwen − diatonic | roots in key | -0.081 [-0.097, -0.066] | 225 |
+| qwen − diatonic | cadence I/V | +0.073 [+0.039, +0.107] | 225 |
+| qwen − diatonic | chords/bar | +0.484 [+0.453, +0.516] | 225 |
+| qwen − diatonic | distinct chords | +2.303 [+2.002, +2.611] | 225 |
+| qwen − diatonic | chord entropy | +0.464 [+0.408, +0.519] | 225 |
+| qwen − diatonic | time on tonic | -0.164 [-0.184, -0.144] | 225 |
+| qwen − diatonic | root motion by 4th/5th | +0.155 [+0.132, +0.177] | 225 |
+| am2 − diatonic | success | -0.062 [-0.093, -0.031] | 225 |
+| am2 − diatonic | root acc. vs ref | -0.099 [-0.113, -0.085] | 211 |
+| am2 − diatonic | maj/min acc. vs ref | -0.109 [-0.124, -0.095] | 211 |
+| am2 − diatonic | chord chroma F1 vs ref | -0.088 [-0.099, -0.078] | 211 |
+| am2 − diatonic | progression sim. vs ref | +0.051 [+0.036, +0.066] | 211 |
+| am2 − diatonic | cadence agreement | -0.100 [-0.131, -0.070] | 211 |
+| am2 − diatonic | chord-tone ratio | -0.236 [-0.247, -0.226] | 211 |
+| am2 − diatonic | strong-beat chord-tone | -0.255 [-0.274, -0.238] | 211 |
+| am2 − diatonic | strong-beat dissonance | +0.105 [+0.093, +0.117] | 211 |
+| am2 − diatonic | chroma compatibility | -0.178 [-0.187, -0.170] | 211 |
+| am2 − diatonic | roots in key | -0.001 [-0.002, -0.000] | 211 |
+| am2 − diatonic | cadence I/V | -0.069 [-0.107, -0.030] | 211 |
+| am2 − diatonic | chords/bar | +0.345 [+0.324, +0.365] | 211 |
+| am2 − diatonic | distinct chords | +2.611 [+2.360, +2.872] | 211 |
+| am2 − diatonic | chord entropy | +0.421 [+0.376, +0.466] | 211 |
+| am2 − diatonic | time on tonic | -0.095 [-0.118, -0.072] | 211 |
+| am2 − diatonic | root motion by 4th/5th | +0.118 [+0.093, +0.143] | 211 |
