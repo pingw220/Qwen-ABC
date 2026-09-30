@@ -1,0 +1,47 @@
+job=40922251 host=g3102 gpu=NVIDIA L40S start=2026-09-30T13:42:17-07:00 group=chords
+No module named 'flash_attn'
+flash_attn not installed, disabling Flash Attention
+No module named 'flash_attn'
+flash_attn varlen/bert_padding not available, disabling varlen attention
+36 items, 36 to render; checkpoint /mmfs1/gscratch/scrubbed/pingw220/music_acc/sa3_midi_sag/experiments/sa3_medium_midi_sag_long_v1/checkpoints/step_0030000
+annotations ok for 36 items (e.g. 172 beats, 38 chord spans)
+/mmfs1/gscratch/stf/pingw220/sa3_midi_sag/venv/lib64/python3.12/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+loaded step 30000 in 463 s
+09d4jeFypKBWzZVfHKBeVY__ref 92.8s audio in 13s | mandopop, c-pop, instrumental backing track, B major, 97 BPM
+0A4ehMRLl7v8TFyhSbdkh8__ref 97.0s audio in 5s | mandopop, c-pop, instrumental backing track, F major, 125 BPM
+0CxfpbQfmX4bR6mA6aarL3__ref 94.2s audio in 6s | mandopop, c-pop, instrumental backing track, F major, 100 BPM
+0exfMqddpIIZQbZZny68Rc__ref 95.1s audio in 5s | mandopop, c-pop, instrumental backing track, Bb major, 130 BPM
+1heBg3CKPc4qVUXzVO49I2__ref 94.4s audio in 6s | mandopop, c-pop, instrumental backing track, F major, 75 BPM
+1oWX2EGO7Z8YCZ5jJuGrpM__ref 93.4s audio in 5s | mandopop, c-pop, instrumental backing track, B major, 70 BPM
+255drLOJ94rmt1SDRj6H3N__ref 94.0s audio in 5s | mandopop, c-pop, instrumental backing track, G major, 143 BPM
+27o7ErWiozSj47o3dnPvVf__ref 91.8s audio in 5s | mandopop, c-pop, instrumental backing track, E major, 68 BPM
+28IzuspwIj6C8XAOoIJ1Wp__ref 94.0s audio in 5s | mandopop, c-pop, instrumental backing track, F# major, 150 BPM
+2YSqK9S0SZjulBJdc9BYuu__ref 96.5s audio in 6s | mandopop, c-pop, instrumental backing track, B minor, 79 BPM
+2gDzOOf3ElxOa1v6g0Xk7M__ref 93.2s audio in 6s | mandopop, c-pop, instrumental backing track, F# major, 103 BPM
+2r6PR48twaBEyqvTggRzZa__ref 93.4s audio in 5s | mandopop, c-pop, instrumental backing track, D major, 88 BPM
+2vnn9onO7sQBevG0O2iPHi__ref 92.6s audio in 5s | mandopop, c-pop, instrumental backing track, Bb major, 94 BPM
+32fzm1b8Ivyyj9qKXjiMZw__ref 94.9s audio in 5s | mandopop, c-pop, instrumental backing track, Ab major, 79 BPM
+3JjXD9DVfxh001wI5IACZ1__ref 93.2s audio in 5s | mandopop, c-pop, instrumental backing track, Bb major, 103 BPM
+3im9iOhpZNgaTS4VGYOGF9__ref 92.8s audio in 5s | mandopop, c-pop, instrumental backing track, B minor, 97 BPM
+4218Xav4mopAXlguvSJ9Uv__ref 95.0s audio in 6s | mandopop, c-pop, instrumental backing track, Bb major, 125 BPM
+47ZxPbe5sBnGaQanA7sQDq__ref 94.9s audio in 5s | mandopop, c-pop, instrumental backing track, A major, 91 BPM
+4Cvd1vwstGUZTdnL6X35md__ref 93.3s audio in 5s | mandopop, c-pop, instrumental backing track, A minor, 81 BPM
+4KnaiD9UY8fAhM1GrM9M8m__ref 95.3s audio in 5s | mandopop, c-pop, instrumental backing track, F# minor, 97 BPM
+4VEbbZeJwrlqRBTTscq3m2__ref 94.4s audio in 5s | mandopop, c-pop, instrumental backing track, E major, 136 BPM
+4VfHbfbzNPZmX5KI4iAOyT__ref 94.0s audio in 5s | mandopop, c-pop, instrumental backing track, Eb major, 97 BPM
+4gXVhPeuxE9ojFL0Ose0vA__ref 94.2s audio in 5s | mandopop, c-pop, instrumental backing track, Bb major, 130 BPM
+59E7BFFni2GTDisijRqKU7__ref 93.9s audio in 5s | mandopop, c-pop, instrumental backing track, F minor, 115 BPM
+5K8AQ2dBiXolebEfawTrzv__ref 94.2s audio in 5s | mandopop, c-pop, instrumental backing track, C major, 107 BPM
+5LlXalu5DZuQl7Q9CmNKp0__ref 93.5s audio in 6s | mandopop, c-pop, instrumental backing track, Ab major, 136 BPM
+5gIW9IMReT6xicyfHKtcug__ref 93.7s audio in 5s | mandopop, c-pop, instrumental backing track, D major, 130 BPM
+5icriKgD89JhLxeSnd9o74__ref 95.7s audio in 6s | mandopop, c-pop, instrumental backing track, F major, 143 BPM
+5ojQLq8MsewWoGbVQEBd8f__ref 94.0s audio in 5s | mandopop, c-pop, instrumental backing track, F minor, 97 BPM
+5zpJSe86hLBaTpd6ZW3TFB__ref 93.2s audio in 5s | mandopop, c-pop, instrumental backing track, F# major, 94 BPM
+6I3A7q18EJgbdZf2Zx1wxm__ref 96.0s audio in 6s | mandopop, c-pop, instrumental backing track, Eb minor, 150 BPM
+6NqPOID1RsXpj7IAEsgd2v__ref 93.0s audio in 5s | mandopop, c-pop, instrumental backing track, Bb major, 91 BPM
+6TCciGLZyMSTZDJDmrdVSI__ref 94.6s audio in 6s | mandopop, c-pop, instrumental backing track, A major, 130 BPM
+7omMiE6h9Js24Cr22A0Fbv__ref 96.0s audio in 5s | mandopop, c-pop, instrumental backing track, D major, 125 BPM
+7v46DZBqB4xmaTHRygC8gy__ref 97.0s audio in 6s | mandopop, c-pop, instrumental backing track, F major, 120 BPM
+7ya27A8QscYolruZhE2dAy__ref 93.0s audio in 5s | mandopop, c-pop, instrumental backing track, D major, 111 BPM
+SA3_BACKING_DONE
+end=2026-09-30T14:00:58-07:00

@@ -35,9 +35,13 @@ from .audio import AUDIO
 from .melody_eval import CS_REPORT
 
 
+RENDER = "render"   # "render" = MuseControlLite (MIDI-SAG adapter); "render_sa3" = tuned SA3 MIDI-SAG
+SUFFIX = ""
+
+
 def mixes():
     for grp in ("chords", "control"):
-        for d in sorted((AUDIO / "backing" / grp / "render").glob("*")):
+        for d in sorted((AUDIO / "backing" / grp / RENDER).glob("*")):
             if (d / "mix.wav").exists():
                 yield grp, d
 
@@ -157,7 +161,7 @@ def chord_f1_matrix():
         row = {"rendered chords": a}
         for b in srcs:
             v = []
-            for d in sorted((B / "render").glob(f"*__{a}")):
+            for d in sorted((B / RENDER).glob(f"*__{a}")):
                 sid = d.name.split("__")[0]
                 lab, pb = d / "mix.wav.lab", B / f"{sid}__{b}.song.json"
                 if not lab.exists() or not pb.exists():
@@ -173,7 +177,7 @@ def chord_f1_matrix():
             m, lo, hi, n = bootstrap_mean_ci(v)
             row[f"vs requested {b}"] = fmt_ci(m, lo, hi)
         rows.append(row)
-    write_table(rows, "backing_chord_f1_matrix", "Chord F1 of detected vs requested chords, for every (rendered, requested) chord-source pair on the same songs; "
+    write_table(rows, "backing_chord_f1_matrix" + SUFFIX, "Chord F1 of detected vs requested chords, for every (rendered, requested) chord-source pair on the same songs; "
                 "off-diagonal cells are the no-information control", table_dir=CS_REPORT / "tables")
 
 
@@ -181,7 +185,10 @@ def main():
     import pandas as pd
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["list", "evaluate"])
+    ap.add_argument("--render-dir", default="render", choices=["render", "render_sa3"])
     args = ap.parse_args()
+    global RENDER, SUFFIX
+    RENDER, SUFFIX = args.render_dir, ("" if args.render_dir == "render" else "_sa3")
     if args.cmd == "list":
         for _, d in mixes():
             print(d / "mix.wav")
@@ -219,7 +226,7 @@ def main():
             df.loc[i, "audio_success"] = float(min(abs(det * f - want) for f in (0.5, 1, 2)) <= 0.04 * want) if det == det and det is not None else None
             df.loc[i, "audio_success_strict"] = float(abs(det - want) <= 0.04 * want) if det == det and det is not None else None
             df.loc[i, "audio_abs_error"] = abs(det - want) if det == det and det is not None else None
-    df.to_parquet(CS_REPORT / "data" / "backing.parquet", index=False)
+    df.to_parquet(CS_REPORT / "data" / f"backing{SUFFIX}.parquet", index=False)
     cols = [("chord_f1", "Chord F1 ↑", 3), ("chord_root_acc", "chord root acc. ↑", 3), ("key_acc", "Key accuracy ↑", 3),
             ("key_weighted", "Key (MIREX weighted) ↑", 3), ("rhythm_f1", "Rhythm F1 ↑", 3), ("bpm_abs_err", "abs. BPM error", 1),
             ("bpm_acc_4pct", "BPM within 4%", 3), ("bpm_acc_octave", "BPM within 4% (octave-tolerant)", 3),
@@ -241,7 +248,7 @@ def main():
                     m, lo, hi, n = bootstrap_mean_ci(x[c].dropna().tolist())
                     row[lab] = fmt_ci(m, lo, hi, dg)
             table.append(row)
-        write_table(table, stem, cap, table_dir=CS_REPORT / "tables")
+        write_table(table, stem + SUFFIX, cap + (" [SA3 MIDI-SAG step 30k renders]" if SUFFIX else ""), table_dir=CS_REPORT / "tables")
     drows = []
     pairs = (("chords", "qwen", "am2"), ("chords", "qwen", "ref"), ("chords", "am2", "ref"),
              ("control", "key_transpose", "key_gen"), ("control", "tempo_direct", "tempo_gen"))
@@ -253,7 +260,7 @@ def main():
                 d = paired_bootstrap(A[c].dropna().to_dict(), B[c].dropna().to_dict())
                 if d["n"]:
                     drows.append({"contrast": f"{a} − {b}", "metric": lab, "difference [95% CI]": fmt_ci(d["diff"], d["lo"], d["hi"], 3, True), "N": d["n"]})
-    write_table(drows, "backing_paired", "Paired song-level differences between chord sources (Table 7) and between control implementations (Table 8)",
+    write_table(drows, "backing_paired" + SUFFIX, "Paired song-level differences between chord sources (Table 7) and between control implementations (Table 8)",
                 table_dir=CS_REPORT / "tables")
     chord_f1_matrix()
     print("BACKING_EVAL_DONE")

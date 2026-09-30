@@ -110,3 +110,6 @@
 40854918 final lyric_conditioning + chord_eval + joint_cascade (login-node run was OOM-killed)
 40854947 final audio analysis pass (vocal all sources + last mixes), after svs3
 40851880 SVS render csl_rtc 3 shards ckpt (after svs2; see the 40851862 line)
+40920703 SA3 MIDI-SAG step30k backing renders, chord-source group (108), 3 shards ckpt-all a40
+40922251 SA3 step30k backing renders chords group, resubmit (beat-file parser fix), L40S
+40923208 audio tools on SA3 step30k backing mixes (108)

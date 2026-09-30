@@ -95,3 +95,36 @@ Paired contrasts:
 - **Key accuracy is also sensitive to the harmony itself.** The same melody is detected in the
   requested key 78% of the time with AccoMontage2's diatonic chords, 58% with Qwen's and 36% with
   the transcribed reference chords. Chroma-based key detection rewards diatonic backing.
+
+## Addendum (2026-09-30): tuned SA3 MIDI-SAG (step 30k) as the backing renderer
+
+The 108 Table-7 lead sheets (36 songs × Qwen / AccoMontage2 / reference chords) were re-rendered with
+the tuned SA3 MIDI-SAG checkpoint (`sa3_medium_midi_sag_long_v1/checkpoints/step_0030000`).
+
+**Setup:**
+- Driver: `paper_eval/component_sota/sa3_backing.py`; jobs: `scripts/component_sota/sa3_backing.sbatch`.
+- Inputs identical to the MuseControlLite renders: the same fitted FastSinger vocal, the lead sheet's
+  chords, beat/downbeat grid, sections, key and tempo.
+- Generation: one 50-step pass, CFG 7.0, seed 0. SA3 code is imported unchanged.
+- Scoring: the same detectors. Tables: `tables/backing_chord_audio_sa3.*`,
+  `tables/backing_chord_f1_matrix_sa3.*`, `tables/backing_sa3_vs_mcl.*`.
+
+**MEASURED FACT** (SA3 − MuseControlLite, paired over 108 renders):
+
+| metric | difference [95% CI] |
+|---|---|
+| Chord F1 | −0.043 [−0.054, −0.032] |
+| chord root accuracy | −0.092 [−0.110, −0.076] |
+| Rhythm F1 | +0.012 [−0.012, +0.037] |
+| BPM within 4% | +0.102 [+0.028, +0.176] |
+| key accuracy | +0.028 [−0.065, +0.120] |
+| SongEval Naturalness | +0.085 [+0.042, +0.128] |
+| SongEval Musicality | −0.047 [−0.092, −0.003] |
+| Audiobox PQ | −0.119 [−0.165, −0.076] |
+
+The chord control remains discriminative under SA3: 0.84–0.89 against the requested chords vs
+0.47–0.54 against another source's.
+
+**INTERPRETATION:** SA3 locks tempo better and scores as more natural, but realizes the requested
+harmony somewhat less exactly. The quality predictors split. Neither renderer dominates. Listening
+pairs are in a private page shared with the user; no listening-test results have been collected.

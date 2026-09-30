@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+rendered chords & vs requested qwen & vs requested am2 & vs requested ref \\
+\midrule
+qwen & 0.874 [0.859, 0.889] & 0.480 [0.453, 0.507] & 0.541 [0.506, 0.576] \\
+am2 & 0.474 [0.439, 0.509] & 0.889 [0.871, 0.906] & 0.473 [0.451, 0.495] \\
+ref & 0.532 [0.492, 0.570] & 0.486 [0.467, 0.505] & 0.840 [0.810, 0.867] \\
+\bottomrule
+\end{tabular}
+\caption{Chord F1 of detected vs requested chords, for every (rendered, requested) chord-source pair on the same songs; off-diagonal cells are the no-information control}
+\label{tab:backing_chord_f1_matrix_sa3}
+\end{table}
