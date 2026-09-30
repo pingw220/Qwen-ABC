@@ -1,0 +1,6 @@
+job=40756694 host=n3078 start=2026-09-27T03:40:55-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.build_datasets --task chord_lyr
+train {'whole_song': 10243, 'infill': 0, 'checked': 10243, 'tokens': 34225395, 'supervised_tokens': 8952290}
+validation {'whole_song': 273, 'infill': 0, 'checked': 273, 'tokens': 950698, 'supervised_tokens': 245882}
+test {'whole_song': 225, 'infill': 0, 'checked': 225, 'tokens': 794860, 'supervised_tokens': 209456}
+BUILD_OK /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/data/chord_lyr
+end=2026-09-27T03:43:25-07:00 CPU_OK

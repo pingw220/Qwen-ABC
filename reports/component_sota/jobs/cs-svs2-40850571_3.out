@@ -1,0 +1,27 @@
+job=40851500 array=40850571_3 host=g3124 gpu=NVIDIA L40S start=2026-09-29T11:12:22-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.audio render-svs --shard $SHARD --num-shards $NSHARDS
+csl_offc 0exfMqddpIIZQbZZny68Rc {'fastsinger': {'exit': 0, 'seconds': 203.5}, 'soulx': {'exit': [0, 0], 'seconds': 323.4}}
+csl_offc 2YSqK9S0SZjulBJdc9BYuu {'fastsinger': {'exit': 0, 'seconds': 75.1}, 'soulx': {'exit': [0, 0], 'seconds': 109.7}}
+csl_offc 3im9iOhpZNgaTS4VGYOGF9 {'fastsinger': {'exit': 0, 'seconds': 71.6}, 'soulx': {'exit': [0, 0], 'seconds': 144.1}}
+csl_offc 4VfHbfbzNPZmX5KI4iAOyT {'fastsinger': {'exit': 0, 'seconds': 73.4}, 'soulx': {'exit': [0, 0], 'seconds': 129.2}}
+csl_offc 5icriKgD89JhLxeSnd9o74 {'fastsinger': {'exit': 0, 'seconds': 60.7}, 'soulx': {'exit': [0, 0], 'seconds': 105.0}}
+csl_offc 7omMiE6h9Js24Cr22A0Fbv {'fastsinger': {'exit': 0, 'seconds': 70.5}, 'soulx': {'exit': [0, 0], 'seconds': 100.6}}
+e3b 0exfMqddpIIZQbZZny68Rc {}
+e3b 2YSqK9S0SZjulBJdc9BYuu {}
+e3b 3im9iOhpZNgaTS4VGYOGF9 {}
+e3b 4VfHbfbzNPZmX5KI4iAOyT {}
+e3b 5icriKgD89JhLxeSnd9o74 {}
+e3b 7omMiE6h9Js24Cr22A0Fbv {}
+mel 0exfMqddpIIZQbZZny68Rc {'fastsinger': {'exit': 0, 'seconds': 74.1}, 'soulx': {'exit': [0, 0], 'seconds': 143.1}}
+mel 2YSqK9S0SZjulBJdc9BYuu {'fastsinger': {'exit': 0, 'seconds': 69.7}, 'soulx': {'exit': [0, 0], 'seconds': 137.6}}
+mel 3im9iOhpZNgaTS4VGYOGF9 {'fastsinger': {'exit': 0, 'seconds': 63.3}, 'soulx': {'exit': [0, 0], 'seconds': 130.2}}
+mel 4VfHbfbzNPZmX5KI4iAOyT {'fastsinger': {'exit': 0, 'seconds': 61.0}, 'soulx': {'exit': [0, 0], 'seconds': 117.19999999999999}}
+mel 5icriKgD89JhLxeSnd9o74 {'fastsinger': {'exit': 0, 'seconds': 63.2}, 'soulx': {'exit': [0, 0], 'seconds': 124.60000000000001}}
+mel 7omMiE6h9Js24Cr22A0Fbv {'fastsinger': {'exit': 0, 'seconds': 54.2}, 'soulx': {'exit': [0, 0], 'seconds': 102.6}}
+ref 0exfMqddpIIZQbZZny68Rc {}
+ref 2YSqK9S0SZjulBJdc9BYuu {}
+ref 3im9iOhpZNgaTS4VGYOGF9 {}
+ref 4VfHbfbzNPZmX5KI4iAOyT {}
+ref 5icriKgD89JhLxeSnd9o74 {}
+ref 7omMiE6h9Js24Cr22A0Fbv {}
+RENDER_SVS_DONE
+end=2026-09-29T11:55:52-07:00 GPU_OK

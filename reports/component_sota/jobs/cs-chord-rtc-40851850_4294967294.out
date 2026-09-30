@@ -1,0 +1,21 @@
+job=40851850 array=none_0 host=g3102 gpu=NVIDIA L40S start=2026-09-29T11:29:15-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.chord_gen --harmonizer chord --melodies csl_rtc:S1 --chord-seeds S1
+tasks 211 shard 211 todo 211
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   2%|▏         | 5/321 [00:00<00:06, 46.79it/s]Loading weights:   3%|▎         | 10/321 [00:00<00:10, 29.88it/s]Loading weights:   7%|▋         | 22/321 [00:00<00:06, 43.77it/s]Loading weights:   8%|▊         | 27/321 [00:00<00:09, 30.85it/s]Loading weights:  10%|▉         | 31/321 [00:01<00:15, 18.48it/s]Loading weights:  12%|█▏        | 39/321 [00:01<00:14, 19.41it/s]Loading weights:  15%|█▍        | 47/321 [00:01<00:10, 25.81it/s]Loading weights:  16%|█▌        | 51/321 [00:02<00:16, 16.31it/s]Loading weights:  23%|██▎       | 74/321 [00:02<00:06, 36.99it/s]Loading weights:  28%|██▊       | 89/321 [00:02<00:05, 39.57it/s]Loading weights:  40%|████      | 129/321 [00:03<00:02, 82.27it/s]Loading weights:  45%|████▍     | 144/321 [00:03<00:02, 86.36it/s]Loading weights:  51%|█████     | 163/321 [00:03<00:01, 101.75it/s]Loading weights:  56%|█████▌    | 180/321 [00:03<00:01, 96.19it/s] Loading weights:  60%|██████    | 194/321 [00:03<00:01, 89.02it/s]Loading weights:  75%|███████▌  | 241/321 [00:03<00:00, 154.98it/s]Loading weights:  84%|████████▍ | 271/321 [00:04<00:00, 127.14it/s]Loading weights:  90%|████████▉ | 288/321 [00:04<00:00, 103.48it/s]Loading weights:  94%|█████████▍| 302/321 [00:04<00:00, 107.11it/s]Loading weights:  98%|█████████▊| 316/321 [00:04<00:00, 90.61it/s] Loading weights: 100%|██████████| 321/321 [00:04<00:00, 67.93it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/14] 23.7s
+[2/14] 12.8s
+[3/14] 229.06s
+[4/14] 14.01s
+[5/14] 14.56s
+[6/14] 16.55s
+[7/14] 15.12s
+[8/14] 19.42s
+[9/14] 26.01s
+[10/14] 18.04s
+[11/14] 21.09s
+[12/14] 24.04s
+[13/14] 39.06s
+[14/14] 128.58s
+CHORD_GEN_DONE
+end=2026-09-29T11:40:50-07:00 GPU_OK

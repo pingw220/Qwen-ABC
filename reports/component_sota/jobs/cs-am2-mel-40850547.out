@@ -1,0 +1,22 @@
+job=40850547 host=n3284 start=2026-09-29T10:40:11-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.accomontage --melodies mel:S1 --shard 11 --num-shards 12
+tasks 225 shard 18
+0ITY3kOaEoiDxaCI88jET6 mel True None 20.6
+18wGt2QzrQO73VY4akreyx mel True None 11.6
+1bIiaFMdH3udqWyXyeQMoH mel True None 10.2
+1z51mKj5nHYxrGCEq6c3Eq mel True None 11.1
+2MAwZYWDPVFHl7OFJ2vtS8 mel True None 11.2
+2jnjsOk91pDjhn7AI9C7eC mel True None 11.3
+3DtjJWwGp2qAVFkqeZ2Fgn mel True None 11.0
+3X3BdYpVpN78IFIpmhhEmU mel True None 11.3
+4218Xav4mopAXlguvSJ9Uv mel True None 11.2
+4M901X90BfY3H74MqcXZNi mel False unsupported_meter None
+4trtyNhvxt6BDPMt2Rpw48 mel True None 11.1
+5BldrYOHmqUwouMmcBNEtK mel True None 11.3
+5a7cNKUhxWPg9jWE0fUukb mel False unsupported_meter None
+5kehUJhVBQAMgzY9IQXIOV mel True None 11.3
+6FmfdFUbG8q6U2KbsNFo3y mel True None 11.2
+6alSXplRoBcYCNHKqJDWPz mel True None 11.2
+6pQe06VbPHfAD9MVV7y7ed mel True None 10.9
+7jDM04sebBiBcWysWcvSFx mel True None 11.4
+AM2_DONE
+end=2026-09-29T10:43:26-07:00 CPU_OK

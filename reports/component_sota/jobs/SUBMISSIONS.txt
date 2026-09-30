@@ -1,0 +1,112 @@
+40756637 build mel ckpt-all CPU
+40756638 build chord ckpt-all CPU
+40756639 build chord_lyr ckpt-all CPU
+40756693 build chord (retry: off-beat chord format) ckpt-all CPU
+40756694 build chord_lyr (retry: off-beat chord format) ckpt-all CPU
+40757597 --job-name=cs-smoke-csl --time=01:00:00 scripts/component_sota/gpu.sbatch
+40757598 --job-name=cs-csl-data scripts/component_sota/cpu.sbatch
+40757618 --job-name=cs-train-mel scripts/component_sota/train.sbatch
+40757619 --job-name=cs-train-chord scripts/component_sota/train.sbatch
+40757670 --job-name=cs-train-chord_lyr scripts/component_sota/train.sbatch
+40758347 --job-name=cs-csl-off -p gpu-l40 -A gpu-l40-ark --array=0-3 --time=08:00:00 scripts/component_sota/gpu.sbatch
+40758518 csl build-data retry (duration snapping)
+40759641 am2 smoke
+40759956 am2 ref shard 0/12 ckpt-all CPU
+40759957 am2 ref shard 1/12 ckpt-all CPU
+40759958 am2 ref shard 2/12 ckpt-all CPU
+40759959 am2 ref shard 3/12 ckpt-all CPU
+40759960 am2 ref shard 4/12 ckpt-all CPU
+40759961 am2 ref shard 5/12 ckpt-all CPU
+40759962 am2 ref shard 6/12 ckpt-all CPU
+40759963 am2 ref shard 7/12 ckpt-all CPU
+40759964 am2 ref shard 8/12 ckpt-all CPU
+40759965 am2 ref shard 9/12 ckpt-all CPU
+40759966 am2 ref shard 10/12 ckpt-all CPU
+40759967 am2 ref shard 11/12 ckpt-all CPU
+40760069 CSL-L2M retrain (upstream trainer, our split) gpu-l40s
+40761542 infill generation E3b 3 shards gpu-l40
+40762495 svs smoke
+40763056 --job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch
+40763057 --job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch
+40763359 section semantics CPU
+40763562 SVS render ref+e3b 6 shards ckpt-all
+40763739 backing render smoke
+40764706 infill eval CPU
+40764810 am2 e3b shard 0/12 CPU
+40764811 am2 e3b shard 1/12 CPU
+40764812 am2 e3b shard 2/12 CPU
+40764813 am2 e3b shard 3/12 CPU
+40764814 am2 e3b shard 4/12 CPU
+40764815 am2 e3b shard 5/12 CPU
+40764816 am2 e3b shard 6/12 CPU
+40764817 am2 e3b shard 7/12 CPU
+40764818 am2 e3b shard 8/12 CPU
+40764819 am2 e3b shard 9/12 CPU
+40764820 am2 e3b shard 10/12 CPU
+40764821 am2 e3b shard 11/12 CPU
+40765488 infill eval rerun (label fix)
+40765588 CSL-L2M retrain restart (val disabled: upstream validate bug)
+40765886 CSL official section-chunked 8 shards ckpt-all
+40767871 qwen chord gen ref x4 + e3b
+40849827 qwen_mel gen bon+lyrics_all 4 shards l40s
+40849828 CSL retrained chunked 4 shards l40 (experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt)
+40849829 CSL retrained whole-song 4 shards l40
+40849830 qwen chord_lyr gen ref x4
+40849873 audio tools vocal ref+e3b SVS
+40849888 CSL retrained rtc 4 shards l40 (resubmit: absolute ckpt path)
+40849889 CSL retrained rt 4 shards l40 (resubmit: absolute ckpt path)
+40850022 backing render shards 0-7/16 gpu-l40
+40850023 backing render shards 8-15/16 ckpt-all
+40850075 listening D/E FastSinger renders (54)
+40850191 CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results)
+40850193 CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results)
+40850203 am2 csl_offc shard 0/12 CPU
+40850204 am2 csl_offc shard 1/12 CPU
+40850205 am2 csl_offc shard 2/12 CPU
+40850206 am2 csl_offc shard 3/12 CPU
+40850207 am2 csl_offc shard 4/12 CPU
+40850208 am2 csl_offc shard 5/12 CPU
+40850209 am2 csl_offc shard 6/12 CPU
+40850210 am2 csl_offc shard 7/12 CPU
+40850211 am2 csl_offc shard 8/12 CPU
+40850212 am2 csl_offc shard 9/12 CPU
+40850213 am2 csl_offc shard 10/12 CPU
+40850214 am2 csl_offc shard 11/12 CPU
+40850215 qwen chord gen csl_offc:S1
+40850536 am2 mel shard 0/12 CPU
+40850537 am2 mel shard 1/12 CPU
+40850538 am2 mel shard 2/12 CPU
+40850539 am2 mel shard 3/12 CPU
+40850540 am2 mel shard 4/12 CPU
+40850541 am2 mel shard 5/12 CPU
+40850542 am2 mel shard 6/12 CPU
+40850543 am2 mel shard 7/12 CPU
+40850544 am2 mel shard 8/12 CPU
+40850545 am2 mel shard 9/12 CPU
+40850546 am2 mel shard 10/12 CPU
+40850547 am2 mel shard 11/12 CPU
+40850548 qwen chord gen mel:S1
+40850571 SVS render mel+csl_offc (+ref/e3b leftovers) 6 shards ckpt
+40851490 audio tools vocal (ASR redo with VAD)
+40851491 audio tools mix batch 1
+40851838 am2 csl_rtc shard 0/12 CPU
+40851839 am2 csl_rtc shard 1/12 CPU
+40851840 am2 csl_rtc shard 2/12 CPU
+40851841 am2 csl_rtc shard 3/12 CPU
+40851842 am2 csl_rtc shard 4/12 CPU
+40851843 am2 csl_rtc shard 5/12 CPU
+40851844 am2 csl_rtc shard 6/12 CPU
+40851845 am2 csl_rtc shard 7/12 CPU
+40851846 am2 csl_rtc shard 8/12 CPU
+40851847 am2 csl_rtc shard 9/12 CPU
+40851848 am2 csl_rtc shard 10/12 CPU
+40851849 am2 csl_rtc shard 11/12 CPU
+40851850 qwen chord gen csl_rtc:S1
+40851862 SVS render csl_rtc 3 shards ckpt
+40851862 cancelled (would race svs2); 40851880 SVS render csl_rtc after svs2
+40852395 audio tools mix batch 2 (BTC via numpy-alias wrapper; after 40851491)
+40852996 audio tools mix batch 3 (SongEval with unique names; after 40852395)
+40854140 BTC-only pass on backing mixes (torch weights_only fix)
+40854918 final lyric_conditioning + chord_eval + joint_cascade (login-node run was OOM-killed)
+40854947 final audio analysis pass (vocal all sources + last mixes), after svs3
+40851880 SVS render csl_rtc 3 shards ckpt (after svs2; see the 40851862 line)

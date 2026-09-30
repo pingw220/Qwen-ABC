@@ -1,0 +1,3 @@
+job=40850075 array=none_0 host=g3112 gpu=NVIDIA L40S start=2026-09-29T10:37:30-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.listening_study render
+{'ok': 54}
+end=2026-09-29T11:09:29-07:00 GPU_OK

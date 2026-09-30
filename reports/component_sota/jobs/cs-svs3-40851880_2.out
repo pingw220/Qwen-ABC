@@ -1,0 +1,63 @@
+job=40851880 array=40851880_2 host=g3109 gpu=NVIDIA L40S start=2026-09-29T12:01:14-07:00 commit=180abc43077c54001e85d23bd9cb76a7b69d556c cmd=python -m paper_eval.component_sota.audio render-svs --shard $SHARD --num-shards $NSHARDS
+csl_offc 0CxfpbQfmX4bR6mA6aarL3 {}
+csl_offc 1oWX2EGO7Z8YCZ5jJuGrpM {}
+csl_offc 28IzuspwIj6C8XAOoIJ1Wp {}
+csl_offc 2r6PR48twaBEyqvTggRzZa {}
+csl_offc 3JjXD9DVfxh001wI5IACZ1 {}
+csl_offc 47ZxPbe5sBnGaQanA7sQDq {}
+csl_offc 4VEbbZeJwrlqRBTTscq3m2 {}
+csl_offc 59E7BFFni2GTDisijRqKU7 {}
+csl_offc 5gIW9IMReT6xicyfHKtcug {}
+csl_offc 5zpJSe86hLBaTpd6ZW3TFB {}
+csl_offc 6TCciGLZyMSTZDJDmrdVSI {}
+csl_offc 7ya27A8QscYolruZhE2dAy {}
+csl_rtc 0CxfpbQfmX4bR6mA6aarL3 {'fastsinger': {'exit': 0, 'seconds': 150.9}, 'soulx': {'exit': [0, 0], 'seconds': 231.7}}
+csl_rtc 1oWX2EGO7Z8YCZ5jJuGrpM {'fastsinger': {'exit': 0, 'seconds': 59.4}, 'soulx': {'exit': [0, 0], 'seconds': 113.4}}
+csl_rtc 28IzuspwIj6C8XAOoIJ1Wp {'fastsinger': {'exit': 0, 'seconds': 61.0}, 'soulx': {'exit': [0, 0], 'seconds': 82.9}}
+csl_rtc 2r6PR48twaBEyqvTggRzZa {'fastsinger': {'exit': 0, 'seconds': 61.6}, 'soulx': {'exit': [0, 0], 'seconds': 87.30000000000001}}
+csl_rtc 3JjXD9DVfxh001wI5IACZ1 {'fastsinger': {'exit': 0, 'seconds': 42.7}, 'soulx': {'exit': [0, 0], 'seconds': 75.0}}
+csl_rtc 47ZxPbe5sBnGaQanA7sQDq {'fastsinger': {'exit': 0, 'seconds': 53.6}, 'soulx': {'exit': [0, 0], 'seconds': 134.6}}
+csl_rtc 4VEbbZeJwrlqRBTTscq3m2 {'fastsinger': {'exit': 0, 'seconds': 78.0}, 'soulx': {'exit': [0, 0], 'seconds': 96.6}}
+csl_rtc 59E7BFFni2GTDisijRqKU7 {'fastsinger': {'exit': 0, 'seconds': 60.0}, 'soulx': {'exit': [0, 0], 'seconds': 108.5}}
+csl_rtc 5gIW9IMReT6xicyfHKtcug {'fastsinger': {'exit': 0, 'seconds': 78.6}, 'soulx': {'exit': [0, 0], 'seconds': 100.1}}
+csl_rtc 5zpJSe86hLBaTpd6ZW3TFB {'fastsinger': {'exit': 0, 'seconds': 55.0}, 'soulx': {'exit': [0, 0], 'seconds': 92.6}}
+csl_rtc 6TCciGLZyMSTZDJDmrdVSI {'fastsinger': {'exit': 0, 'seconds': 51.8}, 'soulx': {'exit': [0, 0], 'seconds': 92.0}}
+csl_rtc 7ya27A8QscYolruZhE2dAy {'fastsinger': {'exit': 0, 'seconds': 55.2}, 'soulx': {'exit': [0, 0], 'seconds': 96.3}}
+e3b 0CxfpbQfmX4bR6mA6aarL3 {}
+e3b 1oWX2EGO7Z8YCZ5jJuGrpM {}
+e3b 28IzuspwIj6C8XAOoIJ1Wp {}
+e3b 2r6PR48twaBEyqvTggRzZa {}
+e3b 3JjXD9DVfxh001wI5IACZ1 {}
+e3b 47ZxPbe5sBnGaQanA7sQDq {}
+e3b 4VEbbZeJwrlqRBTTscq3m2 {}
+e3b 59E7BFFni2GTDisijRqKU7 {}
+e3b 5gIW9IMReT6xicyfHKtcug {}
+e3b 5zpJSe86hLBaTpd6ZW3TFB {}
+e3b 6TCciGLZyMSTZDJDmrdVSI {}
+e3b 7ya27A8QscYolruZhE2dAy {}
+mel 0CxfpbQfmX4bR6mA6aarL3 {}
+mel 1oWX2EGO7Z8YCZ5jJuGrpM {}
+mel 28IzuspwIj6C8XAOoIJ1Wp {}
+mel 2r6PR48twaBEyqvTggRzZa {}
+mel 3JjXD9DVfxh001wI5IACZ1 {}
+mel 47ZxPbe5sBnGaQanA7sQDq {}
+mel 4VEbbZeJwrlqRBTTscq3m2 {}
+mel 59E7BFFni2GTDisijRqKU7 {}
+mel 5gIW9IMReT6xicyfHKtcug {}
+mel 5zpJSe86hLBaTpd6ZW3TFB {}
+mel 6TCciGLZyMSTZDJDmrdVSI {}
+mel 7ya27A8QscYolruZhE2dAy {}
+ref 0CxfpbQfmX4bR6mA6aarL3 {}
+ref 1oWX2EGO7Z8YCZ5jJuGrpM {}
+ref 28IzuspwIj6C8XAOoIJ1Wp {}
+ref 2r6PR48twaBEyqvTggRzZa {}
+ref 3JjXD9DVfxh001wI5IACZ1 {}
+ref 47ZxPbe5sBnGaQanA7sQDq {}
+ref 4VEbbZeJwrlqRBTTscq3m2 {}
+ref 59E7BFFni2GTDisijRqKU7 {}
+ref 5gIW9IMReT6xicyfHKtcug {}
+ref 5zpJSe86hLBaTpd6ZW3TFB {}
+ref 6TCciGLZyMSTZDJDmrdVSI {}
+ref 7ya27A8QscYolruZhE2dAy {}
+RENDER_SVS_DONE
+end=2026-09-29T12:36:38-07:00 GPU_OK

@@ -1,0 +1,49 @@
+job=40767872 array=40767871_0 host=g3120 gpu=NVIDIA L40S start=2026-09-27T04:57:22-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.chord_gen --harmonizer chord --melodies ref:S1 --chord-seeds S1,S2,S3,S4 --shard $SHARD --num-shards $NSHARDS && python -m paper_eval.component_sota.chord_gen --harmonizer chord --melodies e3b:S1 --chord-seeds S1 --shard $SHARD --num-shards $NSHARDS
+tasks 900 shard 452 todo 452
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:  10%|▉         | 32/321 [00:00<00:01, 269.71it/s]Loading weights:  18%|█▊        | 59/321 [00:00<00:01, 174.49it/s]Loading weights:  25%|██▍       | 79/321 [00:00<00:01, 151.87it/s]Loading weights:  50%|████▉     | 160/321 [00:00<00:00, 329.63it/s]Loading weights:  72%|███████▏  | 231/321 [00:00<00:00, 410.48it/s]Loading weights:  93%|█████████▎| 298/321 [00:00<00:00, 477.73it/s]Loading weights: 100%|██████████| 321/321 [00:00<00:00, 369.46it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/29] 40.31s
+[2/29] 39.9s
+[3/29] 39.51s
+[4/29] 43.26s
+[5/29] 32.63s
+[6/29] 39.64s
+[7/29] 44.26s
+[8/29] 69.63s
+[9/29] 38.78s
+[10/29] 40.73s
+[11/29] 48.29s
+[12/29] 37.33s
+[13/29] 64.52s
+[14/29] 49.16s
+[15/29] 40.71s
+[16/29] 43.63s
+[17/29] 38.86s
+[18/29] 44.78s
+[19/29] 59.19s
+[20/29] 58.34s
+[21/29] 50.36s
+[22/29] 61.87s
+[23/29] 69.39s
+[24/29] 62.95s
+[25/29] 51.39s
+[26/29] 58.43s
+[27/29] 45.0s
+[28/29] 54.1s
+[29/29] 39.67s
+CHORD_GEN_DONE
+tasks 225 shard 113 todo 113
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights: 100%|██████████| 321/321 [00:00<00:00, 28393.08it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/8] 41.99s
+[2/8] 43.71s
+[3/8] 74.53s
+[4/8] 62.71s
+[5/8] 56.8s
+[6/8] 47.54s
+[7/8] 60.53s
+[8/8] 29.97s
+CHORD_GEN_DONE
+end=2026-09-27T05:30:36-07:00 GPU_OK

@@ -1,0 +1,6 @@
+job=40758518 host=n3232 start=2026-09-27T03:50:17-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.csl_l2m build-data
+train {'songs': 10243, 'kept': 9681, 'not_4_4': 562, 'no_notes': 0, 'too_many_lines': 0}
+validation {'songs': 273, 'kept': 260, 'not_4_4': 13, 'no_notes': 0, 'too_many_lines': 0}
+test {'songs': 225, 'kept': 211, 'not_4_4': 14, 'no_notes': 0, 'too_many_lines': 0}
+CSL_DATA_OK 3867
+end=2026-09-27T03:52:05-07:00 CPU_OK

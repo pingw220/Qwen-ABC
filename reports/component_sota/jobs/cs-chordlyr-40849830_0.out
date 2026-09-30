@@ -1,0 +1,36 @@
+job=40849842 array=40849830_0 host=g3103 gpu=NVIDIA L40S start=2026-09-29T10:14:56-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.chord_gen --harmonizer chord_lyr --melodies ref:S1 --chord-seeds S1,S2,S3,S4 --shard $SHARD --num-shards $NSHARDS
+tasks 900 shard 452 todo 452
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   1%|          | 2/321 [00:00<00:38,  8.23it/s]Loading weights:  10%|▉         | 31/321 [00:00<00:08, 34.45it/s]Loading weights:  11%|█         | 34/321 [00:01<00:11, 25.37it/s]Loading weights:  11%|█         | 36/321 [00:01<00:15, 18.04it/s]Loading weights:  17%|█▋        | 54/321 [00:01<00:07, 34.40it/s]Loading weights:  20%|█▉        | 63/321 [00:02<00:06, 37.84it/s]Loading weights:  26%|██▌       | 83/321 [00:02<00:03, 61.74it/s]Loading weights:  34%|███▍      | 110/321 [00:02<00:03, 60.54it/s]Loading weights:  50%|█████     | 162/321 [00:02<00:01, 120.00it/s]Loading weights:  57%|█████▋    | 183/321 [00:02<00:01, 103.75it/s]Loading weights:  67%|██████▋   | 214/321 [00:03<00:00, 118.56it/s]Loading weights:  88%|████████▊ | 282/321 [00:03<00:00, 139.09it/s]Loading weights:  93%|█████████▎| 299/321 [00:03<00:00, 118.17it/s]Loading weights: 100%|██████████| 321/321 [00:03<00:00, 83.41it/s] 
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/29] 37.22s
+[2/29] 24.73s
+[3/29] 25.35s
+[4/29] 27.6s
+[5/29] 23.01s
+[6/29] 22.92s
+[7/29] 27.66s
+[8/29] 50.02s
+[9/29] 25.92s
+[10/29] 27.88s
+[11/29] 33.71s
+[12/29] 23.98s
+[13/29] 44.38s
+[14/29] 29.92s
+[15/29] 26.02s
+[16/29] 28.37s
+[17/29] 24.46s
+[18/29] 29.45s
+[19/29] 41.49s
+[20/29] 42.41s
+[21/29] 31.92s
+[22/29] 36.04s
+[23/29] 48.41s
+[24/29] 36.14s
+[25/29] 40.4s
+[26/29] 35.47s
+[27/29] 34.71s
+[28/29] 35.38s
+[29/29] 24.65s
+CHORD_GEN_DONE
+end=2026-09-29T10:34:42-07:00 GPU_OK

@@ -1,0 +1,619 @@
+job=40851491 host=g3113 start=2026-09-29T11:12:22-07:00 list=/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/lists/mix_1.txt mode=mix n=276
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/09d4jeFypKBWzZVfHKBeVY__am2/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/09d4jeFypKBWzZVfHKBeVY__qwen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/09d4jeFypKBWzZVfHKBeVY__ref/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0A4ehMRLl7v8TFyhSbdkh8__am2/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0A4ehMRLl7v8TFyhSbdkh8__qwen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0A4ehMRLl7v8TFyhSbdkh8__ref/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__am2/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__qwen/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__ref/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0exfMqddpIIZQbZZny68Rc__am2/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0exfMqddpIIZQbZZny68Rc__qwen/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0exfMqddpIIZQbZZny68Rc__ref/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__am2/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__qwen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__ref/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__am2/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__qwen/mix.wav F# minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__ref/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/255drLOJ94rmt1SDRj6H3N__am2/mix.wav E minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/255drLOJ94rmt1SDRj6H3N__qwen/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/255drLOJ94rmt1SDRj6H3N__ref/mix.wav E minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/27o7ErWiozSj47o3dnPvVf__am2/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/27o7ErWiozSj47o3dnPvVf__qwen/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/27o7ErWiozSj47o3dnPvVf__ref/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__am2/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__qwen/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__ref/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__am2/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__qwen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__ref/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2gDzOOf3ElxOa1v6g0Xk7M__am2/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2gDzOOf3ElxOa1v6g0Xk7M__qwen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2gDzOOf3ElxOa1v6g0Xk7M__ref/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2r6PR48twaBEyqvTggRzZa__am2/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2r6PR48twaBEyqvTggRzZa__qwen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2r6PR48twaBEyqvTggRzZa__ref/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2vnn9onO7sQBevG0O2iPHi__am2/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2vnn9onO7sQBevG0O2iPHi__qwen/mix.wav D minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2vnn9onO7sQBevG0O2iPHi__ref/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__am2/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__qwen/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__ref/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__am2/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__qwen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__ref/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__am2/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__qwen/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__ref/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4218Xav4mopAXlguvSJ9Uv__am2/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4218Xav4mopAXlguvSJ9Uv__qwen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4218Xav4mopAXlguvSJ9Uv__ref/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__am2/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__qwen/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__ref/mix.wav Db minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4Cvd1vwstGUZTdnL6X35md__am2/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4Cvd1vwstGUZTdnL6X35md__qwen/mix.wav D minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4Cvd1vwstGUZTdnL6X35md__ref/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4KnaiD9UY8fAhM1GrM9M8m__am2/mix.wav F# minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4KnaiD9UY8fAhM1GrM9M8m__qwen/mix.wav F# minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4KnaiD9UY8fAhM1GrM9M8m__ref/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__am2/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__qwen/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__ref/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VfHbfbzNPZmX5KI4iAOyT__am2/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VfHbfbzNPZmX5KI4iAOyT__qwen/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VfHbfbzNPZmX5KI4iAOyT__ref/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4gXVhPeuxE9ojFL0Ose0vA__am2/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4gXVhPeuxE9ojFL0Ose0vA__qwen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4gXVhPeuxE9ojFL0Ose0vA__ref/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__am2/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__qwen/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__ref/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__am2/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__qwen/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__ref/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__am2/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__qwen/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__ref/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__am2/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__qwen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__ref/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5icriKgD89JhLxeSnd9o74__am2/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5icriKgD89JhLxeSnd9o74__qwen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5icriKgD89JhLxeSnd9o74__ref/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5ojQLq8MsewWoGbVQEBd8f__am2/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5ojQLq8MsewWoGbVQEBd8f__qwen/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5ojQLq8MsewWoGbVQEBd8f__ref/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5zpJSe86hLBaTpd6ZW3TFB__am2/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5zpJSe86hLBaTpd6ZW3TFB__qwen/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5zpJSe86hLBaTpd6ZW3TFB__ref/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6I3A7q18EJgbdZf2Zx1wxm__am2/mix.wav Eb minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6I3A7q18EJgbdZf2Zx1wxm__qwen/mix.wav Eb minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6I3A7q18EJgbdZf2Zx1wxm__ref/mix.wav Eb minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__am2/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__qwen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__ref/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6TCciGLZyMSTZDJDmrdVSI__am2/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6TCciGLZyMSTZDJDmrdVSI__qwen/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6TCciGLZyMSTZDJDmrdVSI__ref/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7omMiE6h9Js24Cr22A0Fbv__am2/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7omMiE6h9Js24Cr22A0Fbv__qwen/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7omMiE6h9Js24Cr22A0Fbv__ref/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7v46DZBqB4xmaTHRygC8gy__am2/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7v46DZBqB4xmaTHRygC8gy__qwen/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7v46DZBqB4xmaTHRygC8gy__ref/mix.wav E minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__am2/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__qwen/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__ref/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__draft/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__key_gen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__key_transpose/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__tempo_direct/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__tempo_gen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__draft/mix.wav C minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__key_gen/mix.wav D minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__key_transpose/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__tempo_direct/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__tempo_gen/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__draft/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__key_gen/mix.wav G minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__key_transpose/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__tempo_direct/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__tempo_gen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__draft/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__key_gen/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__key_transpose/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__tempo_direct/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__tempo_gen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__draft/mix.wav D minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__key_gen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__key_transpose/mix.wav G minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__tempo_direct/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__tempo_gen/mix.wav D minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__draft/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__key_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__key_transpose/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__tempo_direct/mix.wav Db minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__tempo_gen/mix.wav Db minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__draft/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__key_gen/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__key_transpose/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__tempo_direct/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__tempo_gen/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__draft/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__key_gen/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__key_transpose/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__tempo_direct/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__tempo_gen/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__draft/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__key_gen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__key_transpose/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__tempo_direct/mix.wav F# major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__tempo_gen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__draft/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__key_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__key_transpose/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__tempo_direct/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__tempo_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__draft/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__key_gen/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__key_transpose/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__tempo_direct/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__tempo_gen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__draft/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__key_transpose/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__tempo_direct/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__tempo_gen/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__draft/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__key_gen/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__key_transpose/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__tempo_direct/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__tempo_gen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__draft/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__key_gen/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__key_transpose/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__tempo_direct/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__tempo_gen/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__draft/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__key_gen/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__tempo_direct/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__tempo_gen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__draft/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__key_gen/mix.wav E minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__key_transpose/mix.wav E minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__tempo_direct/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__tempo_gen/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__draft/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__key_gen/mix.wav C minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__key_transpose/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__tempo_direct/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__tempo_gen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__draft/mix.wav B minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__key_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__key_transpose/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__tempo_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__draft/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__key_gen/mix.wav G minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__key_transpose/mix.wav D minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__tempo_direct/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__tempo_gen/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__draft/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__key_gen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__key_transpose/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__tempo_direct/mix.wav F# minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__tempo_gen/mix.wav F# minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__draft/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__key_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__key_transpose/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__tempo_direct/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__draft/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__key_gen/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__key_transpose/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__tempo_direct/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__tempo_gen/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__draft/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__key_gen/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__key_transpose/mix.wav Eb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__tempo_direct/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__tempo_gen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__draft/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__key_gen/mix.wav Bb minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__key_transpose/mix.wav Bb minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__tempo_direct/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__tempo_gen/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__key_gen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__key_transpose/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__tempo_direct/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__tempo_gen/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__draft/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__key_gen/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__key_transpose/mix.wav Db major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__tempo_direct/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__tempo_gen/mix.wav Ab major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__draft/mix.wav E minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__key_gen/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__key_transpose/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__tempo_direct/mix.wav E minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__tempo_gen/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__draft/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__key_transpose/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__tempo_direct/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__tempo_gen/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__draft/mix.wav C minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__key_gen/mix.wav Bb minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__key_transpose/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__tempo_direct/mix.wav C minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__tempo_gen/mix.wav F minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__draft/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__key_gen/mix.wav E major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__tempo_direct/mix.wav F# minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__tempo_gen/mix.wav Ab minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__draft/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__key_gen/mix.wav Ab minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__tempo_direct/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__tempo_gen/mix.wav B major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__draft/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__key_gen/mix.wav G minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__key_transpose/mix.wav G minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__tempo_direct/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__tempo_gen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__draft/mix.wav D minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__key_gen/mix.wav D major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__key_transpose/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__tempo_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7omMiE6h9Js24Cr22A0Fbv__key_gen/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7omMiE6h9Js24Cr22A0Fbv__key_transpose/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7omMiE6h9Js24Cr22A0Fbv__tempo_gen/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__draft/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__key_gen/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__key_transpose/mix.wav Bb major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__tempo_direct/mix.wav F major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__tempo_gen/mix.wav A minor
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__draft/mix.wav G major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__key_gen/mix.wav A major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__key_transpose/mix.wav C major
+key /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__tempo_direct/mix.wav G major
+/gscratch/ark/pingw220/miniconda3/envs/beatbk-beatnet/lib/python3.10/site-packages/BeatNet/BeatNet.py:77: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model.load_state_dict(torch.load(os.path.join(script_dir, 'models/model_1_weights.pt')), strict=False)
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/09d4jeFypKBWzZVfHKBeVY__am2/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/09d4jeFypKBWzZVfHKBeVY__qwen/mix.wav 149
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/09d4jeFypKBWzZVfHKBeVY__ref/mix.wav 148
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0A4ehMRLl7v8TFyhSbdkh8__am2/mix.wav 201
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0A4ehMRLl7v8TFyhSbdkh8__qwen/mix.wav 201
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0A4ehMRLl7v8TFyhSbdkh8__ref/mix.wav 204
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__am2/mix.wav 157
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__qwen/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0CxfpbQfmX4bR6mA6aarL3__ref/mix.wav 158
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0exfMqddpIIZQbZZny68Rc__am2/mix.wav 204
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0exfMqddpIIZQbZZny68Rc__qwen/mix.wav 202
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/0exfMqddpIIZQbZZny68Rc__ref/mix.wav 208
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__am2/mix.wav 121
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__qwen/mix.wav 119
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1heBg3CKPc4qVUXzVO49I2__ref/mix.wav 119
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__am2/mix.wav 114
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__qwen/mix.wav 114
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/1oWX2EGO7Z8YCZ5jJuGrpM__ref/mix.wav 110
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/255drLOJ94rmt1SDRj6H3N__am2/mix.wav 225
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/255drLOJ94rmt1SDRj6H3N__qwen/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/255drLOJ94rmt1SDRj6H3N__ref/mix.wav 113
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/27o7ErWiozSj47o3dnPvVf__am2/mix.wav 209
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/27o7ErWiozSj47o3dnPvVf__qwen/mix.wav 105
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/27o7ErWiozSj47o3dnPvVf__ref/mix.wav 209
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__am2/mix.wav 241
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__qwen/mix.wav 235
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/28IzuspwIj6C8XAOoIJ1Wp__ref/mix.wav 234
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__am2/mix.wav 144
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__qwen/mix.wav 174
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2YSqK9S0SZjulBJdc9BYuu__ref/mix.wav 171
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2gDzOOf3ElxOa1v6g0Xk7M__am2/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2gDzOOf3ElxOa1v6g0Xk7M__qwen/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2gDzOOf3ElxOa1v6g0Xk7M__ref/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2r6PR48twaBEyqvTggRzZa__am2/mix.wav 141
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2r6PR48twaBEyqvTggRzZa__qwen/mix.wav 138
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2r6PR48twaBEyqvTggRzZa__ref/mix.wav 137
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2vnn9onO7sQBevG0O2iPHi__am2/mix.wav 149
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2vnn9onO7sQBevG0O2iPHi__qwen/mix.wav 147
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/2vnn9onO7sQBevG0O2iPHi__ref/mix.wav 145
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__am2/mix.wav 129
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__qwen/mix.wav 126
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/32fzm1b8Ivyyj9qKXjiMZw__ref/mix.wav 126
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__am2/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__qwen/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3JjXD9DVfxh001wI5IACZ1__ref/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__am2/mix.wav 154
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__qwen/mix.wav 148
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/3im9iOhpZNgaTS4VGYOGF9__ref/mix.wav 150
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4218Xav4mopAXlguvSJ9Uv__am2/mix.wav 201
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4218Xav4mopAXlguvSJ9Uv__qwen/mix.wav 197
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4218Xav4mopAXlguvSJ9Uv__ref/mix.wav 197
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__am2/mix.wav 145
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__qwen/mix.wav 145
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/47ZxPbe5sBnGaQanA7sQDq__ref/mix.wav 147
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4Cvd1vwstGUZTdnL6X35md__am2/mix.wav 129
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4Cvd1vwstGUZTdnL6X35md__qwen/mix.wav 129
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4Cvd1vwstGUZTdnL6X35md__ref/mix.wav 127
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4KnaiD9UY8fAhM1GrM9M8m__am2/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4KnaiD9UY8fAhM1GrM9M8m__qwen/mix.wav 157
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4KnaiD9UY8fAhM1GrM9M8m__ref/mix.wav 155
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__am2/mix.wav 203
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__qwen/mix.wav 215
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VEbbZeJwrlqRBTTscq3m2__ref/mix.wav 109
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VfHbfbzNPZmX5KI4iAOyT__am2/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VfHbfbzNPZmX5KI4iAOyT__qwen/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4VfHbfbzNPZmX5KI4iAOyT__ref/mix.wav 151
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4gXVhPeuxE9ojFL0Ose0vA__am2/mix.wav 102
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4gXVhPeuxE9ojFL0Ose0vA__qwen/mix.wav 103
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/4gXVhPeuxE9ojFL0Ose0vA__ref/mix.wav 119
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__am2/mix.wav 181
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__qwen/mix.wav 185
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/59E7BFFni2GTDisijRqKU7__ref/mix.wav 181
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__am2/mix.wav 169
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__qwen/mix.wav 169
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5K8AQ2dBiXolebEfawTrzv__ref/mix.wav 169
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__am2/mix.wav 170
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__qwen/mix.wav 141
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5LlXalu5DZuQl7Q9CmNKp0__ref/mix.wav 215
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__am2/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__qwen/mix.wav 207
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5gIW9IMReT6xicyfHKtcug__ref/mix.wav 206
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5icriKgD89JhLxeSnd9o74__am2/mix.wav 113
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5icriKgD89JhLxeSnd9o74__qwen/mix.wav 113
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5icriKgD89JhLxeSnd9o74__ref/mix.wav 229
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5ojQLq8MsewWoGbVQEBd8f__am2/mix.wav 152
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5ojQLq8MsewWoGbVQEBd8f__qwen/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5ojQLq8MsewWoGbVQEBd8f__ref/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5zpJSe86hLBaTpd6ZW3TFB__am2/mix.wav 149
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5zpJSe86hLBaTpd6ZW3TFB__qwen/mix.wav 146
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/5zpJSe86hLBaTpd6ZW3TFB__ref/mix.wav 146
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6I3A7q18EJgbdZf2Zx1wxm__am2/mix.wav 121
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6I3A7q18EJgbdZf2Zx1wxm__qwen/mix.wav 120
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6I3A7q18EJgbdZf2Zx1wxm__ref/mix.wav 119
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__am2/mix.wav 144
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__qwen/mix.wav 143
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6NqPOID1RsXpj7IAEsgd2v__ref/mix.wav 141
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6TCciGLZyMSTZDJDmrdVSI__am2/mix.wav 210
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6TCciGLZyMSTZDJDmrdVSI__qwen/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/6TCciGLZyMSTZDJDmrdVSI__ref/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7omMiE6h9Js24Cr22A0Fbv__am2/mix.wav 197
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7omMiE6h9Js24Cr22A0Fbv__qwen/mix.wav 197
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7omMiE6h9Js24Cr22A0Fbv__ref/mix.wav 201
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7v46DZBqB4xmaTHRygC8gy__am2/mix.wav 200
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7v46DZBqB4xmaTHRygC8gy__qwen/mix.wav 194
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7v46DZBqB4xmaTHRygC8gy__ref/mix.wav 194
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__am2/mix.wav 173
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__qwen/mix.wav 189
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render/7ya27A8QscYolruZhE2dAy__ref/mix.wav 173
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__draft/mix.wav 152
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__key_gen/mix.wav 152
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__key_transpose/mix.wav 150
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__tempo_direct/mix.wav 190
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/09d4jeFypKBWzZVfHKBeVY__tempo_gen/mix.wav 186
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__draft/mix.wav 199
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__key_gen/mix.wav 188
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__key_transpose/mix.wav 200
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__tempo_direct/mix.wav 247
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0A4ehMRLl7v8TFyhSbdkh8__tempo_gen/mix.wav 253
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__draft/mix.wav 157
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__key_gen/mix.wav 157
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__key_transpose/mix.wav 155
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__tempo_direct/mix.wav 197
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0CxfpbQfmX4bR6mA6aarL3__tempo_gen/mix.wav 197
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__draft/mix.wav 203
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__key_gen/mix.wav 204
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__key_transpose/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__tempo_direct/mix.wav 257
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/0exfMqddpIIZQbZZny68Rc__tempo_gen/mix.wav 254
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__draft/mix.wav 120
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__key_gen/mix.wav 118
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__key_transpose/mix.wav 119
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__tempo_direct/mix.wav 148
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1heBg3CKPc4qVUXzVO49I2__tempo_gen/mix.wav 147
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__draft/mix.wav 113
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__key_gen/mix.wav 110
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__key_transpose/mix.wav 114
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__tempo_direct/mix.wav 134
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/1oWX2EGO7Z8YCZ5jJuGrpM__tempo_gen/mix.wav 136
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__draft/mix.wav 227
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__key_gen/mix.wav 113
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__key_transpose/mix.wav 150
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__tempo_direct/mix.wav 232
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/255drLOJ94rmt1SDRj6H3N__tempo_gen/mix.wav 141
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__draft/mix.wav 105
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__key_gen/mix.wav 209
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__key_transpose/mix.wav 105
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__tempo_direct/mix.wav 137
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/27o7ErWiozSj47o3dnPvVf__tempo_gen/mix.wav 135
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__draft/mix.wav 226
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__key_gen/mix.wav 234
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__key_transpose/mix.wav 235
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__tempo_direct/mix.wav 147
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/28IzuspwIj6C8XAOoIJ1Wp__tempo_gen/mix.wav 146
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__draft/mix.wav 126
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__key_gen/mix.wav 126
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__key_transpose/mix.wav 178
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__tempo_direct/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2YSqK9S0SZjulBJdc9BYuu__tempo_gen/mix.wav 156
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__draft/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__key_gen/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__key_transpose/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__tempo_direct/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2gDzOOf3ElxOa1v6g0Xk7M__tempo_gen/mix.wav 207
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__draft/mix.wav 138
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__key_transpose/mix.wav 137
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__tempo_direct/mix.wav 173
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2r6PR48twaBEyqvTggRzZa__tempo_gen/mix.wav 173
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__draft/mix.wav 146
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__key_gen/mix.wav 145
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__key_transpose/mix.wav 145
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__tempo_direct/mix.wav 188
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/2vnn9onO7sQBevG0O2iPHi__tempo_gen/mix.wav 184
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__draft/mix.wav 129
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__key_gen/mix.wav 126
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__key_transpose/mix.wav 130
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__tempo_direct/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/32fzm1b8Ivyyj9qKXjiMZw__tempo_gen/mix.wav 151
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__draft/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__key_gen/mix.wav 169
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__tempo_direct/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3JjXD9DVfxh001wI5IACZ1__tempo_gen/mix.wav 209
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__draft/mix.wav 149
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__key_gen/mix.wav 151
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__key_transpose/mix.wav 150
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__tempo_direct/mix.wav 195
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/3im9iOhpZNgaTS4VGYOGF9__tempo_gen/mix.wav 191
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__draft/mix.wav 198
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__key_gen/mix.wav 203
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__key_transpose/mix.wav 198
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__tempo_direct/mix.wav 242
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4218Xav4mopAXlguvSJ9Uv__tempo_gen/mix.wav 222
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__draft/mix.wav 145
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__key_gen/mix.wav 144
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__key_transpose/mix.wav 145
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/47ZxPbe5sBnGaQanA7sQDq__tempo_gen/mix.wav 178
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__draft/mix.wav 126
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__key_gen/mix.wav 127
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__key_transpose/mix.wav 126
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__tempo_direct/mix.wav 160
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4Cvd1vwstGUZTdnL6X35md__tempo_gen/mix.wav 161
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__draft/mix.wav 152
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__key_gen/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__key_transpose/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__tempo_direct/mix.wav 189
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4KnaiD9UY8fAhM1GrM9M8m__tempo_gen/mix.wav 190
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__draft/mix.wav 106
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__key_gen/mix.wav 109
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__key_transpose/mix.wav 107
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VEbbZeJwrlqRBTTscq3m2__tempo_direct/mix.wav 133
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__draft/mix.wav 149
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__key_gen/mix.wav 151
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__key_transpose/mix.wav 152
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__tempo_direct/mix.wav 191
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4VfHbfbzNPZmX5KI4iAOyT__tempo_gen/mix.wav 191
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__draft/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__key_gen/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__key_transpose/mix.wav 205
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__tempo_direct/mix.wav 130
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/4gXVhPeuxE9ojFL0Ose0vA__tempo_gen/mix.wav 129
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__draft/mix.wav 183
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__key_gen/mix.wav 181
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__key_transpose/mix.wav 181
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__tempo_direct/mix.wav 209
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/59E7BFFni2GTDisijRqKU7__tempo_gen/mix.wav 115
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__key_gen/mix.wav 170
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__key_transpose/mix.wav 169
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__tempo_direct/mix.wav 215
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5K8AQ2dBiXolebEfawTrzv__tempo_gen/mix.wav 149
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__draft/mix.wav 150
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__key_gen/mix.wav 175
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__key_transpose/mix.wav 107
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__tempo_direct/mix.wav 135
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5LlXalu5DZuQl7Q9CmNKp0__tempo_gen/mix.wav 137
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__draft/mix.wav 202
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__key_gen/mix.wav 207
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__key_transpose/mix.wav 201
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__tempo_direct/mix.wav 124
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5gIW9IMReT6xicyfHKtcug__tempo_gen/mix.wav 129
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__draft/mix.wav 224
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__key_transpose/mix.wav 112
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__tempo_direct/mix.wav 192
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5icriKgD89JhLxeSnd9o74__tempo_gen/mix.wav 139
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__draft/mix.wav 152
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__key_gen/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__key_transpose/mix.wav 153
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__tempo_direct/mix.wav 187
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5ojQLq8MsewWoGbVQEBd8f__tempo_gen/mix.wav 191
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__draft/mix.wav 146
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__key_gen/mix.wav 143
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__tempo_direct/mix.wav 187
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/5zpJSe86hLBaTpd6ZW3TFB__tempo_gen/mix.wav 188
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__draft/mix.wav 117
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__key_gen/mix.wav 253
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__tempo_direct/mix.wav 149
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6I3A7q18EJgbdZf2Zx1wxm__tempo_gen/mix.wav 166
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__draft/mix.wav 142
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__key_gen/mix.wav 141
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__key_transpose/mix.wav 140
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__tempo_direct/mix.wav 92
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6NqPOID1RsXpj7IAEsgd2v__tempo_gen/mix.wav 89
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__draft/mix.wav 206
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__key_gen/mix.wav 204
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__key_transpose/mix.wav 204
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/6TCciGLZyMSTZDJDmrdVSI__tempo_gen/mix.wav 254
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7omMiE6h9Js24Cr22A0Fbv__key_gen/mix.wav 196
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7omMiE6h9Js24Cr22A0Fbv__key_transpose/mix.wav 198
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7omMiE6h9Js24Cr22A0Fbv__tempo_gen/mix.wav 257
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__draft/mix.wav 196
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__key_gen/mix.wav 191
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__key_transpose/mix.wav 192
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__tempo_direct/mix.wav 121
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7v46DZBqB4xmaTHRygC8gy__tempo_gen/mix.wav 236
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__draft/mix.wav 173
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__key_gen/mix.wav 173
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__key_transpose/mix.wav 173
+beats /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/control/render/7ya27A8QscYolruZhE2dAy__tempo_direct/mix.wav 112
+/gscratch/ark/pingw220/miniconda3/envs/sheetsagepp-btc/lib/python3.10/site-packages/pretty_midi/instrument.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+I BTC-ISMIR19 09-29 11:24:04.707 test.py:29] label type: large voca
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/BTC-ISMIR19/test.py", line 35, in <module>
+    model = BTC_model(config=config.model).to(device)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/BTC-ISMIR19/btc_model.py", line 158, in __init__
+    self.self_attn_layers = bi_directional_self_attention_layers(*params)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/BTC-ISMIR19/btc_model.py", line 106, in __init__
+    self.timing_signal = _gen_timing_signal(max_length, hidden_size)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/BTC-ISMIR19/utils/transformer_modules.py", line 30, in _gen_timing_signal
+    np.arange(num_timescales).astype(np.float) * -log_timescale_increment)
+  File "/gscratch/ark/pingw220/miniconda3/envs/sheetsagepp-btc/lib/python3.10/site-packages/numpy/__init__.py", line 324, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations. Did you mean: 'cfloat'?
+/gscratch/ark/pingw220/miniconda3/envs/audio_eval/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+input filelst: /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/lists/mix_1.txt..songeval.json.todo
+  0%|          | 0/276 [00:00<?, ?it/s]  0%|          | 1/276 [01:15<5:47:01, 75.72s/it]  1%|          | 2/276 [01:16<2:25:48, 31.93s/it]  1%|          | 3/276 [01:17<1:19:46, 17.53s/it]  1%|▏         | 4/276 [01:17<49:01, 10.82s/it]    2%|▏         | 5/276 [01:18<31:47,  7.04s/it]  2%|▏         | 6/276 [01:18<21:33,  4.79s/it]  3%|▎         | 7/276 [01:19<15:16,  3.41s/it]  3%|▎         | 8/276 [01:19<10:58,  2.46s/it]  3%|▎         | 9/276 [01:20<08:06,  1.82s/it]  4%|▎         | 10/276 [01:20<06:07,  1.38s/it]  4%|▍         | 11/276 [01:20<04:41,  1.06s/it]  4%|▍         | 12/276 [01:21<04:03,  1.08it/s]  5%|▍         | 13/276 [01:21<03:27,  1.27it/s]  5%|▌         | 14/276 [01:22<02:56,  1.48it/s]  5%|▌         | 15/276 [01:22<02:29,  1.75it/s]  6%|▌         | 16/276 [01:23<02:14,  1.93it/s]  6%|▌         | 17/276 [01:23<02:01,  2.13it/s]  7%|▋         | 18/276 [01:23<02:04,  2.07it/s]  7%|▋         | 19/276 [01:24<01:55,  2.23it/s]  7%|▋         | 20/276 [01:24<01:44,  2.45it/s]  8%|▊         | 21/276 [01:24<01:40,  2.53it/s]  8%|▊         | 22/276 [01:25<01:44,  2.42it/s]  8%|▊         | 23/276 [01:25<01:52,  2.26it/s]  9%|▊         | 24/276 [01:26<01:49,  2.31it/s]  9%|▉         | 25/276 [01:26<01:49,  2.29it/s]  9%|▉         | 26/276 [01:27<01:43,  2.41it/s] 10%|▉         | 27/276 [01:27<01:40,  2.47it/s] 10%|█         | 28/276 [01:27<01:44,  2.38it/s] 11%|█         | 29/276 [01:28<01:38,  2.51it/s] 11%|█         | 30/276 [01:29<02:02,  2.00it/s] 11%|█         | 31/276 [01:29<01:51,  2.19it/s] 12%|█▏        | 32/276 [01:29<01:45,  2.32it/s] 12%|█▏        | 33/276 [01:30<01:46,  2.27it/s] 12%|█▏        | 34/276 [01:30<01:46,  2.27it/s] 13%|█▎        | 35/276 [01:31<01:57,  2.04it/s] 13%|█▎        | 36/276 [01:31<01:47,  2.24it/s] 13%|█▎        | 37/276 [01:32<01:40,  2.38it/s] 14%|█▍        | 38/276 [01:32<01:56,  2.04it/s] 14%|█▍        | 39/276 [01:33<01:47,  2.20it/s] 14%|█▍        | 40/276 [01:33<01:49,  2.16it/s] 15%|█▍        | 41/276 [01:33<01:40,  2.35it/s] 15%|█▌        | 42/276 [01:34<02:02,  1.91it/s] 16%|█▌        | 43/276 [01:35<02:09,  1.81it/s] 16%|█▌        | 44/276 [01:35<02:00,  1.93it/s] 16%|█▋        | 45/276 [01:36<01:48,  2.12it/s] 17%|█▋        | 46/276 [01:36<01:42,  2.23it/s] 17%|█▋        | 47/276 [01:36<01:34,  2.41it/s] 17%|█▋        | 48/276 [01:37<01:28,  2.57it/s] 18%|█▊        | 49/276 [01:37<01:26,  2.64it/s] 18%|█▊        | 50/276 [01:37<01:23,  2.71it/s] 18%|█▊        | 51/276 [01:38<01:25,  2.64it/s] 19%|█▉        | 52/276 [01:38<01:33,  2.40it/s] 19%|█▉        | 53/276 [01:39<02:21,  1.57it/s] 20%|█▉        | 54/276 [01:40<02:04,  1.78it/s] 20%|█▉        | 55/276 [01:40<01:52,  1.96it/s] 20%|██        | 56/276 [01:40<01:39,  2.22it/s] 21%|██        | 57/276 [01:41<01:32,  2.37it/s] 21%|██        | 58/276 [01:41<01:37,  2.23it/s] 21%|██▏       | 59/276 [01:42<01:38,  2.20it/s] 22%|██▏       | 60/276 [01:42<01:44,  2.07it/s] 22%|██▏       | 61/276 [01:43<01:38,  2.18it/s] 22%|██▏       | 62/276 [01:43<01:46,  2.01it/s] 23%|██▎       | 63/276 [01:44<01:35,  2.23it/s] 23%|██▎       | 64/276 [01:44<01:29,  2.37it/s] 24%|██▎       | 65/276 [01:44<01:25,  2.46it/s] 24%|██▍       | 66/276 [01:45<01:28,  2.37it/s] 24%|██▍       | 67/276 [01:45<01:25,  2.45it/s] 25%|██▍       | 68/276 [01:46<01:23,  2.49it/s] 25%|██▌       | 69/276 [01:46<01:26,  2.39it/s] 25%|██▌       | 70/276 [01:46<01:28,  2.34it/s] 26%|██▌       | 71/276 [01:47<01:26,  2.37it/s] 26%|██▌       | 72/276 [01:47<01:26,  2.37it/s] 26%|██▋       | 73/276 [01:48<01:35,  2.12it/s] 27%|██▋       | 74/276 [01:48<01:35,  2.13it/s] 27%|██▋       | 75/276 [01:49<01:29,  2.24it/s] 28%|██▊       | 76/276 [01:49<01:26,  2.32it/s] 28%|██▊       | 77/276 [01:50<01:31,  2.18it/s] 28%|██▊       | 78/276 [01:50<01:34,  2.09it/s] 29%|██▊       | 79/276 [01:51<01:26,  2.27it/s] 29%|██▉       | 80/276 [01:51<01:22,  2.38it/s] 29%|██▉       | 81/276 [01:51<01:16,  2.56it/s] 30%|██▉       | 82/276 [01:52<01:17,  2.52it/s] 30%|███       | 83/276 [01:52<01:22,  2.33it/s] 30%|███       | 84/276 [01:53<01:21,  2.35it/s] 31%|███       | 85/276 [01:53<01:15,  2.54it/s] 31%|███       | 86/276 [01:53<01:16,  2.49it/s] 32%|███▏      | 87/276 [01:54<01:12,  2.62it/s] 32%|███▏      | 88/276 [01:54<01:09,  2.69it/s] 32%|███▏      | 89/276 [01:54<01:11,  2.61it/s] 33%|███▎      | 90/276 [01:55<01:24,  2.19it/s] 33%|███▎      | 91/276 [01:56<01:26,  2.13it/s] 33%|███▎      | 92/276 [01:56<01:34,  1.94it/s] 34%|███▎      | 93/276 [01:57<01:28,  2.07it/s] 34%|███▍      | 94/276 [01:57<01:29,  2.03it/s] 34%|███▍      | 95/276 [01:57<01:23,  2.17it/s] 35%|███▍      | 96/276 [01:58<01:17,  2.34it/s] 35%|███▌      | 97/276 [01:59<01:32,  1.93it/s] 36%|███▌      | 98/276 [01:59<01:24,  2.11it/s] 36%|███▌      | 99/276 [01:59<01:21,  2.18it/s] 36%|███▌      | 100/276 [02:00<01:17,  2.29it/s] 37%|███▋      | 101/276 [02:00<01:13,  2.39it/s] 37%|███▋      | 102/276 [02:01<01:12,  2.39it/s] 37%|███▋      | 103/276 [02:02<01:59,  1.45it/s] 38%|███▊      | 104/276 [02:02<01:45,  1.63it/s] 38%|███▊      | 105/276 [02:03<01:30,  1.88it/s] 38%|███▊      | 106/276 [02:03<01:21,  2.08it/s] 39%|███▉      | 107/276 [02:03<01:19,  2.12it/s] 39%|███▉      | 108/276 [02:04<01:15,  2.23it/s] 39%|███▉      | 109/276 [02:04<01:12,  2.29it/s] 40%|███▉      | 110/276 [02:05<01:11,  2.31it/s] 40%|████      | 111/276 [02:05<01:06,  2.48it/s] 41%|████      | 112/276 [02:05<01:03,  2.58it/s] 41%|████      | 113/276 [02:06<01:17,  2.10it/s] 41%|████▏     | 114/276 [02:07<01:20,  2.02it/s] 42%|████▏     | 115/276 [02:07<01:17,  2.07it/s] 42%|████▏     | 116/276 [02:07<01:14,  2.16it/s] 42%|████▏     | 117/276 [02:08<01:07,  2.36it/s] 43%|████▎     | 118/276 [02:08<01:01,  2.56it/s] 43%|████▎     | 119/276 [02:09<01:01,  2.54it/s] 43%|████▎     | 120/276 [02:09<00:58,  2.69it/s] 44%|████▍     | 121/276 [02:09<00:58,  2.63it/s] 44%|████▍     | 122/276 [02:10<00:55,  2.76it/s] 45%|████▍     | 123/276 [02:10<00:56,  2.73it/s] 45%|████▍     | 124/276 [02:11<01:10,  2.15it/s] 45%|████▌     | 125/276 [02:11<01:09,  2.16it/s] 46%|████▌     | 126/276 [02:12<01:09,  2.16it/s] 46%|████▌     | 127/276 [02:12<01:03,  2.36it/s] 46%|████▋     | 128/276 [02:12<01:04,  2.31it/s] 47%|████▋     | 129/276 [02:13<01:00,  2.42it/s] 47%|████▋     | 130/276 [02:13<00:59,  2.46it/s] 47%|████▋     | 131/276 [02:14<01:03,  2.30it/s] 48%|████▊     | 132/276 [02:14<01:10,  2.03it/s] 48%|████▊     | 133/276 [02:15<01:02,  2.29it/s] 49%|████▊     | 134/276 [02:15<01:01,  2.29it/s] 49%|████▉     | 135/276 [02:15<00:59,  2.36it/s] 49%|████▉     | 136/276 [02:16<01:00,  2.32it/s] 50%|████▉     | 137/276 [02:16<00:57,  2.41it/s] 50%|█████     | 138/276 [02:17<00:53,  2.56it/s] 50%|█████     | 139/276 [02:17<00:52,  2.59it/s] 51%|█████     | 140/276 [02:17<00:53,  2.52it/s] 51%|█████     | 141/276 [02:18<00:52,  2.55it/s] 51%|█████▏    | 142/276 [02:18<00:51,  2.61it/s] 52%|█████▏    | 143/276 [02:19<00:55,  2.41it/s] 52%|█████▏    | 144/276 [02:19<00:55,  2.40it/s] 53%|█████▎    | 145/276 [02:19<00:54,  2.40it/s] 53%|█████▎    | 146/276 [02:20<00:55,  2.36it/s] 53%|█████▎    | 147/276 [02:20<00:52,  2.45it/s] 54%|█████▎    | 148/276 [02:21<00:54,  2.34it/s] 54%|█████▍    | 149/276 [02:21<00:55,  2.31it/s] 54%|█████▍    | 150/276 [02:21<00:52,  2.42it/s] 55%|█████▍    | 151/276 [02:22<00:52,  2.39it/s] 55%|█████▌    | 152/276 [02:22<00:51,  2.42it/s] 55%|█████▌    | 153/276 [02:23<00:48,  2.51it/s] 56%|█████▌    | 154/276 [02:23<00:49,  2.48it/s] 56%|█████▌    | 155/276 [02:23<00:47,  2.56it/s] 57%|█████▋    | 156/276 [02:24<00:47,  2.53it/s] 57%|█████▋    | 157/276 [02:24<00:45,  2.61it/s] 57%|█████▋    | 158/276 [02:25<00:49,  2.37it/s] 58%|█████▊    | 159/276 [02:25<00:49,  2.34it/s] 58%|█████▊    | 160/276 [02:26<00:51,  2.27it/s] 58%|█████▊    | 161/276 [02:26<00:46,  2.47it/s] 59%|█████▊    | 162/276 [02:26<00:44,  2.57it/s] 59%|█████▉    | 163/276 [02:27<00:46,  2.41it/s] 59%|█████▉    | 164/276 [02:27<00:43,  2.58it/s] 60%|█████▉    | 165/276 [02:27<00:41,  2.66it/s] 60%|██████    | 166/276 [02:28<00:42,  2.56it/s] 61%|██████    | 167/276 [02:28<00:44,  2.47it/s] 61%|██████    | 168/276 [02:29<00:49,  2.19it/s] 61%|██████    | 169/276 [02:29<00:46,  2.31it/s] 62%|██████▏   | 170/276 [02:30<00:45,  2.35it/s] 62%|██████▏   | 171/276 [02:30<00:48,  2.16it/s] 62%|██████▏   | 172/276 [02:31<00:53,  1.93it/s] 63%|██████▎   | 173/276 [02:32<01:00,  1.71it/s] 63%|██████▎   | 174/276 [02:32<00:53,  1.90it/s] 63%|██████▎   | 175/276 [02:32<00:51,  1.94it/s] 64%|██████▍   | 176/276 [02:33<00:46,  2.15it/s] 64%|██████▍   | 177/276 [02:33<00:43,  2.26it/s] 64%|██████▍   | 178/276 [02:34<00:45,  2.17it/s] 65%|██████▍   | 179/276 [02:34<00:45,  2.14it/s] 65%|██████▌   | 180/276 [02:35<00:41,  2.33it/s] 66%|██████▌   | 181/276 [02:35<00:40,  2.32it/s] 66%|██████▌   | 182/276 [02:35<00:39,  2.36it/s] 66%|██████▋   | 183/276 [02:36<00:37,  2.49it/s] 67%|██████▋   | 184/276 [02:36<00:35,  2.60it/s] 67%|██████▋   | 185/276 [02:37<00:36,  2.51it/s] 67%|██████▋   | 186/276 [02:37<00:35,  2.54it/s] 68%|██████▊   | 187/276 [02:37<00:35,  2.53it/s] 68%|██████▊   | 188/276 [02:38<00:53,  1.64it/s] 68%|██████▊   | 189/276 [02:39<00:46,  1.87it/s] 69%|██████▉   | 190/276 [02:39<00:47,  1.82it/s] 69%|██████▉   | 191/276 [02:40<00:43,  1.96it/s] 70%|██████▉   | 192/276 [02:40<00:40,  2.08it/s] 70%|██████▉   | 193/276 [02:41<00:48,  1.72it/s] 70%|███████   | 194/276 [02:41<00:41,  1.98it/s] 71%|███████   | 195/276 [02:42<00:39,  2.06it/s] 71%|███████   | 196/276 [02:42<00:40,  1.96it/s] 71%|███████▏  | 197/276 [02:43<00:39,  2.01it/s] 72%|███████▏  | 198/276 [02:43<00:36,  2.16it/s] 72%|███████▏  | 199/276 [02:44<00:33,  2.33it/s] 72%|███████▏  | 200/276 [02:44<00:31,  2.42it/s] 73%|███████▎  | 201/276 [02:44<00:30,  2.47it/s] 73%|███████▎  | 202/276 [02:45<00:30,  2.44it/s] 74%|███████▎  | 203/276 [02:45<00:28,  2.56it/s] 74%|███████▍  | 204/276 [02:45<00:27,  2.66it/s] 74%|███████▍  | 205/276 [02:46<00:25,  2.80it/s] 75%|███████▍  | 206/276 [02:47<00:34,  2.00it/s] 75%|███████▌  | 207/276 [02:47<00:31,  2.19it/s] 75%|███████▌  | 208/276 [02:47<00:28,  2.38it/s] 76%|███████▌  | 209/276 [02:48<00:32,  2.09it/s] 76%|███████▌  | 210/276 [02:48<00:29,  2.23it/s] 76%|███████▋  | 211/276 [02:49<00:28,  2.31it/s] 77%|███████▋  | 212/276 [02:49<00:27,  2.37it/s] 77%|███████▋  | 213/276 [02:50<00:31,  1.99it/s] 78%|███████▊  | 214/276 [02:50<00:29,  2.12it/s] 78%|███████▊  | 215/276 [02:51<00:33,  1.80it/s] 78%|███████▊  | 216/276 [02:51<00:29,  2.05it/s] 79%|███████▊  | 217/276 [02:52<00:26,  2.20it/s] 79%|███████▉  | 218/276 [02:52<00:30,  1.93it/s] 79%|███████▉  | 219/276 [02:53<00:27,  2.06it/s] 80%|███████▉  | 220/276 [02:53<00:26,  2.08it/s] 80%|████████  | 221/276 [02:54<00:24,  2.25it/s] 80%|████████  | 222/276 [02:54<00:23,  2.25it/s] 81%|████████  | 223/276 [02:55<00:26,  2.01it/s] 81%|████████  | 224/276 [02:55<00:26,  1.97it/s] 82%|████████▏ | 225/276 [02:56<00:26,  1.95it/s] 82%|████████▏ | 226/276 [02:56<00:25,  2.00it/s] 82%|████████▏ | 227/276 [02:57<00:27,  1.79it/s] 83%|████████▎ | 228/276 [02:57<00:25,  1.85it/s] 83%|████████▎ | 229/276 [02:58<00:23,  1.98it/s] 83%|████████▎ | 230/276 [02:58<00:21,  2.10it/s] 84%|████████▎ | 231/276 [02:58<00:20,  2.24it/s] 84%|████████▍ | 232/276 [02:59<00:22,  1.99it/s] 84%|████████▍ | 233/276 [03:00<00:21,  2.04it/s] 85%|████████▍ | 234/276 [03:00<00:19,  2.18it/s] 85%|████████▌ | 235/276 [03:01<00:19,  2.07it/s] 86%|████████▌ | 236/276 [03:01<00:18,  2.17it/s] 86%|████████▌ | 237/276 [03:02<00:22,  1.75it/s] 86%|████████▌ | 238/276 [03:02<00:21,  1.77it/s] 87%|████████▋ | 239/276 [03:03<00:19,  1.94it/s] 87%|████████▋ | 240/276 [03:03<00:16,  2.12it/s] 87%|████████▋ | 241/276 [03:04<00:17,  2.05it/s] 88%|████████▊ | 242/276 [03:04<00:17,  1.99it/s] 88%|████████▊ | 243/276 [03:04<00:15,  2.16it/s] 88%|████████▊ | 244/276 [03:05<00:13,  2.39it/s] 89%|████████▉ | 245/276 [03:05<00:12,  2.51it/s] 89%|████████▉ | 246/276 [03:06<00:13,  2.30it/s] 89%|████████▉ | 247/276 [03:06<00:11,  2.44it/s] 90%|████████▉ | 248/276 [03:06<00:10,  2.59it/s] 90%|█████████ | 249/276 [03:07<00:12,  2.20it/s] 91%|█████████ | 250/276 [03:07<00:11,  2.36it/s] 91%|█████████ | 251/276 [03:08<00:09,  2.50it/s] 91%|█████████▏| 252/276 [03:08<00:10,  2.38it/s] 92%|█████████▏| 253/276 [03:10<00:17,  1.30it/s] 92%|█████████▏| 254/276 [03:10<00:15,  1.43it/s] 92%|█████████▏| 255/276 [03:11<00:13,  1.51it/s] 93%|█████████▎| 256/276 [03:11<00:11,  1.72it/s] 93%|█████████▎| 257/276 [03:12<00:09,  1.96it/s] 93%|█████████▎| 258/276 [03:12<00:08,  2.11it/s] 94%|█████████▍| 259/276 [03:12<00:07,  2.28it/s] 94%|█████████▍| 260/276 [03:13<00:06,  2.41it/s] 95%|█████████▍| 261/276 [03:13<00:06,  2.37it/s] 95%|█████████▍| 262/276 [03:14<00:06,  2.14it/s] 95%|█████████▌| 263/276 [03:15<00:09,  1.43it/s] 96%|█████████▌| 264/276 [03:15<00:07,  1.59it/s] 96%|█████████▌| 265/276 [03:16<00:06,  1.68it/s] 96%|█████████▋| 266/276 [03:16<00:05,  1.89it/s] 97%|█████████▋| 267/276 [03:17<00:05,  1.77it/s] 97%|█████████▋| 268/276 [03:17<00:04,  1.78it/s] 97%|█████████▋| 269/276 [03:18<00:03,  2.01it/s] 98%|█████████▊| 270/276 [03:18<00:02,  2.17it/s] 98%|█████████▊| 271/276 [03:19<00:02,  1.80it/s] 99%|█████████▊| 272/276 [03:19<00:01,  2.04it/s] 99%|█████████▉| 273/276 [03:20<00:01,  2.13it/s] 99%|█████████▉| 274/276 [03:20<00:00,  2.06it/s]100%|█████████▉| 275/276 [03:21<00:00,  2.25it/s]100%|██████████| 276/276 [03:21<00:00,  2.15it/s]100%|██████████| 276/276 [03:21<00:00,  1.37it/s]
+/gscratch/ark/pingw220/miniconda3/envs/music-rl/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/gscratch/ark/pingw220/miniconda3/envs/music-rl/lib/python3.10/site-packages/torch/nn/functional.py:5962: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/gscratch/ark/pingw220/miniconda3/envs/music-rl/lib/python3.10/site-packages/torch/nn/functional.py:5962: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+aes 0
+aes 8
+aes 16
+aes 24
+aes 32
+aes 40
+aes 48
+aes 56
+aes 64
+aes 72
+aes 80
+aes 88
+aes 96
+aes 104
+aes 112
+aes 120
+aes 128
+aes 136
+aes 144
+aes 152
+aes 160
+aes 168
+aes 176
+aes 184
+aes 192
+aes 200
+aes 208
+aes 216
+aes 224
+aes 232
+aes 240
+aes 248
+aes 256
+aes 264
+aes 272
+end=2026-09-29T11:37:03-07:00 AUDIO_TOOLS_OK

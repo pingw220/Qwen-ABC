@@ -1,0 +1,15 @@
+job=40767705 array=40763562_4 host=g3102 gpu=NVIDIA L40S start=2026-09-27T04:45:20-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.audio render-svs --shard $SHARD --num-shards $NSHARDS
+e3b 1heBg3CKPc4qVUXzVO49I2 {'fastsinger': {'exit': 0, 'seconds': 128.2}, 'soulx': {'exit': [0, 0], 'seconds': 176.10000000000002}}
+e3b 2gDzOOf3ElxOa1v6g0Xk7M {'fastsinger': {'exit': 0, 'seconds': 54.4}, 'soulx': {'exit': [0, 0], 'seconds': 87.3}}
+e3b 4218Xav4mopAXlguvSJ9Uv {'fastsinger': {'exit': 0, 'seconds': 18.2}, 'soulx': {'exit': [0, 0], 'seconds': 87.6}}
+e3b 4gXVhPeuxE9ojFL0Ose0vA {'fastsinger': {'exit': 0, 'seconds': 49.6}, 'soulx': {'exit': [0, 0], 'seconds': 72.2}}
+e3b 5ojQLq8MsewWoGbVQEBd8f {'fastsinger': {'exit': 0, 'seconds': 52.6}, 'soulx': {'exit': [0, 0], 'seconds': 92.19999999999999}}
+e3b 7v46DZBqB4xmaTHRygC8gy {'fastsinger': {'exit': 0, 'seconds': 53.7}, 'soulx': {'exit': [0, 1], 'seconds': 37.3}}
+ref 1heBg3CKPc4qVUXzVO49I2 {'fastsinger': {'exit': 0, 'seconds': 53.6}, 'soulx': {'exit': [0, 0], 'seconds': 99.9}}
+ref 2gDzOOf3ElxOa1v6g0Xk7M {'fastsinger': {'exit': 0, 'seconds': 22.1}, 'soulx': {'exit': [0, 0], 'seconds': 82.89999999999999}}
+ref 4218Xav4mopAXlguvSJ9Uv {'fastsinger': {'exit': 0, 'seconds': 52.5}, 'soulx': {'exit': [0, 0], 'seconds': 86.10000000000001}}
+ref 4gXVhPeuxE9ojFL0Ose0vA {'fastsinger': {'exit': 0, 'seconds': 53.1}, 'soulx': {'exit': [0, 0], 'seconds': 89.9}}
+ref 5ojQLq8MsewWoGbVQEBd8f {'fastsinger': {'exit': 0, 'seconds': 51.8}, 'soulx': {'exit': [0, 0], 'seconds': 96.4}}
+ref 7v46DZBqB4xmaTHRygC8gy {'fastsinger': {'exit': 0, 'seconds': 52.9}, 'soulx': {'exit': [0, 1], 'seconds': 43.5}}
+RENDER_SVS_DONE
+end=2026-09-27T05:13:46-07:00 GPU_OK

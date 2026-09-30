@@ -1,0 +1,204 @@
+job_id,job_name,model,experiment,partition,gpu_type,gpu_count,start,end,wall_time,est_gpu_hours,state
+40756637,cs-build-mel,mel,build mel ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:38:51,2026-09-27T03:42:22,00:03:31,0.0,COMPLETED
+40756638,cs-build-chord,chord,build chord ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:38:51,2026-09-27T03:38:54,00:00:03,0.0,FAILED
+40756639,cs-build-chord_lyr,chord,build chord_lyr ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:38:51,2026-09-27T03:38:54,00:00:03,0.0,FAILED
+40756693,cs-build-chord,chord,build chord (retry: off-beat chord format) ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:40:55,2026-09-27T03:43:23,00:02:28,0.0,COMPLETED
+40756694,cs-build-chord_lyr,chord,build chord_lyr (retry: off-beat chord format) ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:40:55,2026-09-27T03:43:25,00:02:30,0.0,COMPLETED
+40757597,cs-smoke-csl,csl,--job-name=cs-smoke-csl --time=01:00:00 scripts/component_sota/gpu.sbatch,gpu-l40s,l40s,1,2026-09-27T03:46:59,2026-09-27T03:48:40,00:01:41,0.028,COMPLETED
+40757598,cs-csl-data,csl,--job-name=cs-csl-data scripts/component_sota/cpu.sbatch,ckpt-all,none,0,2026-09-27T03:47:08,2026-09-27T03:47:09,00:00:01,0.0,FAILED
+40757618,cs-train-mel,mel,--job-name=cs-train-mel scripts/component_sota/train.sbatch,gpu-l40s,l40s,2,2026-09-27T03:47:08,2026-09-27T05:47:22,02:00:14,4.008,COMPLETED
+40757619,cs-train-chord,chord,--job-name=cs-train-chord scripts/component_sota/train.sbatch,gpu-l40s,l40s,2,2026-09-27T03:47:29,2026-09-27T04:56:04,01:08:35,2.286,COMPLETED
+40757670,cs-train-chord_lyr,chord,--job-name=cs-train-chord_lyr scripts/component_sota/train.sbatch,gpu-l40s,l40s,2,2026-09-27T03:47:29,2026-09-27T05:10:52,01:23:23,2.779,COMPLETED
+40758347_0,cs-csl-off,csl,--job-name=cs-csl-off -p gpu-l40 -A gpu-l40-ark --array=0-3 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T03:49:55,2026-09-27T04:08:17,00:18:22,0.306,CANCELLED by 1316827
+40758347_1,cs-csl-off,csl,--job-name=cs-csl-off -p gpu-l40 -A gpu-l40-ark --array=0-3 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T03:50:15,2026-09-27T04:08:17,00:18:02,0.301,CANCELLED by 1316827
+40758347_2,cs-csl-off,csl,--job-name=cs-csl-off -p gpu-l40 -A gpu-l40-ark --array=0-3 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T03:50:15,2026-09-27T04:08:17,00:18:02,0.301,CANCELLED by 1316827
+40758347_3,cs-csl-off,csl,--job-name=cs-csl-off -p gpu-l40 -A gpu-l40-ark --array=0-3 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T03:50:15,2026-09-27T04:08:17,00:18:02,0.301,CANCELLED by 1316827
+40758518,cs-csl-data,csl,csl build-data retry (duration snapping),ckpt-all,none,0,2026-09-27T03:50:16,2026-09-27T03:52:05,00:01:49,0.0,COMPLETED
+40759641,cs-smoke-am2,am2,am2 smoke,ckpt-all,none,0,2026-09-27T03:54:28,2026-09-27T03:55:48,00:01:20,0.0,COMPLETED
+40759956,cs-am2-ref,am2,am2 ref shard 0/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:00:56,00:04:54,0.0,COMPLETED
+40759957,cs-am2-ref,am2,am2 ref shard 1/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:01:08,00:05:06,0.0,COMPLETED
+40759958,cs-am2-ref,am2,am2 ref shard 2/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:01:12,00:05:10,0.0,COMPLETED
+40759959,cs-am2-ref,am2,am2 ref shard 3/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:01:16,00:05:14,0.0,COMPLETED
+40759960,cs-am2-ref,am2,am2 ref shard 4/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:00:49,00:04:47,0.0,COMPLETED
+40759961,cs-am2-ref,am2,am2 ref shard 5/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:00:44,00:04:42,0.0,COMPLETED
+40759962,cs-am2-ref,am2,am2 ref shard 6/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:00:51,00:04:49,0.0,COMPLETED
+40759963,cs-am2-ref,am2,am2 ref shard 7/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:01:03,00:05:01,0.0,COMPLETED
+40759964,cs-am2-ref,am2,am2 ref shard 8/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:00:41,00:04:39,0.0,COMPLETED
+40759965,cs-am2-ref,am2,am2 ref shard 9/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T03:59:59,00:03:57,0.0,COMPLETED
+40759966,cs-am2-ref,am2,am2 ref shard 10/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:00:56,00:04:54,0.0,COMPLETED
+40759967,cs-am2-ref,am2,am2 ref shard 11/12 ckpt-all CPU,ckpt-all,none,0,2026-09-27T03:56:02,2026-09-27T04:00:40,00:04:38,0.0,COMPLETED
+40760069,cs-csl-train,csl,"CSL-L2M retrain (upstream trainer, our split) gpu-l40s",gpu-l40s,l40s,1,2026-09-27T03:56:13,2026-09-27T04:10:57,00:14:44,0.246,FAILED
+40761542_0,cs-infill,infill,infill generation E3b 3 shards gpu-l40,gpu-l40,l40,1,2026-09-27T04:01:18,2026-09-27T04:13:03,00:11:45,0.196,COMPLETED
+40761542_1,cs-infill,infill,infill generation E3b 3 shards gpu-l40,gpu-l40,l40,1,2026-09-27T04:01:32,2026-09-27T04:13:18,00:11:46,0.196,COMPLETED
+40761542_2,cs-infill,infill,infill generation E3b 3 shards gpu-l40,gpu-l40,l40,1,2026-09-27T04:01:32,2026-09-27T04:12:36,00:11:04,0.184,COMPLETED
+40762495,cs-smoke-svs,svs,svs smoke,gpu-l40,l40,1,2026-09-27T04:05:28,2026-09-27T04:12:39,00:07:11,0.12,COMPLETED
+40763056_0,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:08:32,2026-09-27T04:46:35,00:38:03,0.634,COMPLETED
+40763056_1,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:08:32,2026-09-27T04:44:28,00:35:56,0.599,COMPLETED
+40763056_2,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:08:32,2026-09-27T04:41:57,00:33:25,0.557,COMPLETED
+40763056_3,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:08:32,2026-09-27T05:00:23,00:51:51,0.864,COMPLETED
+40763056_4,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:12:50,2026-09-27T04:52:23,00:39:33,0.659,COMPLETED
+40763056_5,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:12:50,2026-09-27T05:05:01,00:52:11,0.87,COMPLETED
+40763056_6,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:13:20,2026-09-27T04:45:27,00:32:07,0.535,COMPLETED
+40763056_7,cs-csl-off2,csl,--job-name=cs-csl-off2 -p gpu-l40 -A gpu-l40-ark --array=0-7 --time=08:00:00 scripts/component_sota/gpu.sbatch,gpu-l40,l40,1,2026-09-27T04:13:20,2026-09-27T04:52:05,00:38:45,0.646,COMPLETED
+40763057_10,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:13:54,2026-09-27T04:55:30,00:41:36,0.693,COMPLETED
+40763057_11,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:16:32,2026-09-27T04:48:10,00:31:38,0.527,COMPLETED
+40763057_12,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:18:06,2026-09-27T04:54:35,00:36:29,0.608,COMPLETED
+40763057_13,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:20:43,2026-09-27T04:48:46,00:28:03,0.468,COMPLETED
+40763057_14,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:31:41,2026-09-27T05:25:20,00:53:39,0.894,COMPLETED
+40763057_15,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:32:44,2026-09-27T05:15:26,00:42:42,0.712,COMPLETED
+40763057_8,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:10:12,2026-09-27T04:42:18,00:32:06,0.535,COMPLETED
+40763057_9,cs-csl-off2-ck,csl,--job-name=cs-csl-off2-ck -p ckpt-all -A ckpt-ark --gpus=l40s:1 --requeue --array=8-15 --time=08:00:00 scripts/component_sota/gpu.sbatch,ckpt-all,l40s,1,2026-09-27T04:11:16,2026-09-27T04:39:54,00:28:38,0.477,COMPLETED
+40763359,cs-sem,semantics,section semantics CPU,ckpt-all,none,0,2026-09-27T04:09:41,2026-09-27T04:11:11,00:01:30,0.0,COMPLETED
+40763562_0,cs-svs,svs,SVS render ref+e3b 6 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:36:56,2026-09-27T05:02:01,00:25:05,0.418,COMPLETED
+40763562_1,cs-svs,svs,SVS render ref+e3b 6 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:40:04,2026-09-27T05:08:21,00:28:17,0.471,COMPLETED
+40763562_2,cs-svs,svs,SVS render ref+e3b 6 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:42:42,2026-09-27T05:01:55,00:19:13,0.32,COMPLETED
+40763562_3,cs-svs,svs,SVS render ref+e3b 6 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:43:45,2026-09-27T05:04:02,00:20:17,0.338,COMPLETED
+40763562_4,cs-svs,svs,SVS render ref+e3b 6 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:45:19,2026-09-27T05:13:46,00:28:27,0.474,COMPLETED
+40763562_5,cs-svs,svs,SVS render ref+e3b 6 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:48:27,2026-09-27T05:15:25,00:26:58,0.449,COMPLETED
+40763739,cs-smoke-back,backing,backing render smoke,gpu-l40,l40,1,2026-09-27T04:42:10,2026-09-27T04:48:24,00:06:14,0.104,COMPLETED
+40764706,cs-infill-eval,infill,infill eval CPU,ckpt-all,none,0,2026-09-27T04:13:22,2026-09-27T04:15:42,00:02:20,0.0,COMPLETED
+40764810,cs-am2-e3b,am2,am2 e3b shard 0/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:19:35,00:05:41,0.0,COMPLETED
+40764811,cs-am2-e3b,am2,am2 e3b shard 1/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:19:20,00:05:26,0.0,COMPLETED
+40764812,cs-am2-e3b,am2,am2 e3b shard 2/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:53,00:04:59,0.0,COMPLETED
+40764813,cs-am2-e3b,am2,am2 e3b shard 3/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:19:46,00:05:52,0.0,COMPLETED
+40764814,cs-am2-e3b,am2,am2 e3b shard 4/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:47,00:04:53,0.0,COMPLETED
+40764815,cs-am2-e3b,am2,am2 e3b shard 5/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:48,00:04:54,0.0,COMPLETED
+40764816,cs-am2-e3b,am2,am2 e3b shard 6/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:52,00:04:58,0.0,COMPLETED
+40764817,cs-am2-e3b,am2,am2 e3b shard 7/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:19:04,00:05:10,0.0,COMPLETED
+40764818,cs-am2-e3b,am2,am2 e3b shard 8/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:08,00:04:14,0.0,COMPLETED
+40764819,cs-am2-e3b,am2,am2 e3b shard 9/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:39,00:04:45,0.0,COMPLETED
+40764820,cs-am2-e3b,am2,am2 e3b shard 10/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:13,00:04:19,0.0,COMPLETED
+40764821,cs-am2-e3b,am2,am2 e3b shard 11/12 CPU,ckpt-all,none,0,2026-09-27T04:13:54,2026-09-27T04:18:32,00:04:38,0.0,COMPLETED
+40765488,cs-infill-eval,infill,infill eval rerun (label fix),ckpt-all,none,0,2026-09-27T04:17:04,2026-09-27T04:18:09,00:01:05,0.0,COMPLETED
+40765588,cs-csl-train,csl,CSL-L2M retrain restart (val disabled: upstream validate bug),gpu-l40s,l40s,1,2026-09-27T04:17:40,2026-09-27T09:27:09,05:09:29,5.158,COMPLETED
+40765886_0,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:48:59,2026-09-27T05:12:55,00:23:56,0.399,COMPLETED
+40765886_1,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:50:33,2026-09-27T05:11:54,00:21:21,0.356,COMPLETED
+40765886_2,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:54:45,2026-09-27T05:19:10,00:24:25,0.407,COMPLETED
+40765886_3,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:55:48,2026-09-27T05:31:48,00:36:00,0.6,COMPLETED
+40765886_4,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:56:19,2026-09-27T05:20:05,00:23:46,0.396,COMPLETED
+40765886_5,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T04:56:19,2026-09-27T05:19:24,00:23:05,0.385,COMPLETED
+40765886_6,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T05:02:03,2026-09-27T05:24:05,00:22:02,0.367,COMPLETED
+40765886_7,cs-csl-offc,csl,CSL official section-chunked 8 shards ckpt-all,ckpt-all,l40s,1,2026-09-27T05:02:34,2026-09-27T05:27:26,00:24:52,0.414,COMPLETED
+40767871_0,cs-chordgen,chord,qwen chord gen ref x4 + e3b,gpu-l40s,l40s,1,2026-09-27T04:57:21,2026-09-27T05:30:36,00:33:15,0.554,COMPLETED
+40767871_1,cs-chordgen,chord,qwen chord gen ref x4 + e3b,gpu-l40s,l40s,1,2026-09-27T04:57:41,2026-09-27T05:29:22,00:31:41,0.528,COMPLETED
+40849827_0,cs-gen-mel,mel,qwen_mel gen bon+lyrics_all 4 shards l40s,gpu-l40s,l40s,1,2026-09-29T10:14:07,2026-09-29T10:56:39,00:42:32,0.709,COMPLETED
+40849827_1,cs-gen-mel,mel,qwen_mel gen bon+lyrics_all 4 shards l40s,gpu-l40s,l40s,1,2026-09-29T10:14:28,2026-09-29T10:53:34,00:39:06,0.652,COMPLETED
+40849827_2,cs-gen-mel,mel,qwen_mel gen bon+lyrics_all 4 shards l40s,gpu-l40s,l40s,1,2026-09-29T10:14:28,2026-09-29T10:50:22,00:35:54,0.598,COMPLETED
+40849827_3,cs-gen-mel,mel,qwen_mel gen bon+lyrics_all 4 shards l40s,gpu-l40s,l40s,1,2026-09-29T10:14:33,2026-09-29T10:55:46,00:41:13,0.687,COMPLETED
+40849828_0,cs-csl-rtc,csl,CSL retrained chunked 4 shards l40 (experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt),gpu-l40,l40,1,2026-09-29T10:14:28,2026-09-29T10:15:40,00:01:12,0.02,FAILED
+40849828_1,cs-csl-rtc,csl,CSL retrained chunked 4 shards l40 (experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt),gpu-l40,l40,1,2026-09-29T10:14:28,2026-09-29T10:15:40,00:01:12,0.02,FAILED
+40849828_2,cs-csl-rtc,csl,CSL retrained chunked 4 shards l40 (experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt),gpu-l40,l40,1,2026-09-29T10:14:33,2026-09-29T10:15:40,00:01:07,0.019,FAILED
+40849828_3,cs-csl-rtc,csl,CSL retrained chunked 4 shards l40 (experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt),gpu-l40,l40,1,2026-09-29T10:14:56,2026-09-29T10:16:07,00:01:11,0.02,FAILED
+40849829_0,cs-csl-rt,csl,CSL retrained whole-song 4 shards l40,gpu-l40,l40,1,2026-09-29T10:14:56,2026-09-29T10:16:37,00:01:41,0.028,FAILED
+40849829_1,cs-csl-rt,csl,CSL retrained whole-song 4 shards l40,gpu-l40,l40,1,2026-09-29T10:15:00,2026-09-29T10:16:13,00:01:13,0.02,FAILED
+40849829_2,cs-csl-rt,csl,CSL retrained whole-song 4 shards l40,gpu-l40,l40,1,2026-09-29T10:15:15,2026-09-29T10:16:37,00:01:22,0.023,FAILED
+40849829_3,cs-csl-rt,csl,CSL retrained whole-song 4 shards l40,gpu-l40,l40,1,2026-09-29T10:15:15,2026-09-29T10:16:37,00:01:22,0.023,FAILED
+40849830_0,cs-chordlyr,chord,qwen chord_lyr gen ref x4,gpu-l40s,l40s,1,2026-09-29T10:14:56,2026-09-29T10:34:42,00:19:46,0.329,COMPLETED
+40849830_1,cs-chordlyr,chord,qwen chord_lyr gen ref x4,gpu-l40s,l40s,1,2026-09-29T10:15:15,2026-09-29T10:42:59,00:27:44,0.462,COMPLETED
+40849873,cs-audio-tools,svs,audio tools vocal ref+e3b SVS,gpu-l40,l40,1,2026-09-29T10:16:17,2026-09-29T10:28:45,00:12:28,0.208,COMPLETED
+40849888_0,cs-csl-rtc,csl,CSL retrained rtc 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,l40,1,2026-09-29T10:17:29,2026-09-29T10:24:51,00:07:22,0.123,CANCELLED by 1316827
+40849888_1,cs-csl-rtc,csl,CSL retrained rtc 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,l40,1,2026-09-29T10:17:34,2026-09-29T10:24:51,00:07:17,0.121,CANCELLED by 1316827
+40849888_2,cs-csl-rtc,csl,CSL retrained rtc 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,l40,1,2026-09-29T10:17:34,2026-09-29T10:24:51,00:07:17,0.121,CANCELLED by 1316827
+40849888_3,cs-csl-rtc,csl,CSL retrained rtc 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,l40,1,2026-09-29T10:17:50,2026-09-29T10:24:51,00:07:01,0.117,CANCELLED by 1316827
+40849889_0,cs-csl-rt,csl,CSL retrained rt 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,l40,1,2026-09-29T10:17:50,2026-09-29T10:24:51,00:07:01,0.117,CANCELLED by 1316827
+40849889_1,cs-csl-rt,csl,CSL retrained rt 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,l40,1,2026-09-29T10:17:59,2026-09-29T10:24:51,00:06:52,0.114,CANCELLED by 1316827
+40849889_2,cs-csl-rt,csl,CSL retrained rt 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,l40,1,2026-09-29T10:17:59,2026-09-29T10:24:51,00:06:52,0.114,CANCELLED by 1316827
+40849889_[3],cs-csl-rt,csl,CSL retrained rt 4 shards l40 (resubmit: absolute ckpt path),gpu-l40,none,0,None,2026-09-29T10:24:51,00:00:00,0.0,CANCELLED by 1316827
+40850022_0,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:24:57,2026-09-29T11:10:34,00:45:37,0.76,COMPLETED
+40850022_1,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:24:57,2026-09-29T11:12:30,00:47:33,0.792,COMPLETED
+40850022_2,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:25:01,2026-09-29T11:03:06,00:38:05,0.635,COMPLETED
+40850022_3,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:25:01,2026-09-29T11:03:17,00:38:16,0.638,COMPLETED
+40850022_4,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:25:01,2026-09-29T11:40:47,01:15:46,1.263,COMPLETED
+40850022_5,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:25:01,2026-09-29T10:59:25,00:34:24,0.573,COMPLETED
+40850022_6,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:25:01,2026-09-29T11:09:29,00:44:28,0.741,COMPLETED
+40850022_7,cs-backing,backing,backing render shards 0-7/16 gpu-l40,gpu-l40,l40,1,2026-09-29T10:28:55,2026-09-29T11:03:06,00:34:11,0.57,COMPLETED
+40850023_10,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:30:07,2026-09-29T11:09:17,00:39:10,0.653,COMPLETED
+40850023_11,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:30:07,2026-09-29T11:08:30,00:38:23,0.64,COMPLETED
+40850023_12,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:30:07,2026-09-29T11:03:21,00:33:14,0.554,COMPLETED
+40850023_13,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:30:07,2026-09-29T11:08:48,00:38:41,0.645,COMPLETED
+40850023_14,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:31:58,2026-09-29T11:09:04,00:37:06,0.618,COMPLETED
+40850023_15,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:34:50,2026-09-29T11:15:39,00:40:49,0.68,COMPLETED
+40850023_8,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:19:56,2026-09-29T11:04:45,00:44:49,0.747,COMPLETED
+40850023_9,cs-backing-ck,backing,backing render shards 8-15/16 ckpt-all,ckpt-all,l40s,1,2026-09-29T10:22:15,2026-09-29T11:04:20,00:42:05,0.701,COMPLETED
+40850075,cs-listen-render,listening,listening D/E FastSinger renders (54),ckpt-all,l40s,1,2026-09-29T10:37:28,2026-09-29T11:09:29,00:32:01,0.534,COMPLETED
+40850191_0,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:38:00,2026-09-29T11:00:47,00:22:47,0.38,COMPLETED
+40850191_1,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:41:13,2026-09-29T11:12:34,00:31:21,0.522,COMPLETED
+40850191_10,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:52:47,2026-09-29T11:12:15,00:19:28,0.324,COMPLETED
+40850191_11,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:53:19,2026-09-29T11:15:08,00:21:49,0.364,COMPLETED
+40850191_2,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:43:27,2026-09-29T11:12:02,00:28:35,0.476,COMPLETED
+40850191_3,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:45:50,2026-09-29T11:01:49,00:15:59,0.266,COMPLETED
+40850191_4,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:45:50,2026-09-29T11:20:33,00:34:43,0.579,COMPLETED
+40850191_5,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:45:50,2026-09-29T11:17:00,00:31:10,0.519,COMPLETED
+40850191_6,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:48:03,2026-09-29T11:18:04,00:30:01,0.5,COMPLETED
+40850191_7,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:49:38,2026-09-29T11:22:00,00:32:22,0.539,COMPLETED
+40850191_8,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:50:41,2026-09-29T11:13:28,00:22:47,0.38,COMPLETED
+40850191_9,cs-csl-rtc,csl,CSL retrained rtc re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:52:16,2026-09-29T11:20:42,00:28:26,0.474,COMPLETED
+40850193_0,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:34:29,2026-09-29T11:48:46,00:14:17,0.238,COMPLETED
+40850193_1,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:53:50,2026-09-29T11:22:32,00:28:42,0.478,COMPLETED
+40850193_10,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:34:29,2026-09-29T11:42:51,00:08:22,0.139,COMPLETED
+40850193_11,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:08:58,2026-09-29T11:50:35,00:41:37,0.694,COMPLETED
+40850193_2,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:53:50,2026-09-29T11:25:14,00:31:24,0.523,COMPLETED
+40850193_3,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:55:57,2026-09-29T11:28:52,00:32:55,0.549,COMPLETED
+40850193_4,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T10:57:00,2026-09-29T11:27:03,00:30:03,0.501,COMPLETED
+40850193_5,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:00:59,2026-09-29T11:34:07,00:33:08,0.552,COMPLETED
+40850193_6,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:02:17,2026-09-29T11:27:48,00:25:31,0.425,COMPLETED
+40850193_7,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:03:51,2026-09-29T11:34:10,00:30:19,0.505,COMPLETED
+40850193_8,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:04:23,2026-09-29T11:43:54,00:39:31,0.659,COMPLETED
+40850193_9,cs-csl-rt,csl,CSL retrained rt re-sharded 12 ckpt-all (resumes; seeds per song so identical results),ckpt-all,l40s,1,2026-09-29T11:04:55,2026-09-29T11:48:08,00:43:13,0.72,COMPLETED
+40850203,cs-am2-cslc,am2,am2 csl_offc shard 0/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:47,00:04:23,0.0,COMPLETED
+40850204,cs-am2-cslc,am2,am2 csl_offc shard 1/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:50,00:04:26,0.0,COMPLETED
+40850205,cs-am2-cslc,am2,am2 csl_offc shard 2/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:36,00:04:12,0.0,COMPLETED
+40850206,cs-am2-cslc,am2,am2 csl_offc shard 3/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:59,00:04:35,0.0,COMPLETED
+40850207,cs-am2-cslc,am2,am2 csl_offc shard 4/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:20,00:03:56,0.0,COMPLETED
+40850208,cs-am2-cslc,am2,am2 csl_offc shard 5/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:49,00:04:25,0.0,COMPLETED
+40850209,cs-am2-cslc,am2,am2 csl_offc shard 6/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:46,00:04:22,0.0,COMPLETED
+40850210,cs-am2-cslc,am2,am2 csl_offc shard 7/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:30:20,00:04:56,0.0,COMPLETED
+40850211,cs-am2-cslc,am2,am2 csl_offc shard 8/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:41,00:04:17,0.0,COMPLETED
+40850212,cs-am2-cslc,am2,am2 csl_offc shard 9/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:03,00:03:39,0.0,COMPLETED
+40850213,cs-am2-cslc,am2,am2 csl_offc shard 10/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:46,00:04:22,0.0,COMPLETED
+40850214,cs-am2-cslc,am2,am2 csl_offc shard 11/12 CPU,ckpt-all,none,0,2026-09-29T10:25:24,2026-09-29T10:29:50,00:04:26,0.0,COMPLETED
+40850215,cs-chord-cslc,chord,qwen chord gen csl_offc:S1,gpu-l40s,l40s,1,2026-09-29T10:28:32,2026-09-29T10:37:30,00:08:58,0.149,COMPLETED
+40850536,cs-am2-mel,am2,am2 mel shard 0/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:44:34,00:04:24,0.0,COMPLETED
+40850537,cs-am2-mel,am2,am2 mel shard 1/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:44:48,00:04:38,0.0,COMPLETED
+40850538,cs-am2-mel,am2,am2 mel shard 2/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:44:55,00:04:45,0.0,COMPLETED
+40850539,cs-am2-mel,am2,am2 mel shard 3/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:56,00:03:46,0.0,COMPLETED
+40850540,cs-am2-mel,am2,am2 mel shard 4/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:54,00:03:44,0.0,COMPLETED
+40850541,cs-am2-mel,am2,am2 mel shard 5/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:48,00:03:38,0.0,COMPLETED
+40850542,cs-am2-mel,am2,am2 mel shard 6/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:42,00:03:32,0.0,COMPLETED
+40850543,cs-am2-mel,am2,am2 mel shard 7/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:52,00:03:42,0.0,COMPLETED
+40850544,cs-am2-mel,am2,am2 mel shard 8/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:40,00:03:30,0.0,COMPLETED
+40850545,cs-am2-mel,am2,am2 mel shard 9/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:07,00:02:57,0.0,COMPLETED
+40850546,cs-am2-mel,am2,am2 mel shard 10/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:44:10,00:04:00,0.0,COMPLETED
+40850547,cs-am2-mel,am2,am2 mel shard 11/12 CPU,ckpt-all,none,0,2026-09-29T10:40:10,2026-09-29T10:43:27,00:03:17,0.0,COMPLETED
+40850548,cs-chord-mel,chord,qwen chord gen mel:S1,gpu-l40s,l40s,1,2026-09-29T10:40:09,2026-09-29T10:52:40,00:12:31,0.209,COMPLETED
+40850571_0,cs-svs2,svs,SVS render mel+csl_offc (+ref/e3b leftovers) 6 shards ckpt,ckpt-all,l40s,1,2026-09-29T11:09:10,2026-09-29T11:38:36,00:29:26,0.491,COMPLETED
+40850571_1,cs-svs2,svs,SVS render mel+csl_offc (+ref/e3b leftovers) 6 shards ckpt,ckpt-all,l40s,1,2026-09-29T11:09:31,2026-09-29T11:41:44,00:32:13,0.537,COMPLETED
+40850571_2,cs-svs2,svs,SVS render mel+csl_offc (+ref/e3b leftovers) 6 shards ckpt,ckpt-all,l40s,1,2026-09-29T11:09:31,2026-09-29T11:39:21,00:29:50,0.497,COMPLETED
+40850571_3,cs-svs2,svs,SVS render mel+csl_offc (+ref/e3b leftovers) 6 shards ckpt,ckpt-all,l40s,1,2026-09-29T11:12:21,2026-09-29T11:55:52,00:43:31,0.725,COMPLETED
+40850571_4,cs-svs2,svs,SVS render mel+csl_offc (+ref/e3b leftovers) 6 shards ckpt,ckpt-all,l40s,1,2026-09-29T11:12:29,2026-09-29T11:49:03,00:36:34,0.609,COMPLETED
+40850571_5,cs-svs2,svs,SVS render mel+csl_offc (+ref/e3b leftovers) 6 shards ckpt,ckpt-all,l40s,1,2026-09-29T11:13:25,2026-09-29T11:51:49,00:38:24,0.64,COMPLETED
+40851490,cs-audio-tools,audio_tools,audio tools vocal (ASR redo with VAD),ckpt-all,l40s,1,2026-09-29T11:12:21,2026-09-29T11:21:22,00:09:01,0.15,COMPLETED
+40851491,cs-audio-tools,audio_tools,audio tools mix batch 1,ckpt-all,l40s,1,2026-09-29T11:12:21,2026-09-29T11:37:03,00:24:42,0.412,COMPLETED
+40851838,cs-am2-rtc,am2,am2 csl_rtc shard 0/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:07,00:03:51,0.0,COMPLETED
+40851839,cs-am2-rtc,am2,am2 csl_rtc shard 1/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:34:06,00:04:50,0.0,COMPLETED
+40851840,cs-am2-rtc,am2,am2 csl_rtc shard 2/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:28,00:04:12,0.0,COMPLETED
+40851841,cs-am2-rtc,am2,am2 csl_rtc shard 3/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:42,00:04:26,0.0,COMPLETED
+40851842,cs-am2-rtc,am2,am2 csl_rtc shard 4/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:40,00:04:24,0.0,COMPLETED
+40851843,cs-am2-rtc,am2,am2 csl_rtc shard 5/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:34:01,00:04:45,0.0,COMPLETED
+40851844,cs-am2-rtc,am2,am2 csl_rtc shard 6/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:33,00:04:17,0.0,COMPLETED
+40851845,cs-am2-rtc,am2,am2 csl_rtc shard 7/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:42,00:04:26,0.0,COMPLETED
+40851846,cs-am2-rtc,am2,am2 csl_rtc shard 8/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:38,00:04:22,0.0,COMPLETED
+40851847,cs-am2-rtc,am2,am2 csl_rtc shard 9/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:32:04,00:02:48,0.0,COMPLETED
+40851848,cs-am2-rtc,am2,am2 csl_rtc shard 10/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:33:11,00:03:55,0.0,COMPLETED
+40851849,cs-am2-rtc,am2,am2 csl_rtc shard 11/12 CPU,ckpt-all,none,0,2026-09-29T11:29:16,2026-09-29T11:32:42,00:03:26,0.0,COMPLETED
+40851850,cs-chord-rtc,chord,qwen chord gen csl_rtc:S1,gpu-l40s,l40s,1,2026-09-29T11:29:15,2026-09-29T11:40:50,00:11:35,0.193,COMPLETED
+40851862_0,cs-svs3,svs,cancelled (would race svs2); 40851880 SVS render csl_rtc after svs2,ckpt-all,l40s,1,2026-09-29T11:30:10,2026-09-29T11:30:16,00:00:06,0.002,CANCELLED by 1316827
+40851862_[1-2],cs-svs3,svs,cancelled (would race svs2); 40851880 SVS render csl_rtc after svs2,ckpt-all,none,0,None,2026-09-29T11:30:16,00:00:00,0.0,CANCELLED by 1316827
+40851880_0,cs-svs3,svs,SVS render csl_rtc 3 shards ckpt (after svs2; see the 40851862 line),ckpt-all,l40s,1,2026-09-29T11:56:15,2026-09-29T12:46:08,00:49:53,0.831,COMPLETED
+40851880_1,cs-svs3,svs,SVS render csl_rtc 3 shards ckpt (after svs2; see the 40851862 line),ckpt-all,l40s,1,2026-09-29T11:57:56,2026-09-29T12:36:26,00:38:30,0.642,COMPLETED
+40851880_2,cs-svs3,svs,SVS render csl_rtc 3 shards ckpt (after svs2; see the 40851862 line),ckpt-all,l40s,1,2026-09-29T12:01:14,2026-09-29T12:36:38,00:35:24,0.59,COMPLETED
+40852395,cs-audio-tools,audio_tools,audio tools mix batch 2 (BTC via numpy-alias wrapper; after 40851491),ckpt-all,l40s,1,2026-09-29T11:37:09,2026-09-29T11:44:15,00:07:06,0.118,COMPLETED
+40852996,cs-audio-tools,audio_tools,audio tools mix batch 3 (SongEval with unique names; after 40852395),ckpt-all,l40s,1,2026-09-29T11:44:29,2026-09-29T11:50:44,00:06:15,0.104,COMPLETED
+40854140,cs-btc,backing,BTC-only pass on backing mixes (torch weights_only fix),ckpt-all,l40s,1,2026-09-29T11:52:20,2026-09-29T11:57:42,00:05:22,0.089,COMPLETED
+40854918,cs-final-sym,chord,final lyric_conditioning + chord_eval + joint_cascade (login-node run was OOM-killed),ckpt-all,none,0,2026-09-29T12:22:55,2026-09-29T12:41:12,00:18:17,0.0,COMPLETED
+40854947,cs-audio-final,svs,"final audio analysis pass (vocal all sources + last mixes), after svs3",ckpt-all,l40s,1,2026-09-29T12:46:41,2026-09-29T13:05:21,00:18:40,0.311,COMPLETED

@@ -1,0 +1,1501 @@
+job=40851327 array=40850193_10 host=g3100 gpu=NVIDIA L40S start=2026-09-29T11:34:30-07:00 commit=180abc43077c54001e85d23bd9cb76a7b69d556c cmd=$PY -m paper_eval.component_sota.csl_l2m infer --which retrain --ckpt /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt  --shard $SHARD --num-shards $NSHARDS
+csl_rt: tasks 1800 shard 150 todo 46
+/gscratch/ark/pingw220/miniconda3/envs/midi-sag/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/gscratch/ark/pingw220/miniconda3/envs/midi-sag/lib/python3.9/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/csl_l2m.py:189: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sd = torch.load(ckpt, map_location="cpu")
+load: {"missing": [], "unexpected": [], "ckpt": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt", "config": "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/configs/component_sota/csl_l2m_onlylyrics_retrain.yaml"}
+-- generated events: 1022
+-- time elapsed: 5.22 secs
+5bf4zyUkbC7Df7icueGtcR orig S3 ok=True fail=None 5.39s
+-- generated events: 475
+-- time elapsed: 1.85 secs
+5dxFx2Ez14xXuqyOK3Pgxd lyrics_all S3 ok=True fail=None 1.9s
+-- generated events: 1051
+-- time elapsed: 5.41 secs
+5fTRjBPvXscWyOOukAGtW5 orig S3 ok=True fail=None 5.46s
+-- generated events: 850
+-- time elapsed: 3.91 secs
+5gIW9IMReT6xicyfHKtcug lyrics_all S3 ok=True fail=None 3.96s
+-- generated events: 1428
+-- time elapsed: 9.62 secs
+5icriKgD89JhLxeSnd9o74 orig S3 ok=True fail=None 9.68s
+-- generated events: 1514
+-- time elapsed: 10.81 secs
+5igSw7TE7vW1iKMCU9ACMJ lyrics_all S3 ok=True fail=None 10.86s
+-- generated events: 1159
+-- time elapsed: 6.45 secs
+5jwyaHQbtmpEPVmHwq19Fy orig S3 ok=True fail=None 6.5s
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+-- generated events: 992
+-- time elapsed: 4.97 secs
+5kehUJhVBQAMgzY9IQXIOV lyrics_all S3 ok=True fail=None 5.02s
+-- generated events: 1242
+-- time elapsed: 7.33 secs
+5ojQLq8MsewWoGbVQEBd8f orig S3 ok=True fail=None 7.38s
+-- generated events: 1150
+-- time elapsed: 6.39 secs
+5pewA4rsox31wXDX26VMlr lyrics_all S3 ok=True fail=None 6.46s
+-- generated events: 285
+-- time elapsed: 1.08 secs
+5rc5x4FKWvrJb8qxFNp1bO orig S3 ok=True fail=None 1.13s
+-- generated events: 1055
+-- time elapsed: 5.44 secs
+5zpJSe86hLBaTpd6ZW3TFB lyrics_all S3 ok=True fail=None 5.49s
+-- generated events: 1201
+-- time elapsed: 6.90 secs
+64ksmDDLWaiY21WDVXBoYC orig S3 ok=True fail=None 6.95s
+-- generated events: 1724
+-- time elapsed: 14.30 secs
+65qUlixRrzCOI7RIHMZ8b0 lyrics_all S3 ok=True fail=None 14.36s
+-- generated events: 1868
+-- time elapsed: 17.22 secs
+6A4DbuFY7yg40irHQW5VL3 orig S3 ok=True fail=None 17.28s
+-- generated events: 1351
+-- time elapsed: 8.67 secs
+6FmfdFUbG8q6U2KbsNFo3y lyrics_all S3 ok=True fail=None 8.73s
+-- generated events: 1677
+-- time elapsed: 13.50 secs
+6I3A7q18EJgbdZf2Zx1wxm orig S3 ok=True fail=None 13.55s
+-- generated events: 694
+-- time elapsed: 2.98 secs
+6M8dGV2alakIhqDFNFIEfg lyrics_all S3 ok=True fail=None 3.03s
+6NgFmG5lumvnyBEpjye3Rd orig S3 ok=False fail=unsupported_meter 0.0s
+-- generated events: 897
+-- time elapsed: 4.25 secs
+6NqPOID1RsXpj7IAEsgd2v lyrics_all S3 ok=True fail=None 4.3s
+-- generated events: 1351
+-- time elapsed: 8.64 secs
+6URmER9CypxglzgwthpWTU orig S3 ok=True fail=None 8.69s
+6W6bjaq3SpD6OMuxWgPM9X lyrics_all S3 ok=False fail=unsupported_meter 0.0s
+-- generated events: 1000
+-- time elapsed: 5.03 secs
+6XwWuAFFTqL2IoPdeA4iis orig S3 ok=True fail=None 5.08s
+-- generated events: 755
+-- time elapsed: 3.31 secs
+6alSXplRoBcYCNHKqJDWPz lyrics_all S3 ok=True fail=None 3.36s
+-- generated events: 682
+-- time elapsed: 2.87 secs
+6bPSr7yKukRjAGk9cIkJ4J orig S3 ok=True fail=None 2.92s
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+-- generated events: 987
+-- time elapsed: 4.90 secs
+6ceBOPyGnJnumkJ2wOTt7D lyrics_all S3 ok=True fail=None 4.95s
+-- generated events: 1862
+-- time elapsed: 16.89 secs
+6gkCBQjjSFX0UctwaFFdL2 orig S3 ok=True fail=None 16.95s
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+-- generated events: 1991
+-- time elapsed: 19.70 secs
+6i6Lrq6Lkfsjw4WCLOr6zp lyrics_all S3 ok=True fail=None 83.9s
+-- generated events: 1034
+-- time elapsed: 5.30 secs
+6lyPKJbCwZEiOtxwXxTDLD orig S3 ok=True fail=None 5.36s
+-- generated events: 1346
+-- time elapsed: 8.54 secs
+6n5cdQsg6li2aDYUGUiL5l lyrics_all S3 ok=True fail=None 8.59s
+-- generated events: 1009
+-- time elapsed: 5.08 secs
+6ousLSFH3faAPCokCk2gCm orig S3 ok=True fail=None 5.12s
+-- generated events: 1183
+-- time elapsed: 6.69 secs
+6pQe06VbPHfAD9MVV7y7ed lyrics_all S3 ok=True fail=None 6.74s
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+-- generated events: 1100
+-- time elapsed: 5.90 secs
+72HBFpZW26bT1E0POMsQUW orig S3 ok=True fail=None 5.95s
+-- generated events: 1095
+-- time elapsed: 5.81 secs
+72yPhoXJHKpAeCt99RLdK4 lyrics_all S3 ok=True fail=None 5.86s
+-- generated events: 1011
+-- time elapsed: 5.08 secs
+7DWvcbGGWWtk0edvck09X3 orig S3 ok=True fail=None 5.13s
+7DeY1fKszqaJKtXUk1NiiH lyrics_all S3 ok=False fail=unsupported_meter 0.0s
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+-- generated events: 1738
+-- time elapsed: 14.50 secs
+7Ga5M55lfOVkuHxzUgk4ZX orig S3 ok=True fail=None 22.8s
+-- generated events: 1845
+-- time elapsed: 16.53 secs
+7IE2jtO8pkWtcSdj71OnlT lyrics_all S3 ok=True fail=None 16.59s
+-- generated events: 997
+-- time elapsed: 5.01 secs
+7iUYsnszotTdqXyh8tzQlZ orig S3 ok=True fail=None 5.06s
+-- generated events: 1076
+-- time elapsed: 5.61 secs
+7jDM04sebBiBcWysWcvSFx lyrics_all S3 ok=True fail=None 5.66s
+-- generated events: 1350
+-- time elapsed: 8.57 secs
+7omMiE6h9Js24Cr22A0Fbv orig S3 ok=True fail=None 8.63s
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+-- generated events: 1475
+-- time elapsed: 10.30 secs
+7ozbJ4EX6Ps7AqVpZ2sDnT lyrics_all S3 ok=True fail=None 10.35s
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
+-- generated events: 1451
+-- time elapsed: 9.89 secs
+7qDiugtLVz4njwHDGCfdB5 orig S3 ok=True fail=None 37.52s
+-- generated events: 1259
+-- time elapsed: 7.60 secs
+7urNxXDmuL6xVKEOoEY41E lyrics_all S3 ok=True fail=None 7.66s
+-- generated events: 1649
+-- time elapsed: 12.93 secs
+7ya27A8QscYolruZhE2dAy orig S3 ok=True fail=None 12.98s
+-- generated events: 1091
+-- time elapsed: 5.78 secs
+7zvq0c9K75w1mijevp7GPQ lyrics_all S3 ok=True fail=None 5.83s
+CSL_INFER_DONE
+end=2026-09-29T11:42:50-07:00 GPU_OK

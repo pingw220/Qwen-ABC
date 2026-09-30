@@ -1,0 +1,23 @@
+job=40764814 host=n3033 start=2026-09-27T04:13:55-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.accomontage --melodies e3b:S1 --shard 4 --num-shards 12
+tasks 225 shard 19
+0A4ehMRLl7v8TFyhSbdkh8 e3b True None 46.9
+0ccEIUOa32bbAoGaPHGQuX e3b True None 13.9
+1F3t9l7U8CnKmzVyFbR1aG e3b True None 14.1
+1oDW3JIhobplQhuTVBjtcB e3b True None 14.1
+28I269iDvkDyb2Fqo2p1TI e3b True None 14.4
+2alKIQAr2MPs28ZI5AHvJB e3b True None 13.7
+2rwYS769lcaMmFpqzR2bBZ e3b True None 13.7
+3Oljg1NEoLgRgcJnWJpiAT e3b True None 14.0
+3mGw54mWnUpV2wNONvBTJy e3b True None 13.8
+4Aguf5QHJzRN4PcXwFX7X0 e3b True None 13.8
+4VfHbfbzNPZmX5KI4iAOyT e3b True None 13.9
+53a8hVCKsw8NhGxmRH1YeZ e3b True None 14.0
+5Fpa2uQd90iYGAEsbKSSZR e3b True None 14.0
+5fTRjBPvXscWyOOukAGtW5 e3b True None 14.3
+5rc5x4FKWvrJb8qxFNp1bO e3b True None 13.9
+6NgFmG5lumvnyBEpjye3Rd e3b False unsupported_meter None
+6gkCBQjjSFX0UctwaFFdL2 e3b True None 14.0
+7DWvcbGGWWtk0edvck09X3 e3b True None 14.1
+7qDiugtLVz4njwHDGCfdB5 e3b True None 13.8
+AM2_DONE
+end=2026-09-27T04:18:47-07:00 CPU_OK

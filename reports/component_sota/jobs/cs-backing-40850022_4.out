@@ -1,0 +1,21 @@
+job=40850200 array=40850022_4 host=g3090 gpu=NVIDIA L40 start=2026-09-29T10:25:01-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.audio render-backing --shard $SHARD --num-shards $NSHARDS
+0A4ehMRLl7v8TFyhSbdkh8__qwen {'fastsinger': (0, 170.8), 'midi_sag': (0, 387.5)} True
+255drLOJ94rmt1SDRj6H3N__ref {'fastsinger': (0, 92.6), 'midi_sag': (0, 172.6)} True
+2vnn9onO7sQBevG0O2iPHi__am2 {'fastsinger': (0, 59.5), 'midi_sag': (0, 140.7)} True
+47ZxPbe5sBnGaQanA7sQDq__qwen {'fastsinger': (0, 53.9), 'midi_sag': (0, 145.4)} True
+4gXVhPeuxE9ojFL0Ose0vA__ref {'fastsinger': (0, 104.7), 'midi_sag': (0, 251.6)} True
+5ojQLq8MsewWoGbVQEBd8f__am2 {'fastsinger': (0, 91.3), 'midi_sag': (0, 137.1)} True
+7omMiE6h9Js24Cr22A0Fbv__qwen {'fastsinger': (0, 51.3), 'midi_sag': (0, 145.7)} True
+0A4ehMRLl7v8TFyhSbdkh8__tempo_direct {'fastsinger': (0, 59.1), 'midi_sag': (0, 151.9)} True
+1heBg3CKPc4qVUXzVO49I2__tempo_gen {'fastsinger': (0, 100.0), 'midi_sag': (0, 133.9)} True
+28IzuspwIj6C8XAOoIJ1Wp__draft {'fastsinger': (0, 60.5), 'midi_sag': (0, 140.9)} True
+2r6PR48twaBEyqvTggRzZa__key_gen {'fastsinger': (0, 58.3), 'midi_sag': (0, 141.4)} True
+3JjXD9DVfxh001wI5IACZ1__key_transpose {'fastsinger': (0, 61.4), 'midi_sag': (0, 139.9)} True
+47ZxPbe5sBnGaQanA7sQDq__tempo_direct {'fastsinger': (0, 71.5), 'midi_sag': (0, 156.9)} True
+4VEbbZeJwrlqRBTTscq3m2__tempo_gen {'fastsinger': (0, 77.6), 'midi_sag': (0, 177.3)} True
+5K8AQ2dBiXolebEfawTrzv__draft {'fastsinger': (0, 67.2), 'midi_sag': (0, 148.5)} True
+5icriKgD89JhLxeSnd9o74__key_gen {'fastsinger': (0, 84.3), 'midi_sag': (0, 162.1)} True
+6I3A7q18EJgbdZf2Zx1wxm__key_transpose {'fastsinger': (0, 81.9), 'midi_sag': (0, 161.9)} True
+7omMiE6h9Js24Cr22A0Fbv__tempo_direct {'fastsinger': (0, 88.7), 'midi_sag': (0, 190.8)} True
+RENDER_BACKING_DONE
+end=2026-09-29T11:40:47-07:00 GPU_OK

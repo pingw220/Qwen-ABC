@@ -1,0 +1,40 @@
+job=40849827 array=40849827_3 host=g3102 gpu=NVIDIA L40S start=2026-09-29T10:14:33-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.generation --model qwen_mel --suite bon --shard $SHARD --num-shards $NSHARDS && python -m paper_eval.generation --model qwen_mel --suite interventions --conditions lyrics_all --shard $SHARD --num-shards $NSHARDS
+model=qwen_mel suite=bon tasks=900 skipped=0 shard=3/4 batches=14 pending=224
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   1%|          | 2/321 [00:00<00:34,  9.14it/s]Loading weights:   1%|          | 3/321 [00:00<01:35,  3.33it/s]Loading weights:   3%|▎         | 9/321 [00:01<00:31,  9.86it/s]Loading weights:   3%|▎         | 11/321 [00:01<00:28, 10.95it/s]Loading weights:   5%|▍         | 16/321 [00:01<00:20, 14.97it/s]Loading weights:   6%|▌         | 18/321 [00:01<00:19, 15.43it/s]Loading weights:   6%|▌         | 20/321 [00:01<00:21, 14.33it/s]Loading weights:   7%|▋         | 22/321 [00:01<00:24, 12.01it/s]Loading weights:  11%|█         | 36/321 [00:02<00:08, 32.03it/s]Loading weights:  15%|█▍        | 48/321 [00:02<00:05, 48.12it/s]Loading weights:  20%|█▉        | 63/321 [00:02<00:03, 65.47it/s]Loading weights:  41%|████▏     | 133/321 [00:02<00:00, 200.33it/s]Loading weights:  49%|████▉     | 158/321 [00:03<00:02, 78.36it/s] Loading weights:  62%|██████▏   | 200/321 [00:03<00:01, 97.88it/s]Loading weights:  68%|██████▊   | 218/321 [00:03<00:01, 90.25it/s]Loading weights:  73%|███████▎  | 233/321 [00:04<00:01, 59.86it/s]Loading weights: 100%|██████████| 321/321 [00:04<00:00, 71.89it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/14] n=16 59.99s eos=16 parse=16 done=16/224 elapsed=60s
+[2/14] n=16 45.04s eos=16 parse=16 done=32/224 elapsed=106s
+[3/14] n=16 60.3s eos=16 parse=16 done=48/224 elapsed=167s
+[4/14] n=16 52.5s eos=16 parse=16 done=64/224 elapsed=220s
+[5/14] n=16 56.29s eos=16 parse=16 done=80/224 elapsed=276s
+[6/14] n=16 78.66s eos=16 parse=16 done=96/224 elapsed=356s
+[7/14] n=16 66.33s eos=16 parse=16 done=112/224 elapsed=423s
+[8/14] n=16 60.23s eos=16 parse=16 done=128/224 elapsed=484s
+[9/14] n=16 68.89s eos=16 parse=16 done=144/224 elapsed=553s
+[10/14] n=16 78.99s eos=16 parse=16 done=160/224 elapsed=633s
+[11/14] n=16 64.93s eos=16 parse=16 done=176/224 elapsed=699s
+[12/14] n=16 73.14s eos=16 parse=16 done=192/224 elapsed=773s
+[13/14] n=16 248.42s eos=15 parse=16 done=208/224 elapsed=1022s
+[14/14] n=16 91.68s eos=16 parse=16 done=224/224 elapsed=1116s
+GENERATION_DONE
+model=qwen_mel suite=interventions tasks=900 skipped=0 shard=3/4 batches=14 pending=224
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights: 100%|██████████| 321/321 [00:00<00:00, 15316.39it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/14] n=16 46.53s eos=16 parse=16 done=16/224 elapsed=47s
+[2/14] n=16 50.81s eos=16 parse=16 done=32/224 elapsed=98s
+[3/14] n=16 58.44s eos=16 parse=16 done=48/224 elapsed=157s
+[4/14] n=16 52.95s eos=16 parse=16 done=64/224 elapsed=210s
+[5/14] n=16 57.49s eos=16 parse=16 done=80/224 elapsed=268s
+[6/14] n=16 79.29s eos=16 parse=16 done=96/224 elapsed=348s
+[7/14] n=16 57.39s eos=16 parse=16 done=112/224 elapsed=407s
+[8/14] n=16 58.95s eos=16 parse=16 done=128/224 elapsed=466s
+[9/14] n=16 68.8s eos=16 parse=16 done=144/224 elapsed=536s
+[10/14] n=16 67.44s eos=16 parse=16 done=160/224 elapsed=604s
+[11/14] n=16 70.6s eos=16 parse=16 done=176/224 elapsed=675s
+[12/14] n=16 71.92s eos=16 parse=16 done=192/224 elapsed=748s
+[13/14] n=16 91.7s eos=16 parse=16 done=208/224 elapsed=840s
+[14/14] n=16 94.5s eos=16 parse=16 done=224/224 elapsed=937s
+GENERATION_DONE
+end=2026-09-29T10:55:46-07:00 GPU_OK

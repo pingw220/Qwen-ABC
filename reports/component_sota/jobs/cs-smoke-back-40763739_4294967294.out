@@ -1,0 +1,5 @@
+job=40763739 array=none_0 host=g3119 gpu=NVIDIA L40 start=2026-09-27T04:42:11-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.audio render-backing --shard 0 --num-shards 200
+09d4jeFypKBWzZVfHKBeVY__am2 {'fastsinger': (0, 98.0), 'midi_sag': (0, 172.4)} True
+5LlXalu5DZuQl7Q9CmNKp0__tempo_direct {'fastsinger': (0, 20.2), 'midi_sag': (0, 81.4)} True
+RENDER_BACKING_DONE
+end=2026-09-27T04:48:24-07:00 GPU_OK

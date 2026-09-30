@@ -1,0 +1,149 @@
+W0927 03:47:49.505000 3951592 torch/distributed/run.py:774] 
+W0927 03:47:49.505000 3951592 torch/distributed/run.py:774] *****************************************
+W0927 03:47:49.505000 3951592 torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0927 03:47:49.505000 3951592 torch/distributed/run.py:774] *****************************************
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:03<16:50,  3.17s/it]Loading weights:   0%|          | 1/320 [00:03<17:11,  3.23s/it]Loading weights:  53%|█████▎    | 171/320 [00:03<00:02, 72.74it/s]Loading weights:  57%|█████▋    | 181/320 [00:03<00:01, 76.23it/s]Loading weights:  78%|███████▊  | 249/320 [00:04<00:00, 75.58it/s]Loading weights:  88%|████████▊ | 281/320 [00:04<00:00, 80.26it/s]Loading weights:  92%|█████████▏| 295/320 [00:04<00:00, 82.74it/s]Loading weights: 100%|██████████| 320/320 [00:04<00:00, 64.78it/s]
+Loading weights: 100%|██████████| 320/320 [00:04<00:00, 64.79it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v2_20260915_120927",
+ "output_dir": "experiments/component_sota/runs/chord_lyr_sft",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": "experiments/component_sota/data/chord_lyr/train.jsonl",
+ "eval_file": "experiments/component_sota/data/chord_lyr/validation.jsonl",
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 131072,
+ "epochs": 2,
+ "max_steps": 0,
+ "stop_after_steps": 0,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 50,
+ "resume_every": 50,
+ "save_every_epoch": true,
+ "save_every": 0,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 10243,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 34235638,
+ "train_supervised_tokens": 8962533,
+ "train_max_example_tokens": 6980,
+ "micro_batches_per_epoch": 2360,
+ "grad_accum": 4,
+ "micro_batches_per_update": 8,
+ "steps_per_epoch": 295,
+ "total_steps": 590,
+ "padded_tokens_per_update_budget": 131072,
+ "world_size": 2,
+ "real_tokens_per_update_mean": 116053.01016949152,
+ "supervised_tokens_per_update_mean": 30381.46779661017,
+ "n_params": 752393024,
+ "n_trainable_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40757670",
+ "transformers": "5.17.0",
+ "flash_linear_attention": "0.5.2"
+}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"step": 0, "world_size": 2, "eval_loss": 0.46090387383017445, "eval_ppl": 1.5855064352942234, "eval_tokens": 232343, "time": 14.4}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 1, "epoch": 0.003, "loss": 0.4544495700421485, "lr": 2.9411764705882355e-06, "grad_norm": 7.469345569610596, "tokens_seen": 112424, "sup_tokens_seen": 29620, "tokens_per_sec": 13744.9, "max_mem_gb": 11.23, "max_reserved_gb": 11.43, "time": 22.6}
+{"step": 10, "epoch": 0.034, "loss": 0.31812407875448256, "lr": 2.9411764705882354e-05, "grad_norm": 7.062977313995361, "tokens_seen": 1153363, "sup_tokens_seen": 302207, "tokens_per_sec": 14471.7, "max_mem_gb": 16.0, "max_reserved_gb": 17.11, "time": 94.6}
+{"step": 20, "epoch": 0.068, "loss": 0.2507143618098488, "lr": 4.999864730880353e-05, "grad_norm": 4.1308794021606445, "tokens_seen": 2321538, "sup_tokens_seen": 608568, "tokens_per_sec": 14469.2, "max_mem_gb": 16.0, "max_reserved_gb": 17.11, "time": 175.3}
+{"step": 30, "epoch": 0.102, "loss": 0.21870650264680963, "lr": 4.995132019262254e-05, "grad_norm": 3.470707654953003, "tokens_seen": 3486729, "sup_tokens_seen": 911880, "tokens_per_sec": 14884.8, "max_mem_gb": 16.01, "max_reserved_gb": 17.11, "time": 253.6}
+{"step": 40, "epoch": 0.136, "loss": 0.29494901772962945, "lr": 4.983652107526437e-05, "grad_norm": 3.4284415245056152, "tokens_seen": 4645870, "sup_tokens_seen": 1215130, "tokens_per_sec": 14874.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 331.5}
+{"step": 50, "epoch": 0.169, "loss": 0.2391664234865377, "lr": 4.965459495765169e-05, "grad_norm": 1.3627076148986816, "tokens_seen": 5809448, "sup_tokens_seen": 1517420, "tokens_per_sec": 14740.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 410.4}
+{"step": 50, "eval_loss": 0.25321782546145744, "eval_ppl": 1.2881638411596277, "eval_tokens": 232343, "time": 423.9}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+{"step": 60, "epoch": 0.203, "loss": 0.24745286395889804, "lr": 4.940608857463644e-05, "grad_norm": 2.315910816192627, "tokens_seen": 6979727, "sup_tokens_seen": 1825015, "tokens_per_sec": 12179.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 506.5}
+{"step": 70, "epoch": 0.237, "loss": 0.25300838577871215, "lr": 4.90917487519208e-05, "grad_norm": 2.3039391040802, "tokens_seen": 8121124, "sup_tokens_seen": 2125614, "tokens_per_sec": 14689.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 584.2}
+{"step": 80, "epoch": 0.271, "loss": 0.2428874852081053, "lr": 4.871252016165349e-05, "grad_norm": 1.6329705715179443, "tokens_seen": 9288683, "sup_tokens_seen": 2429885, "tokens_per_sec": 14887.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 662.7}
+{"step": 90, "epoch": 0.305, "loss": 0.22086522054094462, "lr": 4.8269542483446654e-05, "grad_norm": 1.0893415212631226, "tokens_seen": 10452345, "sup_tokens_seen": 2733952, "tokens_per_sec": 15033.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 740.1}
+{"step": 100, "epoch": 0.339, "loss": 0.20490757366701837, "lr": 4.7764146979344974e-05, "grad_norm": 1.1714030504226685, "tokens_seen": 11614558, "sup_tokens_seen": 3038057, "tokens_per_sec": 14655.7, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 819.4}
+{"step": 100, "eval_loss": 0.23249244254033236, "eval_ppl": 1.2617409107669098, "eval_tokens": 232343, "time": 832.8}
+{"step": 110, "epoch": 0.373, "loss": 0.21108386534156615, "lr": 4.719785249304026e-05, "grad_norm": 0.8713588714599609, "tokens_seen": 12785179, "sup_tokens_seen": 3346082, "tokens_per_sec": 12183.9, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 915.5}
+{"step": 120, "epoch": 0.407, "loss": 0.20447102636840214, "lr": 4.6572360885354905e-05, "grad_norm": 1.5208430290222168, "tokens_seen": 13949441, "sup_tokens_seen": 3652899, "tokens_per_sec": 14832.7, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 993.9}
+{"step": 130, "epoch": 0.441, "loss": 0.18925457127653475, "lr": 4.5889551919711635e-05, "grad_norm": 1.1344133615493774, "tokens_seen": 15110949, "sup_tokens_seen": 3956089, "tokens_per_sec": 14771.6, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1072.6}
+{"step": 140, "epoch": 0.475, "loss": 0.19425414744129657, "lr": 4.515147761296017e-05, "grad_norm": 0.8708462119102478, "tokens_seen": 16272027, "sup_tokens_seen": 4258180, "tokens_per_sec": 14826.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1150.9}
+{"step": 150, "epoch": 0.508, "loss": 0.19730689894597483, "lr": 4.436035606853793e-05, "grad_norm": 1.2615023851394653, "tokens_seen": 17436994, "sup_tokens_seen": 4559509, "tokens_per_sec": 14969.6, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1228.7}
+{"step": 150, "eval_loss": 0.2213852387046626, "eval_ppl": 1.2478040403955613, "eval_tokens": 232343, "time": 1242.2}
+{"step": 160, "epoch": 0.542, "loss": 0.17969627358666937, "lr": 4.351856481049779e-05, "grad_norm": 1.134678840637207, "tokens_seen": 18572996, "sup_tokens_seen": 4857234, "tokens_per_sec": 11900.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1324.2}
+{"step": 170, "epoch": 0.576, "loss": 0.20796357104058802, "lr": 4.262863363843576e-05, "grad_norm": 1.3456799983978271, "tokens_seen": 19760224, "sup_tokens_seen": 5169350, "tokens_per_sec": 14842.2, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1404.2}
+{"step": 180, "epoch": 0.61, "loss": 0.21706462441834298, "lr": 4.169323702479149e-05, "grad_norm": 1.4336822032928467, "tokens_seen": 20920542, "sup_tokens_seen": 5476781, "tokens_per_sec": 14840.9, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1482.3}
+{"step": 190, "epoch": 0.644, "loss": 0.18036555781810532, "lr": 4.0715186077369597e-05, "grad_norm": 1.0883556604385376, "tokens_seen": 22072126, "sup_tokens_seen": 5784179, "tokens_per_sec": 14753.0, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1560.4}
+{"step": 200, "epoch": 0.678, "loss": 0.1756491949726804, "lr": 3.9697420091236424e-05, "grad_norm": 1.348543405532837, "tokens_seen": 23220340, "sup_tokens_seen": 6083907, "tokens_per_sec": 14930.4, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1637.3}
+{"step": 200, "eval_loss": 0.2137465018485769, "eval_ppl": 1.2383087060345477, "eval_tokens": 232343, "time": 1650.8}
+{"step": 210, "epoch": 0.712, "loss": 0.2131990771694199, "lr": 3.864299771538125e-05, "grad_norm": 0.6587087512016296, "tokens_seen": 24378561, "sup_tokens_seen": 6386776, "tokens_per_sec": 11985.1, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1733.9}
+{"step": 220, "epoch": 0.746, "loss": 0.19895595648025224, "lr": 3.755508776068799e-05, "grad_norm": 0.9624305963516235, "tokens_seen": 25523794, "sup_tokens_seen": 6686943, "tokens_per_sec": 14840.4, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1811.1}
+{"step": 230, "epoch": 0.78, "loss": 0.1882789958801501, "lr": 3.6436959676842186e-05, "grad_norm": 0.9599099159240723, "tokens_seen": 26692127, "sup_tokens_seen": 6993234, "tokens_per_sec": 14993.5, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1889.0}
+{"step": 240, "epoch": 0.814, "loss": 0.20559280434512386, "lr": 3.5291973726792385e-05, "grad_norm": 1.2747435569763184, "tokens_seen": 27837555, "sup_tokens_seen": 7290371, "tokens_per_sec": 14724.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.12, "time": 1966.8}
+{"step": 250, "epoch": 0.847, "loss": 0.1946436449827598, "lr": 3.412357088829434e-05, "grad_norm": 0.9116303324699402, "tokens_seen": 28990498, "sup_tokens_seen": 7589481, "tokens_per_sec": 14606.7, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2045.8}
+{"step": 250, "eval_loss": 0.2076224914795875, "eval_ppl": 1.2307484638076263, "eval_tokens": 232343, "time": 2059.2}
+{"step": 260, "epoch": 0.881, "loss": 0.17582951466892394, "lr": 3.29352625128863e-05, "grad_norm": 0.9487630128860474, "tokens_seen": 30148362, "sup_tokens_seen": 7890850, "tokens_per_sec": 12032.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2142.0}
+{"step": 270, "epoch": 0.915, "loss": 0.18234959538469783, "lr": 3.173061977337311e-05, "grad_norm": 1.0176465511322021, "tokens_seen": 31307100, "sup_tokens_seen": 8197015, "tokens_per_sec": 14917.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2219.7}
+{"step": 280, "epoch": 0.949, "loss": 0.1823120389124244, "lr": 3.051326293153185e-05, "grad_norm": 1.2378530502319336, "tokens_seen": 32473554, "sup_tokens_seen": 8501094, "tokens_per_sec": 14819.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2298.4}
+{"step": 290, "epoch": 0.983, "loss": 0.17349638962774913, "lr": 2.9286850458292566e-05, "grad_norm": 0.5155626535415649, "tokens_seen": 33637803, "sup_tokens_seen": 8806149, "tokens_per_sec": 15029.9, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2375.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]
+{"step": 300, "epoch": 1.017, "loss": 0.175092761671877, "lr": 2.805506803909059e-05, "grad_norm": 0.8057243227958679, "tokens_seen": 34817396, "sup_tokens_seen": 9114890, "tokens_per_sec": 14787.4, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2455.6}
+{"step": 300, "eval_loss": 0.2035645581764067, "eval_ppl": 1.2257642881940678, "eval_tokens": 232343, "time": 2469.1}
+{"step": 310, "epoch": 1.051, "loss": 0.17275933270488805, "lr": 2.682161749743231e-05, "grad_norm": 0.5545461773872375, "tokens_seen": 35963850, "sup_tokens_seen": 9414653, "tokens_per_sec": 12136.7, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2550.1}
+{"step": 320, "epoch": 1.085, "loss": 0.16396813602291824, "lr": 2.5590205669961853e-05, "grad_norm": 0.4348009526729584, "tokens_seen": 37114557, "sup_tokens_seen": 9716442, "tokens_per_sec": 14879.2, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2627.4}
+{"step": 330, "epoch": 1.119, "loss": 0.19039308291675408, "lr": 2.4364533266461953e-05, "grad_norm": 0.6400055289268494, "tokens_seen": 38268894, "sup_tokens_seen": 10018638, "tokens_per_sec": 14832.2, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2705.2}
+{"step": 340, "epoch": 1.153, "loss": 0.16645387124318567, "lr": 2.314828374826775e-05, "grad_norm": 0.7122498154640198, "tokens_seen": 39424465, "sup_tokens_seen": 10321421, "tokens_per_sec": 14680.1, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2784.0}
+{"step": 350, "epoch": 1.186, "loss": 0.179757105289025, "lr": 2.194511225851643e-05, "grad_norm": 0.670753002166748, "tokens_seen": 40591312, "sup_tokens_seen": 10622004, "tokens_per_sec": 14663.4, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2863.5}
+{"step": 350, "eval_loss": 0.20017132812638702, "eval_ppl": 1.2216120367334304, "eval_tokens": 232343, "time": 2877.0}
+{"step": 360, "epoch": 1.22, "loss": 0.1512337769118665, "lr": 2.075863463750054e-05, "grad_norm": 0.5093883872032166, "tokens_seen": 41746905, "sup_tokens_seen": 10925787, "tokens_per_sec": 12091.7, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 2959.1}
+{"step": 370, "epoch": 1.254, "loss": 0.16125700532089182, "lr": 1.9592416556136296e-05, "grad_norm": 0.8337259292602539, "tokens_seen": 42902480, "sup_tokens_seen": 11229414, "tokens_per_sec": 14625.6, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 3038.1}
+{"step": 380, "epoch": 1.288, "loss": 0.1608820241776189, "lr": 1.8449962800203945e-05, "grad_norm": 0.622739851474762, "tokens_seen": 44056581, "sup_tokens_seen": 11531821, "tokens_per_sec": 14881.7, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 3115.7}
+{"step": 390, "epoch": 1.322, "loss": 0.14976239062862756, "lr": 1.7334706737563536e-05, "grad_norm": 0.745697557926178, "tokens_seen": 45208011, "sup_tokens_seen": 11833092, "tokens_per_sec": 14859.0, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 3193.2}
+{"step": 400, "epoch": 1.356, "loss": 0.17087796605734462, "lr": 1.6250000000000005e-05, "grad_norm": 0.737304151058197, "tokens_seen": 46378381, "sup_tokens_seen": 12140145, "tokens_per_sec": 15093.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 3270.7}
+{"step": 400, "eval_loss": 0.19816803090029309, "eval_ppl": 1.2191672343793898, "eval_tokens": 232343, "time": 3284.2}
+{"step": 410, "epoch": 1.39, "loss": 0.14686901503663838, "lr": 1.5199102410706195e-05, "grad_norm": 0.7313677668571472, "tokens_seen": 47529460, "sup_tokens_seen": 12439004, "tokens_per_sec": 11865.2, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 3367.7}
+{"step": 420, "epoch": 1.424, "loss": 0.17125953617389664, "lr": 1.418517218767434e-05, "grad_norm": 0.7549960017204285, "tokens_seen": 48684737, "sup_tokens_seen": 12739632, "tokens_per_sec": 14730.0, "max_mem_gb": 16.04, "max_reserved_gb": 17.18, "time": 3446.1}
+{"step": 430, "epoch": 1.458, "loss": 0.1696437173779423, "lr": 1.3211256452437393e-05, "grad_norm": 0.8673093914985657, "tokens_seen": 49857668, "sup_tokens_seen": 13048820, "tokens_per_sec": 14903.5, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 3524.8}
+{"step": 440, "epoch": 1.492, "loss": 0.1530077865275931, "lr": 1.2280282072683784e-05, "grad_norm": 0.5122010707855225, "tokens_seen": 51001553, "sup_tokens_seen": 13349309, "tokens_per_sec": 14771.0, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 3602.3}
+{"step": 450, "epoch": 1.525, "loss": 0.15523797680059173, "lr": 1.139504686626599e-05, "grad_norm": 0.47527310252189636, "tokens_seen": 52180921, "sup_tokens_seen": 13659041, "tokens_per_sec": 14769.4, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 3682.1}
+{"step": 450, "eval_loss": 0.19523477772070144, "eval_ppl": 1.2155963479300258, "eval_tokens": 232343, "time": 3695.6}
+{"step": 460, "epoch": 1.559, "loss": 0.14007314874105142, "lr": 1.0558211193037106e-05, "grad_norm": 0.5031007528305054, "tokens_seen": 53325315, "sup_tokens_seen": 13958387, "tokens_per_sec": 12057.2, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 3777.0}
+{"step": 470, "epoch": 1.593, "loss": 0.16751081143369967, "lr": 9.772289959784125e-06, "grad_norm": 0.512763500213623, "tokens_seen": 54478871, "sup_tokens_seen": 14259683, "tokens_per_sec": 14868.1, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 3854.6}
+{"step": 480, "epoch": 1.627, "loss": 0.15958403222527193, "lr": 9.03964506228512e-06, "grad_norm": 0.48317402601242065, "tokens_seen": 55640417, "sup_tokens_seen": 14563650, "tokens_per_sec": 14581.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 3934.3}
+{"step": 490, "epoch": 1.661, "loss": 0.1684493355129076, "lr": 8.362478287203963e-06, "grad_norm": 0.436501145362854, "tokens_seen": 56820347, "sup_tokens_seen": 14871288, "tokens_per_sec": 15138.5, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4012.2}
+{"step": 500, "epoch": 1.695, "loss": 0.160624122422385, "lr": 7.742824695154175e-06, "grad_norm": 0.5376214385032654, "tokens_seen": 57984266, "sup_tokens_seen": 15175559, "tokens_per_sec": 14993.6, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4089.9}
+{"step": 500, "eval_loss": 0.1937050877784861, "eval_ppl": 1.2137382839160356, "eval_tokens": 232343, "time": 4103.4}
+{"step": 510, "epoch": 1.729, "loss": 0.14620358369461442, "lr": 7.182546504817485e-06, "grad_norm": 0.4443824887275696, "tokens_seen": 59140829, "sup_tokens_seen": 15479826, "tokens_per_sec": 12024.3, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4186.0}
+{"step": 520, "epoch": 1.763, "loss": 0.1573548767491904, "lr": 6.68332749649695e-06, "grad_norm": 0.5740457773208618, "tokens_seen": 60312213, "sup_tokens_seen": 15786613, "tokens_per_sec": 14907.5, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4264.6}
+{"step": 530, "epoch": 1.797, "loss": 0.14663602774967954, "lr": 6.246667951923354e-06, "grad_norm": 0.4677564203739166, "tokens_seen": 61465169, "sup_tokens_seen": 16089667, "tokens_per_sec": 14959.0, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4341.7}
+{"step": 540, "epoch": 1.831, "loss": 0.1443622820674421, "lr": 5.873880145522114e-06, "grad_norm": 0.4979301691055298, "tokens_seen": 62645622, "sup_tokens_seen": 16399417, "tokens_per_sec": 14832.7, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4421.3}
+{"step": 550, "epoch": 1.864, "loss": 0.16059550606909706, "lr": 5.56608440069054e-06, "grad_norm": 0.4814373552799225, "tokens_seen": 63814264, "sup_tokens_seen": 16703537, "tokens_per_sec": 14940.4, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4499.5}
+{"step": 550, "eval_loss": 0.19238213606246005, "eval_ppl": 1.2121336284454156, "eval_tokens": 232343, "time": 4513.0}
+{"step": 560, "epoch": 1.898, "loss": 0.16483848635996554, "lr": 5.324205722937415e-06, "grad_norm": 0.49892759323120117, "tokens_seen": 64969504, "sup_tokens_seen": 17006104, "tokens_per_sec": 12049.5, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4595.4}
+{"step": 570, "epoch": 1.932, "loss": 0.13452980771923964, "lr": 5.14897102000313e-06, "grad_norm": 0.429309606552124, "tokens_seen": 66127691, "sup_tokens_seen": 17308604, "tokens_per_sec": 14924.0, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4673.0}
+{"step": 580, "epoch": 1.966, "loss": 0.15682603739767478, "lr": 5.0409069173146675e-06, "grad_norm": 0.6811195015907288, "tokens_seen": 67305757, "sup_tokens_seen": 17615362, "tokens_per_sec": 14713.9, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4753.0}
+{"step": 590, "epoch": 2.0, "loss": 0.13414521547452074, "lr": 5.000338175340509e-06, "grad_norm": 0.4834115505218506, "tokens_seen": 68471276, "sup_tokens_seen": 17925066, "tokens_per_sec": 14849.8, "max_mem_gb": 16.04, "max_reserved_gb": 17.22, "time": 4831.5}
+{"step": 590, "final": true, "eval_loss": 0.19241716304905523, "eval_ppl": 1.2121760865773568, "eval_tokens": 232343, "time": 4845.0}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]
+{"step": 590, "done": true, "elapsed_hours_this_job": 1.346, "tokens_seen": 68471276, "sup_tokens_seen": 17925066, "world_size": 2, "max_mem_gb": 16.04, "time": 4845.7}
+TRAIN_OK

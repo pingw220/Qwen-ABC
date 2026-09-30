@@ -1,0 +1,9 @@
+job=40851870 array=40851862_0 host=g3106 gpu=NVIDIA L40S start=2026-09-29T11:30:11-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.audio render-svs --shard $SHARD --num-shards $NSHARDS
+csl_offc 09d4jeFypKBWzZVfHKBeVY {}
+csl_offc 0exfMqddpIIZQbZZny68Rc {}
+csl_offc 255drLOJ94rmt1SDRj6H3N {}
+csl_offc 2YSqK9S0SZjulBJdc9BYuu {}
+csl_offc 2vnn9onO7sQBevG0O2iPHi {}
+csl_offc 3im9iOhpZNgaTS4VGYOGF9 {}
+csl_offc 4Cvd1vwstGUZTdnL6X35md {}
+[2026-09-29T11:30:16.531] error: *** JOB 40851870 ON g3106 CANCELLED AT 2026-09-29T11:30:16 DUE to SIGNAL Terminated ***

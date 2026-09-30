@@ -1,0 +1,6 @@
+job=40756637 host=n3110 start=2026-09-27T03:38:52-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.build_datasets --task mel
+train {'whole_song': 10243, 'infill': 5089, 'checked': 10243, 'tokens': 40549692, 'supervised_tokens': 24022270}
+validation {'whole_song': 273, 'infill': 136, 'checked': 273, 'tokens': 1137167, 'supervised_tokens': 669564}
+test {'whole_song': 225, 'infill': 0, 'checked': 225, 'tokens': 626909, 'supervised_tokens': 527788}
+BUILD_OK /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/data/mel
+end=2026-09-27T03:42:22-07:00 CPU_OK

@@ -1,0 +1,42 @@
+job=40849831 array=40849827_0 host=g3102 gpu=NVIDIA L40S start=2026-09-29T10:14:07-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.generation --model qwen_mel --suite bon --shard $SHARD --num-shards $NSHARDS && python -m paper_eval.generation --model qwen_mel --suite interventions --conditions lyrics_all --shard $SHARD --num-shards $NSHARDS
+model=qwen_mel suite=bon tasks=900 skipped=0 shard=0/4 batches=15 pending=228
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   3%|▎         | 9/321 [00:00<00:05, 56.42it/s]Loading weights:   8%|▊         | 25/321 [00:00<00:04, 67.42it/s]Loading weights:  10%|▉         | 32/321 [00:00<00:06, 42.20it/s]Loading weights:  12%|█▏        | 37/321 [00:01<00:11, 23.84it/s]Loading weights:  13%|█▎        | 41/321 [00:01<00:11, 23.86it/s]Loading weights:  16%|█▌        | 50/321 [00:01<00:12, 21.19it/s]Loading weights:  21%|██        | 66/321 [00:02<00:09, 25.52it/s]Loading weights:  38%|███▊      | 121/321 [00:02<00:02, 78.26it/s]Loading weights:  43%|████▎     | 138/321 [00:02<00:02, 87.72it/s]Loading weights:  48%|████▊     | 154/321 [00:02<00:01, 84.41it/s]Loading weights:  52%|█████▏    | 168/321 [00:02<00:01, 84.50it/s]Loading weights:  56%|█████▌    | 180/321 [00:03<00:02, 63.63it/s]Loading weights:  62%|██████▏   | 200/321 [00:03<00:01, 82.73it/s]Loading weights:  69%|██████▉   | 223/321 [00:03<00:01, 84.53it/s]Loading weights:  76%|███████▋  | 245/321 [00:03<00:00, 89.18it/s]Loading weights:  81%|████████  | 259/321 [00:04<00:00, 94.64it/s]Loading weights:  84%|████████▍ | 271/321 [00:04<00:00, 60.88it/s]Loading weights:  95%|█████████▌| 306/321 [00:04<00:00, 93.18it/s]Loading weights: 100%|██████████| 321/321 [00:04<00:00, 69.42it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/15] n=16 49.39s eos=16 parse=16 done=16/228 elapsed=50s
+[2/15] n=16 46.72s eos=16 parse=16 done=32/228 elapsed=98s
+[3/15] n=16 47.85s eos=16 parse=16 done=48/228 elapsed=146s
+[4/15] n=16 50.47s eos=16 parse=16 done=64/228 elapsed=197s
+[5/15] n=16 70.34s eos=16 parse=16 done=80/228 elapsed=268s
+[6/15] n=16 53.54s eos=16 parse=16 done=96/228 elapsed=322s
+[7/15] n=16 57.54s eos=16 parse=16 done=112/228 elapsed=380s
+[8/15] n=16 66.35s eos=16 parse=16 done=128/228 elapsed=447s
+[9/15] n=16 71.94s eos=16 parse=16 done=144/228 elapsed=519s
+[10/15] n=16 78.75s eos=16 parse=16 done=160/228 elapsed=599s
+[11/15] n=16 82.13s eos=16 parse=16 done=176/228 elapsed=682s
+[12/15] n=16 69.74s eos=16 parse=16 done=192/228 elapsed=753s
+[13/15] n=16 68.18s eos=16 parse=16 done=208/228 elapsed=822s
+[14/15] n=16 84.74s eos=16 parse=16 done=224/228 elapsed=908s
+[15/15] n=4 71.1s eos=4 parse=4 done=228/228 elapsed=979s
+GENERATION_DONE
+model=qwen_mel suite=interventions tasks=900 skipped=0 shard=0/4 batches=15 pending=228
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   3%|▎         | 11/321 [00:00<00:08, 37.69it/s]Loading weights:   9%|▉         | 29/321 [00:00<00:09, 30.63it/s]Loading weights:  10%|█         | 33/321 [00:01<00:09, 30.63it/s]Loading weights:  14%|█▍        | 45/321 [00:01<00:07, 35.60it/s]Loading weights:  21%|██▏       | 69/321 [00:01<00:04, 58.69it/s]Loading weights:  28%|██▊       | 90/321 [00:01<00:02, 79.31it/s]Loading weights:  49%|████▊     | 156/321 [00:01<00:00, 176.23it/s]Loading weights:  56%|█████▌    | 180/321 [00:01<00:00, 174.85it/s]Loading weights:  74%|███████▍  | 238/321 [00:02<00:00, 249.27it/s]Loading weights:  84%|████████▍ | 269/321 [00:02<00:00, 151.49it/s]Loading weights: 100%|██████████| 321/321 [00:02<00:00, 125.75it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/15] n=16 41.04s eos=16 parse=16 done=16/228 elapsed=42s
+[2/15] n=16 46.2s eos=16 parse=16 done=32/228 elapsed=88s
+[3/15] n=16 45.98s eos=16 parse=16 done=48/228 elapsed=135s
+[4/15] n=16 54.53s eos=16 parse=16 done=64/228 elapsed=190s
+[5/15] n=16 58.93s eos=16 parse=16 done=80/228 elapsed=249s
+[6/15] n=16 60.69s eos=16 parse=16 done=96/228 elapsed=310s
+[7/15] n=16 58.89s eos=16 parse=16 done=112/228 elapsed=370s
+[8/15] n=16 57.37s eos=16 parse=16 done=128/228 elapsed=428s
+[9/15] n=16 249.74s eos=15 parse=16 done=144/228 elapsed=679s
+[10/15] n=16 70.38s eos=16 parse=16 done=160/228 elapsed=750s
+[11/15] n=16 68.24s eos=16 parse=16 done=176/228 elapsed=819s
+[12/15] n=16 64.01s eos=16 parse=16 done=192/228 elapsed=884s
+[13/15] n=16 79.74s eos=16 parse=16 done=208/228 elapsed=964s
+[14/15] n=16 65.41s eos=16 parse=16 done=224/228 elapsed=1031s
+[15/15] n=4 63.71s eos=4 parse=4 done=228/228 elapsed=1095s
+GENERATION_DONE
+end=2026-09-29T10:56:39-07:00 GPU_OK

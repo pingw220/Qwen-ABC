@@ -1,0 +1,49 @@
+job=40761542 array=40761542_2 host=g3118 gpu=NVIDIA L40 start=2026-09-27T04:01:32-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.infill generate --shard $SHARD --num-shards $NSHARDS
+tasks 2038 shard 672 todo 672
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   8%|▊         | 25/321 [00:00<00:01, 240.05it/s]Loading weights:  16%|█▌        | 50/321 [00:00<00:02, 109.85it/s]Loading weights:  20%|██        | 65/321 [00:00<00:02, 95.35it/s] Loading weights:  27%|██▋       | 87/321 [00:00<00:01, 120.67it/s]Loading weights:  61%|██████▏   | 197/321 [00:00<00:00, 341.43it/s]Loading weights:  88%|████████▊ | 282/321 [00:01<00:00, 406.75it/s]Loading weights: 100%|██████████| 321/321 [00:01<00:00, 295.81it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1] 14.58s
+[2] 12.1s
+[3] 11.26s
+[4] 10.56s
+[5] 9.91s
+[6] 7.93s
+[7] 9.71s
+[8] 12.55s
+[9] 11.59s
+[10] 9.34s
+[11] 12.22s
+[12] 8.81s
+[13] 9.13s
+[14] 11.96s
+[15] 10.58s
+[16] 9.93s
+[17] 8.06s
+[18] 12.66s
+[19] 13.31s
+[20] 10.14s
+[21] 17.42s
+[22] 9.64s
+[23] 13.31s
+[24] 13.07s
+[25] 11.02s
+[26] 11.81s
+[27] 12.13s
+[28] 9.84s
+[29] 13.45s
+[30] 11.93s
+[31] 11.37s
+[32] 13.38s
+[33] 9.43s
+[34] 12.79s
+[35] 13.15s
+[36] 16.16s
+[37] 15.31s
+[38] 12.44s
+[39] 11.69s
+[40] 21.74s
+[41] 26.15s
+[42] 15.61s
+INFILL_GEN_DONE
+end=2026-09-27T04:12:36-07:00 GPU_OK

@@ -1,0 +1,27 @@
+job=40851378 array=40850571_2 host=g3112 gpu=NVIDIA L40S start=2026-09-29T11:09:32-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.audio render-svs --shard $SHARD --num-shards $NSHARDS
+csl_offc 0CxfpbQfmX4bR6mA6aarL3 {'fastsinger': {'exit': 0, 'seconds': 38.8}, 'soulx': {'exit': [0, 0], 'seconds': 96.0}}
+csl_offc 28IzuspwIj6C8XAOoIJ1Wp {'fastsinger': {'exit': 0, 'seconds': 49.7}, 'soulx': {'exit': [0, 0], 'seconds': 95.1}}
+csl_offc 3JjXD9DVfxh001wI5IACZ1 {'fastsinger': {'exit': 0, 'seconds': 43.1}, 'soulx': {'exit': [0, 0], 'seconds': 79.6}}
+csl_offc 4VEbbZeJwrlqRBTTscq3m2 {'fastsinger': {'exit': 0, 'seconds': 47.9}, 'soulx': {'exit': [0, 0], 'seconds': 84.7}}
+csl_offc 5gIW9IMReT6xicyfHKtcug {'fastsinger': {'exit': 0, 'seconds': 54.1}, 'soulx': {'exit': [0, 0], 'seconds': 85.6}}
+csl_offc 6TCciGLZyMSTZDJDmrdVSI {'fastsinger': {'exit': 0, 'seconds': 61.8}, 'soulx': {'exit': [0, 0], 'seconds': 87.0}}
+e3b 0CxfpbQfmX4bR6mA6aarL3 {}
+e3b 28IzuspwIj6C8XAOoIJ1Wp {}
+e3b 3JjXD9DVfxh001wI5IACZ1 {}
+e3b 4VEbbZeJwrlqRBTTscq3m2 {}
+e3b 5gIW9IMReT6xicyfHKtcug {}
+e3b 6TCciGLZyMSTZDJDmrdVSI {}
+mel 0CxfpbQfmX4bR6mA6aarL3 {'fastsinger': {'exit': 0, 'seconds': 38.7}, 'soulx': {'exit': [0, 0], 'seconds': 93.2}}
+mel 28IzuspwIj6C8XAOoIJ1Wp {'fastsinger': {'exit': 0, 'seconds': 47.1}, 'soulx': {'exit': [0, 0], 'seconds': 115.6}}
+mel 3JjXD9DVfxh001wI5IACZ1 {'fastsinger': {'exit': 0, 'seconds': 54.9}, 'soulx': {'exit': [0, 0], 'seconds': 100.0}}
+mel 4VEbbZeJwrlqRBTTscq3m2 {'fastsinger': {'exit': 0, 'seconds': 63.7}, 'soulx': {'exit': [0, 0], 'seconds': 115.6}}
+mel 5gIW9IMReT6xicyfHKtcug {'fastsinger': {'exit': 0, 'seconds': 66.0}, 'soulx': {'exit': [0, 0], 'seconds': 96.9}}
+mel 6TCciGLZyMSTZDJDmrdVSI {'fastsinger': {'exit': 0, 'seconds': 66.2}, 'soulx': {'exit': [0, 0], 'seconds': 106.69999999999999}}
+ref 0CxfpbQfmX4bR6mA6aarL3 {}
+ref 28IzuspwIj6C8XAOoIJ1Wp {}
+ref 3JjXD9DVfxh001wI5IACZ1 {}
+ref 4VEbbZeJwrlqRBTTscq3m2 {}
+ref 5gIW9IMReT6xicyfHKtcug {}
+ref 6TCciGLZyMSTZDJDmrdVSI {}
+RENDER_SVS_DONE
+end=2026-09-29T11:39:21-07:00 GPU_OK

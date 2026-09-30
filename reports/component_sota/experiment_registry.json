@@ -1,0 +1,200 @@
+{
+ "round": "component-sota-eval-2026",
+ "date": "2026-09-29",
+ "base_commit": "b7edc01",
+ "split": {
+  "train": 10243,
+  "validation": 273,
+  "test": 225,
+  "dataset": "data/generated/abc_v2_20260915_120927",
+  "test_ids": "reports/component_sota/configs/test_song_ids.txt"
+ },
+ "decoding": {
+  "qwen": "T=1.0, top-p 0.95, paired Gumbel seeds S1-S4 (101,202,303,404)",
+  "csl_l2m": "seed = SEED*1000 + chunk, 5 attempts",
+  "accomontage2": "deterministic"
+ },
+ "models": {
+  "qwen_e3b": {
+   "role": "Qwen Full (joint lead sheet)",
+   "ckpt": "/gscratch/ark/pingw220/qwen_abc_r2_offload/runs/e3b_201131/final_model",
+   "params": "752M",
+   "updates": 758,
+   "train_gpu_hours": 4.0,
+   "trained_in": "earlier round"
+  },
+  "qwen_mel": {
+   "role": "Qwen Melody-Only",
+   "ckpt": "experiments/component_sota/runs/mel_sft/final_model",
+   "config": "configs/component_sota/mel_sft.yaml",
+   "params": "752M",
+   "updates": 758,
+   "examples": 15332,
+   "train_gpu_hours": 4.0,
+   "job": 40757618
+  },
+  "qwen_chord": {
+   "role": "Qwen Melody->Chord",
+   "ckpt": "experiments/component_sota/runs/chord_sft/final_model",
+   "config": "configs/component_sota/chord_sft.yaml",
+   "params": "752M",
+   "updates": 468,
+   "train_gpu_hours": 2.29,
+   "job": 40757619
+  },
+  "qwen_chord_lyr": {
+   "role": "Qwen Melody+Lyrics->Chord",
+   "ckpt": "experiments/component_sota/runs/chord_lyr_sft/final_model",
+   "config": "configs/component_sota/chord_lyr_sft.yaml",
+   "params": "752M",
+   "updates": 590,
+   "train_gpu_hours": 2.78,
+   "job": 40757670
+  },
+  "csl_l2m_official": {
+   "role": "external pretrained lyrics->melody",
+   "ckpt": "/gscratch/ark/pingw220/third_party/csl_l2m_ckpt/pretrained_CSLL2M_onlyLyrics.pt",
+   "config": "configs/component_sota/csl_l2m_onlylyrics_official.yaml",
+   "params": "92.1M"
+  },
+  "csl_l2m_retrained": {
+   "role": "CSL-L2M retrained on our split",
+   "ckpt": "experiments/component_sota/runs/csl_l2m_retrain/params/step_29000-RC_0.581.pt",
+   "config": "configs/component_sota/csl_l2m_onlylyrics_retrain.yaml",
+   "params": "91.7M",
+   "steps": 29052,
+   "train_songs": 9681,
+   "train_gpu_hours": 5.16,
+   "job": 40765588
+  },
+  "accomontage2": {
+   "role": "external melody->chord",
+   "code": "MIDI-SAG/AccoMontage2/demo_SOME.py",
+   "args": "--beat_subdivision 1 --chord_style POP_STANDARD --chords_per_bar 1 --key <key>",
+   "device": "CPU"
+  },
+  "fastsinger": {
+   "role": "SVS-A",
+   "model": "suming_MBJCUganFM_rmvpe_bs32_autoalign_slur_flag@400, speaker 6"
+  },
+  "soulx_singer": {
+   "role": "SVS-B",
+   "ckpt": "MIDI-SAG_checkpoints/SoulX-Singer/model.pt",
+   "params": "704M"
+  },
+  "backing": {
+   "role": "backing renderer",
+   "code": "MIDI-SAG tools/midi_llm_adapter/run_midi_llm_to_midi_sag.py --harmonizer leadsheet (MuseControlLite)"
+  }
+ },
+ "datasets": {
+  "mel": "experiments/component_sota/data/mel",
+  "chord": "experiments/component_sota/data/chord",
+  "chord_lyr": "experiments/component_sota/data/chord_lyr",
+  "csl_l2m_retrain": "experiments/component_sota/csl_l2m_data"
+ },
+ "generations": {
+  "qwen_e3b": "experiments/paper_final/gen/qwen_e3b/{orig,lyrics_all,lyrics_sec,bars_p4,key_p5,tempo_x1.25,label_swap,label_bridge}",
+  "qwen_mel": "experiments/component_sota/gen/qwen_mel/{orig,lyrics_all} (900 each)",
+  "csl": "experiments/component_sota/csl/{csl_off,csl_offc,csl_rt,csl_rtc}/{orig,lyrics_all} (900 each)",
+  "chords": "experiments/component_sota/chords/{chord,chord_lyr,am2}/<melody>_<seed>/",
+  "infill": "experiments/component_sota/infill/qwen_e3b/<kind>/ (2,038)",
+  "audio": "/gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/{svs,backing,listening_render,listening_study}"
+ },
+ "audio_subset": {
+  "file": "reports/component_sota/audio/subset.json",
+  "n": 36,
+  "frozen": "2026-09-27 04:04"
+ },
+ "evaluations": {
+  "table1_lyrics_to_melody": {
+   "code": "paper_eval.component_sota.melody_eval",
+   "tables": [
+    "tables/lyrics_to_melody",
+    "tables/lyrics_to_melody_paired",
+    "tables/lyrics_to_melody_lyrics_all"
+   ],
+   "data": "data/melody_samples_{orig,lyrics_all}.parquet"
+  },
+  "table2_lyric_conditioning": {
+   "code": "paper_eval.component_sota.lyric_conditioning",
+   "tables": [
+    "tables/lyric_conditioning"
+   ],
+   "data": "data/lyric_conditioning.parquet"
+  },
+  "table3_infill": {
+   "code": "paper_eval.component_sota.infill_eval",
+   "tables": [
+    "tables/infill",
+    "tables/infill_vs_regen"
+   ],
+   "data": "data/infill.parquet"
+  },
+  "table4_melody_to_chord": {
+   "code": "paper_eval.component_sota.chord_eval",
+   "tables": [
+    "tables/melody_to_chord",
+    "tables/melody_to_chord_paired"
+   ],
+   "data": "data/chords.parquet"
+  },
+  "table5_joint_vs_cascade": {
+   "code": "paper_eval.component_sota.joint_cascade",
+   "tables": [
+    "tables/joint_vs_cascade",
+    "tables/joint_vs_cascade_paired"
+   ],
+   "data": "data/stage_seconds.json"
+  },
+  "table6_svs": {
+   "code": "paper_eval.component_sota.svs_eval",
+   "tables": [
+    "tables/svs_cross_render",
+    "tables/svs_effects"
+   ],
+   "data": "data/svs.parquet"
+  },
+  "table7_8_backing_control": {
+   "code": "paper_eval.component_sota.backing_eval",
+   "tables": [
+    "tables/backing_chord_audio",
+    "tables/closed_loop_control",
+    "tables/backing_paired",
+    "tables/backing_chord_f1_matrix"
+   ],
+   "data": "data/backing.parquet"
+  },
+  "section_semantics": {
+   "code": "paper_eval.component_sota.section_semantics",
+   "tables": [
+    "tables/section_semantics_features",
+    "tables/section_semantics_classifier"
+   ],
+   "data": "data/section_classifier.json"
+  },
+  "figures": {
+   "code": "paper_eval.component_sota.figures",
+   "files": [
+    "figures/fig1_*.{pdf,png}",
+    "figures/fig2_*.{pdf,png}",
+    "figures/fig3_*.{pdf,png}",
+    "figures/fig4_*.{pdf,png}",
+    "figures/fig5_*.{pdf,png}",
+    "figures/fig6_*.{pdf,png}",
+    "figures/fig7_*.{pdf,png}",
+    "figures/fig8_*.{pdf,png}"
+   ]
+  },
+  "listening_study": {
+   "code": "paper_eval.component_sota.listening_study",
+   "dir": "listening_study/",
+   "human_results": "NONE COLLECTED"
+  }
+ },
+ "compute": {
+  "ledger": "reports/component_sota/COMPUTE_LEDGER.csv",
+  "gpu_hours_total": 68.7,
+  "jobs": 203
+ }
+}

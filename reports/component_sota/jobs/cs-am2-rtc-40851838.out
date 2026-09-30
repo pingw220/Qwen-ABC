@@ -1,0 +1,23 @@
+job=40851838 host=n3035 start=2026-09-29T11:29:16-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.accomontage --melodies csl_rtc:S1 --shard 0 --num-shards 12
+tasks 225 shard 19
+05QmUFMQMUYV3CCVgs8G6Z csl_rtc True None 29.1
+0TdPZ2mnbhww9mVUiZZhX5 csl_rtc True None 12.1
+18wo5vJV7bRnjt3wlkSDCJ csl_rtc True None 11.5
+1eFSgOay51iMZIdmXU3ISl csl_rtc True None 11.3
+1zsXjmo39vHJkLW8FJVB0t csl_rtc True None 11.4
+2Pg6rODAW3EZCCBgE8iPZq csl_rtc False no melody (unsupported_meter) None
+2kNj4xVed7CbulRhF3C4nT csl_rtc True None 11.5
+3FT4dcOfYXmlNbLecPiMrm csl_rtc True None 11.3
+3Yg7Z2rVweAHOwUiPkqTvE csl_rtc True None 11.3
+479FYDDkEokgYf3BG9x6fp csl_rtc True None 11.5
+4QvcPLQoWZK9qiX8uU6zft csl_rtc True None 11.2
+4uJ6Twc8EbeVIaqBj5CJs7 csl_rtc True None 11.5
+5CbNIRIgmrh1W9xNnhtSz1 csl_rtc True None 11.3
+5bVKIpODZbjn82L68A80hv csl_rtc True None 11.3
+5mh8LL52KOZXeb80QpcUVG csl_rtc True None 11.5
+6H1qeLID2gslZMgxpwfACS csl_rtc True None 11.1
+6ast0Gzj3H6MgDfkRHZxx1 csl_rtc True None 11.5
+6tnnVnCMhhIbXsnReXa0KX csl_rtc True None 11.4
+7ntQ7iPTYMS4LLAumzJQ7R csl_rtc True None 11.4
+AM2_DONE
+end=2026-09-29T11:33:07-07:00 CPU_OK

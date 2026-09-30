@@ -1,0 +1,21 @@
+job=40850215 array=none_0 host=g3109 gpu=NVIDIA L40S start=2026-09-29T10:28:33-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.chord_gen --harmonizer chord --melodies csl_offc:S1 --chord-seeds S1
+tasks 210 shard 210 todo 210
+Loading weights:   0%|          | 0/321 [00:00<?, ?it/s]Loading weights:   3%|▎         | 11/321 [00:00<00:03, 100.49it/s]Loading weights:   7%|▋         | 24/321 [00:00<00:08, 36.69it/s] Loading weights:   9%|▉         | 30/321 [00:00<00:10, 27.62it/s]Loading weights:  13%|█▎        | 42/321 [00:01<00:07, 38.20it/s]Loading weights:  15%|█▍        | 48/321 [00:01<00:08, 31.56it/s]Loading weights:  27%|██▋       | 87/321 [00:01<00:02, 79.84it/s]Loading weights:  31%|███       | 98/321 [00:01<00:02, 75.69it/s]Loading weights:  36%|███▌      | 116/321 [00:02<00:03, 56.10it/s]Loading weights:  63%|██████▎   | 202/321 [00:02<00:01, 114.12it/s]Loading weights:  67%|██████▋   | 214/321 [00:02<00:01, 96.23it/s] Loading weights:  87%|████████▋ | 279/321 [00:03<00:00, 157.77it/s]Loading weights:  94%|█████████▍| 301/321 [00:03<00:00, 132.43it/s]Loading weights: 100%|██████████| 321/321 [00:03<00:00, 96.42it/s] 
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[1/14] 11.53s
+[2/14] 11.22s
+[3/14] 11.72s
+[4/14] 12.57s
+[5/14] 14.75s
+[6/14] 17.85s
+[7/14] 231.99s
+[8/14] 19.53s
+[9/14] 17.71s
+[10/14] 20.66s
+[11/14] 23.67s
+[12/14] 29.2s
+[13/14] 23.96s
+[14/14] 31.54s
+CHORD_GEN_DONE
+end=2026-09-29T10:37:30-07:00 GPU_OK

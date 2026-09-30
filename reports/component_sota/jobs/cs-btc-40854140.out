@@ -1,0 +1,870 @@
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/tools/btc_run.py:16: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, name) or name in getattr(np, "__former_attrs__", {}):
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/tools/btc_run.py:16: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, name) or name in getattr(np, "__former_attrs__", {}):
+/gscratch/ark/pingw220/miniconda3/envs/sheetsagepp-btc/lib/python3.10/site-packages/pretty_midi/instrument.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+I BTC-ISMIR19 09-29 11:53:42.029 test.py:29] label type: large voca
+I BTC-ISMIR19 09-29 11:53:48.403 test.py:43] restore model
+I BTC-ISMIR19 09-29 11:53:48.841 test.py:50] ======== 1 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:17.573 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00143.wav
+I BTC-ISMIR19 09-29 11:54:32.487 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00143.lab
+I BTC-ISMIR19 09-29 11:54:32.504 test.py:50] ======== 2 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:32.926 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00284.wav
+I BTC-ISMIR19 09-29 11:54:33.035 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00284.lab
+I BTC-ISMIR19 09-29 11:54:33.042 test.py:50] ======== 3 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:33.538 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00147.wav
+I BTC-ISMIR19 09-29 11:54:33.650 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00147.lab
+I BTC-ISMIR19 09-29 11:54:33.662 test.py:50] ======== 4 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:34.043 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00209.wav
+I BTC-ISMIR19 09-29 11:54:34.153 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00209.lab
+I BTC-ISMIR19 09-29 11:54:34.172 test.py:50] ======== 5 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:34.534 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00250.wav
+I BTC-ISMIR19 09-29 11:54:34.646 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00250.lab
+I BTC-ISMIR19 09-29 11:54:34.659 test.py:50] ======== 6 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:35.040 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00224.wav
+I BTC-ISMIR19 09-29 11:54:35.149 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00224.lab
+I BTC-ISMIR19 09-29 11:54:35.158 test.py:50] ======== 7 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:35.654 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00107.wav
+I BTC-ISMIR19 09-29 11:54:35.800 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00107.lab
+I BTC-ISMIR19 09-29 11:54:35.807 test.py:50] ======== 8 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:36.173 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00160.wav
+I BTC-ISMIR19 09-29 11:54:36.283 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00160.lab
+I BTC-ISMIR19 09-29 11:54:36.295 test.py:50] ======== 9 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:36.685 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00146.wav
+I BTC-ISMIR19 09-29 11:54:36.795 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00146.lab
+I BTC-ISMIR19 09-29 11:54:36.813 test.py:50] ======== 10 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:37.178 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00011.wav
+I BTC-ISMIR19 09-29 11:54:37.288 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00011.lab
+I BTC-ISMIR19 09-29 11:54:37.296 test.py:50] ======== 11 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:37.681 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00191.wav
+I BTC-ISMIR19 09-29 11:54:37.791 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00191.lab
+I BTC-ISMIR19 09-29 11:54:37.806 test.py:50] ======== 12 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:38.268 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00154.wav
+I BTC-ISMIR19 09-29 11:54:38.377 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00154.lab
+I BTC-ISMIR19 09-29 11:54:38.390 test.py:50] ======== 13 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:38.753 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00142.wav
+I BTC-ISMIR19 09-29 11:54:38.864 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00142.lab
+I BTC-ISMIR19 09-29 11:54:38.879 test.py:50] ======== 14 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:39.288 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00249.wav
+I BTC-ISMIR19 09-29 11:54:39.398 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00249.lab
+I BTC-ISMIR19 09-29 11:54:39.407 test.py:50] ======== 15 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:39.804 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00134.wav
+I BTC-ISMIR19 09-29 11:54:39.912 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00134.lab
+I BTC-ISMIR19 09-29 11:54:39.922 test.py:50] ======== 16 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:40.387 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00151.wav
+I BTC-ISMIR19 09-29 11:54:40.497 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00151.lab
+I BTC-ISMIR19 09-29 11:54:40.512 test.py:50] ======== 17 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:40.854 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00177.wav
+I BTC-ISMIR19 09-29 11:54:40.964 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00177.lab
+I BTC-ISMIR19 09-29 11:54:40.982 test.py:50] ======== 18 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:41.408 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00042.wav
+I BTC-ISMIR19 09-29 11:54:41.516 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00042.lab
+I BTC-ISMIR19 09-29 11:54:41.526 test.py:50] ======== 19 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:41.881 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00050.wav
+I BTC-ISMIR19 09-29 11:54:41.990 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00050.lab
+I BTC-ISMIR19 09-29 11:54:41.999 test.py:50] ======== 20 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:42.399 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00251.wav
+I BTC-ISMIR19 09-29 11:54:42.508 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00251.lab
+I BTC-ISMIR19 09-29 11:54:42.520 test.py:50] ======== 21 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:42.889 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00005.wav
+I BTC-ISMIR19 09-29 11:54:42.999 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00005.lab
+I BTC-ISMIR19 09-29 11:54:43.011 test.py:50] ======== 22 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:43.550 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00157.wav
+I BTC-ISMIR19 09-29 11:54:43.660 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00157.lab
+I BTC-ISMIR19 09-29 11:54:43.674 test.py:50] ======== 23 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:44.113 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00277.wav
+I BTC-ISMIR19 09-29 11:54:44.223 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00277.lab
+I BTC-ISMIR19 09-29 11:54:44.233 test.py:50] ======== 24 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:44.661 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00268.wav
+I BTC-ISMIR19 09-29 11:54:44.772 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00268.lab
+I BTC-ISMIR19 09-29 11:54:44.916 test.py:50] ======== 25 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:45.581 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00102.wav
+I BTC-ISMIR19 09-29 11:54:45.702 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00102.lab
+I BTC-ISMIR19 09-29 11:54:45.712 test.py:50] ======== 26 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:46.116 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00088.wav
+I BTC-ISMIR19 09-29 11:54:46.225 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00088.lab
+I BTC-ISMIR19 09-29 11:54:46.237 test.py:50] ======== 27 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:46.668 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00186.wav
+I BTC-ISMIR19 09-29 11:54:46.778 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00186.lab
+I BTC-ISMIR19 09-29 11:54:46.798 test.py:50] ======== 28 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:47.271 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00178.wav
+I BTC-ISMIR19 09-29 11:54:47.379 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00178.lab
+I BTC-ISMIR19 09-29 11:54:47.389 test.py:50] ======== 29 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:47.857 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00237.wav
+I BTC-ISMIR19 09-29 11:54:47.968 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00237.lab
+I BTC-ISMIR19 09-29 11:54:47.980 test.py:50] ======== 30 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:48.409 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00174.wav
+I BTC-ISMIR19 09-29 11:54:48.518 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00174.lab
+I BTC-ISMIR19 09-29 11:54:48.528 test.py:50] ======== 31 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:48.973 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00207.wav
+I BTC-ISMIR19 09-29 11:54:49.083 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00207.lab
+I BTC-ISMIR19 09-29 11:54:49.095 test.py:50] ======== 32 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:49.488 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00161.wav
+I BTC-ISMIR19 09-29 11:54:49.598 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00161.lab
+I BTC-ISMIR19 09-29 11:54:49.609 test.py:50] ======== 33 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:50.053 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00193.wav
+I BTC-ISMIR19 09-29 11:54:50.220 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00193.lab
+I BTC-ISMIR19 09-29 11:54:50.234 test.py:50] ======== 34 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:50.768 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00274.wav
+I BTC-ISMIR19 09-29 11:54:50.877 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00274.lab
+I BTC-ISMIR19 09-29 11:54:50.887 test.py:50] ======== 35 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:51.654 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00106.wav
+I BTC-ISMIR19 09-29 11:54:51.775 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00106.lab
+I BTC-ISMIR19 09-29 11:54:51.783 test.py:50] ======== 36 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:52.194 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00104.wav
+I BTC-ISMIR19 09-29 11:54:52.305 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00104.lab
+I BTC-ISMIR19 09-29 11:54:52.317 test.py:50] ======== 37 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:52.798 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00164.wav
+I BTC-ISMIR19 09-29 11:54:52.908 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00164.lab
+I BTC-ISMIR19 09-29 11:54:52.917 test.py:50] ======== 38 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:53.303 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00279.wav
+I BTC-ISMIR19 09-29 11:54:53.415 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00279.lab
+I BTC-ISMIR19 09-29 11:54:53.424 test.py:50] ======== 39 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:53.932 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00118.wav
+I BTC-ISMIR19 09-29 11:54:54.042 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00118.lab
+I BTC-ISMIR19 09-29 11:54:54.052 test.py:50] ======== 40 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:54.426 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00206.wav
+I BTC-ISMIR19 09-29 11:54:54.536 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00206.lab
+I BTC-ISMIR19 09-29 11:54:54.548 test.py:50] ======== 41 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:54.977 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00073.wav
+I BTC-ISMIR19 09-29 11:54:55.086 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00073.lab
+I BTC-ISMIR19 09-29 11:54:55.098 test.py:50] ======== 42 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:55.543 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00117.wav
+I BTC-ISMIR19 09-29 11:54:55.652 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00117.lab
+I BTC-ISMIR19 09-29 11:54:55.662 test.py:50] ======== 43 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:56.020 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00112.wav
+I BTC-ISMIR19 09-29 11:54:56.128 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00112.lab
+I BTC-ISMIR19 09-29 11:54:56.138 test.py:50] ======== 44 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:56.544 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00227.wav
+I BTC-ISMIR19 09-29 11:54:56.653 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00227.lab
+I BTC-ISMIR19 09-29 11:54:56.665 test.py:50] ======== 45 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:57.191 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00003.wav
+I BTC-ISMIR19 09-29 11:54:57.299 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00003.lab
+I BTC-ISMIR19 09-29 11:54:57.311 test.py:50] ======== 46 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:57.743 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00010.wav
+I BTC-ISMIR19 09-29 11:54:57.851 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00010.lab
+I BTC-ISMIR19 09-29 11:54:57.861 test.py:50] ======== 47 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:58.253 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00059.wav
+I BTC-ISMIR19 09-29 11:54:58.362 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00059.lab
+I BTC-ISMIR19 09-29 11:54:58.372 test.py:50] ======== 48 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:58.723 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00248.wav
+I BTC-ISMIR19 09-29 11:54:58.832 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00248.lab
+I BTC-ISMIR19 09-29 11:54:58.843 test.py:50] ======== 49 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:59.219 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00097.wav
+I BTC-ISMIR19 09-29 11:54:59.328 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00097.lab
+I BTC-ISMIR19 09-29 11:54:59.340 test.py:50] ======== 50 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:54:59.880 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00110.wav
+I BTC-ISMIR19 09-29 11:54:59.989 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00110.lab
+I BTC-ISMIR19 09-29 11:55:00.017 test.py:50] ======== 51 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:00.377 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00263.wav
+I BTC-ISMIR19 09-29 11:55:00.485 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00263.lab
+I BTC-ISMIR19 09-29 11:55:00.496 test.py:50] ======== 52 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:00.908 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00234.wav
+I BTC-ISMIR19 09-29 11:55:01.015 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00234.lab
+I BTC-ISMIR19 09-29 11:55:01.022 test.py:50] ======== 53 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:01.423 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00228.wav
+I BTC-ISMIR19 09-29 11:55:01.531 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00228.lab
+I BTC-ISMIR19 09-29 11:55:01.541 test.py:50] ======== 54 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:01.922 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00064.wav
+I BTC-ISMIR19 09-29 11:55:02.031 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00064.lab
+I BTC-ISMIR19 09-29 11:55:02.040 test.py:50] ======== 55 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:02.446 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00285.wav
+I BTC-ISMIR19 09-29 11:55:02.554 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00285.lab
+I BTC-ISMIR19 09-29 11:55:02.564 test.py:50] ======== 56 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:02.991 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00012.wav
+I BTC-ISMIR19 09-29 11:55:03.099 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00012.lab
+I BTC-ISMIR19 09-29 11:55:03.108 test.py:50] ======== 57 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:03.595 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00083.wav
+I BTC-ISMIR19 09-29 11:55:03.704 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00083.lab
+I BTC-ISMIR19 09-29 11:55:03.712 test.py:50] ======== 58 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:04.203 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00057.wav
+I BTC-ISMIR19 09-29 11:55:04.312 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00057.lab
+I BTC-ISMIR19 09-29 11:55:04.322 test.py:50] ======== 59 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:04.800 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00175.wav
+I BTC-ISMIR19 09-29 11:55:04.922 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00175.lab
+I BTC-ISMIR19 09-29 11:55:04.934 test.py:50] ======== 60 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:05.370 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00017.wav
+I BTC-ISMIR19 09-29 11:55:05.479 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00017.lab
+I BTC-ISMIR19 09-29 11:55:05.488 test.py:50] ======== 61 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:05.931 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00019.wav
+I BTC-ISMIR19 09-29 11:55:06.040 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00019.lab
+I BTC-ISMIR19 09-29 11:55:06.053 test.py:50] ======== 62 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:06.458 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00204.wav
+I BTC-ISMIR19 09-29 11:55:06.566 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00204.lab
+I BTC-ISMIR19 09-29 11:55:06.575 test.py:50] ======== 63 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:07.077 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00155.wav
+I BTC-ISMIR19 09-29 11:55:07.185 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00155.lab
+I BTC-ISMIR19 09-29 11:55:07.194 test.py:50] ======== 64 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:07.601 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00195.wav
+I BTC-ISMIR19 09-29 11:55:07.709 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00195.lab
+I BTC-ISMIR19 09-29 11:55:07.721 test.py:50] ======== 65 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:08.329 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00103.wav
+I BTC-ISMIR19 09-29 11:55:08.437 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00103.lab
+I BTC-ISMIR19 09-29 11:55:08.447 test.py:50] ======== 66 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:08.844 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00266.wav
+I BTC-ISMIR19 09-29 11:55:08.952 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00266.lab
+I BTC-ISMIR19 09-29 11:55:08.964 test.py:50] ======== 67 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:09.398 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00247.wav
+I BTC-ISMIR19 09-29 11:55:09.506 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00247.lab
+I BTC-ISMIR19 09-29 11:55:09.519 test.py:50] ======== 68 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:10.420 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00027.wav
+I BTC-ISMIR19 09-29 11:55:10.545 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00027.lab
+I BTC-ISMIR19 09-29 11:55:10.553 test.py:50] ======== 69 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:11.051 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00199.wav
+I BTC-ISMIR19 09-29 11:55:11.159 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00199.lab
+I BTC-ISMIR19 09-29 11:55:11.167 test.py:50] ======== 70 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:11.712 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00101.wav
+I BTC-ISMIR19 09-29 11:55:11.820 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00101.lab
+I BTC-ISMIR19 09-29 11:55:11.827 test.py:50] ======== 71 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:12.237 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00130.wav
+I BTC-ISMIR19 09-29 11:55:12.346 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00130.lab
+I BTC-ISMIR19 09-29 11:55:12.360 test.py:50] ======== 72 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:13.369 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00189.wav
+I BTC-ISMIR19 09-29 11:55:13.477 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00189.lab
+I BTC-ISMIR19 09-29 11:55:13.490 test.py:50] ======== 73 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:13.890 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00026.wav
+I BTC-ISMIR19 09-29 11:55:13.997 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00026.lab
+I BTC-ISMIR19 09-29 11:55:14.002 test.py:50] ======== 74 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:14.730 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00149.wav
+I BTC-ISMIR19 09-29 11:55:14.838 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00149.lab
+I BTC-ISMIR19 09-29 11:55:14.847 test.py:50] ======== 75 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:15.496 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00081.wav
+I BTC-ISMIR19 09-29 11:55:15.605 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00081.lab
+I BTC-ISMIR19 09-29 11:55:15.615 test.py:50] ======== 76 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:16.058 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00095.wav
+I BTC-ISMIR19 09-29 11:55:16.167 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00095.lab
+I BTC-ISMIR19 09-29 11:55:16.207 test.py:50] ======== 77 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:16.597 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00152.wav
+I BTC-ISMIR19 09-29 11:55:16.705 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00152.lab
+I BTC-ISMIR19 09-29 11:55:16.719 test.py:50] ======== 78 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:17.154 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00221.wav
+I BTC-ISMIR19 09-29 11:55:17.265 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00221.lab
+I BTC-ISMIR19 09-29 11:55:17.279 test.py:50] ======== 79 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:17.667 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00243.wav
+I BTC-ISMIR19 09-29 11:55:17.776 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00243.lab
+I BTC-ISMIR19 09-29 11:55:17.789 test.py:50] ======== 80 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:18.227 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00205.wav
+I BTC-ISMIR19 09-29 11:55:18.335 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00205.lab
+I BTC-ISMIR19 09-29 11:55:18.347 test.py:50] ======== 81 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:18.865 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00111.wav
+I BTC-ISMIR19 09-29 11:55:18.974 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00111.lab
+I BTC-ISMIR19 09-29 11:55:18.984 test.py:50] ======== 82 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:19.360 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00031.wav
+I BTC-ISMIR19 09-29 11:55:19.468 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00031.lab
+I BTC-ISMIR19 09-29 11:55:19.477 test.py:50] ======== 83 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:19.906 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00075.wav
+I BTC-ISMIR19 09-29 11:55:20.014 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00075.lab
+I BTC-ISMIR19 09-29 11:55:20.024 test.py:50] ======== 84 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:20.389 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00063.wav
+I BTC-ISMIR19 09-29 11:55:20.498 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00063.lab
+I BTC-ISMIR19 09-29 11:55:20.506 test.py:50] ======== 85 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:21.030 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00091.wav
+I BTC-ISMIR19 09-29 11:55:21.317 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00091.lab
+I BTC-ISMIR19 09-29 11:55:21.331 test.py:50] ======== 86 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:21.705 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00000.wav
+I BTC-ISMIR19 09-29 11:55:21.814 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00000.lab
+I BTC-ISMIR19 09-29 11:55:21.822 test.py:50] ======== 87 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:22.213 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00037.wav
+I BTC-ISMIR19 09-29 11:55:22.322 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00037.lab
+I BTC-ISMIR19 09-29 11:55:22.333 test.py:50] ======== 88 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:22.708 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00127.wav
+I BTC-ISMIR19 09-29 11:55:22.816 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00127.lab
+I BTC-ISMIR19 09-29 11:55:22.832 test.py:50] ======== 89 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:23.232 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00036.wav
+I BTC-ISMIR19 09-29 11:55:23.340 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00036.lab
+I BTC-ISMIR19 09-29 11:55:23.347 test.py:50] ======== 90 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:23.730 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00093.wav
+I BTC-ISMIR19 09-29 11:55:23.838 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00093.lab
+I BTC-ISMIR19 09-29 11:55:23.846 test.py:50] ======== 91 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:24.271 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00049.wav
+I BTC-ISMIR19 09-29 11:55:24.380 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00049.lab
+I BTC-ISMIR19 09-29 11:55:24.393 test.py:50] ======== 92 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:24.950 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00072.wav
+I BTC-ISMIR19 09-29 11:55:25.058 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00072.lab
+I BTC-ISMIR19 09-29 11:55:25.069 test.py:50] ======== 93 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:25.521 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00233.wav
+I BTC-ISMIR19 09-29 11:55:25.630 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00233.lab
+I BTC-ISMIR19 09-29 11:55:25.639 test.py:50] ======== 94 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:26.041 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00184.wav
+I BTC-ISMIR19 09-29 11:55:26.164 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00184.lab
+I BTC-ISMIR19 09-29 11:55:26.171 test.py:50] ======== 95 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:26.539 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00166.wav
+I BTC-ISMIR19 09-29 11:55:26.647 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00166.lab
+I BTC-ISMIR19 09-29 11:55:26.656 test.py:50] ======== 96 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:27.089 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00180.wav
+I BTC-ISMIR19 09-29 11:55:27.992 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00180.lab
+I BTC-ISMIR19 09-29 11:55:28.001 test.py:50] ======== 97 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:28.394 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00084.wav
+I BTC-ISMIR19 09-29 11:55:28.502 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00084.lab
+I BTC-ISMIR19 09-29 11:55:28.512 test.py:50] ======== 98 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:29.072 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00213.wav
+I BTC-ISMIR19 09-29 11:55:29.181 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00213.lab
+I BTC-ISMIR19 09-29 11:55:29.195 test.py:50] ======== 99 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:29.646 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00125.wav
+I BTC-ISMIR19 09-29 11:55:29.754 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00125.lab
+I BTC-ISMIR19 09-29 11:55:29.760 test.py:50] ======== 100 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:30.150 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00150.wav
+I BTC-ISMIR19 09-29 11:55:30.259 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00150.lab
+I BTC-ISMIR19 09-29 11:55:30.273 test.py:50] ======== 101 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:30.628 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00252.wav
+I BTC-ISMIR19 09-29 11:55:30.736 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00252.lab
+I BTC-ISMIR19 09-29 11:55:30.745 test.py:50] ======== 102 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:31.120 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00211.wav
+I BTC-ISMIR19 09-29 11:55:31.228 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00211.lab
+I BTC-ISMIR19 09-29 11:55:31.284 test.py:50] ======== 103 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:31.711 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00085.wav
+I BTC-ISMIR19 09-29 11:55:31.819 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00085.lab
+I BTC-ISMIR19 09-29 11:55:31.830 test.py:50] ======== 104 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:32.247 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00135.wav
+I BTC-ISMIR19 09-29 11:55:32.356 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00135.lab
+I BTC-ISMIR19 09-29 11:55:32.361 test.py:50] ======== 105 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:32.770 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00092.wav
+I BTC-ISMIR19 09-29 11:55:32.878 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00092.lab
+I BTC-ISMIR19 09-29 11:55:32.894 test.py:50] ======== 106 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:33.339 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00139.wav
+I BTC-ISMIR19 09-29 11:55:33.447 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00139.lab
+I BTC-ISMIR19 09-29 11:55:33.456 test.py:50] ======== 107 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:34.061 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00170.wav
+I BTC-ISMIR19 09-29 11:55:34.169 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00170.lab
+I BTC-ISMIR19 09-29 11:55:34.176 test.py:50] ======== 108 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:34.616 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00090.wav
+I BTC-ISMIR19 09-29 11:55:34.724 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00090.lab
+I BTC-ISMIR19 09-29 11:55:34.739 test.py:50] ======== 109 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:35.136 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00167.wav
+I BTC-ISMIR19 09-29 11:55:35.244 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00167.lab
+I BTC-ISMIR19 09-29 11:55:35.252 test.py:50] ======== 110 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:35.688 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00123.wav
+I BTC-ISMIR19 09-29 11:55:35.797 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00123.lab
+I BTC-ISMIR19 09-29 11:55:35.805 test.py:50] ======== 111 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:36.345 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00271.wav
+I BTC-ISMIR19 09-29 11:55:36.653 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00271.lab
+I BTC-ISMIR19 09-29 11:55:36.667 test.py:50] ======== 112 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:37.271 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00162.wav
+I BTC-ISMIR19 09-29 11:55:37.380 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00162.lab
+I BTC-ISMIR19 09-29 11:55:37.391 test.py:50] ======== 113 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:37.862 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00238.wav
+I BTC-ISMIR19 09-29 11:55:37.970 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00238.lab
+I BTC-ISMIR19 09-29 11:55:37.982 test.py:50] ======== 114 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:38.352 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00038.wav
+I BTC-ISMIR19 09-29 11:55:38.460 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00038.lab
+I BTC-ISMIR19 09-29 11:55:38.467 test.py:50] ======== 115 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:38.901 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00108.wav
+I BTC-ISMIR19 09-29 11:55:39.014 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00108.lab
+I BTC-ISMIR19 09-29 11:55:39.024 test.py:50] ======== 116 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:39.555 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00222.wav
+I BTC-ISMIR19 09-29 11:55:39.663 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00222.lab
+I BTC-ISMIR19 09-29 11:55:39.670 test.py:50] ======== 117 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:40.192 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00269.wav
+I BTC-ISMIR19 09-29 11:55:40.300 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00269.lab
+I BTC-ISMIR19 09-29 11:55:40.312 test.py:50] ======== 118 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:40.694 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00225.wav
+I BTC-ISMIR19 09-29 11:55:40.802 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00225.lab
+I BTC-ISMIR19 09-29 11:55:40.812 test.py:50] ======== 119 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:41.438 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00240.wav
+I BTC-ISMIR19 09-29 11:55:41.546 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00240.lab
+I BTC-ISMIR19 09-29 11:55:41.559 test.py:50] ======== 120 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:41.941 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00067.wav
+I BTC-ISMIR19 09-29 11:55:42.127 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00067.lab
+I BTC-ISMIR19 09-29 11:55:42.142 test.py:50] ======== 121 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:42.660 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00007.wav
+I BTC-ISMIR19 09-29 11:55:42.769 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00007.lab
+I BTC-ISMIR19 09-29 11:55:42.777 test.py:50] ======== 122 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:43.159 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00120.wav
+I BTC-ISMIR19 09-29 11:55:43.267 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00120.lab
+I BTC-ISMIR19 09-29 11:55:43.277 test.py:50] ======== 123 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:43.729 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00006.wav
+I BTC-ISMIR19 09-29 11:55:43.837 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00006.lab
+I BTC-ISMIR19 09-29 11:55:43.846 test.py:50] ======== 124 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:44.256 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00275.wav
+I BTC-ISMIR19 09-29 11:55:44.364 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00275.lab
+I BTC-ISMIR19 09-29 11:55:44.372 test.py:50] ======== 125 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:44.742 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00212.wav
+I BTC-ISMIR19 09-29 11:55:44.850 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00212.lab
+I BTC-ISMIR19 09-29 11:55:44.864 test.py:50] ======== 126 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:45.237 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00124.wav
+I BTC-ISMIR19 09-29 11:55:45.344 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00124.lab
+I BTC-ISMIR19 09-29 11:55:45.354 test.py:50] ======== 127 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:45.747 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00122.wav
+I BTC-ISMIR19 09-29 11:55:45.855 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00122.lab
+I BTC-ISMIR19 09-29 11:55:45.867 test.py:50] ======== 128 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:46.241 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00100.wav
+I BTC-ISMIR19 09-29 11:55:46.349 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00100.lab
+I BTC-ISMIR19 09-29 11:55:46.377 test.py:50] ======== 129 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:46.808 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00203.wav
+I BTC-ISMIR19 09-29 11:55:46.916 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00203.lab
+I BTC-ISMIR19 09-29 11:55:46.926 test.py:50] ======== 130 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:47.374 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00074.wav
+I BTC-ISMIR19 09-29 11:55:47.482 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00074.lab
+I BTC-ISMIR19 09-29 11:55:47.493 test.py:50] ======== 131 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:48.232 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00229.wav
+I BTC-ISMIR19 09-29 11:55:48.339 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00229.lab
+I BTC-ISMIR19 09-29 11:55:48.348 test.py:50] ======== 132 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:48.996 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00141.wav
+I BTC-ISMIR19 09-29 11:55:49.104 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00141.lab
+I BTC-ISMIR19 09-29 11:55:49.121 test.py:50] ======== 133 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:49.678 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00179.wav
+I BTC-ISMIR19 09-29 11:55:49.787 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00179.lab
+I BTC-ISMIR19 09-29 11:55:49.798 test.py:50] ======== 134 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:50.196 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00079.wav
+I BTC-ISMIR19 09-29 11:55:50.304 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00079.lab
+I BTC-ISMIR19 09-29 11:55:50.313 test.py:50] ======== 135 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:50.674 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00066.wav
+I BTC-ISMIR19 09-29 11:55:50.783 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00066.lab
+I BTC-ISMIR19 09-29 11:55:50.792 test.py:50] ======== 136 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:51.210 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00144.wav
+I BTC-ISMIR19 09-29 11:55:51.317 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00144.lab
+I BTC-ISMIR19 09-29 11:55:51.326 test.py:50] ======== 137 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:51.709 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00121.wav
+I BTC-ISMIR19 09-29 11:55:51.819 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00121.lab
+I BTC-ISMIR19 09-29 11:55:51.831 test.py:50] ======== 138 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:52.293 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00131.wav
+I BTC-ISMIR19 09-29 11:55:52.402 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00131.lab
+I BTC-ISMIR19 09-29 11:55:52.419 test.py:50] ======== 139 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:52.818 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00043.wav
+I BTC-ISMIR19 09-29 11:55:52.926 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00043.lab
+I BTC-ISMIR19 09-29 11:55:52.934 test.py:50] ======== 140 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:53.365 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00145.wav
+I BTC-ISMIR19 09-29 11:55:53.473 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00145.lab
+I BTC-ISMIR19 09-29 11:55:53.490 test.py:50] ======== 141 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:53.888 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00034.wav
+I BTC-ISMIR19 09-29 11:55:53.996 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00034.lab
+I BTC-ISMIR19 09-29 11:55:54.005 test.py:50] ======== 142 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:54.443 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00052.wav
+I BTC-ISMIR19 09-29 11:55:54.552 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00052.lab
+I BTC-ISMIR19 09-29 11:55:54.562 test.py:50] ======== 143 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:55.455 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00259.wav
+I BTC-ISMIR19 09-29 11:55:55.584 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00259.lab
+I BTC-ISMIR19 09-29 11:55:55.592 test.py:50] ======== 144 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:56.205 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00280.wav
+I BTC-ISMIR19 09-29 11:55:56.314 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00280.lab
+I BTC-ISMIR19 09-29 11:55:56.324 test.py:50] ======== 145 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:56.686 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00264.wav
+I BTC-ISMIR19 09-29 11:55:56.794 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00264.lab
+I BTC-ISMIR19 09-29 11:55:56.805 test.py:50] ======== 146 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:57.211 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00094.wav
+I BTC-ISMIR19 09-29 11:55:57.320 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00094.lab
+I BTC-ISMIR19 09-29 11:55:57.331 test.py:50] ======== 147 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:57.726 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00116.wav
+I BTC-ISMIR19 09-29 11:55:57.835 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00116.lab
+I BTC-ISMIR19 09-29 11:55:57.845 test.py:50] ======== 148 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:58.436 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00232.wav
+I BTC-ISMIR19 09-29 11:55:58.544 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00232.lab
+I BTC-ISMIR19 09-29 11:55:58.557 test.py:50] ======== 149 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:55:59.001 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00033.wav
+I BTC-ISMIR19 09-29 11:55:59.112 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00033.lab
+I BTC-ISMIR19 09-29 11:55:59.119 test.py:50] ======== 150 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:00.064 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00060.wav
+I BTC-ISMIR19 09-29 11:56:00.173 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00060.lab
+I BTC-ISMIR19 09-29 11:56:00.185 test.py:50] ======== 151 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:00.663 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00044.wav
+I BTC-ISMIR19 09-29 11:56:00.772 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00044.lab
+I BTC-ISMIR19 09-29 11:56:00.782 test.py:50] ======== 152 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:01.199 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00053.wav
+I BTC-ISMIR19 09-29 11:56:01.308 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00053.lab
+I BTC-ISMIR19 09-29 11:56:01.322 test.py:50] ======== 153 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:01.697 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00126.wav
+I BTC-ISMIR19 09-29 11:56:01.805 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00126.lab
+I BTC-ISMIR19 09-29 11:56:01.812 test.py:50] ======== 154 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:02.241 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00128.wav
+I BTC-ISMIR19 09-29 11:56:02.350 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00128.lab
+I BTC-ISMIR19 09-29 11:56:02.427 test.py:50] ======== 155 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:02.905 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00230.wav
+I BTC-ISMIR19 09-29 11:56:03.013 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00230.lab
+I BTC-ISMIR19 09-29 11:56:03.023 test.py:50] ======== 156 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:03.402 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00281.wav
+I BTC-ISMIR19 09-29 11:56:03.510 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00281.lab
+I BTC-ISMIR19 09-29 11:56:03.520 test.py:50] ======== 157 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:03.884 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00014.wav
+I BTC-ISMIR19 09-29 11:56:03.993 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00014.lab
+I BTC-ISMIR19 09-29 11:56:03.999 test.py:50] ======== 158 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:04.410 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00035.wav
+I BTC-ISMIR19 09-29 11:56:04.518 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00035.lab
+I BTC-ISMIR19 09-29 11:56:04.527 test.py:50] ======== 159 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:04.919 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00197.wav
+I BTC-ISMIR19 09-29 11:56:05.027 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00197.lab
+I BTC-ISMIR19 09-29 11:56:05.036 test.py:50] ======== 160 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:05.455 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00061.wav
+I BTC-ISMIR19 09-29 11:56:05.563 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00061.lab
+I BTC-ISMIR19 09-29 11:56:05.574 test.py:50] ======== 161 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:05.988 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00187.wav
+I BTC-ISMIR19 09-29 11:56:06.097 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00187.lab
+I BTC-ISMIR19 09-29 11:56:06.112 test.py:50] ======== 162 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:06.784 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00262.wav
+I BTC-ISMIR19 09-29 11:56:06.903 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00262.lab
+I BTC-ISMIR19 09-29 11:56:06.914 test.py:50] ======== 163 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:07.302 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00214.wav
+I BTC-ISMIR19 09-29 11:56:07.542 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00214.lab
+I BTC-ISMIR19 09-29 11:56:07.556 test.py:50] ======== 164 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:07.920 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00188.wav
+I BTC-ISMIR19 09-29 11:56:08.029 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00188.lab
+I BTC-ISMIR19 09-29 11:56:08.038 test.py:50] ======== 165 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:08.484 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00025.wav
+I BTC-ISMIR19 09-29 11:56:08.592 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00025.lab
+I BTC-ISMIR19 09-29 11:56:08.603 test.py:50] ======== 166 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:09.096 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00236.wav
+I BTC-ISMIR19 09-29 11:56:09.205 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00236.lab
+I BTC-ISMIR19 09-29 11:56:09.215 test.py:50] ======== 167 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:09.765 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00132.wav
+I BTC-ISMIR19 09-29 11:56:09.873 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00132.lab
+I BTC-ISMIR19 09-29 11:56:09.887 test.py:50] ======== 168 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:10.341 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00153.wav
+I BTC-ISMIR19 09-29 11:56:10.450 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00153.lab
+I BTC-ISMIR19 09-29 11:56:10.460 test.py:50] ======== 169 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:10.836 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00257.wav
+I BTC-ISMIR19 09-29 11:56:10.945 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00257.lab
+I BTC-ISMIR19 09-29 11:56:10.959 test.py:50] ======== 170 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:11.363 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00008.wav
+I BTC-ISMIR19 09-29 11:56:11.471 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00008.lab
+I BTC-ISMIR19 09-29 11:56:11.479 test.py:50] ======== 171 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:11.992 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00098.wav
+I BTC-ISMIR19 09-29 11:56:12.100 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00098.lab
+I BTC-ISMIR19 09-29 11:56:12.112 test.py:50] ======== 172 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:12.518 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00047.wav
+I BTC-ISMIR19 09-29 11:56:12.665 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00047.lab
+I BTC-ISMIR19 09-29 11:56:12.673 test.py:50] ======== 173 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:13.059 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00273.wav
+I BTC-ISMIR19 09-29 11:56:13.168 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00273.lab
+I BTC-ISMIR19 09-29 11:56:13.177 test.py:50] ======== 174 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:13.541 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00185.wav
+I BTC-ISMIR19 09-29 11:56:13.650 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00185.lab
+I BTC-ISMIR19 09-29 11:56:13.666 test.py:50] ======== 175 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:14.277 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00216.wav
+I BTC-ISMIR19 09-29 11:56:14.385 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00216.lab
+I BTC-ISMIR19 09-29 11:56:14.403 test.py:50] ======== 176 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:14.775 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00278.wav
+I BTC-ISMIR19 09-29 11:56:14.884 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00278.lab
+I BTC-ISMIR19 09-29 11:56:14.894 test.py:50] ======== 177 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:15.296 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00115.wav
+I BTC-ISMIR19 09-29 11:56:15.404 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00115.lab
+I BTC-ISMIR19 09-29 11:56:15.413 test.py:50] ======== 178 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:15.825 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00258.wav
+I BTC-ISMIR19 09-29 11:56:15.933 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00258.lab
+I BTC-ISMIR19 09-29 11:56:15.943 test.py:50] ======== 179 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:16.374 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00030.wav
+I BTC-ISMIR19 09-29 11:56:16.483 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00030.lab
+I BTC-ISMIR19 09-29 11:56:16.491 test.py:50] ======== 180 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:17.254 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00173.wav
+I BTC-ISMIR19 09-29 11:56:17.363 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00173.lab
+I BTC-ISMIR19 09-29 11:56:17.383 test.py:50] ======== 181 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:17.819 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00215.wav
+I BTC-ISMIR19 09-29 11:56:17.928 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00215.lab
+I BTC-ISMIR19 09-29 11:56:17.945 test.py:50] ======== 182 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:18.374 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00260.wav
+I BTC-ISMIR19 09-29 11:56:18.553 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00260.lab
+I BTC-ISMIR19 09-29 11:56:18.566 test.py:50] ======== 183 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:18.952 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00129.wav
+I BTC-ISMIR19 09-29 11:56:19.061 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00129.lab
+I BTC-ISMIR19 09-29 11:56:19.074 test.py:50] ======== 184 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:19.554 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00169.wav
+I BTC-ISMIR19 09-29 11:56:19.662 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00169.lab
+I BTC-ISMIR19 09-29 11:56:19.669 test.py:50] ======== 185 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:20.126 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00148.wav
+I BTC-ISMIR19 09-29 11:56:20.235 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00148.lab
+I BTC-ISMIR19 09-29 11:56:20.251 test.py:50] ======== 186 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:20.733 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00055.wav
+I BTC-ISMIR19 09-29 11:56:20.842 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00055.lab
+I BTC-ISMIR19 09-29 11:56:20.852 test.py:50] ======== 187 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:21.268 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00137.wav
+I BTC-ISMIR19 09-29 11:56:21.376 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00137.lab
+I BTC-ISMIR19 09-29 11:56:21.383 test.py:50] ======== 188 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:21.886 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00018.wav
+I BTC-ISMIR19 09-29 11:56:22.002 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00018.lab
+I BTC-ISMIR19 09-29 11:56:22.012 test.py:50] ======== 189 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:22.599 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00078.wav
+I BTC-ISMIR19 09-29 11:56:22.721 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00078.lab
+I BTC-ISMIR19 09-29 11:56:22.731 test.py:50] ======== 190 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:23.127 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00021.wav
+I BTC-ISMIR19 09-29 11:56:23.235 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00021.lab
+I BTC-ISMIR19 09-29 11:56:23.242 test.py:50] ======== 191 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:23.643 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00194.wav
+I BTC-ISMIR19 09-29 11:56:23.752 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00194.lab
+I BTC-ISMIR19 09-29 11:56:23.766 test.py:50] ======== 192 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:24.228 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00070.wav
+I BTC-ISMIR19 09-29 11:56:24.337 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00070.lab
+I BTC-ISMIR19 09-29 11:56:24.346 test.py:50] ======== 193 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:24.761 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00113.wav
+I BTC-ISMIR19 09-29 11:56:24.869 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00113.lab
+I BTC-ISMIR19 09-29 11:56:24.878 test.py:50] ======== 194 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:25.706 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00270.wav
+I BTC-ISMIR19 09-29 11:56:25.814 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00270.lab
+I BTC-ISMIR19 09-29 11:56:25.823 test.py:50] ======== 195 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:26.307 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00099.wav
+I BTC-ISMIR19 09-29 11:56:26.416 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00099.lab
+I BTC-ISMIR19 09-29 11:56:26.425 test.py:50] ======== 196 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:26.915 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00159.wav
+I BTC-ISMIR19 09-29 11:56:27.023 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00159.lab
+I BTC-ISMIR19 09-29 11:56:27.034 test.py:50] ======== 197 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:27.679 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00218.wav
+I BTC-ISMIR19 09-29 11:56:27.787 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00218.lab
+I BTC-ISMIR19 09-29 11:56:27.797 test.py:50] ======== 198 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:28.232 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00272.wav
+I BTC-ISMIR19 09-29 11:56:28.340 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00272.lab
+I BTC-ISMIR19 09-29 11:56:28.361 test.py:50] ======== 199 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:28.961 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00282.wav
+I BTC-ISMIR19 09-29 11:56:29.069 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00282.lab
+I BTC-ISMIR19 09-29 11:56:29.078 test.py:50] ======== 200 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:29.447 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00051.wav
+I BTC-ISMIR19 09-29 11:56:29.555 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00051.lab
+I BTC-ISMIR19 09-29 11:56:29.567 test.py:50] ======== 201 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:29.939 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00181.wav
+I BTC-ISMIR19 09-29 11:56:30.047 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00181.lab
+I BTC-ISMIR19 09-29 11:56:30.060 test.py:50] ======== 202 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:30.416 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00235.wav
+I BTC-ISMIR19 09-29 11:56:30.524 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00235.lab
+I BTC-ISMIR19 09-29 11:56:30.534 test.py:50] ======== 203 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:30.947 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00219.wav
+I BTC-ISMIR19 09-29 11:56:31.055 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00219.lab
+I BTC-ISMIR19 09-29 11:56:31.063 test.py:50] ======== 204 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:31.564 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00182.wav
+I BTC-ISMIR19 09-29 11:56:31.672 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00182.lab
+I BTC-ISMIR19 09-29 11:56:31.681 test.py:50] ======== 205 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:32.344 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00190.wav
+I BTC-ISMIR19 09-29 11:56:32.453 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00190.lab
+I BTC-ISMIR19 09-29 11:56:32.463 test.py:50] ======== 206 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:32.885 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00024.wav
+I BTC-ISMIR19 09-29 11:56:32.993 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00024.lab
+I BTC-ISMIR19 09-29 11:56:33.053 test.py:50] ======== 207 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:33.543 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00039.wav
+I BTC-ISMIR19 09-29 11:56:33.651 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00039.lab
+I BTC-ISMIR19 09-29 11:56:33.658 test.py:50] ======== 208 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:34.015 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00013.wav
+I BTC-ISMIR19 09-29 11:56:34.123 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00013.lab
+I BTC-ISMIR19 09-29 11:56:34.129 test.py:50] ======== 209 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:34.552 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00056.wav
+I BTC-ISMIR19 09-29 11:56:34.660 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00056.lab
+I BTC-ISMIR19 09-29 11:56:34.669 test.py:50] ======== 210 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:35.042 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00210.wav
+I BTC-ISMIR19 09-29 11:56:35.150 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00210.lab
+I BTC-ISMIR19 09-29 11:56:35.160 test.py:50] ======== 211 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:35.527 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00217.wav
+I BTC-ISMIR19 09-29 11:56:35.635 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00217.lab
+I BTC-ISMIR19 09-29 11:56:35.648 test.py:50] ======== 212 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:36.072 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00200.wav
+I BTC-ISMIR19 09-29 11:56:36.180 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00200.lab
+I BTC-ISMIR19 09-29 11:56:36.192 test.py:50] ======== 213 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:36.534 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00192.wav
+I BTC-ISMIR19 09-29 11:56:36.643 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00192.lab
+I BTC-ISMIR19 09-29 11:56:36.656 test.py:50] ======== 214 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:37.450 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00168.wav
+I BTC-ISMIR19 09-29 11:56:37.558 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00168.lab
+I BTC-ISMIR19 09-29 11:56:37.566 test.py:50] ======== 215 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:37.987 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00201.wav
+I BTC-ISMIR19 09-29 11:56:38.115 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00201.lab
+I BTC-ISMIR19 09-29 11:56:38.127 test.py:50] ======== 216 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:38.507 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00069.wav
+I BTC-ISMIR19 09-29 11:56:38.615 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00069.lab
+I BTC-ISMIR19 09-29 11:56:38.626 test.py:50] ======== 217 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:39.111 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00077.wav
+I BTC-ISMIR19 09-29 11:56:39.219 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00077.lab
+I BTC-ISMIR19 09-29 11:56:39.228 test.py:50] ======== 218 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:39.622 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00226.wav
+I BTC-ISMIR19 09-29 11:56:39.730 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00226.lab
+I BTC-ISMIR19 09-29 11:56:39.741 test.py:50] ======== 219 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:40.420 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00071.wav
+I BTC-ISMIR19 09-29 11:56:40.529 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00071.lab
+I BTC-ISMIR19 09-29 11:56:40.542 test.py:50] ======== 220 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:40.950 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00046.wav
+I BTC-ISMIR19 09-29 11:56:41.057 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00046.lab
+I BTC-ISMIR19 09-29 11:56:41.066 test.py:50] ======== 221 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:41.641 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00114.wav
+I BTC-ISMIR19 09-29 11:56:41.750 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00114.lab
+I BTC-ISMIR19 09-29 11:56:41.821 test.py:50] ======== 222 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:42.310 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00246.wav
+I BTC-ISMIR19 09-29 11:56:42.418 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00246.lab
+I BTC-ISMIR19 09-29 11:56:42.431 test.py:50] ======== 223 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:43.110 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00016.wav
+I BTC-ISMIR19 09-29 11:56:43.218 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00016.lab
+I BTC-ISMIR19 09-29 11:56:43.226 test.py:50] ======== 224 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:43.717 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00004.wav
+I BTC-ISMIR19 09-29 11:56:43.825 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00004.lab
+I BTC-ISMIR19 09-29 11:56:43.835 test.py:50] ======== 225 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:44.328 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00054.wav
+I BTC-ISMIR19 09-29 11:56:44.436 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00054.lab
+I BTC-ISMIR19 09-29 11:56:44.444 test.py:50] ======== 226 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:44.818 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00202.wav
+I BTC-ISMIR19 09-29 11:56:44.927 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00202.lab
+I BTC-ISMIR19 09-29 11:56:44.940 test.py:50] ======== 227 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:45.370 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00253.wav
+I BTC-ISMIR19 09-29 11:56:45.478 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00253.lab
+I BTC-ISMIR19 09-29 11:56:45.489 test.py:50] ======== 228 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:45.894 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00133.wav
+I BTC-ISMIR19 09-29 11:56:46.002 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00133.lab
+I BTC-ISMIR19 09-29 11:56:46.012 test.py:50] ======== 229 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:46.468 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00020.wav
+I BTC-ISMIR19 09-29 11:56:46.575 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00020.lab
+I BTC-ISMIR19 09-29 11:56:46.585 test.py:50] ======== 230 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:46.929 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00208.wav
+I BTC-ISMIR19 09-29 11:56:47.038 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00208.lab
+I BTC-ISMIR19 09-29 11:56:47.049 test.py:50] ======== 231 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:47.441 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00267.wav
+I BTC-ISMIR19 09-29 11:56:47.549 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00267.lab
+I BTC-ISMIR19 09-29 11:56:47.561 test.py:50] ======== 232 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:48.136 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00089.wav
+I BTC-ISMIR19 09-29 11:56:48.244 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00089.lab
+I BTC-ISMIR19 09-29 11:56:48.302 test.py:50] ======== 233 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:48.683 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00254.wav
+I BTC-ISMIR19 09-29 11:56:48.791 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00254.lab
+I BTC-ISMIR19 09-29 11:56:48.803 test.py:50] ======== 234 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:49.213 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00105.wav
+I BTC-ISMIR19 09-29 11:56:49.320 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00105.lab
+I BTC-ISMIR19 09-29 11:56:49.330 test.py:50] ======== 235 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:49.919 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00245.wav
+I BTC-ISMIR19 09-29 11:56:50.027 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00245.lab
+I BTC-ISMIR19 09-29 11:56:50.040 test.py:50] ======== 236 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:50.428 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00048.wav
+I BTC-ISMIR19 09-29 11:56:50.536 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00048.lab
+I BTC-ISMIR19 09-29 11:56:50.546 test.py:50] ======== 237 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:51.313 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00171.wav
+I BTC-ISMIR19 09-29 11:56:51.422 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00171.lab
+I BTC-ISMIR19 09-29 11:56:51.433 test.py:50] ======== 238 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:51.806 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00001.wav
+I BTC-ISMIR19 09-29 11:56:51.914 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00001.lab
+I BTC-ISMIR19 09-29 11:56:51.924 test.py:50] ======== 239 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:52.310 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00242.wav
+I BTC-ISMIR19 09-29 11:56:52.419 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00242.lab
+I BTC-ISMIR19 09-29 11:56:52.441 test.py:50] ======== 240 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:52.818 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00256.wav
+I BTC-ISMIR19 09-29 11:56:52.926 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00256.lab
+I BTC-ISMIR19 09-29 11:56:52.939 test.py:50] ======== 241 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:53.388 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00176.wav
+I BTC-ISMIR19 09-29 11:56:53.543 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00176.lab
+I BTC-ISMIR19 09-29 11:56:53.554 test.py:50] ======== 242 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:54.022 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00220.wav
+I BTC-ISMIR19 09-29 11:56:54.130 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00220.lab
+I BTC-ISMIR19 09-29 11:56:54.141 test.py:50] ======== 243 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:54.630 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00136.wav
+I BTC-ISMIR19 09-29 11:56:54.738 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00136.lab
+I BTC-ISMIR19 09-29 11:56:54.748 test.py:50] ======== 244 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:55.171 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00138.wav
+I BTC-ISMIR19 09-29 11:56:55.279 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00138.lab
+I BTC-ISMIR19 09-29 11:56:55.293 test.py:50] ======== 245 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:55.652 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00045.wav
+I BTC-ISMIR19 09-29 11:56:55.760 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00045.lab
+I BTC-ISMIR19 09-29 11:56:55.771 test.py:50] ======== 246 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:56.127 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00156.wav
+I BTC-ISMIR19 09-29 11:56:56.235 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00156.lab
+I BTC-ISMIR19 09-29 11:56:56.245 test.py:50] ======== 247 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:56.624 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00065.wav
+I BTC-ISMIR19 09-29 11:56:56.732 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00065.lab
+I BTC-ISMIR19 09-29 11:56:56.747 test.py:50] ======== 248 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:57.173 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00086.wav
+I BTC-ISMIR19 09-29 11:56:57.280 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00086.lab
+I BTC-ISMIR19 09-29 11:56:57.287 test.py:50] ======== 249 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:57.708 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00058.wav
+I BTC-ISMIR19 09-29 11:56:57.816 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00058.lab
+I BTC-ISMIR19 09-29 11:56:57.826 test.py:50] ======== 250 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:58.332 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00002.wav
+I BTC-ISMIR19 09-29 11:56:58.440 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00002.lab
+I BTC-ISMIR19 09-29 11:56:58.453 test.py:50] ======== 251 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:58.812 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00076.wav
+I BTC-ISMIR19 09-29 11:56:58.920 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00076.lab
+I BTC-ISMIR19 09-29 11:56:58.929 test.py:50] ======== 252 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:56:59.390 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00172.wav
+I BTC-ISMIR19 09-29 11:56:59.498 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00172.lab
+I BTC-ISMIR19 09-29 11:56:59.507 test.py:50] ======== 253 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:00.047 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00082.wav
+I BTC-ISMIR19 09-29 11:57:00.155 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00082.lab
+I BTC-ISMIR19 09-29 11:57:00.167 test.py:50] ======== 254 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:00.735 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00183.wav
+I BTC-ISMIR19 09-29 11:57:00.844 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00183.lab
+I BTC-ISMIR19 09-29 11:57:00.860 test.py:50] ======== 255 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:01.321 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00032.wav
+I BTC-ISMIR19 09-29 11:57:01.429 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00032.lab
+I BTC-ISMIR19 09-29 11:57:01.442 test.py:50] ======== 256 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:01.988 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00062.wav
+I BTC-ISMIR19 09-29 11:57:02.096 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00062.lab
+I BTC-ISMIR19 09-29 11:57:02.108 test.py:50] ======== 257 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:02.554 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00040.wav
+I BTC-ISMIR19 09-29 11:57:02.663 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00040.lab
+I BTC-ISMIR19 09-29 11:57:02.673 test.py:50] ======== 258 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:03.093 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00029.wav
+I BTC-ISMIR19 09-29 11:57:03.202 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00029.lab
+I BTC-ISMIR19 09-29 11:57:03.636 test.py:50] ======== 259 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:04.158 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00276.wav
+I BTC-ISMIR19 09-29 11:57:04.266 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00276.lab
+I BTC-ISMIR19 09-29 11:57:04.279 test.py:50] ======== 260 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:04.686 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00041.wav
+I BTC-ISMIR19 09-29 11:57:04.794 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00041.lab
+I BTC-ISMIR19 09-29 11:57:04.802 test.py:50] ======== 261 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:05.276 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00028.wav
+I BTC-ISMIR19 09-29 11:57:05.384 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00028.lab
+I BTC-ISMIR19 09-29 11:57:05.393 test.py:50] ======== 262 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:05.760 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00080.wav
+I BTC-ISMIR19 09-29 11:57:05.868 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00080.lab
+I BTC-ISMIR19 09-29 11:57:05.882 test.py:50] ======== 263 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:06.320 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00223.wav
+I BTC-ISMIR19 09-29 11:57:06.428 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00223.lab
+I BTC-ISMIR19 09-29 11:57:06.438 test.py:50] ======== 264 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:06.948 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00022.wav
+I BTC-ISMIR19 09-29 11:57:07.056 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00022.lab
+I BTC-ISMIR19 09-29 11:57:07.064 test.py:50] ======== 265 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:07.583 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00096.wav
+I BTC-ISMIR19 09-29 11:57:07.691 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00096.lab
+I BTC-ISMIR19 09-29 11:57:07.701 test.py:50] ======== 266 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:08.109 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00068.wav
+I BTC-ISMIR19 09-29 11:57:08.217 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00068.lab
+I BTC-ISMIR19 09-29 11:57:08.224 test.py:50] ======== 267 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:08.594 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00196.wav
+I BTC-ISMIR19 09-29 11:57:08.838 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00196.lab
+I BTC-ISMIR19 09-29 11:57:08.851 test.py:50] ======== 268 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:09.221 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00261.wav
+I BTC-ISMIR19 09-29 11:57:09.329 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00261.lab
+I BTC-ISMIR19 09-29 11:57:09.340 test.py:50] ======== 269 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:09.726 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00158.wav
+I BTC-ISMIR19 09-29 11:57:09.834 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00158.lab
+I BTC-ISMIR19 09-29 11:57:09.845 test.py:50] ======== 270 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:10.338 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00198.wav
+I BTC-ISMIR19 09-29 11:57:10.446 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00198.lab
+I BTC-ISMIR19 09-29 11:57:10.457 test.py:50] ======== 271 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:10.991 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00283.wav
+I BTC-ISMIR19 09-29 11:57:11.100 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00283.lab
+I BTC-ISMIR19 09-29 11:57:11.113 test.py:50] ======== 272 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:11.506 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00119.wav
+I BTC-ISMIR19 09-29 11:57:11.614 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00119.lab
+I BTC-ISMIR19 09-29 11:57:11.623 test.py:50] ======== 273 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:12.172 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00231.wav
+I BTC-ISMIR19 09-29 11:57:12.280 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00231.lab
+I BTC-ISMIR19 09-29 11:57:12.291 test.py:50] ======== 274 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:12.737 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00165.wav
+I BTC-ISMIR19 09-29 11:57:12.845 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00165.lab
+I BTC-ISMIR19 09-29 11:57:12.853 test.py:50] ======== 275 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:13.664 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00015.wav
+I BTC-ISMIR19 09-29 11:57:13.773 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00015.lab
+I BTC-ISMIR19 09-29 11:57:13.778 test.py:50] ======== 276 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:14.197 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00239.wav
+I BTC-ISMIR19 09-29 11:57:14.305 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00239.lab
+I BTC-ISMIR19 09-29 11:57:14.314 test.py:50] ======== 277 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:14.674 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00265.wav
+I BTC-ISMIR19 09-29 11:57:14.783 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00265.lab
+I BTC-ISMIR19 09-29 11:57:14.793 test.py:50] ======== 278 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:15.155 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00023.wav
+I BTC-ISMIR19 09-29 11:57:15.262 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00023.lab
+I BTC-ISMIR19 09-29 11:57:15.272 test.py:50] ======== 279 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:15.670 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00163.wav
+I BTC-ISMIR19 09-29 11:57:15.778 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00163.lab
+I BTC-ISMIR19 09-29 11:57:15.787 test.py:50] ======== 280 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:16.238 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00286.wav
+I BTC-ISMIR19 09-29 11:57:16.346 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00286.lab
+I BTC-ISMIR19 09-29 11:57:16.356 test.py:50] ======== 281 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:16.828 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00244.wav
+I BTC-ISMIR19 09-29 11:57:16.936 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00244.lab
+I BTC-ISMIR19 09-29 11:57:16.947 test.py:50] ======== 282 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:17.350 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00087.wav
+I BTC-ISMIR19 09-29 11:57:17.458 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00087.lab
+I BTC-ISMIR19 09-29 11:57:17.466 test.py:50] ======== 283 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:18.077 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00241.wav
+I BTC-ISMIR19 09-29 11:57:18.186 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00241.lab
+I BTC-ISMIR19 09-29 11:57:18.196 test.py:50] ======== 284 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:18.702 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00140.wav
+I BTC-ISMIR19 09-29 11:57:18.810 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00140.lab
+I BTC-ISMIR19 09-29 11:57:18.841 test.py:50] ======== 285 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:19.251 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00109.wav
+I BTC-ISMIR19 09-29 11:57:19.359 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00109.lab
+I BTC-ISMIR19 09-29 11:57:19.365 test.py:50] ======== 286 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:19.729 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00009.wav
+I BTC-ISMIR19 09-29 11:57:19.838 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00009.lab
+I BTC-ISMIR19 09-29 11:57:19.854 test.py:50] ======== 287 of 287 in progress ========
+I BTC-ISMIR19 09-29 11:57:20.229 test.py:53] audio file loaded and feature computation success : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00255.wav
+I BTC-ISMIR19 09-29 11:57:20.337 test.py:96] label file saved : /mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/experiments/component_sota/tmp/btc.SfzL/00255.lab
+BTC_DONE 287

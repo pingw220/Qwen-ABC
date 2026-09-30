@@ -1,0 +1,10 @@
+job=40756639 host=n3015 start=2026-09-27T03:38:52-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.build_datasets --task chord_lyr
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/build_datasets.py", line 92, in <module>
+    main()
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/build_datasets.py", line 71, in main
+    assert [(c.onset, c.symbol) for c in back] == [(c.onset, c.symbol) for c in normalize_chords(song.chords, song.total_ticks)], r["song_id"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 01WF02ujdeQ1yJIMcsc91b

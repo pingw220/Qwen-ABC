@@ -1,0 +1,23 @@
+job=40759961 host=n3044 start=2026-09-27T03:56:03-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.accomontage --melodies ref:S1 --shard 5 --num-shards 12
+tasks 225 shard 19
+0B1k0zh8Rsa1aE7LgF6eHi ref True None 45.4
+0exfMqddpIIZQbZZny68Rc ref True None 14.0
+1FBJbPIt388FFDgZbHVRyV ref True None 13.6
+1oWX2EGO7Z8YCZ5jJuGrpM ref True None 13.6
+28IzuspwIj6C8XAOoIJ1Wp ref True None 13.7
+2dNIwWWsu0zmvKgHlE43dG ref True None 13.6
+2vnn9onO7sQBevG0O2iPHi ref True None 13.7
+3QdCMpU6fQ1dsJ3GTzG5HW ref True None 13.6
+3q9kTZg82Fxa7KptbOLqav ref True None 13.6
+4BDdKKIImyCOH0UFXGSoMu ref True None 13.7
+4eMDRwO2dreLU0IvNoARUP ref True None 13.6
+56EoTwd4LGjmEO7UzQrDoX ref True None 13.7
+5IhH7idp4sHJ4o0pnxH59X ref True None 13.7
+5gIW9IMReT6xicyfHKtcug ref True None 13.7
+5zpJSe86hLBaTpd6ZW3TFB ref True None 13.7
+6NqPOID1RsXpj7IAEsgd2v ref True None 13.6
+6i6Lrq6Lkfsjw4WCLOr6zp ref True None 13.8
+7DeY1fKszqaJKtXUk1NiiH ref False unsupported_meter None
+7urNxXDmuL6xVKEOoEY41E ref True None 13.6
+AM2_DONE
+end=2026-09-27T04:00:44-07:00 CPU_OK

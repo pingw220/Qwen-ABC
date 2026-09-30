@@ -1,0 +1,2070 @@
+job=40760069 host=g3109 start=2026-09-27T03:56:13-07:00 upstream_commit=cc282feba3f3e7017e1716171156d4ce737c71a1 upstream_dirty=0
+[preparing data] now at #0
+[preparing data] now at #200
+[preparing data] now at #400
+[preparing data] now at #600
+[preparing data] now at #800
+[preparing data] now at #1000
+[preparing data] now at #1200
+[preparing data] now at #1400
+[preparing data] now at #1600
+[preparing data] now at #1800
+[preparing data] now at #2000
+[preparing data] now at #2200
+[preparing data] now at #2400
+[preparing data] now at #2600
+[preparing data] now at #2800
+[preparing data] now at #3000
+[preparing data] now at #3200
+[preparing data] now at #3400
+[preparing data] now at #3600
+[preparing data] now at #3800
+[preparing data] now at #4000
+[preparing data] now at #4200
+[preparing data] now at #4400
+[preparing data] now at #4600
+[preparing data] now at #4800
+[preparing data] now at #5000
+[preparing data] now at #5200
+[preparing data] now at #5400
+[preparing data] now at #5600
+[preparing data] now at #5800
+[preparing data] now at #6000
+[preparing data] now at #6200
+[preparing data] now at #6400
+[preparing data] now at #6600
+[preparing data] now at #6800
+[preparing data] now at #7000
+[preparing data] now at #7200
+[preparing data] now at #7400
+[preparing data] now at #7600
+[preparing data] now at #7800
+[preparing data] now at #8000
+[preparing data] now at #8200
+[preparing data] now at #8400
+[preparing data] now at #8600
+[preparing data] now at #8800
+[preparing data] now at #9000
+[preparing data] now at #9200
+[preparing data] now at #9400
+[preparing data] now at #9600
+[preparing data] now at #0
+[preparing data] now at #200
+[info] # training samples: 9681
+/gscratch/ark/pingw220/miniconda3/envs/midi-sag/lib/python3.9/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+[info] model # params: 81165678
+[epoch 001] training ...
+[epoch 001] # batches = 2421
+ -- epoch 001 | batch 000: len: tensor([ 728, 1024, 2048, 2048])
+	 * loss = (RC: 5.5189 ), step = 1, time_elapsed = 5.53 secs
+ -- epoch 001 | batch 001: len: tensor([ 705, 1435,  762, 1785])
+	 * loss = (RC: 5.5180 ), step = 2, time_elapsed = 6.17 secs
+ -- epoch 001 | batch 002: len: tensor([1120, 1700, 1303, 1148])
+	 * loss = (RC: 5.5174 ), step = 3, time_elapsed = 7.01 secs
+ -- epoch 001 | batch 003: len: tensor([1123, 1495,  875, 1200])
+	 * loss = (RC: 5.5157 ), step = 4, time_elapsed = 7.80 secs
+ -- epoch 001 | batch 004: len: tensor([1211, 1263,  990,  835])
+	 * loss = (RC: 5.5136 ), step = 5, time_elapsed = 8.58 secs
+ -- epoch 001 | batch 005: len: tensor([ 734, 1235,  556, 1385])
+	 * loss = (RC: 5.5109 ), step = 6, time_elapsed = 9.33 secs
+ -- epoch 001 | batch 006: len: tensor([1074, 1309, 1374,  778])
+	 * loss = (RC: 5.5068 ), step = 7, time_elapsed = 9.95 secs
+ -- epoch 001 | batch 007: len: tensor([1033, 1286,  831, 1650])
+	 * loss = (RC: 5.5012 ), step = 8, time_elapsed = 10.61 secs
+ -- epoch 001 | batch 008: len: tensor([ 809, 1712, 1842, 1099])
+	 * loss = (RC: 5.4941 ), step = 9, time_elapsed = 11.36 secs
+ -- epoch 001 | batch 009: len: tensor([ 958, 1000, 1048, 1163])
+	 * loss = (RC: 5.4858 ), step = 10, time_elapsed = 12.09 secs
+ -- epoch 001 | batch 010: len: tensor([ 794,  733, 1263, 1319])
+	 * loss = (RC: 5.4753 ), step = 11, time_elapsed = 12.81 secs
+ -- epoch 001 | batch 011: len: tensor([974, 763, 769, 703])
+	 * loss = (RC: 5.4640 ), step = 12, time_elapsed = 13.56 secs
+ -- epoch 001 | batch 012: len: tensor([1411, 1377,  900, 1791])
+	 * loss = (RC: 5.4499 ), step = 13, time_elapsed = 14.33 secs
+ -- epoch 001 | batch 013: len: tensor([1406,  805,  878, 1752])
+	 * loss = (RC: 5.4343 ), step = 14, time_elapsed = 15.06 secs
+ -- epoch 001 | batch 014: len: tensor([1513, 1300,  607,  735])
+	 * loss = (RC: 5.4161 ), step = 15, time_elapsed = 15.79 secs
+ -- epoch 001 | batch 015: len: tensor([ 706,  616,  744, 1254])
+	 * loss = (RC: 5.3985 ), step = 16, time_elapsed = 16.53 secs
+ -- epoch 001 | batch 016: len: tensor([1409,  941, 1206, 1503])
+	 * loss = (RC: 5.3775 ), step = 17, time_elapsed = 17.27 secs
+ -- epoch 001 | batch 017: len: tensor([1243, 1218, 1322,  644])
+	 * loss = (RC: 5.3567 ), step = 18, time_elapsed = 18.04 secs
+ -- epoch 001 | batch 018: len: tensor([1144,  678, 1399,  862])
+	 * loss = (RC: 5.3353 ), step = 19, time_elapsed = 18.82 secs
+ -- epoch 001 | batch 019: len: tensor([1448, 1399, 1591, 1019])
+	 * loss = (RC: 5.3091 ), step = 20, time_elapsed = 19.57 secs
+ -- epoch 001 | batch 020: len: tensor([1024, 1779, 1352,  873])
+	 * loss = (RC: 5.2836 ), step = 21, time_elapsed = 20.32 secs
+ -- epoch 001 | batch 021: len: tensor([1159, 1466, 1091, 2048])
+	 * loss = (RC: 5.2568 ), step = 22, time_elapsed = 21.06 secs
+ -- epoch 001 | batch 022: len: tensor([1300,  803, 1122, 1550])
+	 * loss = (RC: 5.2296 ), step = 23, time_elapsed = 21.81 secs
+ -- epoch 001 | batch 023: len: tensor([1721, 1340, 1007, 1209])
+	 * loss = (RC: 5.2009 ), step = 24, time_elapsed = 22.55 secs
+ -- epoch 001 | batch 024: len: tensor([1979, 2048,  889, 1255])
+	 * loss = (RC: 5.1713 ), step = 25, time_elapsed = 23.20 secs
+ -- epoch 001 | batch 025: len: tensor([1203, 1518, 1031,  997])
+	 * loss = (RC: 5.1442 ), step = 26, time_elapsed = 23.83 secs
+ -- epoch 001 | batch 026: len: tensor([ 690, 1184,  825, 1356])
+	 * loss = (RC: 5.1120 ), step = 27, time_elapsed = 24.46 secs
+ -- epoch 001 | batch 027: len: tensor([1571,  973, 1200, 1289])
+	 * loss = (RC: 5.0822 ), step = 28, time_elapsed = 25.11 secs
+ -- epoch 001 | batch 028: len: tensor([1112, 1217,  631, 1370])
+	 * loss = (RC: 5.0557 ), step = 29, time_elapsed = 25.73 secs
+ -- epoch 001 | batch 029: len: tensor([ 962, 1391,  777, 1468])
+	 * loss = (RC: 5.0274 ), step = 30, time_elapsed = 26.36 secs
+ -- epoch 001 | batch 030: len: tensor([1359,  863, 1150, 1224])
+	 * loss = (RC: 4.9971 ), step = 31, time_elapsed = 26.99 secs
+ -- epoch 001 | batch 031: len: tensor([1268,  976, 1115, 1274])
+	 * loss = (RC: 4.9711 ), step = 32, time_elapsed = 27.62 secs
+ -- epoch 001 | batch 032: len: tensor([1069, 1056, 1089, 1842])
+	 * loss = (RC: 4.9454 ), step = 33, time_elapsed = 28.26 secs
+ -- epoch 001 | batch 033: len: tensor([ 954, 1544, 1204, 1009])
+	 * loss = (RC: 4.9128 ), step = 34, time_elapsed = 28.90 secs
+ -- epoch 001 | batch 034: len: tensor([1376,  792, 1209, 1664])
+	 * loss = (RC: 4.8858 ), step = 35, time_elapsed = 29.54 secs
+ -- epoch 001 | batch 035: len: tensor([1622,  780, 1256,  906])
+	 * loss = (RC: 4.8583 ), step = 36, time_elapsed = 30.17 secs
+ -- epoch 001 | batch 036: len: tensor([ 996,  876, 1758,  921])
+	 * loss = (RC: 4.8318 ), step = 37, time_elapsed = 30.92 secs
+ -- epoch 001 | batch 037: len: tensor([ 950, 1128, 1274, 1187])
+	 * loss = (RC: 4.8023 ), step = 38, time_elapsed = 31.67 secs
+ -- epoch 001 | batch 038: len: tensor([ 980,  767, 1066, 1042])
+	 * loss = (RC: 4.7858 ), step = 39, time_elapsed = 32.42 secs
+ -- epoch 001 | batch 039: len: tensor([1658,  915,  945, 1032])
+	 * loss = (RC: 4.7634 ), step = 40, time_elapsed = 33.17 secs
+ -- epoch 001 | batch 040: len: tensor([1193, 1191, 1482,  770])
+	 * loss = (RC: 4.7437 ), step = 41, time_elapsed = 33.92 secs
+ -- epoch 001 | batch 041: len: tensor([ 949, 1185, 1043, 1330])
+	 * loss = (RC: 4.7212 ), step = 42, time_elapsed = 34.61 secs
+ -- epoch 001 | batch 042: len: tensor([2045, 1626, 1340, 1279])
+	 * loss = (RC: 4.6923 ), step = 43, time_elapsed = 35.24 secs
+ -- epoch 001 | batch 043: len: tensor([ 625, 1560, 1070, 1630])
+	 * loss = (RC: 4.6686 ), step = 44, time_elapsed = 35.87 secs
+ -- epoch 001 | batch 044: len: tensor([734, 713, 764, 535])
+	 * loss = (RC: 4.6533 ), step = 45, time_elapsed = 36.50 secs
+ -- epoch 001 | batch 045: len: tensor([1284, 1441, 1870,  804])
+	 * loss = (RC: 4.6301 ), step = 46, time_elapsed = 37.13 secs
+ -- epoch 001 | batch 046: len: tensor([1550, 1173, 1556, 1317])
+	 * loss = (RC: 4.6089 ), step = 47, time_elapsed = 37.76 secs
+ -- epoch 001 | batch 047: len: tensor([1753,  820, 1132, 1749])
+	 * loss = (RC: 4.5836 ), step = 48, time_elapsed = 38.40 secs
+ -- epoch 001 | batch 048: len: tensor([ 707, 1507, 1154,  963])
+	 * loss = (RC: 4.5666 ), step = 49, time_elapsed = 39.04 secs
+ -- epoch 001 | batch 049: len: tensor([1107, 1944,  782, 1519])
+	 * loss = (RC: 4.5434 ), step = 50, time_elapsed = 39.67 secs
+ -- epoch 001 | batch 050: len: tensor([1266, 1550, 1003,  979])
+	 * loss = (RC: 4.5255 ), step = 51, time_elapsed = 40.30 secs
+ -- epoch 001 | batch 051: len: tensor([1993, 1938, 1637, 1316])
+	 * loss = (RC: 4.5031 ), step = 52, time_elapsed = 40.93 secs
+ -- epoch 001 | batch 052: len: tensor([1002, 1155, 1113,  818])
+	 * loss = (RC: 4.4876 ), step = 53, time_elapsed = 41.56 secs
+ -- epoch 001 | batch 053: len: tensor([1033, 1200,  998,  915])
+	 * loss = (RC: 4.4757 ), step = 54, time_elapsed = 42.19 secs
+ -- epoch 001 | batch 054: len: tensor([ 912, 1270, 1044, 1007])
+	 * loss = (RC: 4.4595 ), step = 55, time_elapsed = 42.83 secs
+ -- epoch 001 | batch 055: len: tensor([1364, 2048, 1007, 1528])
+	 * loss = (RC: 4.4352 ), step = 56, time_elapsed = 43.46 secs
+ -- epoch 001 | batch 056: len: tensor([1291, 1206, 1344, 1031])
+	 * loss = (RC: 4.4188 ), step = 57, time_elapsed = 44.12 secs
+ -- epoch 001 | batch 057: len: tensor([ 860, 1286,  749, 1167])
+	 * loss = (RC: 4.4011 ), step = 58, time_elapsed = 44.75 secs
+ -- epoch 001 | batch 058: len: tensor([2048,  926, 1208, 1028])
+	 * loss = (RC: 4.3818 ), step = 59, time_elapsed = 45.39 secs
+ -- epoch 001 | batch 059: len: tensor([1784, 1614, 1285, 1117])
+	 * loss = (RC: 4.3657 ), step = 60, time_elapsed = 46.04 secs
+ -- epoch 001 | batch 060: len: tensor([903, 837, 984, 973])
+	 * loss = (RC: 4.3553 ), step = 61, time_elapsed = 46.68 secs
+ -- epoch 001 | batch 061: len: tensor([ 875, 1290, 1914, 1442])
+	 * loss = (RC: 4.3389 ), step = 62, time_elapsed = 47.32 secs
+ -- epoch 001 | batch 062: len: tensor([1526, 1119, 1568, 1912])
+	 * loss = (RC: 4.3197 ), step = 63, time_elapsed = 47.98 secs
+ -- epoch 001 | batch 063: len: tensor([ 697,  656,  725, 1679])
+	 * loss = (RC: 4.3033 ), step = 64, time_elapsed = 48.63 secs
+ -- epoch 001 | batch 064: len: tensor([ 909, 1568,  972, 1265])
+	 * loss = (RC: 4.2842 ), step = 65, time_elapsed = 49.27 secs
+ -- epoch 001 | batch 065: len: tensor([1345,  904, 1159,  861])
+	 * loss = (RC: 4.2675 ), step = 66, time_elapsed = 49.92 secs
+ -- epoch 001 | batch 066: len: tensor([1257, 1610,  763, 1111])
+	 * loss = (RC: 4.2503 ), step = 67, time_elapsed = 50.66 secs
+ -- epoch 001 | batch 067: len: tensor([ 767, 1495, 1310, 1322])
+	 * loss = (RC: 4.2334 ), step = 68, time_elapsed = 51.55 secs
+ -- epoch 001 | batch 068: len: tensor([1024, 1073, 1311, 1061])
+	 * loss = (RC: 4.2238 ), step = 69, time_elapsed = 52.31 secs
+ -- epoch 001 | batch 069: len: tensor([1017, 1589, 1361, 1935])
+	 * loss = (RC: 4.2011 ), step = 70, time_elapsed = 53.08 secs
+ -- epoch 001 | batch 070: len: tensor([1463, 1038, 1014, 2047])
+	 * loss = (RC: 4.1789 ), step = 71, time_elapsed = 53.86 secs
+ -- epoch 001 | batch 071: len: tensor([ 813, 1445,  888,  694])
+	 * loss = (RC: 4.1629 ), step = 72, time_elapsed = 54.60 secs
+ -- epoch 001 | batch 072: len: tensor([ 882, 1158,  937,  939])
+	 * loss = (RC: 4.1528 ), step = 73, time_elapsed = 55.35 secs
+ -- epoch 001 | batch 073: len: tensor([ 509,  748, 1031, 1056])
+	 * loss = (RC: 4.1380 ), step = 74, time_elapsed = 56.10 secs
+ -- epoch 001 | batch 074: len: tensor([1284, 1525, 1720,  954])
+	 * loss = (RC: 4.1191 ), step = 75, time_elapsed = 56.85 secs
+ -- epoch 001 | batch 075: len: tensor([1029, 1268, 1660, 1287])
+	 * loss = (RC: 4.0971 ), step = 76, time_elapsed = 57.53 secs
+ -- epoch 001 | batch 076: len: tensor([ 892, 2048, 1493,  988])
+	 * loss = (RC: 4.0772 ), step = 77, time_elapsed = 58.17 secs
+ -- epoch 001 | batch 077: len: tensor([ 966, 1746,  917,  843])
+	 * loss = (RC: 4.0601 ), step = 78, time_elapsed = 58.81 secs
+ -- epoch 001 | batch 078: len: tensor([1233,  774,  787,  992])
+	 * loss = (RC: 4.0437 ), step = 79, time_elapsed = 59.44 secs
+ -- epoch 001 | batch 079: len: tensor([ 945,  858, 1484, 2048])
+	 * loss = (RC: 4.0234 ), step = 80, time_elapsed = 60.07 secs
+ -- epoch 001 | batch 080: len: tensor([1118, 1305, 1375,  923])
+	 * loss = (RC: 3.9936 ), step = 81, time_elapsed = 60.70 secs
+ -- epoch 001 | batch 081: len: tensor([ 994,  946, 1122, 1022])
+	 * loss = (RC: 3.9744 ), step = 82, time_elapsed = 61.33 secs
+ -- epoch 001 | batch 082: len: tensor([1324,  941,  802, 1418])
+	 * loss = (RC: 3.9536 ), step = 83, time_elapsed = 61.96 secs
+ -- epoch 001 | batch 083: len: tensor([1101,  728,  797, 1072])
+	 * loss = (RC: 3.9318 ), step = 84, time_elapsed = 62.59 secs
+ -- epoch 001 | batch 084: len: tensor([1116, 1361,  901,  841])
+	 * loss = (RC: 3.9071 ), step = 85, time_elapsed = 63.22 secs
+ -- epoch 001 | batch 085: len: tensor([1164, 1018,  740,  853])
+	 * loss = (RC: 3.8841 ), step = 86, time_elapsed = 63.85 secs
+ -- epoch 001 | batch 086: len: tensor([1459,  870,  824,  579])
+	 * loss = (RC: 3.8643 ), step = 87, time_elapsed = 64.50 secs
+ -- epoch 001 | batch 087: len: tensor([1297, 1535, 1566, 1760])
+	 * loss = (RC: 3.8380 ), step = 88, time_elapsed = 65.13 secs
+ -- epoch 001 | batch 088: len: tensor([2048,  794, 1034,  702])
+	 * loss = (RC: 3.8046 ), step = 89, time_elapsed = 65.77 secs
+ -- epoch 001 | batch 089: len: tensor([1153, 1192,  988,  829])
+	 * loss = (RC: 3.7808 ), step = 90, time_elapsed = 66.40 secs
+ -- epoch 001 | batch 090: len: tensor([1432, 1410, 1651, 1466])
+	 * loss = (RC: 3.7551 ), step = 91, time_elapsed = 67.04 secs
+ -- epoch 001 | batch 091: len: tensor([1079, 1077, 1381, 1289])
+	 * loss = (RC: 3.7321 ), step = 92, time_elapsed = 67.68 secs
+ -- epoch 001 | batch 092: len: tensor([1344, 1314, 1202, 1150])
+	 * loss = (RC: 3.7036 ), step = 93, time_elapsed = 68.30 secs
+ -- epoch 001 | batch 093: len: tensor([ 777,  473, 1910, 1724])
+	 * loss = (RC: 3.6803 ), step = 94, time_elapsed = 68.95 secs
+ -- epoch 001 | batch 094: len: tensor([ 887,  989, 1089, 1170])
+	 * loss = (RC: 3.6560 ), step = 95, time_elapsed = 69.58 secs
+ -- epoch 001 | batch 095: len: tensor([1698, 1310,  873, 1277])
+	 * loss = (RC: 3.6272 ), step = 96, time_elapsed = 70.32 secs
+ -- epoch 001 | batch 096: len: tensor([ 890, 1471, 1457, 1074])
+	 * loss = (RC: 3.5952 ), step = 97, time_elapsed = 71.08 secs
+ -- epoch 001 | batch 097: len: tensor([1909, 1547, 1008, 1090])
+	 * loss = (RC: 3.5595 ), step = 98, time_elapsed = 71.82 secs
+ -- epoch 001 | batch 098: len: tensor([1086,  974, 1946, 1113])
+	 * loss = (RC: 3.5365 ), step = 99, time_elapsed = 72.57 secs
+ -- epoch 001 | batch 099: len: tensor([1053,  887,  541,  601])
+	 * loss = (RC: 3.5136 ), step = 100, time_elapsed = 73.25 secs
+ -- epoch 001 | batch 100: len: tensor([1442,  821, 1087, 1474])
+	 * loss = (RC: 3.4888 ), step = 101, time_elapsed = 74.00 secs
+ -- epoch 001 | batch 101: len: tensor([ 803,  932, 1392, 1414])
+	 * loss = (RC: 3.4644 ), step = 102, time_elapsed = 74.74 secs
+ -- epoch 001 | batch 102: len: tensor([ 976, 1931, 1011, 2048])
+	 * loss = (RC: 3.4303 ), step = 103, time_elapsed = 75.37 secs
+ -- epoch 001 | batch 103: len: tensor([1228,  748,  916, 1222])
+	 * loss = (RC: 3.4072 ), step = 104, time_elapsed = 76.00 secs
+ -- epoch 001 | batch 104: len: tensor([1776,  925,  515, 1307])
+	 * loss = (RC: 3.3841 ), step = 105, time_elapsed = 76.62 secs
+ -- epoch 001 | batch 105: len: tensor([ 843,  658,  989, 1590])
+	 * loss = (RC: 3.3615 ), step = 106, time_elapsed = 77.39 secs
+ -- epoch 001 | batch 106: len: tensor([1097, 1487, 1934, 1399])
+	 * loss = (RC: 3.3328 ), step = 107, time_elapsed = 78.15 secs
+ -- epoch 001 | batch 107: len: tensor([1073, 1321, 1171,  797])
+	 * loss = (RC: 3.3138 ), step = 108, time_elapsed = 78.80 secs
+ -- epoch 001 | batch 108: len: tensor([ 737,  915, 1207, 1219])
+	 * loss = (RC: 3.2876 ), step = 109, time_elapsed = 79.45 secs
+ -- epoch 001 | batch 109: len: tensor([1075,  785, 1189,  910])
+	 * loss = (RC: 3.2668 ), step = 110, time_elapsed = 80.19 secs
+ -- epoch 001 | batch 110: len: tensor([ 844, 2021, 1530,  692])
+	 * loss = (RC: 3.2513 ), step = 111, time_elapsed = 80.94 secs
+ -- epoch 001 | batch 111: len: tensor([1054,  715, 1200, 1423])
+	 * loss = (RC: 3.2236 ), step = 112, time_elapsed = 81.69 secs
+ -- epoch 001 | batch 112: len: tensor([1263, 1501, 1123,  962])
+	 * loss = (RC: 3.2056 ), step = 113, time_elapsed = 82.47 secs
+ -- epoch 001 | batch 113: len: tensor([ 941, 1031, 1080, 1212])
+	 * loss = (RC: 3.1814 ), step = 114, time_elapsed = 83.22 secs
+ -- epoch 001 | batch 114: len: tensor([1405, 1584, 1084, 1694])
+	 * loss = (RC: 3.1637 ), step = 115, time_elapsed = 83.98 secs
+ -- epoch 001 | batch 115: len: tensor([1338, 1373, 1060, 1623])
+	 * loss = (RC: 3.1373 ), step = 116, time_elapsed = 84.74 secs
+ -- epoch 001 | batch 116: len: tensor([1224, 1241, 1166,  780])
+	 * loss = (RC: 3.1125 ), step = 117, time_elapsed = 85.50 secs
+ -- epoch 001 | batch 117: len: tensor([1739, 1090,  682,  947])
+	 * loss = (RC: 3.0935 ), step = 118, time_elapsed = 86.24 secs
+ -- epoch 001 | batch 118: len: tensor([1376, 1439,  642, 1093])
+	 * loss = (RC: 3.0792 ), step = 119, time_elapsed = 87.00 secs
+ -- epoch 001 | batch 119: len: tensor([1901,  512, 1810,  982])
+	 * loss = (RC: 3.0577 ), step = 120, time_elapsed = 87.75 secs
+ -- epoch 001 | batch 120: len: tensor([1924,  944, 1143, 1149])
+	 * loss = (RC: 3.0338 ), step = 121, time_elapsed = 88.51 secs
+ -- epoch 001 | batch 121: len: tensor([1369, 1903,  890, 1026])
+	 * loss = (RC: 3.0086 ), step = 122, time_elapsed = 89.26 secs
+ -- epoch 001 | batch 122: len: tensor([1226, 1065, 1241,  656])
+	 * loss = (RC: 2.9975 ), step = 123, time_elapsed = 90.02 secs
+ -- epoch 001 | batch 123: len: tensor([1618, 1833, 1559,  669])
+	 * loss = (RC: 2.9728 ), step = 124, time_elapsed = 90.78 secs
+ -- epoch 001 | batch 124: len: tensor([ 476, 1260, 1746, 1301])
+	 * loss = (RC: 2.9489 ), step = 125, time_elapsed = 91.53 secs
+ -- epoch 001 | batch 125: len: tensor([1617,  362, 1157,  725])
+	 * loss = (RC: 2.9223 ), step = 126, time_elapsed = 92.30 secs
+ -- epoch 001 | batch 126: len: tensor([ 552, 1035, 1904, 2035])
+	 * loss = (RC: 2.8984 ), step = 127, time_elapsed = 93.05 secs
+ -- epoch 001 | batch 127: len: tensor([1315,  823, 1272, 1841])
+	 * loss = (RC: 2.8791 ), step = 128, time_elapsed = 93.80 secs
+ -- epoch 001 | batch 128: len: tensor([1297, 1607,  835, 1397])
+	 * loss = (RC: 2.8629 ), step = 129, time_elapsed = 94.55 secs
+ -- epoch 001 | batch 129: len: tensor([1428,  719,  943,  629])
+	 * loss = (RC: 2.8517 ), step = 130, time_elapsed = 95.31 secs
+ -- epoch 001 | batch 130: len: tensor([1031, 1762, 1228, 1287])
+	 * loss = (RC: 2.8256 ), step = 131, time_elapsed = 96.07 secs
+ -- epoch 001 | batch 131: len: tensor([1075,  689, 1318, 1229])
+	 * loss = (RC: 2.8061 ), step = 132, time_elapsed = 96.81 secs
+ -- epoch 001 | batch 132: len: tensor([ 845, 1329, 1458,  988])
+	 * loss = (RC: 2.7953 ), step = 133, time_elapsed = 97.56 secs
+ -- epoch 001 | batch 133: len: tensor([1002, 1428, 1078, 1220])
+	 * loss = (RC: 2.7763 ), step = 134, time_elapsed = 98.37 secs
+ -- epoch 001 | batch 134: len: tensor([ 921, 1353,  944, 1658])
+	 * loss = (RC: 2.7577 ), step = 135, time_elapsed = 99.13 secs
+ -- epoch 001 | batch 135: len: tensor([1327,  926,  820, 1602])
+	 * loss = (RC: 2.7395 ), step = 136, time_elapsed = 99.88 secs
+ -- epoch 001 | batch 136: len: tensor([1506, 1680,  841, 1322])
+	 * loss = (RC: 2.7228 ), step = 137, time_elapsed = 100.62 secs
+ -- epoch 001 | batch 137: len: tensor([1742, 1326, 1633, 1788])
+	 * loss = (RC: 2.7052 ), step = 138, time_elapsed = 101.37 secs
+ -- epoch 001 | batch 138: len: tensor([1303,  905, 1416, 1282])
+	 * loss = (RC: 2.6832 ), step = 139, time_elapsed = 102.12 secs
+ -- epoch 001 | batch 139: len: tensor([ 760, 1747, 1086, 1538])
+	 * loss = (RC: 2.6686 ), step = 140, time_elapsed = 102.91 secs
+ -- epoch 001 | batch 140: len: tensor([1725, 1265, 1110, 1381])
+	 * loss = (RC: 2.6505 ), step = 141, time_elapsed = 103.86 secs
+ -- epoch 001 | batch 141: len: tensor([1149, 1118, 1143, 1591])
+	 * loss = (RC: 2.6342 ), step = 142, time_elapsed = 104.75 secs
+ -- epoch 001 | batch 142: len: tensor([1151, 1407, 1436, 1058])
+	 * loss = (RC: 2.6318 ), step = 143, time_elapsed = 105.56 secs
+ -- epoch 001 | batch 143: len: tensor([1294, 1415, 1639, 1462])
+	 * loss = (RC: 2.6130 ), step = 144, time_elapsed = 106.35 secs
+ -- epoch 001 | batch 144: len: tensor([ 859, 1118,  775, 1776])
+	 * loss = (RC: 2.5971 ), step = 145, time_elapsed = 107.15 secs
+ -- epoch 001 | batch 145: len: tensor([1260, 1203, 1688, 1517])
+	 * loss = (RC: 2.5856 ), step = 146, time_elapsed = 107.83 secs
+ -- epoch 001 | batch 146: len: tensor([1229, 1169, 1214, 1012])
+	 * loss = (RC: 2.5739 ), step = 147, time_elapsed = 108.46 secs
+ -- epoch 001 | batch 147: len: tensor([1247, 1103, 1246, 1933])
+	 * loss = (RC: 2.5645 ), step = 148, time_elapsed = 109.09 secs
+ -- epoch 001 | batch 148: len: tensor([1630,  770,  629, 1115])
+	 * loss = (RC: 2.5511 ), step = 149, time_elapsed = 109.73 secs
+ -- epoch 001 | batch 149: len: tensor([ 839, 1167, 1142, 1642])
+	 * loss = (RC: 2.5392 ), step = 150, time_elapsed = 110.36 secs
+ -- epoch 001 | batch 150: len: tensor([1138, 1280, 2048, 1727])
+	 * loss = (RC: 2.5290 ), step = 151, time_elapsed = 110.99 secs
+ -- epoch 001 | batch 151: len: tensor([1387, 1054, 1016, 1142])
+	 * loss = (RC: 2.5260 ), step = 152, time_elapsed = 111.62 secs
+ -- epoch 001 | batch 152: len: tensor([1486, 1044, 1877, 1569])
+	 * loss = (RC: 2.5134 ), step = 153, time_elapsed = 112.25 secs
+ -- epoch 001 | batch 153: len: tensor([1393, 1001, 1457,  854])
+	 * loss = (RC: 2.5077 ), step = 154, time_elapsed = 112.88 secs
+ -- epoch 001 | batch 154: len: tensor([1146,  802, 1294, 1358])
+	 * loss = (RC: 2.4897 ), step = 155, time_elapsed = 113.51 secs
+ -- epoch 001 | batch 155: len: tensor([1681, 1216, 1042, 1829])
+	 * loss = (RC: 2.4825 ), step = 156, time_elapsed = 114.15 secs
+ -- epoch 001 | batch 156: len: tensor([ 653,  794, 1304,  766])
+	 * loss = (RC: 2.4827 ), step = 157, time_elapsed = 114.78 secs
+ -- epoch 001 | batch 157: len: tensor([1499, 2048, 1064, 1046])
+	 * loss = (RC: 2.4668 ), step = 158, time_elapsed = 115.42 secs
+ -- epoch 001 | batch 158: len: tensor([1224,  898, 2048,  842])
+	 * loss = (RC: 2.4520 ), step = 159, time_elapsed = 116.05 secs
+ -- epoch 001 | batch 159: len: tensor([1808, 1558, 1898, 1254])
+	 * loss = (RC: 2.4366 ), step = 160, time_elapsed = 116.70 secs
+ -- epoch 001 | batch 160: len: tensor([1263,  670, 1523, 1618])
+	 * loss = (RC: 2.4250 ), step = 161, time_elapsed = 117.33 secs
+ -- epoch 001 | batch 161: len: tensor([1995,  908, 1265, 1386])
+	 * loss = (RC: 2.4140 ), step = 162, time_elapsed = 117.96 secs
+ -- epoch 001 | batch 162: len: tensor([1167,  877, 2048, 1489])
+	 * loss = (RC: 2.4006 ), step = 163, time_elapsed = 118.59 secs
+ -- epoch 001 | batch 163: len: tensor([ 739, 1637, 1048, 1410])
+	 * loss = (RC: 2.3953 ), step = 164, time_elapsed = 119.22 secs
+ -- epoch 001 | batch 164: len: tensor([1332,  912, 1064, 1594])
+	 * loss = (RC: 2.3909 ), step = 165, time_elapsed = 119.98 secs
+ -- epoch 001 | batch 165: len: tensor([ 723,  812,  861, 1209])
+	 * loss = (RC: 2.3896 ), step = 166, time_elapsed = 120.62 secs
+ -- epoch 001 | batch 166: len: tensor([ 576, 1903, 2048, 1221])
+	 * loss = (RC: 2.3828 ), step = 167, time_elapsed = 121.26 secs
+ -- epoch 001 | batch 167: len: tensor([1244, 1568, 1563, 1664])
+	 * loss = (RC: 2.3746 ), step = 168, time_elapsed = 121.90 secs
+ -- epoch 001 | batch 168: len: tensor([ 841, 1381,  880,  949])
+	 * loss = (RC: 2.3680 ), step = 169, time_elapsed = 122.55 secs
+ -- epoch 001 | batch 169: len: tensor([1296,  965,  837, 1331])
+	 * loss = (RC: 2.3705 ), step = 170, time_elapsed = 123.18 secs
+ -- epoch 001 | batch 170: len: tensor([ 857, 2006, 1340,  776])
+	 * loss = (RC: 2.3754 ), step = 171, time_elapsed = 123.81 secs
+ -- epoch 001 | batch 171: len: tensor([1479, 1134, 1466, 1244])
+	 * loss = (RC: 2.3694 ), step = 172, time_elapsed = 124.45 secs
+ -- epoch 001 | batch 172: len: tensor([870, 933, 909, 736])
+	 * loss = (RC: 2.3709 ), step = 173, time_elapsed = 125.08 secs
+ -- epoch 001 | batch 173: len: tensor([1333, 1343, 1244, 1357])
+	 * loss = (RC: 2.3583 ), step = 174, time_elapsed = 125.71 secs
+ -- epoch 001 | batch 174: len: tensor([1199,  949,  775, 1306])
+	 * loss = (RC: 2.3556 ), step = 175, time_elapsed = 126.34 secs
+ -- epoch 001 | batch 175: len: tensor([ 622,  948, 1420, 1085])
+	 * loss = (RC: 2.3501 ), step = 176, time_elapsed = 126.97 secs
+ -- epoch 001 | batch 176: len: tensor([1542, 1083, 1070, 1052])
+	 * loss = (RC: 2.3462 ), step = 177, time_elapsed = 127.61 secs
+ -- epoch 001 | batch 177: len: tensor([1265, 1698, 1030, 1362])
+	 * loss = (RC: 2.3335 ), step = 178, time_elapsed = 128.24 secs
+ -- epoch 001 | batch 178: len: tensor([1133,  985,  848, 1080])
+	 * loss = (RC: 2.3345 ), step = 179, time_elapsed = 128.87 secs
+ -- epoch 001 | batch 179: len: tensor([1066,  833,  931,  900])
+	 * loss = (RC: 2.3274 ), step = 180, time_elapsed = 129.50 secs
+ -- epoch 001 | batch 180: len: tensor([1655,  953, 2048, 1240])
+	 * loss = (RC: 2.3186 ), step = 181, time_elapsed = 130.13 secs
+ -- epoch 001 | batch 181: len: tensor([1899, 1133,  606, 1705])
+	 * loss = (RC: 2.3161 ), step = 182, time_elapsed = 130.77 secs
+ -- epoch 001 | batch 182: len: tensor([ 906,  809, 1657, 1867])
+	 * loss = (RC: 2.3080 ), step = 183, time_elapsed = 131.41 secs
+ -- epoch 001 | batch 183: len: tensor([ 956, 2048, 1536, 1705])
+	 * loss = (RC: 2.2964 ), step = 184, time_elapsed = 132.04 secs
+ -- epoch 001 | batch 184: len: tensor([1123, 1199, 1374, 1255])
+	 * loss = (RC: 2.2900 ), step = 185, time_elapsed = 132.67 secs
+ -- epoch 001 | batch 185: len: tensor([1725,  798,  982, 1340])
+	 * loss = (RC: 2.2888 ), step = 186, time_elapsed = 133.30 secs
+ -- epoch 001 | batch 186: len: tensor([1882,  669,  780,  739])
+	 * loss = (RC: 2.2866 ), step = 187, time_elapsed = 133.93 secs
+ -- epoch 001 | batch 187: len: tensor([ 960, 1124, 1700, 1105])
+	 * loss = (RC: 2.2821 ), step = 188, time_elapsed = 134.56 secs
+ -- epoch 001 | batch 188: len: tensor([1707, 1183,  878, 1693])
+	 * loss = (RC: 2.2761 ), step = 189, time_elapsed = 135.20 secs
+ -- epoch 001 | batch 189: len: tensor([1087, 1018,  855, 1023])
+	 * loss = (RC: 2.2789 ), step = 190, time_elapsed = 135.83 secs
+ -- epoch 001 | batch 190: len: tensor([664, 973, 873, 962])
+	 * loss = (RC: 2.2749 ), step = 191, time_elapsed = 136.46 secs
+ -- epoch 001 | batch 191: len: tensor([1037, 1606, 1422, 1772])
+	 * loss = (RC: 2.2702 ), step = 192, time_elapsed = 137.09 secs
+ -- epoch 001 | batch 192: len: tensor([ 975, 1521, 1253,  987])
+	 * loss = (RC: 2.2625 ), step = 193, time_elapsed = 137.72 secs
+ -- epoch 001 | batch 193: len: tensor([ 680,  728, 1213,  632])
+	 * loss = (RC: 2.2653 ), step = 194, time_elapsed = 138.35 secs
+ -- epoch 001 | batch 194: len: tensor([ 662, 1595, 1679,  906])
+	 * loss = (RC: 2.2562 ), step = 195, time_elapsed = 138.98 secs
+ -- epoch 001 | batch 195: len: tensor([1422, 1531, 1333, 1390])
+	 * loss = (RC: 2.2536 ), step = 196, time_elapsed = 139.61 secs
+ -- epoch 001 | batch 196: len: tensor([ 780, 1361, 1136, 1365])
+	 * loss = (RC: 2.2512 ), step = 197, time_elapsed = 140.24 secs
+ -- epoch 001 | batch 197: len: tensor([1398, 1207, 1036, 1682])
+	 * loss = (RC: 2.2408 ), step = 198, time_elapsed = 140.87 secs
+ -- epoch 001 | batch 198: len: tensor([1569,  704,  480, 1174])
+	 * loss = (RC: 2.2352 ), step = 199, time_elapsed = 141.51 secs
+/gscratch/ark/pingw220/miniconda3/envs/midi-sag/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:240: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+ -- epoch 001 | batch 199: len: tensor([1007, 1322, 1060, 1233])
+	 * loss = (RC: 2.2270 ), step = 200, time_elapsed = 142.16 secs
+ -- epoch 001 | batch 200: len: tensor([1427, 1031,  971,  934])
+	 * loss = (RC: 2.2266 ), step = 201, time_elapsed = 142.81 secs
+ -- epoch 001 | batch 201: len: tensor([1360,  888, 1037, 1284])
+	 * loss = (RC: 2.2304 ), step = 202, time_elapsed = 143.47 secs
+ -- epoch 001 | batch 202: len: tensor([1137,  646,  816, 1433])
+	 * loss = (RC: 2.2330 ), step = 203, time_elapsed = 144.12 secs
+ -- epoch 001 | batch 203: len: tensor([1172,  890,  963, 1625])
+	 * loss = (RC: 2.2303 ), step = 204, time_elapsed = 144.75 secs
+ -- epoch 001 | batch 204: len: tensor([ 836, 1150, 1084, 1240])
+	 * loss = (RC: 2.2301 ), step = 205, time_elapsed = 145.51 secs
+ -- epoch 001 | batch 205: len: tensor([1633, 1926, 1834, 1554])
+	 * loss = (RC: 2.2281 ), step = 206, time_elapsed = 146.28 secs
+ -- epoch 001 | batch 206: len: tensor([2048, 1817,  850, 1335])
+	 * loss = (RC: 2.2246 ), step = 207, time_elapsed = 147.03 secs
+ -- epoch 001 | batch 207: len: tensor([1212,  381,  980, 1758])
+	 * loss = (RC: 2.2225 ), step = 208, time_elapsed = 147.81 secs
+ -- epoch 001 | batch 208: len: tensor([1011, 2048, 1067, 1062])
+	 * loss = (RC: 2.2276 ), step = 209, time_elapsed = 148.59 secs
+ -- epoch 001 | batch 209: len: tensor([1157,  350, 1720,  932])
+	 * loss = (RC: 2.2238 ), step = 210, time_elapsed = 149.36 secs
+ -- epoch 001 | batch 210: len: tensor([2048, 1672,  955, 1372])
+	 * loss = (RC: 2.2300 ), step = 211, time_elapsed = 150.13 secs
+ -- epoch 001 | batch 211: len: tensor([1246, 1061,  879,  542])
+	 * loss = (RC: 2.2336 ), step = 212, time_elapsed = 150.90 secs
+ -- epoch 001 | batch 212: len: tensor([1084, 1006,  505,  598])
+	 * loss = (RC: 2.2399 ), step = 213, time_elapsed = 151.67 secs
+ -- epoch 001 | batch 213: len: tensor([ 957, 1380,  832,  875])
+	 * loss = (RC: 2.2348 ), step = 214, time_elapsed = 152.44 secs
+ -- epoch 001 | batch 214: len: tensor([1725, 1385, 1100, 1235])
+	 * loss = (RC: 2.2293 ), step = 215, time_elapsed = 153.24 secs
+ -- epoch 001 | batch 215: len: tensor([1197, 1971,  761,  670])
+	 * loss = (RC: 2.2241 ), step = 216, time_elapsed = 154.02 secs
+ -- epoch 001 | batch 216: len: tensor([1310, 1001, 1393,  884])
+	 * loss = (RC: 2.2284 ), step = 217, time_elapsed = 154.81 secs
+ -- epoch 001 | batch 217: len: tensor([1188, 2048, 1358,  808])
+	 * loss = (RC: 2.2240 ), step = 218, time_elapsed = 155.59 secs
+ -- epoch 001 | batch 218: len: tensor([1333,  983, 2048,  933])
+	 * loss = (RC: 2.2175 ), step = 219, time_elapsed = 156.38 secs
+ -- epoch 001 | batch 219: len: tensor([1292, 1130, 1508, 1782])
+	 * loss = (RC: 2.2091 ), step = 220, time_elapsed = 157.14 secs
+ -- epoch 001 | batch 220: len: tensor([1030, 1626, 1008, 1103])
+	 * loss = (RC: 2.2090 ), step = 221, time_elapsed = 157.90 secs
+ -- epoch 001 | batch 221: len: tensor([1790,  942, 1463, 1396])
+	 * loss = (RC: 2.2080 ), step = 222, time_elapsed = 158.67 secs
+ -- epoch 001 | batch 222: len: tensor([1086, 1617, 1096,  835])
+	 * loss = (RC: 2.2051 ), step = 223, time_elapsed = 159.43 secs
+ -- epoch 001 | batch 223: len: tensor([1191, 1122, 1415, 1441])
+	 * loss = (RC: 2.2088 ), step = 224, time_elapsed = 160.21 secs
+ -- epoch 001 | batch 224: len: tensor([1069, 1244, 1466,  729])
+	 * loss = (RC: 2.2074 ), step = 225, time_elapsed = 160.97 secs
+ -- epoch 001 | batch 225: len: tensor([1025, 1164, 1948,  783])
+	 * loss = (RC: 2.2072 ), step = 226, time_elapsed = 161.73 secs
+ -- epoch 001 | batch 226: len: tensor([ 974, 1679, 1346, 1267])
+	 * loss = (RC: 2.2037 ), step = 227, time_elapsed = 162.49 secs
+ -- epoch 001 | batch 227: len: tensor([1072, 1076, 1089, 1208])
+	 * loss = (RC: 2.2070 ), step = 228, time_elapsed = 163.25 secs
+ -- epoch 001 | batch 228: len: tensor([1170,  924, 1440, 1153])
+	 * loss = (RC: 2.2098 ), step = 229, time_elapsed = 164.01 secs
+ -- epoch 001 | batch 229: len: tensor([ 488, 1227, 1598, 1707])
+	 * loss = (RC: 2.2062 ), step = 230, time_elapsed = 164.65 secs
+ -- epoch 001 | batch 230: len: tensor([ 861, 1892, 1036, 1268])
+	 * loss = (RC: 2.2024 ), step = 231, time_elapsed = 165.30 secs
+ -- epoch 001 | batch 231: len: tensor([ 941, 1453,  807,  943])
+	 * loss = (RC: 2.2047 ), step = 232, time_elapsed = 165.93 secs
+ -- epoch 001 | batch 232: len: tensor([ 671, 1065,  943, 1787])
+	 * loss = (RC: 2.2021 ), step = 233, time_elapsed = 166.57 secs
+ -- epoch 001 | batch 233: len: tensor([1457, 1275, 1158, 1101])
+	 * loss = (RC: 2.1995 ), step = 234, time_elapsed = 167.21 secs
+ -- epoch 001 | batch 234: len: tensor([1234, 1835, 1208, 1112])
+	 * loss = (RC: 2.1939 ), step = 235, time_elapsed = 167.86 secs
+ -- epoch 001 | batch 235: len: tensor([1112,  875, 1695, 1262])
+	 * loss = (RC: 2.1886 ), step = 236, time_elapsed = 168.51 secs
+ -- epoch 001 | batch 236: len: tensor([ 791, 1109, 2048, 1134])
+	 * loss = (RC: 2.1874 ), step = 237, time_elapsed = 169.15 secs
+ -- epoch 001 | batch 237: len: tensor([1269, 1507,  831,  920])
+	 * loss = (RC: 2.1887 ), step = 238, time_elapsed = 169.80 secs
+ -- epoch 001 | batch 238: len: tensor([840, 952, 891, 904])
+	 * loss = (RC: 2.1885 ), step = 239, time_elapsed = 170.44 secs
+ -- epoch 001 | batch 239: len: tensor([ 860, 1343, 1108, 1292])
+	 * loss = (RC: 2.1834 ), step = 240, time_elapsed = 171.08 secs
+ -- epoch 001 | batch 240: len: tensor([1355, 1131,  960,  931])
+	 * loss = (RC: 2.1833 ), step = 241, time_elapsed = 171.71 secs
+ -- epoch 001 | batch 241: len: tensor([ 927,  875, 1551, 1375])
+	 * loss = (RC: 2.1770 ), step = 242, time_elapsed = 172.35 secs
+ -- epoch 001 | batch 242: len: tensor([1664, 1113,  955, 1171])
+	 * loss = (RC: 2.1738 ), step = 243, time_elapsed = 172.99 secs
+ -- epoch 001 | batch 243: len: tensor([ 805, 1002, 1176, 1587])
+	 * loss = (RC: 2.1788 ), step = 244, time_elapsed = 173.63 secs
+ -- epoch 001 | batch 244: len: tensor([1164,  717,  869,  797])
+	 * loss = (RC: 2.1829 ), step = 245, time_elapsed = 174.27 secs
+ -- epoch 001 | batch 245: len: tensor([1165,  369, 2048, 1165])
+	 * loss = (RC: 2.1940 ), step = 246, time_elapsed = 174.91 secs
+ -- epoch 001 | batch 246: len: tensor([ 849, 1705, 1117,  781])
+	 * loss = (RC: 2.1944 ), step = 247, time_elapsed = 175.55 secs
+ -- epoch 001 | batch 247: len: tensor([1108,  894,  905,  977])
+	 * loss = (RC: 2.1947 ), step = 248, time_elapsed = 176.18 secs
+ -- epoch 001 | batch 248: len: tensor([1142, 1851,  925,  969])
+	 * loss = (RC: 2.1966 ), step = 249, time_elapsed = 176.82 secs
+ -- epoch 001 | batch 249: len: tensor([1548, 1109, 1121, 1518])
+	 * loss = (RC: 2.1957 ), step = 250, time_elapsed = 177.47 secs
+ -- epoch 001 | batch 250: len: tensor([ 698,  557, 1281,  707])
+	 * loss = (RC: 2.2035 ), step = 251, time_elapsed = 178.11 secs
+ -- epoch 001 | batch 251: len: tensor([ 971, 1414,  813,  941])
+	 * loss = (RC: 2.2063 ), step = 252, time_elapsed = 178.75 secs
+ -- epoch 001 | batch 252: len: tensor([1838, 1778,  764,  963])
+	 * loss = (RC: 2.2017 ), step = 253, time_elapsed = 179.39 secs
+ -- epoch 001 | batch 253: len: tensor([ 751,  848, 1623, 1032])
+	 * loss = (RC: 2.1997 ), step = 254, time_elapsed = 180.03 secs
+ -- epoch 001 | batch 254: len: tensor([1634, 1363, 1481, 1636])
+	 * loss = (RC: 2.1937 ), step = 255, time_elapsed = 180.68 secs
+ -- epoch 001 | batch 255: len: tensor([ 948,  990, 2048, 1097])
+	 * loss = (RC: 2.1905 ), step = 256, time_elapsed = 181.33 secs
+ -- epoch 001 | batch 256: len: tensor([ 907, 1174, 1105, 1712])
+	 * loss = (RC: 2.1861 ), step = 257, time_elapsed = 181.97 secs
+ -- epoch 001 | batch 257: len: tensor([ 672, 1117, 1246,  671])
+	 * loss = (RC: 2.1864 ), step = 258, time_elapsed = 182.61 secs
+ -- epoch 001 | batch 258: len: tensor([1292,  239, 1047, 1080])
+	 * loss = (RC: 2.1861 ), step = 259, time_elapsed = 183.25 secs
+ -- epoch 001 | batch 259: len: tensor([ 972,  969, 1060, 1333])
+	 * loss = (RC: 2.1833 ), step = 260, time_elapsed = 183.91 secs
+ -- epoch 001 | batch 260: len: tensor([1298, 1236,  911, 1174])
+	 * loss = (RC: 2.1761 ), step = 261, time_elapsed = 184.57 secs
+ -- epoch 001 | batch 261: len: tensor([ 803, 1103, 1081,  751])
+	 * loss = (RC: 2.1745 ), step = 262, time_elapsed = 185.30 secs
+ -- epoch 001 | batch 262: len: tensor([1925,  829, 1156, 1783])
+	 * loss = (RC: 2.1659 ), step = 263, time_elapsed = 185.96 secs
+ -- epoch 001 | batch 263: len: tensor([1086, 1137,  916, 1584])
+	 * loss = (RC: 2.1642 ), step = 264, time_elapsed = 186.60 secs
+ -- epoch 001 | batch 264: len: tensor([1180, 1215, 1016, 1412])
+	 * loss = (RC: 2.1686 ), step = 265, time_elapsed = 187.24 secs
+ -- epoch 001 | batch 265: len: tensor([1318,  896,  803, 1213])
+	 * loss = (RC: 2.1717 ), step = 266, time_elapsed = 187.87 secs
+ -- epoch 001 | batch 266: len: tensor([ 989, 1861,  922,  587])
+	 * loss = (RC: 2.1662 ), step = 267, time_elapsed = 188.52 secs
+ -- epoch 001 | batch 267: len: tensor([2048,  863, 1598, 1505])
+	 * loss = (RC: 2.1670 ), step = 268, time_elapsed = 189.16 secs
+ -- epoch 001 | batch 268: len: tensor([1674, 1733, 1025,  962])
+	 * loss = (RC: 2.1653 ), step = 269, time_elapsed = 189.80 secs
+ -- epoch 001 | batch 269: len: tensor([2048, 1518,  877, 1199])
+	 * loss = (RC: 2.1617 ), step = 270, time_elapsed = 190.44 secs
+ -- epoch 001 | batch 270: len: tensor([1323, 1257, 1044, 1159])
+	 * loss = (RC: 2.1561 ), step = 271, time_elapsed = 191.08 secs
+ -- epoch 001 | batch 271: len: tensor([ 707, 1208,  692, 1041])
+	 * loss = (RC: 2.1637 ), step = 272, time_elapsed = 191.71 secs
+ -- epoch 001 | batch 272: len: tensor([ 381,  783, 1799,  925])
+	 * loss = (RC: 2.1653 ), step = 273, time_elapsed = 192.35 secs
+ -- epoch 001 | batch 273: len: tensor([1748, 1034, 1114, 1724])
+	 * loss = (RC: 2.1658 ), step = 274, time_elapsed = 192.98 secs
+ -- epoch 001 | batch 274: len: tensor([1634, 1393, 1062,  999])
+	 * loss = (RC: 2.1650 ), step = 275, time_elapsed = 193.62 secs
+ -- epoch 001 | batch 275: len: tensor([1505, 1275,  712, 1342])
+	 * loss = (RC: 2.1664 ), step = 276, time_elapsed = 194.27 secs
+ -- epoch 001 | batch 276: len: tensor([1067, 1360, 1328, 1233])
+	 * loss = (RC: 2.1626 ), step = 277, time_elapsed = 194.92 secs
+ -- epoch 001 | batch 277: len: tensor([ 954,  962,  942, 1493])
+	 * loss = (RC: 2.1659 ), step = 278, time_elapsed = 195.56 secs
+ -- epoch 001 | batch 278: len: tensor([1134,  809, 1728, 1689])
+	 * loss = (RC: 2.1625 ), step = 279, time_elapsed = 196.20 secs
+ -- epoch 001 | batch 279: len: tensor([ 877, 2048, 1312, 1435])
+	 * loss = (RC: 2.1638 ), step = 280, time_elapsed = 196.84 secs
+ -- epoch 001 | batch 280: len: tensor([ 554, 1542, 1188, 1385])
+	 * loss = (RC: 2.1575 ), step = 281, time_elapsed = 197.48 secs
+ -- epoch 001 | batch 281: len: tensor([1303,  800, 1390, 1329])
+	 * loss = (RC: 2.1508 ), step = 282, time_elapsed = 198.12 secs
+ -- epoch 001 | batch 282: len: tensor([1058, 1028,  980, 1742])
+	 * loss = (RC: 2.1460 ), step = 283, time_elapsed = 198.77 secs
+ -- epoch 001 | batch 283: len: tensor([ 905, 1082, 1587,  787])
+	 * loss = (RC: 2.1498 ), step = 284, time_elapsed = 199.41 secs
+ -- epoch 001 | batch 284: len: tensor([1214, 1306, 1463, 1427])
+	 * loss = (RC: 2.1433 ), step = 285, time_elapsed = 200.04 secs
+ -- epoch 001 | batch 285: len: tensor([ 800,  878,  522, 2048])
+	 * loss = (RC: 2.1460 ), step = 286, time_elapsed = 200.68 secs
+ -- epoch 001 | batch 286: len: tensor([ 950, 1397,  954,  839])
+	 * loss = (RC: 2.1463 ), step = 287, time_elapsed = 201.32 secs
+ -- epoch 001 | batch 287: len: tensor([1086,  395, 1439, 1086])
+	 * loss = (RC: 2.1363 ), step = 288, time_elapsed = 201.96 secs
+ -- epoch 001 | batch 288: len: tensor([1521,  934,  642, 1068])
+	 * loss = (RC: 2.1373 ), step = 289, time_elapsed = 202.59 secs
+ -- epoch 001 | batch 289: len: tensor([1122, 1025,  876, 1716])
+	 * loss = (RC: 2.1277 ), step = 290, time_elapsed = 203.23 secs
+ -- epoch 001 | batch 290: len: tensor([1579, 1940, 1526,  933])
+	 * loss = (RC: 2.1216 ), step = 291, time_elapsed = 203.87 secs
+ -- epoch 001 | batch 291: len: tensor([ 698, 1231,  970, 1057])
+	 * loss = (RC: 2.1177 ), step = 292, time_elapsed = 204.51 secs
+ -- epoch 001 | batch 292: len: tensor([ 912, 1260, 1053, 1056])
+	 * loss = (RC: 2.1203 ), step = 293, time_elapsed = 205.15 secs
+ -- epoch 001 | batch 293: len: tensor([ 935, 1021, 2048, 1534])
+	 * loss = (RC: 2.1088 ), step = 294, time_elapsed = 205.78 secs
+ -- epoch 001 | batch 294: len: tensor([2048, 1019, 1409, 1188])
+	 * loss = (RC: 2.1132 ), step = 295, time_elapsed = 206.42 secs
+ -- epoch 001 | batch 295: len: tensor([ 720, 1340, 1114, 1198])
+	 * loss = (RC: 2.1096 ), step = 296, time_elapsed = 207.06 secs
+ -- epoch 001 | batch 296: len: tensor([1306,  840, 1573,  557])
+	 * loss = (RC: 2.1115 ), step = 297, time_elapsed = 207.69 secs
+ -- epoch 001 | batch 297: len: tensor([1255, 1585, 1086,  826])
+	 * loss = (RC: 2.1201 ), step = 298, time_elapsed = 208.33 secs
+ -- epoch 001 | batch 298: len: tensor([1032, 1361,  787, 1439])
+	 * loss = (RC: 2.1138 ), step = 299, time_elapsed = 208.97 secs
+ -- epoch 001 | batch 299: len: tensor([ 771,  518, 1113,  860])
+	 * loss = (RC: 2.1234 ), step = 300, time_elapsed = 209.61 secs
+ -- epoch 001 | batch 300: len: tensor([1661, 1277, 1570, 1379])
+	 * loss = (RC: 2.1227 ), step = 301, time_elapsed = 210.25 secs
+ -- epoch 001 | batch 301: len: tensor([ 973,  826,  693, 1690])
+	 * loss = (RC: 2.1333 ), step = 302, time_elapsed = 210.88 secs
+ -- epoch 001 | batch 302: len: tensor([1494, 1008, 1296, 1091])
+	 * loss = (RC: 2.1316 ), step = 303, time_elapsed = 211.52 secs
+ -- epoch 001 | batch 303: len: tensor([1359, 1165,  793, 1256])
+	 * loss = (RC: 2.1336 ), step = 304, time_elapsed = 212.15 secs
+ -- epoch 001 | batch 304: len: tensor([1283,  881, 1759, 1283])
+	 * loss = (RC: 2.1375 ), step = 305, time_elapsed = 212.78 secs
+ -- epoch 001 | batch 305: len: tensor([1169,  925, 1282, 1638])
+	 * loss = (RC: 2.1397 ), step = 306, time_elapsed = 213.42 secs
+ -- epoch 001 | batch 306: len: tensor([1926, 1200, 1426, 2048])
+	 * loss = (RC: 2.1325 ), step = 307, time_elapsed = 214.06 secs
+ -- epoch 001 | batch 307: len: tensor([1727, 1536, 1534, 1055])
+	 * loss = (RC: 2.1255 ), step = 308, time_elapsed = 214.70 secs
+ -- epoch 001 | batch 308: len: tensor([1833,  980, 1485, 1232])
+	 * loss = (RC: 2.1224 ), step = 309, time_elapsed = 215.38 secs
+ -- epoch 001 | batch 309: len: tensor([1140, 1710, 1317, 1055])
+	 * loss = (RC: 2.1178 ), step = 310, time_elapsed = 216.13 secs
+ -- epoch 001 | batch 310: len: tensor([1207, 1657, 1090, 1050])
+	 * loss = (RC: 2.1163 ), step = 311, time_elapsed = 216.78 secs
+ -- epoch 001 | batch 311: len: tensor([ 529, 2048, 1170, 1395])
+	 * loss = (RC: 2.1120 ), step = 312, time_elapsed = 217.42 secs
+ -- epoch 001 | batch 312: len: tensor([ 924, 1057, 1133,  951])
+	 * loss = (RC: 2.1163 ), step = 313, time_elapsed = 218.05 secs
+ -- epoch 001 | batch 313: len: tensor([1372,  695, 1460, 1360])
+	 * loss = (RC: 2.1103 ), step = 314, time_elapsed = 218.68 secs
+ -- epoch 001 | batch 314: len: tensor([ 827, 1509,  945,  911])
+	 * loss = (RC: 2.1153 ), step = 315, time_elapsed = 219.31 secs
+ -- epoch 001 | batch 315: len: tensor([1724, 1265,  894, 1601])
+	 * loss = (RC: 2.1112 ), step = 316, time_elapsed = 219.95 secs
+ -- epoch 001 | batch 316: len: tensor([1023, 1393, 1334, 1308])
+	 * loss = (RC: 2.1119 ), step = 317, time_elapsed = 220.59 secs
+ -- epoch 001 | batch 317: len: tensor([1164, 1250, 1006, 1361])
+	 * loss = (RC: 2.1103 ), step = 318, time_elapsed = 221.22 secs
+ -- epoch 001 | batch 318: len: tensor([1067,  928,  990, 1099])
+	 * loss = (RC: 2.1107 ), step = 319, time_elapsed = 221.86 secs
+ -- epoch 001 | batch 319: len: tensor([1515, 1401, 1844, 1445])
+	 * loss = (RC: 2.1067 ), step = 320, time_elapsed = 222.50 secs
+ -- epoch 001 | batch 320: len: tensor([1111, 1162, 1647, 2048])
+	 * loss = (RC: 2.1003 ), step = 321, time_elapsed = 223.14 secs
+ -- epoch 001 | batch 321: len: tensor([1370, 1453,  614, 1637])
+	 * loss = (RC: 2.1019 ), step = 322, time_elapsed = 223.78 secs
+ -- epoch 001 | batch 322: len: tensor([1204, 1942,  817, 2017])
+	 * loss = (RC: 2.0986 ), step = 323, time_elapsed = 224.42 secs
+ -- epoch 001 | batch 323: len: tensor([1363,  896, 1403,  523])
+	 * loss = (RC: 2.1026 ), step = 324, time_elapsed = 225.07 secs
+ -- epoch 001 | batch 324: len: tensor([1070, 1361, 1334, 1504])
+	 * loss = (RC: 2.0980 ), step = 325, time_elapsed = 225.82 secs
+ -- epoch 001 | batch 325: len: tensor([1408,  833, 1445, 1674])
+	 * loss = (RC: 2.0927 ), step = 326, time_elapsed = 226.58 secs
+ -- epoch 001 | batch 326: len: tensor([ 826, 1437, 1460, 1609])
+	 * loss = (RC: 2.0904 ), step = 327, time_elapsed = 227.33 secs
+ -- epoch 001 | batch 327: len: tensor([ 975,  934, 1586,  797])
+	 * loss = (RC: 2.0932 ), step = 328, time_elapsed = 227.98 secs
+ -- epoch 001 | batch 328: len: tensor([1028, 1450, 1617, 1119])
+	 * loss = (RC: 2.0920 ), step = 329, time_elapsed = 228.76 secs
+ -- epoch 001 | batch 329: len: tensor([1131, 1263, 1317,  690])
+	 * loss = (RC: 2.0999 ), step = 330, time_elapsed = 229.53 secs
+ -- epoch 001 | batch 330: len: tensor([2048, 1064,  996, 1149])
+	 * loss = (RC: 2.0943 ), step = 331, time_elapsed = 230.30 secs
+ -- epoch 001 | batch 331: len: tensor([973, 684, 791, 929])
+	 * loss = (RC: 2.1089 ), step = 332, time_elapsed = 231.07 secs
+ -- epoch 001 | batch 332: len: tensor([ 979, 1025,  961,  902])
+	 * loss = (RC: 2.1087 ), step = 333, time_elapsed = 231.83 secs
+ -- epoch 001 | batch 333: len: tensor([1953, 1604, 1236, 1433])
+	 * loss = (RC: 2.1109 ), step = 334, time_elapsed = 232.60 secs
+ -- epoch 001 | batch 334: len: tensor([ 964, 1004, 1092,  989])
+	 * loss = (RC: 2.1129 ), step = 335, time_elapsed = 233.35 secs
+ -- epoch 001 | batch 335: len: tensor([1066,  838, 1522,  909])
+	 * loss = (RC: 2.1173 ), step = 336, time_elapsed = 234.11 secs
+ -- epoch 001 | batch 336: len: tensor([ 803, 1620,  874,  856])
+	 * loss = (RC: 2.1271 ), step = 337, time_elapsed = 234.85 secs
+ -- epoch 001 | batch 337: len: tensor([ 731, 1846, 1558, 1694])
+	 * loss = (RC: 2.1201 ), step = 338, time_elapsed = 235.61 secs
+ -- epoch 001 | batch 338: len: tensor([1212, 1487, 1251, 1453])
+	 * loss = (RC: 2.1252 ), step = 339, time_elapsed = 236.35 secs
+ -- epoch 001 | batch 339: len: tensor([1181, 1321,  812, 1274])
+	 * loss = (RC: 2.1202 ), step = 340, time_elapsed = 237.10 secs
+ -- epoch 001 | batch 340: len: tensor([1459, 1221,  811, 1456])
+	 * loss = (RC: 2.1225 ), step = 341, time_elapsed = 237.87 secs
+ -- epoch 001 | batch 341: len: tensor([1038,  828,  863, 1763])
+	 * loss = (RC: 2.1199 ), step = 342, time_elapsed = 238.62 secs
+ -- epoch 001 | batch 342: len: tensor([ 918,  983, 1313, 1928])
+	 * loss = (RC: 2.1132 ), step = 343, time_elapsed = 239.37 secs
+ -- epoch 001 | batch 343: len: tensor([1144, 2048, 1202, 1676])
+	 * loss = (RC: 2.1158 ), step = 344, time_elapsed = 240.13 secs
+ -- epoch 001 | batch 344: len: tensor([ 912,  990, 1168, 1472])
+	 * loss = (RC: 2.1098 ), step = 345, time_elapsed = 240.87 secs
+ -- epoch 001 | batch 345: len: tensor([1384, 1084, 1547, 1305])
+	 * loss = (RC: 2.1030 ), step = 346, time_elapsed = 241.63 secs
+ -- epoch 001 | batch 346: len: tensor([ 823,  962, 1149, 1579])
+	 * loss = (RC: 2.1029 ), step = 347, time_elapsed = 242.39 secs
+ -- epoch 001 | batch 347: len: tensor([ 957,  969, 2048, 1594])
+	 * loss = (RC: 2.1004 ), step = 348, time_elapsed = 243.23 secs
+ -- epoch 001 | batch 348: len: tensor([1133, 1263, 1397, 1097])
+	 * loss = (RC: 2.0958 ), step = 349, time_elapsed = 243.97 secs
+ -- epoch 001 | batch 349: len: tensor([2048,  773,  960, 1406])
+	 * loss = (RC: 2.0926 ), step = 350, time_elapsed = 244.72 secs
+ -- epoch 001 | batch 350: len: tensor([1149, 1557, 1599, 1007])
+	 * loss = (RC: 2.0931 ), step = 351, time_elapsed = 245.47 secs
+ -- epoch 001 | batch 351: len: tensor([ 743, 1513,  991, 1025])
+	 * loss = (RC: 2.0941 ), step = 352, time_elapsed = 246.22 secs
+ -- epoch 001 | batch 352: len: tensor([1246,  606,  705, 1591])
+	 * loss = (RC: 2.0913 ), step = 353, time_elapsed = 246.96 secs
+ -- epoch 001 | batch 353: len: tensor([ 262, 1369,  849, 1235])
+	 * loss = (RC: 2.0964 ), step = 354, time_elapsed = 247.71 secs
+ -- epoch 001 | batch 354: len: tensor([ 822, 1487, 1559, 1111])
+	 * loss = (RC: 2.0958 ), step = 355, time_elapsed = 248.47 secs
+ -- epoch 001 | batch 355: len: tensor([1717, 1582, 1209, 1449])
+	 * loss = (RC: 2.0938 ), step = 356, time_elapsed = 249.11 secs
+ -- epoch 001 | batch 356: len: tensor([ 987,  799, 1647, 1143])
+	 * loss = (RC: 2.0938 ), step = 357, time_elapsed = 249.75 secs
+ -- epoch 001 | batch 357: len: tensor([1598, 1525, 1345,  769])
+	 * loss = (RC: 2.0965 ), step = 358, time_elapsed = 250.40 secs
+ -- epoch 001 | batch 358: len: tensor([1046, 1027,  704, 1105])
+	 * loss = (RC: 2.1076 ), step = 359, time_elapsed = 251.15 secs
+ -- epoch 001 | batch 359: len: tensor([ 897, 1068,  966, 1135])
+	 * loss = (RC: 2.1127 ), step = 360, time_elapsed = 251.90 secs
+ -- epoch 001 | batch 360: len: tensor([ 784,  930,  601, 1565])
+	 * loss = (RC: 2.1082 ), step = 361, time_elapsed = 252.54 secs
+ -- epoch 001 | batch 361: len: tensor([ 775, 1104, 1365, 1304])
+	 * loss = (RC: 2.1012 ), step = 362, time_elapsed = 253.17 secs
+ -- epoch 001 | batch 362: len: tensor([ 794, 1479, 1225,  788])
+	 * loss = (RC: 2.0989 ), step = 363, time_elapsed = 253.81 secs
+ -- epoch 001 | batch 363: len: tensor([ 907,  810, 1389, 1032])
+	 * loss = (RC: 2.0992 ), step = 364, time_elapsed = 254.44 secs
+ -- epoch 001 | batch 364: len: tensor([1515, 1011, 1520,  997])
+	 * loss = (RC: 2.0972 ), step = 365, time_elapsed = 255.07 secs
+ -- epoch 001 | batch 365: len: tensor([1014,  950,  652,  824])
+	 * loss = (RC: 2.0996 ), step = 366, time_elapsed = 255.71 secs
+ -- epoch 001 | batch 366: len: tensor([1116, 1294, 1424, 1448])
+	 * loss = (RC: 2.0972 ), step = 367, time_elapsed = 256.34 secs
+ -- epoch 001 | batch 367: len: tensor([1054,  843, 1033,  647])
+	 * loss = (RC: 2.1039 ), step = 368, time_elapsed = 256.97 secs
+ -- epoch 001 | batch 368: len: tensor([1089, 1307, 1135,  537])
+	 * loss = (RC: 2.1028 ), step = 369, time_elapsed = 257.61 secs
+ -- epoch 001 | batch 369: len: tensor([1872,  605,  981, 1282])
+	 * loss = (RC: 2.1070 ), step = 370, time_elapsed = 258.24 secs
+ -- epoch 001 | batch 370: len: tensor([1128,  980, 1288, 1054])
+	 * loss = (RC: 2.1038 ), step = 371, time_elapsed = 258.88 secs
+ -- epoch 001 | batch 371: len: tensor([693, 522, 971, 870])
+	 * loss = (RC: 2.1101 ), step = 372, time_elapsed = 259.51 secs
+ -- epoch 001 | batch 372: len: tensor([1827, 1100, 1180, 1765])
+	 * loss = (RC: 2.1174 ), step = 373, time_elapsed = 260.15 secs
+ -- epoch 001 | batch 373: len: tensor([1411, 1158,  703, 1758])
+	 * loss = (RC: 2.1163 ), step = 374, time_elapsed = 260.79 secs
+ -- epoch 001 | batch 374: len: tensor([ 930, 1326, 1053,  904])
+	 * loss = (RC: 2.1168 ), step = 375, time_elapsed = 261.42 secs
+ -- epoch 001 | batch 375: len: tensor([ 724,  826,  663, 1092])
+	 * loss = (RC: 2.1216 ), step = 376, time_elapsed = 262.05 secs
+ -- epoch 001 | batch 376: len: tensor([ 887,  914, 1256, 1398])
+	 * loss = (RC: 2.1174 ), step = 377, time_elapsed = 262.80 secs
+ -- epoch 001 | batch 377: len: tensor([1460,  803, 1743, 1392])
+	 * loss = (RC: 2.1153 ), step = 378, time_elapsed = 263.56 secs
+ -- epoch 001 | batch 378: len: tensor([ 982, 1363,  817, 1177])
+	 * loss = (RC: 2.1152 ), step = 379, time_elapsed = 264.31 secs
+ -- epoch 001 | batch 379: len: tensor([1553,  628,  793, 1234])
+	 * loss = (RC: 2.1157 ), step = 380, time_elapsed = 264.95 secs
+ -- epoch 001 | batch 380: len: tensor([ 738, 1182,  898, 1410])
+	 * loss = (RC: 2.1241 ), step = 381, time_elapsed = 265.59 secs
+ -- epoch 001 | batch 381: len: tensor([1851, 1027, 1408, 1249])
+	 * loss = (RC: 2.1238 ), step = 382, time_elapsed = 266.22 secs
+ -- epoch 001 | batch 382: len: tensor([1353, 1787, 1040, 1891])
+	 * loss = (RC: 2.1197 ), step = 383, time_elapsed = 266.97 secs
+ -- epoch 001 | batch 383: len: tensor([1213, 2048,  993, 1425])
+	 * loss = (RC: 2.1089 ), step = 384, time_elapsed = 267.64 secs
+ -- epoch 001 | batch 384: len: tensor([1659, 1594, 1190,  768])
+	 * loss = (RC: 2.1048 ), step = 385, time_elapsed = 268.28 secs
+ -- epoch 001 | batch 385: len: tensor([2048, 1738, 1652, 1512])
+	 * loss = (RC: 2.1003 ), step = 386, time_elapsed = 268.95 secs
+ -- epoch 001 | batch 386: len: tensor([1362, 1373, 1373, 1108])
+	 * loss = (RC: 2.0948 ), step = 387, time_elapsed = 269.59 secs
+ -- epoch 001 | batch 387: len: tensor([ 904, 1242,  820, 1570])
+	 * loss = (RC: 2.0928 ), step = 388, time_elapsed = 270.24 secs
+ -- epoch 001 | batch 388: len: tensor([1434, 1049,  834,  989])
+	 * loss = (RC: 2.0927 ), step = 389, time_elapsed = 270.88 secs
+ -- epoch 001 | batch 389: len: tensor([1620,  959, 1630, 1110])
+	 * loss = (RC: 2.0890 ), step = 390, time_elapsed = 271.53 secs
+ -- epoch 001 | batch 390: len: tensor([1055, 1225, 1095,  879])
+	 * loss = (RC: 2.0924 ), step = 391, time_elapsed = 272.18 secs
+ -- epoch 001 | batch 391: len: tensor([ 931, 1203, 1076, 1440])
+	 * loss = (RC: 2.0938 ), step = 392, time_elapsed = 272.83 secs
+ -- epoch 001 | batch 392: len: tensor([ 828, 1790, 1068, 1162])
+	 * loss = (RC: 2.0911 ), step = 393, time_elapsed = 273.47 secs
+ -- epoch 001 | batch 393: len: tensor([ 957, 1426, 1224,  798])
+	 * loss = (RC: 2.0898 ), step = 394, time_elapsed = 274.12 secs
+ -- epoch 001 | batch 394: len: tensor([ 822,  864,  701, 1559])
+	 * loss = (RC: 2.0921 ), step = 395, time_elapsed = 274.77 secs
+ -- epoch 001 | batch 395: len: tensor([1069, 2048, 1087,  887])
+	 * loss = (RC: 2.0808 ), step = 396, time_elapsed = 275.41 secs
+ -- epoch 001 | batch 396: len: tensor([ 732, 1420, 1657, 1399])
+	 * loss = (RC: 2.0836 ), step = 397, time_elapsed = 276.07 secs
+ -- epoch 001 | batch 397: len: tensor([1547, 2048, 1198,  906])
+	 * loss = (RC: 2.0817 ), step = 398, time_elapsed = 276.72 secs
+ -- epoch 001 | batch 398: len: tensor([1212, 1246, 1790,  968])
+	 * loss = (RC: 2.0827 ), step = 399, time_elapsed = 277.37 secs
+ -- epoch 001 | batch 399: len: tensor([ 928, 1988,  980, 1959])
+	 * loss = (RC: 2.0748 ), step = 400, time_elapsed = 278.02 secs
+ -- epoch 001 | batch 400: len: tensor([1339, 1530,  933, 1043])
+	 * loss = (RC: 2.0728 ), step = 401, time_elapsed = 278.72 secs
+ -- epoch 001 | batch 401: len: tensor([1233,  607, 1580, 1182])
+	 * loss = (RC: 2.0683 ), step = 402, time_elapsed = 279.46 secs
+ -- epoch 001 | batch 402: len: tensor([1386, 1326,  594,  867])
+	 * loss = (RC: 2.0618 ), step = 403, time_elapsed = 280.21 secs
+ -- epoch 001 | batch 403: len: tensor([1378, 1289, 1737, 1063])
+	 * loss = (RC: 2.0564 ), step = 404, time_elapsed = 280.97 secs
+ -- epoch 001 | batch 404: len: tensor([1383,  886, 1264, 1076])
+	 * loss = (RC: 2.0608 ), step = 405, time_elapsed = 281.72 secs
+ -- epoch 001 | batch 405: len: tensor([1344, 1438, 1049, 1179])
+	 * loss = (RC: 2.0621 ), step = 406, time_elapsed = 282.47 secs
+ -- epoch 001 | batch 406: len: tensor([1216, 1624, 1283,  855])
+	 * loss = (RC: 2.0650 ), step = 407, time_elapsed = 283.23 secs
+ -- epoch 001 | batch 407: len: tensor([1203,  813, 1215,  564])
+	 * loss = (RC: 2.0671 ), step = 408, time_elapsed = 283.99 secs
+ -- epoch 001 | batch 408: len: tensor([ 824, 1135, 1315, 1526])
+	 * loss = (RC: 2.0645 ), step = 409, time_elapsed = 284.74 secs
+ -- epoch 001 | batch 409: len: tensor([1485, 1355, 1483, 1234])
+	 * loss = (RC: 2.0641 ), step = 410, time_elapsed = 285.50 secs
+ -- epoch 001 | batch 410: len: tensor([1188, 1057,  738, 2013])
+	 * loss = (RC: 2.0650 ), step = 411, time_elapsed = 286.26 secs
+ -- epoch 001 | batch 411: len: tensor([1336, 1041,  715, 1458])
+	 * loss = (RC: 2.0688 ), step = 412, time_elapsed = 287.02 secs
+ -- epoch 001 | batch 412: len: tensor([1531,  909, 1031, 1964])
+	 * loss = (RC: 2.0689 ), step = 413, time_elapsed = 287.79 secs
+ -- epoch 001 | batch 413: len: tensor([1918, 1215,  963, 1278])
+	 * loss = (RC: 2.0633 ), step = 414, time_elapsed = 288.57 secs
+ -- epoch 001 | batch 414: len: tensor([1161, 1442,  935, 1437])
+	 * loss = (RC: 2.0660 ), step = 415, time_elapsed = 289.35 secs
+ -- epoch 001 | batch 415: len: tensor([1542,  874,  940, 2048])
+	 * loss = (RC: 2.0650 ), step = 416, time_elapsed = 290.10 secs
+ -- epoch 001 | batch 416: len: tensor([1551, 1500, 1378,  693])
+	 * loss = (RC: 2.0548 ), step = 417, time_elapsed = 290.87 secs
+ -- epoch 001 | batch 417: len: tensor([ 877, 1401,  901, 1770])
+	 * loss = (RC: 2.0530 ), step = 418, time_elapsed = 291.64 secs
+ -- epoch 001 | batch 418: len: tensor([1319, 1914, 1159, 1154])
+	 * loss = (RC: 2.0510 ), step = 419, time_elapsed = 292.40 secs
+ -- epoch 001 | batch 419: len: tensor([1332,  895,  502, 1538])
+	 * loss = (RC: 2.0602 ), step = 420, time_elapsed = 293.16 secs
+ -- epoch 001 | batch 420: len: tensor([1144,  829, 1011,  864])
+	 * loss = (RC: 2.0734 ), step = 421, time_elapsed = 293.84 secs
+ -- epoch 001 | batch 421: len: tensor([1684, 1921, 1650, 1544])
+	 * loss = (RC: 2.0695 ), step = 422, time_elapsed = 294.48 secs
+ -- epoch 001 | batch 422: len: tensor([1419,  644, 1065,  712])
+	 * loss = (RC: 2.0701 ), step = 423, time_elapsed = 295.11 secs
+ -- epoch 001 | batch 423: len: tensor([1646, 1576, 2048,  978])
+	 * loss = (RC: 2.0590 ), step = 424, time_elapsed = 295.75 secs
+ -- epoch 001 | batch 424: len: tensor([ 743, 2026,  830,  605])
+	 * loss = (RC: 2.0555 ), step = 425, time_elapsed = 296.38 secs
+ -- epoch 001 | batch 425: len: tensor([1490, 1810, 1320,  703])
+	 * loss = (RC: 2.0587 ), step = 426, time_elapsed = 297.02 secs
+ -- epoch 001 | batch 426: len: tensor([1033, 1357, 1005, 1128])
+	 * loss = (RC: 2.0531 ), step = 427, time_elapsed = 297.65 secs
+ -- epoch 001 | batch 427: len: tensor([ 888, 1068, 1860, 1184])
+	 * loss = (RC: 2.0520 ), step = 428, time_elapsed = 298.28 secs
+ -- epoch 001 | batch 428: len: tensor([1110, 1489,  966, 1346])
+	 * loss = (RC: 2.0491 ), step = 429, time_elapsed = 298.91 secs
+ -- epoch 001 | batch 429: len: tensor([880, 942, 821, 688])
+	 * loss = (RC: 2.0633 ), step = 430, time_elapsed = 299.54 secs
+ -- epoch 001 | batch 430: len: tensor([1118,  808, 1011,  942])
+	 * loss = (RC: 2.0606 ), step = 431, time_elapsed = 300.17 secs
+ -- epoch 001 | batch 431: len: tensor([ 950, 1126,  856,  747])
+	 * loss = (RC: 2.0750 ), step = 432, time_elapsed = 300.80 secs
+ -- epoch 001 | batch 432: len: tensor([ 613,  892, 1470, 1003])
+	 * loss = (RC: 2.0759 ), step = 433, time_elapsed = 301.44 secs
+ -- epoch 001 | batch 433: len: tensor([ 947, 1785, 1002, 1209])
+	 * loss = (RC: 2.0749 ), step = 434, time_elapsed = 302.07 secs
+ -- epoch 001 | batch 434: len: tensor([ 836,  796, 1667,  938])
+	 * loss = (RC: 2.0682 ), step = 435, time_elapsed = 302.70 secs
+ -- epoch 001 | batch 435: len: tensor([936, 891, 662, 711])
+	 * loss = (RC: 2.0728 ), step = 436, time_elapsed = 303.33 secs
+ -- epoch 001 | batch 436: len: tensor([1397, 1312,  727, 1168])
+	 * loss = (RC: 2.0734 ), step = 437, time_elapsed = 303.96 secs
+ -- epoch 001 | batch 437: len: tensor([1232, 1784,  735,  865])
+	 * loss = (RC: 2.0781 ), step = 438, time_elapsed = 304.59 secs
+ -- epoch 001 | batch 438: len: tensor([1539, 1534,  820,  596])
+	 * loss = (RC: 2.0716 ), step = 439, time_elapsed = 305.23 secs
+ -- epoch 001 | batch 439: len: tensor([1039, 1486, 1119, 1021])
+	 * loss = (RC: 2.0693 ), step = 440, time_elapsed = 305.86 secs
+ -- epoch 001 | batch 440: len: tensor([1052, 1198, 1050, 1865])
+	 * loss = (RC: 2.0688 ), step = 441, time_elapsed = 306.50 secs
+ -- epoch 001 | batch 441: len: tensor([1283, 1115, 1081, 1465])
+	 * loss = (RC: 2.0719 ), step = 442, time_elapsed = 307.13 secs
+ -- epoch 001 | batch 442: len: tensor([ 911, 1759, 1165, 1559])
+	 * loss = (RC: 2.0677 ), step = 443, time_elapsed = 307.77 secs
+ -- epoch 001 | batch 443: len: tensor([ 654, 1387,  894, 1021])
+	 * loss = (RC: 2.0719 ), step = 444, time_elapsed = 308.40 secs
+ -- epoch 001 | batch 444: len: tensor([1485, 1745,  855,  867])
+	 * loss = (RC: 2.0708 ), step = 445, time_elapsed = 309.04 secs
+ -- epoch 001 | batch 445: len: tensor([ 916, 1005,  939, 1078])
+	 * loss = (RC: 2.0774 ), step = 446, time_elapsed = 309.67 secs
+ -- epoch 001 | batch 446: len: tensor([ 870, 1613, 1747, 1037])
+	 * loss = (RC: 2.0738 ), step = 447, time_elapsed = 310.31 secs
+ -- epoch 001 | batch 447: len: tensor([ 645,  897, 2048, 1941])
+	 * loss = (RC: 2.0676 ), step = 448, time_elapsed = 310.94 secs
+ -- epoch 001 | batch 448: len: tensor([ 932, 1263, 1750, 1226])
+	 * loss = (RC: 2.0690 ), step = 449, time_elapsed = 311.57 secs
+ -- epoch 001 | batch 449: len: tensor([1132, 1983, 1006, 2048])
+	 * loss = (RC: 2.0689 ), step = 450, time_elapsed = 312.21 secs
+ -- epoch 001 | batch 450: len: tensor([ 707, 1234, 1736,  784])
+	 * loss = (RC: 2.0665 ), step = 451, time_elapsed = 312.84 secs
+ -- epoch 001 | batch 451: len: tensor([1099, 1488,  894, 1067])
+	 * loss = (RC: 2.0699 ), step = 452, time_elapsed = 313.48 secs
+ -- epoch 001 | batch 452: len: tensor([1203, 1677, 1065, 1080])
+	 * loss = (RC: 2.0698 ), step = 453, time_elapsed = 314.11 secs
+ -- epoch 001 | batch 453: len: tensor([ 894,  871, 1365, 1147])
+	 * loss = (RC: 2.0744 ), step = 454, time_elapsed = 314.74 secs
+ -- epoch 001 | batch 454: len: tensor([1692,  960,  879,  938])
+	 * loss = (RC: 2.0755 ), step = 455, time_elapsed = 315.38 secs
+ -- epoch 001 | batch 455: len: tensor([1497,  816,  990,  705])
+	 * loss = (RC: 2.0869 ), step = 456, time_elapsed = 316.01 secs
+ -- epoch 001 | batch 456: len: tensor([1044, 1216, 1385,  969])
+	 * loss = (RC: 2.0859 ), step = 457, time_elapsed = 316.64 secs
+ -- epoch 001 | batch 457: len: tensor([1258, 1191, 1189, 1199])
+	 * loss = (RC: 2.0815 ), step = 458, time_elapsed = 317.28 secs
+ -- epoch 001 | batch 458: len: tensor([1565, 1884,  771,  829])
+	 * loss = (RC: 2.0802 ), step = 459, time_elapsed = 317.91 secs
+ -- epoch 001 | batch 459: len: tensor([1741,  841, 1689, 1522])
+	 * loss = (RC: 2.0701 ), step = 460, time_elapsed = 318.54 secs
+ -- epoch 001 | batch 460: len: tensor([1076,  980, 1086, 1064])
+	 * loss = (RC: 2.0654 ), step = 461, time_elapsed = 319.17 secs
+ -- epoch 001 | batch 461: len: tensor([1454,  685,  840, 1507])
+	 * loss = (RC: 2.0604 ), step = 462, time_elapsed = 319.81 secs
+ -- epoch 001 | batch 462: len: tensor([1348,  779, 1156, 1491])
+	 * loss = (RC: 2.0555 ), step = 463, time_elapsed = 320.44 secs
+ -- epoch 001 | batch 463: len: tensor([ 860, 1385, 1347, 1155])
+	 * loss = (RC: 2.0482 ), step = 464, time_elapsed = 321.07 secs
+ -- epoch 001 | batch 464: len: tensor([1755, 1409, 1177, 1118])
+	 * loss = (RC: 2.0437 ), step = 465, time_elapsed = 321.70 secs
+ -- epoch 001 | batch 465: len: tensor([1098, 1038, 1086, 1326])
+	 * loss = (RC: 2.0461 ), step = 466, time_elapsed = 322.33 secs
+ -- epoch 001 | batch 466: len: tensor([1406, 1084, 1625, 1088])
+	 * loss = (RC: 2.0407 ), step = 467, time_elapsed = 322.97 secs
+ -- epoch 001 | batch 467: len: tensor([1606,  733,  973, 1012])
+	 * loss = (RC: 2.0413 ), step = 468, time_elapsed = 323.60 secs
+ -- epoch 001 | batch 468: len: tensor([1066, 1279,  949, 1597])
+	 * loss = (RC: 2.0403 ), step = 469, time_elapsed = 324.23 secs
+ -- epoch 001 | batch 469: len: tensor([1813,  749,  852, 1386])
+	 * loss = (RC: 2.0432 ), step = 470, time_elapsed = 324.86 secs
+ -- epoch 001 | batch 470: len: tensor([1764,  825, 1231, 1802])
+	 * loss = (RC: 2.0346 ), step = 471, time_elapsed = 325.49 secs
+ -- epoch 001 | batch 471: len: tensor([1657, 1433, 1183, 1130])
+	 * loss = (RC: 2.0290 ), step = 472, time_elapsed = 326.13 secs
+ -- epoch 001 | batch 472: len: tensor([1441, 1017, 2048,  834])
+	 * loss = (RC: 2.0290 ), step = 473, time_elapsed = 326.76 secs
+ -- epoch 001 | batch 473: len: tensor([ 869, 1321, 1021, 1385])
+	 * loss = (RC: 2.0337 ), step = 474, time_elapsed = 327.39 secs
+ -- epoch 001 | batch 474: len: tensor([1068, 1798,  980,  811])
+	 * loss = (RC: 2.0388 ), step = 475, time_elapsed = 328.02 secs
+ -- epoch 001 | batch 475: len: tensor([1669, 1448,  936, 1576])
+	 * loss = (RC: 2.0366 ), step = 476, time_elapsed = 328.66 secs
+ -- epoch 001 | batch 476: len: tensor([1320, 1398, 1758, 1550])
+	 * loss = (RC: 2.0378 ), step = 477, time_elapsed = 329.30 secs
+ -- epoch 001 | batch 477: len: tensor([1152,  733,  983,  842])
+	 * loss = (RC: 2.0481 ), step = 478, time_elapsed = 329.93 secs
+ -- epoch 001 | batch 478: len: tensor([1504, 1227,  849,  945])
+	 * loss = (RC: 2.0536 ), step = 479, time_elapsed = 330.56 secs
+ -- epoch 001 | batch 479: len: tensor([1155,  949,  777, 1004])
+	 * loss = (RC: 2.0510 ), step = 480, time_elapsed = 331.19 secs
+ -- epoch 001 | batch 480: len: tensor([ 934, 1593, 1433,  978])
+	 * loss = (RC: 2.0546 ), step = 481, time_elapsed = 331.82 secs
+ -- epoch 001 | batch 481: len: tensor([1048,  770, 1225,  801])
+	 * loss = (RC: 2.0586 ), step = 482, time_elapsed = 332.45 secs
+ -- epoch 001 | batch 482: len: tensor([ 527,  994, 1702, 1245])
+	 * loss = (RC: 2.0577 ), step = 483, time_elapsed = 333.09 secs
+ -- epoch 001 | batch 483: len: tensor([1952, 1616, 1168, 1215])
+	 * loss = (RC: 2.0476 ), step = 484, time_elapsed = 333.72 secs
+ -- epoch 001 | batch 484: len: tensor([1005,  758, 1205, 1598])
+	 * loss = (RC: 2.0447 ), step = 485, time_elapsed = 334.35 secs
+ -- epoch 001 | batch 485: len: tensor([855, 991, 906, 831])
+	 * loss = (RC: 2.0491 ), step = 486, time_elapsed = 334.98 secs
+ -- epoch 001 | batch 486: len: tensor([1239, 1208, 1210,  709])
+	 * loss = (RC: 2.0511 ), step = 487, time_elapsed = 335.61 secs
+ -- epoch 001 | batch 487: len: tensor([ 833,  803,  697, 1453])
+	 * loss = (RC: 2.0550 ), step = 488, time_elapsed = 336.24 secs
+ -- epoch 001 | batch 488: len: tensor([ 659, 1794,  909, 1138])
+	 * loss = (RC: 2.0552 ), step = 489, time_elapsed = 336.87 secs
+ -- epoch 001 | batch 489: len: tensor([ 922,  912, 2048,  955])
+	 * loss = (RC: 2.0525 ), step = 490, time_elapsed = 337.51 secs
+ -- epoch 001 | batch 490: len: tensor([1018, 1150, 1013, 1048])
+	 * loss = (RC: 2.0522 ), step = 491, time_elapsed = 338.14 secs
+ -- epoch 001 | batch 491: len: tensor([1441,  892, 1026, 1014])
+	 * loss = (RC: 2.0470 ), step = 492, time_elapsed = 338.77 secs
+ -- epoch 001 | batch 492: len: tensor([1629, 1508, 1546, 1047])
+	 * loss = (RC: 2.0415 ), step = 493, time_elapsed = 339.42 secs
+ -- epoch 001 | batch 493: len: tensor([ 735, 1548, 1587, 1316])
+	 * loss = (RC: 2.0409 ), step = 494, time_elapsed = 340.11 secs
+ -- epoch 001 | batch 494: len: tensor([ 816, 1442, 1421, 1085])
+	 * loss = (RC: 2.0406 ), step = 495, time_elapsed = 340.74 secs
+ -- epoch 001 | batch 495: len: tensor([1146,  935, 1081, 1002])
+	 * loss = (RC: 2.0508 ), step = 496, time_elapsed = 341.38 secs
+ -- epoch 001 | batch 496: len: tensor([2048, 1366, 1458,  882])
+	 * loss = (RC: 2.0424 ), step = 497, time_elapsed = 342.01 secs
+ -- epoch 001 | batch 497: len: tensor([1723, 1372, 1011, 1060])
+	 * loss = (RC: 2.0468 ), step = 498, time_elapsed = 342.65 secs
+ -- epoch 001 | batch 498: len: tensor([1689,  690,  948, 1458])
+	 * loss = (RC: 2.0468 ), step = 499, time_elapsed = 343.28 secs
+ -- epoch 001 | batch 499: len: tensor([ 804, 1410, 1335, 1106])
+	 * loss = (RC: 2.0452 ), step = 500, time_elapsed = 343.91 secs
+ -- epoch 001 | batch 500: len: tensor([ 693, 1889, 1259,  988])
+	 * loss = (RC: 2.0377 ), step = 501, time_elapsed = 344.55 secs
+ -- epoch 001 | batch 501: len: tensor([ 787, 1557,  968, 1899])
+	 * loss = (RC: 2.0385 ), step = 502, time_elapsed = 345.18 secs
+ -- epoch 001 | batch 502: len: tensor([1576,  597, 1194, 1046])
+	 * loss = (RC: 2.0308 ), step = 503, time_elapsed = 345.81 secs
+ -- epoch 001 | batch 503: len: tensor([ 801, 1704, 1218, 1034])
+	 * loss = (RC: 2.0275 ), step = 504, time_elapsed = 346.45 secs
+ -- epoch 001 | batch 504: len: tensor([ 650, 1859, 1626, 1703])
+	 * loss = (RC: 2.0154 ), step = 505, time_elapsed = 347.22 secs
+ -- epoch 001 | batch 505: len: tensor([1271, 1173, 1320, 1212])
+	 * loss = (RC: 2.0144 ), step = 506, time_elapsed = 347.88 secs
+ -- epoch 001 | batch 506: len: tensor([1269, 1349, 1471,  667])
+	 * loss = (RC: 2.0149 ), step = 507, time_elapsed = 348.65 secs
+ -- epoch 001 | batch 507: len: tensor([ 990, 1123,  598, 1146])
+	 * loss = (RC: 2.0123 ), step = 508, time_elapsed = 349.42 secs
+ -- epoch 001 | batch 508: len: tensor([ 733,  880, 1367,  639])
+	 * loss = (RC: 2.0225 ), step = 509, time_elapsed = 350.19 secs
+ -- epoch 001 | batch 509: len: tensor([2048,  687,  855, 1520])
+	 * loss = (RC: 2.0235 ), step = 510, time_elapsed = 350.96 secs
+ -- epoch 001 | batch 510: len: tensor([1287, 1927, 1219, 1520])
+	 * loss = (RC: 2.0261 ), step = 511, time_elapsed = 351.72 secs
+ -- epoch 001 | batch 511: len: tensor([1110, 1096,  996, 1283])
+	 * loss = (RC: 2.0238 ), step = 512, time_elapsed = 352.49 secs
+ -- epoch 001 | batch 512: len: tensor([1088, 1343,  930, 1081])
+	 * loss = (RC: 2.0177 ), step = 513, time_elapsed = 353.26 secs
+ -- epoch 001 | batch 513: len: tensor([1506, 1075, 1386, 1077])
+	 * loss = (RC: 2.0315 ), step = 514, time_elapsed = 354.03 secs
+ -- epoch 001 | batch 514: len: tensor([1444, 1043,  870, 1232])
+	 * loss = (RC: 2.0266 ), step = 515, time_elapsed = 354.81 secs
+ -- epoch 001 | batch 515: len: tensor([1100,  813, 2048,  644])
+	 * loss = (RC: 2.0273 ), step = 516, time_elapsed = 355.58 secs
+ -- epoch 001 | batch 516: len: tensor([ 998, 1349,  920, 1691])
+	 * loss = (RC: 2.0217 ), step = 517, time_elapsed = 356.35 secs
+ -- epoch 001 | batch 517: len: tensor([1446, 1371,  909, 1074])
+	 * loss = (RC: 2.0161 ), step = 518, time_elapsed = 357.12 secs
+ -- epoch 001 | batch 518: len: tensor([1103, 1067, 1417, 1529])
+	 * loss = (RC: 2.0113 ), step = 519, time_elapsed = 357.89 secs
+ -- epoch 001 | batch 519: len: tensor([1462, 1623, 1669, 1465])
+	 * loss = (RC: 2.0070 ), step = 520, time_elapsed = 358.67 secs
+ -- epoch 001 | batch 520: len: tensor([ 938, 1026, 1373, 1689])
+	 * loss = (RC: 2.0035 ), step = 521, time_elapsed = 359.43 secs
+ -- epoch 001 | batch 521: len: tensor([1782, 1534, 1257, 1115])
+	 * loss = (RC: 2.0097 ), step = 522, time_elapsed = 360.19 secs
+ -- epoch 001 | batch 522: len: tensor([1065,  901, 1000, 1369])
+	 * loss = (RC: 2.0124 ), step = 523, time_elapsed = 360.94 secs
+ -- epoch 001 | batch 523: len: tensor([ 753,  906,  768, 2046])
+	 * loss = (RC: 2.0135 ), step = 524, time_elapsed = 361.71 secs
+ -- epoch 001 | batch 524: len: tensor([1383, 1140,  522, 1333])
+	 * loss = (RC: 2.0161 ), step = 525, time_elapsed = 362.47 secs
+ -- epoch 001 | batch 525: len: tensor([ 311,  771, 1268, 2048])
+	 * loss = (RC: 2.0281 ), step = 526, time_elapsed = 363.23 secs
+ -- epoch 001 | batch 526: len: tensor([ 579, 1645,  785, 1573])
+	 * loss = (RC: 2.0242 ), step = 527, time_elapsed = 363.98 secs
+ -- epoch 001 | batch 527: len: tensor([1641,  920, 1220, 1156])
+	 * loss = (RC: 2.0249 ), step = 528, time_elapsed = 364.74 secs
+ -- epoch 001 | batch 528: len: tensor([1394, 1268, 1152,  903])
+	 * loss = (RC: 2.0308 ), step = 529, time_elapsed = 365.50 secs
+ -- epoch 001 | batch 529: len: tensor([1396, 1531,  897,  873])
+	 * loss = (RC: 2.0256 ), step = 530, time_elapsed = 366.25 secs
+ -- epoch 001 | batch 530: len: tensor([ 966, 1728,  648,  680])
+	 * loss = (RC: 2.0235 ), step = 531, time_elapsed = 367.01 secs
+ -- epoch 001 | batch 531: len: tensor([1217, 1369, 2048, 2048])
+	 * loss = (RC: 2.0215 ), step = 532, time_elapsed = 367.77 secs
+ -- epoch 001 | batch 532: len: tensor([ 999, 1500, 1562,  937])
+	 * loss = (RC: 2.0169 ), step = 533, time_elapsed = 368.52 secs
+ -- epoch 001 | batch 533: len: tensor([ 986,  642, 1045, 1383])
+	 * loss = (RC: 2.0173 ), step = 534, time_elapsed = 369.27 secs
+ -- epoch 001 | batch 534: len: tensor([ 719, 1099, 1867, 1213])
+	 * loss = (RC: 2.0118 ), step = 535, time_elapsed = 369.92 secs
+ -- epoch 001 | batch 535: len: tensor([1203,  959,  954,  988])
+	 * loss = (RC: 2.0156 ), step = 536, time_elapsed = 370.56 secs
+ -- epoch 001 | batch 536: len: tensor([1381, 1681, 1851, 1306])
+	 * loss = (RC: 2.0116 ), step = 537, time_elapsed = 371.25 secs
+ -- epoch 001 | batch 537: len: tensor([1218,  767, 1599,  848])
+	 * loss = (RC: 2.0093 ), step = 538, time_elapsed = 372.01 secs
+ -- epoch 001 | batch 538: len: tensor([ 734, 1148, 1032, 1922])
+	 * loss = (RC: 2.0040 ), step = 539, time_elapsed = 372.76 secs
+ -- epoch 001 | batch 539: len: tensor([1093,  777,  861, 1402])
+	 * loss = (RC: 2.0073 ), step = 540, time_elapsed = 373.63 secs
+ -- epoch 001 | batch 540: len: tensor([1655, 1531, 1357, 1052])
+	 * loss = (RC: 2.0031 ), step = 541, time_elapsed = 374.40 secs
+ -- epoch 001 | batch 541: len: tensor([ 832, 1429, 1277, 1387])
+	 * loss = (RC: 2.0008 ), step = 542, time_elapsed = 375.15 secs
+ -- epoch 001 | batch 542: len: tensor([1514, 1038, 1737, 1026])
+	 * loss = (RC: 1.9983 ), step = 543, time_elapsed = 375.90 secs
+ -- epoch 001 | batch 543: len: tensor([ 898, 1625,  855, 1131])
+	 * loss = (RC: 2.0017 ), step = 544, time_elapsed = 376.64 secs
+ -- epoch 001 | batch 544: len: tensor([1114,  851,  715, 1063])
+	 * loss = (RC: 2.0044 ), step = 545, time_elapsed = 377.38 secs
+ -- epoch 001 | batch 545: len: tensor([1692,  649, 2048, 1119])
+	 * loss = (RC: 2.0013 ), step = 546, time_elapsed = 378.13 secs
+ -- epoch 001 | batch 546: len: tensor([1158, 1314,  735,  706])
+	 * loss = (RC: 1.9976 ), step = 547, time_elapsed = 378.87 secs
+ -- epoch 001 | batch 547: len: tensor([1256, 1554, 1284, 1238])
+	 * loss = (RC: 1.9954 ), step = 548, time_elapsed = 379.63 secs
+ -- epoch 001 | batch 548: len: tensor([1588,  750, 2048, 1339])
+	 * loss = (RC: 1.9922 ), step = 549, time_elapsed = 380.40 secs
+ -- epoch 001 | batch 549: len: tensor([ 920,  626,  804, 1686])
+	 * loss = (RC: 1.9931 ), step = 550, time_elapsed = 381.15 secs
+ -- epoch 001 | batch 550: len: tensor([ 634,  596,  699, 1626])
+	 * loss = (RC: 2.0035 ), step = 551, time_elapsed = 381.91 secs
+ -- epoch 001 | batch 551: len: tensor([1597, 1066, 1060, 1006])
+	 * loss = (RC: 2.0051 ), step = 552, time_elapsed = 382.67 secs
+ -- epoch 001 | batch 552: len: tensor([1201,  681, 1064,  932])
+	 * loss = (RC: 2.0019 ), step = 553, time_elapsed = 383.43 secs
+ -- epoch 001 | batch 553: len: tensor([1678,  842,  941,  526])
+	 * loss = (RC: 2.0015 ), step = 554, time_elapsed = 384.18 secs
+ -- epoch 001 | batch 554: len: tensor([1040, 2048, 1858,  820])
+	 * loss = (RC: 2.0010 ), step = 555, time_elapsed = 384.95 secs
+ -- epoch 001 | batch 555: len: tensor([ 695, 1172, 1020, 1672])
+	 * loss = (RC: 1.9977 ), step = 556, time_elapsed = 385.72 secs
+ -- epoch 001 | batch 556: len: tensor([1523, 1544, 1072, 1180])
+	 * loss = (RC: 1.9965 ), step = 557, time_elapsed = 386.47 secs
+ -- epoch 001 | batch 557: len: tensor([1014,  994, 1195, 1799])
+	 * loss = (RC: 1.9889 ), step = 558, time_elapsed = 387.24 secs
+ -- epoch 001 | batch 558: len: tensor([1023, 1220, 1841,  805])
+	 * loss = (RC: 1.9914 ), step = 559, time_elapsed = 388.00 secs
+ -- epoch 001 | batch 559: len: tensor([1275, 2020,  983, 1255])
+	 * loss = (RC: 1.9874 ), step = 560, time_elapsed = 388.76 secs
+ -- epoch 001 | batch 560: len: tensor([2048, 1773, 1277,  660])
+	 * loss = (RC: 1.9825 ), step = 561, time_elapsed = 389.52 secs
+ -- epoch 001 | batch 561: len: tensor([852, 862, 990, 848])
+	 * loss = (RC: 1.9816 ), step = 562, time_elapsed = 390.28 secs
+ -- epoch 001 | batch 562: len: tensor([1525,  829, 1372,  845])
+	 * loss = (RC: 1.9770 ), step = 563, time_elapsed = 391.03 secs
+ -- epoch 001 | batch 563: len: tensor([946, 618, 849, 771])
+	 * loss = (RC: 1.9819 ), step = 564, time_elapsed = 391.79 secs
+ -- epoch 001 | batch 564: len: tensor([1018, 1480, 1105, 1426])
+	 * loss = (RC: 1.9784 ), step = 565, time_elapsed = 392.54 secs
+ -- epoch 001 | batch 565: len: tensor([1045, 1405, 1350, 1141])
+	 * loss = (RC: 1.9744 ), step = 566, time_elapsed = 393.29 secs
+ -- epoch 001 | batch 566: len: tensor([ 787, 1017, 1142,  831])
+	 * loss = (RC: 1.9828 ), step = 567, time_elapsed = 393.92 secs
+ -- epoch 001 | batch 567: len: tensor([ 965, 1709,  869, 1034])
+	 * loss = (RC: 1.9854 ), step = 568, time_elapsed = 394.58 secs
+ -- epoch 001 | batch 568: len: tensor([1577, 1056,  846, 1043])
+	 * loss = (RC: 1.9820 ), step = 569, time_elapsed = 395.22 secs
+ -- epoch 001 | batch 569: len: tensor([ 977,  910, 1316, 1178])
+	 * loss = (RC: 1.9794 ), step = 570, time_elapsed = 395.85 secs
+ -- epoch 001 | batch 570: len: tensor([1023, 1181, 1357, 1530])
+	 * loss = (RC: 1.9787 ), step = 571, time_elapsed = 396.49 secs
+ -- epoch 001 | batch 571: len: tensor([1650, 1438, 1447, 1140])
+	 * loss = (RC: 1.9740 ), step = 572, time_elapsed = 397.13 secs
+ -- epoch 001 | batch 572: len: tensor([ 841,  822, 1338,  895])
+	 * loss = (RC: 1.9710 ), step = 573, time_elapsed = 397.77 secs
+ -- epoch 001 | batch 573: len: tensor([1029, 1287, 1447, 1284])
+	 * loss = (RC: 1.9804 ), step = 574, time_elapsed = 398.40 secs
+ -- epoch 001 | batch 574: len: tensor([1564, 1068, 1167, 1024])
+	 * loss = (RC: 1.9762 ), step = 575, time_elapsed = 399.04 secs
+ -- epoch 001 | batch 575: len: tensor([ 769,  936, 1341,  937])
+	 * loss = (RC: 1.9739 ), step = 576, time_elapsed = 399.68 secs
+ -- epoch 001 | batch 576: len: tensor([ 958,  893, 1019, 1649])
+	 * loss = (RC: 1.9731 ), step = 577, time_elapsed = 400.32 secs
+ -- epoch 001 | batch 577: len: tensor([1796,  836, 1394, 1483])
+	 * loss = (RC: 1.9659 ), step = 578, time_elapsed = 400.96 secs
+ -- epoch 001 | batch 578: len: tensor([1549, 1215, 1111, 1035])
+	 * loss = (RC: 1.9628 ), step = 579, time_elapsed = 401.59 secs
+ -- epoch 001 | batch 579: len: tensor([ 981, 1215, 1597, 1301])
+	 * loss = (RC: 1.9514 ), step = 580, time_elapsed = 402.23 secs
+ -- epoch 001 | batch 580: len: tensor([1679,  952, 1017,  997])
+	 * loss = (RC: 1.9502 ), step = 581, time_elapsed = 402.87 secs
+ -- epoch 001 | batch 581: len: tensor([ 707,  804, 1003, 1626])
+	 * loss = (RC: 1.9495 ), step = 582, time_elapsed = 403.51 secs
+ -- epoch 001 | batch 582: len: tensor([1017,  547,  570, 1047])
+	 * loss = (RC: 1.9585 ), step = 583, time_elapsed = 404.15 secs
+ -- epoch 001 | batch 583: len: tensor([1194, 1549, 1009, 1047])
+	 * loss = (RC: 1.9637 ), step = 584, time_elapsed = 404.79 secs
+ -- epoch 001 | batch 584: len: tensor([1088,  903, 1293, 1322])
+	 * loss = (RC: 1.9827 ), step = 585, time_elapsed = 405.43 secs
+ -- epoch 001 | batch 585: len: tensor([1478,  960, 1027, 1454])
+	 * loss = (RC: 1.9821 ), step = 586, time_elapsed = 406.07 secs
+ -- epoch 001 | batch 586: len: tensor([ 955, 1428, 1653, 1210])
+	 * loss = (RC: 1.9840 ), step = 587, time_elapsed = 406.71 secs
+ -- epoch 001 | batch 587: len: tensor([ 836, 1594,  959, 1042])
+	 * loss = (RC: 1.9851 ), step = 588, time_elapsed = 407.35 secs
+ -- epoch 001 | batch 588: len: tensor([1333,  735, 1004, 1244])
+	 * loss = (RC: 1.9787 ), step = 589, time_elapsed = 407.99 secs
+ -- epoch 001 | batch 589: len: tensor([1805,  730, 1119,  596])
+	 * loss = (RC: 1.9709 ), step = 590, time_elapsed = 408.63 secs
+ -- epoch 001 | batch 590: len: tensor([1520, 1278, 1137, 1739])
+	 * loss = (RC: 1.9651 ), step = 591, time_elapsed = 409.28 secs
+ -- epoch 001 | batch 591: len: tensor([1242, 1015, 1285, 1604])
+	 * loss = (RC: 1.9579 ), step = 592, time_elapsed = 409.92 secs
+ -- epoch 001 | batch 592: len: tensor([ 811,  649,  802, 1391])
+	 * loss = (RC: 1.9617 ), step = 593, time_elapsed = 410.55 secs
+ -- epoch 001 | batch 593: len: tensor([1424,  681, 1258,  918])
+	 * loss = (RC: 1.9571 ), step = 594, time_elapsed = 411.20 secs
+ -- epoch 001 | batch 594: len: tensor([ 867, 1349, 1151, 1502])
+	 * loss = (RC: 1.9555 ), step = 595, time_elapsed = 411.83 secs
+ -- epoch 001 | batch 595: len: tensor([1386,  538,  884,  859])
+	 * loss = (RC: 1.9666 ), step = 596, time_elapsed = 412.47 secs
+ -- epoch 001 | batch 596: len: tensor([1233, 1815, 1390, 1951])
+	 * loss = (RC: 1.9625 ), step = 597, time_elapsed = 413.12 secs
+ -- epoch 001 | batch 597: len: tensor([1152, 1063, 1400, 1909])
+	 * loss = (RC: 1.9611 ), step = 598, time_elapsed = 413.76 secs
+ -- epoch 001 | batch 598: len: tensor([1344, 1061, 1920,  834])
+	 * loss = (RC: 1.9567 ), step = 599, time_elapsed = 414.41 secs
+ -- epoch 001 | batch 599: len: tensor([ 951, 1413, 1429, 2048])
+	 * loss = (RC: 1.9564 ), step = 600, time_elapsed = 415.05 secs
+ -- epoch 001 | batch 600: len: tensor([1620, 1068, 1405, 1000])
+	 * loss = (RC: 1.9468 ), step = 601, time_elapsed = 415.69 secs
+ -- epoch 001 | batch 601: len: tensor([1676, 1075, 1323, 1141])
+	 * loss = (RC: 1.9461 ), step = 602, time_elapsed = 416.34 secs
+ -- epoch 001 | batch 602: len: tensor([1279, 1506, 1158, 1009])
+	 * loss = (RC: 1.9460 ), step = 603, time_elapsed = 417.11 secs
+ -- epoch 001 | batch 603: len: tensor([1394, 1108, 2030, 1793])
+	 * loss = (RC: 1.9382 ), step = 604, time_elapsed = 417.86 secs
+ -- epoch 001 | batch 604: len: tensor([ 895,  723, 1763, 1290])
+	 * loss = (RC: 1.9385 ), step = 605, time_elapsed = 418.62 secs
+ -- epoch 001 | batch 605: len: tensor([1355, 1685,  932,  860])
+	 * loss = (RC: 1.9330 ), step = 606, time_elapsed = 419.37 secs
+ -- epoch 001 | batch 606: len: tensor([ 692, 1138, 1345, 2027])
+	 * loss = (RC: 1.9281 ), step = 607, time_elapsed = 420.13 secs
+ -- epoch 001 | batch 607: len: tensor([1610, 1064, 1906,  736])
+	 * loss = (RC: 1.9274 ), step = 608, time_elapsed = 420.90 secs
+ -- epoch 001 | batch 608: len: tensor([1258, 1020, 2048, 2048])
+	 * loss = (RC: 1.9279 ), step = 609, time_elapsed = 421.66 secs
+ -- epoch 001 | batch 609: len: tensor([1152, 1389, 1072,  905])
+	 * loss = (RC: 1.9305 ), step = 610, time_elapsed = 422.42 secs
+ -- epoch 001 | batch 610: len: tensor([1218, 1359, 1703, 2048])
+	 * loss = (RC: 1.9306 ), step = 611, time_elapsed = 423.06 secs
+ -- epoch 001 | batch 611: len: tensor([1147, 1077, 1706, 1228])
+	 * loss = (RC: 1.9350 ), step = 612, time_elapsed = 423.70 secs
+ -- epoch 001 | batch 612: len: tensor([1663,  816, 1522, 1443])
+	 * loss = (RC: 1.9342 ), step = 613, time_elapsed = 424.34 secs
+ -- epoch 001 | batch 613: len: tensor([1131, 1230,  748,  754])
+	 * loss = (RC: 1.9312 ), step = 614, time_elapsed = 424.97 secs
+ -- epoch 001 | batch 614: len: tensor([ 999, 2048, 1314,  636])
+	 * loss = (RC: 1.9344 ), step = 615, time_elapsed = 425.61 secs
+ -- epoch 001 | batch 615: len: tensor([1314, 1420, 1173,  848])
+	 * loss = (RC: 1.9337 ), step = 616, time_elapsed = 426.24 secs
+ -- epoch 001 | batch 616: len: tensor([ 796,  645, 1742,  619])
+	 * loss = (RC: 1.9364 ), step = 617, time_elapsed = 426.89 secs
+ -- epoch 001 | batch 617: len: tensor([ 850,  872, 1277, 1827])
+	 * loss = (RC: 1.9330 ), step = 618, time_elapsed = 427.53 secs
+ -- epoch 001 | batch 618: len: tensor([1398, 1734, 1079, 1242])
+	 * loss = (RC: 1.9283 ), step = 619, time_elapsed = 428.18 secs
+ -- epoch 001 | batch 619: len: tensor([1099, 1705,  746, 1319])
+	 * loss = (RC: 1.9315 ), step = 620, time_elapsed = 428.81 secs
+ -- epoch 001 | batch 620: len: tensor([1335, 1442, 1090, 1200])
+	 * loss = (RC: 1.9289 ), step = 621, time_elapsed = 429.46 secs
+ -- epoch 001 | batch 621: len: tensor([771, 732, 971, 876])
+	 * loss = (RC: 1.9307 ), step = 622, time_elapsed = 430.09 secs
+ -- epoch 001 | batch 622: len: tensor([ 894, 1148,  948, 1373])
+	 * loss = (RC: 1.9272 ), step = 623, time_elapsed = 430.73 secs
+ -- epoch 001 | batch 623: len: tensor([ 977, 1005, 1401, 1317])
+	 * loss = (RC: 1.9247 ), step = 624, time_elapsed = 431.36 secs
+ -- epoch 001 | batch 624: len: tensor([1454, 1386, 1077, 1074])
+	 * loss = (RC: 1.9207 ), step = 625, time_elapsed = 432.12 secs
+ -- epoch 001 | batch 625: len: tensor([ 964,  947, 2048,  813])
+	 * loss = (RC: 1.9190 ), step = 626, time_elapsed = 432.88 secs
+ -- epoch 001 | batch 626: len: tensor([1561, 1113,  731,  963])
+	 * loss = (RC: 1.9228 ), step = 627, time_elapsed = 433.53 secs
+ -- epoch 001 | batch 627: len: tensor([ 898,  526, 2047, 1629])
+	 * loss = (RC: 1.9178 ), step = 628, time_elapsed = 434.17 secs
+ -- epoch 001 | batch 628: len: tensor([1086, 1033,  890, 1021])
+	 * loss = (RC: 1.9245 ), step = 629, time_elapsed = 434.81 secs
+ -- epoch 001 | batch 629: len: tensor([ 998, 2048, 1095,  739])
+	 * loss = (RC: 1.9212 ), step = 630, time_elapsed = 435.46 secs
+ -- epoch 001 | batch 630: len: tensor([ 736, 1574, 1034, 1089])
+	 * loss = (RC: 1.9253 ), step = 631, time_elapsed = 436.14 secs
+ -- epoch 001 | batch 631: len: tensor([ 633, 1026, 1400,  999])
+	 * loss = (RC: 1.9294 ), step = 632, time_elapsed = 436.90 secs
+ -- epoch 001 | batch 632: len: tensor([1125,  865, 1046, 1418])
+	 * loss = (RC: 1.9314 ), step = 633, time_elapsed = 437.66 secs
+ -- epoch 001 | batch 633: len: tensor([1191, 2048, 1432,  709])
+	 * loss = (RC: 1.9239 ), step = 634, time_elapsed = 438.37 secs
+ -- epoch 001 | batch 634: len: tensor([ 995, 1121, 1053,  995])
+	 * loss = (RC: 1.9296 ), step = 635, time_elapsed = 439.01 secs
+ -- epoch 001 | batch 635: len: tensor([1226, 1259, 2048, 1078])
+	 * loss = (RC: 1.9279 ), step = 636, time_elapsed = 439.65 secs
+ -- epoch 001 | batch 636: len: tensor([1243, 1551, 1512,  989])
+	 * loss = (RC: 1.9342 ), step = 637, time_elapsed = 440.30 secs
+ -- epoch 001 | batch 637: len: tensor([1156, 2020, 1684, 1020])
+	 * loss = (RC: 1.9237 ), step = 638, time_elapsed = 440.94 secs
+ -- epoch 001 | batch 638: len: tensor([1782,  855,  696,  711])
+	 * loss = (RC: 1.9203 ), step = 639, time_elapsed = 441.58 secs
+ -- epoch 001 | batch 639: len: tensor([1033,  792, 1987,  717])
+	 * loss = (RC: 1.9180 ), step = 640, time_elapsed = 442.22 secs
+ -- epoch 001 | batch 640: len: tensor([1298,  891, 1656, 1039])
+	 * loss = (RC: 1.9158 ), step = 641, time_elapsed = 442.86 secs
+ -- epoch 001 | batch 641: len: tensor([1418, 1701,  429,  993])
+	 * loss = (RC: 1.9168 ), step = 642, time_elapsed = 443.50 secs
+ -- epoch 001 | batch 642: len: tensor([1361, 1807, 1403,  637])
+	 * loss = (RC: 1.9136 ), step = 643, time_elapsed = 444.16 secs
+ -- epoch 001 | batch 643: len: tensor([1063, 1307, 1709, 1066])
+	 * loss = (RC: 1.9163 ), step = 644, time_elapsed = 444.80 secs
+ -- epoch 001 | batch 644: len: tensor([1142,  963, 1495, 1574])
+	 * loss = (RC: 1.9142 ), step = 645, time_elapsed = 445.44 secs
+ -- epoch 001 | batch 645: len: tensor([ 676, 1848, 1064,  655])
+	 * loss = (RC: 1.9247 ), step = 646, time_elapsed = 446.08 secs
+ -- epoch 001 | batch 646: len: tensor([ 688, 1169, 1677,  851])
+	 * loss = (RC: 1.9273 ), step = 647, time_elapsed = 446.76 secs
+ -- epoch 001 | batch 647: len: tensor([ 845, 1507, 1702,  756])
+	 * loss = (RC: 1.9254 ), step = 648, time_elapsed = 447.51 secs
+ -- epoch 001 | batch 648: len: tensor([ 823, 1209,  991, 1051])
+	 * loss = (RC: 1.9167 ), step = 649, time_elapsed = 448.26 secs
+ -- epoch 001 | batch 649: len: tensor([1133, 2048, 1263, 1661])
+	 * loss = (RC: 1.9092 ), step = 650, time_elapsed = 449.02 secs
+ -- epoch 001 | batch 650: len: tensor([2048, 1899, 1014,  974])
+	 * loss = (RC: 1.9098 ), step = 651, time_elapsed = 449.77 secs
+ -- epoch 001 | batch 651: len: tensor([ 976, 1166,  687, 1220])
+	 * loss = (RC: 1.9102 ), step = 652, time_elapsed = 450.53 secs
+ -- epoch 001 | batch 652: len: tensor([1607, 1904, 1119, 1135])
+	 * loss = (RC: 1.9082 ), step = 653, time_elapsed = 451.28 secs
+ -- epoch 001 | batch 653: len: tensor([ 727, 1111,  855, 1666])
+	 * loss = (RC: 1.9118 ), step = 654, time_elapsed = 451.95 secs
+ -- epoch 001 | batch 654: len: tensor([ 995,  661, 1183,  939])
+	 * loss = (RC: 1.9142 ), step = 655, time_elapsed = 452.59 secs
+ -- epoch 001 | batch 655: len: tensor([1095, 1405, 2048, 1285])
+	 * loss = (RC: 1.9087 ), step = 656, time_elapsed = 453.23 secs
+ -- epoch 001 | batch 656: len: tensor([1010, 1461,  986, 1413])
+	 * loss = (RC: 1.9071 ), step = 657, time_elapsed = 453.87 secs
+ -- epoch 001 | batch 657: len: tensor([ 580, 1168, 1296, 1389])
+	 * loss = (RC: 1.9102 ), step = 658, time_elapsed = 454.51 secs
+ -- epoch 001 | batch 658: len: tensor([ 964, 1618, 1393, 1734])
+	 * loss = (RC: 1.9028 ), step = 659, time_elapsed = 455.15 secs
+ -- epoch 001 | batch 659: len: tensor([ 876,  863, 1998,  964])
+	 * loss = (RC: 1.8968 ), step = 660, time_elapsed = 455.90 secs
+ -- epoch 001 | batch 660: len: tensor([1295,  914, 1515,  713])
+	 * loss = (RC: 1.8919 ), step = 661, time_elapsed = 456.65 secs
+ -- epoch 001 | batch 661: len: tensor([ 807, 1031,  592,  643])
+	 * loss = (RC: 1.8992 ), step = 662, time_elapsed = 457.29 secs
+ -- epoch 001 | batch 662: len: tensor([ 940, 1471, 1129, 1067])
+	 * loss = (RC: 1.9011 ), step = 663, time_elapsed = 457.98 secs
+ -- epoch 001 | batch 663: len: tensor([ 883, 1504, 1470, 1962])
+	 * loss = (RC: 1.8976 ), step = 664, time_elapsed = 458.74 secs
+ -- epoch 001 | batch 664: len: tensor([1367, 1985, 1037,  992])
+	 * loss = (RC: 1.8962 ), step = 665, time_elapsed = 459.50 secs
+ -- epoch 001 | batch 665: len: tensor([1390, 1325, 2027,  705])
+	 * loss = (RC: 1.8986 ), step = 666, time_elapsed = 460.25 secs
+ -- epoch 001 | batch 666: len: tensor([1276, 1075, 1040,  899])
+	 * loss = (RC: 1.9035 ), step = 667, time_elapsed = 461.00 secs
+ -- epoch 001 | batch 667: len: tensor([ 984, 1438,  587, 1315])
+	 * loss = (RC: 1.9050 ), step = 668, time_elapsed = 461.75 secs
+ -- epoch 001 | batch 668: len: tensor([1308,  879,  757, 1213])
+	 * loss = (RC: 1.9027 ), step = 669, time_elapsed = 462.51 secs
+ -- epoch 001 | batch 669: len: tensor([2048,  976,  689, 1421])
+	 * loss = (RC: 1.9017 ), step = 670, time_elapsed = 463.26 secs
+ -- epoch 001 | batch 670: len: tensor([1112, 1149,  794, 1264])
+	 * loss = (RC: 1.8996 ), step = 671, time_elapsed = 464.01 secs
+ -- epoch 001 | batch 671: len: tensor([1317, 1457, 1555, 1289])
+	 * loss = (RC: 1.8894 ), step = 672, time_elapsed = 464.78 secs
+ -- epoch 001 | batch 672: len: tensor([ 982,  710, 1389, 1155])
+	 * loss = (RC: 1.8979 ), step = 673, time_elapsed = 465.56 secs
+ -- epoch 001 | batch 673: len: tensor([1344, 1418, 1530,  894])
+	 * loss = (RC: 1.8952 ), step = 674, time_elapsed = 466.32 secs
+ -- epoch 001 | batch 674: len: tensor([ 959,  736, 1115, 1447])
+	 * loss = (RC: 1.8979 ), step = 675, time_elapsed = 467.07 secs
+ -- epoch 001 | batch 675: len: tensor([1614, 1112, 1195, 1607])
+	 * loss = (RC: 1.8853 ), step = 676, time_elapsed = 467.89 secs
+ -- epoch 001 | batch 676: len: tensor([1203, 1172, 2048,  691])
+	 * loss = (RC: 1.8790 ), step = 677, time_elapsed = 468.65 secs
+ -- epoch 001 | batch 677: len: tensor([ 864, 1303, 1392, 1997])
+	 * loss = (RC: 1.8756 ), step = 678, time_elapsed = 469.41 secs
+ -- epoch 001 | batch 678: len: tensor([ 966, 1001,  782,  792])
+	 * loss = (RC: 1.8845 ), step = 679, time_elapsed = 470.16 secs
+ -- epoch 001 | batch 679: len: tensor([ 979,  891, 1419, 1469])
+	 * loss = (RC: 1.8867 ), step = 680, time_elapsed = 470.89 secs
+ -- epoch 001 | batch 680: len: tensor([ 809,  943, 1107,  843])
+	 * loss = (RC: 1.8882 ), step = 681, time_elapsed = 471.53 secs
+ -- epoch 001 | batch 681: len: tensor([1407, 1475, 2048,  629])
+	 * loss = (RC: 1.8863 ), step = 682, time_elapsed = 472.17 secs
+ -- epoch 001 | batch 682: len: tensor([1036,  781, 1451, 1002])
+	 * loss = (RC: 1.8835 ), step = 683, time_elapsed = 472.80 secs
+ -- epoch 001 | batch 683: len: tensor([1302, 1177,  659, 1179])
+	 * loss = (RC: 1.8878 ), step = 684, time_elapsed = 473.43 secs
+ -- epoch 001 | batch 684: len: tensor([1498,  688, 1011,  976])
+	 * loss = (RC: 1.8913 ), step = 685, time_elapsed = 474.06 secs
+ -- epoch 001 | batch 685: len: tensor([1490, 1177,  668, 1476])
+	 * loss = (RC: 1.8909 ), step = 686, time_elapsed = 474.70 secs
+ -- epoch 001 | batch 686: len: tensor([1650, 1031, 1731, 1392])
+	 * loss = (RC: 1.8889 ), step = 687, time_elapsed = 475.33 secs
+ -- epoch 001 | batch 687: len: tensor([ 874, 1561, 1291, 1469])
+	 * loss = (RC: 1.8863 ), step = 688, time_elapsed = 475.97 secs
+ -- epoch 001 | batch 688: len: tensor([1545, 1693, 1247, 1052])
+	 * loss = (RC: 1.8842 ), step = 689, time_elapsed = 476.60 secs
+ -- epoch 001 | batch 689: len: tensor([1081, 1880, 1100, 1022])
+	 * loss = (RC: 1.8853 ), step = 690, time_elapsed = 477.23 secs
+ -- epoch 001 | batch 690: len: tensor([1292,  821, 1217, 1022])
+	 * loss = (RC: 1.8919 ), step = 691, time_elapsed = 477.87 secs
+ -- epoch 001 | batch 691: len: tensor([1022,  990, 1243, 1804])
+	 * loss = (RC: 1.8855 ), step = 692, time_elapsed = 478.51 secs
+ -- epoch 001 | batch 692: len: tensor([1011, 1464, 1654,  923])
+	 * loss = (RC: 1.8776 ), step = 693, time_elapsed = 479.14 secs
+ -- epoch 001 | batch 693: len: tensor([1586, 1512,  986, 1317])
+	 * loss = (RC: 1.8747 ), step = 694, time_elapsed = 479.78 secs
+ -- epoch 001 | batch 694: len: tensor([1082, 1198, 1474,  784])
+	 * loss = (RC: 1.8743 ), step = 695, time_elapsed = 480.41 secs
+ -- epoch 001 | batch 695: len: tensor([ 928,  617, 1376, 1499])
+	 * loss = (RC: 1.8734 ), step = 696, time_elapsed = 481.05 secs
+ -- epoch 001 | batch 696: len: tensor([1053,  679,  932, 1563])
+	 * loss = (RC: 1.8725 ), step = 697, time_elapsed = 481.68 secs
+ -- epoch 001 | batch 697: len: tensor([ 959, 1204,  932, 1160])
+	 * loss = (RC: 1.8738 ), step = 698, time_elapsed = 482.31 secs
+ -- epoch 001 | batch 698: len: tensor([1389, 1194, 1541,  901])
+	 * loss = (RC: 1.8644 ), step = 699, time_elapsed = 482.95 secs
+ -- epoch 001 | batch 699: len: tensor([1483, 1111,  809, 1390])
+	 * loss = (RC: 1.8675 ), step = 700, time_elapsed = 483.58 secs
+ -- epoch 001 | batch 700: len: tensor([559, 889, 915, 820])
+	 * loss = (RC: 1.8729 ), step = 701, time_elapsed = 484.21 secs
+ -- epoch 001 | batch 701: len: tensor([ 768, 1004, 1348, 1529])
+	 * loss = (RC: 1.8771 ), step = 702, time_elapsed = 484.85 secs
+ -- epoch 001 | batch 702: len: tensor([1837, 1576,  937, 1699])
+	 * loss = (RC: 1.8718 ), step = 703, time_elapsed = 485.48 secs
+ -- epoch 001 | batch 703: len: tensor([1090, 1040,  826, 1225])
+	 * loss = (RC: 1.8767 ), step = 704, time_elapsed = 486.12 secs
+ -- epoch 001 | batch 704: len: tensor([ 991,  749,  592, 1093])
+	 * loss = (RC: 1.8784 ), step = 705, time_elapsed = 486.75 secs
+ -- epoch 001 | batch 705: len: tensor([ 950, 2048, 1155,  644])
+	 * loss = (RC: 1.8722 ), step = 706, time_elapsed = 487.38 secs
+ -- epoch 001 | batch 706: len: tensor([1291, 1700,  951, 1065])
+	 * loss = (RC: 1.8657 ), step = 707, time_elapsed = 488.02 secs
+ -- epoch 001 | batch 707: len: tensor([ 835, 1332, 1013, 1398])
+	 * loss = (RC: 1.8675 ), step = 708, time_elapsed = 488.66 secs
+ -- epoch 001 | batch 708: len: tensor([ 858, 1067,  608,  880])
+	 * loss = (RC: 1.8746 ), step = 709, time_elapsed = 489.29 secs
+ -- epoch 001 | batch 709: len: tensor([1545, 1116, 1536, 1632])
+	 * loss = (RC: 1.8730 ), step = 710, time_elapsed = 489.93 secs
+ -- epoch 001 | batch 710: len: tensor([1319, 1543,  873,  889])
+	 * loss = (RC: 1.8678 ), step = 711, time_elapsed = 490.57 secs
+ -- epoch 001 | batch 711: len: tensor([1069,  812, 1030, 1010])
+	 * loss = (RC: 1.8767 ), step = 712, time_elapsed = 491.20 secs
+ -- epoch 001 | batch 712: len: tensor([1662,  966, 1772, 1536])
+	 * loss = (RC: 1.8721 ), step = 713, time_elapsed = 491.84 secs
+ -- epoch 001 | batch 713: len: tensor([1363, 1273, 1301,  611])
+	 * loss = (RC: 1.8684 ), step = 714, time_elapsed = 492.50 secs
+ -- epoch 001 | batch 714: len: tensor([1528,  972,  691, 1011])
+	 * loss = (RC: 1.8704 ), step = 715, time_elapsed = 493.13 secs
+ -- epoch 001 | batch 715: len: tensor([ 727, 1298,  870, 1440])
+	 * loss = (RC: 1.8794 ), step = 716, time_elapsed = 493.78 secs
+ -- epoch 001 | batch 716: len: tensor([1670,  796,  987,  859])
+	 * loss = (RC: 1.8784 ), step = 717, time_elapsed = 494.41 secs
+ -- epoch 001 | batch 717: len: tensor([1037, 1579, 1733, 1011])
+	 * loss = (RC: 1.8775 ), step = 718, time_elapsed = 495.05 secs
+ -- epoch 001 | batch 718: len: tensor([1146,  692, 1205,  893])
+	 * loss = (RC: 1.8971 ), step = 719, time_elapsed = 495.70 secs
+ -- epoch 001 | batch 719: len: tensor([1398, 1401, 1563, 1347])
+	 * loss = (RC: 1.8965 ), step = 720, time_elapsed = 496.34 secs
+ -- epoch 001 | batch 720: len: tensor([ 844,  861,  855, 1251])
+	 * loss = (RC: 1.8938 ), step = 721, time_elapsed = 496.96 secs
+ -- epoch 001 | batch 721: len: tensor([1175, 1056, 1211, 1436])
+	 * loss = (RC: 1.8909 ), step = 722, time_elapsed = 497.60 secs
+ -- epoch 001 | batch 722: len: tensor([1246, 1341, 1745, 1396])
+	 * loss = (RC: 1.8885 ), step = 723, time_elapsed = 498.23 secs
+ -- epoch 001 | batch 723: len: tensor([1217,  618, 1427,  945])
+	 * loss = (RC: 1.8884 ), step = 724, time_elapsed = 498.87 secs
+ -- epoch 001 | batch 724: len: tensor([ 577,  929, 1200,  949])
+	 * loss = (RC: 1.8975 ), step = 725, time_elapsed = 499.50 secs
+ -- epoch 001 | batch 725: len: tensor([ 884, 1194,  924, 1329])
+	 * loss = (RC: 1.8935 ), step = 726, time_elapsed = 500.13 secs
+ -- epoch 001 | batch 726: len: tensor([1313, 2048, 1438, 1253])
+	 * loss = (RC: 1.8892 ), step = 727, time_elapsed = 500.76 secs
+ -- epoch 001 | batch 727: len: tensor([ 818, 1026,  701,  796])
+	 * loss = (RC: 1.8906 ), step = 728, time_elapsed = 501.39 secs
+ -- epoch 001 | batch 728: len: tensor([ 930, 1781,  632, 1429])
+	 * loss = (RC: 1.8844 ), step = 729, time_elapsed = 502.02 secs
+ -- epoch 001 | batch 729: len: tensor([1139, 1096, 1872,  786])
+	 * loss = (RC: 1.8792 ), step = 730, time_elapsed = 502.66 secs
+ -- epoch 001 | batch 730: len: tensor([ 809, 1349, 1756, 1065])
+	 * loss = (RC: 1.8769 ), step = 731, time_elapsed = 503.29 secs
+ -- epoch 001 | batch 731: len: tensor([1051, 1436,  596,  933])
+	 * loss = (RC: 1.8851 ), step = 732, time_elapsed = 503.92 secs
+ -- epoch 001 | batch 732: len: tensor([1641, 1160,  732, 1418])
+	 * loss = (RC: 1.8815 ), step = 733, time_elapsed = 504.55 secs
+ -- epoch 001 | batch 733: len: tensor([ 942, 1056, 1293,  988])
+	 * loss = (RC: 1.8831 ), step = 734, time_elapsed = 505.19 secs
+ -- epoch 001 | batch 734: len: tensor([2037, 1524, 1457,  809])
+	 * loss = (RC: 1.8783 ), step = 735, time_elapsed = 505.83 secs
+ -- epoch 001 | batch 735: len: tensor([1326, 1495, 1013,  562])
+	 * loss = (RC: 1.8765 ), step = 736, time_elapsed = 506.46 secs
+ -- epoch 001 | batch 736: len: tensor([ 680, 1608, 1425, 1355])
+	 * loss = (RC: 1.8773 ), step = 737, time_elapsed = 507.10 secs
+ -- epoch 001 | batch 737: len: tensor([1488, 1231, 1510,  950])
+	 * loss = (RC: 1.8727 ), step = 738, time_elapsed = 507.73 secs
+ -- epoch 001 | batch 738: len: tensor([1513, 1275,  719, 1214])
+	 * loss = (RC: 1.8677 ), step = 739, time_elapsed = 508.37 secs
+ -- epoch 001 | batch 739: len: tensor([1941,  841, 1588,  988])
+	 * loss = (RC: 1.8612 ), step = 740, time_elapsed = 509.02 secs
+ -- epoch 001 | batch 740: len: tensor([ 964, 1323, 1808,  632])
+	 * loss = (RC: 1.8602 ), step = 741, time_elapsed = 509.66 secs
+ -- epoch 001 | batch 741: len: tensor([1656, 1103, 1849,  718])
+	 * loss = (RC: 1.8554 ), step = 742, time_elapsed = 510.29 secs
+ -- epoch 001 | batch 742: len: tensor([1300, 1158, 1211, 1490])
+	 * loss = (RC: 1.8572 ), step = 743, time_elapsed = 510.93 secs
+ -- epoch 001 | batch 743: len: tensor([1908, 1269,  665, 1191])
+	 * loss = (RC: 1.8599 ), step = 744, time_elapsed = 511.56 secs
+ -- epoch 001 | batch 744: len: tensor([1066, 1460, 1381,  985])
+	 * loss = (RC: 1.8601 ), step = 745, time_elapsed = 512.20 secs
+ -- epoch 001 | batch 745: len: tensor([1752, 1146, 1721, 1171])
+	 * loss = (RC: 1.8608 ), step = 746, time_elapsed = 512.83 secs
+ -- epoch 001 | batch 746: len: tensor([1525, 1754, 1138, 1122])
+	 * loss = (RC: 1.8600 ), step = 747, time_elapsed = 513.47 secs
+ -- epoch 001 | batch 747: len: tensor([ 836,  640, 1348,  805])
+	 * loss = (RC: 1.8663 ), step = 748, time_elapsed = 514.11 secs
+ -- epoch 001 | batch 748: len: tensor([1881, 1478, 1046, 1316])
+	 * loss = (RC: 1.8614 ), step = 749, time_elapsed = 514.75 secs
+ -- epoch 001 | batch 749: len: tensor([ 778, 1536, 1209,  987])
+	 * loss = (RC: 1.8605 ), step = 750, time_elapsed = 515.38 secs
+ -- epoch 001 | batch 750: len: tensor([1165, 1062, 1416,  784])
+	 * loss = (RC: 1.8623 ), step = 751, time_elapsed = 516.02 secs
+ -- epoch 001 | batch 751: len: tensor([1188, 1366, 1138,  986])
+	 * loss = (RC: 1.8606 ), step = 752, time_elapsed = 516.66 secs
+ -- epoch 001 | batch 752: len: tensor([1297,  894, 1087,  864])
+	 * loss = (RC: 1.8555 ), step = 753, time_elapsed = 517.29 secs
+ -- epoch 001 | batch 753: len: tensor([1079, 1396, 1447, 1454])
+	 * loss = (RC: 1.8557 ), step = 754, time_elapsed = 517.92 secs
+ -- epoch 001 | batch 754: len: tensor([ 995,  817, 1245,  896])
+	 * loss = (RC: 1.8571 ), step = 755, time_elapsed = 518.55 secs
+ -- epoch 001 | batch 755: len: tensor([1106, 1236, 1078, 1353])
+	 * loss = (RC: 1.8601 ), step = 756, time_elapsed = 519.19 secs
+ -- epoch 001 | batch 756: len: tensor([1177, 1054, 1161,  969])
+	 * loss = (RC: 1.8630 ), step = 757, time_elapsed = 519.82 secs
+ -- epoch 001 | batch 757: len: tensor([1141, 1313, 1226, 1121])
+	 * loss = (RC: 1.8583 ), step = 758, time_elapsed = 520.46 secs
+ -- epoch 001 | batch 758: len: tensor([1501,  791, 1888,  530])
+	 * loss = (RC: 1.8567 ), step = 759, time_elapsed = 521.10 secs
+ -- epoch 001 | batch 759: len: tensor([ 899, 1517, 1521, 1273])
+	 * loss = (RC: 1.8546 ), step = 760, time_elapsed = 521.74 secs
+ -- epoch 001 | batch 760: len: tensor([ 944, 1757,  803, 1617])
+	 * loss = (RC: 1.8511 ), step = 761, time_elapsed = 522.37 secs
+ -- epoch 001 | batch 761: len: tensor([ 729, 1031, 1296,  968])
+	 * loss = (RC: 1.8539 ), step = 762, time_elapsed = 523.00 secs
+ -- epoch 001 | batch 762: len: tensor([ 642,  929, 1213, 1143])
+	 * loss = (RC: 1.8560 ), step = 763, time_elapsed = 523.64 secs
+ -- epoch 001 | batch 763: len: tensor([ 866, 1297, 1526, 1514])
+	 * loss = (RC: 1.8560 ), step = 764, time_elapsed = 524.27 secs
+ -- epoch 001 | batch 764: len: tensor([2048,  623, 1885, 1300])
+	 * loss = (RC: 1.8517 ), step = 765, time_elapsed = 524.91 secs
+ -- epoch 001 | batch 765: len: tensor([ 722, 1247, 1219, 1698])
+	 * loss = (RC: 1.8546 ), step = 766, time_elapsed = 525.54 secs
+ -- epoch 001 | batch 766: len: tensor([1025, 1305,  858, 1104])
+	 * loss = (RC: 1.8535 ), step = 767, time_elapsed = 526.17 secs
+ -- epoch 001 | batch 767: len: tensor([1439,  753,  716, 1126])
+	 * loss = (RC: 1.8529 ), step = 768, time_elapsed = 526.80 secs
+ -- epoch 001 | batch 768: len: tensor([ 933, 1264,  897,  872])
+	 * loss = (RC: 1.8505 ), step = 769, time_elapsed = 527.44 secs
+ -- epoch 001 | batch 769: len: tensor([1684,  867,  892, 1527])
+	 * loss = (RC: 1.8474 ), step = 770, time_elapsed = 528.21 secs
+ -- epoch 001 | batch 770: len: tensor([1592, 2048, 1751, 1009])
+	 * loss = (RC: 1.8446 ), step = 771, time_elapsed = 528.99 secs
+ -- epoch 001 | batch 771: len: tensor([1547, 1111, 1329, 1098])
+	 * loss = (RC: 1.8460 ), step = 772, time_elapsed = 529.65 secs
+ -- epoch 001 | batch 772: len: tensor([ 943, 1254, 1102, 1255])
+	 * loss = (RC: 1.8428 ), step = 773, time_elapsed = 530.29 secs
+ -- epoch 001 | batch 773: len: tensor([ 993,  950, 1673, 1272])
+	 * loss = (RC: 1.8438 ), step = 774, time_elapsed = 530.93 secs
+ -- epoch 001 | batch 774: len: tensor([1435, 1017,  832,  782])
+	 * loss = (RC: 1.8469 ), step = 775, time_elapsed = 531.64 secs
+ -- epoch 001 | batch 775: len: tensor([1357,  605,  892,  739])
+	 * loss = (RC: 1.8452 ), step = 776, time_elapsed = 532.29 secs
+ -- epoch 001 | batch 776: len: tensor([ 752, 1369,  617, 1049])
+	 * loss = (RC: 1.8497 ), step = 777, time_elapsed = 532.93 secs
+ -- epoch 001 | batch 777: len: tensor([ 951, 1186, 1412, 1461])
+	 * loss = (RC: 1.8502 ), step = 778, time_elapsed = 533.56 secs
+ -- epoch 001 | batch 778: len: tensor([1535, 1721,  762, 1176])
+	 * loss = (RC: 1.8513 ), step = 779, time_elapsed = 534.19 secs
+ -- epoch 001 | batch 779: len: tensor([2006,  947,  803, 1604])
+	 * loss = (RC: 1.8550 ), step = 780, time_elapsed = 534.83 secs
+ -- epoch 001 | batch 780: len: tensor([1694, 1084,  899,  962])
+	 * loss = (RC: 1.8540 ), step = 781, time_elapsed = 535.48 secs
+ -- epoch 001 | batch 781: len: tensor([1226, 1965, 1343, 1448])
+	 * loss = (RC: 1.8514 ), step = 782, time_elapsed = 536.11 secs
+ -- epoch 001 | batch 782: len: tensor([1438, 1055, 1195, 1591])
+	 * loss = (RC: 1.8549 ), step = 783, time_elapsed = 536.75 secs
+ -- epoch 001 | batch 783: len: tensor([1341,  691, 1010,  920])
+	 * loss = (RC: 1.8556 ), step = 784, time_elapsed = 537.38 secs
+ -- epoch 001 | batch 784: len: tensor([1385, 1463, 1104, 1673])
+	 * loss = (RC: 1.8491 ), step = 785, time_elapsed = 538.02 secs
+ -- epoch 001 | batch 785: len: tensor([1593,  837, 1482, 1132])
+	 * loss = (RC: 1.8491 ), step = 786, time_elapsed = 538.65 secs
+ -- epoch 001 | batch 786: len: tensor([1034, 1139, 1172,  633])
+	 * loss = (RC: 1.8463 ), step = 787, time_elapsed = 539.29 secs
+ -- epoch 001 | batch 787: len: tensor([1311, 1658, 1488, 1606])
+	 * loss = (RC: 1.8455 ), step = 788, time_elapsed = 539.93 secs
+ -- epoch 001 | batch 788: len: tensor([1188,  994,  866, 1313])
+	 * loss = (RC: 1.8480 ), step = 789, time_elapsed = 540.56 secs
+ -- epoch 001 | batch 789: len: tensor([ 950, 1062, 1355, 1079])
+	 * loss = (RC: 1.8543 ), step = 790, time_elapsed = 541.19 secs
+ -- epoch 001 | batch 790: len: tensor([1027, 1221,  693, 1241])
+	 * loss = (RC: 1.8534 ), step = 791, time_elapsed = 541.83 secs
+ -- epoch 001 | batch 791: len: tensor([ 956, 1123,  990,  895])
+	 * loss = (RC: 1.8543 ), step = 792, time_elapsed = 542.46 secs
+ -- epoch 001 | batch 792: len: tensor([ 911,  723, 1072, 2048])
+	 * loss = (RC: 1.8547 ), step = 793, time_elapsed = 543.09 secs
+ -- epoch 001 | batch 793: len: tensor([1253, 1647, 1223, 1978])
+	 * loss = (RC: 1.8459 ), step = 794, time_elapsed = 543.74 secs
+ -- epoch 001 | batch 794: len: tensor([1585, 1107, 1438, 1691])
+	 * loss = (RC: 1.8445 ), step = 795, time_elapsed = 544.37 secs
+ -- epoch 001 | batch 795: len: tensor([1142, 1266, 1442,  857])
+	 * loss = (RC: 1.8421 ), step = 796, time_elapsed = 545.01 secs
+ -- epoch 001 | batch 796: len: tensor([1125, 1565,  773, 1054])
+	 * loss = (RC: 1.8416 ), step = 797, time_elapsed = 545.65 secs
+ -- epoch 001 | batch 797: len: tensor([2033,  985,  687,  956])
+	 * loss = (RC: 1.8391 ), step = 798, time_elapsed = 546.28 secs
+ -- epoch 001 | batch 798: len: tensor([1518, 1057,  992,  611])
+	 * loss = (RC: 1.8380 ), step = 799, time_elapsed = 546.91 secs
+ -- epoch 001 | batch 799: len: tensor([ 882,  799, 1023,  849])
+	 * loss = (RC: 1.8492 ), step = 800, time_elapsed = 547.53 secs
+ -- epoch 001 | batch 800: len: tensor([1049, 1111,  849, 1452])
+	 * loss = (RC: 1.8448 ), step = 801, time_elapsed = 548.17 secs
+ -- epoch 001 | batch 801: len: tensor([ 995,  959, 1042, 1547])
+	 * loss = (RC: 1.8422 ), step = 802, time_elapsed = 548.81 secs
+ -- epoch 001 | batch 802: len: tensor([1799,  990,  854, 1335])
+	 * loss = (RC: 1.8416 ), step = 803, time_elapsed = 549.44 secs
+ -- epoch 001 | batch 803: len: tensor([ 826, 1424, 1717,  904])
+	 * loss = (RC: 1.8372 ), step = 804, time_elapsed = 550.09 secs
+ -- epoch 001 | batch 804: len: tensor([ 998, 1225,  736, 1139])
+	 * loss = (RC: 1.8410 ), step = 805, time_elapsed = 550.84 secs
+ -- epoch 001 | batch 805: len: tensor([1382, 1364, 1529, 1077])
+	 * loss = (RC: 1.8381 ), step = 806, time_elapsed = 551.59 secs
+ -- epoch 001 | batch 806: len: tensor([ 594,  793, 1308, 1347])
+	 * loss = (RC: 1.8359 ), step = 807, time_elapsed = 552.34 secs
+ -- epoch 001 | batch 807: len: tensor([1006,  599,  774, 1441])
+	 * loss = (RC: 1.8435 ), step = 808, time_elapsed = 553.09 secs
+ -- epoch 001 | batch 808: len: tensor([ 827,  881, 1183, 1346])
+	 * loss = (RC: 1.8446 ), step = 809, time_elapsed = 553.84 secs
+ -- epoch 001 | batch 809: len: tensor([1551,  779, 1620,  828])
+	 * loss = (RC: 1.8473 ), step = 810, time_elapsed = 554.47 secs
+ -- epoch 001 | batch 810: len: tensor([1374,  615, 1505, 1522])
+	 * loss = (RC: 1.8438 ), step = 811, time_elapsed = 555.11 secs
+ -- epoch 001 | batch 811: len: tensor([1045,  933, 1036,  932])
+	 * loss = (RC: 1.8427 ), step = 812, time_elapsed = 555.74 secs
+ -- epoch 001 | batch 812: len: tensor([1072, 1435,  765, 1122])
+	 * loss = (RC: 1.8423 ), step = 813, time_elapsed = 556.37 secs
+ -- epoch 001 | batch 813: len: tensor([ 683,  954, 1039, 1354])
+	 * loss = (RC: 1.8421 ), step = 814, time_elapsed = 557.00 secs
+ -- epoch 001 | batch 814: len: tensor([ 907,  717,  910, 1074])
+	 * loss = (RC: 1.8396 ), step = 815, time_elapsed = 557.63 secs
+ -- epoch 001 | batch 815: len: tensor([1439,  892, 1152,  795])
+	 * loss = (RC: 1.8424 ), step = 816, time_elapsed = 558.26 secs
+ -- epoch 001 | batch 816: len: tensor([1119, 1210, 1377, 1366])
+	 * loss = (RC: 1.8344 ), step = 817, time_elapsed = 558.89 secs
+ -- epoch 001 | batch 817: len: tensor([1329, 1468, 1187, 1063])
+	 * loss = (RC: 1.8314 ), step = 818, time_elapsed = 559.52 secs
+ -- epoch 001 | batch 818: len: tensor([1047, 1083, 1165, 1687])
+	 * loss = (RC: 1.8340 ), step = 819, time_elapsed = 560.15 secs
+ -- epoch 001 | batch 819: len: tensor([ 831, 1550, 1041, 1307])
+	 * loss = (RC: 1.8304 ), step = 820, time_elapsed = 560.78 secs
+ -- epoch 001 | batch 820: len: tensor([1688,  952, 1337, 1199])
+	 * loss = (RC: 1.8331 ), step = 821, time_elapsed = 561.41 secs
+ -- epoch 001 | batch 821: len: tensor([ 763, 1876, 1116, 1046])
+	 * loss = (RC: 1.8287 ), step = 822, time_elapsed = 562.04 secs
+ -- epoch 001 | batch 822: len: tensor([1243, 1460,  660, 1269])
+	 * loss = (RC: 1.8268 ), step = 823, time_elapsed = 562.67 secs
+ -- epoch 001 | batch 823: len: tensor([1753,  687, 1545, 1569])
+	 * loss = (RC: 1.8201 ), step = 824, time_elapsed = 563.31 secs
+ -- epoch 001 | batch 824: len: tensor([1183, 1507,  988, 1793])
+	 * loss = (RC: 1.8183 ), step = 825, time_elapsed = 563.94 secs
+ -- epoch 001 | batch 825: len: tensor([ 600, 1839, 1188,  993])
+	 * loss = (RC: 1.8238 ), step = 826, time_elapsed = 564.72 secs
+ -- epoch 001 | batch 826: len: tensor([664, 973, 712, 976])
+	 * loss = (RC: 1.8344 ), step = 827, time_elapsed = 565.48 secs
+ -- epoch 001 | batch 827: len: tensor([1072,  935, 1419, 2048])
+	 * loss = (RC: 1.8310 ), step = 828, time_elapsed = 566.13 secs
+ -- epoch 001 | batch 828: len: tensor([ 802, 1120,  760,  932])
+	 * loss = (RC: 1.8389 ), step = 829, time_elapsed = 566.81 secs
+ -- epoch 001 | batch 829: len: tensor([ 797, 1330, 1133, 1746])
+	 * loss = (RC: 1.8488 ), step = 830, time_elapsed = 567.46 secs
+ -- epoch 001 | batch 830: len: tensor([1004,  753, 1749,  994])
+	 * loss = (RC: 1.8486 ), step = 831, time_elapsed = 568.10 secs
+ -- epoch 001 | batch 831: len: tensor([1000, 1477, 1371, 1379])
+	 * loss = (RC: 1.8409 ), step = 832, time_elapsed = 568.75 secs
+ -- epoch 001 | batch 832: len: tensor([1720, 1153,  871, 1016])
+	 * loss = (RC: 1.8409 ), step = 833, time_elapsed = 569.39 secs
+ -- epoch 001 | batch 833: len: tensor([1191, 1233, 2048, 1088])
+	 * loss = (RC: 1.8338 ), step = 834, time_elapsed = 570.04 secs
+ -- epoch 001 | batch 834: len: tensor([ 834, 1349, 1232,  692])
+	 * loss = (RC: 1.8394 ), step = 835, time_elapsed = 570.69 secs
+ -- epoch 001 | batch 835: len: tensor([ 916, 1416, 1309,  706])
+	 * loss = (RC: 1.8361 ), step = 836, time_elapsed = 571.34 secs
+ -- epoch 001 | batch 836: len: tensor([1011, 1648,  920, 1477])
+	 * loss = (RC: 1.8328 ), step = 837, time_elapsed = 571.98 secs
+ -- epoch 001 | batch 837: len: tensor([1082, 1252, 1015, 1659])
+	 * loss = (RC: 1.8336 ), step = 838, time_elapsed = 572.63 secs
+ -- epoch 001 | batch 838: len: tensor([ 427,  781, 1877, 1378])
+	 * loss = (RC: 1.8265 ), step = 839, time_elapsed = 573.28 secs
+ -- epoch 001 | batch 839: len: tensor([1309, 1156, 1289,  826])
+	 * loss = (RC: 1.8221 ), step = 840, time_elapsed = 573.92 secs
+ -- epoch 001 | batch 840: len: tensor([1590, 1269, 1712, 1112])
+	 * loss = (RC: 1.8195 ), step = 841, time_elapsed = 574.56 secs
+ -- epoch 001 | batch 841: len: tensor([1383,  804, 1169,  730])
+	 * loss = (RC: 1.8188 ), step = 842, time_elapsed = 575.20 secs
+ -- epoch 001 | batch 842: len: tensor([1173, 1473, 1086, 1319])
+	 * loss = (RC: 1.8215 ), step = 843, time_elapsed = 575.84 secs
+ -- epoch 001 | batch 843: len: tensor([1108, 1014, 1502,  881])
+	 * loss = (RC: 1.8204 ), step = 844, time_elapsed = 576.49 secs
+ -- epoch 001 | batch 844: len: tensor([ 981,  988, 1439, 1185])
+	 * loss = (RC: 1.8174 ), step = 845, time_elapsed = 577.14 secs
+ -- epoch 001 | batch 845: len: tensor([1421,  694, 1139, 1160])
+	 * loss = (RC: 1.8169 ), step = 846, time_elapsed = 577.78 secs
+ -- epoch 001 | batch 846: len: tensor([1514, 1493, 1147, 1575])
+	 * loss = (RC: 1.8173 ), step = 847, time_elapsed = 578.42 secs
+ -- epoch 001 | batch 847: len: tensor([ 936, 1330,  929,  695])
+	 * loss = (RC: 1.8152 ), step = 848, time_elapsed = 579.07 secs
+ -- epoch 001 | batch 848: len: tensor([ 651, 1778,  937, 1084])
+	 * loss = (RC: 1.8134 ), step = 849, time_elapsed = 579.71 secs
+ -- epoch 001 | batch 849: len: tensor([ 700,  935, 1031, 1826])
+	 * loss = (RC: 1.8095 ), step = 850, time_elapsed = 580.35 secs
+ -- epoch 001 | batch 850: len: tensor([1380,  926, 1080, 1006])
+	 * loss = (RC: 1.8117 ), step = 851, time_elapsed = 581.00 secs
+ -- epoch 001 | batch 851: len: tensor([1354,  869,  995,  469])
+	 * loss = (RC: 1.8159 ), step = 852, time_elapsed = 581.64 secs
+ -- epoch 001 | batch 852: len: tensor([ 940,  811,  769, 1144])
+	 * loss = (RC: 1.8198 ), step = 853, time_elapsed = 582.27 secs
+ -- epoch 001 | batch 853: len: tensor([1216, 1563,  956, 1541])
+	 * loss = (RC: 1.8193 ), step = 854, time_elapsed = 582.91 secs
+ -- epoch 001 | batch 854: len: tensor([1350, 1685,  962, 1534])
+	 * loss = (RC: 1.8208 ), step = 855, time_elapsed = 583.56 secs
+ -- epoch 001 | batch 855: len: tensor([1589,  811, 1733, 1716])
+	 * loss = (RC: 1.8234 ), step = 856, time_elapsed = 584.21 secs
+ -- epoch 001 | batch 856: len: tensor([1288, 1704,  787, 1215])
+	 * loss = (RC: 1.8236 ), step = 857, time_elapsed = 584.86 secs
+ -- epoch 001 | batch 857: len: tensor([1008, 1198,  860, 1749])
+	 * loss = (RC: 1.8266 ), step = 858, time_elapsed = 585.62 secs
+ -- epoch 001 | batch 858: len: tensor([1499,  479, 2048,  885])
+	 * loss = (RC: 1.8257 ), step = 859, time_elapsed = 586.31 secs
+ -- epoch 001 | batch 859: len: tensor([ 744, 1405,  713,  832])
+	 * loss = (RC: 1.8296 ), step = 860, time_elapsed = 586.94 secs
+ -- epoch 001 | batch 860: len: tensor([1676, 1226, 1208,  947])
+	 * loss = (RC: 1.8268 ), step = 861, time_elapsed = 587.71 secs
+ -- epoch 001 | batch 861: len: tensor([1487, 1222, 1369, 1204])
+	 * loss = (RC: 1.8262 ), step = 862, time_elapsed = 588.47 secs
+ -- epoch 001 | batch 862: len: tensor([1017, 1349, 1202,  981])
+	 * loss = (RC: 1.8207 ), step = 863, time_elapsed = 589.22 secs
+ -- epoch 001 | batch 863: len: tensor([1349, 1500,  972,  365])
+	 * loss = (RC: 1.8182 ), step = 864, time_elapsed = 589.97 secs
+ -- epoch 001 | batch 864: len: tensor([ 787,  821, 1359,  975])
+	 * loss = (RC: 1.8245 ), step = 865, time_elapsed = 590.72 secs
+ -- epoch 001 | batch 865: len: tensor([1580,  691, 1622,  567])
+	 * loss = (RC: 1.8216 ), step = 866, time_elapsed = 591.39 secs
+ -- epoch 001 | batch 866: len: tensor([1033, 1292, 1066, 1113])
+	 * loss = (RC: 1.8245 ), step = 867, time_elapsed = 592.02 secs
+ -- epoch 001 | batch 867: len: tensor([1365, 1623,  402,  903])
+	 * loss = (RC: 1.8271 ), step = 868, time_elapsed = 592.66 secs
+ -- epoch 001 | batch 868: len: tensor([ 653, 1043, 1159, 1428])
+	 * loss = (RC: 1.8310 ), step = 869, time_elapsed = 593.29 secs
+ -- epoch 001 | batch 869: len: tensor([ 741, 1233, 1082,  900])
+	 * loss = (RC: 1.8255 ), step = 870, time_elapsed = 593.92 secs
+ -- epoch 001 | batch 870: len: tensor([1163,  952, 1760,  975])
+	 * loss = (RC: 1.8265 ), step = 871, time_elapsed = 594.55 secs
+ -- epoch 001 | batch 871: len: tensor([1635, 1033, 1503, 1139])
+	 * loss = (RC: 1.8287 ), step = 872, time_elapsed = 595.19 secs
+ -- epoch 001 | batch 872: len: tensor([ 619, 1454,  851, 1398])
+	 * loss = (RC: 1.8238 ), step = 873, time_elapsed = 595.82 secs
+ -- epoch 001 | batch 873: len: tensor([ 829,  747,  734, 1020])
+	 * loss = (RC: 1.8361 ), step = 874, time_elapsed = 596.45 secs
+ -- epoch 001 | batch 874: len: tensor([ 944,  926,  835, 1188])
+	 * loss = (RC: 1.8359 ), step = 875, time_elapsed = 597.08 secs
+ -- epoch 001 | batch 875: len: tensor([566, 864, 859, 715])
+	 * loss = (RC: 1.8395 ), step = 876, time_elapsed = 597.71 secs
+ -- epoch 001 | batch 876: len: tensor([1583,  737, 1071,  790])
+	 * loss = (RC: 1.8405 ), step = 877, time_elapsed = 598.35 secs
+ -- epoch 001 | batch 877: len: tensor([2048, 1199, 1054,  709])
+	 * loss = (RC: 1.8469 ), step = 878, time_elapsed = 598.98 secs
+ -- epoch 001 | batch 878: len: tensor([ 975,  953, 1387, 1173])
+	 * loss = (RC: 1.8432 ), step = 879, time_elapsed = 599.62 secs
+ -- epoch 001 | batch 879: len: tensor([ 863, 1022, 1023, 1145])
+	 * loss = (RC: 1.8445 ), step = 880, time_elapsed = 600.25 secs
+ -- epoch 001 | batch 880: len: tensor([ 717, 1235,  751, 1213])
+	 * loss = (RC: 1.8488 ), step = 881, time_elapsed = 600.89 secs
+ -- epoch 001 | batch 881: len: tensor([1214, 1705, 1240, 1321])
+	 * loss = (RC: 1.8443 ), step = 882, time_elapsed = 601.52 secs
+ -- epoch 001 | batch 882: len: tensor([1759, 1015, 1904, 1836])
+	 * loss = (RC: 1.8407 ), step = 883, time_elapsed = 602.29 secs
+ -- epoch 001 | batch 883: len: tensor([1183,  773,  896,  980])
+	 * loss = (RC: 1.8454 ), step = 884, time_elapsed = 602.92 secs
+ -- epoch 001 | batch 884: len: tensor([ 882, 1280, 1067,  529])
+	 * loss = (RC: 1.8402 ), step = 885, time_elapsed = 603.55 secs
+ -- epoch 001 | batch 885: len: tensor([ 804, 1138, 1315,  854])
+	 * loss = (RC: 1.8425 ), step = 886, time_elapsed = 604.18 secs
+ -- epoch 001 | batch 886: len: tensor([ 813, 1747, 1684, 1722])
+	 * loss = (RC: 1.8347 ), step = 887, time_elapsed = 604.81 secs
+ -- epoch 001 | batch 887: len: tensor([1475, 1150, 1231, 1049])
+	 * loss = (RC: 1.8350 ), step = 888, time_elapsed = 605.44 secs
+ -- epoch 001 | batch 888: len: tensor([1091, 1491, 1118, 1528])
+	 * loss = (RC: 1.8339 ), step = 889, time_elapsed = 606.08 secs
+ -- epoch 001 | batch 889: len: tensor([1350, 1771, 1323, 1629])
+	 * loss = (RC: 1.8317 ), step = 890, time_elapsed = 606.71 secs
+ -- epoch 001 | batch 890: len: tensor([1105, 1239,  803, 1232])
+	 * loss = (RC: 1.8324 ), step = 891, time_elapsed = 607.34 secs
+ -- epoch 001 | batch 891: len: tensor([1316,  893, 1211,  849])
+	 * loss = (RC: 1.8296 ), step = 892, time_elapsed = 607.98 secs
+ -- epoch 001 | batch 892: len: tensor([ 763, 1239, 1281,  747])
+	 * loss = (RC: 1.8337 ), step = 893, time_elapsed = 608.61 secs
+ -- epoch 001 | batch 893: len: tensor([1281,  871, 1089, 1118])
+	 * loss = (RC: 1.8400 ), step = 894, time_elapsed = 609.23 secs
+ -- epoch 001 | batch 894: len: tensor([ 872, 2048,  922, 1584])
+	 * loss = (RC: 1.8339 ), step = 895, time_elapsed = 609.88 secs
+ -- epoch 001 | batch 895: len: tensor([1100, 1376,  822,  597])
+	 * loss = (RC: 1.8359 ), step = 896, time_elapsed = 610.52 secs
+ -- epoch 001 | batch 896: len: tensor([1143,  770, 2048, 1740])
+	 * loss = (RC: 1.8359 ), step = 897, time_elapsed = 611.15 secs
+ -- epoch 001 | batch 897: len: tensor([ 956, 1205, 1047, 1321])
+	 * loss = (RC: 1.8295 ), step = 898, time_elapsed = 611.79 secs
+ -- epoch 001 | batch 898: len: tensor([1015, 2048,  904, 1024])
+	 * loss = (RC: 1.8285 ), step = 899, time_elapsed = 612.54 secs
+ -- epoch 001 | batch 899: len: tensor([ 917,  795,  937, 1155])
+	 * loss = (RC: 1.8361 ), step = 900, time_elapsed = 613.18 secs
+ -- epoch 001 | batch 900: len: tensor([1676, 1393, 1363, 1450])
+	 * loss = (RC: 1.8269 ), step = 901, time_elapsed = 613.82 secs
+ -- epoch 001 | batch 901: len: tensor([1736, 1109, 1010, 1535])
+	 * loss = (RC: 1.8252 ), step = 902, time_elapsed = 614.45 secs
+ -- epoch 001 | batch 902: len: tensor([1605, 2016,  257, 1228])
+	 * loss = (RC: 1.8188 ), step = 903, time_elapsed = 615.09 secs
+ -- epoch 001 | batch 903: len: tensor([1226,  852,  991, 1689])
+	 * loss = (RC: 1.8178 ), step = 904, time_elapsed = 615.72 secs
+ -- epoch 001 | batch 904: len: tensor([1079,  925,  542, 1872])
+	 * loss = (RC: 1.8086 ), step = 905, time_elapsed = 616.47 secs
+ -- epoch 001 | batch 905: len: tensor([1138, 1175, 1229,  679])
+	 * loss = (RC: 1.8046 ), step = 906, time_elapsed = 617.22 secs
+ -- epoch 001 | batch 906: len: tensor([ 851, 1171,  804, 1603])
+	 * loss = (RC: 1.8034 ), step = 907, time_elapsed = 617.98 secs
+ -- epoch 001 | batch 907: len: tensor([997, 940, 998, 971])
+	 * loss = (RC: 1.8100 ), step = 908, time_elapsed = 618.72 secs
+ -- epoch 001 | batch 908: len: tensor([1630, 1344,  934, 1841])
+	 * loss = (RC: 1.8059 ), step = 909, time_elapsed = 619.47 secs
+ -- epoch 001 | batch 909: len: tensor([1823, 1756,  546, 1612])
+	 * loss = (RC: 1.8003 ), step = 910, time_elapsed = 620.23 secs
+ -- epoch 001 | batch 910: len: tensor([ 596, 1424, 1005,  688])
+	 * loss = (RC: 1.8040 ), step = 911, time_elapsed = 621.02 secs
+ -- epoch 001 | batch 911: len: tensor([1625, 1075, 1360, 1575])
+	 * loss = (RC: 1.7992 ), step = 912, time_elapsed = 621.77 secs
+ -- epoch 001 | batch 912: len: tensor([1532, 1095,  658,  798])
+	 * loss = (RC: 1.7981 ), step = 913, time_elapsed = 622.52 secs
+ -- epoch 001 | batch 913: len: tensor([2048,  847, 1776, 1074])
+	 * loss = (RC: 1.8026 ), step = 914, time_elapsed = 623.27 secs
+ -- epoch 001 | batch 914: len: tensor([1981,  938, 1260,  986])
+	 * loss = (RC: 1.8051 ), step = 915, time_elapsed = 624.03 secs
+ -- epoch 001 | batch 915: len: tensor([1060,  842, 1027, 1066])
+	 * loss = (RC: 1.8102 ), step = 916, time_elapsed = 624.78 secs
+ -- epoch 001 | batch 916: len: tensor([ 612,  705,  810, 1491])
+	 * loss = (RC: 1.8103 ), step = 917, time_elapsed = 625.53 secs
+ -- epoch 001 | batch 917: len: tensor([ 980, 1209, 1113,  773])
+	 * loss = (RC: 1.8085 ), step = 918, time_elapsed = 626.29 secs
+ -- epoch 001 | batch 918: len: tensor([1355, 1028,  993, 1377])
+	 * loss = (RC: 1.8082 ), step = 919, time_elapsed = 627.04 secs
+ -- epoch 001 | batch 919: len: tensor([1238, 1685, 1473,  734])
+	 * loss = (RC: 1.8016 ), step = 920, time_elapsed = 627.79 secs
+ -- epoch 001 | batch 920: len: tensor([1223, 1633, 1338, 1092])
+	 * loss = (RC: 1.7998 ), step = 921, time_elapsed = 628.43 secs
+ -- epoch 001 | batch 921: len: tensor([1658,  522,  835, 1047])
+	 * loss = (RC: 1.7999 ), step = 922, time_elapsed = 629.06 secs
+ -- epoch 001 | batch 922: len: tensor([833, 895, 648, 803])
+	 * loss = (RC: 1.8101 ), step = 923, time_elapsed = 629.69 secs
+ -- epoch 001 | batch 923: len: tensor([1147, 1327,  793,  751])
+	 * loss = (RC: 1.8157 ), step = 924, time_elapsed = 630.32 secs
+ -- epoch 001 | batch 924: len: tensor([1039, 1243,  706, 1331])
+	 * loss = (RC: 1.8105 ), step = 925, time_elapsed = 630.95 secs
+ -- epoch 001 | batch 925: len: tensor([1126, 1626, 1345, 1072])
+	 * loss = (RC: 1.8108 ), step = 926, time_elapsed = 631.59 secs
+ -- epoch 001 | batch 926: len: tensor([ 788,  942, 1263, 1439])
+	 * loss = (RC: 1.8088 ), step = 927, time_elapsed = 632.25 secs
+ -- epoch 001 | batch 927: len: tensor([1217, 1455,  974, 1378])
+	 * loss = (RC: 1.8110 ), step = 928, time_elapsed = 632.88 secs
+ -- epoch 001 | batch 928: len: tensor([1173,  918,  788, 1194])
+	 * loss = (RC: 1.8087 ), step = 929, time_elapsed = 633.51 secs
+ -- epoch 001 | batch 929: len: tensor([ 551, 1027, 1252, 1058])
+	 * loss = (RC: 1.8111 ), step = 930, time_elapsed = 634.14 secs
+ -- epoch 001 | batch 930: len: tensor([ 935, 1227,  818,  744])
+	 * loss = (RC: 1.8076 ), step = 931, time_elapsed = 634.77 secs
+ -- epoch 001 | batch 931: len: tensor([ 845, 1406, 1565, 1447])
+	 * loss = (RC: 1.8022 ), step = 932, time_elapsed = 635.39 secs
+ -- epoch 001 | batch 932: len: tensor([ 962, 1448, 1059, 1100])
+	 * loss = (RC: 1.8029 ), step = 933, time_elapsed = 636.03 secs
+ -- epoch 001 | batch 933: len: tensor([2048, 1384,  776,  951])
+	 * loss = (RC: 1.7969 ), step = 934, time_elapsed = 636.66 secs
+ -- epoch 001 | batch 934: len: tensor([1090, 1363, 1322, 1408])
+	 * loss = (RC: 1.7951 ), step = 935, time_elapsed = 637.29 secs
+ -- epoch 001 | batch 935: len: tensor([ 851,  810, 1344,  979])
+	 * loss = (RC: 1.8020 ), step = 936, time_elapsed = 637.93 secs
+ -- epoch 001 | batch 936: len: tensor([ 933, 1867, 1061, 1061])
+	 * loss = (RC: 1.8005 ), step = 937, time_elapsed = 638.56 secs
+ -- epoch 001 | batch 937: len: tensor([ 983,  981, 1741, 1119])
+	 * loss = (RC: 1.7957 ), step = 938, time_elapsed = 639.20 secs
+ -- epoch 001 | batch 938: len: tensor([1020,  997, 1683, 1125])
+	 * loss = (RC: 1.7958 ), step = 939, time_elapsed = 639.83 secs
+ -- epoch 001 | batch 939: len: tensor([1411, 1001,  771,  857])
+	 * loss = (RC: 1.7953 ), step = 940, time_elapsed = 640.46 secs
+ -- epoch 001 | batch 940: len: tensor([2048, 1003, 1645, 1194])
+	 * loss = (RC: 1.7870 ), step = 941, time_elapsed = 641.09 secs
+ -- epoch 001 | batch 941: len: tensor([1629,  819, 1806, 1228])
+	 * loss = (RC: 1.7869 ), step = 942, time_elapsed = 641.73 secs
+ -- epoch 001 | batch 942: len: tensor([1751, 1023, 1187, 1111])
+	 * loss = (RC: 1.7841 ), step = 943, time_elapsed = 642.35 secs
+ -- epoch 001 | batch 943: len: tensor([1074, 1371, 1643, 1100])
+	 * loss = (RC: 1.7772 ), step = 944, time_elapsed = 642.98 secs
+ -- epoch 001 | batch 944: len: tensor([1528, 1221, 1431, 1114])
+	 * loss = (RC: 1.7720 ), step = 945, time_elapsed = 643.62 secs
+ -- epoch 001 | batch 945: len: tensor([1222,  814,  920, 1366])
+	 * loss = (RC: 1.7694 ), step = 946, time_elapsed = 644.41 secs
+ -- epoch 001 | batch 946: len: tensor([1687, 1298, 1153, 1078])
+	 * loss = (RC: 1.7625 ), step = 947, time_elapsed = 645.16 secs
+ -- epoch 001 | batch 947: len: tensor([ 847,  986, 1529, 1640])
+	 * loss = (RC: 1.7669 ), step = 948, time_elapsed = 645.91 secs
+ -- epoch 001 | batch 948: len: tensor([ 923, 1023, 1914,  656])
+	 * loss = (RC: 1.7637 ), step = 949, time_elapsed = 646.57 secs
+ -- epoch 001 | batch 949: len: tensor([1322,  901, 1370,  869])
+	 * loss = (RC: 1.7608 ), step = 950, time_elapsed = 647.20 secs
+ -- epoch 001 | batch 950: len: tensor([ 622, 1026, 1784, 1400])
+	 * loss = (RC: 1.7635 ), step = 951, time_elapsed = 647.92 secs
+ -- epoch 001 | batch 951: len: tensor([ 847,  804, 1135, 1333])
+	 * loss = (RC: 1.7580 ), step = 952, time_elapsed = 648.55 secs
+ -- epoch 001 | batch 952: len: tensor([ 705, 1570, 1047,  960])
+	 * loss = (RC: 1.7608 ), step = 953, time_elapsed = 649.19 secs
+ -- epoch 001 | batch 953: len: tensor([1231,  783, 1361, 1395])
+	 * loss = (RC: 1.7552 ), step = 954, time_elapsed = 649.82 secs
+ -- epoch 001 | batch 954: len: tensor([ 960,  887, 1210, 1455])
+	 * loss = (RC: 1.7603 ), step = 955, time_elapsed = 650.45 secs
+ -- epoch 001 | batch 955: len: tensor([1267, 1188,  906,  766])
+	 * loss = (RC: 1.7582 ), step = 956, time_elapsed = 651.07 secs
+ -- epoch 001 | batch 956: len: tensor([ 884,  859,  950, 1097])
+	 * loss = (RC: 1.7645 ), step = 957, time_elapsed = 651.70 secs
+ -- epoch 001 | batch 957: len: tensor([ 795,  469,  844, 1451])
+	 * loss = (RC: 1.7609 ), step = 958, time_elapsed = 652.33 secs
+ -- epoch 001 | batch 958: len: tensor([ 974,  890, 1428,  884])
+	 * loss = (RC: 1.7565 ), step = 959, time_elapsed = 652.96 secs
+ -- epoch 001 | batch 959: len: tensor([ 848, 1213, 1083, 1640])
+	 * loss = (RC: 1.7536 ), step = 960, time_elapsed = 653.59 secs
+ -- epoch 001 | batch 960: len: tensor([1744, 1672, 1195,  981])
+	 * loss = (RC: 1.7460 ), step = 961, time_elapsed = 654.22 secs
+ -- epoch 001 | batch 961: len: tensor([ 903, 1081, 1667,  889])
+	 * loss = (RC: 1.7519 ), step = 962, time_elapsed = 654.86 secs
+ -- epoch 001 | batch 962: len: tensor([1154, 1224, 1681,  793])
+	 * loss = (RC: 1.7536 ), step = 963, time_elapsed = 655.49 secs
+ -- epoch 001 | batch 963: len: tensor([1117, 1788,  843, 1395])
+	 * loss = (RC: 1.7500 ), step = 964, time_elapsed = 656.12 secs
+ -- epoch 001 | batch 964: len: tensor([1128,  791, 2048, 1096])
+	 * loss = (RC: 1.7405 ), step = 965, time_elapsed = 656.76 secs
+ -- epoch 001 | batch 965: len: tensor([1188, 1314, 2048, 1400])
+	 * loss = (RC: 1.7346 ), step = 966, time_elapsed = 657.51 secs
+ -- epoch 001 | batch 966: len: tensor([2048,  689, 1184,  809])
+	 * loss = (RC: 1.7406 ), step = 967, time_elapsed = 658.19 secs
+ -- epoch 001 | batch 967: len: tensor([1319, 1587, 1301,  990])
+	 * loss = (RC: 1.7312 ), step = 968, time_elapsed = 658.83 secs
+ -- epoch 001 | batch 968: len: tensor([ 853, 1062, 2048, 1162])
+	 * loss = (RC: 1.7309 ), step = 969, time_elapsed = 659.47 secs
+ -- epoch 001 | batch 969: len: tensor([ 990,  822, 1005, 1005])
+	 * loss = (RC: 1.7339 ), step = 970, time_elapsed = 660.10 secs
+ -- epoch 001 | batch 970: len: tensor([1526, 1021, 1058, 1211])
+	 * loss = (RC: 1.7395 ), step = 971, time_elapsed = 660.73 secs
+ -- epoch 001 | batch 971: len: tensor([1128, 1192,  784, 1523])
+	 * loss = (RC: 1.7368 ), step = 972, time_elapsed = 661.49 secs
+ -- epoch 001 | batch 972: len: tensor([1222,  802,  672,  986])
+	 * loss = (RC: 1.7428 ), step = 973, time_elapsed = 662.24 secs
+ -- epoch 001 | batch 973: len: tensor([ 785, 1182,  894, 1722])
+	 * loss = (RC: 1.7454 ), step = 974, time_elapsed = 663.00 secs
+ -- epoch 001 | batch 974: len: tensor([1204, 1193, 1097,  990])
+	 * loss = (RC: 1.7395 ), step = 975, time_elapsed = 663.75 secs
+ -- epoch 001 | batch 975: len: tensor([1099,  692, 1260, 1668])
+	 * loss = (RC: 1.7370 ), step = 976, time_elapsed = 664.50 secs
+ -- epoch 001 | batch 976: len: tensor([1412,  672,  698,  789])
+	 * loss = (RC: 1.7397 ), step = 977, time_elapsed = 665.24 secs
+ -- epoch 001 | batch 977: len: tensor([1120, 1262,  812, 1908])
+	 * loss = (RC: 1.7305 ), step = 978, time_elapsed = 665.99 secs
+ -- epoch 001 | batch 978: len: tensor([1382, 1042,  695, 2048])
+	 * loss = (RC: 1.7327 ), step = 979, time_elapsed = 666.75 secs
+ -- epoch 001 | batch 979: len: tensor([1409,  900, 1494,  800])
+	 * loss = (RC: 1.7290 ), step = 980, time_elapsed = 667.50 secs
+ -- epoch 001 | batch 980: len: tensor([ 968,  727, 1394, 1722])
+	 * loss = (RC: 1.7311 ), step = 981, time_elapsed = 668.26 secs
+ -- epoch 001 | batch 981: len: tensor([1535, 1541,  538, 1598])
+	 * loss = (RC: 1.7294 ), step = 982, time_elapsed = 669.01 secs
+ -- epoch 001 | batch 982: len: tensor([1002, 1030, 1428, 1543])
+	 * loss = (RC: 1.7233 ), step = 983, time_elapsed = 669.77 secs
+ -- epoch 001 | batch 983: len: tensor([ 989,  946, 1108, 1324])
+	 * loss = (RC: 1.7227 ), step = 984, time_elapsed = 670.53 secs
+ -- epoch 001 | batch 984: len: tensor([ 962, 1303,  707, 1843])
+	 * loss = (RC: 1.7231 ), step = 985, time_elapsed = 671.29 secs
+ -- epoch 001 | batch 985: len: tensor([971, 736, 906, 955])
+	 * loss = (RC: 1.7247 ), step = 986, time_elapsed = 672.05 secs
+ -- epoch 001 | batch 986: len: tensor([1156,  999, 1159, 1877])
+	 * loss = (RC: 1.7217 ), step = 987, time_elapsed = 672.82 secs
+ -- epoch 001 | batch 987: len: tensor([ 989, 1409, 1245, 1258])
+	 * loss = (RC: 1.7179 ), step = 988, time_elapsed = 673.57 secs
+ -- epoch 001 | batch 988: len: tensor([1309, 1110, 1282, 1169])
+	 * loss = (RC: 1.7158 ), step = 989, time_elapsed = 674.31 secs
+ -- epoch 001 | batch 989: len: tensor([1983, 1785, 1457, 1941])
+	 * loss = (RC: 1.7117 ), step = 990, time_elapsed = 675.07 secs
+ -- epoch 001 | batch 990: len: tensor([1191, 1281, 1064, 1211])
+	 * loss = (RC: 1.7028 ), step = 991, time_elapsed = 675.82 secs
+ -- epoch 001 | batch 991: len: tensor([ 480,  975, 1412, 1416])
+	 * loss = (RC: 1.7074 ), step = 992, time_elapsed = 676.52 secs
+ -- epoch 001 | batch 992: len: tensor([1091, 1127,  636, 1171])
+	 * loss = (RC: 1.7102 ), step = 993, time_elapsed = 677.15 secs
+ -- epoch 001 | batch 993: len: tensor([ 935,  592, 1727,  754])
+	 * loss = (RC: 1.7024 ), step = 994, time_elapsed = 677.78 secs
+ -- epoch 001 | batch 994: len: tensor([1097, 1619,  917, 1257])
+	 * loss = (RC: 1.6965 ), step = 995, time_elapsed = 678.53 secs
+ -- epoch 001 | batch 995: len: tensor([ 800, 1198,  913, 1461])
+	 * loss = (RC: 1.6929 ), step = 996, time_elapsed = 679.30 secs
+ -- epoch 001 | batch 996: len: tensor([1173,  767, 1236, 1208])
+	 * loss = (RC: 1.6900 ), step = 997, time_elapsed = 680.06 secs
+ -- epoch 001 | batch 997: len: tensor([ 999,  761, 1291, 1196])
+	 * loss = (RC: 1.6947 ), step = 998, time_elapsed = 680.82 secs
+ -- epoch 001 | batch 998: len: tensor([1216, 1361, 1325,  633])
+	 * loss = (RC: 1.6892 ), step = 999, time_elapsed = 681.58 secs
+ -- epoch 001 | batch 999: len: tensor([1016, 1326,  859,  916])
+	 * loss = (RC: 1.6865 ), step = 1000, time_elapsed = 682.34 secs
+[info] validating ...
+[round 1]
+Traceback (most recent call last):
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/lyrics2melody_new/train_CSLL2M.py", line 305, in <module>
+    train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/lyrics2melody_new/train_CSLL2M.py", line 154, in train_model
+    vallosses = validate(model, dloader_val)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/MIDI-SAG/lyrics2melody_new/train_CSLL2M.py", line 229, in validate
+    batch_inp_seq_pos, batch_struct, batch_key,batch_emotion,
+UnboundLocalError: local variable 'batch_struct' referenced before assignment

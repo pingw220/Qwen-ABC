@@ -1,0 +1,3 @@
+job=40765488 host=n3257 start=2026-09-27T04:17:04-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.infill_eval
+INFILL_EVAL_DONE
+end=2026-09-27T04:18:09-07:00 CPU_OK

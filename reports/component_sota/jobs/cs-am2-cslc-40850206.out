@@ -1,0 +1,23 @@
+job=40850206 host=n3279 start=2026-09-29T10:25:25-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.accomontage --melodies csl_offc:S1 --shard 3 --num-shards 12
+tasks 225 shard 19
+09d4jeFypKBWzZVfHKBeVY csl_offc True None 62.8
+0ZMWpv0aFBioxywoXsmaId csl_offc True None 12.4
+1EbYNhVhmnZpriRnaFygWN csl_offc True None 11.4
+1mcMqHzkg79tfjUqeLAzpI csl_offc True None 11.3
+27o7ErWiozSj47o3dnPvVf csl_offc True None 11.8
+2YSqK9S0SZjulBJdc9BYuu csl_offc True None 11.0
+2r6PR48twaBEyqvTggRzZa csl_offc True None 11.2
+3KEgUftkAZzQeugm2kVwbT csl_offc True None 11.2
+3im9iOhpZNgaTS4VGYOGF9 csl_offc True None 11.1
+49pMRkESXndNlp0jD1Vxnj csl_offc True None 11.2
+4VEbbZeJwrlqRBTTscq3m2 csl_offc True None 11.0
+51G9MuAKc5GOKrfoP4M4uO csl_offc True None 11.2
+5EbU9BSwgacaX0mW7zU4jN csl_offc True None 11.5
+5eZwk6UYsVAbqSomPjNSDE csl_offc True None 11.2
+5rVNJGnGulbxFwEgUeqAPg csl_offc True None 11.1
+6N1sew50IOyienxE3u6WEM csl_offc True None 11.2
+6coZcwGP3Cmhyqzvp6sEJS csl_offc True None 11.1
+75eCpTAhv6j4enqG1OMBOg csl_offc True None 11.1
+7q5MNn6t2YpWawZvWDpAhv csl_offc True None 11.0
+AM2_DONE
+end=2026-09-29T10:29:59-07:00 CPU_OK

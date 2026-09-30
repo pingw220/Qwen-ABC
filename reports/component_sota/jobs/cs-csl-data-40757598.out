@@ -1,0 +1,12 @@
+job=40757598 host=n3206 start=2026-09-27T03:47:09-07:00 commit=b7edc012ae318ffac8b2749a830cdaf6f471ca3c cmd=python -m paper_eval.component_sota.csl_l2m build-data
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/csl_l2m.py", line 379, in <module>
+    main()
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/csl_l2m.py", line 375, in main
+    {"infer": infer, "build-data": build_data}[args.cmd](args)
+  File "/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/paper_eval/component_sota/csl_l2m.py", line 347, in build_data
+    assert k in ev2idx, k
+           ^^^^^^^^^^^
+AssertionError: Note_Duration_6000

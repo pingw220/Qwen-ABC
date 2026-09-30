@@ -1,0 +1,170 @@
+W0927 03:47:30.850000 3468096 torch/distributed/run.py:774] 
+W0927 03:47:30.850000 3468096 torch/distributed/run.py:774] *****************************************
+W0927 03:47:30.850000 3468096 torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0927 03:47:30.850000 3468096 torch/distributed/run.py:774] *****************************************
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:03<17:13,  3.24s/it]Loading weights:   0%|          | 1/320 [00:03<17:24,  3.27s/it]Loading weights:  57%|█████▋    | 182/320 [00:03<00:01, 75.93it/s]Loading weights:  57%|█████▋    | 181/320 [00:03<00:01, 76.26it/s]Loading weights:  89%|████████▉ | 286/320 [00:04<00:00, 82.42it/s]Loading weights:  90%|█████████ | 288/320 [00:04<00:00, 81.24it/s]Loading weights: 100%|██████████| 320/320 [00:04<00:00, 66.53it/s]Loading weights: 100%|██████████| 320/320 [00:04<00:00, 66.07it/s]
+
+{
+ "mode": "sft",
+ "data_dir": "data/generated/abc_v2_20260915_120927",
+ "output_dir": "experiments/component_sota/runs/mel_sft",
+ "model_name_or_path": "Qwen/Qwen3.5-0.8B-Base",
+ "train_file": "experiments/component_sota/data/mel/train.jsonl",
+ "eval_file": "experiments/component_sota/data/mel/validation.jsonl",
+ "train_limit": 0,
+ "eval_limit": 256,
+ "max_seq_len": 8192,
+ "tokens_per_micro_batch": 16384,
+ "tokens_per_update": 131072,
+ "epochs": 2,
+ "max_steps": 758,
+ "stop_after_steps": 0,
+ "learning_rate": 5e-05,
+ "min_lr_ratio": 0.1,
+ "warmup_ratio": 0.03,
+ "weight_decay": 0.0,
+ "adam_beta2": 0.95,
+ "grad_clip": 1.0,
+ "eval_every": 50,
+ "resume_every": 50,
+ "save_every_epoch": true,
+ "save_every": 0,
+ "save_final": true,
+ "seed": 1234,
+ "gradient_checkpointing": true,
+ "attn_implementation": "sdpa",
+ "log_every": 10,
+ "extra": {},
+ "train_examples": 15332,
+ "eval_examples": 256,
+ "train_dropped_over_max_len": 0,
+ "train_tokens": 40565024,
+ "train_supervised_tokens": 24037602,
+ "train_max_example_tokens": 6063,
+ "micro_batches_per_epoch": 2717,
+ "grad_accum": 4,
+ "micro_batches_per_update": 8,
+ "steps_per_epoch": 340,
+ "total_steps": 758,
+ "padded_tokens_per_update_budget": 131072,
+ "world_size": 2,
+ "real_tokens_per_update_mean": 119308.89411764705,
+ "supervised_tokens_per_update_mean": 70698.8294117647,
+ "n_params": 752393024,
+ "n_trainable_params": 752393024,
+ "torch": "2.8.0+cu128",
+ "cuda_device": "NVIDIA L40S",
+ "slurm_job_id": "40757618",
+ "transformers": "5.17.0",
+ "flash_linear_attention": "0.5.2"
+}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"step": 0, "world_size": 2, "eval_loss": 0.9176035136481325, "eval_ppl": 2.5032841096229204, "eval_tokens": 438544, "time": 19.1}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC-component/qwen_abc/train.py:392: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss_sum += float(nll)
+{"step": 1, "epoch": 0.003, "loss": 0.9507608401600232, "lr": 2.2727272727272728e-06, "grad_norm": 9.845293998718262, "tokens_seen": 122910, "sup_tokens_seen": 81207, "tokens_per_sec": 9791.7, "max_mem_gb": 11.23, "max_reserved_gb": 11.41, "time": 31.6}
+{"step": 10, "epoch": 0.029, "loss": 0.6638349710538324, "lr": 2.272727272727273e-05, "grad_norm": 5.828976631164551, "tokens_seen": 1192019, "sup_tokens_seen": 727346, "tokens_per_sec": 13454.3, "max_mem_gb": 15.94, "max_reserved_gb": 16.89, "time": 111.1}
+{"step": 20, "epoch": 0.059, "loss": 0.5589834436018376, "lr": 4.545454545454546e-05, "grad_norm": 4.971343040466309, "tokens_seen": 2391111, "sup_tokens_seen": 1425420, "tokens_per_sec": 13320.4, "max_mem_gb": 15.97, "max_reserved_gb": 17.01, "time": 201.1}
+{"step": 30, "epoch": 0.088, "loss": 0.5033583142552861, "lr": 4.9989957070628e-05, "grad_norm": 2.2722740173339844, "tokens_seen": 3582982, "sup_tokens_seen": 2168143, "tokens_per_sec": 13386.6, "max_mem_gb": 15.99, "max_reserved_gb": 17.03, "time": 290.2}
+{"step": 40, "epoch": 0.118, "loss": 0.45632698514202813, "lr": 4.994078879387093e-05, "grad_norm": 2.85837459564209, "tokens_seen": 4784629, "sup_tokens_seen": 2864692, "tokens_per_sec": 13612.7, "max_mem_gb": 16.01, "max_reserved_gb": 17.12, "time": 378.4}
+{"step": 50, "epoch": 0.147, "loss": 0.4911510695737731, "lr": 4.985074000813656e-05, "grad_norm": 5.167178630828857, "tokens_seen": 5981942, "sup_tokens_seen": 3599073, "tokens_per_sec": 13206.1, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 469.1}
+{"step": 50, "eval_loss": 0.45518957340772553, "eval_ppl": 1.5764722119174892, "eval_tokens": 438544, "time": 481.5}
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/mmfs1/gscratch/scrubbed/pingw220/music_acc/Qwen-ABC/.venv/lib64/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+{"step": 60, "epoch": 0.177, "loss": 0.4374030817065491, "lr": 4.971997475579554e-05, "grad_norm": 2.2980589866638184, "tokens_seen": 7177630, "sup_tokens_seen": 4297998, "tokens_per_sec": 11257.3, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 575.3}
+{"step": 70, "epoch": 0.206, "loss": 0.4087359352159001, "lr": 4.9548731252630836e-05, "grad_norm": 1.503211498260498, "tokens_seen": 8377363, "sup_tokens_seen": 5005239, "tokens_per_sec": 13200.7, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 666.2}
+{"step": 80, "epoch": 0.236, "loss": 0.4196535648397562, "lr": 4.9337321453878624e-05, "grad_norm": 2.801525115966797, "tokens_seen": 9579983, "sup_tokens_seen": 5687671, "tokens_per_sec": 13399.2, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 756.0}
+{"step": 90, "epoch": 0.265, "loss": 0.4025681483850017, "lr": 4.908613048593775e-05, "grad_norm": 2.383455276489258, "tokens_seen": 10781159, "sup_tokens_seen": 6381051, "tokens_per_sec": 13351.3, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 845.9}
+{"step": 100, "epoch": 0.294, "loss": 0.37595455952468954, "lr": 4.879561594478289e-05, "grad_norm": 1.2666417360305786, "tokens_seen": 11971014, "sup_tokens_seen": 7122190, "tokens_per_sec": 13247.1, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 935.7}
+{"step": 100, "eval_loss": 0.40246687983078266, "eval_ppl": 1.4955093928805294, "eval_tokens": 438544, "time": 948.2}
+{"step": 110, "epoch": 0.324, "loss": 0.4070592562147804, "lr": 4.846630706235933e-05, "grad_norm": 1.5073069334030151, "tokens_seen": 13155991, "sup_tokens_seen": 7851836, "tokens_per_sec": 11321.8, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 1040.4}
+{"step": 120, "epoch": 0.353, "loss": 0.3749645088683319, "lr": 4.8098803742478306e-05, "grad_norm": 1.8485077619552612, "tokens_seen": 14332468, "sup_tokens_seen": 8556506, "tokens_per_sec": 13618.3, "max_mem_gb": 16.02, "max_reserved_gb": 17.12, "time": 1126.8}
+{"step": 130, "epoch": 0.383, "loss": 0.3859888737182634, "lr": 4.769377546796884e-05, "grad_norm": 1.3053159713745117, "tokens_seen": 15519677, "sup_tokens_seen": 9226682, "tokens_per_sec": 13654.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1213.7}
+{"step": 140, "epoch": 0.412, "loss": 0.4020911166940292, "lr": 4.7251960081077246e-05, "grad_norm": 1.1191762685775757, "tokens_seen": 16717065, "sup_tokens_seen": 9920116, "tokens_per_sec": 13564.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1302.0}
+{"step": 150, "epoch": 0.442, "loss": 0.35361625290525245, "lr": 4.677416243933574e-05, "grad_norm": 1.137790560722351, "tokens_seen": 17913398, "sup_tokens_seen": 10663846, "tokens_per_sec": 13517.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1390.5}
+{"step": 150, "eval_loss": 0.38655034814400574, "eval_ppl": 1.471894502357204, "eval_tokens": 438544, "time": 1403.0}
+{"step": 160, "epoch": 0.471, "loss": 0.36306747447346127, "lr": 4.6261252949349105e-05, "grad_norm": 1.082759976387024, "tokens_seen": 19101769, "sup_tokens_seen": 11333991, "tokens_per_sec": 11457.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1494.2}
+{"step": 170, "epoch": 0.501, "loss": 0.36668657291024637, "lr": 4.571416598117013e-05, "grad_norm": 1.2996063232421875, "tokens_seen": 20297994, "sup_tokens_seen": 12024316, "tokens_per_sec": 13305.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1584.2}
+{"step": 180, "epoch": 0.53, "loss": 0.38479001160374626, "lr": 4.513389816615252e-05, "grad_norm": 1.3465023040771484, "tokens_seen": 21496885, "sup_tokens_seen": 12736168, "tokens_per_sec": 13415.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1673.5}
+{"step": 190, "epoch": 0.559, "loss": 0.39260211315595106, "lr": 4.452150658138209e-05, "grad_norm": 1.2441736459732056, "tokens_seen": 22694967, "sup_tokens_seen": 13456902, "tokens_per_sec": 13299.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1763.6}
+{"step": 200, "epoch": 0.589, "loss": 0.35334367980146114, "lr": 4.38781068239935e-05, "grad_norm": 0.924632728099823, "tokens_seen": 23892347, "sup_tokens_seen": 14168274, "tokens_per_sec": 13376.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1853.1}
+{"step": 200, "eval_loss": 0.3732974049889222, "eval_ppl": 1.452516261184376, "eval_tokens": 438544, "time": 1865.6}
+{"step": 210, "epoch": 0.618, "loss": 0.3674312914046048, "lr": 4.320487097888093e-05, "grad_norm": 1.4393243789672852, "tokens_seen": 25084288, "sup_tokens_seen": 14874131, "tokens_per_sec": 11252.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 1959.0}
+{"step": 220, "epoch": 0.648, "loss": 0.3342115770282799, "lr": 4.2503025483504415e-05, "grad_norm": 0.8324315547943115, "tokens_seen": 26268214, "sup_tokens_seen": 15567176, "tokens_per_sec": 13465.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2047.0}
+{"step": 230, "epoch": 0.677, "loss": 0.35364535313844064, "lr": 4.177384889368203e-05, "grad_norm": 0.9070459604263306, "tokens_seen": 27473189, "sup_tokens_seen": 16284478, "tokens_per_sec": 13498.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2136.2}
+{"step": 240, "epoch": 0.707, "loss": 0.3611809415010243, "lr": 4.1018669554437636e-05, "grad_norm": 1.116546869277954, "tokens_seen": 28679168, "sup_tokens_seen": 16983606, "tokens_per_sec": 13487.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2225.6}
+{"step": 250, "epoch": 0.736, "loss": 0.3510915084060015, "lr": 4.023886318014748e-05, "grad_norm": 1.5244011878967285, "tokens_seen": 29881717, "sup_tokens_seen": 17681095, "tokens_per_sec": 13448.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2315.1}
+{"step": 250, "eval_loss": 0.36699942682367764, "eval_ppl": 1.443397091793904, "eval_tokens": 438544, "time": 2327.5}
+{"step": 260, "epoch": 0.766, "loss": 0.35978999068589, "lr": 3.943585034839362e-05, "grad_norm": 1.2603622674942017, "tokens_seen": 31065945, "sup_tokens_seen": 18405836, "tokens_per_sec": 11280.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2420.0}
+{"step": 270, "epoch": 0.795, "loss": 0.3573928521969917, "lr": 3.861109391208997e-05, "grad_norm": 1.4695730209350586, "tokens_seen": 32264708, "sup_tokens_seen": 19125821, "tokens_per_sec": 13421.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2509.4}
+{"step": 280, "epoch": 0.824, "loss": 0.3486118110929935, "lr": 3.776609633459503e-05, "grad_norm": 0.7969096302986145, "tokens_seen": 33464204, "sup_tokens_seen": 19828034, "tokens_per_sec": 13529.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.12, "time": 2598.0}
+{"step": 290, "epoch": 0.854, "loss": 0.3356652630885995, "lr": 3.690239695266605e-05, "grad_norm": 0.7981668710708618, "tokens_seen": 34654234, "sup_tokens_seen": 20523547, "tokens_per_sec": 13480.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 2686.3}
+{"step": 300, "epoch": 0.883, "loss": 0.33049353921332286, "lr": 3.602156917224082e-05, "grad_norm": 0.6462295055389404, "tokens_seen": 35848694, "sup_tokens_seen": 21218747, "tokens_per_sec": 13550.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 2774.5}
+{"step": 300, "eval_loss": 0.3592357626625525, "eval_ppl": 1.4322344291725249, "eval_tokens": 438544, "time": 2786.9}
+{"step": 310, "epoch": 0.913, "loss": 0.35488352619628655, "lr": 3.512521760215532e-05, "grad_norm": 0.7688678503036499, "tokens_seen": 37039342, "sup_tokens_seen": 21930519, "tokens_per_sec": 11330.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 2879.5}
+{"step": 320, "epoch": 0.942, "loss": 0.3412495957235499, "lr": 3.421497513101896e-05, "grad_norm": 0.9055232405662537, "tokens_seen": 38223217, "sup_tokens_seen": 22629925, "tokens_per_sec": 13333.8, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 2968.3}
+{"step": 330, "epoch": 0.972, "loss": 0.32966670881425, "lr": 3.329249995257238e-05, "grad_norm": 0.8954669237136841, "tokens_seen": 39414992, "sup_tokens_seen": 23352286, "tokens_per_sec": 13279.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 3058.1}
+{"step": 340, "epoch": 1.0, "loss": 0.32546919434374544, "lr": 3.235947254494672e-05, "grad_norm": 1.1624095439910889, "tokens_seen": 40565024, "sup_tokens_seen": 24037602, "tokens_per_sec": 13471.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 3143.4}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.45it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.45it/s]
+{"step": 350, "epoch": 1.029, "loss": 0.3159847147625721, "lr": 3.141759260932735e-05, "grad_norm": 0.8603764772415161, "tokens_seen": 41758753, "sup_tokens_seen": 24744037, "tokens_per_sec": 13373.1, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 3232.7}
+{"step": 350, "eval_loss": 0.35681018406944076, "eval_ppl": 1.428764641822953, "eval_tokens": 438544, "time": 3245.1}
+{"step": 360, "epoch": 1.059, "loss": 0.32324763307628546, "lr": 3.0468575973598806e-05, "grad_norm": 0.9007178544998169, "tokens_seen": 42954044, "sup_tokens_seen": 25445830, "tokens_per_sec": 11245.8, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 3339.0}
+{"step": 370, "epoch": 1.088, "loss": 0.33783256754179114, "lr": 2.9514151466611672e-05, "grad_norm": 0.7906671762466431, "tokens_seen": 44150807, "sup_tokens_seen": 26189758, "tokens_per_sec": 13374.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.14, "time": 3428.5}
+{"step": 380, "epoch": 1.118, "loss": 0.32088119071481314, "lr": 2.855605776876549e-05, "grad_norm": 0.7005855441093445, "tokens_seen": 45356670, "sup_tokens_seen": 26897109, "tokens_per_sec": 13282.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 3519.3}
+{"step": 390, "epoch": 1.147, "loss": 0.31410127517659536, "lr": 2.7596040244645044e-05, "grad_norm": 0.8055033087730408, "tokens_seen": 46553263, "sup_tokens_seen": 27610149, "tokens_per_sec": 13437.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 3608.3}
+{"step": 400, "epoch": 1.177, "loss": 0.36220328106614696, "lr": 2.6635847763480122e-05, "grad_norm": 0.8068361282348633, "tokens_seen": 47746993, "sup_tokens_seen": 28318897, "tokens_per_sec": 13528.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 3696.6}
+{"step": 400, "eval_loss": 0.35132348974547245, "eval_ppl": 1.4209469133276016, "eval_tokens": 438544, "time": 3709.0}
+{"step": 410, "epoch": 1.206, "loss": 0.32015078660327106, "lr": 2.5677229513220673e-05, "grad_norm": 0.6172344088554382, "tokens_seen": 48946188, "sup_tokens_seen": 28987436, "tokens_per_sec": 11530.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 3800.6}
+{"step": 420, "epoch": 1.236, "loss": 0.3316623691329059, "lr": 2.472193181403155e-05, "grad_norm": 0.6256841421127319, "tokens_seen": 50141838, "sup_tokens_seen": 29729795, "tokens_per_sec": 13360.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 3890.0}
+{"step": 430, "epoch": 1.265, "loss": 0.3286705561075194, "lr": 2.377169493701135e-05, "grad_norm": 0.8003549575805664, "tokens_seen": 51330210, "sup_tokens_seen": 30466060, "tokens_per_sec": 13264.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 3979.6}
+{"step": 440, "epoch": 1.294, "loss": 0.31230796156499047, "lr": 2.2828249933930952e-05, "grad_norm": 0.5988219380378723, "tokens_seen": 52528684, "sup_tokens_seen": 31173587, "tokens_per_sec": 13589.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4067.8}
+{"step": 450, "epoch": 1.324, "loss": 0.3190091405168396, "lr": 2.1893315483766934e-05, "grad_norm": 0.613288402557373, "tokens_seen": 53733213, "sup_tokens_seen": 31873604, "tokens_per_sec": 13517.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4156.9}
+{"step": 450, "eval_loss": 0.34881247207264154, "eval_ppl": 1.4173833664530804, "eval_tokens": 438544, "time": 4169.3}
+{"step": 460, "epoch": 1.353, "loss": 0.30249410504540847, "lr": 2.09685947617746e-05, "grad_norm": 0.598557710647583, "tokens_seen": 54930071, "sup_tokens_seen": 32585291, "tokens_per_sec": 11217.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4263.6}
+{"step": 470, "epoch": 1.383, "loss": 0.3344827130950364, "lr": 2.005577233680419e-05, "grad_norm": 0.6529620289802551, "tokens_seen": 56124328, "sup_tokens_seen": 33280542, "tokens_per_sec": 13330.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4353.2}
+{"step": 480, "epoch": 1.412, "loss": 0.3109447360982936, "lr": 1.9156511102512497e-05, "grad_norm": 0.7811028361320496, "tokens_seen": 57310033, "sup_tokens_seen": 34015897, "tokens_per_sec": 13261.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4442.6}
+{"step": 490, "epoch": 1.442, "loss": 0.3057390295273936, "lr": 1.8272449248060292e-05, "grad_norm": 0.7725750207901001, "tokens_seen": 58502194, "sup_tokens_seen": 34686827, "tokens_per_sec": 13637.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4530.1}
+{"step": 500, "epoch": 1.471, "loss": 0.28918319716587904, "lr": 1.74051972738141e-05, "grad_norm": 0.635129451751709, "tokens_seen": 59699462, "sup_tokens_seen": 35374644, "tokens_per_sec": 13464.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4619.0}
+{"step": 500, "eval_loss": 0.34760628333212296, "eval_ppl": 1.4156747652503852, "eval_tokens": 438544, "time": 4631.4}
+{"step": 510, "epoch": 1.501, "loss": 0.308898435291919, "lr": 1.655633505748874e-05, "grad_norm": 0.6233363151550293, "tokens_seen": 60891071, "sup_tokens_seen": 36059611, "tokens_per_sec": 11478.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4722.8}
+{"step": 520, "epoch": 1.53, "loss": 0.31428425467852994, "lr": 1.5727408976075418e-05, "grad_norm": 0.5477352738380432, "tokens_seen": 62080860, "sup_tokens_seen": 36760917, "tokens_per_sec": 13468.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4811.1}
+{"step": 530, "epoch": 1.559, "loss": 0.3025972510512044, "lr": 1.4919929088798152e-05, "grad_norm": 0.6744847893714905, "tokens_seen": 63277163, "sup_tokens_seen": 37460933, "tokens_per_sec": 13674.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4898.6}
+{"step": 540, "epoch": 1.589, "loss": 0.3195803834434174, "lr": 1.4135366386230595e-05, "grad_norm": 0.5636569857597351, "tokens_seen": 64459156, "sup_tokens_seen": 38199516, "tokens_per_sec": 13124.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 4988.7}
+{"step": 550, "epoch": 1.618, "loss": 0.31313023114920835, "lr": 1.3375150110584327e-05, "grad_norm": 0.5332252979278564, "tokens_seen": 65638688, "sup_tokens_seen": 38852170, "tokens_per_sec": 13691.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5074.8}
+{"step": 550, "eval_loss": 0.3451811204079602, "eval_ppl": 1.4122456830192271, "eval_tokens": 438544, "time": 5087.3}
+{"step": 560, "epoch": 1.648, "loss": 0.31652649410623956, "lr": 1.2640665152050457e-05, "grad_norm": 0.6052621006965637, "tokens_seen": 66825526, "sup_tokens_seen": 39552803, "tokens_per_sec": 11225.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5180.6}
+{"step": 570, "epoch": 1.677, "loss": 0.31818075865513457, "lr": 1.1933249525937487e-05, "grad_norm": 0.5673443675041199, "tokens_seen": 68019065, "sup_tokens_seen": 40284208, "tokens_per_sec": 13223.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5270.8}
+{"step": 580, "epoch": 1.707, "loss": 0.30075415051237353, "lr": 1.1254191935201427e-05, "grad_norm": 0.5135140419006348, "tokens_seen": 69221091, "sup_tokens_seen": 41015370, "tokens_per_sec": 13413.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5360.4}
+{"step": 590, "epoch": 1.736, "loss": 0.3248442747390214, "lr": 1.0604729422808518e-05, "grad_norm": 0.5826200842857361, "tokens_seen": 70409992, "sup_tokens_seen": 41724017, "tokens_per_sec": 13265.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5450.1}
+{"step": 600, "epoch": 1.766, "loss": 0.30611239172686094, "lr": 9.986045118207199e-06, "grad_norm": 0.44945573806762695, "tokens_seen": 71618595, "sup_tokens_seen": 42445207, "tokens_per_sec": 13457.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5539.9}
+{"step": 600, "eval_loss": 0.34343095552769504, "eval_ppl": 1.4097761818699484, "eval_tokens": 438544, "time": 5552.3}
+{"step": 610, "epoch": 1.795, "loss": 0.29215119404725653, "lr": 9.399266082014663e-06, "grad_norm": 0.4909941554069519, "tokens_seen": 72832808, "sup_tokens_seen": 43154782, "tokens_per_sec": 11419.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5646.2}
+{"step": 620, "epoch": 1.824, "loss": 0.31030437070626676, "lr": 8.845461252844309e-06, "grad_norm": 0.4887615740299225, "tokens_seen": 74025732, "sup_tokens_seen": 43876547, "tokens_per_sec": 13280.7, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5736.0}
+{"step": 630, "epoch": 1.854, "loss": 0.32304039026696707, "lr": 8.325639500014344e-06, "grad_norm": 0.5505232810974121, "tokens_seen": 75221855, "sup_tokens_seen": 44564851, "tokens_per_sec": 13651.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5823.6}
+{"step": 640, "epoch": 1.883, "loss": 0.2975749347575573, "lr": 7.840747785684981e-06, "grad_norm": 0.5134296417236328, "tokens_seen": 76418646, "sup_tokens_seen": 45265338, "tokens_per_sec": 13202.8, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 5914.3}
+{"step": 650, "epoch": 1.913, "loss": 0.2974177854868412, "lr": 7.3916694397722405e-06, "grad_norm": 0.4743029475212097, "tokens_seen": 77593254, "sup_tokens_seen": 45954132, "tokens_per_sec": 13318.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6002.5}
+{"step": 650, "eval_loss": 0.34185418167902, "eval_ppl": 1.4075550352370407, "eval_tokens": 438544, "time": 6014.9}
+{"step": 660, "epoch": 1.942, "loss": 0.29539579249116493, "lr": 6.979222550780955e-06, "grad_norm": 0.48291224241256714, "tokens_seen": 78790105, "sup_tokens_seen": 46673436, "tokens_per_sec": 11323.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6108.2}
+{"step": 670, "epoch": 1.972, "loss": 0.2791794560884163, "lr": 6.604158475488414e-06, "grad_norm": 0.5288427472114563, "tokens_seen": 79984971, "sup_tokens_seen": 47389305, "tokens_per_sec": 13367.9, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6197.6}
+{"step": 680, "epoch": 2.0, "loss": 0.3194087842718685, "lr": 6.267160470193578e-06, "grad_norm": 0.6084604263305664, "tokens_seen": 81130048, "sup_tokens_seen": 48075204, "tokens_per_sec": 13271.8, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6283.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.09it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.09it/s]
+{"step": 690, "epoch": 2.029, "loss": 0.27011461111832685, "lr": 5.968842446025302e-06, "grad_norm": 0.617572546005249, "tokens_seen": 82327758, "sup_tokens_seen": 48793716, "tokens_per_sec": 13456.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6372.8}
+{"step": 700, "epoch": 2.059, "loss": 0.2656042400263551, "lr": 5.709747850577031e-06, "grad_norm": 0.5596832036972046, "tokens_seen": 83525028, "sup_tokens_seen": 49511406, "tokens_per_sec": 13358.4, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6462.5}
+{"step": 700, "eval_loss": 0.3474585670126868, "eval_ppl": 1.4154656624288735, "eval_tokens": 438544, "time": 6474.9}
+{"step": 710, "epoch": 2.088, "loss": 0.28587816076334355, "lr": 5.490348677905329e-06, "grad_norm": 0.5916320085525513, "tokens_seen": 84703525, "sup_tokens_seen": 50229637, "tokens_per_sec": 11164.6, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6568.0}
+{"step": 720, "epoch": 2.118, "loss": 0.2767616262813719, "lr": 5.311044608695677e-06, "grad_norm": 0.6964353919029236, "tokens_seen": 85885033, "sup_tokens_seen": 50939166, "tokens_per_sec": 13316.0, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6656.8}
+{"step": 730, "epoch": 2.147, "loss": 0.2582744878522057, "lr": 5.172162282161984e-06, "grad_norm": 0.6219507455825806, "tokens_seen": 87085321, "sup_tokens_seen": 51634281, "tokens_per_sec": 13565.3, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6745.2}
+{"step": 740, "epoch": 2.177, "loss": 0.2763991365708323, "lr": 5.0739547010061045e-06, "grad_norm": 0.7159823775291443, "tokens_seen": 88269030, "sup_tokens_seen": 52286240, "tokens_per_sec": 13569.2, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6832.5}
+{"step": 750, "epoch": 2.206, "loss": 0.25168053058078366, "lr": 5.016600770521428e-06, "grad_norm": 0.6427890062332153, "tokens_seen": 89464781, "sup_tokens_seen": 52985753, "tokens_per_sec": 13326.5, "max_mem_gb": 16.03, "max_reserved_gb": 17.18, "time": 6922.2}
+{"step": 750, "eval_loss": 0.3491064171027518, "eval_ppl": 1.4178000604889804, "eval_tokens": 438544, "time": 6934.6}
+{"step": 758, "final": true, "eval_loss": 0.35200409671931393, "eval_ppl": 1.4219143488906212, "eval_tokens": 438544, "time": 7022.0}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.78it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.78it/s]
+{"step": 758, "done": true, "elapsed_hours_this_job": 1.951, "tokens_seen": 90419337, "sup_tokens_seen": 53546292, "world_size": 2, "max_mem_gb": 16.03, "time": 7022.7}
+TRAIN_OK
