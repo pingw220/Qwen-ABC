@@ -1,0 +1,45 @@
+job=40956948 host=g3112 start=2026-10-01T08:55:16-07:00
+== MCL 09d4jeFypKBWzZVfHKBeVY__e3b | mandopop, c-pop, instrumental backing track, B major, 97 BPM
+-rw-r--r-- 1 pingw220 ark 36007468 Oct  1 08:59 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/render/09d4jeFypKBWzZVfHKBeVY__e3b/backing.wav
+== MCL 0A4ehMRLl7v8TFyhSbdkh8__e3b | mandopop, c-pop, instrumental backing track, F major, 125 BPM
+-rw-r--r-- 1 pingw220 ark 36408984 Oct  1 09:00 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/render/0A4ehMRLl7v8TFyhSbdkh8__e3b/backing.wav
+== MCL 0CxfpbQfmX4bR6mA6aarL3__e3b | mandopop, c-pop, instrumental backing track, F major, 100 BPM
+-rw-r--r-- 1 pingw220 ark 41171788 Oct  1 09:02 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/render/0CxfpbQfmX4bR6mA6aarL3__e3b/backing.wav
+== MCL 0exfMqddpIIZQbZZny68Rc__e3b | mandopop, c-pop, instrumental backing track, Bb major, 130 BPM
+-rw-r--r-- 1 pingw220 ark 42824468 Oct  1 09:03 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/render/0exfMqddpIIZQbZZny68Rc__e3b/backing.wav
+== MCL 1heBg3CKPc4qVUXzVO49I2__e3b | mandopop, c-pop, instrumental backing track, F major, 75 BPM
+-rw-r--r-- 1 pingw220 ark 43041616 Oct  1 09:05 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/render/1heBg3CKPc4qVUXzVO49I2__e3b/backing.wav
+== MCL 47ZxPbe5sBnGaQanA7sQDq__e3b | mandopop, c-pop, instrumental backing track, A major, 91 BPM
+-rw-r--r-- 1 pingw220 ark 41289292 Oct  1 09:07 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/render/47ZxPbe5sBnGaQanA7sQDq__e3b/backing.wav
+No module named 'flash_attn'
+flash_attn not installed, disabling Flash Attention
+No module named 'flash_attn'
+flash_attn varlen/bert_padding not available, disabling varlen attention
+6 items, 6 to render; checkpoint /mmfs1/gscratch/scrubbed/pingw220/music_acc/sa3_midi_sag/experiments/sa3_medium_midi_sag_long_v1/checkpoints/step_0030000
+annotations ok for 6 items (e.g. 355 beats, 106 chord spans)
+/mmfs1/gscratch/stf/pingw220/sa3_midi_sag/venv/lib64/python3.12/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+loaded step 30000 in 147 s
+09d4jeFypKBWzZVfHKBeVY__e3b 204.1s audio in 15s | mandopop, c-pop, instrumental backing track, B major, 97 BPM
+0A4ehMRLl7v8TFyhSbdkh8__e3b 206.4s audio in 12s | mandopop, c-pop, instrumental backing track, F major, 125 BPM
+0CxfpbQfmX4bR6mA6aarL3__e3b 233.4s audio in 14s | mandopop, c-pop, instrumental backing track, F major, 100 BPM
+0exfMqddpIIZQbZZny68Rc__e3b 242.8s audio in 15s | mandopop, c-pop, instrumental backing track, Bb major, 130 BPM
+1heBg3CKPc4qVUXzVO49I2__e3b 244.0s audio in 15s | mandopop, c-pop, instrumental backing track, F major, 75 BPM
+47ZxPbe5sBnGaQanA7sQDq__e3b 234.1s audio in 14s | mandopop, c-pop, instrumental backing track, A major, 91 BPM
+SA3_BACKING_DONE
+No module named 'flash_attn'
+flash_attn not installed, disabling Flash Attention
+No module named 'flash_attn'
+flash_attn varlen/bert_padding not available, disabling varlen attention
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/09d4jeFypKBWzZVfHKBeVY__e3b/mcl_mix.wav 204.1 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/09d4jeFypKBWzZVfHKBeVY__e3b/sa3_mix.wav 204.1 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/0A4ehMRLl7v8TFyhSbdkh8__e3b/mcl_mix.wav 206.4 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/0A4ehMRLl7v8TFyhSbdkh8__e3b/sa3_mix.wav 206.4 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/0CxfpbQfmX4bR6mA6aarL3__e3b/mcl_mix.wav 233.4 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/0CxfpbQfmX4bR6mA6aarL3__e3b/sa3_mix.wav 233.4 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/0exfMqddpIIZQbZZny68Rc__e3b/mcl_mix.wav 242.8 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/0exfMqddpIIZQbZZny68Rc__e3b/sa3_mix.wav 242.8 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/1heBg3CKPc4qVUXzVO49I2__e3b/mcl_mix.wav 244.0 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/1heBg3CKPc4qVUXzVO49I2__e3b/sa3_mix.wav 244.0 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/47ZxPbe5sBnGaQanA7sQDq__e3b/mcl_mix.wav 234.1 s
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/long/compare_sameprompt/47ZxPbe5sBnGaQanA7sQDq__e3b/sa3_mix.wav 234.1 s
+end=2026-10-01T09:13:07-07:00 LONG_COMPARE_DONE

@@ -52,7 +52,7 @@ def annotation(d: Path, song: dict) -> tuple[dict, float]:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--group", default="chords", choices=["chords", "control"])
+    ap.add_argument("--group", default="chords", choices=["chords", "control", "long"])
     ap.add_argument("--only", default=None, help="comma list of render names (default: all)")
     ap.add_argument("--checkpoint", default=str(CKPT))
     ap.add_argument("--steps", type=int, default=50)

@@ -1,0 +1,21 @@
+== 09d4jeFypKBWzZVfHKBeVY__qwen prompt: mandopop, c-pop, instrumental backing track, B major, 97 BPM
+-rw-r--r-- 1 pingw220 ark 16367056 Sep 30 20:06 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render_mcl_sameprompt/09d4jeFypKBWzZVfHKBeVY__qwen/backing.wav
+== 0A4ehMRLl7v8TFyhSbdkh8__qwen prompt: mandopop, c-pop, instrumental backing track, F major, 125 BPM
+-rw-r--r-- 1 pingw220 ark 16765092 Sep 30 20:08 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render_mcl_sameprompt/0A4ehMRLl7v8TFyhSbdkh8__qwen/backing.wav
+== 0CxfpbQfmX4bR6mA6aarL3__qwen prompt: mandopop, c-pop, instrumental backing track, F major, 100 BPM
+-rw-r--r-- 1 pingw220 ark 16934440 Sep 30 20:09 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render_mcl_sameprompt/0CxfpbQfmX4bR6mA6aarL3__qwen/backing.wav
+== 0exfMqddpIIZQbZZny68Rc__qwen prompt: mandopop, c-pop, instrumental backing track, Bb major, 130 BPM
+-rw-r--r-- 1 pingw220 ark 16527344 Sep 30 20:10 /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/render_mcl_sameprompt/0exfMqddpIIZQbZZny68Rc__qwen/backing.wav
+No module named 'flash_attn'
+flash_attn not installed, disabling Flash Attention
+No module named 'flash_attn'
+flash_attn varlen/bert_padding not available, disabling varlen attention
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/09d4jeFypKBWzZVfHKBeVY__qwen/mcl_sameprompt_mix.wav 44100 (4091753, 2)
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/09d4jeFypKBWzZVfHKBeVY__qwen/sa3_mix.wav 44100 (4091755, 2)
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/0A4ehMRLl7v8TFyhSbdkh8__qwen/mcl_sameprompt_mix.wav 44100 (4191262, 2)
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/0A4ehMRLl7v8TFyhSbdkh8__qwen/sa3_mix.wav 44100 (4191264, 2)
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/0CxfpbQfmX4bR6mA6aarL3__qwen/mcl_sameprompt_mix.wav 44100 (4233599, 2)
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/0CxfpbQfmX4bR6mA6aarL3__qwen/sa3_mix.wav 44100 (4233600, 2)
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/0exfMqddpIIZQbZZny68Rc__qwen/mcl_sameprompt_mix.wav 44100 (4131825, 2)
+wrote /gscratch/ark/pingw220/qwen_abc_r2_offload/component_sota_audio/backing/chords/compare_sameprompt/0exfMqddpIIZQbZZny68Rc__qwen/sa3_mix.wav 44100 (4131827, 2)
+COMPARE_DONE

@@ -113,3 +113,5 @@
 40920703 SA3 MIDI-SAG step30k backing renders, chord-source group (108), 3 shards ckpt-all a40
 40922251 SA3 step30k backing renders chords group, resubmit (beat-file parser fix), L40S
 40923208 audio tools on SA3 step30k backing mixes (108)
+40935704 MCL re-render with SA3's prompt + identical remix (4 listening songs)
+40956948 long (>180 s) backing comparison MCL vs SA3, 6 E3b songs
